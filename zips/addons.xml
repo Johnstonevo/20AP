@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.20ap" name="20ap" version="18.4.10" provider-name="Enzo">
+  <requires>
+      <import addon="xbmc.python" version="2.19.0" />
+     <import addon="script.module.universalscrapers" version="0.5.5" />
+      <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+      <import addon="script.module.beautifulsoup" version="3.2.1" />
+      <import addon="script.module.requests" version="2.9.1" />
+      <import addon="script.module.addon.common" version="2.0.0" />
+      <import addon="script.module.xmltodict" version="0.9.0" />
+      <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+      <import addon="script.module.resolveurl" version="1.2.0" />
+      <import addon="plugin.video.reddit_viewer" version="3.5.0"  />
+    <!--  <import addon="repository.noobsandnerds" version="2.3.2" />-->
+      <import addon="repository.supremacy" version="1.5" />
+      <import addon="repository.jsergio" />
+      <import addon="plugin.video.SportsDevil" version="2017.11.01"  />
+      <import addon="plugin.video.motorreplays" version="2.8" />
+      <import addon="plugin.video.youtube" version="5.4.5x" />
+      <import addon="program.plexus" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Our Own Add-On</summary>
+    <summary lang="he"></summary>
+    <description lang="en">Our Own Add-On</description>
+    <description lang="he"></description>
+    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+    <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+    <platform>all</platform>
+      <website>www.noobsandnerds.com</website>
+      <video_guide>xtOqLY5PJDY</video_guide>
+  </extension>
+</addon>
+
+<addon id="repository.20ap" name="20ap" version="18.05.02" provider-name="Enzo">
+	<extension point="xbmc.addon.repository" name="20ap">
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/nixgates/Incursion/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/nixgates/Incursion/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/nixgates/Incursion/master/repo</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir>
+		    <info compressed="false">http://theunjudged.xyz/Repo/addons.xml</info>
+		    <checksum>http://theunjudged.xyz/Repo/addons.xml.md5</checksum>
+		    <datadir zip="true">http://theunjudged.xyz/Repo/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/teverz/teverz/master/_repo/</datadir>
+		</dir>
+
+		<dir>
+			<info compressed="false">https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml</info>
+			<checksum>https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml.md5</checksum>
+			<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/duncanh52/plugins/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/duncanh52/plugins/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/duncanh52/plugins/master/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">http://Rockodi.com/addons.xml</info>
+			<checksum>http://Rockodi.com/addons.xml.md5</checksum>
+			<datadir zip="true">http://Rockodi.com/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">http://supremacy.org.uk/zip/plugin/addon.xml</info>
+			<checksum>http://supremacy.org.uk/zip/plugin/addons.xml.md5</checksum>
+			<datadir zip="true">http://supremacy.org.uk/zip/plugin/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://bitbucket.org/griffin303/griffin/raw/master/zips/addons.xml</info>
+			<checksum>https://bitbucket.org/griffin303/griffin/raw/master/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://bitbucket.org/griffin303/griffin/raw/master/zips/</datadir>
+			<hashes>false</hashes>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://addoncloud.org/ukturk/install/repo/addons.xml</info>
+			<checksum>https://addoncloud.org/ukturk/install/repo/addons.xml.md5</checksum>
+			<datadir zip="true">https://addoncloud.org/ukturk/install/repo/</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/jdf76/repository/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/jdf76/repository/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/jdf76/repository/master/zips</datadir>
+		</dir>
+		<dir>
+			<info compressed="false">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/zips/</datadir>
+		</dir>
+			<info compressed="false">https://raw.githubusercontent.com/johnstonevo/20ap/zips/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/johnstonevo/zips/master/20ap//zips/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/johnstonevo/20ap/zips/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Our Own Repo</summary>
+		<description lang="en">Repo for our own stuff</description>
+		<genre>comedy,documentary,movies,music,sports,uk</genre>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.f1f" name="f1f" version="18.3.18" provider-name="Enzo">
+  <requires>
+      <import addon="xbmc.python" version="2.19.0" />
+      <import addon="script.module.universalscrapers" version="0.5.5" />
+      <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+      <import addon="script.module.beautifulsoup" version="3.2.1" />
+      <import addon="script.module.requests" version="2.9.1" />
+      <import addon="script.module.addon.common" version="2.0.0" />
+      <import addon="script.module.xmltodict" version="0.9.0" />
+      <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+      <import addon="script.module.liveresolver" version="0.1.43"/>
+      <import addon="script.module.resolveurl" />
+      <import addon="plugin.video.reddit_viewer" version="3.5.0"  />
+      <import addon="repository.supremacy" version="1.5" />
+      <import addon="repository.jsergio" />
+      <import addon="plugin.video.SportsDevil" version="2017.11.01"  />
+      <import addon="plugin.video.motorreplays" version="2.8" />
+      <import addon="plugin.video.youtube" version="5.4.5x" />
+      <import addon="plugin.video.sparkle" />
+      <import addon="program.plexus" />
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">F1F Add-on</summary>
+    <summary lang="he">F1F Add-On</summary>
+    <description lang="en">Our Own Add-On</description>
+    <description lang="he">האחות הקטנה של בוב</description>
+    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+    <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+    <platform>all</platform>
+      <website>www.noobsandnerds.com</website>
+      <video_guide>xtOqLY5PJDY</video_guide>
+  </extension>
+</addon>
+
+<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.76" provider-name="moose">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.addon.common" />
+		<import addon="script.module.requests"  />
+		<import addon="script.module.beautifulsoup4"  />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a little sparkle.</summary>
+		<description lang="en">A small plugin for playing reddit acestreams
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.20apkids" name="20apkids" version="18.3.18" provider-name="midraal">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="0.5.5" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="repository.jsergio" />
+        <import addon="script.module.urlresolver" version="1.2.0" />
+        <import addon="script.module.resolveurl" />
+        <import addon="repository.jsergio" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+      <summary lang="en">Kid's Add-on</summary>
+      <summary lang="he"></summary>
+      <description lang="en"></description>
+      <description lang="he"></description>
+      <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+      <disclaimer lang="he"></disclaimer>
+      <platform>all</platform>
+        <website></website>
+        <video_guide></video_guide>
+    </extension>
+</addon>
+</addons>
