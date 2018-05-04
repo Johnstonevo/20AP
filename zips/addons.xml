@@ -119,7 +119,7 @@
 			<datadir zip="true">https://raw.githubusercontent.com/Goliath-Evolve/repository.Goliath/master/zips/</datadir>
 		</dir>
 			<info compressed="false">https://raw.githubusercontent.com/johnstonevo/20ap/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/johnstonevo/zips/master/20ap//zips/addons.xml.md5</checksum>
+			<checksum>https://raw.githubusercontent.com/johnstonevo/zips/master/20ap/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/johnstonevo/20ap/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
