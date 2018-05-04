@@ -1,0 +1,67 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+        <title>Lethal Weapon</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0093409</imdb>
+                <title>Lethal Weapon</title>
+                <year>1987</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/drp80fBSWhz0vAmzUibXDyn0Pjo.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/w700_and_h392_bestv2/tGZL6LAIpP6442cZPT8ETqekD5c.jpg</fanart>
+</item>
+
+<item>
+        <title>Lethal Weapon 2</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0097733</imdb>
+                <title>Lethal Weapon 2</title>
+                <year>1989</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/7XAusKpFNv8x9sHpFLAS2lWCT8l.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/ppMa7x7kE2IzhDqQANsOatVc1bT.jpg</fanart>
+</item>
+
+<item>
+        <title>Lethal Weapon 3</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0104714</imdb>
+                <title>Lethal Weapon 3</title>
+                <year>1992</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/pr5RcT2TdJ09PkETdhRiwixf8PW.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/pVypnUV7Ft16klfQwk2eC8pArhx.jpg</fanart>
+</item>
+
+<item>
+        <title>Lethal Weapon 4</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0122151</imdb>
+                <title>Lethal Weapon 4</title>
+                <year>1988</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/kpC9Y0jhwTqtRlcetxbgn3crnlU.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/3mJVREd4vcm5u3nTTho18RchsE2.jpg</fanart>
+</item>

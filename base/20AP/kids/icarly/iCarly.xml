@@ -1,0 +1,87 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/z3prU4SrUx3pD1Nq6IuBISIDMfU.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/82493-7.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>iCarly Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0972534</imdb>
+		<tvdb>82493</tvdb>
+		<tvshowtitle>iCarly</tvshowtitle>
+		<year>2007</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/icarly/iCarly%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/82493-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>iCarly Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0972534</imdb>
+		<tvdb>82493</tvdb>
+		<tvshowtitle>iCarly</tvshowtitle>
+		<year>2007</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/icarly/iCarly%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/82493-2-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>iCarly Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0972534</imdb>
+		<tvdb>82493</tvdb>
+		<tvshowtitle>iCarly</tvshowtitle>
+		<year>2007</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/icarly/iCarly%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/82493-3-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>iCarly Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0972534</imdb>
+		<tvdb>82493</tvdb>
+		<tvshowtitle>iCarly</tvshowtitle>
+		<year>2007</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/icarly/iCarly%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/82493-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>iCarly Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0972534</imdb>
+		<tvdb>82493</tvdb>
+		<tvshowtitle>iCarly</tvshowtitle>
+		<year>2007</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/icarly/iCarly%205.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/82493-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>iCarly Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0972534</imdb>
+		<tvdb>82493</tvdb>
+		<tvshowtitle>iCarly</tvshowtitle>
+		<year>2007</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/icarly/iCarly%206.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/82493-6.jpg</thumbnail>
+</dir>

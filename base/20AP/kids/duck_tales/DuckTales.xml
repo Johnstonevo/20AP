@@ -1,0 +1,18 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/2THLokQ6Ce914l4b3rYvvbEPJpz.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/330134-2.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>DuckTales Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt5531466</imdb>
+		<tvdb>330134</tvdb>
+		<tvshowtitle>DuckTales (2017)</tvshowtitle>
+		<year>2017</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/duck_tales/DuckTales%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/330134-1-2.jpg</thumbnail>
+</dir>

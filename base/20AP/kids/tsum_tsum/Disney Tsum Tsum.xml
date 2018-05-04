@@ -1,0 +1,17 @@
+<cache>10800</cache>
+<thumbnail>https://image.tmdb.org/t/p/original/tih97P1tRmRZBAVPXhgiYMvMIUw.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/295940-1.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Disney Tsum Tsum Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>None</imdb>
+		<tvdb>295940</tvdb>
+		<tvshowtitle>Disney Tsum Tsum</tvshowtitle>
+		<year>2014</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/tsum_tsum/Disney%20Tsum%20Tsum%201.xml</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/tih97P1tRmRZBAVPXhgiYMvMIUw.jpg</thumbnail>
+</dir>

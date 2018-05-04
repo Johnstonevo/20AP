@@ -1,0 +1,45 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/dfzbkhKMnkdwiG1AAIJnrc9SDdY.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/283468-19.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Star Wars Rebels Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2930604</imdb>
+		<tvdb>283468</tvdb>
+		<tvshowtitle>Star Wars Rebels</tvshowtitle>
+		<year>2014</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/sw_rebels/Star%20Wars%20Rebels%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/283468-1-6.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Star Wars Rebels Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2930604</imdb>
+		<tvdb>283468</tvdb>
+		<tvshowtitle>Star Wars Rebels</tvshowtitle>
+		<year>2014</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/sw_rebels/Star%20Wars%20Rebels%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/283468-2-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Star Wars Rebels Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2930604</imdb>
+		<tvdb>283468</tvdb>
+		<tvshowtitle>Star Wars Rebels</tvshowtitle>
+		<year>2014</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/sw_rebels/Star%20Wars%20Rebels%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/283468-3.jpg</thumbnail>
+</dir>

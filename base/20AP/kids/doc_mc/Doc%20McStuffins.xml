@@ -1,0 +1,60 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>https://image.tmdb.org/t/p/original/wmYd0QlTARXcnlxisblPYCE2ErR.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/ixEY6ODkOyINiwlJaTHaTLoNtoM.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Doc McStuffins Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1710295</imdb>
+		<tvdb>258111</tvdb>
+		<tvshowtitle>Doc McStuffins</tvshowtitle>
+		<year>2012</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/doc_mc/Doc%2520McStuffins%25201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/_cache/seasons/258111-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Doc McStuffins Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1710295</imdb>
+		<tvdb>258111</tvdb>
+		<tvshowtitle>Doc McStuffins</tvshowtitle>
+		<year>2012</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/doc_mc/Doc%2520McStuffins%25202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/_cache/seasons/258111-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Doc McStuffins Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1710295</imdb>
+		<tvdb>258111</tvdb>
+		<tvshowtitle>Doc McStuffins</tvshowtitle>
+		<year>2012</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/doc_mc/Doc%2520McStuffins%25203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/_cache/seasons/258111-3-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Doc McStuffins Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1710295</imdb>
+		<tvdb>258111</tvdb>
+		<tvshowtitle>Doc McStuffins</tvshowtitle>
+		<year>2012</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/doc_mc/Doc%2520McStuffins%25204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/258111-4.jpg</thumbnail>
+</dir>

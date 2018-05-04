@@ -1,0 +1,46 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>https://image.tmdb.org/t/p/w780/zaZLBPFZnEfUTjBey1tIAP3wALJ.jpg</fanart>
+##########################################################################################
+
+<dir>
+<name>Ballers Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt2891574</imdb>
+<tvdb>281714</tvdb>
+<tvshowtitle>Ballers</tvshowtitle>
+<year>2015</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ballers/Ballers%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/281714-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Ballers Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt2891574</imdb>
+<tvdb>281714</tvdb>
+<tvshowtitle>Ballers</tvshowtitle>
+<year>2015</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ballers/Ballers%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/281714-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Ballers Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2891574</imdb>
+		<tvdb>281714</tvdb>
+		<tvshowtitle>Ballers</tvshowtitle>
+		<year>2015</year>
+		<season>3</season>
+	</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ballers/Ballers%203.xml</link>
+	<thumbnail>None</thumbnail>
+</dir>

@@ -1,0 +1,52 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+        <title>The Expendables</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt1320253</imdb>
+                <title>The Expendables</title>
+                <year>2010</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/y2qJoYxOhzyidsA60Mqn29H38Lk.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/x5u73uBylbyCCnkzUGzt3uozqRp.jpg</fanart>
+</item>
+
+<item>
+        <title>The Expendables 2 Back For War</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt1764651</imdb>
+                <title>The Expendables 2 Back For War</title>
+                <year>2012</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/dJPnTe1qOcO7XqsJvESFph83m6m.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/xCfHomVxzeAmbZlbiZbpp2igIsl.jpg</fanart>
+</item>
+
+<item>
+        <title>The Expendables 3</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt2333784</imdb>
+                <title>The Expendables 3</title>
+                <year>2014</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/xczFwJhcCb2rUMylXam0Ni7Yn5o.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/5ldMfEYNk0fea8QQ0mjyrksIr1M.jpg</fanart>
+</item>

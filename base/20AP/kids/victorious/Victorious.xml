@@ -1,0 +1,59 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/lLFx304R9sgDIqFWSlYsYngvSJF.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/152721-9.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Victorious Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1604099</imdb>
+		<tvdb>152721</tvdb>
+		<tvshowtitle>Victorious</tvshowtitle>
+		<year>2010</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/victorious/Victorious%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152721-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Victorious Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1604099</imdb>
+		<tvdb>152721</tvdb>
+		<tvshowtitle>Victorious</tvshowtitle>
+		<year>2010</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/victorious/Victorious%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152721-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Victorious Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1604099</imdb>
+		<tvdb>152721</tvdb>
+		<tvshowtitle>Victorious</tvshowtitle>
+		<year>2010</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/victorious/Victorious%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152721-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Victorious Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1604099</imdb>
+		<tvdb>152721</tvdb>
+		<tvshowtitle>Victorious</tvshowtitle>
+		<year>2010</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/victorious/Victorious%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152721-4.jpg</thumbnail>
+</dir>

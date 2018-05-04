@@ -1,0 +1,48 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>https://image.tmdb.org/t/p/original/coatU7qvnnd38HZY4u5WLlUWw5s.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/pliuukszqV8gvqjyfJTFqRqVIW5.jpg</fanart>
+###########################################################################################################
+
+
+<dir>
+<name>Ben and Holly's Little Kingdom Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt1436544</imdb>
+<tvdb>136941</tvdb>
+<tvshowtitle>Ben and Holly's Little Kingdom</tvshowtitle>
+<year>2010</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/ben_holly/Ben%2520and%2520Holly%2527s%2520Little%2520Kingdom%25201.xml</link>
+<thumbnail>https://image.tmdb.org/t/p/original/coatU7qvnnd38HZY4u5WLlUWw5s.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Ben and Holly's Little Kingdom Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt1436544</imdb>
+<tvdb>136941</tvdb>
+<tvshowtitle>Ben and Holly's Little Kingdom</tvshowtitle>
+<year>2010</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/ben_holly/Ben%2520and%2520Holly%2527s%2520Little%2520Kingdom%25202.xml</link>
+<thumbnail>https://image.tmdb.org/t/p/original/coatU7qvnnd38HZY4u5WLlUWw5s.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Ben and Holly's Little Kingdom Season 3< /name>
+<meta>
+<content>season</content>
+<imdb>tt1436544</imdb>
+<tvdb>136941</tvdb>
+<tvshowtitle>Ben and Holly's Little Kingdom</tvshowtitle>
+<year>2010</year>
+<season>3</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/ben_holly/Ben%2520and%2520Holly%2527s%2520Little%2520Kingdom%25203.xml</link>
+<thumbnail>https://image.tmdb.org/t/p/original/coatU7qvnnd38HZY4u5WLlUWw5s.jpg</thumbnail>
+</dir>

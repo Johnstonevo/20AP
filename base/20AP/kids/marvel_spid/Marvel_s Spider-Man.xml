@@ -1,0 +1,17 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/ty4elPPA9zifK9yCVMlDq1dS1Y.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/329456-3.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Marvel's Spider-Man Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt6135682</imdb>
+		<tvdb>329456</tvdb>
+		<tvshowtitle>Marvel's Spider-Man</tvshowtitle>
+		<year>2017</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/marval_spid/Marvel_s%20Spider-Man%201.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/w500/ty4elPPA9zifK9yCVMlDq1dS1Y.jpg</thumbnail>
+</dir>

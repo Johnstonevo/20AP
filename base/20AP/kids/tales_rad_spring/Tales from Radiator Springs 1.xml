@@ -1,0 +1,63 @@
+<cache>10800</cache>
+<thumbnail>http://thetvdb.com/banners/seasons/275378-1.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/275378-3.jpg</fanart>
+#######################################################################################################################################
+<item>
+	<title>Tales from Radiator Springs S01E01 - Hiccups</title>
+	<meta>
+		<content>episode</content>
+		<imdb>None</imdb>
+		<tvdb>275378</tvdb>
+		<tvshowtitle>Tales from Radiator Springs</tvshowtitle>
+		<year>2013</year>
+		<title>Hiccups</title>
+		<premiered>2013-03-22</premiered>
+		<season>1</season>
+		<episode>1</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/275378/4714148.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>https://www.youtube.com/watch?v=HIj4KZ-IQFY&list=PLwrjgaif_lN5nVpAe4uQlXKNYO5je08xk&index=1</sublink>
+		<sublink></sublink>
+	</link>
+</item>
+
+<item>
+	<title>Tales from Radiator Springs S01E02 - Bugged</title>
+	<meta>
+		<content>episode</content>
+		<imdb>None</imdb>
+		<tvdb>275378</tvdb>
+		<tvshowtitle>Tales from Radiator Springs</tvshowtitle>
+		<year>2013</year>
+		<title>Bugged</title>
+		<premiered>2013-03-22</premiered>
+		<season>1</season>
+		<episode>2</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/275378/4714149.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>https://www.youtube.com/watch?v=GN8XL26CRF8&list=PLwrjgaif_lN5nVpAe4uQlXKNYO5je08xk&index=3</sublink>
+		<sublink></sublink>
+	</link>
+</item>
+
+<item>
+	<title>Tales from Radiator Springs S01E03 - Spinning</title>
+	<meta>
+		<content>episode</content>
+		<imdb>None</imdb>
+		<tvdb>275378</tvdb>
+		<tvshowtitle>Tales from Radiator Springs</tvshowtitle>
+		<year>2013</year>
+		<title>Spinning</title>
+		<premiered>2013-03-22</premiered>
+		<season>1</season>
+		<episode>3</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/275378/4714150.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>https://www.youtube.com/watch?v=FIL0cIiNusU&list=PLwrjgaif_lN5nVpAe4uQlXKNYO5je08xk&index=2</sublink>
+		<sublink></sublink>
+	</link>
+</item>

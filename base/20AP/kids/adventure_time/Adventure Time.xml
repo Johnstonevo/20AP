@@ -1,0 +1,131 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/80G8BH8SOSW59J6mZka4XVzg7zI.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/152831-3.jpg</fanart>
+###########################################################################################################
+
+<dir>
+	<name>Adventure Time Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-1-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-3-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-4-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%205.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-5-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%206.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-6.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 7</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>7</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%207.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-7.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 8</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>8</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%208.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-8.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Adventure Time Season 9</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1305826</imdb>
+		<tvdb>152831</tvdb>
+		<tvshowtitle>Adventure Time</tvshowtitle>
+		<year>2010</year>
+		<season>9</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/adventure_time/Adventure%20Time%209.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/152831-9.jpg</thumbnail>
+</dir>

@@ -1,0 +1,66 @@
+################################################################################
+<cache>10800</cache>
+<thumbnail>https://www.thetvdb.com/banners/posters/253463-10.jpg</thumbnail>
+<fanart>https://www.thetvdb.com/banners/fanart/original/253463-13.jpg</fanart>
+################################################################################
+
+
+<dir>
+  <name>Black Mirror Season 1</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt2085059</imdb>
+    <tvdb>253463</tvdb>
+    <tvshowtitle>Black Mirror</tvshowtitle>
+    <year>2011</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackmirror/blackmirror1.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Black Mirror Season 2</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt2085059</imdb>
+    <tvdb>253463</tvdb>
+    <tvshowtitle>Black Mirror</tvshowtitle>
+    <year>2011</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackmirror/blackmirror2.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Black Mirror Season 3</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt2085059</imdb>
+    <tvdb>253463</tvdb>
+    <tvshowtitle>Black Mirror</tvshowtitle>
+    <year>2011</year>
+    <season>3</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackmirror/blackmirror3.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Black Mirror Season 4</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt2085059</imdb>
+    <tvdb>253463</tvdb>
+    <tvshowtitle>Black Mirror</tvshowtitle>
+    <year>2011</year>
+    <season>4</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackmirror/blackmirror4.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/253463-4.jpg</thumbnail>
+  <fanart></fanart>
+</dir>

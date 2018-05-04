@@ -1,0 +1,87 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/2eSTFO6PimOGORZrhjlyU2hqeiR.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/250498-16.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>LEGO Star Wars Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/lego_sw/LEGO%20Star%20Wars%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/250498-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>LEGO Star Wars Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/lego_sw/LEGO%20Star%20Wars%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/250498-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>LEGO Star Wars Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/lego_sw/LEGO%20Star%20Wars%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/250498-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>LEGO Star Wars Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/lego_sw/LEGO%20Star%20Wars%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/250498-4-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>LEGO Star Wars Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/lego_sw/LEGO%20Star%20Wars%205.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/250498-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>LEGO Star Wars Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/lego_sw/LEGO%20Star%20Wars%206.xml</link>
+	<thumbnail>None</thumbnail>
+</dir>

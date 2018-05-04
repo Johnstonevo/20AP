@@ -1,0 +1,33 @@
+##########################################################################################
+
+<cache>10800</cache>
+<thumbnail>https://b.thumbs.redditmedia.com/vgvxHC4thj4X4nu_.png</thumbnail>
+<fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
+
+##########################################################################################
+
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow]Full Movies on Google[/COLOR]==--[/COLOR][/B]</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=fullmoviesongoogle&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2ffullmoviesongoogle%2f.json%3f%26limit%3d50</link>
+	<content></content>
+</plugin>
+
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow]Full Movies On Anything[/COLOR]==--[/COLOR][/B]</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=fullmoviesonanything&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2ffullmoviesonanything%2f.json%3f%26limit%3d50</link>
+	<content></content>
+</plugin>
+
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow]Full Movies On Youtube[/COLOR]==--[/COLOR][/B]</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=fullmoviesonyoutube&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2ffullmoviesonyoutube%2f.json%3f%26limit%3d50</link>
+	<content></content>
+</plugin>
+
+
+
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow]Full Movies Online[/COLOR]==--[/COLOR][/B]</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=FullMoviesOnline&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fFullMoviesOnline%2f.json%3f%26limit%3d50</link>
+	<content></content>
+</plugin>

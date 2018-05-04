@@ -1,0 +1,18 @@
+#######################################################################################################################################
+
+<thumbnail>http://image.tmdb.org/t/p/w500/4bRvQNGNpt10avlpiXWOpcpGEUa.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/318990-4.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Tangled: The Series Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4902964</imdb>
+		<tvdb>318990</tvdb>
+		<tvshowtitle>Tangled: The Series</tvshowtitle>
+		<year>2017</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/tangled/Tangled_%20The%20Series%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/318990-1.jpg</thumbnail>
+</dir>

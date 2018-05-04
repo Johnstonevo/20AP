@@ -1,0 +1,34 @@
+#######################################################################################
+<cache>10800</cache>
+<fanart>https://www.thetvdb.com/banners/fanart/original/314473-1.jpg</fanart>
+#######################################################################################
+
+<dir>
+  <name>[B][COLORsnow]Ozzy and Jack's World Detour[/COLOR][/B]</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt5725682</imdb>
+    <tvdb>314473</tvdb>
+    <tvshowtitle>Ozzy and Jack's World Detour</tvshowtitle>
+    <year>2016</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ozzyjack/ozzyjack1.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/314473-1.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>[B][COLORsnow]Ozzy and Jack's World Detour[/COLOR][/B]</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt5725682</imdb>
+    <tvdb>314473</tvdb>
+    <tvshowtitle>Ozzy and Jack's World Detour</tvshowtitle>
+    <year>2016</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ozzyjack/ozzyjack2.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/314473-2.jpg</thumbnail>
+  <fanart></fanart>
+</dir>

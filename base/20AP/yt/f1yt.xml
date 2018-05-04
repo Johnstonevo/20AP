@@ -1,0 +1,113 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/images/gallery-migration/2014-02/14C0084B-C5C3-48C3-89E6-F81194BDD044_0.jpg</fanart>
+##########################################################################################
+
+
+<plugin>
+  <title>Official F1 Channel</title>
+  <link>plugin://plugin.video.youtube/channel/UCB_qr75-ydFVKSF9Dmo6izg/</link>
+  <thumbnail>https://yt3.ggpht.com/-p4tzDhRHziM/AAAAAAAAAAI/AAAAAAAAAAA/BgBf89zrN30/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>The Official F1® YouTube Channel – See more at www.Formula1.com</summary>
+</plugin>
+
+<plugin>
+  <title>Mercedes F1</title>
+  <link>plugin://plugin.video.youtube/channel/UC7_VGkwCoKfqh1eZEkzey3A/</link>
+  <thumbnail>https://yt3.ggpht.com/-n36ASOqiRJg/AAAAAAAAAAI/AAAAAAAAAAA/JwZvuKI3dU4/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Welcome to the official channel of Mercedes-AMG Petronas Motorsport, featuring exclusive videos from the factory, insights from our drivers Lewis Hamilton and Valtteri Bottas and technical features on our cars...</summary>
+</plugin>
+
+<plugin>
+  <title>Red Bull Racing</title>
+  <link>plugin://plugin.video.youtube/channel/UCQIyqMWCdx1GBvbw_Yi6lEA/</link>
+  <thumbnail>https://yt3.ggpht.com/-oSm_HM1YHrw/AAAAAAAAAAI/AAAAAAAAAAA/zyWvHFwFTbA/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>We're passionate about racing, our fans and we love what we do. Subscribe to stay up to date with all the Red Bull Racing action on and off the track.</summary>
+</plugin>
+
+<plugin>
+  <title>Scuderia Ferrari</title>
+  <link>plugin://plugin.video.youtube/channel/UCd8iY-kEHtaB8qt8MH--zGw/</link>
+  <thumbnail>https://yt3.ggpht.com/--AsV9m0CEI0/AAAAAAAAAAI/AAAAAAAAAAA/qk-ZPTRKp-Q/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>The official Ferrari YouTube Channel
+
+Ferrari YouTube channel brings you at the very heart of Ferrari F1 and GT souls.
+Discover all the exclusive contents and share Ferrari official point of view: F1 tests, interviews, focus on new and historical GT cars, curiosities and extra on the most desired Ferrari products.</summary>
+</plugin>
+
+
+<plugin>
+  <title>Force India</title>
+  <link>plugin://plugin.video.youtube/channel/UC8pLH6_Dz4QwKYE-dtcaxeg/</link>
+  <thumbnail>https://yt3.ggpht.com/-GHC-lNaZYRY/AAAAAAAAAAI/AAAAAAAAAAA/Isy2FP3DXFs/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>The official Sahara Force India Formula One Team YouTube channel.</summary>
+</plugin>
+
+<plugin>
+  <title>Williams</title>
+  <link>plugin://plugin.video.youtube/channel/UC4AnEj7Pj9ODVhwojHPqAMA/</link>
+  <thumbnail>https://yt3.ggpht.com/-jIx69FDMo8c/AAAAAAAAAAI/AAAAAAAAAAA/DBBykOEvn-0/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>The official YouTube channel for the Williams F1 Team, with our latest videos from the team and the factory. Any comments containing offensive language will be removed or deleted.</summary>
+</plugin>
+
+<plugin>
+  <title>McLaren</title>
+  <link>plugin://plugin.video.youtube/channel/UC8dxVgZl9u5HeCOXnosCtuQ/</link>
+  <thumbnail>https://yt3.ggpht.com/-b5pf0dIN4sQ/AAAAAAAAAAI/AAAAAAAAAAA/GbB_sO_FPPo/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>The official YouTube page for McLaren Honda.</summary>
+</plugin>
+
+<plugin>
+  <title>Torro Rosso</title>
+  <link>plugin://plugin.video.youtube/channel/UCU56G7ZKkB7xkua6EhMz5dg/</link>
+  <thumbnail>https://yt3.ggpht.com/-ZVtIkEJYvj0/AAAAAAAAAAI/AAAAAAAAAAA/javnx3LPiYc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>This is the Scuderia Toro Rosso's YouTube official channel. Subscribe to follow our action from F1 circuits and Faenza.</summary>
+</plugin>
+
+<plugin>
+  <title>Haas</title>
+  <link>plugin://plugin.video.youtube/channel/UCaGImPpcZdJ_8Iu20lCbHHw/</link>
+  <thumbnail>https://yt3.ggpht.com/-K-iEoTu-lbg/AAAAAAAAAAI/AAAAAAAAAAA/1wmisgZbR90/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Welcome to the official Haas F1 Team YouTube channel. This is the home for any and all news regarding America’s F1 team.</summary>
+</plugin>
+
+<plugin>
+  <title>Renault</title>
+  <link>plugin://plugin.video.youtube/channel/UCi6HwVzHyWckVJo9odSZTlg/</link>
+  <thumbnail>https://yt3.ggpht.com/-AIUGaJAyaVI/AAAAAAAAAAI/AAAAAAAAAAA/UNwwveJs70g/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Official Youtube Channel of Renault Sport, the sport & motorsport division of Renault. #EnterTheZone </summary>
+</plugin>
+
+<plugin>
+  <title>Sauber</title>
+  <link>plugin://plugin.video.youtube/channel/UCl1yq_ZQvqEb_D93OVuIFGw/</link>
+  <thumbnail>https://yt3.ggpht.com/-GKNXvgugAy4/AAAAAAAAAAI/AAAAAAAAAAA/O421MHFjJj0/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>The official YouTube Channel of the Sauber F1 Team
+
+The Sauber F1 Team YouTube channel is known and loved for educational videos about Formula One and exceptional fan engagement. Share your thoughts with us, and we will listen! Comment and share our content and we will interact with you.
+
+Watch F1 races on tv - and get the extra bit on our channel!
+
+RECOMMENDED: check out our FEATURED VIDEOS playlist for some highlights on our channel.
+
+FREE subscription! Why not subscribe right now?!?</summary>
+</plugin>
+
+
+<plugin>
+  <title>Jenson Button TV</title>
+  <link>plugin://plugin.video.youtube/channel/UCGtJj8UniK0cwSsQXvqGo9A/</link>
+  <thumbnail>https://yt3.ggpht.com/-YV__WHm2n9M/AAAAAAAAAAI/AAAAAAAAAAA/4rN3c3-KxN8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Since my retirement from F1, I'm now entering into a new chapter of my life and excited to share it with you.  Follow my journey through 2018 where I will be racing for Honda in the Japanese Super GT Championship.  Come behind the scenes with me where I will be personally sharing my adventures with you both on and off the track.
+  </summary>
+</plugin>
+
+<plugin>
+  <name>Chain Bear F1</name>
+  <link>plugin://plugin.video.youtube/channel/UC7u-Dg0jb7g9s7XjmtJrtpg/</link>
+  <thumbnail>https://yt3.ggpht.com/-yrDVUzbcdfQ/AAAAAAAAAAI/AAAAAAAAAAA/S_hRODrVejw/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Video explanations of all things F1 for the layman, fan and expert alike - bringing the science, regulations and technical gubbins of F1 terms to the masses without the jargon and confusion!
+
+All videos have full, accurate English subtitles.
+</summary>
+</plugin>

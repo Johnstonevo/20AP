@@ -1,0 +1,67 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+        <title>Mad Max</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0079501</imdb>
+                <title>Mad Max</title>
+                <year>1979</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/hCPXcQn1FTYF9AUCPd6o3miM9WX.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/yaps1kzbHVxTpCmuMgWm8zaTdnN.jpg</fanart>
+</item>
+
+<item>
+        <title>Mad Max 2: The Road Warrior</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0082694</imdb>
+                <title>Mad Max 2: The Road W</title>
+                <year>1981</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/voNuYkvQgDSqijCDllEaRntq7ln.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/etybioibi04QJK9xxn3Rv5NLuKs.jpg</fanart>
+</item>
+
+<item>
+        <title>Mad Max Beyond Thunderdome</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0089530</imdb>
+                <title>Mad Max Beyond Thunderdome</title>
+                <year>1985</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/9ciqnBU2YlMtMrqNwRzhmaMeL9l.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/r3MhvwPC8zFBAv8HL5WBtl3F8cn.jpg</fanart>
+</item>
+
+<item>
+        <title>Mad Max: Fury Road</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt1392190</imdb>
+                <title>Mad Max: Fury Road</title>
+                <year>2015</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/kqjL17yufvn9OVLyXYpvtyrFfak.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/tbhdm8UJAb4ViCTsulYFL3lxMCd.jpg</fanart>
+</item>

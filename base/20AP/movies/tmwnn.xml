@@ -1,0 +1,54 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+        <title>A Fistful of Dollars</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0058461</imdb>
+                <title>A Fistful of Dollars</title>
+                <year>1964</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/sFLgxvtK9vxbNq502peVJ847Owp.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/tMb3a2VZnJmmXXE40zxoqjEiEpd.jpg</fanart>
+</item>
+
+
+<item>
+        <title>For a Few Dollars More</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0059578</imdb>
+                <title>For a Few Dollars More</title>
+                <year>1965</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/o4y1dlqXFETChi1QW2TspfrCJ8e.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/5OLI0BdDSdkTVDhC2AOsxiubZEO.jpg</fanart>
+</item>
+
+
+<item>
+        <title>The Good, the Bad and the Ugly</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0060196</imdb>
+                <title>The Good, the Bad and the Ugly</title>
+                <year>1966</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/wfPHdfofBD5PN96dV96a51B3Ja2.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/pblXGyC22SFm9NCriUhsLQMnViH.jpg</fanart>
+</item>

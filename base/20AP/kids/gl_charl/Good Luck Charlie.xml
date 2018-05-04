@@ -1,0 +1,60 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/9i4FZYcYhe8olZZMUtYNCzZBJcq.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/154341-6.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Good Luck Charlie Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1415889</imdb>
+		<tvdb>154341</tvdb>
+		<tvshowtitle>Good Luck Charlie</tvshowtitle>
+		<year>2010</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gl_charl/Good%20Luck%20Charlie%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/154341-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Good Luck Charlie Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1415889</imdb>
+		<tvdb>154341</tvdb>
+		<tvshowtitle>Good Luck Charlie</tvshowtitle>
+		<year>2010</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gl_charl/Good%20Luck%20Charlie%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/154341-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Good Luck Charlie Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1415889</imdb>
+		<tvdb>154341</tvdb>
+		<tvshowtitle>Good Luck Charlie</tvshowtitle>
+		<year>2010</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gl_charl/Good%20Luck%20Charlie%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/154341-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Good Luck Charlie Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1415889</imdb>
+		<tvdb>154341</tvdb>
+		<tvshowtitle>Good Luck Charlie</tvshowtitle>
+		<year>2010</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gl_charl/Good%20Luck%20Charlie%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/154341-4.jpg</thumbnail>
+</dir>

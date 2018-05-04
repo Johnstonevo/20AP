@@ -1,0 +1,17 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/gtHTWJWXDdnEGLoNYWTpez0cbkH.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/267564-3.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Sam & Cat Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2487090</imdb>
+		<tvdb>267564</tvdb>
+		<tvshowtitle>Sam & Cat</tvshowtitle>
+		<year>2013</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/sam_cat/Sam%20%26%20Cat%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/267564-1.jpg</thumbnail>
+</dir>

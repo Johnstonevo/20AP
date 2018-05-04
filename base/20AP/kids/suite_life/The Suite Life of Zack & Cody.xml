@@ -1,0 +1,45 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/sOdYm8RohS4T4BnmKWeCbguFHXY.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/79316-5.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>The Suite Life of Zack & Cody Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0426371</imdb>
+		<tvdb>79316</tvdb>
+		<tvshowtitle>The Suite Life of Zack & Cody</tvshowtitle>
+		<year>2005</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/suite_life/The%20Suite%20Life%20of%20Zack%20%26%20Cody%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/28842-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>The Suite Life of Zack & Cody Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0426371</imdb>
+		<tvdb>79316</tvdb>
+		<tvshowtitle>The Suite Life of Zack & Cody</tvshowtitle>
+		<year>2005</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/suite_life/The%20Suite%20Life%20of%20Zack%20%26%20Cody%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/28842-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>The Suite Life of Zack & Cody Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0426371</imdb>
+		<tvdb>79316</tvdb>
+		<tvshowtitle>The Suite Life of Zack & Cody</tvshowtitle>
+		<year>2005</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/suite_life/The%20Suite%20Life%20of%20Zack%20%26%20Cody%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/79316-3.jpg</thumbnail>
+</dir>

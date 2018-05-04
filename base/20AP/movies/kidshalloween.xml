@@ -1,0 +1,358 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+        <title>It's the Great Pumpkin, Charlie Brown</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0060550</imdb>
+                <title>It's the Great Pumpkin, Charlie Brown</title>
+                <year>1966</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/9QdnfxTDKUSW1t23sKSQjPNs0iD.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/z3PrZXBpuTAg0xLFqhmjguxsWLJ.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Monsters, Inc</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0198781</imdb>
+                <title>Monsters, Inc</title>
+                <year>2001</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/93Y9BGx8blzmZOPSoivkFfaifqU.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/eKBUYeSgGVvztO2MZxD5YMcz6kv.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>The Adventures of Ichabod and Mr. Toad</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0041094</imdb>
+                <title>The Adventures of Ichabod and Mr. Toad</title>
+                <year>1949</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/hpkIGbFZZCHJMpQCVXBVH9bTlZ1.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/fi07BlzQ3HIG8GGljhwtFYjdf9N.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Little Nemo: Adventures in Slumberland</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0104740</imdb>
+                <title>Little Nemo: Adventures in Slumberland</title>
+                <year>1989</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/5xpk0WQPNnDEjgipqCSmA4Jt7a.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/dMmW0w8zgscHh1OluMYYjB7qV7E.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Jason and the Argonauts</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0057197</imdb>
+                <title>Jason and the Argonauts</title>
+                <year>1963</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/cxcsBwMvrSdUDjx527YWwhZYRZX.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/8stDsK4qpm4YDv9nVd3dD6j6QRI.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Casper</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0112642</imdb>
+                <title>Casper</title>
+                <year>1995</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/cpMbvFDD2C21pqMNXVPhSWGQBR9.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/ov0ZrirIgvrm97oqhcRxVyjnLbT.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>E.T.</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0083866</imdb>
+                <title>E.T.</title>
+                <year>1982</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/8htLKK03TJjKZOXJgihZCu8v0P.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/kAItezzEH5vtA9ZdnmKaxDj8byK.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>The Nightmare Before Christmas</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0107688</imdb>
+                <title>The Nightmare Before Christmas</title>
+                <year>1993</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/6oxkO1VgKCq74fNILKAg6t2dVEt.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/8MzrNA4WMwgKnGzOzqFZpa9gEhm.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>The Dark Crystal</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0083791</imdb>
+                <title>The Dark Crystal</title>
+                <year>1982</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/enCcF48dvT16O2ixGRslU4mPjO7.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/bwyifreTEr2kVKMUWalMjXHN3Pv.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>The Witches</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0100944</imdb>
+                <title>The Witches</title>
+                <year>1990</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/kke639pfyxMNy8LekWSBVHbljeO.jpg</thumbnail>
+        <fanart></fanart>
+</item>
+
+<item>
+	<title>The NeverEnding Story (1984)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/xnOK0p3PHwLw6C5tEkYY8xJR8zK.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/sG3Du3Ha6rGeSzFfXme1nh8S2Jl.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The NeverEnding Story</title>
+		<year>1984</year>
+		<imdb>tt0088323</imdb>
+	</meta>
+</item>
+
+<item>
+        <title>Batman: Mask of the Phantasm</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0106364</imdb>
+                <title>Batman: Mask of the Phantasm</title>
+                <year>1993</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/l4jaQjkgznu2Rz05X18f24UjPNW.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/jTwt4fcYADv758PVP6DH8ryy4R.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Scooby-Doo</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0267913</imdb>
+                <title>Scooby-Doo</title>
+                <year>2002</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/jnhGTpAdwqxicXIzrAK4QLInQgl.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/pWCWxPiyy8vW6wPsKVruad9fV9Z.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Monster House</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0385880</imdb>
+                <title>Monster House</title>
+                <year>2006</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/vOhKyKxlmtRwRHqKGV2VrFhJjCG.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/xCPq0OXDs7LyFTzOCxanjkyr36l.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>MirrorMask</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0366780</imdb>
+                <title>MirrorMask</title>
+                <year>2005</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/itIJU3NKbdgScA1WPIxXzOlm0Uj.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/bWNvfwp6UM5aVVn74sSI5xcENt7.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Coraline</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0327597</imdb>
+                <title>Coraline</title>
+                <year>2009</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/ybOmHUVVXcwBQErjw7tmeE97fpO.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/obBsMjC9dkDeoYsLxHURikW87UZ.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Beetlejuice</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0094721</imdb>
+                <title>Beetlejuice</title>
+                <year>1988</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/gWnW7vxm8yr01TVLQhL4aI02orp.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/upAwc1kPQJU1ZWeMgEWV8Lp6CWb.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Spirited Away</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0245429</imdb>
+                <title>Spirited Away</title>
+                <year>2001</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/mnpRKVSXBX6jb56nabvmGKA0Wig.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Hocus Pocus</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0107120</imdb>
+                <title>Hocus Pocus</title>
+                <year>1993</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/4boIuVTbEYv9pynSj99jK5EezfA.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/tFNHw6u2UQ3jW1xuciD0mQmcLZn.jpg</fanart>
+</item>
+
+
+
+<item>
+        <title>Raiders of the Lost Ark</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0082971</imdb>
+                <title>Raiders of the Lost Ark</title>
+                <year>1981</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/44sKJOGP3fTm4QXBcIuqu0RkdP7.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/dU1CArBM4YsKLfG8YvhtuTJJaGR.jpg</fanart>
+</item>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8">
+
+<plugin>
+<title>Little Kids Rock™ - Start to Rock</title>
+<link>plugin://plugin.video.youtube/https://www.youtube.com/playlist?list=PLD8A86B3D6EAAABA0</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>
+
+
+
+<plugin>
+<title>Free Guitar Lessons from Little Kids Rock</title>
+<link>plugin://plugin.video.youtube/https://www.youtube.com/playlist?list=PLzUvS3bXZM6iLZm3FLOpRl-UtTG4rpQ4Q</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>
+
+<plugin>
+<title>LickNRiff - Free Guitar Education</title>
+<link>plugin://plugin.video.youtube/channel/UC_tejXLLDBrLyZFk2cZrhHw/</link> 
+<thumbnail>https://yt3.ggpht.com/-PPPFC94Nado/AAAAAAAAAAI/AAAAAAAAAAA/hI1oBSM4Cag/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart></fanart>
+</plugin>

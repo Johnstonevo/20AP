@@ -1,0 +1,451 @@
+#################################################################################
+<fanart>https://cdn.wallpapersafari.com/85/4/eWYZyp.jpg</fanart>
+<thumbnail>https://cdn4.iconfinder.com/data/icons/retro-tv/100/vintage_tv8_fixed-512.png</thumbnail>
+
+#################################################################################
+
+<dir>
+	<title>Angel</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0162065</imdb>
+		<tvdb>71035</tvdb>
+		<tvshowtitle>Angel</tvshowtitle>
+		<year>1999</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/angel/Angel.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/71035-1.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/71035-6.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Baby Daddy</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt2177489</imdb>
+		<tvdb>258602</tvdb>
+		<tvshowtitle>Baby Daddy</tvshowtitle>
+		<year>2012</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/baby_daddy/babydaddy.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/seasons/258602-1-2.jpg</thumbnail>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/258602-1.jpg</fanart>
+</dir>
+
+<dir>
+	<title>Big Giant Swords</title>
+	<meta>
+		<content>season</content>
+		<imdb>tt4354996</imdb>
+		<tvdb>290458</tvdb>
+		<tvshowtitle>Big Giant Swords</tvshowtitle>
+		<year>2015</year>
+		<season>1</season>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/big_swords/swords.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/_cache/posters/290458-1.jpg</thumbnail>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/290458-1.jpg</fanart>
+</dir>
+
+<dir>
+	<title>Billy Connolly Shows</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb></imdb>
+		<tvdb></tvdb>
+		<tvshowtitle>Billy Connolly Shows</tvshowtitle>
+		<year></year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/billy/billy.xml</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/7e1rVdJah2r0DaMpovrhbR2dHPS.jpg</thumbnail>
+	<fanart>http://cdn.playbuzz.com/cdn/4d853d83-1f87-4525-b51b-9e66e39fa07d/14167688-1b36-492e-879a-7848abd5e595.jpg</fanart>
+	<summary>William "Billy" Connolly, Jr., CBE (born 24 November 1942) is a Scottish comedian, musician, presenter and actor. He is sometimes known, especially in his native Scotland, by the nickname The Big Yin (The Big One).His first trade, in the early 1960s, was as a welder (specifically a boilermaker) in the Glasgow shipyards, but he gave it up towards the end of the decade to pursue a career as a folk singer in the Humblebums and subsequently as a soloist. In the early 1970s he made the transition from folk-singer with a comedic persona to fully-fledged comedian, a role in which he continues. He also became an actor, and has appeared in such films as Indecent Proposal (1993); Mrs. Brown (1997), for which he was nominated for a BAFTA; The Boondock Saints (1999); The Man Who Sued God (2001); Water (1985);The Last Samurai (2003); Timeline (2003); Lemony Snicket's A Series of Unfortunate Events (2004); Garfield: A Tail of Two Kitties (2006); and The X-Files: I Want to Believe (2008). Connolly reprised his role as Noah "Il Duce" MacManus in Boondock Saints II: All Saints Day. Connolly appears as the King of Lilliput in the 2010 remake of Gulliver′s Travels.
+	</summary>
+</dir>
+
+
+<dir>
+	<title>Bones</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0460627</imdb>
+		<tvdb>75682</tvdb>
+		<tvshowtitle>Bones</tvshowtitle>
+		<year>2005</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/bones/Bones.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/75682-40.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/75682-91.jpg</fanart>
+</dir>
+
+<dir>
+	<title>Buffy the Vampire Slayer</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0118276</imdb>
+		<tvdb>70327</tvdb>
+		<tvshowtitle>Buffy the Vampire Slayer</tvshowtitle>
+		<year>1997</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/buffy/Buffy%20the%20Vampire%20Slayer.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/70327-13.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/70327-25.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Constantine</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt3489184</imdb>
+		<tvdb>273690</tvdb>
+		<tvshowtitle>Constantine</tvshowtitle>
+		<year>2014</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/constantine/Constantine.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/273690-2.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/273690-8.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Dawson's Creek</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0118300</imdb>
+		<tvdb>72584</tvdb>
+		<tvshowtitle>Dawson's Creek</tvshowtitle>
+		<year>1999</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/dawsons_creek/Dawson_s%20Creek.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/72584-8.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/72584-6.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Deadwood</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0348914</imdb>
+		<tvdb>72023</tvdb>
+		<tvshowtitle>Deadwood</tvshowtitle>
+		<year>2004</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/deadwood/Deadwood.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/w500/M8HjXeXQy4Ta4MOrCmMHLr8pBl.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/72023-16.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Dexter</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0773262</imdb>
+		<tvdb>79349</tvdb>
+		<tvshowtitle>Dexter</tvshowtitle>
+		<year>2006</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/dexter/Dexter.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/79349-20.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/79349-56.jpg</fanart>
+</dir>
+
+
+
+<dir>
+	<title>The Fall</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt2294189</imdb>
+		<tvdb>258107</tvdb>
+		<tvshowtitle>The Fall</tvshowtitle>
+		<year>2013</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/the_fall/TheFall.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/w500/fQpOvnppNdwbzs5Qxus8xsIOVwD.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/258107-14.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Fat N' Furious: Rolling Thunder</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt3803630</imdb>
+		<tvdb>283073</tvdb>
+	<tvshowtitle>Fat N' Furious: Rolling Thunder</tvshowtitle>
+		<year>2014</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/fatfurious/fatfurious.xml</link>
+	<Fanart>https://www.thetvdb.com/banners/fanart/original/283073-1.jpg</fanart>
+	<thumbnail>https://www.thetvdb.com/banners/seasons/283073-1.jpg</thumbnail>
+</dir>
+
+
+
+<dir>
+	<title>Firefly</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0303461</imdb>
+		<tvdb>78874</tvdb>
+		<tvshowtitle>Firefly</tvshowtitle>
+		<year>2002</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/firefly/Firefly.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/78874-2.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/78874-15.jpg</fanart>
+</dir>
+
+<dir>
+	<title>Gilmore Girls</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/gilmore_girls/Gilmore%20Girls.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/76568-9.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/76568-3.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Grimm</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt1830617</imdb>
+		<tvdb>248736</tvdb>
+		<tvshowtitle>Grimm</tvshowtitle>
+		<year>2011</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/grimm/Grimm.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/248736-1.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/248736-25.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Gunpowder</title>
+  <meta>
+    <content>season</content>
+		<imdb>tt6128262</imdb>
+    <tvdb>334069</tvdb>
+		<tvshowtitle>Gunpowder</tvshowtitle>
+    <year>2017</year>
+    <season>1</season>
+  </meta>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/gunpowder.xml</link>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/334069-3.jpg</fanart>
+	<thumbnail>https://www.thetvdb.com/banners/posters/334069-5.jpg</thumbnail>
+</dir>
+
+
+<dir>
+	<title>Hannibal</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt2243973</imdb>
+		<tvdb>259063</tvdb>
+		<tvshowtitle>Hannibal</tvshowtitle>
+		<year>2013</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/hannibal/Hannibal.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/259063-13.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/259063-18.jpg</fanart>
+</dir>
+
+<dir>
+	<title>Highlander The TV Series</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0103442</imdb>
+		<tvdb>75160</tvdb>
+		<tvshowtitle>Highlander The TV Series</tvshowtitle>
+		<year>1992</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/highlander/highlanderseries.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/posters/75160-2.jpg</thumbnail>
+	<animated_fanart></animated_fanart>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/75160-10.jpg</fanart>
+</dir>
+<dir>
+	<title>Highlander The Raven</title>
+	<meta>
+		<content>season</content>
+		<imdb>tt0144714</imdb>
+		<tvdb>75021</tvdb>
+		<tvshowtitle>Highlander The Raven</tvshowtitle>
+		<year>1998</year>
+		<season>1</season>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/highlander/highlanderraven.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/posters/75021-1.jpg</thumbnail>
+	<animated_fanart></animated_fanart>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/75021-1.jpg</fanart>
+</dir>
+<dir>
+	<title>Highlander: The Animated Series</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0147773</imdb>
+		<tvdb>70437</tvdb>
+		<tvshowtitle>Highlander: The Animated Series</tvshowtitle>
+		<year>1994</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/highlander/highlandertoon.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/_cache/posters/70437-2.jpg</thumbnail>
+	<animated_fanart></animated_fanart>
+	<fanart>https://www.thetvdb.com/banners/_cache/fanart/original/70437-1.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>House</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0412142</imdb>
+		<tvdb>73255</tvdb>
+		<tvshowtitle>House</tvshowtitle>
+		<year>2004</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/house/House.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/w500/lxSzRZ49NXwsiyHuvMsd19QxduC.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/73255-33.jpg</fanart>
+</dir>
+
+
+
+<dir>
+	<title>Life on Mars</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0478942</imdb>
+		<tvdb>79177</tvdb>
+		<tvshowtitle>Life on Mars UK</tvshowtitle>
+		<year>2006</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/life_on_mars/Life%20on%20Mars.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/w500/n2pJxiq74y19ghE7FXeYyDXh90y.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/79177-2.jpg</fanart>
+</dir>
+
+
+
+<dir>
+	<title>Moone Boy</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt2319283</imdb>
+    <tvdb>260871</tvdb>
+		<tvshowtitle>Moone Boy</tvshowtitle>
+		<year>2012</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/moone/moone.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/posters/260871-6.jpg</thumbnail>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/260871-6.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Ripper Street</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt2183641</imdb>
+		<tvdb>260485</tvdb>
+		<tvshowtitle>Ripper Street</tvshowtitle>
+		<year>2012</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ripper_street/Ripper%20Street.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/w500/jakLMWAcujnUp3WUH9RujeGuZvd.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/260485-10.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Salem</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt2963254</imdb>
+		<tvdb>274897</tvdb>
+		<tvshowtitle>Salem</tvshowtitle>
+		<year>2014</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/salem/Salem.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/274897-19.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/274897-11.jpg</fanart>
+</dir>
+
+
+<dir>
+	<title>Soldier Soldier</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/soldiersoldier/SoldierSoldier.xml</link>
+	<thumbnail>http://image.tmdb.org/t/p/original/y6pjWPZ8H4f9WxLdSvjykjBVgRx.jpg</thumbnail>
+</dir>
+
+<dir>
+	<title>Sons of Anarchy</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt0286486</imdb>
+		<tvdb>82696</tvdb>
+		<tvshowtitle>Sons of Anarchy</tvshowtitle>
+		<year>2008</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/sons_of_anarchy/Sons%20of%20Anarchy.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/82696-1.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/82696-66.jpg</fanart>
+</dir>
+
+<dir>
+	<title>Warehouse 13</title>
+	<meta>
+		<content>tvshow</content>
+		<imdb>tt1132290</imdb>
+		<tvdb>84676</tvdb>
+		<tvshowtitle>Warehouse 13</tvshowtitle>
+		<year>2009</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/warehouse13/Warehouse%2013.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/84676-10.jpg</thumbnail>
+	<fanart>http://thetvdb.com/banners/fanart/original/84676-3.jpg</fanart>
+</dir>
+
+<dir>
+	<title>The Wonder Years</title>
+	<meta>
+		<content>tvshow</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+		<tvshowtitle>The Wonder Years</tvshowtitle>
+		<year>1988</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/twl/twl.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/posters/72888-6.jpg</thumbnail>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/72888-9.jpg</fanart>
+</dir>
+
+<dir>
+	<title>The Young Ones</title>
+	<meta>
+		<content>tvshow</content>
+    <imdb>tt0083505</imdb>
+    <tvdb>76318</tvdb>
+		<tvshowtitle>The Young Ones</tvshowtitle>
+		<year>1982</year>
+	</meta>
+	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/tyo/tyo.xml.xml</link>
+	<thumbnail>https://www.thetvdb.com/banners/seasons/3911-1.jpg</thumbnail>
+	<fanart>https://www.thetvdb.com/banners/fanart/original/76318-2.jpg</fanart>
+</dir>

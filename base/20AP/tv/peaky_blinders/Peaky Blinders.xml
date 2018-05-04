@@ -1,0 +1,60 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>http://thetvdb.com/banners/fanart/original/270915-10.jpg</fanart>
+##########################################################################################
+<dir>
+<title>Peaky Blinders Season 1</title>
+<meta>
+<content>season</content>
+<imdb>tt2442560</imdb>
+<tvdb>270915</tvdb>
+<tvshowtitle>Peaky Blinders</tvshowtitle>
+<year>2013</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/peaky_blinders/Peaky%20Blinders%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/270915-1-5.jpg</thumbnail>
+</dir>
+
+<dir>
+<title>Peaky Blinders Season 2</title>
+<meta>
+<content>season</content>
+<imdb>tt2442560</imdb>
+<tvdb>270915</tvdb>
+<tvshowtitle>Peaky Blinders</tvshowtitle>
+<year>2013</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/peaky_blinders/Peaky%20Blinders%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/270915-2-3.jpg</thumbnail>
+</dir>
+
+<dir>
+<title>Peaky Blinders Season 3</title>
+<meta>
+<content>season</content>
+<imdb>tt2442560</imdb>
+<tvdb>270915</tvdb>
+<tvshowtitle>Peaky Blinders</tvshowtitle>
+<year>2013</year>
+<season>3</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/peaky_blinders/Peaky%20Blinders%203.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/270915-3.jpg</thumbnail>
+</dir>
+
+<dir>
+<title>Peaky Blinders Season 3</title>
+<meta>
+<content>season</content>
+<imdb>tt2442560</imdb>
+<tvdb>270915</tvdb>
+<tvshowtitle>Peaky Blinders</tvshowtitle>
+<year>2013</year>
+<season>4</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/peaky_blinders/Peaky%20Blinders%204.xml</link>
+<thumbnail>https://www.thetvdb.com/banners/seasons/270915-4-2.jpg</thumbnail>
+</dir>

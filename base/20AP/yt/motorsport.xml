@@ -1,0 +1,118 @@
+#################################################################################
+<cache>10800</cache>
+<fanart>https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/images/gallery-migration/2014-02/14C0084B-C5C3-48C3-89E6-F81194BDD044_0.jpg</fanart>
+<thumbnail></thumbnail>
+  <summary></summary>
+#################################################################################
+
+
+<plugin>
+  <title>FIA</title>
+  <link>plugin://plugin.video.youtube/channel/UCFSkxZVj6ki9RrWC8ZcCPrQ/</link>
+  <thumbnail>https://yt3.ggpht.com/-2CJusmK3LZs/AAAAAAAAAAI/AAAAAAAAAAA/gVPI11BtlS8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>The FIA Official Channel on YouTube</summary>
+</plugin>
+
+
+<dir>
+  <name>Formula One Channels</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/yt/f1yt.xml</link>
+  <thumbnail>https://pbs.twimg.com/profile_images/935100842008547330/Jbk9p-TM.jpg</thumbnail>
+  <fanart>https://www.topgear.com/sites/default/files/styles/16x9_1280w/public/images/gallery-migration/2014-02/14C0084B-C5C3-48C3-89E6-F81194BDD044_0.jpg</fanart>
+  <summary>Formula One based Youtube Channels</summary>
+</dir>
+
+
+<plugin>
+  <title>FIA Formula 2</title>
+  <link>plugin://plugin.video.youtube/channel/UC7QZDsx977L7na-8yfAeuDQ/</link>
+  <thumbnail>https://yt3.ggpht.com/-QO2ldvKaJ-c/AAAAAAAAAAI/AAAAAAAAAAA/ZdF4EJCbsCQ/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary></summary>
+</plugin>
+
+<plugin>
+  <title>FIA Formula 3 European Championship</title>
+  <link>plugin://plugin.video.youtube/channel/UCfAxcQdW6mxRiZY-EjH4Axw/</link>
+  <thumbnail>https://yt3.ggpht.com/-g7AbmNrpI34/AAAAAAAAAAI/AAAAAAAAAAA/62KDdkQlpoQ/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary></summary>
+</plugin>
+
+
+<plugin>
+  <title>Offical Indy Car Youtube Channel</title>
+  <link>plugin://plugin.video.youtube/channel//UCy1F61QvUUQXAXi2Voa_fUw</link>
+  <thumbnail>https://yt3.ggpht.com/-CWXwc53cELY/AAAAAAAAAAI/AAAAAAAAAAA/k_mm6XIanrM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+</plugin>
+
+<plugin>
+  <title>Official NASCAR Youtube Channel</title>
+  <link>plugin://plugin.video.youtube/channel/UCuN9hYw2RpoAW8rZ3VK3isA/</link>
+  <thumbnail>https://yt3.ggpht.com/-mNHVvNGrAws/AAAAAAAAAAI/AAAAAAAAAAA/AMZcgnuhJBg/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Welcome to the official NASCAR YouTube Channel.
+
+Watch highlights, news and interviews.  Visit NASCAR.COM for even more.
+</summary>
+</plugin>
+
+
+<plugin>
+  <title>ABB Formula E</title>
+  <link>plugin://plugin.video.youtube/channel/UC-DuRqsBQOEk_5o1q4Ze-Fg/</link>
+  <thumbnail>https://yt3.ggpht.com/-7O0caVyU6gU/AAAAAAAAAAI/AAAAAAAAAAA/zCHv0qSUzhY/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summaryThe official YouTube channel for the FIA Formula E Championship.
+
+Formula E is the FIA motorsport championship featuring single-seater cars powered exclusively by electric energy and representing a vision for the future of the motor industry.></summary>
+</plugin>
+
+
+<plugin>
+  <title>FIAWEC</title>
+  <link>plugin://plugin.video.youtube/channel/UCHvBHWBzzB7NyU5tIiEZHBg/</link>
+  <thumbnail>https://yt3.ggpht.com/-QgkiTFQer9c/AAAAAAAAAAI/AAAAAAAAAAA/tKf9Vh0YnbA/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>The official Youtube channel of the FIA World Endurance Championship.</summary>
+</plugin>
+
+
+<plugin>
+  <title>FIA World Rally Championship</title>
+  <link>plugin://plugin.video.youtube/channel/UC5G6kTnHXDz0WIBC2VGBOqg/</link>
+  <thumbnail>https://yt3.ggpht.com/-WJ7bIzNJEtQ/AAAAAAAAAAI/AAAAAAAAAAA/9bqbR6HUD3E/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary></summary>
+</plugin>
+
+
+<plugin>
+  <title>The RACER Channel</title>
+  <link>plugin://plugin.video.youtube/channel/UCg1o8Hezzo9Mx7ATxCyu__w/</link>
+  <thumbnail>https://yt3.ggpht.com/-oiidvX-nuw8/AAAAAAAAAAI/AAAAAAAAAAA/X35257k6AIo/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>The RACER Channel is the official video channel of RACER Magazine and RACER.com. RACER's top team of international auto racing journalists cover IndyCar, Formula 1, NASCAR, sports car racing and more. Subscribe to The RACER Channel and visit RACER.com every day for the latest motor sports news and analysis.
+</summary>
+</plugin>
+
+<plugin>
+  <title>Jenson Button TV</title>
+  <link>plugin://plugin.video.youtube/channel/UCGtJj8UniK0cwSsQXvqGo9A/</link>
+  <thumbnail>https://yt3.ggpht.com/-YV__WHm2n9M/AAAAAAAAAAI/AAAAAAAAAAA/4rN3c3-KxN8/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Since my retirement from F1, I'm now entering into a new chapter of my life and excited to share it with you.  Follow my journey through 2018 where I will be racing for Honda in the Japanese Super GT Championship.  Come behind the scenes with me where I will be personally sharing my adventures with you both on and off the track.
+  </summary>
+</plugin>
+
+
+
+<plugin>
+  <title>Motor Trend Channel</title>
+  <link>plugin://plugin.video.youtube/channel/UCsAegdhiYLEoaFGuJFVrqFQ/</link>
+  <thumbnail>https://yt3.ggpht.com/-K-cVNW0boRs/AAAAAAAAAAI/AAAAAAAAAAA/Jg9oUhvZgjM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Get your automotive adrenaline charge right here on the Motor Trend channel. From first drives and tests of the hottest new supercars and classic muscle cars to the latest automotive news from around the world, to the incredible machinery and personalities from beyond the automotive mainstream, the Motor Trend channel has it all, delivered daily.  The Motor Trend channel. Drive it. Race It. Live it.
+
+For more premium video content, visit MotorTrendOnDemand.com
+</summary>
+</plugin>
+
+
+<plugin>
+  <title>Bad Obsession Motorsport</title>
+  <link>plugin://plugin.video.youtube/channel/UCHvBHWBzzB7NyU5tIiEZHBg/</link>
+  <thumbnail>https://yt3.ggpht.com/-0GTzB3ybVEE/AAAAAAAAAAI/AAAAAAAAAAA/p59dJG8pWY4/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>This is the place for all the lunacy and crazy ideas from Bad Obsession Motorsport. We're a leading race and rally car preparation company specializing in projects that are just a little bit mad. Well, maybe a lot mad but you get the point. Follow our adventures with Project Binky, the quest to create a 2 litre, turbocharged, 4WD Austin Mini. Also, check out the in-car rally footage from our time in the 205 Challenge.</summary>
+</plugin>

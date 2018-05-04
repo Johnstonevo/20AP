@@ -1,0 +1,60 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/8hj0mrk8zw6wtTQdD69PlTopY3k.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/75931-5.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>DuckTales Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0092345</imdb>
+		<tvdb>75931</tvdb>
+		<tvshowtitle>Duck Tales</tvshowtitle>
+		<year>1987</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/duck_tales/DT01.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/75931-1-8.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>DuckTales Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0092345</imdb>
+		<tvdb>75931</tvdb>
+		<tvshowtitle>Duck Tales</tvshowtitle>
+		<year>1987</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/duck_tales/DT02.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/75931-2-6.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>DuckTales Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0092345</imdb>
+		<tvdb>75931</tvdb>
+		<tvshowtitle>Duck Tales</tvshowtitle>
+		<year>1987</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/duck_tales/DT03.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/75931-3-7.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>DuckTales Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0092345</imdb>
+		<tvdb>75931</tvdb>
+		<tvshowtitle>Duck Tales</tvshowtitle>
+		<year>1987</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/duck_tales/DT04.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/75931-4-5.jpg</thumbnail>
+</dir>

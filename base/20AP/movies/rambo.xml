@@ -1,0 +1,68 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+        <title>First Blood</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0083944</imdb>
+                <title>First Blood</title>
+                <year>1982</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/p8USrdIdOLtCyLfUo0j818BUuF3.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/fcKbmqpGQCoRkNUvBMC9o5mOKzd.jpg</fanart>
+</item>
+
+<item>
+        <title>Rambo: First Blood Part II</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0089880</imdb>
+                <title>Rambo: First Blood Part II</title>
+                <year>1985</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/l6zUaYqaQ5TFokesv3BPzBvSN0.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/2a8Dr2iHznBKjdpXceVRmpxQEgm.jpg</fanart>
+</item>
+
+<item>
+        <title>Rambo III</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0095956</imdb>
+                <title>Rambo III</title>
+                <year>1983</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/oCD41FfUs1OMCdPaf5EcJ6dxxMW.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/uvJKaFtz3S1DHKHPPuKjfDu8et7.jpg</fanart>
+</item>
+
+<item>
+        <title>Rambo</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0462499</imdb>
+                <title>Rambo</title>
+                <year>2008</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/ec1m7YgBYb4os06OSNW3QBaNYqZ.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/73QE77hOalLxUiheYJrk9XwHL4h.jpg</fanart>
+</item>

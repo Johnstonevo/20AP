@@ -1,0 +1,51 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+	<title>The NeverEnding Story (1984)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/xnOK0p3PHwLw6C5tEkYY8xJR8zK.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/sG3Du3Ha6rGeSzFfXme1nh8S2Jl.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The NeverEnding Story</title>
+		<year>1984</year>
+		<imdb>tt0088323</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The NeverEnding Story II: The Next Chapter (1990)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/phOI8kStf6pSxsAI3OaBpiw0ypZ.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/mW9wPhugQBG1Kw2WDyuorsPBWkX.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The NeverEnding Story II: The Next Chapter</title>
+		<year>1990</year>
+		<imdb>tt0100240</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Neverending Story III: Return to Fantasia (1994)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/driZCEKL79PaCsZNICSU3xd59sk.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/qJSluTZn0roCJ6EaxFo52w8OUVO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Neverending Story III: Return to Fantasia</title>
+		<year>1994</year>
+		<imdb>tt0110647</imdb>
+	</meta>
+</item>

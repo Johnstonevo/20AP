@@ -1,0 +1,31 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/kGbYwGQHFoPPMu68F5jOvfuPucG.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/78260-9.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Scooby-Doo, Where Are You! Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0063950</imdb>
+		<tvdb>78260</tvdb>
+		<tvshowtitle>Scooby-Doo, Where Are You!</tvshowtitle>
+		<year>1969</year>
+		<season>1</season>
+	</meta>
+	<link>https://20ap.000webhostapp.com/jen/kids/tv_movie_sets/Scoobydoo1.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/78260-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Scooby-Doo, Where Are You! Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0063950</imdb>
+		<tvdb>78260</tvdb>
+		<tvshowtitle>Scooby-Doo, Where Are You!</tvshowtitle>
+		<year>1969</year>
+		<season>2</season>
+	</meta>
+	<link>https://20ap.000webhostapp.com/jen/kids/tv_movie_sets/Scoobydoo2.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/78260-2-3.jpg</thumbnail>
+</dir>

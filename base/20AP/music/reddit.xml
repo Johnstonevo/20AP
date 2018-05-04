@@ -1,0 +1,24 @@
+##########################################################################################
+
+<cache>10800</cache>
+<thumbnail>https://b.thumbs.redditmedia.com/vgvxHC4thj4X4nu_.png</thumbnail>
+<fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
+
+##########################################################################################
+
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow]Music Playlists[/COLOR]==--[/COLOR][/B]</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=musicplaylists&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fmusicplaylists%2f.json%3f%26limit%3d50</link>
+  <thumbnail>https://b.thumbs.redditmedia.com/vgvxHC4thj4X4nu_.png</thumbnail>
+  <fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
+<content></content>
+</plugin>
+
+
+
+
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow][/COLOR]==--[/COLOR][/B]</title>
+	<link></link>
+	<content></content>
+</plugin>

@@ -1,0 +1,216 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>http://thetvdb.com/banners/fanart/original/72108-31.jpg</fanart>
+##########################################################################################
+
+<dir>
+	<name>NCIS Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS1.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-1-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS2.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS3.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-3-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS4.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-4-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS5.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-5-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS6.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-6-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 7</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>7</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS7.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-7-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 8</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>8</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS8.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-8-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 9</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>9</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS9.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-9-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 10</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>10</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS10.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-10-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 11</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>11</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS11.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-11-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 12</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>12</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS12.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-12.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 13</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>13</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS13.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-13.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS Season 14</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>14</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS14.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-14.jpg</thumbnail>
+</dir>
+
+
+<dir>
+	<name>NCIS Season 15</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0364845</imdb>
+		<tvdb>72108</tvdb>
+		<tvshowtitle>NCIS</tvshowtitle>
+		<year>2003</year>
+		<season>15</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis/NCIS15.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72108-15.jpg</thumbnail>
+</dir>

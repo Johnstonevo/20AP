@@ -1,0 +1,81 @@
+##########################################################################################
+<fanart>http://s1.1zoom.me/b4764/646/Men_rugby_Mud_Legs_Shorts_Knee_highs_Athletic_shoe_512998_1280x720.jpg</fanart>
+##########################################################################################
+
+
+
+<plugin>
+  <title>Live Games</title>
+  <link>
+    <sublink>plugin://plugin.video.SportsDevil/?item=title%3dRugby%26url%3dhttps%253A%252F%252Fwww.vipleague.ws%252Fsports%252Frugby.html%26cfg=vipbox.tv.events.cfg%26definedIn%3dlivesports%252Fvipbox.tv.cfg%26director%3dVipBox.tv%26genre%3dLive%2bSports%26type%3drss%26icon%3d%252Fhome%252Fiain%252F.kodi%252Faddons%252Fplugin.video.SportsDevil%252Fresources%252Fimages%252Fsports%252FRugby.png&amp;mode=1 (VIPBOX)</sublink>
+    <sublink>plugin://plugin.video.sparkle/subreddit/rugbystreams (Reddit Streams.  [COLORred]Needs Plexus and Acestream[/COLOR])</sublink>
+  </link>
+  <thumbnail>https://pbs.twimg.com/profile_images/641899067832954880/tlWtDYO9.png</thumbnail>
+  <fanart>https://i.imgur.com/bF0Jzkl.jpg</fanart>
+  <content>no</content>
+  <referer></referer>
+  <summary>Live Rugby.  Some Links only available just before kick-off</summary>
+</plugin>
+
+<item>
+  <title> Ulster Vs Edinburugh</title>
+  <link>http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_two_northern_ireland_digital.m3u8</link>
+</item>
+
+
+<dir>
+<title>Pro14 </title>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/pro14.xml</link>
+<thumbnail>https://pbs.twimg.com/profile_images/892310779806003200/0lVRnAiv_400x400.jpg</thumbnail>
+<fanart>http://www.independent.ie/incoming/article35989264.ece/BINARY/Pro14.png</fanart>
+</dir>
+
+<dir>
+<title>Aviva Prem </title>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/aviva.xml</link>
+<thumbnail>https://yt3.ggpht.com/-dGufIXExRPc/AAAAAAAAAAI/AAAAAAAAAAA/qaWCQCyxfzY/s176-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart>http://i.telegraph.co.uk/multimedia/archive/03473/aviva-premiership_3473612b.jpg</fanart>
+</dir>
+
+<dir>
+<title>French T14</title>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/t14.xml</link>
+<thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Logo_Top14_2012.png/225px-Logo_Top14_2012.png</thumbnail>
+<fanart>https://3.bp.blogspot.com/-pDDthJPwWNU/V2KEBay9GnI/AAAAAAAAD6g/74cOGynfEqQQw10gkK1ApF_rfjXX_GmNgCLcB/s1600/French%2BTop%2B14.png</fanart>
+</dir>
+
+<dir>
+<title>European Rugby Champions Cup</title>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/erc.xml</link>
+<thumbnail>https://lh6.googleusercontent.com/-rjaCqV0oa-I/AAAAAAAAAAI/AAAAAAAAEI0/dWRoc0rv3_U/photo.jpg</thumbnail>
+<fanart>https://i.ytimg.com/vi/tsL5DzVG1Zo/maxresdefault_live.jpg</fanart>
+</dir>
+
+<dir>
+<title>International</title>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/inter.xml</link>
+<thumbnail>https://yt3.ggpht.com/-qok-9CIsOsc/AAAAAAAAAAI/AAAAAAAAAAA/T1WW6cOq9hQ/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart>http://mozgorilla.com/wp-content/uploads/2010/03/gtrans.jpg</fanart>
+</dir>
+
+<dir>
+<title>Rugby TV Youtube</title>
+<link>plugin://plugin.video.youtube/channel/UC_J6QIqMKPsMwAg4vjDlS_g/</link>
+<thumbnail>https://yt3.ggpht.com/-8WljGwFYEsg/AAAAAAAAAAI/AAAAAAAAAAA/dttnYngKPcM/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart></fanart>
+</dir>
+
+
+<dir>
+<title>Planet Rugby</title>
+<link>plugin://plugin.video.youtube/channel/UCJNqbo9hJISmaLwKypZ9D0g/</link>
+<thumbnail>https://yt3.ggpht.com/-ubPlV7Vdq3M/AAAAAAAAAAI/AAAAAAAAAAA/kSPux6QFhD0/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart></fanart>
+</dir>
+
+<dir>
+<title>Rugby XV</title>
+<link>plugin://plugin.video.youtube/channel/UCl29AAA6ucgKPuBlk8aJsxw/</link>
+<thumbnail>https://yt3.ggpht.com/-XSNRrCIlKZ0/AAAAAAAAAAI/AAAAAAAAAAA/Qg-PqUY5YMw/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+<fanart></fanart>
+</dir>

@@ -1,0 +1,19 @@
+#######################################################################################################################################
+
+<thumbnail></thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/275378-3.jpg</fanart>
+#######################################################################################################################################
+
+<dir>
+	<name>Tales from Radiator Springs Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>None</imdb>
+		<tvdb>275378</tvdb>
+		<tvshowtitle>Tales from Radiator Springs</tvshowtitle>
+		<year>2013</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/tales_rad_spring/Tales%20from%20Radiator%20Springs%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/275378-1.jpg</thumbnail>
+</dir>

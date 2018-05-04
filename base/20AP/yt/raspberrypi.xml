@@ -1,0 +1,58 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>https://u.cubeupload.com/Nd8UdD.png</fanart>
+##########################################################################################
+
+
+<plugin>
+  <title>Hackster.IO</title>
+  <link>plugin://plugin.video.youtube/channel/UCqQzKnjSPjkJGMcjPg-Wktw/</link>
+  <thumbnail>https://yt3.ggpht.com/-GsgtE2acfzQ/AAAAAAAAAAI/AAAAAAAAAAA/jECLjdqJflM/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Hackster is the fastest growing, online community for creating hardware. From beginners to the advanced, Hackster empowers people everywhere to learn, build and sell their creations without the traditional overhead of manufacturing, retail and venture capital. Founded by hardware and software entrepreneurs, Hackster’s mission is to help Makers succeed in their own right.</summary>
+</plugin>
+
+<plugin>
+  <title>Adafruit</title>
+  <link>plugin://plugin.video.youtube/channel/UCpOlOeQjj7EsVnDh3zuCgsA/</link>
+  <thumbnail>https://yt3.ggpht.com/-R5LcGpdqijA/AAAAAAAAAAI/AAAAAAAAAAA/cRkSb00nxz4/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Adafruit was founded in 2005 by MIT engineer, Limor "Ladyada" Fried. Her goal was to create the best place online for learning electronics and making the best designed products for makers of all ages and skill levels. Adafruit has grown to over 50 employees in the heart of NYC with a 15,000+ sq ft. factory. Adafruit has expanded offerings to include tools, equipment and electronics that Limor personally selects, tests and approves before going in to the Adafruit store. Limor was the first female engineer on the cover of WIRED magazine and was recently awarded Entrepreneur magazine's Entrepreneur of the year. Ladyada is on the NYC Industrial Business Advisory Council. In 2014 Adafruit was ranked #11 in the top 20 USA manufacturing companies and #1 in New York City by Inc. 5000 "fastest growing private companies".</summary>
+</plugin>
+
+
+<plugin>
+  <title>Pimoroni</title>
+  <link>plugin://plugin.video.youtube/channel/UCuiDNTaTdPTGZZzHm0iriGQ/</link>
+  <thumbnail>https://pbs.twimg.com/profile_images/886668856089079836/OcvZ5_wV_400x400.jpg</thumbnail>
+  <summary>Pimoroni are a bunch of Makers and Educators with a workshop in Sheffield, UK. We make friendly electronics, mainly for the Raspberry Pi, and run a beautiful shop for Makers, where we ship the best gear worldwide.
+http://shop.pimoroni.com</summary>
+</plugin>
+
+
+
+<plugin>
+  <title>Geek Gurl Diaries</title>
+  <link>plugin://plugin.video.youtube/channel/UCxrp2coE9wRrnlOO3V3UmdQ/</link>
+  <thumbnail></thumbnail>
+  <summary>Like Raspberry Pi, Arduino, Python, Programming, Computer Science, Logic, Electronics, and being geeky and awesome? I do, so I started to make videos for people like me!  Welcome to the Geek Gurl Diaries, where us gurl's discuss, create, demo and interview all things geek. If you have ideas for videos or tutorials, or you know someone cool I could interview then please get in touch.
+
+I also host Crash Course Computer Science if you are interested in learning more about how computers work. https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo</summary>
+</plugin>
+
+
+
+<plugin>
+  <title>Afrotechmods</title>
+  <link>plugin://plugin.video.youtube/channel/UCosnWgi3eorc1klEQ8pIgJQ/</link>
+  <thumbnail>https://yt3.ggpht.com/-Z5BCK-CRpnw/AAAAAAAAAAI/AAAAAAAAAAA/yzOKIagS8G0/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>Straight to the point electronics tutorial videos with practical examples taught by a professional electronics engineer.
+Advertising opportunities available on the main website http://www.afrotechmods.com.</summary>
+</plugin>
+
+<plugin>
+  <title>The Ben Heck Show</title>
+  <link>plugin://plugin.video.youtube/channel/UChturLXwYxwTOf_5krs0qvA/</link>
+  <thumbnail>https://yt3.ggpht.com/-8OHTkE0rqRo/AAAAAAAAAAI/AAAAAAAAAAA/5wcFROnoTIE/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <summary>**New Episodes Every Friday**
+
+Join master hacker, engineer, and tech hobbyist Ben Heck as he tackles new and fun interesting projects each week. Whether he's combining a PS3, Wii U, and Xbox into one mega video game system or building his own pinball machine, Ben shows you step by step how you can take on all kinds of electronic projects. Ben also shares useful tips and answers your questions about 3D printing, microcontrollers, circuitry, modeling, design, and much more. What should Ben build next? Let us know!</summary>
+</plugin>

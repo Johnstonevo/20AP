@@ -1,0 +1,84 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://thetvdb.com/banners/seasons/330134-1-2.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/330134-2.jpg</fanart>
+#######################################################################################################################################
+<item>
+	<title>DuckTales S01E01 - Woo-oo!</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt5531466</imdb>
+		<tvdb>330134</tvdb>
+		<tvshowtitle>DuckTales (2017)</tvshowtitle>
+		<year>2017</year>
+		<title>Woo-oo!</title>
+		<premiered>2017-08-12</premiered>
+		<season>1</season>
+		<episode>1</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/330134/6135424.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+< item>
+	<title>DuckTales S01E02 - Daytrip of Doom!</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt5531466</imdb>
+		<tvdb>330134</tvdb>
+		<tvshowtitle>DuckTales (2017)</tvshowtitle>
+		<year>2017</year>
+		<title>Daytrip of Doom!</title>
+		<premiered>2017-09-23</premiered>
+		<season>1</season>
+		<episode>2</episode>
+		<thumbnail></thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+< item>
+	<title>DuckTales S01E03 - The Great Dime Chase!</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt5531466</imdb>
+		<tvdb>330134</tvdb>
+		<tvshowtitle>DuckTales (2017)</tvshowtitle>
+		<year>2017</year>
+		<title>The Great Dime Chase!</title>
+		<premiered>2017-09-23</premiered>
+		<season>1</season>
+		<episode>3</episode>
+		<thumbnail></thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+< item>
+	<title>DuckTales S01E04 - The Beagle Birthday Massacre!</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt5531466</imdb>
+		<tvdb>330134</tvdb>
+		<tvshowtitle>DuckTales (2017)</tvshowtitle>
+		<year>2017</year>
+		<title>The Beagle Birthday Massacre!</title>
+		<premiered>2017-09-30</premiered>
+		<season>1</season>
+		<episode>4</episode>
+		<thumbnail></thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>

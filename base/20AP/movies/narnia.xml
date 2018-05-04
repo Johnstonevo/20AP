@@ -1,0 +1,52 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+	<title>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe (2005)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/l8RKDgjl9co0IgFZblxhtIOi5Uj.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/4ZwXJcUT3KdE8Kan9TJ7l0Rg5LG.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Chronicles of Narnia: The Lion, the Witch and the Wardrobe</title>
+		<year>2005</year>
+		<imdb>tt0363771</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Chronicles of Narnia: Prince Caspian (2008)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/mEHd5n927ifJEODgbtC09Faqwcg.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/auf8faMtXBU4u4UpaNGdxAzHAKu.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Chronicles of Narnia: Prince Caspian</title>
+		<year>2008</year>
+		<imdb>tt0499448</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Chronicles of Narnia: The Voyage of the Dawn Treader (2010)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/pRzEyrMSyvpHf92EhsVSg9Yr81t.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/rB5SbbBEkMZYAS6MgoFp2CTxazo.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Chronicles of Narnia: The Voyage of the Dawn Treader</title>
+		<year>2010</year>
+		<imdb>tt0980970</imdb>
+	</meta>
+</item>

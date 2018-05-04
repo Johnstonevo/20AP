@@ -1,0 +1,46 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/6aVD79DB1NAq4ywyIrpEz9VwIzG.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/249229-5.jpg</fanart>
+###########################################################################################################
+<dir>
+	<name>A.N.T. Farm Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1772752</imdb>
+		<tvdb>249229</tvdb>
+		<tvshowtitle>A.N.T. Farm</tvshowtitle>
+		<year>2011</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/ant_farm/A_N_T_%20Farm%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/249229-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>A.N.T. Farm Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1772752</imdb>
+		<tvdb>249229</tvdb>
+		<tvshowtitle>A.N.T. Farm</tvshowtitle>
+		<year>2011</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/ant_farm/A_N_T_%20Farm%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/249229-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>A.N.T. Farm Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1772752</imdb>
+		<tvdb>249229</tvdb>
+		<tvshowtitle>A.N.T. Farm</tvshowtitle>
+		<year>2011</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/ant_farm/A_N_T_%20Farm%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/249229-3.jpg</thumbnail>
+</dir>

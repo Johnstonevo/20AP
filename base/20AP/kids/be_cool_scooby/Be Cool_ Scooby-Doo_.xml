@@ -1,0 +1,32 @@
+#######################################################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/im1zk7CNHXd1h172b10Z2Nug5UR.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/301376-5.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Be Cool, Scooby-Doo! Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4215734</imdb>
+		<tvdb>301376</tvdb>
+		<tvshowtitle>Be Cool, Scooby-Doo!</tvshowtitle>
+		<year>2015</year>
+		<season>1</season>
+	</meta>
+	<link>https://20ap.000webhostapp.com/jen/kids/tv_movie_sets/Be%20Cool_%20Scooby-Doo_%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/301376-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Be Cool, Scooby-Doo! Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt4215734</imdb>
+		<tvdb>301376</tvdb>
+		<tvshowtitle>Be Cool, Scooby-Doo!</tvshowtitle>
+		<year>2015</year>
+		<season>2</season>
+	</meta>
+	<link>https://20ap.000webhostapp.com/jen/kids/tv_movie_sets/Be%20Cool_%20Scooby-Doo_%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/_cache/posters/301376-4.jpg</thumbnail>
+</dir>

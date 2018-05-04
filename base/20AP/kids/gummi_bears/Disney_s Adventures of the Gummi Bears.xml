@@ -1,0 +1,88 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/fVVnoqJmjcJksx1s5W3P1OvfdR2.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/76081-4.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Disney's Adventures of the Gummi Bears Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0088528</imdb>
+		<tvdb>76081</tvdb>
+		<tvshowtitle>Disney's Adventures of the Gummi Bears</tvshowtitle>
+		<year>1985</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gummi_bears/Disney_s%20Adventures%20of%20the%20Gummi%20Bears%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76081-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Disney's Adventures of the Gummi Bears Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0088528</imdb>
+		<tvdb>76081</tvdb>
+		<tvshowtitle>Disney's Adventures of the Gummi Bears</tvshowtitle>
+		<year>1985</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gummi_bears/Disney_s%20Adventures%20of%20the%20Gummi%20Bears%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76081-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Disney's Adventures of the Gummi Bears Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0088528</imdb>
+		<tvdb>76081</tvdb>
+		<tvshowtitle>Disney's Adventures of the Gummi Bears</tvshowtitle>
+		<year>1985</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gummi_bears/Disney_s%20Adventures%20of%20the%20Gummi%20Bears%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76081-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Disney's Adventures of the Gummi Bears Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0088528</imdb>
+		<tvdb>76081</tvdb>
+		<tvshowtitle>Disney's Adventures of the Gummi Bears</tvshowtitle>
+		<year>1985</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gummi_bears/Disney_s%20Adventures%20of%20the%20Gummi%20Bears%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76081-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Disney's Adventures of the Gummi Bears Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0088528</imdb>
+		<tvdb>76081</tvdb>
+		<tvshowtitle>Disney's Adventures of the Gummi Bears</tvshowtitle>
+		<year>1985</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gummi_bears/Disney_s%20Adventures%20of%20the%20Gummi%20Bears%205.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76081-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Disney's Adventures of the Gummi Bears Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0088528</imdb>
+		<tvdb>76081</tvdb>
+		<tvshowtitle>Disney's Adventures of the Gummi Bears</tvshowtitle>
+		<year>1985</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gummi_bears/Disney_s%20Adventures%20of%20the%20Gummi%20Bears%206.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76081-6.jpg</thumbnail>
+</dir>

@@ -1,0 +1,59 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/9xKa4BeLt176aqdWdb1pERW1TA2.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/266775-7.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Teen Titans Go! Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2771780</imdb>
+		<tvdb>266775</tvdb>
+		<tvshowtitle>Teen Titans Go!</tvshowtitle>
+		<year>2013</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teen_tit_go/Teen%20Titans%20Go_%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/266775-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teen Titans Go! Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2771780</imdb>
+		<tvdb>266775</tvdb>
+		<tvshowtitle>Teen Titans Go!</tvshowtitle>
+		<year>2013</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teen_tit_go/Teen%20Titans%20Go_%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/266775-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teen Titans Go! Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2771780</imdb>
+		<tvdb>266775</tvdb>
+		<tvshowtitle>Teen Titans Go!</tvshowtitle>
+		<year>2013</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teen_tit_go/Teen%20Titans%20Go_%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/266775-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teen Titans Go! Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2771780</imdb>
+		<tvdb>266775</tvdb>
+		<tvshowtitle>Teen Titans Go!</tvshowtitle>
+		<year>2013</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teen_tit_go/Teen%20Titans%20Go_%204.xml</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/u2MBijuvArPTLXQjCCp2VuEZeME.jpg</thumbnail>
+</dir>

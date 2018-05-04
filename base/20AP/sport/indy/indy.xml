@@ -1,0 +1,26 @@
+<item>
+  <title>Warmup</title>
+  <link>https://www.youtube.com/watch/4kFJRvm4ttA</link>
+</item>
+
+<item>
+  <title></title>
+  <link>https://www.youtube.com/watch/</link>
+  <thumbnail>https://pbs.twimg.com/profile_images/806255918606389248/BqZps0ro.jpg</thumbnail>
+  <referer>no</referer>
+</item>
+
+<plugin>
+  <title>Offical Indy Car Youtube Channel</title>
+  <link>plugin://plugin.video.youtube/channel/UCy1F61QvUUQXAXi2Voa_fUw</link>
+  <thumbnail>https://yt3.ggpht.com/-CWXwc53cELY/AAAAAAAAAAI/AAAAAAAAAAA/k_mm6XIanrM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+</plugin>
+
+
+<plugin>
+  <title>Indycar/Cart full race broadcasts from 93-00</title>
+  <link>plugin://plugin.video.youtube/channel/UCR-1J7fLNz0vYcoMZaHADKA/playlists/</link>
+  <thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/7/7d/INDYCAR_logo.png/200px-INDYCAR_logo.png</thumbnail>
+  <fanart>https://i.ytimg.com/vi/OstwNvchjmQ/maxresdefault.jpg</fanart>
+  <summary></summary>
+</plugin>

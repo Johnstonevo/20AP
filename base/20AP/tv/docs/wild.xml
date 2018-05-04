@@ -1,0 +1,83 @@
+################################################################################
+<cache>10800</cache>
+<thumbnail></thumbnail>
+<fanart>http://technuovo.com/wp-content/uploads/2017/04/love-nature-2.png</fanart>
+################################################################################
+
+
+<dir>
+  <title>The Blue Planet</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt0296310</imdb>
+    <tvdb>74372</tvdb>
+    <tvshowtitle>The Blue Planet</tvshowtitle>
+    <year>2001</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blueplanet/blueplanet.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/original/7nF4PGwpZTRZjrNraB4CpcXtD08.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/rRn0aSbXEGZMPOiCezQgZbjm6lH.jpg</fanart>
+
+</dir>
+
+<dir>
+  <name>Planet Earth</name>
+  <meta>
+    <content>TV Show</content>
+    <imdb>tt0795176</imdb>
+    <tvdb>79257</tvdb>
+    <tvshowtitle>Planet Earth</tvshowtitle>
+    <year>2006</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/planetearth/planetearth.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/79257-6.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/79257-14.jpg</fanart>
+</dir>
+
+<dir>
+  <name>Frozen Planet</name>
+  <meta>
+    <content>TV Show</content>
+    <imdb>tt2092588</imdb>
+    <tvdb>251418</tvdb>
+    <tvshowtitle>Frozen Planet</tvshowtitle>
+    <year>2011</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/frozenplanet/frozenplanet.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/251418-5.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/251418-2.jpg</fanart>
+</dir>
+
+
+<item>
+  <title>Sonic Sea</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt4677128</imdb>
+    <title>Sonic Sea</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTkwNzczMzAzN15BMl5BanBnXkFtZTgwNzk2NDgwNzE@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>David Attenborough's Natural History Museum Alive</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3438608</imdb>
+    <title>David Attenborough's Natural History Museum Alive</title>
+    <year>2014</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/gC2T7H8QqWK4Y1ZMnv0faFiqmFc.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/qfXv6Tyz0YhfAXGAtqjKS4E95c9.jpg</fanart>
+</item>

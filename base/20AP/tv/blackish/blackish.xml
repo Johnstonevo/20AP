@@ -1,0 +1,69 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+<dir>
+        <name>Black-ish Season 1</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt3487356</imdb>
+                <tvdb>281511</tvdb>
+                <tvshowtitle>Black-ish</tvshowtitle>
+                <year>2014</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackish/blackish1.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/posters/281511-6.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/281511-13.jpg</fanart>
+</dir>
+<dir>
+        <name>Black-ish Season 2</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt3487356</imdb>
+                <tvdb>625706</tvdb>
+                <tvshowtitle>Black-ish</tvshowtitle>
+                <year>2014</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackish/blackish2.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/posters/281511-4.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/281511-13.jpg</fanart>
+</dir>
+
+<dir>
+        <name>Black-ish Season 3</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt3487356</imdb>
+                <tvdb>672206</tvdb>
+                <tvshowtitle>Black-ish</tvshowtitle>
+                <year>2014</year>
+                <season>3</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackish/blackish3.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/posters/281511-3.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/281511-13.jpg</fanart>
+</dir>
+
+<dir>
+        <name>Black-ish Season 4</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt3487356</imdb>
+                <tvdb>720334</tvdb>
+                <tvshowtitle>Black-ish</tvshowtitle>
+                <year>2014</year>
+                <season>4</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/blackish/blackish4.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/posters/281511-4.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/281511-13.jpg</fanart>
+</dir>

@@ -1,0 +1,46 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>https://image.tmdb.org/t/p/original/qR6IhNu2eXS8esrWOEct9NNXPj1.jpg</fanart>
+##########################################################################################
+
+<dir>
+<name>Fear The Walking Dead Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt3743822</imdb>
+<tvdb>290853</tvdb>
+<tvshowtitle>Fear The Walking Dead</tvshowtitle>
+<year>2015</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ftwd/Fear%20the%20Walking%20Dead%201.xml</link>
+<thumbnail>https://image.tmdb.org/t/p/w396/k5v2Fx9MOLXKK6bjJQZEAhxfEBF.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Fear The Walking Dead Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt3743822</imdb>
+<tvdb>290853</tvdb>
+<tvshowtitle>Fear The Walking Dead</tvshowtitle>
+<year>2015</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ftwd/Fear%20the%20Walking%20Dead%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/290853-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Fear the Walking Dead Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt3743822</imdb>
+		<tvdb>290853</tvdb>
+		<tvshowtitle>Fear the Walking Dead</tvshowtitle>
+		<year>2015</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ftwd/Fear%20the%20Walking%20Dead%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/290853-3.jpg</thumbnail>
+</dir>

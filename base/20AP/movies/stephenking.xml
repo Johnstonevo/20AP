@@ -1,0 +1,809 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+
+<item>
+<title>The Dark Tower </title>
+<meta>
+<content>movie</content>
+<imdb>tt1648190</imdb>>
+<title>The Dark Tower </title>
+<year>2017</year>
+</meta>
+<link>
+<sublink>search</sublink>
+<sublink>searchsd</sublink>
+</link>
+<thumbnail>https://image.tmdb.org/t/p/original/gr3gCeeXoPv1RW8WkJ58e0DdQFm.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/original/pVVobDO8cezhVPvwD6EBUN0g3mt.jpg</fanart>
+</item>
+
+<item>
+	<title>IT (2017)</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt1396484</imdb>
+		<title>IT (2017)</title>
+		<year>2017</year>
+	</meta>
+	<link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/9E2y5Q7WlCVNEhP5GiVTjhEhx1o.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/tcheoA2nPATCm2vvXw2hVQoaEFD.jpg</fanart>
+</item>
+
+
+<item>
+	<title>Cell (2016)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/gxss8JysUDyJMD5iAhpwtA9lvxe.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/5Ic0J2iX8fqeEunSAX3hgCd12mZ.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Cell</title>
+		<year>2016</year>
+		<imdb>tt0775440</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>A Good Marriage (2014)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/8TqGEBVdC7uS6vBmKidOjcXaisx.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/i9KGUdPzaJBbbrZNYtyn26YLfCz.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>A Good Marriage</title>
+		<year>2014</year>
+		<imdb>tt2180994</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Big Driver (2014)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/yC5E0UgyjUKU2uyW2fGVnrTmAY8.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/jc24mKmNRuY8GbXiYMZtL219u3M.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Big Driver</title>
+		<year>2014</year>
+		<imdb>tt3831810</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Mercy (2014)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/l8lgCLZctmr0DCVG4jfP4W9FcHV.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/cGUYuOGca1Lt8gz7Mqah2Df9QEN.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Mercy</title>
+		<year>2014</year>
+		<imdb>tt2481496</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Desperation (2006)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/gylEhsF0MrRkwLtwzoGiDhxJb6E.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/3Hc7P9VpYmeszKKMtXs9domlzcX.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Desperation</title>
+		<year>2006</year>
+		<imdb>tt0129871</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>1408 (2007)</title>
+	<link>
+		<sublink>http://uptostream.com/qustkdmq6pfn</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/cb9OXRt3pH4WoPXbmuaeoYjdTIU.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/nQrVgI4NDxQTTxzE0McUalR6Gvs.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>1408</title>
+		<year>2007</year>
+		<imdb>tt0450385</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Mist (2007)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/uYVheUBf8ITaocUP4Og9GXxOMIH.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/slQnhKRIPkA2Cm5x6VvrOPXt4Qu.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Mist</title>
+		<year>2007</year>
+		<imdb>tt0884328</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Riding the Bullet (2004)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/vxhChgkTijDhDbUi0yR1BF7kyWz.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/hhc8hTu7mHHsfVZYsHy0E26sVlh.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Riding the Bullet</title>
+		<year>2004</year>
+		<imdb>tt0355954</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Secret Window (2004)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/f5t7Df50xjniLlE80ty2dYsZBqI.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/sJSqYTzDFLcX8go5h7X8FC8qo68.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Secret Window</title>
+		<year>2004</year>
+		<imdb>tt0363988</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Dreamcatcher (2003)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/A85mIkXdJvOwHxIQIEaN147GSLD.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/4fZGIqAW79EOhuUAmQ4STL7lDne.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Dreamcatcher</title>
+		<year>2003</year>
+		<imdb>tt0285531</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rose Red (2002)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/p87ElSGzQr43vwnRJomhZgoNEw5.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/1f6tGqn0hXkflSHqRm2VF3ZzjK8.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rose Red</title>
+		<year>2002</year>
+		<imdb>tt0259153</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Children of the Corn: Revelation (2001)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/sL3ZaPFwgkfn9KuIsh861zsPX0Y.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/JNuDaz6yrWbAlVA5Zbv5TTPMgN.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Children of the Corn: Revelation</title>
+		<year>2001</year>
+		<imdb>tt0279730</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Hearts In Atlantis (2001)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/fnPm3qVyf37YPJZtBWwzsGCFGyC.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/vPSHMIxXoTxIAT3rm9XDzbOifvv.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Hearts In Atlantis</title>
+		<year>2001</year>
+		<imdb>tt0252501</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Storm of the Century (1999)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/rqHdxPR5mF607ObVoxOKkHXgVGj.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/cy4ey2xIiQNyf3m8LqivS5numlk.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Storm of the Century</title>
+		<year>1999</year>
+		<imdb>tt0135659</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Green Mile (1999)</title>
+	<link>
+
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/3yJUlOtVa09CYJocwBU8eAryja0.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/vOfEyKHfE8vNWzMYloDCXELiapP.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Green Mile</title>
+		<year>1999</year>
+		<imdb>tt0120689</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Carrie (1976)</title>
+	<link>
+
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/n9JxLthRHwTWwu5OjFHVplkVSUg.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/c2RVtYhyh8kEvXZMYpHAmhdfiq9.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Carrie</title>
+		<year>1976</year>
+		<imdb>tt0074285</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Rage: Carrie 2 (1999)</title>
+	<link>
+
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/shqs9jxUYBoReRE2CiJZfBRFUta.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/fSSZDCxDPV0bVGW61rTsKna9QY9.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Rage: Carrie 2</title>
+		<year>1999</year>
+		<imdb>tt0144814</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Apt Pupil (1998)</title>
+	<link>
+
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/6AAdkNH1JQtpiWQxeHb1GTCKHVS.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/3ewMNljCNjojZYKQjDeHBpduEJO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Apt Pupil</title>
+		<year>1998</year>
+		<imdb>tt0118636</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Children of the Corn V: Fields of Terror (1998)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/w3ZOi0jbHNEQ26MEt1X3XCJzBYe.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/frk5Gtc0f8M2TRkhDUkUI9L9jRu.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Children of the Corn V: Fields of Terror</title>
+		<year>1998</year>
+		<imdb>tt0150111</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Night Flier (1997)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/8YSBQNxJPj1ZScau9nStzDgASUU.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/bSMCOd2ySz3cfPy6KZvL7UovdBO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Night Flier</title>
+		<year>1997</year>
+		<imdb>tt0119784</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Sometimes They Come Back Again (1996)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/1AP3E6kGBt4MLMwPZCh3FpmSane.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/lbmw6KlWMK4SmqjBrjA8Bjas0ui.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Sometimes They Come Back Again</title>
+		<year>1996</year>
+		<imdb>tt0117692</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Thinner (1996)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/wmnTIiRf3Nl5jhMlqLRXQY5msN6.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/fPAP1oYdXIm2ajG9f8xdhgbKJTO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Thinner</title>
+		<year>1996</year>
+		<imdb>tt0117894</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Children of the Corn III: Urban Harvest (1995)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/kKysVak7SETM6wuMixas5DZzDBU.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/st1Nst7Lqt5FnpVcJ9je9MjTM9n.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Children of the Corn III: Urban Harvest</title>
+		<year>1995</year>
+		<imdb>tt0109415</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Dolores Claiborne (1995)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/ewmVWV0TP8LTlYZ4OzCcguwC9d1.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/l9TfvRfrIgCB1cxXZTW6RsXPTN0.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Dolores Claiborne</title>
+		<year>1995</year>
+		<imdb>tt0109642</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Mangler (1995)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/vwRZOUzIX17luLM69sCC9meM9od.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/ApJQpxeiQHKsSCrORbQrRIt8crK.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Mangler</title>
+		<year>1995</year>
+		<imdb>tt0113762</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Shawshank Redemption (1994)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/j9XKiZrVeViAixVRzCta7h1VU9W.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Shawshank Redemption</title>
+		<year>1994</year>
+		<imdb>tt0111161</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Needful Things (1993)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/bmNy8xYUVRige1r4jIgUxv8BnMF.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/oK0KyFrf41IUJTxnhFq8WXHKQt.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Needful Things</title>
+		<year>1993</year>
+		<imdb>tt0107665</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Children of the Corn II: The Final Sacrifice (1992)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/lqFb8Mnx9tFPUevnfbz9o2adLFw.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/QOmJIMwlYqzq6LjzdWSxsPS6pj.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Children of the Corn II: The Final Sacrifice </title>
+		<year>1992</year>
+		<imdb>tt0106557</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Sleepwalkers (1992)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/shrSYke0ABLGx0vA6iZnUOCB1tw.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/pCKWyeBDfiR3R4ggpKQbrBW9MkS.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Sleepwalkers</title>
+		<year>1992</year>
+		<imdb>tt0105428</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Lawnmower Man (1992)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/A0tvhno9tViCQ2Z9KP2BW5khLEX.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/fXCoMFPV7PSwNBZb02SPRFRp7T4.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Lawnmower Man</title>
+		<year>1992</year>
+		<imdb>tt0104692</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Sometimes They Come Back (1991)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/wvgpd7LwXgfpxpGYnJOkCKd0oEr.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/64qlqxCjSnVbiVPd8uRRNxllFbP.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Sometimes They Come Back</title>
+		<year>1991</year>
+		<imdb>tt0102960</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>It (1990)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/o3uwaF1zmarUiGYiIDY0OKZ4gdp.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/ArQJTHI7LJntJKdPcXnW50xetep.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>It</title>
+		<year>1990</year>
+		<imdb>tt0099864</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Misery (1990)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/s0Ot5zUmVF1jSN9WpBHRafvUPld.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/jSD6e6cKHL0gbYK3WUYTBpKXvJy.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Misery</title>
+		<year>1990</year>
+		<imdb>tt0100157</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Pet Sematary (1989)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/9zUax4pjRgoPIJla9CQejqNJofB.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/94y1nBqEdVwLvezMBRJFXkwBTme.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Pet Sematary</title>
+		<year>1989</year>
+		<imdb>tt0098084</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Creepshow 2 (1987)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/qxJWtBb89RaSRgLuz1d6ZuFTfVG.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/cEOva5ciTQxJCQgcXb6vpAx1BcP.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Creepshow 2</title>
+		<year>1987</year>
+		<imdb>tt0092796</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Running Man (1987)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/ni5PkWh3J3Zx4pVk5JYGTywZDqW.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/zwW7fzXQZF6r9fdl1C7V1gRQq73.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Running Man</title>
+		<year>1987</year>
+		<imdb>tt0093894</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Maximum Overdrive (1986)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/lgNXAQ1TlKEKzssbjcc5iEhs8mi.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/j9ROmwHHL3SlZOBgdHAQGeFtWXd.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Maximum Overdrive</title>
+		<year>1986</year>
+		<imdb>tt0091499</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Stand by Me (1986)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/kedC0y75jdzByjuZNLOWIOtduNw.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/bVeXeGfbUiTEtCAXmNO5pjILiEN.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Stand by Me</title>
+		<year>1986</year>
+		<imdb>tt0092005</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Cats Eye (1985)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/A65sQJbEAAV4wC9QQc0Mn4ZaMZV.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/mVWufY70kchQ0LSsE2uLg93aEXj.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Cats Eye</title>
+		<year>1985</year>
+		<imdb>tt0088889</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Silver Bullet (1985)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/w5B4xDqtkFy8nhuIlpM0vUmR7vD.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/3r1K2PkXD3ijqeiQwzVyGzKjuaj.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Silver Bullet</title>
+		<year>1985</year>
+		<imdb>tt0090021</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Children of the Corn (1984)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/3wW3ApztqXKfTsbpoNyWMEkTPkY.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/hmTSp1aF9xG7uwM4f4YMUcLfVAa.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Children of the Corn</title>
+		<year>1984</year>
+		<imdb>tt0087050</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Firestarter (1984)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/nIo0DYQ7mcRLYUuihN4gao9Xupj.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xnhtgpptVPY2KeNJkG1sDSjoZEF.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Firestarter</title>
+		<year>1984</year>
+		<imdb>tt0087262</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Christine (1983)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/eIFakrk7xLwiNNoiottTBN5EIwy.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/zvR7GPQSoJTZlwuU5jjZHRiMu2o.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Christine</title>
+		<year>1983</year>
+		<imdb>tt0085333</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Cujo (1983)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/7rifxE6RSDZyNgegqFSs253dmli.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/kVqmhoovglURnnpfoUOOdxW30mJ.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Cujo</title>
+		<year>1983</year>
+		<imdb>tt0085382</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Dead Zone (1983)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/bKpc5xO3o3DHDqaUJWMoVxgpJRM.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/7LRuImFC4NKxutT3yvdqxinEXjo.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Dead Zone</title>
+		<year>1983</year>
+		<imdb>tt0085407</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Creepshow (1982)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/hgKeTL416BPzLZntcsD1k7mNFRN.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/eHaGbnX2kukzcYGOpNF3YLPmOG5.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Creepshow</title>
+		<year>1982</year>
+		<imdb>tt0083767</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Shining (1980)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/9fgh3Ns1iRzlQNYuJyK0ARQZU7w.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/4UYnO1lMFypq6Q95PUZ5TyH0uYH.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Shining</title>
+		<year>1980</year>
+		<imdb>tt0081505</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Salems Lot (1979)</title>
+	<link>
+	<sublink>search</sublink>
+	<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/hAlBAzbHBRals4xPGSk8FQf0u57.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/uwM53UvO0NtVfZNMthuuPUUR2pV.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Salems Lot</title>
+		<year>1979</year>
+		<imdb>tt0079844</imdb>
+	</meta>
+</item>

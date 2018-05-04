@@ -1,0 +1,16 @@
+BBC2 NI
+http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_two_northern_ireland_digital.m3u8
+
+BBC Alba
+http://a.files.bbci.co.uk/media/live/manifesto/audio_video/simulcast/hls/uk/hls_tablet/ak/bbc_alba.m3u8
+
+
+https://livesportshd.net/bt-sport-1
+
+http://www.liveonlinetv247.info/btsport1.php
+
+https://live.proxyportal.net/bt-sport-1
+
+http://www.liveonlinetv247.info/embed/skysportsf1.php
+
+http://www.liveonlinetv247.info/embed/btsport1.php

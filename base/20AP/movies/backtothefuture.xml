@@ -1,0 +1,52 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+	<title>Back To The Future (1985)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/yeiolxpUuOpVU5UY6zhhHSUuyh6.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/55LP95aktZlGn2uRKO15qEUrIfU.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Back To The Future</title>
+		<year>1985</year>
+		<imdb>tt0088763</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Back To The Future II (1989)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/rLKBbmHSQhH1ICNLZrVwtnAIoLn.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/snLFUFzWUZCdYkAbhZlaGJxiY3I.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Back To The Future II</title>
+		<year>1989</year>
+		<imdb>tt0096874</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Back To The Future III (1990)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/wJXQINitlHp4MrDgaXkovmO530T.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/pP2a4MBQbIeZMbErBWMjxTT5Npb.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Back To The Future III</title>
+		<year>1990</year>
+		<imdb>tt0099088</imdb>
+	</meta>
+</item>

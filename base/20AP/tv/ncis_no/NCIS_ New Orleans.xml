@@ -1,0 +1,62 @@
+##########################################################################################
+
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/aTFv4uT6VNLDFIrrWoD7ckI82xv.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/278125-2.jpg</fanart>
+##########################################################################################
+
+<dir>
+	<name>NCIS: New Orleans Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt3560084</imdb>
+		<tvdb>278125</tvdb>
+		<tvshowtitle>NCIS: New Orleans</tvshowtitle>
+		<year>2014</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis_no/NCIS_%20New%20Orleans%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/278125-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS: New Orleans Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt3560084</imdb>
+		<tvdb>278125</tvdb>
+		<tvshowtitle>NCIS: New Orleans</tvshowtitle>
+		<year>2014</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis_no/NCIS_%20New%20Orleans%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/278125-2-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS: New Orleans Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt3560084</imdb>
+		<tvdb>278125</tvdb>
+		<tvshowtitle>NCIS: New Orleans</tvshowtitle>
+		<year>2014</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis_no/NCIS_%20New%20Orleans%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/278125-3-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>NCIS: New Orleans Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt3560084</imdb>
+		<tvdb>278125</tvdb>
+		<tvshowtitle>NCIS: New Orleans</tvshowtitle>
+		<year>2014</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/ncis_no/NCIS_%20New%20Orleans%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/278125-4-2.jpg</thumbnail>
+</dir>

@@ -1,0 +1,87 @@
+################################################################################
+
+<fanart>https://i.pinimg.com/originals/17/e1/ff/17e1ffda42697843c9a750d336ce7c5b.jpg</fanart>
+################################################################################
+
+
+<plugin>
+  <title>Live Motorsport</title>
+  <link>
+    <sublink>plugin://plugin.video.SportsDevil/?item=title%3dMotorsport%26url%3dhttps%253A%252F%252Fwww.vipleague.ws%252Fsports%252Fmotorsports.html%26cfg%3dvipbox.tv.events.cfg%26definedIn%3dlivesports%252Fvipbox.tv.cfg%26director%3dVipBox.tv%26genre%3dLive%2bSports%26type%3drss%26icon%3d%252Fhome%252Fiain%252F.kodi%252Faddons%252Fplugin.video.SportsDevil%252Fresources%252Fimages%252Fsports%252FRacing.png&amp;mode=1 (VIPBOX)</sublink>
+    <sublink>plugin://plugin.video.sparkle/subreddit/motorsportsstreams (Reddit Streams. [COLORred] [B]Needs Plexus and Acestream[/B][/COLOR])</sublink>
+  </link>
+  <thumbnail>https://static1.squarespace.com/static/5542282de4b042c3b92e2e52/56acb7d9be7b963e32760f95/56acb7f8be7b963e32760ff1/1486039355307/flag76.png</thumbnail>
+  <fanart>https://i.ytimg.com/vi/1T3KMI__VjQ/maxresdefault.jpg</fanart>
+  <content>no</content>
+  <referer></referer>
+  <summary>Links to Live Motorsport</summary>
+</plugin>
+
+<dir>
+  <name>The Man Cave</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/manshed.xml</link>
+  <thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
+  <fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
+  <Summary>The Man Shed,  Cars and things</summary>
+</dir>
+
+<dir>
+  <name>Formula 1</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/f1/f1.xml</link>
+  <thumbnail>https://yt3.ggpht.com/-p4tzDhRHziM/AAAAAAAAAAI/AAAAAAAAAAA/BgBf89zrN30/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
+  <fanart>https://wallpapersontheweb.net/wallpapers/l/mercedesbenz_nico_rosberg_mercedes_amg_petronas_formula_1-8443.jpg</fanart>
+</dir>
+
+<dir>
+  <name>Rugby Union</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/rugby.xml</link>
+  <thumbnail>http://cdn.pulselive.com/dynamic/client/irb/static/i/meta/wr.png</thumbnail>
+  <fanart>http://s1.1zoom.me/b4764/646/Men_rugby_Mud_Legs_Shorts_Knee_highs_Athletic_shoe_512998_1280x720.jpg</fanart>
+</dir>
+
+
+
+<dir>
+  <name>Moto GP</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/Motogp/motogp.xml</link>
+  <thumbnail>https://i.pinimg.com/originals/1a/75/38/1a75382516d5358e78ba61ced6d0ff89.jpg</thumbnail>
+  <fanart>https://i.ytimg.com/vi/t9uIMJRwGeo/maxresdefault.jpg</fanart>
+</dir>
+
+<dir>
+  <name>Indy Car</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/indy/indy.xml</link>
+  <thumbnail>https://sites.google.com/site/wildqat/Home/Indy-Car-Power.jpg</thumbnail>
+  <fanart>https://lh3.googleusercontent.com/L_fBVPIbyelaw-kO3fh2EqIGY06zSfeVZTUC5P8tkwJDhfHXZUerciPbKKhYiRfRAyM=h900</fanart>
+</dir>
+
+
+<item>
+  <name>Darts</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/darts.xml</link>
+  <thumbnail>https://pbs.twimg.com/profile_images/875724789700333568/38t130uN.jpg</thumbnail>
+  <fanart>https://p5.focus.de/img/fotos/crop6433881/4711333682-cfreecrop_21_9-w1280-h720-otx0_y0-q75-p5/dreimal-20-die-perfekte-ausbeute-beim-darts.jpg</fanart>
+</item>
+
+
+<dir>
+  <name>Motorsport Youtube Channels</name>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/motorsport.xml</link>
+  <fanart>https://i.pinimg.com/originals/74/00/b0/7400b07ad1e2bcf152ed240884e2f96f.jpg</fanart>
+  <thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
+</dir>
+
+
+
+<dir>
+  <title>Live Sport from Reddit.  [COLORred][B]Needs Plexus setup.[/B][/COLOR]</title>
+  <link>plugin://plugin.video.sparkle/?mode=1)</link>
+  <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
+  <fanart>https://wallpapersite.com/images/pages/pic_w/3193.jpg</fanart>
+</dir>
+
+<dir>
+  <title>F1F Movie Thread Recomendations. </title>
+  <tmdb>list/47802</tmdb>
+  <summary>Films from the Movie thread of the forum</summary>
+</dir>

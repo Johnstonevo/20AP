@@ -1,0 +1,127 @@
+####################################################################################################
+<cache>10800</cache>
+<thumbnail>https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png</thumbnail>
+<fanart>https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg</fanart>
+####################################################################################################
+<dir>
+  <title>Current Movies and post 2000 Movies</title>
+  <tmdb>list/43994</tmdb>
+  <thumbnail>https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png</thumbnail>
+  <fanart>https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg</fanart>
+</dir>
+
+
+<dir>
+  <title>Older Movies and Classics pre-2000</title>
+  <tmdb>list/47126</tmdb>
+  <thumbnail>http://www.ultimatemoviesuggestions.com/wp-content/uploads/2017/03/cropped-Camera_cinema_consume_entertainment_film_media_movie_photo_play_record_video_television_tripod-256.png</thumbnail>
+  <fanart>https://images4.alphacoders.com/754/thumb-1920-754566.png</fanart>
+  <content>boxset</content>
+
+</dir>
+<dir>
+<title>Chart Moviemeter</title>
+<imdburl>chart/moviemeter</imdburl>
+<thumbnail>http://www.adventisthealth.tv/wp-content/uploads/2017/04/IMDb.png</thumbanil>
+</dir>
+
+<dir>
+  <title>Actor Box Sets</title>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/people.xml</link>
+  <thumbnail>https://cdn4.iconfinder.com/data/icons/photo-video/32/photo-video-picture-directors-chair-512.png</thumbnail>
+  <fanart>https://i.imgur.com/CaTD18H.jpg</fanart>
+  <content>boxset</content>
+  <summary>Collections of Movies by sorted by Actor</summary>
+</dir>
+
+<dir>
+  <title>Movie Box Sets</title>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/boxsets.xml</link>
+  <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
+  <fanart>https://i.imgur.com/CaTD18H.jpg</fanart>
+  <content>boxset</content>
+  <summary>Movie Collections</summary>
+</dir>
+
+<dir>
+  <title>Irish Movies</title>
+  <tmdb>lists/47286</tmdb
+  <thumbnail>https://20ap.000webhostapp.com/images/irish.png</thumbnail>
+  <fanart>https://i.pinimg.com/originals/39/36/65/393665aeb5ec75470644c617f4ab5568.jpg</fanart>
+  <content>boxset</content>
+  <summary>Collection of Movies with an Irish Link</summary>
+</dir>
+
+<dir>
+  <title>Horror</title>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/horror.xml</link>
+  <thumbnail>https://20ap.000webhostapp.com/images/horror.png</thumbnail>
+  <fanart>https://i.pinimg.com/originals/12/55/79/1255794d3574387ba704caf25a2c7d5d.jpg</fanart>
+  <content>boxset</content>
+  <summary>All the Horror Movies Scary and not so scary
+  </summary>
+</dir>
+
+<dir>
+  <title>1001 Movies To See Before You Die</title>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/1001.xml</link>
+  <thumbnail>https://20ap.000webhostapp.com/images/1001.png</thumbnail>
+  <fanart>https://gikonomova.files.wordpress.com/2013/12/its-a-wonderful-life-collage.jpg</fanart>
+  <content>boxset</content>
+  <summary>1001 of the highest rated movies</summary>
+</dir>
+
+<dir>
+  <title>TMDB Top Rated Movies</title>
+  <tmdb>movies/top_rated</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <summary>Top Rated Movies on TheMovieDB</summary>
+</dir>
+
+<dir>
+  <title>TMDB Popular Movies</title>
+  <tmdb>movies/popular</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+
+</dir>
+
+<dir>
+  <title>Trending Movies on Trakt</title>
+  <trakt>https://api.trakt.tv/movies/trending</trakt>
+  <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+  <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/05/trakt_tv.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Popular Movies on Trakt</title>
+  <trakt>https://api.trakt.tv/movies/popular</trakt>
+  <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+
+</dir>
+
+
+<dir>
+  <title>Kids Movies</title>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/kidsmovies.xml</link>
+  <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
+  <summary>Kids Movies</summary>
+  <fanart></fanart>
+</dir>
+
+
+<dir>
+  <title>Search the TMDB</title>
+  <tmdb>search</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+</dir>
+
+
+<dir>
+  <title>Reddit Movie Subreddits</title>
+  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/reddit.xml</link>
+  <thumbnail>https://cdn-images-1.medium.com/max/800/1*17huNsIWQqUSy12VPH4k1Q.png</thumbnail>
+  <fanart>http://cmxhub.com/wp-content/uploads/2014/06/reddit.jpg</fanart>
+  <content>boxset</content>
+  <summary>Subreddits with links to Movies</summary>
+</dir>

@@ -1,0 +1,33 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+<dir>
+        <name>Tribes, Predators, and Me</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt5772196</imdb>
+                <tvdb>309236</tvdb>
+                <tvshowtitle>Tribes, Predators, and Me</tvshowtitle>
+                <year>2016</year>
+                <season>1</season>
+        </meta>
+        <link>https://20ap.000webhostapp.com/jen/main/tv_movie_sets/tribes1.xml</link>
+        <thumbnail>https://www.thetvdb.com/banners/posters/309236-1.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/309236-1.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Tribes, Predators, and Me</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt5772196</imdb>
+                <tvdb>309236</tvdb>
+                <tvshowtitle>Tribes, Predators, and Me</tvshowtitle>
+                <year>2016</year>
+                <season>2</season>
+        </meta>
+        <link>https://20ap.000webhostapp.com/jen/main/tv_movie_sets/tribes2.xml</link>
+        <thumbnail>https://www.thetvdb.com/banners/posters/309236-2.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/309236-2.jpg</fanart>
+</dir>

@@ -1,0 +1,47 @@
+##########################################################################################
+
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/M8HjXeXQy4Ta4MOrCmMHLr8pBl.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/72023-16.jpg</fanart>
+##########################################################################################
+<dir>
+	<name>Deadwood Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0348914</imdb>
+		<tvdb>72023</tvdb>
+		<tvshowtitle>Deadwood</tvshowtitle>
+		<year>2004</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/deadwood/Deadwood%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72023-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Deadwood Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0348914</imdb>
+		<tvdb>72023</tvdb>
+		<tvshowtitle>Deadwood</tvshowtitle>
+		<year>2004</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/deadwood/Deadwood%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72023-2-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Deadwood Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0348914</imdb>
+		<tvdb>72023</tvdb>
+		<tvshowtitle>Deadwood</tvshowtitle>
+		<year>2004</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/deadwood/Deadwood%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/72023-3-4.jpg</thumbnail>
+</dir>

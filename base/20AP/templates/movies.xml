@@ -1,0 +1,37 @@
+
+
+<item>
+  <title></title>
+  <meta>
+    <content>movie</content>
+    <imdb></imdb>
+    <title></title>
+    <year></year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<dir>
+	<title></title>
+	<tmdb>person/movies/</tmdb>
+	<summary></summary>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+</dir>
+
+
+<dir>
+	<title></title>
+	<tmdb>collection/</tmdb>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+  <summary></summary>
+	<content>boxset</content>
+</dir>

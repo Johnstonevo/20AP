@@ -1,0 +1,66 @@
+##########################################################################################
+
+<cache>10800</cache>
+<thumbnail></thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/176941-3.jpg</fanart>
+##########################################################################################
+
+<item>
+	<title>Sherlock S04E01 - The Six Thatchers</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt1475582</imdb>
+		<tvdb>176941</tvdb>
+		<tvshowtitle>Sherlock</tvshowtitle>
+		<year>2010</year>
+		<title>The Six Thatchers</title>
+		<premiered>2017-01-01</premiered>
+		<season>4</season>
+		<episode>1</episode>
+		<thumbnail></thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>Sherlock S04E02 - The Lying Detective</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt1475582</imdb>
+		<tvdb>176941</tvdb>
+		<tvshowtitle>Sherlock</tvshowtitle>
+		<year>2010</year>
+		<title>The Lying Detective</title>
+		<premiered>2017-01-08</premiered>
+		<season>4</season>
+		<episode>2</episode>
+		<thumbnail></thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>Sherlock S04E03 - The Final Problem</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt1475582</imdb>
+		<tvdb>176941</tvdb>
+		<tvshowtitle>Sherlock</tvshowtitle>
+		<year>2010</year>
+		<title>The Final Problem</title>
+		<premiered>2017-01-15</premiered>
+		<season>4</season>
+		<episode>3</episode>
+		<thumbnail></thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>

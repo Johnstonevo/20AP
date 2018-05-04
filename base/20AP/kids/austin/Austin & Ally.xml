@@ -1,0 +1,62 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/gvmJuUso2DIaAyFqKR03hPu9ghz.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/254245-1.jpg</fanart>
+###########################################################################################################
+
+
+<dir>
+	<name>Austin & Ally Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1830491</imdb>
+		<tvdb>254245</tvdb>
+		<tvshowtitle>Austin & Ally</tvshowtitle>
+		<year>2011</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/austin/Austin%20%26%20Ally%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/254245-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Austin & Ally Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1830491</imdb>
+		<tvdb>254245</tvdb>
+		<tvshowtitle>Austin & Ally</tvshowtitle>
+		<year>2011</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/austin/Austin%20%26%20Ally%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/254245-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Austin & Ally Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1830491</imdb>
+		<tvdb>254245</tvdb>
+		<tvshowtitle>Austin & Ally</tvshowtitle>
+		<year>2011</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/austin/Austin%20%26%20Ally%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/254245-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Austin & Ally Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1830491</imdb>
+		<tvdb>254245</tvdb>
+		<tvshowtitle>Austin & Ally</tvshowtitle>
+		<year>2011</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/austin/Austin%20%26%20Ally%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/254245-4.jpg</thumbnail>
+</dir>

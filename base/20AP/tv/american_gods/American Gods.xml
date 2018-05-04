@@ -1,0 +1,18 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<dir>
+	<name>American Gods Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1898069</imdb>
+		<tvdb>253573</tvdb>
+		<tvshowtitle>American Gods</tvshowtitle>
+		<year>2017</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/american_gods/American%20Gods%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/253573-1.jpg</thumbnail>
+</dir>

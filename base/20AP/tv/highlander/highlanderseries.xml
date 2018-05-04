@@ -1,0 +1,104 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+<dir>
+        <name>Highlander The Series: Season 1</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The Series: Season 1</tvshowtitle>
+                <year>1992</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlander1.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners//seasons/75160-1.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart></fanart>
+</dir>
+
+<dir>
+        <name>Highlander The Series: Season 2</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0103442tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The Series: Season 2</tvshowtitle>
+                <year>1992</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlander2.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/75160-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart></fanart>
+</dir>
+
+<dir>
+        <name>Highlander The Series: Season 3</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The Series: Season 3</tvshowtitle>
+                <year>1992</year>
+                <season>3</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlander3.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/75160-3.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart></fanart>
+</dir>
+
+<dir>
+        <name>Highlander The Series: Season 4</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The Series: Season 4</tvshowtitle>
+                <year>1992</year>
+                <season>4</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlander4.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/75160-4.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart></fanart>
+</dir>
+
+<dir>
+        <name>Highlander The Series: Season 5</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The Series: Season 5</tvshowtitle>
+                <year>1992</year>
+                <season>5</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlander5.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/75160-5.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart></fanart>
+</dir>
+
+<dir>
+        <name>Highlander The Series: Season 6</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The Series: Season 6</tvshowtitle>
+                <year>1992</year>
+                <season>6</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlander6.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/75160-6.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart></fanart>
+</dir>

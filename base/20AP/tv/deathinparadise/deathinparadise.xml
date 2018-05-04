@@ -1,0 +1,117 @@
+##########################################################################################
+<cache>10800</cache>
+<thumbnail>https://www.thetvdb.com/banners/posters/252800-9.jpg</thumbnail>
+<fanart>https://www.thetvdb.com/banners/fanart/original/252800-22.jpg</fanart>
+##########################################################################################
+
+
+<dir>
+        <name>Death In Paradise Season 1</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>1</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise1.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-1-7.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-22.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Death In Paradise Season 2</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>2</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise2.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-2-7.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-1.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Death In Paradise Season 3</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>3</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise3.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-3-1.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-2.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Death In Paradise Season 4</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>4</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise4.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-4-7.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-3.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Death In Paradise Season 5</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>5</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise5.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-5-7.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-22.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Death In Paradise Season 6</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>6</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise6.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-6-2.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-22.jpg</fanart>
+</dir>
+
+
+<dir>
+        <name>Death In Paradise Season 7</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt1888075</imdb>
+                <tvdb>252800</tvdb>
+                <tvshowtitle>Death In Paradise</tvshowtitle>
+                <year>2011</year>
+                <season>7</season>
+        </meta>
+        <link>https://github.com/Johnstonevo/20AP/blob/master/tv/deathinparadise/deathinparadise7.xml</link>
+         <thumbnail>https://www.thetvdb.com/banners/seasons/252800-7-1.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/252800-22.jpg</fanart>
+</dir>

@@ -1,0 +1,50 @@
+################################################################################
+<Fanart>https://www.thetvdb.com/banners/fanart/original/283073-1.jpg</fanart>
+<thumbnail>https://www.thetvdb.com/banners/seasons/283073-1.jpg</thumbnail>
+################################################################################
+
+
+<dir>
+  <name>Season 1</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt3803630</imdb>
+    <tvdb>283073</tvdb>
+    <tvshowtitle>Fat N' Furious: Rolling Thunder</tvshowtitle>
+    <year>2014</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/fatfurious/fatfurious1.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 2</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt3803630</imdb>
+    <tvdb>283073</tvdb>
+    <tvshowtitle>Fat N' Furious: Rolling Thunder</tvshowtitle>
+    <year>2014</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/fatfurious/fatfurious2.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 3</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt3803630</imdb>
+    <tvdb>283073</tvdb>
+    <tvshowtitle>Fat N' Furious: Rolling Thunder</tvshowtitle>
+    <year>2014</year>
+    <season>3</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/fatfurious/fatfurious3.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>

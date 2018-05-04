@@ -1,0 +1,130 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>http://www.powerpointhintergrund.com/uploads/2017/05/retro-stripes-animation-3-background-video-youtube-25.jpeg</fanart>
+<thumbnail>https://www.howtogeek.com/wp-content/uploads/2016/04/kodi_512x512.png</thumbnail>
+##########################################################################################
+
+
+
+<dir>
+<name>TV</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/tvshows.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/tv.png</thumbnail>
+<Summary>TV Shows.  Old, New, Interesting</summary>
+<fanart></fanart>
+</dir>
+
+<dir>
+<name>Movies</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/movies.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/movie-3.png</thumbnail>
+<summary>Movie lists.  Old New, Interesting</summary>
+<fanart></fanart>
+</dir>
+
+<dir>
+<title>Anime</title>
+<tmdb>list/47118</tmdb>
+<thumbnail>https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png</thumbnail>
+<fanart>http://www.powerpointhintergrund.com/uploads/2017/05/retro-stripes-animation-3-background-video-youtube-25.jpeg</fanart>
+<summary>Japanese Cartoons, some a bit random</summary>
+</dir>
+
+<dir>
+<title>Stand Up Comedy</title>
+<tmdb>list/47124</tmdb>
+<fanart>https://images-eu.ssl-images-amazon.com/images/I/51jBUlwnStL.jpg</fanart>
+<thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Comedy-2-icon.png</thumbnail>
+<summary>Stand-Up Comedy</summary>
+</dir>
+
+
+<dir>
+<name>Documentaries</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/Documentaries.xml</link>
+<thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png</thumbnail>
+<fanart></fanart>
+<summary>Documentaries. Non Fiction(depending on conspiracy inclination) on loads of different subjects.</summary>
+</dir>
+
+
+<dir>
+<name>Youtube</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/menu.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
+<fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
+<Summary>All the Youtube Channels</summary>
+</dir>
+
+
+<dir>
+<name>Radio</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/radio.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
+<fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
+<summary>Decent Radio Stations</summary>
+</dir>
+
+
+<dir>
+<name>Sport</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/sport.xml</link>
+<thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
+<fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
+<summary>Motorsports, Rugby and Darts</summary>
+</dir>
+
+<dir>
+<name>Concerts</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/music/concerts.xml</link>
+<thumbnail>https://cdn3.iconfinder.com/data/icons/buildings-places/512/Concert-512.png</thumbnail>
+<fanart>https://images5.alphacoders.com/349/thumb-1920-349660.jpg</fanart>
+<summary>Decent live tunes</summary>
+</dir>
+
+
+
+<dir>
+<name>Man Shed</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/manshed.xml</link>
+<thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
+<fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
+<Summary>The Man Shed Cars and things</summary>
+</dir>
+
+
+<dir>
+  <title>Search Trakt</title>
+  <trakt>search</trakt>
+	<thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+  <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/05/trakt_tv.jpg</fanart>
+  <summary>Search on Trakt for TV Shows and Movies</summary>
+</dir>
+
+
+
+<dir>
+<name>Bobby's Favourites</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/bobby.xml</link>
+<summary>All Bobbys sick and twisted stuff</summary>
+<thumbnail>https://20ap.000webhostapp.com/repository.20ap/20AP/images/bobby.png</thumbnail>
+<fanart></fanart>
+</dir>
+
+
+<dir>
+<name>Kids</name>
+<link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/base.xml</link>
+<thumbnail>https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png</thumbnail>
+<fanart></fanart>
+<summary>Link to the Kids Add-on Playlists</summary>
+</dir>
+
+
+<dir>
+  <title>Trakt Lists</title>
+  <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+  <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+  <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/05/trakt_tv.jpg</fanart>
+<Summary>Back up lists on Trakt incase TMDB goes down</summary>
+</dir>

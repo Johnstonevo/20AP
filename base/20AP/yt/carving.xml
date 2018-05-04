@@ -1,0 +1,96 @@
+#######################################################################################################################################
+<animated_thumbnail>http://images.clipartpanda.com/happy-halloween-ghost-HappyHalloweenSnag.gif</animated_thumbnail>
+<thumbnail>http://images.clipartpanda.com/happy-halloween-ghost-HappyHalloweenSnag.gif</thumbnail>
+<fanart>http://interferente.ro/images/stories/animate/halloween_2013/felicitari_infricosatoare_halloween/felicitare%20animata%20happy%20halloween.gif</fanart>
+<animated_fanart>http://interferente.ro/images/stories/animate/halloween_2013/felicitari_infricosatoare_halloween/felicitare%20animata%20happy%20halloween.gif</animated_fanart>
+#######################################################################################################################################
+
+<item>
+	<title>[COLOR darkorange]Halloween Pumpkin [COLOR white]Carving[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=Wns8WPqkZjM</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]How to Carve [COLOR white]Halloween Pumpkins[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=RUVNHh2hkGU</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]Creative Pumpkin [COLOR white]Carving Crazy Ideas[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=GiuaBzhye2Y</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]Pumpkin [COLOR white]Carving[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=55WemWe7DU4</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]How to Make a [COLOR white]Flaming Pumpkin[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=NFErgnaSRRY</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]DIY Pumpkin [COLOR white]Carvings[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=MKH_CjviSFE</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]Pumpkin [COLOR white]Carving[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=Ogt8_q7G634</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]DIY Pumpkin [COLOR white]Carvings[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=rlZ93H10qKs</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+	<title>[COLOR darkorange]Pumpkin Disco [COLOR white]Ball[/COLOR]</title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=8sCKnySLkNk</sublink>
+	</link>
+	<content></content>
+</item>
+
+<plugin>
+	<title>[COLOR darkorange]Halloween Pumpkin [COLOR white]Carving[/COLOR]</title>
+	<link>plugin://plugin.video.youtube/playlist/RUVNHh2hkGU&list=RDQM6AFV_iYL-ME/</link>
+	<content></content>
+</plugin>
+
+<plugin>
+	<title>[COLOR darkorange]Halloween Pumpkin [COLOR white]Carving Ideas[/COLOR]</title>
+	<link>plugin://plugin.video.youtube/playlist/PLnf6xKS0Kho3VLJNRgE0MsHrGNhn-ZLq9/</link>
+	<content></content>
+</plugin>
+
+<plugin>
+	<title>[COLOR darkorange]How to Carve a [COLOR white]Halloween Pumpkin[/COLOR]</title>
+	<link>plugin://plugin.video.youtube/playlist/2khFjbWb-kQ&list=PL451E7FC60B213077/</link>
+	<content></content>
+</plugin>

@@ -1,0 +1,33 @@
+################################################################################
+<cache>10800</cache>
+<fanart>https://www.thetvdb.com/banners/fanart/original/314087-1.jpg</fanart>
+################################################################################
+
+<dir>
+        <name>The Grand Tour Season 1</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt5712554</imdb>
+                <tvdb>314087</tvdb>
+                <tvshowtitle>The Grand Tour (2016)</tvshowtitle>
+                <year>2016</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grandtour/grandtour1.xml</link>
+        <thumbnail>https://www.thetvdb.com/banners/posters/314087-3.jpg</thumbnail>
+</dir>
+
+<dir>
+        <name>The Grand Tour Season 2</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt5712554</imdb>
+                <tvdb>314087</tvdb>
+                <tvshowtitle>The Grand Tour (2016)</tvshowtitle>
+                <year>2016</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grandtour/grandtour2.xml</link>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/314087-2-2.jpg</thumbnail>
+        <fanart></fanart>
+</dir>

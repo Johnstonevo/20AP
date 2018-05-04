@@ -1,0 +1,60 @@
+#######################################################################################################################################
+
+<thumbnail>http://image.tmdb.org/t/p/original/rm2UtZWdyjlnaT92QBnbhsQfLNF.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/80726-6.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Wizards of Waverly Place Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0799922</imdb>
+		<tvdb>80726</tvdb>
+		<tvshowtitle>Wizards of Waverly Place</tvshowtitle>
+		<year>2007</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/wiz/Wizards%20of%20Waverly%20Place%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/80726-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Wizards of Waverly Place Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0799922</imdb>
+		<tvdb>80726</tvdb>
+		<tvshowtitle>Wizards of Waverly Place</tvshowtitle>
+		<year>2007</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/wiz/Wizards%20of%20Waverly%20Place%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/80726-2-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Wizards of Waverly Place Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0799922</imdb>
+		<tvdb>80726</tvdb>
+		<tvshowtitle>Wizards of Waverly Place</tvshowtitle>
+		<year>2007</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/wiz/Wizards%20of%20Waverly%20Place%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/80726-3-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Wizards of Waverly Place Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0799922</imdb>
+		<tvdb>80726</tvdb>
+		<tvshowtitle>Wizards of Waverly Place</tvshowtitle>
+		<year>2007</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/wiz/Wizards%20of%20Waverly%20Place%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/80726-4.jpg</thumbnail>
+</dir>

@@ -1,0 +1,106 @@
+####################################################################################################
+<cache>10800</cache>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+####################################################################################################
+<dir>
+<title>Selected Documentaries via TMDB</title>
+<tmdb>list/47175</tmdb>
+<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+
+</dir>
+
+<dir>
+<title>All Documentaries via TMDB</title>
+<tmdb>genre/movies/99</tmdb>
+<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+
+</dir>
+
+
+<plugin>
+  <title>Reddit Documentaries</title>
+  <link>plugin://plugin.video.reddit_viewer/?modelistSubReddit&amp;typedocumentaries&amp;urlhttps%3a%2f%2fwww.reddit.com%2fr%2fdocumentaries%2f.json%3f%26limit%3d50</link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/I/418PuxYS63L.png</thumbnail>
+  <fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
+  <content></content>
+</plugin>
+
+<plugin>
+  <title>Youtube Documentaries</title>
+  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZP8lMRveOUhCrZAEwIn_jZM/</link>
+  <thumbnail>https://yt3.ggpht.com/qgAMspKekhapIIu6oDpA1L9jTVqOdGsfRAV0UnNunasrAK7vmHAnF3roDJmcUUxWX0Asbzh1HTuGJIQ1Lws88-nd-c-c0xffffffff-rj-k-no</thumbnail>
+  <fanart></fanart>
+</plugin>
+
+
+<plugin>
+<title>Youtube Documentaries 2</title>
+<link>plugin://plugin.video.youtube/playlist/PLR3SowCQah02FYPAFXOFH2Vy1qcAmIJ_A/</link>
+<thumbnail>https://i.pinimg.com/736x/1e/70/a8/1e70a87d45aa800dfa72d08703818ec2--funny-hats-mesh-hats.jpg</thumbnail>
+</plugin>
+
+<dir>
+
+<dir>
+  <title>Tribes, Predators, and Me</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt5772196</imdb>
+    <tvdb>309236</tvdb>
+    <tvshowtitle>Tribes, Predators, and Me</tvshowtitle>
+    <year>2016</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/tribes/tribes.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/309236-1.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/309236-1.jpg</fanart>
+</dir>
+
+<item>
+  <title>War & Cheese</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5847392</imdb>
+    <title>War & Cheese</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwZGRhYTctYjNiOC00YjI5LTlhM2YtODgzZDAwNmY3Nzc4XkEyXkFqcGdeQXVyMjMyNzkwMjE@._V1_UY268_CR147,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Soham Revisited: 15 Years On</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6823920</imdb>
+    <title>Soham Revisited: 15 Years On</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://primewire.unblocked.bid/imagesp/thumbs/2793435_Soham_Revisited_15_Years_On_2017_60.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Shannon Matthews: What Happened Next</title>
+  <meta>
+    <content>Documentary, Crime /content>
+      <imdb>tt6627612</imdb>
+      <title>Shannon Matthews: What Happened Next</title>
+      <year>2017</year>
+    </meta>
+    <link><sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMzAyMjhiOWEtMzM0Ny00MzFkLWI0YTItMzk5NTdlZmNlMjNkXkEyXkFqcGdeQXVyNDkwMzY5NjQ@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>

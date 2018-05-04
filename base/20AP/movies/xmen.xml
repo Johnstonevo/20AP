@@ -1,0 +1,147 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+	<title>X-Men (2000)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/k01Q6ATbfzNJgw4Zuoj0LTY3T9x.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xm75A18CE7Wc6J9k2ZidFyqJ6rX.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men</title>
+		<year>2000</year>
+		<imdb>tt0120903</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>X-Men 2 (2003)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/8TAPuoephNAiRGgBobP4xQl0QGK.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/u2FxA8fDt0uQAnHKTwWGgkPShoL.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men 2</title>
+		<year>2003</year>
+		<imdb>tt0290334</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>X-Men: The Last Stand (2006)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/9jsW4RurucTwCEtA5iWV2PmIv11.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/w3Yc8wi2jYLaOyCW6b6svf1B0MG.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men: The Last Stand</title>
+		<year>2006</year>
+		<imdb>tt0376994</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>X-Men Origins: Wolverine (2009)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/kz77FuYQkUzqX1tPQALHNsJzdrj.jpg</thumbnail>
+	<fanart>no</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men Origins: Wolverine</title>
+		<year>2009</year>
+		<imdb>tt0458525</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>X-Men: First Class (2011)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/7SSm7BfzFoVzmd6fCDccj7qRxc8.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/zbKSfv9vPmwHLBYud8ZLEUYEM9h.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men: First Class</title>
+		<year>2011</year>
+		<imdb>tt1270798</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Wolverine (2013)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/iTST6DcLhfufWYUKCOskkusaYUq.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/gGKyIVKM4BqaOYy5BiZCywFggy4.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Wolverine</title>
+		<year>2013</year>
+		<imdb>tt1430132</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>X-Men: Days of Future Past (2014)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/giUK8ppRbfistadVzHtpainkhq4.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/5kYj5EOQMFBFCdnk4X8KaFUfDVR.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men: Days of Future Past</title>
+		<year>2014</year>
+		<imdb>tt1877832</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>X-Men: Apocalypse (2016)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/zSouWWrySXshPCT4t3UKCQGayyo.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/oQWWth5AOtbWG9o8SCAviGcADed.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>X-Men: Apocalypse</title>
+		<year>2016</year>
+		<imdb>tt3385516</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Logan (2017)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/x75pHBRH3UdRQtP52k8MIOLryW8.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/5pAGnkFYSsFJ99ZxDIYnhQbQFXs.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Logan</title>
+		<year>2017</year>
+		<imdb>tt3315342</imdb>
+	</meta>
+</item>

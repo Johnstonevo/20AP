@@ -1,0 +1,45 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/original/fojGF7uwflSszONFd4yUu9YO6IQ.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/205251-6.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Shake It Up Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1661326</imdb>
+		<tvdb>205251</tvdb>
+		<tvshowtitle>Shake It Up</tvshowtitle>
+		<year>2010</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/shake_it_up/Shake%20It%20Up%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/205251-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Shake It Up Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1661326</imdb>
+		<tvdb>205251</tvdb>
+		<tvshowtitle>Shake It Up</tvshowtitle>
+		<year>2010</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/shake_it_up/Shake%20It%20Up%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/205251-2-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Shake It Up Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1661326</imdb>
+		<tvdb>205251</tvdb>
+		<tvshowtitle>Shake It Up</tvshowtitle>
+		<year>2010</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/shake_it_up/Shake%20It%20Up%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/205251-3.jpg</thumbnail>
+</dir>

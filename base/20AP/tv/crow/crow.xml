@@ -1,0 +1,32 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+<dir>
+        <name>Upstart Crow - Season 1</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt4793190</imdb>
+                <tvdb>309790</tvdb>
+                <tvshowtitle>Upstart Crow</tvshowtitle>
+                <year>2016</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/crow/crow1.xml</link>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/309790-1.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/_cache/fanart/original/309790-1.jpg</fanart>
+</dir>
+
+<dir>
+        <name>Upstart Crow - Season 2</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt4793190</imdb>
+                <tvdb>309790</tvdb>
+                <tvshowtitle>Upstart Crow</tvshowtitle>
+                <year>2016</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/crow/crow2.xml</link>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/309790-2.jpg</thumbnail>
+        <fanart>https://www.thetvdb.com/banners/_cache/fanart/original/309790-1.jpg</fanart>
+</dir>

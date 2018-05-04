@@ -1,0 +1,115 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+	<title>Rocky (1976)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/i5xiwdSsrecBvO7mIfAJixeEDSg.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/2kkyt0FLROrXt41IgSdE7goCFNQ.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rocky</title>
+		<year>1976</year>
+		<imdb>tt0075148</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rocky II (1979)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/fqJH7mI4dFANRay8qdJoGa7fK1k.jpg</thumbnail>
+	<fanart>nhttps://image.tmdb.org/t/p/original/5yo7gzdfQpPiTcF22j37dUHmWOh.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rocky II</title>
+		<year>1979</year>
+		<imdb>tt0079817</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rocky III (1982)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/ns55NGqTDEEjcI9z2a9htA2cFtG.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/6qYptQG2ynJANbyjjYOt4fpHfxF.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rocky III</title>
+		<year>1982</year>
+		<imdb>tt0084602</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rocky IV (1985)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/q2nkVddOshjhJ19oQYmViQHxyjj.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/uvbjTLZSxGehXWDo1ENyVuBrYie.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rocky IV</title>
+		<year>1985</year>
+		<imdb>tt0089927</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rocky V (1990)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/5P2RiuLt31mWyb6duww8qlAhs6G.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/5U19hywCtUye4bj5P1gZZocm8s0.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rocky V</title>
+		<year>1990</year>
+		<imdb>tt0100507</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rocky Balboa (2006)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/usZMPGxyRsyOpX5nuqHFxH3qlMh.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/1hCngs2CrxCZaPTwvxT9le7lJbO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rocky Balboa</title>
+		<year>2006</year>
+		<imdb>tt0479143</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Creed (2015)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/hKzhV274pkZBSpXfCjUyzbyYKLl.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/fs2yhdSCzMVlNECrN84WuCkgXov.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Creed</title>
+		<year>2015</year>
+		<imdb>tt3076658</imdb>
+	</meta>
+</item>

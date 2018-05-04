@@ -1,0 +1,73 @@
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/uEkZbnAO7zyH6KMSisTVaxbIAss.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/261451-2.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Teenage Mutant Ninja Turtles Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1877889</imdb>
+		<tvdb>261451</tvdb>
+		<tvshowtitle>Teenage Mutant Ninja Turtles</tvshowtitle>
+		<year>2012</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teenage_mut/Teenage%20Mutant%20Ninja%20Turtles%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/261451-1-6.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teenage Mutant Ninja Turtles Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1877889</imdb>
+		<tvdb>261451</tvdb>
+		<tvshowtitle>Teenage Mutant Ninja Turtles</tvshowtitle>
+		<year>2012</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teenage_mut/Teenage%20Mutant%20Ninja%20Turtles%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/261451-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teenage Mutant Ninja Turtles Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1877889</imdb>
+		<tvdb>261451</tvdb>
+		<tvshowtitle>Teenage Mutant Ninja Turtles</tvshowtitle>
+		<year>2012</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teenage_mut/Teenage%20Mutant%20Ninja%20Turtles%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/261451-3-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teenage Mutant Ninja Turtles Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1877889</imdb>
+		<tvdb>261451</tvdb>
+		<tvshowtitle>Teenage Mutant Ninja Turtles</tvshowtitle>
+		<year>2012</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teenage_mut/Teenage%20Mutant%20Ninja%20Turtles%204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/261451-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Teenage Mutant Ninja Turtles Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1877889</imdb>
+		<tvdb>261451</tvdb>
+		<tvshowtitle>Teenage Mutant Ninja Turtles</tvshowtitle>
+		<year>2012</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/teenage_mut/Teenage%20Mutant%20Ninja%20Turtles%205.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/261451-5.jpg</thumbnail>
+</dir>

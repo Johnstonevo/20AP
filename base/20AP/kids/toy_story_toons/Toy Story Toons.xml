@@ -1,0 +1,17 @@
+<cache>10800</cache>
+<thumbnail>http://thetvdb.com/banners/posters/249285-2.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/249285-1.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Toy Story Toons Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>None</imdb>
+		<tvdb>249285</tvdb>
+		<tvshowtitle>Toy Story Toons</tvshowtitle>
+		<year>2011</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/toy_story_toons/Toy%20Story%20Toons%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/posters/249285-2.jpg</thumbnail>
+</dir>

@@ -1,0 +1,35 @@
+################################################################################
+<cache>10800</cache>
+<thumbnail>https://www.thetvdb.com/banners/posters/79257-6.jpg</thumbnail>
+<fanart>https://www.thetvdb.com/banners/fanart/original/79257-14.jpg</fanart>
+################################################################################
+
+<dir>
+        <name>Planet Earth</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0795176</imdb>
+                <tvdb>79257</tvdb>
+                <tvshowtitle>Planet Earth</tvshowtitle>
+                <year>2006</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/planetearth/planetearth1.xml</link>
+        <thumbnail></thumbnail>
+        <fanart></fanart>
+</dir>
+
+<dir>
+        <name>Planet Earth II</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt5491994</imdb>
+                <tvdb>318408</tvdb>
+                <tvshowtitle>Planet Earth II</tvshowtitle>
+                <year>2016</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/planetearth/planetearth2.xml</link>
+        <thumbnail></thumbnail>
+        <fanart></fanart>
+</dir>

@@ -1,0 +1,103 @@
+<cache>10800</cache>
+<thumbnail>http://thetvdb.com/banners/seasons/250498-1.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/250498-16.jpg</fanart>
+#######################################################################################################################################
+<item>
+	<title>LEGO Star Wars S01E01 - Revenge of the Brick</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<title>Revenge of the Brick</title>
+		<premiered>2005-05-08</premiered>
+		<season>1</season>
+		<episode>1</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/250498/4139115.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>LEGO Star Wars S01E02 - The Quest for R2-D2</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<title>The Quest for R2-D2</title>
+		<premiered>2009-08-27</premiered>
+		<season>1</season>
+		<episode>2</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/250498/4139116.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>LEGO Star Wars S01E03 - Bombad Bounty</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<title>Bombad Bounty</title>
+		<premiered>2010-11-27</premiered>
+		<season>1</season>
+		<episode>3</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/250498/4139117.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>LEGO Star Wars S01E04 - The Padawan Menace</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<title>The Padawan Menace</title>
+		<premiered>2011-07-22</premiered>
+		<season>1</season>
+		<episode>4</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/250498/4139118.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>LEGO Star Wars S01E05 - The Empire Strikes Out</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt4855868</imdb>
+		<tvdb>250498</tvdb>
+		<tvshowtitle>LEGO Star Wars</tvshowtitle>
+		<year>2011</year>
+		<title>The Empire Strikes Out</title>
+		<premiered>2012-10-07</premiered>
+		<season>1</season>
+		<episode>5</episode>
+		<thumbnail>http://thetvdb.com/banners/episodes/250498/4412285.jpg</thumbnail>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>

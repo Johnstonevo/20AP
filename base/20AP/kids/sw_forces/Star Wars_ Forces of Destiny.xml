@@ -1,0 +1,18 @@
+#######################################################################################################################################
+
+<thumbnail>http://image.tmdb.org/t/p/w500/2MEFRf1iBR5goKiLm4xYznxQEvJ.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/330710-2.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Star Wars: Forces of Destiny Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt6779076</imdb>
+		<tvdb>330710</tvdb>
+		<tvshowtitle>Star Wars: Forces of Destiny</tvshowtitle>
+		<year>2017</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/sw_forces/Star%20Wars_%20Forces%20of%20Destiny%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/330710-1.jpg</thumbnail>
+</dir>

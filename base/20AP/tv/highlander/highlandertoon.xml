@@ -1,0 +1,36 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+<dir>
+        <name>Highlander: The Animated Series Season 1</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0147773</imdb>
+                <tvdb>70437</tvdb>
+                <tvshowtitle>Highlander: The Animated Series</tvshowtitle>
+                <year>1994</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlandertoon1.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/70437-1.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/70437-1.jpg</fanart>
+</dir>
+
+<dir>
+        <name>Highlander: The Animated Series Season 2</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0147773</imdb>
+                <tvdb>70437</tvdb>
+                <tvshowtitle>Highlander: The Animated Series</tvshowtitle>
+                <year>1994</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlandertoon2.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/70437-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/70437-1.jpg</fanart>
+</dir>

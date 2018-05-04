@@ -1,0 +1,32 @@
+###########################################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/oGsgxjeZ9rd20eCJsGSMGgWvl4P.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/259972-1.jpg</fanart>
+#######################################################################################################################################
+<dir>
+	<name>Gravity Falls Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1865718</imdb>
+		<tvdb>259972</tvdb>
+		<tvshowtitle>Gravity Falls</tvshowtitle>
+		<year>2012</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gravity_falls/Gravity%20Falls%201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/259972-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gravity Falls Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1865718</imdb>
+		<tvdb>259972</tvdb>
+		<tvshowtitle>Gravity Falls</tvshowtitle>
+		<year>2012</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/kids/gravity_falls/Gravity%20Falls%202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/259972-2-2.jpg</thumbnail>
+</dir>

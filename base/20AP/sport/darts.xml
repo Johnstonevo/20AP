@@ -1,0 +1,19 @@
+###############################################################################
+<fanart></fanart>
+<thumbnail></thumbnail>
+###############################################################################
+
+<plugin>
+  <title>Live</title>
+  <link>
+    <sublink>plugin://plugin.video.f4mTester/?url=plugin://plugin.video.f4mTester/?url=http://www.zeebra.tv:8000/live/salauddin/salauddin/2249.ts&amp;streamtype=TSDOWNLOADER&amp;name=SKY SPORTS 1 HD#</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://cricfree.sc/iframe/hdlive/sky1.php</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://cricfree.sc/update/skysportsaction.php</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://crichd.ws/update/skys1.php</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://crichd.ws/update/skys3.php</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://cricfree.sc/iframe/hdlive/sky1.php</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://cricfree.sc/update/skysportsmainevent.php</sublink>
+</link>
+<thumbnail>https://pbs.twimg.com/profile_images/875724789700333568/38t130uN.jpg</thumbnail>
+  <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
+</plugin>

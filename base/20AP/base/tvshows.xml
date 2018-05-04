@@ -1,0 +1,53 @@
+###########################################################################################################
+<fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+
+###########################################################################################################
+
+
+<dir>
+  <title>Currently Running TV Shows</title>
+  <tmdb>list/47121</tmdb>
+  <thumbnail>https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/FlatScreenTV-512.png</thumbnail>
+  <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Finished TV Series</title>
+  <tmdb>list/47119</tmdb>
+  <thumbnail>https://cdn4.iconfinder.com/data/icons/retro-tv/100/vintage_tv8_fixed-512.png</thumbnail>
+  <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+  <summary>TV Shows that have run their course and came to an end or been cancelled.
+  </summary>
+</dir>
+
+<dir>
+  <title>Adult Cartoons</title>
+  <link>http://illuminatitemple.xyz/atrain/chocolatemain.xml</link>
+  <thumbnail>https://i.imgur.com/jK3Kzao.jpg</thumbnail>
+  <fanart>https://i.imgur.com/UiI6O3O.jpg</fanart>
+  <summary>South Park, Rick and Morty et al</summary>
+</dir>
+
+<dir>
+  <title>TMDB Top Rated TV Shows</title>
+  <tmdb>tv/top_rated</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+
+</dir>
+
+
+
+<dir>
+  <title>Trending Shows on Trakt</title>
+  <trakt>https://api.trakt.tv/shows/trending</trakt>
+  <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+  <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Search the TMDB</title>
+  <tmdb>search</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+</dir>

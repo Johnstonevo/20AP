@@ -1,0 +1,48 @@
+
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>https://image.tmdb.org/t/p/original/fOcUdrXGg27b1zZVfqlLz946Za3.jpg</fanart>
+##########################################################################################
+
+<dir>
+<name>Narcos Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt2707408</imdb>
+<tvdb>282670</tvdb>
+<tvshowtitle>Narcos</tvshowtitle>
+<year>2015</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/narcos/Narcos%201.xml</link>
+<thumbnail>https://image.tmdb.org/t/p/w396/3CEu32C7udZzIjZcrKmdHcRB1ZN.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Narcos Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt2707408</imdb>
+<tvdb>282670</tvdb>
+<tvshowtitle>Narcos</tvshowtitle>
+<year>2015</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/narcos/Narcos%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/posters/282670-10.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Narcos Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2707408</imdb>
+		<tvdb>282670</tvdb>
+		<tvshowtitle>Narcos</tvshowtitle>
+		<year>2015</year>
+		<season>3</season>
+	</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/narcos/Narcos%203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/282670-3.jpg</thumbnail>
+</dir>

@@ -1,0 +1,52 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+	<title>The Hangover (2009)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/uluhlXubGu1VxU63X9VHCLWDAYP.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/39LohvXfll5dGCQIV9B9VJ16ImE.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Hangover</title>
+		<year>2009</year>
+		<imdb>tt1119646</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Hangover Part II (2011)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/yoiJyVknXfU4jcJvPYeMOCgyLky.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/y9TGH1rtr77VwkzMzty5jotQD8X.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Hangover Part II</title>
+		<year>2011</year>
+		<imdb>tt1411697</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Hangover Part III (2013)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/vtxuPWkdllLNLVyGjKYa267ntuH.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xIrtFqXc62VGcWKHOsQfCq4j3x0.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Hangover Part III</title>
+		<year>2013</year>
+		<imdb>tt1951261</imdb>
+	</meta>
+</item>
