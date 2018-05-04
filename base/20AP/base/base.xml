@@ -8,7 +8,7 @@
 
 <dir>
 <name>TV</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/tvshows.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/tvshows.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/tv.png</thumbnail>
 <Summary>TV Shows.  Old, New, Interesting</summary>
 <fanart></fanart>
@@ -16,7 +16,7 @@
 
 <dir>
 <name>Movies</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/movies.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/movies.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/movie-3.png</thumbnail>
 <summary>Movie lists.  Old New, Interesting</summary>
 <fanart></fanart>
@@ -41,7 +41,7 @@
 
 <dir>
 <name>Documentaries</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/Documentaries.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml</link>
 <thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png</thumbnail>
 <fanart></fanart>
 <summary>Documentaries. Non Fiction(depending on conspiracy inclination) on loads of different subjects.</summary>
@@ -50,7 +50,7 @@
 
 <dir>
 <name>Youtube</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/menu.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
 <fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
 <Summary>All the Youtube Channels</summary>
@@ -59,7 +59,7 @@
 
 <dir>
 <name>Radio</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/radio.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/radio.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
 <fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
 <summary>Decent Radio Stations</summary>
@@ -68,7 +68,7 @@
 
 <dir>
 <name>Sport</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/sport.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
 <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
 <summary>Motorsports, Rugby and Darts</summary>
@@ -76,7 +76,7 @@
 
 <dir>
 <name>Concerts</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/music/concerts.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/music/concerts.xml</link>
 <thumbnail>https://cdn3.iconfinder.com/data/icons/buildings-places/512/Concert-512.png</thumbnail>
 <fanart>https://images5.alphacoders.com/349/thumb-1920-349660.jpg</fanart>
 <summary>Decent live tunes</summary>
@@ -86,7 +86,7 @@
 
 <dir>
 <name>Man Shed</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/manshed.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
 <thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
 <fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
 <Summary>The Man Shed Cars and things</summary>
@@ -105,16 +105,16 @@
 
 <dir>
 <name>Bobby's Favourites</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/bobby.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/bobby.xml</link>
 <summary>All Bobbys sick and twisted stuff</summary>
-<thumbnail>https://20ap.000webhostapp.com/repository.20ap/20AP/images/bobby.png</thumbnail>
+<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/images/bobby.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 
 <dir>
 <name>Kids</name>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/base.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/base.xml</link>
 <thumbnail>https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png</thumbnail>
 <fanart></fanart>
 <summary>Link to the Kids Add-on Playlists</summary>

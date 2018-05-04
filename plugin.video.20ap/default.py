@@ -21,7 +21,7 @@ import __builtin__
 # CONFIGURATION VARIABLES
 # -----------------------
 # change these to suit your addons
-root_xml_url = "https://20ap.000webhostapp.com/repository.20ap/20AP/base/base.xml"  # url of the root xml file
+root_xml_url = "https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/base.xml"  # url of the root xml file
 __builtin__.tvdb_api_key = "D59DC0B30C99333E"  # tvdb api key
 __builtin__.tmdb_api_key = "aa28550e5a65f567fc512bd0290ce6fb"  # tmdb api key
 __builtin__.trakt_client_id = "826f424de711d416abc0f2d9ffae98406dd2489ab7a7f1089b9635ae3c5476ed"  # trakt client id

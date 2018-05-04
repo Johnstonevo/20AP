@@ -4,7 +4,7 @@
 ###########################################################################################################
 <dir>
   <title>Finished TV Series</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/finished.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/finished.xml</link>
   <thumbnail>https://cdn4.iconfinder.com/data/icons/retro-tv/100/vintage_tv8_fixed-512.png</thumbnail>
   <fanart>https://cdn.wallpapersafari.com/85/4/eWYZyp.jpg</fanart>
   <summary>TV Shows that have run their course and came to an end or been cancelled.
@@ -27,7 +27,7 @@
 		<tvshowtitle>13 Reasons Why</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/13reasons/13%20Reasons%20Why.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/13reasons/13%20Reasons%20Why.xml</link>
   <thumbnail>https://www.thetvdb.com/banners/posters/323168-1.jpg</thumbnail>
   <fanart>https://www.thetvdb.com/banners/fanart/original/323168-7.jpg</fanart>
 </dir>
@@ -42,7 +42,7 @@
 		<tvshowtitle>American Gods</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/american_gods/American%20Gods.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/american_gods/American%20Gods.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/ovnH6mQfVembYErJXYhnh6e0R9C.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/253573-6.jpg</fanart>
 </dir>
@@ -56,7 +56,7 @@
 		<tvshowtitle>American Horror Story</tvshowtitle>
 		<year>2011</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/american_horror/American%20Horror.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/american_horror/American%20Horror.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/250487-38.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/250487-25.jpg</fanart>
 </dir>
@@ -73,7 +73,7 @@
 		<tvshowtitle>Ash vs Evil Dead</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ash_v_evd/Ash%20vs%20Evil%20Dead.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ash_v_evd/Ash%20vs%20Evil%20Dead.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/wkHStHo0l34FzuSoaBvLx7nItWC.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/296295-11.jpg</fanart>
 </dir>
@@ -89,7 +89,7 @@
 		<tvshowtitle>Ballers</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ballers/Ballers.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ballers/Ballers.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/281714-2.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/281714-1.jpg</fanart>
 </dir>
@@ -103,7 +103,7 @@
 		<tvshowtitle>The Big Bang Theory</tvshowtitle>
 		<year>2007</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/tbbt/Big%20Bang.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/tbbt/Big%20Bang.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/80379-25.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/80379-43.jpg</fanart>
 </dir>
@@ -119,7 +119,7 @@
 		<tvshowtitle>Bones</tvshowtitle>
 		<year>2005</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/blackish/blackish.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/blackish/blackish.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/281511-6.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/281511-7.jpg</fanart>
 </dir>
@@ -133,7 +133,7 @@
     <tvshowtitle>Black Mirror</tvshowtitle>
     <year>2011</year>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/blackmirror/blackmirror.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/blackmirror/blackmirror.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/253463-10.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/253463-13.jpg</fanart>
 </dir>
@@ -149,7 +149,7 @@
     <tvshowtitle>Britannia</tvshowtitle>
 		<year>2018</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/britannia/britannia1.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/britannia/britannia1.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/333644-1.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/333644-2.jpg</fanart>
 </dir>
@@ -164,7 +164,7 @@
 		<tvshowtitle>Bull</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/bull/Bull.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/bull/Bull.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/9ONwYgzhiNhiNE7007ABN4OLXoI.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/311945-1.jpg</fanart>
 </dir>
@@ -179,7 +179,7 @@
 		<tvshowtitle>Call the Midwife</tvshowtitle>
 		<year>2012</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/call_the_midwife/Call%20the%20Midwife.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/call_the_midwife/Call%20the%20Midwife.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/255192-3.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/255192-4.jpg</fanart>
 </dir>
@@ -194,7 +194,7 @@
 		<tvshowtitle>Chicago Fire</tvshowtitle>
 		<year>2012</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/chicago_fire/Chicago%20Fire.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/chicago_fire/Chicago%20Fire.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/258541-11.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/258541-23.jpg</fanart>
 </dir>
@@ -224,7 +224,7 @@
 		<tvshowtitle>Dirk Gently's Holistic Detective Agency</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/dirk_gently/Dirk%20Gently_s%20Holistic%20Detective%20Agency.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/dirk_gently/Dirk%20Gently_s%20Holistic%20Detective%20Agency.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/vJb8Ykm7fHqt4EjMr0FqC63JlxD.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/312505-3.jpg</fanart>
 </dir>
@@ -237,7 +237,7 @@
 		<tvshowtitle>DDoc Martin</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/doc_martin/docmartin.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/doc_martin/docmartin.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/79285-3.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/79285-9.jpg</fanart>
 </dir>
@@ -251,7 +251,7 @@
 		<tvshowtitle>Doctor Who</tvshowtitle>
 		<year>2005</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/DR_who/Doctor%20Who.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/DR_who/Doctor%20Who.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/igDhbYQTvact1SbNDbzoeiFBGda.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/78804-56.jpg</fanart>
 </dir>
@@ -265,7 +265,7 @@
 		<tvshowtitle>The End Of The F***ing World</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/endofworld/endofworld1.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/endofworld/endofworld1.xml</link>
   <fanart>https://www.thetvdb.com/banners/fanart/original/336522-1.jpg</fanart>
   <thumbnail>https://www.thetvdb.com/banners/posters/336522-1.jpg</thumbnail>
 </dir>
@@ -280,7 +280,7 @@
 		<tvshowtitle>Fargo</tvshowtitle>
 		<year>2014</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/fargo/Fargo.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/fargo/Fargo.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/e890UetS6XH7kqltlZ8VU6qDaHU.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/269613-20.jpg</fanart>
 </dir>
@@ -295,7 +295,7 @@
 		<tvshowtitle>Fear the Walking Dead</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ftwd/Fear%20the%20Walking%20Dead.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ftwd/Fear%20the%20Walking%20Dead.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/290853-6.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/290853-2.jpg</fanart>
 </dir>
@@ -304,7 +304,7 @@
 
 <dir>
 	<title>Frankie Boyle's New World Order</title>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/FB_NWO/Frankie_Boyle_New_World_Order.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/FB_NWO/Frankie_Boyle_New_World_Order.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/329552-1.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/329552-1.jpg</fanart>
 </dir>
@@ -319,7 +319,7 @@
 		<tvshowtitle>Game of Thrones</tvshowtitle>
 		<year>2011</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/got/Game%20of%20Thrones.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/got/Game%20of%20Thrones.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/121361-34.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/121361-63.jpg</fanart>
 </dir>
@@ -334,7 +334,7 @@
 		<tvshowtitle>Get Shorty</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/getshorty/getshorty1.xml.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/getshorty/getshorty1.xml.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/328650-3.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/328650-5.jpg</fanart>
 </dir>
@@ -349,7 +349,7 @@
 		<tvshowtitle>The Goldbergs</tvshowtitle>
 		<year>2013</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/goldbergs/goldbergs.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/goldbergs/goldbergs.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/269653-1.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/269653-3.jpg</fanart>
 </dir>
@@ -363,7 +363,7 @@
 		<tvshowtitle>The Good Doctor</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/thegooddr/thegooddr1.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/thegooddr/thegooddr1.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/328634-2.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/328634-2.jpg</fanart>
 </dir>
@@ -376,7 +376,7 @@
 		<tvshowtitle>The Grand Tour (2016)</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/grandtour/grandtour.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/grandtour/grandtour.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/314087-3.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/314087-1.jpg</fanart>
 </dir>
@@ -391,7 +391,7 @@
 		<tvshowtitle>The Handmaid's Tale</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/handmaids_tale/The%20Handmaid_s%20Tale.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/handmaids_tale/The%20Handmaid_s%20Tale.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/n73rGFjtJvlEqDeW5LypSgOwcuO.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/321239-3.jpg</fanart>
 </dir>
@@ -407,7 +407,7 @@
 		<tvshowtitle>iZombie</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/izombie/iZombie.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/izombie/iZombie.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/281470-3.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/281470-6.jpg</fanart>
 </dir>
@@ -424,7 +424,7 @@
 		<tvshowtitle>Law & Order: Special Victims Unit</tvshowtitle>
 		<year>1999</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/SVU/Law%20%26%20Order_%20Special%20Victims%20Unit.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/SVU/Law%20%26%20Order_%20Special%20Victims%20Unit.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/5KfFnPRIgxan2eJ7XxMkucpq8VI.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/75692-16.jpg</fanart>
 </dir>
@@ -440,7 +440,7 @@
 		<tvshowtitle>Lucifer</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/lucifer/Lucifer.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/lucifer/Lucifer.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/w396/xk792FI99AA6tF5Y7WuOr5aMBPU.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/w780/exa1KS62Jal0xebuoYYZS4rbTKJ.jpg</fanart>
 </dir>
@@ -455,7 +455,7 @@
 		<tvshowtitle>Making a Murderer</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/making_a_murderer/Making%20a%20Murderer.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/making_a_murderer/Making%20a%20Murderer.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/303210-2.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/303210-7.jpg</fanart>
 </dir>
@@ -469,7 +469,7 @@
 		<tvshowtitle>Mrs Brown's Boys</tvshowtitle>
 		<year>2011</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/brown/brown.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/brown/brown.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/219631-3.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/219631-6.jpg</fanart>
 </dir>
@@ -484,7 +484,7 @@
 		<tvshowtitle>Narcos</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/narcos/Narcos.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/narcos/Narcos.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/282670-7.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/282670-5.jpg</fanart>
 </dir>
@@ -498,7 +498,7 @@
 		<tvshowtitle>NCIS</tvshowtitle>
 		<year>2003</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ncis/NCIS.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ncis/NCIS.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/v2YfSiVQYMVRJa6yxs4DoDHmPv6.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/72108-31.jpg</fanart>
 </dir>
@@ -513,7 +513,7 @@
 		<tvshowtitle>NCIS: Los Angeles</tvshowtitle>
 		<year>2009</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ncis_la/NCIS_%20Los%20Angeles.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ncis_la/NCIS_%20Los%20Angeles.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/n8a3vV5kfYMAloGDNpt8PwvRDMz.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/95441-29.jpg</fanart>
 </dir>
@@ -528,7 +528,7 @@
 		<tvshowtitle>NCIS: New Orleans</tvshowtitle>
 		<year>2014</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ncis_no/NCIS_%20New%20Orleans.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ncis_no/NCIS_%20New%20Orleans.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/aTFv4uT6VNLDFIrrWoD7ckI82xv.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/278125-2.jpg</fanart>
 </dir>
@@ -544,7 +544,7 @@
 		<tvshowtitle>Once Upon a Time</tvshowtitle>
 		<year>2011</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ouat/Once%20Upon%20a%20Time.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ouat/Once%20Upon%20a%20Time.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/248835-28.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/248835-44.jpg</fanart>
 </dir>
@@ -559,7 +559,7 @@
 		<tvshowtitle>Orange is the New Black</tvshowtitle>
 		<year>2013</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/orange_black/Orange%20Is%20The%20New%20Black.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/orange_black/Orange%20Is%20The%20New%20Black.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/w396/x7a2pcqDeFx2KjecOkDMFBnxZ2a.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/264586-8.jpg</fanart>
 </dir>
@@ -573,7 +573,7 @@
 		<tvshowtitle>Ozzy and Jack's World Detour</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ozzyjack/ozzyjack.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ozzyjack/ozzyjack.xml</link>
   <thumbnail>https://www.thetvdb.com/banners/seasons/314473-2.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/fanart/original/314473-1.jpg</fanart>
 </dir>
@@ -588,7 +588,7 @@
 		<tvshowtitle>Peaky Blinders</tvshowtitle>
 		<year>2013</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/peaky_blinders/Peaky%20Blinders.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/peaky_blinders/Peaky%20Blinders.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/270915-3.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/270915-10.jpg</fanart>
 </dir>
@@ -602,7 +602,7 @@
 		<tvshowtitle>Red Dwarf</tvshowtitle>
 		<year>1988</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/red_dwarf/Red%20Dwarf.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/red_dwarf/Red%20Dwarf.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/71326-8.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/71326-23.jpg</fanart>
 </dir>
@@ -616,7 +616,7 @@
 		<tvshowtitle>Rick And Morty</tvshowtitle>
 		<year>2013</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/rickandmorty/rickandmorty.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/rickandmorty/rickandmorty.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/qJdfO3ahgAMf2rcmhoqngjBBZW1.jpg</thumbnail>
 	<animated_fanart>https://www.thetvdb.com/banners/fanart/original/275274-9.jpg</animated_fanart>
 	<fanart></fanart>
@@ -648,7 +648,7 @@
 		<tvshowtitle>The Sinner</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/thesinner/TheSinner1.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/thesinner/TheSinner1.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/mzQyhOoKxWTFtIKjQfPx2ttYyQQ.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/326866-1.jpg</fanart>
 </dir>
@@ -663,7 +663,7 @@
 		<tvshowtitle>Still Open All Hours</tvshowtitle>
 		<year>2015</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/soah/soah.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/soah/soah.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/289656-3.jpg</thumbnail>
   <fanart>https://www.thetvdb.com/banners/fanart/original/289656-1.jpg<fanart>
 </dir>
@@ -677,7 +677,7 @@
 		<tvshowtitle>The Strain</tvshowtitle>
 		<year>2014</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/the_strain/The%20Strain.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/the_strain/The%20Strain.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/276564-5.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/276564-16.jpg</fanart>
 </dir>
@@ -692,7 +692,7 @@
 		<tvshowtitle>Stranger Things</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/stranger_things/Stranger%20Things.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/stranger_things/Stranger%20Things.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/305288-4.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/305288-10.jpg</fanart>
 </dir>
@@ -706,7 +706,7 @@
 		<tvshowtitle>Supernatural</tvshowtitle>
 		<year>2005</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/supernatural/Supernatural.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/supernatural/Supernatural.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/78901-10.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/78901-95.jpg</fanart>
 </dir>
@@ -722,7 +722,7 @@
 		<tvshowtitle>The Tunnel</tvshowtitle>
 		<year>2013</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/the_tunnel/TheTunnel.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/the_tunnel/TheTunnel.xml</link>
 	<thumbnail>http://image.tmdb.org/t/p/w500/nU4cKR9Wy8gMW6FYTpQVPJGEHv1.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/274065-1.jpg</fanart>
 </dir>
@@ -737,7 +737,7 @@
 		<tvshowtitle>Upstart Crow</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/crow/crow.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/crow/crow.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/seasons/309790-1.jpg</thumbnail>
 	<fanart>https://www.thetvdb.com/banners/_cache/fanart/original/309790-1.jpg</fanart>
 </dir>
@@ -752,7 +752,7 @@
 		<tvshowtitle>Vikings</tvshowtitle>
 		<year>2013</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/vikings/Vikings.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/vikings/Vikings.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/260449-3.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/260449-15.jpg</fanart>
 </dir>
@@ -768,7 +768,7 @@
 		<tvshowtitle>The Walking Dead</tvshowtitle>
 		<year>2010</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/twd/The%20Walking%20Dead.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/twd/The%20Walking%20Dead.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/153021-31.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/153021-43.jpg</fanart>
 </dir>
@@ -783,7 +783,7 @@
 		<tvshowtitle>Westworld</tvshowtitle>
 		<year>2016</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/westworld/Westworld.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/westworld/Westworld.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/296762-3.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/296762-1.jpg</fanart>
 </dir>
@@ -799,7 +799,7 @@
 		<tvshowtitle>The X-Files</tvshowtitle>
 		<year>1993</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/x-files/X-Files.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/x-files/X-Files.xml</link>
 	<thumbnail>http://thetvdb.com/banners/posters/77398-23.jpg</thumbnail>
 	<fanart>http://thetvdb.com/banners/fanart/original/77398-42.jpg</fanart>
 </dir>
@@ -813,7 +813,7 @@
 		<tvshowtitle>Young Sheldon</tvshowtitle>
 		<year>2017</year>
 	</meta>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/sheldon/sheldon1.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/sheldon/sheldon1.xml</link>
 	<thumbnail>https://www.thetvdb.com/banners/posters/328724-2.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/9pXllGQnCuPUHmChB07hP2PlXD0.jpg</fanart>
 </dir>

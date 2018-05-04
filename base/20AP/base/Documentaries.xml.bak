@@ -6,7 +6,7 @@
 
 <dir>
   <title>Automotive Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/auto.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/auto.xml</link>
   <thumbnail>https://i.pinimg.com/736x/8e/6f/45/8e6f45ebbefa11abb69ad9cf57e92aa2--abandoned-vehicles-abandoned-cars.jpg</thumbnail>
   <fanart>https://dr56wvhu2c8zo.cloudfront.net/motorland/assets/0cdcaf5f-bd1a-42c3-a2ad-b3208a66aa29/documentaries_1080.jpg</fanart>
 </dir>
@@ -14,7 +14,7 @@
 
 <dir>
   <title>Biography Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/biog.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/biog.xml</link>
     <thumbnail>https://lh3.googleusercontent.com/6eY3-3FWpa2UNbvP6zt1H_TfDrzv2Rj0bh_UFMph1ZnD73Je6pha2ydHZsxxrxD0NKU=h900</thumbnail>
   <fanart></fanart>
 </dir>
@@ -22,7 +22,7 @@
 
 <dir>
   <title>Chernobyl Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/chernobyl.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/chernobyl.xml</link>
   <thumbnail>https://s3.amazonaws.com/user-media.venngage.com/302494-d720c8474e9496bebe2de094543194a4.png</thumbnail>
   <fanart>https://i.pinimg.com/originals/87/71/30/877130700da5c49a16a73cc770dd04d9.jpg</fanart>
 </dir>
@@ -30,7 +30,7 @@
 
 <dir>
   <title>Gaming Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/gaming.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/gaming.xml</link>
   <thumbnail>https://orig00.deviantart.net/3586/f/2011/097/c/6/c6b841cee1b83e873310b59813675ff8-d3deqpy.png</thumbnail>
   <fanart>https://www.desktopbackground.org/download/1280x720/2015/07/27/985772_retro-gamer-images-wallpapers-game-wallpapers-localwom_1920x1080_h.jpg</fanart>
 </dir>
@@ -39,21 +39,21 @@
 
 <dir>
   <title>Music Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/music.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/music.xml</link>
   <thumbnail>https://cdn1.player.fm/images/7152123/series/KEpRdahx0pU6JHnl/512.jpg</thumbnail>
   <fanart></fanart>
 </dir>
 
 <dir>
   <title>Religion Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/religion.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/religion.xml</link>
   <thumbnail>https://www.parentingscience.com/images/Religious_symbols-Manop-wikimedia-commons.png</thumbnail>
   <fanart>http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/2007summer_terror-can-we-blame-religion_1920x1080_1.jpg</fanart>
 </dir>
 
 <dir>
   <title>Royalty Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/royalty.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/royalty.xml</link>
   <thumbnail>https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/48-512.png</thumbnail>
   <fanart>http://www.thewatchlab.co.uk/wp-content/uploads/2016/08/royals.jpg</fanart>
 </dir>
@@ -70,13 +70,13 @@
 
 <dir>
   <title>Space Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/space.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/space.xml</link>
   <thumbnail>http://www.m1fineart.com/chris-baker/island-in-space_files/chris-baker-island-in-space.jpg</thumbnail>
   <fanart>https://www.thetvdb.com/banners/fanart/original/147071-4.jpg</fanart>
 </dir>
 <dir>
   <title>Sport Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/sport.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/sport.xml</link>
   <thumbnail>http://iconshow.me/media/images/social/Circle-Icons-Pack-add-on-1/png/512/ct-sport.png</thumbnail>
   <fanart>https://i.pinimg.com/originals/b1/76/c6/b176c695f03117672ab5432d9d59232b.jpg</fanart>
 </dir>
@@ -84,7 +84,7 @@
 
 <dir>
   <title>Technology Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/tech.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/tech.xml</link>
   <thumbnail>http://s3.amazonaws.com/catallday/cad/wp-content/uploads/2016/03/11195602/Technology_Icon.jpg</thumbnail>
   <fanart>https://news.bitcoin.com/wp-content/uploads/2016/01/tumotech.com_.jpg</fanart>
 </dir>
@@ -92,7 +92,7 @@
 
 <dir>
   <title>War Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/war.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/war.xml</link>
   <thumbnail>http://wardocumentaryfilms.com/wp-content/uploads/2014/08/War_Documentary_Logo.png</thumbnail>
   <fanart></fanart>
 </dir>
@@ -100,7 +100,7 @@
 
 <dir>
   <title>Wildlife Documentaries</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/wild.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/wild.xml</link>
     <thumbnail>https://i.pinimg.com/736x/09/c2/99/09c29976d90f784891880be4da5547f3--save-the-tiger-white-tigers.jpg</thumbnail>
   <fanart>http://technuovo.com/wp-content/uploads/2017/04/love-nature-2.png</fanart>
 </dir>
@@ -132,7 +132,7 @@
     <tvshowtitle>Seven Ages of Britain </tvshowtitle>
     <year>2010</year>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/7ages/7ages.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/7ages/7ages.xml</link>
   <thumbnail>https://www.thetvdb.com/banners/posters/138881-2.jpg</thumbnail>
   <fanart>https://www.thetvdb.com/banners/fanart/original/138881-1.jpg</fanart>
 </dir>
@@ -147,7 +147,7 @@
     <year>2011</year>
     <season>1</season>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/origins.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/origins.xml</link>
   <fanart>https://www.thetvdb.com/banners/fanart/original/252903-1.jpg</fanart>
   <thumbnail>https://www.thetvdb.com/banners/posters/252903-1.jpg</thumbnail>
 </dir>
@@ -162,7 +162,7 @@
     <year>2017</year>
     <season>1</season>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/yearmillion/yearmillion.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/yearmillion/yearmillion.xml</link>
   <thumnail>https://www.thetvdb.com/banners/posters/328143-1.jpg</thumbnail>
   <fanart>https://www.thetvdb.com/banners/fanart/original/328143-1.jpg</fanart>
 </dir>
@@ -177,7 +177,7 @@
     <year>2009</year>
     <season>1</season>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/docs/humanjourney.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/humanjourney.xml</link>
   <fanart>https://www.thetvdb.com/banners/fanart/original/93951-2.jpg</fanart>
   <thumbnail>https://www.thetvdb.com/banners/seasons/93951-1-2.jpg</thumbnail>
 </dir>
@@ -193,7 +193,7 @@
     <year>2017</year>
     <season>1</season>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/jl/jl.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/jl/jl.xml</link>
   <fanart>https://www.thetvdb.com/banners/fanart/original/330777-2.jpg</fanart>
   <thumbnail>https://www.thetvdb.com/banners/posters/330777-1.jpg</thumbnail>
 </dir>
@@ -208,7 +208,7 @@
     <tvshowtitle>Ancient Aliens</tvshowtitle>
     <year>2010</year>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/ancient_aliens/Ancient%20Aliens.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ancient_aliens/Ancient%20Aliens.xml</link>
   <thumbnail>http://image.tmdb.org/t/p/original/iMNRKvU0SZC43VPEFdGBVN1nzHy.jpg</thumbnail>
   <fanart>http://thetvdb.com/banners/fanart/original/101501-6.jpg</fanart>
 </dir>
@@ -222,7 +222,7 @@
     <tvshowtitle>Tribes, Predators, and Me</tvshowtitle>
     <year>2016</year>
   </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/tv/tribes/tribes.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/tribes/tribes.xml</link>
   <thumbnail>https://www.thetvdb.com/banners/posters/309236-1.jpg</thumbnail>
   <fanart>https://www.thetvdb.com/banners/fanart/original/309236-1.jpg</fanart>
 </dir>

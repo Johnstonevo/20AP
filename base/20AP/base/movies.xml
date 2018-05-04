@@ -27,7 +27,7 @@
 
 <dir>
   <title>Actor Box Sets</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/people.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/people.xml</link>
   <thumbnail>https://cdn4.iconfinder.com/data/icons/photo-video/32/photo-video-picture-directors-chair-512.png</thumbnail>
   <fanart>https://i.imgur.com/CaTD18H.jpg</fanart>
   <content>boxset</content>
@@ -36,7 +36,7 @@
 
 <dir>
   <title>Movie Box Sets</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/boxsets.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/boxsets.xml</link>
   <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
   <fanart>https://i.imgur.com/CaTD18H.jpg</fanart>
   <content>boxset</content>
@@ -54,7 +54,7 @@
 
 <dir>
   <title>Horror</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/base/horror.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/horror.xml</link>
   <thumbnail>https://20ap.000webhostapp.com/images/horror.png</thumbnail>
   <fanart>https://i.pinimg.com/originals/12/55/79/1255794d3574387ba704caf25a2c7d5d.jpg</fanart>
   <content>boxset</content>
@@ -64,7 +64,7 @@
 
 <dir>
   <title>1001 Movies To See Before You Die</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/1001.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/1001.xml</link>
   <thumbnail>https://20ap.000webhostapp.com/images/1001.png</thumbnail>
   <fanart>https://gikonomova.files.wordpress.com/2013/12/its-a-wonderful-life-collage.jpg</fanart>
   <content>boxset</content>
@@ -103,7 +103,7 @@
 
 <dir>
   <title>Kids Movies</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/kidsmovies.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmovies.xml</link>
   <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
   <summary>Kids Movies</summary>
   <fanart></fanart>
@@ -119,7 +119,7 @@
 
 <dir>
   <title>Reddit Movie Subreddits</title>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/reddit.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/reddit.xml</link>
   <thumbnail>https://cdn-images-1.medium.com/max/800/1*17huNsIWQqUSy12VPH4k1Q.png</thumbnail>
   <fanart>http://cmxhub.com/wp-content/uploads/2014/06/reddit.jpg</fanart>
   <content>boxset</content>

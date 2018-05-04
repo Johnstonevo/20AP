@@ -46,7 +46,7 @@
 
 <dir>
 	<title>Batman Collection</title>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/batman.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/batman.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/adQxUvQW8HXNsvMG5aj71pHh9T.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/9SpZvXLZDGGtFqVDByGqSGI64Kw.jpg</fanart>
 	<content>set</content>
@@ -266,7 +266,7 @@
 
 <dir>
 	<title>Highlander Collection</title>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/highlander.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/highlander.xml</link>
 	<animated_thumbnail></animated_thumbnail>
 	<thumbnail>https://image.tmdb.org/t/p/w472_and_h708_bestv2/mNIXoyFicGseg9NoG3NHKZolKze.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/m8HRNju4wYm8ISm0Mth7KMmTTrH.jpg</fanart>
@@ -403,7 +403,7 @@
 
 <dir>
 	<title>Marvel Collection</title>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/marvel.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/marvel.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/aC3VJyuNpymHAf9pyQqB20EK4v6.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
 	<content>set</content>
@@ -436,7 +436,7 @@
 
 <dir>
 	<title>Monty Python Collection</title>
-	<link>https://20ap.000webhostapp.com/repository.20ap/20AP/movies/montypython.xml</link>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/montypython.xml</link>
 	<thumbnail>https://images-na.ssl-images-amazon.com/images/I/71gX0Wf9DVL._SY445_.jpg</thumbnail>
 	<fanart>https://images4.alphacoders.com/118/thumb-1920-11826.jpg</fanart>
 	<content>set</content>

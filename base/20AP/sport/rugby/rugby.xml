@@ -25,35 +25,35 @@
 
 <dir>
 <title>Pro14 </title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/pro14.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/pro14.xml</link>
 <thumbnail>https://pbs.twimg.com/profile_images/892310779806003200/0lVRnAiv_400x400.jpg</thumbnail>
 <fanart>http://www.independent.ie/incoming/article35989264.ece/BINARY/Pro14.png</fanart>
 </dir>
 
 <dir>
 <title>Aviva Prem </title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/aviva.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/aviva.xml</link>
 <thumbnail>https://yt3.ggpht.com/-dGufIXExRPc/AAAAAAAAAAI/AAAAAAAAAAA/qaWCQCyxfzY/s176-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 <fanart>http://i.telegraph.co.uk/multimedia/archive/03473/aviva-premiership_3473612b.jpg</fanart>
 </dir>
 
 <dir>
 <title>French T14</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/t14.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/t14.xml</link>
 <thumbnail>https://upload.wikimedia.org/wikipedia/en/thumb/d/dd/Logo_Top14_2012.png/225px-Logo_Top14_2012.png</thumbnail>
 <fanart>https://3.bp.blogspot.com/-pDDthJPwWNU/V2KEBay9GnI/AAAAAAAAD6g/74cOGynfEqQQw10gkK1ApF_rfjXX_GmNgCLcB/s1600/French%2BTop%2B14.png</fanart>
 </dir>
 
 <dir>
 <title>European Rugby Champions Cup</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/erc.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/erc.xml</link>
 <thumbnail>https://lh6.googleusercontent.com/-rjaCqV0oa-I/AAAAAAAAAAI/AAAAAAAAEI0/dWRoc0rv3_U/photo.jpg</thumbnail>
 <fanart>https://i.ytimg.com/vi/tsL5DzVG1Zo/maxresdefault_live.jpg</fanart>
 </dir>
 
 <dir>
 <title>International</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/sport/rugby/inter.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/inter.xml</link>
 <thumbnail>https://yt3.ggpht.com/-qok-9CIsOsc/AAAAAAAAAAI/AAAAAAAAAAA/T1WW6cOq9hQ/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 <fanart>http://mozgorilla.com/wp-content/uploads/2010/03/gtrans.jpg</fanart>
 </dir>

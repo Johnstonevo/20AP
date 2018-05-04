@@ -7,27 +7,27 @@
 
 <dir>
   <name>Main Youtube Channels</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/youtube.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/youtube.xml</link>
   <fanart>https://wallpaperscraft.com/image/youtube_logo_information_portal_48619_1280x720.jpg</fanart>
 </dir>
 
 <dir>
   <name>Youtube Art</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/art.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/art.xml</link>
   <fanart>https://i.pinimg.com/originals/05/6d/cf/056dcffe0f8b622dd72acd921378b875.jpg</fanart>
 </dir>
 
 
 <dir>
   <name>Youtube Fabrication & DIY</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/projects.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/projects.xml</link>
   <fanart>https://images.fastcompany.net/image/upload/fc/3060718-poster-p-1-10-ways-to-make-slack-simpler-safer-and-less-annoying.jpg</fanart>
 </dir>
 
 
 <dir>
   <name>Youtube Crafts</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/crafts.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/crafts.xml</link>
   <fanart>https://a2zwallpaper.com/wp-content/uploads/2017/11/2617.jpg</fanart>
 </dir>
 
@@ -35,14 +35,14 @@
 
 <dir>
   <name>Youtube Music</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/music.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/music.xml</link>
   <fanart>https://wallpaperscraft.com/image/youtube_video_hosting_logo_google_73436_1280x720.jpg</fanart>
 </dir>
 
 
 <dir>
   <name>Raspberry Pi YT Channels</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/raspberrypi.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/raspberrypi.xml</link>
   <thumbnail>https://www.raspberrypi.org/app/uploads/2015/08/raspberry-pi-logo.png</thumbnail>
   <fanart>https://u.cubeupload.com/Nd8UdD.png</fanart>
 </dir>
@@ -50,32 +50,32 @@
 
 <dir>
   <name>GoT YT Channels</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/GoT%20Youtube.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/GoT%20Youtube.xml</link>
   <fanart>https://i.ytimg.com/vi/9stOF8zBCcA/maxresdefault.jpg</fanart>
 </dir>
 
 <dir>
   <name>Guitar Stuff</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/guitar.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/guitar.xml</link>
   <fanart>https://i.ytimg.com/vi/tNPYdZhl4rc/maxresdefault.jpg</fanart>
 </dir>
 
 <dir>
   <name>Gaming Youtube Channels</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/gamers.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/gamers.xml</link>
   <fanart>http://wallpaperswide.com/download/gaming_is_not_a_crime-wallpaper-1920x1080.jpg</fanart>
 </dir>
 
 <dir>
   <name>Motorsport Channels</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/motorsport.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/motorsport.xml</link>
   <fanart>https://i.pinimg.com/originals/74/00/b0/7400b07ad1e2bcf152ed240884e2f96f.jpg</fanart>
 </dir>
 
 
 <dir>
   <name>Lego Channels</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/lego.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/lego.xml</link>
   <fanart>https://images.fastcompany.net/image/upload/w_1280,f_auto,q_auto,fl_lossy/fc/1672948-poster-1280-legoman2.jpg</fanart>
 </dir>
 
@@ -83,7 +83,7 @@
 
 <dir>
   <name>Nerdy Stuff</name>
-  <link>https://20ap.000webhostapp.com/repository.20ap/20AP/yt/nerd.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/nerd.xml</link>
   <fanart>https://orig00.deviantart.net/917d/f/2014/097/5/5/bring_in_the_nerds____wallpaper_edition_by_blo0p-d7dfks6.png</fanart>
   <summary>Things like D&D</summary>
 </dir>

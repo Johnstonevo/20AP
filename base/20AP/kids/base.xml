@@ -1,7 +1,7 @@
 
 <dir>
 <title>[I][B][COLORsnow]--==[COLORred]Youtube[/COLOR]==--[/COLOR][/B][/I]</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/youtube.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/youtube.xml</link>
 <thumbnail>https://findicons.com/files/icons/2844/creative_blot_icons_set/512/social_media_icons_blot_icons_set_512x512_0004_youtube.png</thumbnail>
 <fanart></fanart>
 </dir>
@@ -9,14 +9,14 @@
 
 <dir>
 <title>[I][B][COLORsnow]--==[COLORorange]Music[/COLOR]==--[/COLOR][/B][/I]</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/music.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/music.xml</link>
 <thumbnail>https://cdn0.iconfinder.com/data/icons/Android-R2-png/512/Music-Android-R.png</thumbnail>
 <fanart></fanart>
 </dir>
 
 <dir>
 <title>[I][B][COLORsnow]--==[COLORorange]Movies[/COLOR]==--[/COLOR][/B][/I]</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/kidsmovies.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmovies.xml</link>
 <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
 <fanart></fanart>
 </dir>
@@ -30,7 +30,7 @@
 
 <dir>
 <title>[I][B][COLORsnow]--==[COLORyellow]Guitar Lessons[/COLOR]==--[/COLOR][/B][/I]</title>
-<link>https://20ap.000webhostapp.com/repository.20ap/20AP/kids/guitar.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/guitar.xml</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/gibson-les_paul_guitar_bass-512.png</thumbnail>
 <fanart></fanart>
 </dir>
