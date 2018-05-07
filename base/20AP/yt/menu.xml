@@ -11,6 +11,15 @@
   <fanart>https://wallpaperscraft.com/image/youtube_logo_information_portal_48619_1280x720.jpg</fanart>
 </dir>
 
+
+<dir>
+  <name>Youtube Food</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/food.xml</link>
+  <fanart>https://wallpapercave.com/wp/cGiGGab.jpg</fanart>
+  <summary>Cooking channels</summary>
+</dir>
+
+
 <dir>
   <name>Youtube Art</name>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/art.xml</link>
