@@ -128,3 +128,12 @@
   <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/05/trakt_tv.jpg</fanart>
 <Summary>Back up lists on Trakt incase TMDB goes down</summary>
 </dir>
+
+
+<dir>
+<title>Live TV inc Sports</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/live.xml</link>
+<thumbnail>http://www.emoji.co.uk/files/phantom-open-emojis/objects-phantom/12792-television.png</thumbnail>
+<fanart></fanart>
+<summary></summary>
+</dir>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.5.04" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.5.12" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -19,6 +19,8 @@
       <import addon="plugin.video.motorreplays" version="2.8" />
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" />
+      <import addon="plugin://script.module.20aplive" />
+      <import addon="script.module.acesports" />
 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
@@ -128,6 +130,49 @@
 		<genre>comedy,documentary,movies,music,sports,uk</genre>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="script.module.acesports" name="acesports" version="18.05.12" provider-name="enzo">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.addon.common" />
+		<import addon="script.module.requests"  />
+		<import addon="script.module.beautifulsoup4"  />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a little sparkle.</summary>
+		<description lang="en">A small plugin for playing reddit acestreams
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.20aplive" name="20AP Live" version="18.05.12" provider-name="">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.livestreamer" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>all</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb"></summary>
+    <description lang="en_gb"></description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
 </addon>
 
 <addon id="plugin.video.f1f" name="f1f" version="18.3.18" provider-name="Enzo">
