@@ -66,13 +66,13 @@ def unquote(s):
 
 @plugin.route('/')
 def root():
-    categories = {"01": "UK & USA Channels",
-                  "02": "MOVIES",
-                  "03": "MUSIC",
-                  "04": "NEWS",
-                  "05": "SPORTS",
-                  "06": "DOCUMENTARY",
-                  "07": "KIDS",}
+    categories = {"01": "[COLOR gold][B]UK & USA[COLOR lime] Channels[/B][/COLOR]",
+                  "02": "[COLOR gold][B]M[COLOR lime]OVIES[/B][/COLOR]",
+                  "03": "[COLOR gold][B]M[COLOR lime]USIC[/B][/COLOR]",
+                  "04": "[COLOR gold][B]N[COLOR lime]EWS[/B][/COLOR]",
+                  "05": "[COLOR gold][B]S[COLOR lime]PORTS[/B][/COLOR]",
+                  "06": "[COLOR gold][B]D[COLOR lime]OCUMENTARY[/B][/COLOR]",
+                  "07": "[COLOR gold][B]K[COLOR lime]IDS[/B][/COLOR]",}
     list_items = []
     for cat in categories.keys():
         li = ListItem(categories[cat])
