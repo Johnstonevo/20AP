@@ -68,7 +68,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.20ap" name="20ap" version="18.05.14" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="18.05.14.1" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/nixgates/Incursion/master/addons.xml</info>
@@ -108,11 +108,6 @@
 			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
 		</dir>
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/duncanh52/plugins/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/duncanh52/plugins/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/duncanh52/plugins/master/</datadir>
-		</dir>
-		<dir>
 			<info compressed="false">http://Rockodi.com/addons.xml</info>
 			<checksum>http://Rockodi.com/addons.xml.md5</checksum>
 			<datadir zip="true">http://Rockodi.com/</datadir>
@@ -150,7 +145,7 @@
 		</dir>
 			<info compressed="false">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/johnstonevo/20ap/master/zips/</datadir>
+			<datadir zip="true">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Our Own Repo</summary>
