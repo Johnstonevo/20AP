@@ -174,7 +174,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.20aplive" name="20AP Live" version="18.05.14" provider-name="Enzo">
+<addon id="script.module.20aplive" name="20AP Live" version="18.05.15" provider-name="Enzo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
