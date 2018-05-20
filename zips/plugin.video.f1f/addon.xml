@@ -9,10 +9,10 @@
       <import addon="script.module.addon.common" version="2.0.0" />
       <import addon="script.module.xmltodict" version="0.9.0" />
       <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-      <import addon="script.module.urlresolver" version="1.2.0" />
+      <import addon="script.module.resolveurl"  />
       <import addon="plugin.video.reddit_viewer" version="3.5.0"  />
     <!--  <import addon="repository.noobsandnerds" version="2.3.2" />-->
-      <import addon="repository.supremacy" version="1.5" />
+      <import addon="repository.supremacy"  />
       <import addon="repository.jsergio" />
       <import addon="plugin.video.SportsDevil" version="2017.11.01"  />
       <import addon="plugin.video.motorreplays" version="2.8" />
