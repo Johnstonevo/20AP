@@ -177,15 +177,8 @@ def clear_trakt_account():
         xbmcaddon.Addon().setSetting("TRAKT_ACCESS_TOKEN", "")
         xbmcaddon.Addon().setSetting("TRAKT_REFRESH_TOKEN", "")
 
-@route(mode="message", args=["url"])
-def show_message(message):
-    import xbmcgui
-    if len(message) > 80:
-        koding.Text_Box(addon_name, message)
-    else:
-        xbmcgui.Dialog().ok(addon_name, message)
 
-        
+
 @route('clearCache')
 def clear_cache():
     import xbmcgui

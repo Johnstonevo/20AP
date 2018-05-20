@@ -131,9 +131,10 @@
 
 
 <dir>
-<title>Live TV inc Sports</title>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/live.xml</link>
-<thumbnail>http://www.emoji.co.uk/files/phantom-open-emojis/objects-phantom/12792-television.png</thumbnail>
+<name>Live TV (ONLINE)</name>
+<link>plugin://script.module.20aplive</link>
+<thumbnail></thumbnail>
 <fanart></fanart>
-<summary></summary>
+<summary>Live TV</summary>
 </dir>
+
