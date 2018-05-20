@@ -76,7 +76,7 @@
     <!-- login - future features for playlisters -->
     <category label="30770">
         <setting id="debug" type="bool" label="30758" default="false" visible="true"/>
-        <setting id="root_xml" type="text" label="30060" option="hidden" default="file://main.xml" visible="false"/>
+        <setting id="root_xml" type="text" label="30060" option="hidden" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/test.xml" visible="false"/>
         <setting id="search_db_location" type="text" label="30061" option="hidden" default="" visible="false"/>
     </category>
 
