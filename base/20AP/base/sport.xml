@@ -5,25 +5,29 @@
 
 
 
-<plugin>
-  <title>Live Motorsport</title>
-  <link>
-    <sublink>plugin://plugin.video.SportsDevil/?item=title%3dMotorsport%26url%3dhttps%253A%252F%252Fwww.vipleague.ws%252Fsports%252Fmotorsports.html%26cfg%3dvipbox.tv.events.cfg%26definedIn%3dlivesports%252Fvipbox.tv.cfg%26director%3dVipBox.tv%26genre%3dLive%2bSports%26type%3drss%26icon%3d%252Fhome%252Fiain%252F.kodi%252Faddons%252Fplugin.video.SportsDevil%252Fresources%252Fimages%252Fsports%252FRacing.png&amp;mode=1 (VIPBOX)</sublink>
-    <sublink>plugin://plugin.video.sparkle/subreddit/motorsportsstreams (Reddit Streams.  [COLORred][B]Needs Plexus and Acestream[/B][/COLOR])</sublink>
-  </link>
-  <thumbnail>https://static1.squarespace.com/static/5542282de4b042c3b92e2e52/56acb7d9be7b963e32760f95/56acb7f8be7b963e32760ff1/1486039355307/flag76.png</thumbnail>
-  <fanart>https://i.ytimg.com/vi/1T3KMI__VjQ/maxresdefault.jpg</fanart>
-  <content>no</content>
-  <referer></referer>
-  <summary>Links to Live Motorsport</summary>
-</plugin>
+<dir>
+<title>Sports Streams</title>
+<sport_stream>games</sport_stream>
+<summary>Links to Live Sport</summary>
+</dir>
 
-<plugin>
-<title>Live Sport from Reddit [COLORred]Needs and Acestrem Plexus Set Up[/COLOR]</title>
-<link>plugin://plugin.video.sparkle/?mode=1)</link>
+<dir>
+<name>LiveSport Channels</name>
+<link>plugin://script.module.20aplive/list_channels/5</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<summary>Live TV</summary>
+</dir>
+
+
+<dir>
+<name>Live Sports Acestreams</name>
+<link>plugin://script.module.acesports</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
 <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
-</plugin>
+<summary>Sports Acestreams</summary>
+</dir>
+
 
 <dir>
   <name>Formula 1</name>
