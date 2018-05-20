@@ -1,6 +1,6 @@
 """
     m3u.py --- Jen Plugin for accessing m3u data
-    Copyright (C) 2018, Mister-X
+    Copyright (C) 2018
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -15,6 +15,9 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+    Version:
+        2018-05-14
+            Latest version to include with a Jen Release
 
     Usage Examples:
     <dir>

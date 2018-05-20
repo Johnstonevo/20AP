@@ -161,13 +161,7 @@ def resolver_settings():
 
 
 
-@route(mode="message", args=["url"])
-def show_message(message):
-    import xbmcgui
-    if len(message) > 80:
-        koding.Text_Box(addon_name, message)
-    else:
-        xbmcgui.Dialog().ok(addon_name, message)
+
 
 @route(mode="ClearTraktAccount")
 def clear_trakt_account():

@@ -57,6 +57,7 @@ art_path = os.path.join(addon_folder, addon_id)
 content_type = "files"
 
 
+
 @route("main")
 def root():
     """root menu of the addon"""
@@ -157,16 +158,20 @@ def scraper_settings():
 
 @route(mode="ResolverSettings")
 def resolver_settings():
-    xbmcaddon.Addon('script.module.urlresolver').openSettings()
+    xbmcaddon.Addon('script.module.resolveurl').openSettings()
 
 
-@route(mode="message", args=["url"])
-def show_message(message):
+
+
+
+@route(mode="ClearTraktAccount")
+def clear_trakt_account():
     import xbmcgui
-    if len(message) > 80:
-        koding.Text_Box(addon_name, message)
-    else:
-        xbmcgui.Dialog().ok(addon_name, message)
+    if xbmcgui.Dialog().yesno(addon_name, "{0} Trakt {1}. {2}".format(_("Delete"), _("Settings").lower(), _("Are you sure?"))):
+        xbmcaddon.Addon().setSetting("TRAKT_EXPIRES_AT", "")
+        xbmcaddon.Addon().setSetting("TRAKT_ACCESS_TOKEN", "")
+        xbmcaddon.Addon().setSetting("TRAKT_REFRESH_TOKEN", "")
+
 
 
 @route('clearCache')
@@ -185,6 +190,7 @@ def clear_cache():
             "artcache")
         koding.Delete_Folders(dest_folder)
     run_hook("clear_cache")
+
 
 
 def get_addon_url(mode, url=""):
