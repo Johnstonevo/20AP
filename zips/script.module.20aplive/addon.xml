@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="script.module.20aplive" name="20AP Live" version="18.05.15" provider-name="Enzo">
+<addon id="script.module.20aplive" name="20AP Live" version="18.05.20" provider-name="Enzo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
@@ -7,7 +7,6 @@
     <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_gb">20AP Live  Dependency</summary>

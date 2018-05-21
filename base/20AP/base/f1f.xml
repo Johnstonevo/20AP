@@ -89,3 +89,12 @@
   <tmdb>list/47802</tmdb>
   <summary>Films from the Movie thread of the forum</summary>
 </dir>
+
+
+<dir>
+<title>Documentaries from topdocumentaryfilms.com</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/topdocs.xml</link>
+<thumbnail>https://pbs.twimg.com/profile_images/703357615754113024/4XuVozZn_400x400.jpg</thumbnail>
+<fanart></fanart>
+</dir>
+

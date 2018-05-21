@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.5.20.2" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.5.22" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -155,7 +155,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.acesports" name="acesports" version="18.05.12" provider-name="enzo">
+<addon id="script.module.acesports" name="acesports" version="18.05.20" provider-name="enzo">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common" />
@@ -163,7 +163,6 @@
 		<import addon="script.module.beautifulsoup4"  />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Just a little sparkle.</summary>
@@ -174,7 +173,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.20aplive" name="20AP Live" version="18.05.15" provider-name="Enzo">
+<addon id="script.module.20aplive" name="20AP Live" version="18.05.20" provider-name="Enzo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.livestreamer" />
@@ -182,7 +181,6 @@
     <import addon="script.module.routing" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>all</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="en_gb">20AP Live  Dependency</summary>
