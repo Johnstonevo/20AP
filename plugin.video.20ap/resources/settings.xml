@@ -11,7 +11,7 @@
         <setting label="32514" type="lsep" visible="false"/>
         <setting label="32515" type="bool" id="enable_gifs" default="false" visible="false"/>
         <setting label="Cool Choices" type="lsep"/>
-        <setting id="news_win" type="bool" label="Enable News Dialog" default="false" visible="true"/>
+        <setting id="news_win" type="bool" label="Enable News Dialog" default="false" visible="flase"/>
         <setting id="dlimage" type="bool" label="Enable Image Downloader" default="false" visible="true"/>
         <setting label="Display" type="lsep"/>
         <setting label="Enable Settings Context item" type="bool" id="settings_context" default="true"/>
@@ -27,21 +27,21 @@
     <category label="30718">
         <setting label="30718" type="lsep"/>
         <setting label="30719" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=clearCache)"/>
+               action="RunPlugin(plugin://plugin.video.20ap/?mode=clearCache)"/>
     </category>
 
     <!-- scraper settings -->
     <category label="Scrapers">
         <setting label="30733" type="lsep"/>
         <setting label="30734" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ScraperSettings)"/>
+               action="RunPlugin(plugin://plugin.video.20ap/?mode=ScraperSettings)"/>
         <setting id="use_link_dialog" label="30744" type="bool" default="true" />
         <setting id="link_fallthrough" label="30745" type="bool"	default="true" visible="eq(-1,true)"/>
     </category>
     <category label="Resolvers">
         <setting label="30741" type="lsep"/>
         <setting label="30742" type="action" option="close"
-               action="RunPlugin(plugin://plugin.video.jen/?mode=ResolverSettings)"/>
+               action="RunPlugin(plugin://plugin.video.20ap/?mode=ResolverSettings)"/>
 
         <!-- filtering settings -->
         <setting label="30735" type="lsep"/>
@@ -61,7 +61,7 @@
     <category label="Enter Own API's">
         <setting id="debug" type="bool" label="API's" default="false" visible="true"/>
         <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
-        <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.jen/" visible="false"/>
+        <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.20ap/" visible="false"/>
         <setting label="TVDB API Key" type="text" id="tvdb_api_key" option="hidden" default="" visible="eq(-3,true)"/>
         <setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="" visible="eq(-4,true)"/>
         <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="" visible="eq(-5,true)"/>

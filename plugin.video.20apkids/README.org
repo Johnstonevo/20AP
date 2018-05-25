@@ -6,7 +6,7 @@ change the addon id and name and anything else you need to suit your addon
 If you changed the addon ID and Folder name
 open resources folder/settings.xml
 
-on lines 26, 30, 34, & 59 change just the plugin.video.jen to match
+on lines 26, 30, 34, & 59 change just the plugin.video.20ap to match
 your addon ID
 ** change the jen folder name
 change it to reflect the addon id you assigned in step 1. not really needed while developing, but important before doing the first release so you don't overwrite any other addons using Jen
@@ -162,7 +162,7 @@ Open the default.py for your addon and add the search.db url to "__builtin__.sea
 #+BEGIN_SRC xml
   <plugin>
     <name>30701</name>
-    <link>plugin://plugin.video.jen/?action=openSettings</link>
+    <link>plugin://plugin.video.20ap/?action=openSettings</link>
     <thumbnail></thumbnail>
     <summary>Settings for Jen Addons</summary>
   </plugin>
@@ -171,7 +171,7 @@ Open the default.py for your addon and add the search.db url to "__builtin__.sea
 #+BEGIN_SRC xml
   <plugin>
     <name>30702</name>
-    <link>plugin://plugin.video.jen/?action=search</link>
+    <link>plugin://plugin.video.20ap/?action=search</link>
     <thumbnail></thumbnail>
     <summary>Search for Jen Addon</summary>
   </plugin>
