@@ -13,7 +13,7 @@ from resources.lib.modules import routing
 from resources.lib.modules.log_utils import log
 from resources.lib.modules.acesearch import acesearch, acestream_channels
 
-addon = Addon('plugin.video.acesports', sys.argv)
+addon = Addon('script.module.acesports', sys.argv)
 addon_handle = int(sys.argv[1])
 
 plugin = routing.Plugin()
