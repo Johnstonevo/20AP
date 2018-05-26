@@ -13,7 +13,7 @@ from resources.lib.modules import routing
 from resources.lib.modules.log_utils import log
 from resources.lib.modules.acesearch import acesearch, acestream_channels
 
-addon = Addon('plugin.video.sparkle', sys.argv)
+addon = Addon('plugin.video.acesports', sys.argv)
 addon_handle = int(sys.argv[1])
 
 plugin = routing.Plugin()
@@ -74,7 +74,7 @@ def show_event(submission_id):
     for l in sr.event_links(submission_id):
         if len(l['ace_links']) > 0:
             for a in l['ace_links']:
-                #url='plugin://program.plexus/?url={a}&mode=2&name=Sparkle'.format(a=a)
+                #url='plugin://program.plexus/?url={a}&mode=2&name=acesports'.format(a=a)
                 url = plugin.url_for(play, stream_url=a)
                 addDirectoryItem(
                     plugin.handle,
@@ -87,7 +87,7 @@ def play():
     stream_url = plugin.args['stream_url'][0]
     log("Playing {}".format(stream_url))
     try:
-        xbmc.executebuiltin(AS_LAUNCH_LINK.format(url=stream_url, name='sparkle'))
+        xbmc.executebuiltin(AS_LAUNCH_LINK.format(url=stream_url, name='acesports'))
     except Exception as inst:
         log(inst)
 
