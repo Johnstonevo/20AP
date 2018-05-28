@@ -1,5 +1,5 @@
 # Addon Name: Jen
-# Addon id: plugin.video.20ap
+# Addon id: plugin.video.f1f
 # Addon Provider: Jen
 msgid ""
 msgstr ""
