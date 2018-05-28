@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
     default.py --- Jen Addon entry point
-    Copyright (C) 2017, Jen
+    Copyright (C) 2017, Midraal
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -17,33 +17,29 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 """
 import __builtin__
-import xbmcaddon
 
 # CONFIGURATION VARIABLES
 # -----------------------
-addon_id = xbmcaddon.Addon().getAddonInfo('id')
-ownAddon = xbmcaddon.Addon(id=addon_id)
-enable_installa = ownAddon.getSetting('dlimage')
-enable_newswin = ownAddon.getSetting('news_win')
+# change these to suit your addons
 root_xml_url = "https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/base.xml"  # url of the root xml file
 __builtin__.tvdb_api_key = "D59DC0B30C99333E"  # tvdb api key
 __builtin__.tmdb_api_key = "aa28550e5a65f567fc512bd0290ce6fb"  # tmdb api key
 __builtin__.trakt_client_id = "826f424de711d416abc0f2d9ffae98406dd2489ab7a7f1089b9635ae3c5476ed"  # trakt client id
 __builtin__.trakt_client_secret = "3e3c7a3f4f5c2f09154a4759e4cdd23c33b055e0c492d2c635f05539c974a0f6"  # trakt client secret
-__builtin__.search_db_location = ownAddon.getSetting('search_db_location')
+__builtin__.search_db_location = ""  # location of search db
+
 
 import os
 import sys
 
 import koding
 import koding.router as router
-from resources.lib.installa import Dialog_specific
-from resources.lib.news_window import Dialog_Example
 import resources.lib.search
 import resources.lib.sources
 import resources.lib.testings
 import resources.lib.util.info
 import xbmc
+import xbmcaddon
 import xbmcplugin
 from koding import route
 from resources.lib.util.xml import JenList, display_list
@@ -53,17 +49,17 @@ from language import get_string as _
 from resources.lib.plugin import run_hook
 
 
+addon_id = xbmcaddon.Addon().getAddonInfo('id')
 addon_name = xbmcaddon.Addon().getAddonInfo('name')
 home_folder = xbmc.translatePath('special://home/')
 addon_folder = os.path.join(home_folder, 'addons')
 art_path = os.path.join(addon_folder, addon_id)
 content_type = "files"
 
+
 @route("main")
 def root():
     """root menu of the addon"""
-    if enable_newswin == 'true':
-        koding.Add_Dir(name='Latest News And Updates', url='{"my_text":"Latest News[CR]!!!","my_desc":""}', mode='dialog_example', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
     if not get_list(root_xml_url):
         koding.Add_Dir(
             name=_("Message"),
@@ -89,8 +85,7 @@ def root():
             icon=xbmcaddon.Addon().getAddonInfo("icon"),
             fanart=xbmcaddon.Addon().getAddonInfo("fanart"),
             content_type="")
-    if enable_installa =='true':
-        koding.Add_Dir(name='Download Backgrounds', url='{"my_text":"INSTALLA[CR]!!!","my_desc":""}', mode='dialog_specific', folder=False, icon=os.path.join(art_path,'icon.png'), fanart=os.path.join(art_path,'fanart.jpg'))
+
 
 @route(mode='get_list_uncached', args=["url"])
 def get_list_uncached(url):
@@ -165,6 +160,9 @@ def resolver_settings():
     xbmcaddon.Addon('script.module.resolveurl').openSettings()
 
 
+
+
+
 @route(mode="ClearTraktAccount")
 def clear_trakt_account():
     import xbmcgui
@@ -173,14 +171,6 @@ def clear_trakt_account():
         xbmcaddon.Addon().setSetting("TRAKT_ACCESS_TOKEN", "")
         xbmcaddon.Addon().setSetting("TRAKT_REFRESH_TOKEN", "")
 
-
-@route(mode="message", args=["url"])
-def show_message(message):
-    import xbmcgui
-    if len(message) > 80:
-        koding.Text_Box(addon_name, message)
-    else:
-        xbmcgui.Dialog().ok(addon_name, message)
 
 
 @route('clearCache')
@@ -198,8 +188,8 @@ def clear_cache():
             xbmc.translatePath(xbmcaddon.Addon().getSetting("cache_folder")),
             "artcache")
         koding.Delete_Folders(dest_folder)
-    xbmc.log("running hook:", xbmc.LOGNOTICE)
     run_hook("clear_cache")
+
 
 
 def get_addon_url(mode, url=""):
