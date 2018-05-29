@@ -131,10 +131,7 @@
 
 
 <dir>
-<name>Live TV (ONLINE)</name>
-<link>plugin://script.module.20aplive</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<summary>Live TV</summary>
+<title>Live TV</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/live.xml</link>
+<summary>Live TV Links</summary>
 </dir>
-

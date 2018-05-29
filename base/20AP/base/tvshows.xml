@@ -28,6 +28,12 @@
   <summary>South Park, Rick and Morty et al</summary>
 </dir>
 
+    <dir>
+      <title>24/7 TV Shows</title>
+      <arconaitv2>shows</arconaitv2>
+    </dir>
+    
+    
 <dir>
   <title>TMDB Top Rated TV Shows</title>
   <tmdb>tv/top_rated</tmdb>

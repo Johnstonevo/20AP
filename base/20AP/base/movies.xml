@@ -25,6 +25,13 @@
 <thumbnail>http://www.adventisthealth.tv/wp-content/uploads/2017/04/IMDb.png</thumbanil>
 </dir>
 
+    <dir>
+      <title>24/7 Movies</title>
+      <arconaitv2>movies</arconaitv2>
+    </dir>
+    
+
+    
 <dir>
   <title>Actor Box Sets</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/people.xml</link>

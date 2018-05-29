@@ -1,0 +1,12 @@
+    <dir>
+      <title>24/7 Channels</title>
+      <arconaitv2>cable</arconaitv2>
+    </dir>
+
+    <dir>
+<name>Live TV (ONLINE)</name>
+<link>plugin://script.module.20aplive</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+<summary>Live TV</summary>
+</dir>
