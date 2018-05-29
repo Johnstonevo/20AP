@@ -29,11 +29,11 @@
 </dir>
 
     <dir>
-      <title>24/7 TV Shows</title>
+      <title>Arconaitv 24/7 TV Shows</title>
       <arconaitv2>shows</arconaitv2>
     </dir>
     
-    
+
 <dir>
   <title>TMDB Top Rated TV Shows</title>
   <tmdb>tv/top_rated</tmdb>
@@ -51,12 +51,6 @@
   <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
 </dir>
 
-
-
-<dir>
-<title>Arconaitv 24-7 TV Streams</title>
-<arconaitv>shows</arconaitv>
-</dir>
 
 
 <dir>
