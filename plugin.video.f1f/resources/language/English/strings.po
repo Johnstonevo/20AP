@@ -1,6 +1,6 @@
-# Addon Name: Jen
+# Addon Name: F1F
 # Addon id: plugin.video.f1f
-# Addon Provider: Jen
+# Addon Provider: Enzo
 msgid ""
 msgstr ""
 "Project-Id-Version: Jen\n"
