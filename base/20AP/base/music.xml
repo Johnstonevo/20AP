@@ -1,0 +1,22 @@
+###################################################################################################
+
+###################################################################################################
+<dir>
+    <title>Search Artist</title>
+    <lastfm>search/artist</lastfm>
+    </dir>
+
+    <dir>
+    <title>Search Album</title>
+    <lastfm>search/album</lastfm>
+    </dir>
+
+
+
+<dir>
+<name>Radio</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/radio.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
+<fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
+<summary>Decent Radio Stations</summary>
+</dir>

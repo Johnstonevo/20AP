@@ -58,11 +58,11 @@
 
 
 <dir>
-<name>Radio</name>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/radio.xml</link>
+<name>Music</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/music.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
 <fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
-<summary>Decent Radio Stations</summary>
+<summary>Music links and Radio Stations. </summary>
 </dir>
 
 
