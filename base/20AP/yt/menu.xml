@@ -43,13 +43,6 @@
 
 
 <dir>
-  <name>Youtube Music</name>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/music.xml</link>
-  <fanart>https://wallpaperscraft.com/image/youtube_video_hosting_logo_google_73436_1280x720.jpg</fanart>
-</dir>
-
-
-<dir>
   <name>Raspberry Pi YT Channels</name>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/raspberrypi.xml</link>
   <thumbnail>https://www.raspberrypi.org/app/uploads/2015/08/raspberry-pi-logo.png</thumbnail>
