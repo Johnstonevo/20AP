@@ -203,12 +203,6 @@ See the best of Queen right here on YouTube.
 </summary>
 </plugin>
 
-<plugin>
-	<title>test</title>
-	<link>plugin://plugin.video.youtube/play/?video_id=$1f7XwCsx4fs&list=RD1f7XwCsx4fs</link>
-	<thumbnail></thumbnail>
-  <summary></summary>
-</plugin>
 
 <plugin>
 <title>Concerts</title>
