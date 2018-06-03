@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.5.29" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.6.03" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -19,9 +19,8 @@
       <import addon="plugin.video.motorreplays" version="2.8" />
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" />
-      <import addon="script.module.20aplive" />
       <import addon="script.module.acesports" />
-
+      <import addon ="script.module.modbro" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>audio video</provides>
@@ -196,7 +195,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.20ap" name="20ap" version="18.5.29" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.6.03" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -215,7 +214,7 @@
       <import addon="plugin.video.motorreplays" version="2.8" />
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" />
-      <import addon="script.module.20aplive" />
+      <import addon ="script.module.modbro" />
       <import addon="script.module.acesports" />
 
   </requires>
@@ -273,6 +272,30 @@
     <summary lang="en">[COLOR yellow]An addon specifically made for motorsports fans[/COLOR]</summary>
     <description lang="en">The Home of MOTOR REPLAYS by @Aleighty80</description>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="script.module.mobdro" name="Mobdro" version="11" provider-name="RACC">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.livestreamer" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides></provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">Mobdro</summary>
+    <description lang="en_gb">Mobdro</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 

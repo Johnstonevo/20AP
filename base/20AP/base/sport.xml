@@ -12,13 +12,12 @@
 </dir>
 
 <dir>
-<name>LiveSport Channels</name>
-<link>plugin://script.module.20aplive/list_channels/5</link>
+<name>Live Channels</name>
+<link>plugin://script.module.mobdro</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
 <summary>Live TV</summary>
 </dir>
-
 
 <dir>
 <name>Live Sports Acestreams</name>
