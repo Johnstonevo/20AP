@@ -6,24 +6,9 @@
 <item>
   <title>Live</title>
   <link>
-    <sublink>plugin://program.plexus/?mode=1&url=acestream://eb7d24e11e4765de659f496e1f7ebb59949e5679(Acestream Plexus)</sublink>
-    <sublink>https://tafb.brontes.feralhosting.com/Live/mystream/index.m3u8(Server-1)</sublink>
-    <sublink>http://montrealssd.dornastream.com/Live/mystream/index.m3u8(Server-2)</sublink>
-    <sublink>plugin%3A%2F%2Fplugin.video.SportsDevil%2F%3Fmode%3D1%26amp%3Bitem%3Dcatcher%253dstreams%2526url%3Dhttp://www.liveonlinetv247.info/embed/btsport2.php</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.liveonlinetv247.info/embed/btsport2-2.php</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://live.drakulawidget.com/freeplayer/5643232057392290.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://crichd.ws/update/bt2.php</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://cricfree.sc/update/bt2.php</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://cricfree.sc/iframe/hdlive/bt2.php</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/1/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/2/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/3/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/4/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/5/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/6/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.vipbox.st/motorsports/545956/7/motogp-race---grand-prix-of-qatar-live-stream-online.html</sublink>
-    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams&url=http://www.sports-stream.net/ch.php?id=10</sublink>
-</link>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.sports-stream.net/ch/ch10.html</sublink>
+    <sublink>plugin://plugin.video.SportsDevil/?mode=1&amp;item=catcher%3dstreams%26url=http://www.sports-stream.net/ch/ch15.html</sublink>
+    </link>
 <referer>no</referer>
   <thumbnail></thumbnail>
   <fanart></fanart>

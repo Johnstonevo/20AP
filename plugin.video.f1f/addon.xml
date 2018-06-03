@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.f1f" name="f1f" version="18.6.03" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="18.6.03.1" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -20,10 +20,9 @@
       <import addon="program.plexus" />
       <import addon ="script.module.mobdro" />
       <import addon="script.module.acesports" />
-
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>audio video</provides>
+      <provides>video</provides>
   </extension>
   <extension point="xbmc.service" library="service.py" start="[login|startup]" />
   <extension point="xbmc.addon.metadata">
@@ -34,7 +33,6 @@
     <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
     <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
     <platform>all</platform>
-      <website>www.noobsandnerds.com</website>
       <video_guide>xtOqLY5PJDY</video_guide>
   </extension>
 </addon>
