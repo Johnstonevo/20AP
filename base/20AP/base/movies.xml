@@ -4,12 +4,18 @@
 <fanart>https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg</fanart>
 ####################################################################################################
 <dir>
-  <title>Current Movies and post 2000 Movies</title>
+  <title>2011-Current Movies</title>
   <tmdb>list/43994</tmdb>
   <thumbnail>https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png</thumbnail>
   <fanart>https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg</fanart>
 </dir>
 
+<dir>
+  <title>2000-2010 Movies</title>
+  <tmdb>list/79502</tmdb>
+  <thumbnail>https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png</thumbnail>
+  <fanart>https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg</fanart>
+</dir>
 
 <dir>
   <title>Older Movies and Classics pre-2000</title>
