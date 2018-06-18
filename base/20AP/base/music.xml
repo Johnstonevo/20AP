@@ -209,3 +209,11 @@ See the best of Queen right here on YouTube.
 <link>plugin://plugin.video.youtube/playlist/PLy39KCFQDD_5OMiXims0HiMqIuf5qBDk2/</link>
 <thumbnail>http://i.imgur.com/95GCBsO.jpg</thumbnail>
 </plugin>
+
+
+
+<plugin>
+<title>K-Pop Reddit</title>
+<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=kpop&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fkpop%2f.json%3f%26limit%3d50</link>
+<thumbnail></thumbnail>
+</plugin>
