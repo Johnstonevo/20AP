@@ -1020,3 +1020,19 @@ At the very least I hope to entertain you, and at the very most I hope to inspir
 
 Thank you for reading...and happy building!</summary>
 </plugin>
+
+
+<plugin>
+  <title>ZH Fabrications</title>
+  <link>plugin://plugin.video.youtube/channel/UCDdZMJDDpyvI9WJyY7IZP7w/</link>
+  <thumbnail>https://yt3.ggpht.com/-Dnym9KU4qzM/AAAAAAAAAAI/AAAAAAAAAAA/8KlWcPBTp1U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Hey, I'm a metal fabricator, woodworker, and amateur blacksmith who is new to youtube, and I'm terrible at introductions. I'm going to try and do my best to get one video a week posted here, I'd like to hear your input as well as your ideas for upcoming projects.</summary>
+</plugin>
+
+
+<plugin>
+  <title></title>
+  <link>plugin://plugin.video.youtube/channel//</link>
+  <thumbnail></thumbnail>
+  <summary></summary>
+</plugin>
