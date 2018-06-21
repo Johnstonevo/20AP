@@ -6,6 +6,26 @@
 ################################################################################
 
 <plugin>
+  <title>Sofs</title>
+  <link>plugin://plugin.video.youtube/channel/UCud2uF5BvxNYOKn__PP4LjA/</link>
+  <thumbnail>https://yt3.ggpht.com/-D4SMmH6eYj0/AAAAAAAAAAI/AAAAAAAAAAA/fNiLA6fwZKM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Wanderer who loves to empower self and others while on her journey. DIY enthusiast, designer, artisan, maker... Sofs is actively engaged in the pursuit of making it happen!
+
+My pursuit seems to most often gravitate towards the coolest, highly clever, innovative and purposeful diy stuff. Like many of you, I don't have the luxury of time therefore I like big ideas with big impact in a short amount of time. I know, I know...its asking for a lot! but then again, I believe anything is possible if we put our minds to it!
+
+Enjoy, learn, connect and most important, play and have fun! </summary>
+</plugin>
+
+
+<plugin>
+  <title>The Inspiration</title>
+  <link>plugin://plugin.video.youtube/channel/UCeCUA3TeFPmi2OTySeDZ-ig/</link>
+  <thumbnail>https://yt3.ggpht.com/-XHvY44CbI1Q/AAAAAAAAAAI/AAAAAAAAAAA/UT-IIz_pGNE/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>DIY / Hand made decor / home decor/ creative ideas</summary>
+</plugin>
+
+
+<plugin>
   <title>KamuiCosplay</title>
   <link>plugin://plugin.video.youtube/channel/UC79qFuymkVas5dCScbLF9fw/</link>
   <thumbnail>https://yt3.ggpht.com/-DfAXuZXn2Oo/AAAAAAAAAAI/AAAAAAAAAAA/hsggapv1kc0/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
