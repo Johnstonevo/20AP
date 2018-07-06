@@ -5,6 +5,11 @@
 <fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
 
 ##########################################################################################
+<plugin>
+	<title>[B][COLORsnow]--==[COLORyellow]Best Of Streaming Video[/COLOR]==--[/COLOR][/B]</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=BestOfStreamingVideo&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fBestOfStreamingVideo%2f.json%3f%26limit%3d100</link>
+	<content></content>
+</plugin>
 
 <plugin>
 	<title>[B][COLORsnow]--==[COLORyellow]Full Movies on Google[/COLOR]==--[/COLOR][/B]</title>
