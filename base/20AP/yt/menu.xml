@@ -89,3 +89,10 @@
   <fanart>https://orig00.deviantart.net/917d/f/2014/097/5/5/bring_in_the_nerds____wallpaper_edition_by_blo0p-d7dfks6.png</fanart>
   <summary>Things like D&D</summary>
 </dir>
+
+<dir>
+  <name>Iain's Tutorials</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/Tutorials.xml</link>
+  <fanart></fanart>
+  <summary>Stuff for Iain</summary>
+</dir>
