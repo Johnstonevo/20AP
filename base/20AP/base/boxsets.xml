@@ -58,6 +58,7 @@
       <title>The Beatles</title>
       <trakt>https://api.trakt.tv/users/lockebcl/lists/the-beatles/items</trakt>
 	  <fanart></fanart>
+	  <content>set</content>
     </dir>
 
 
@@ -412,7 +413,7 @@
 
 <dir>
 	<title>Marvel Collection</title>
-	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/marvel.xml</link>
+      <trakt>https://api.trakt.tv/users/tetharion/lists/marvel-cinematic-universe/items</trakt>
 	<thumbnail>https://image.tmdb.org/t/p/original/aC3VJyuNpymHAf9pyQqB20EK4v6.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
 	<content>set</content>
