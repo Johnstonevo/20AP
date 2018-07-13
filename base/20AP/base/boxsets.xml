@@ -53,6 +53,15 @@
 	<summary></summary>
 </dir>
 
+
+    <dir>
+      <title>The Beatles</title>
+      <trakt>https://api.trakt.tv/users/lockebcl/lists/the-beatles/items</trakt>
+	  <fanart></fanart>
+    </dir>
+
+
+
 <dir>
 	<title>Blade Runner Collection</title>
 	<tmdb>collection/422837</tmdb>
