@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.7.08" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.8.04" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -201,7 +201,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.f1f" name="f1f" version="18.7.08" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="18.8.04" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -303,7 +303,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.6" provider-name="Community">
+<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.8" provider-name="Community">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -314,6 +314,7 @@
         <import addon="script.module.xmltodict" version="0.9.0" />
         <!--<import addon="script.module.web-pdb" version="1.0"/>-->
         <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>audio video</provides>
@@ -326,6 +327,7 @@
         <platform>all</platform>
         <website/>
         <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
     </extension>
 </addon>
 
@@ -359,27 +361,5 @@
         <website></website>
         <video_guide></video_guide>
     </extension>
-</addon>
-
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.15" provider-name="tvaddons">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-		<forum>https://www.tvaddons.co/forums</forum>
-        <website>https://www.tvaddons.co</website>
-	</extension>
 </addon>
 </addons>

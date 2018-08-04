@@ -1,62 +1,41 @@
 """
-    air_table.py
-    Copyright (C) 2018,
-    Version 2.0.0
 
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+    Copyright (C) 2018 MuadDib
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+    ----------------------------------------------------------------------------
+    "THE BEER-WARE LICENSE" (Revision 42):
+    @tantrumdev wrote this file.  As long as you retain this notice you can do 
+    whatever you want with this stuff. Just Ask first when not released through
+    the tools and parser GIT. If we meet some day, and you think this stuff is
+    worth it, you can buy him a beer in return. - Muad'Dib
+    ----------------------------------------------------------------------------
 
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    Changelog:
+        2018.7.7
+            - Updated for passing View Mode
 
-    -------------------------------------------------------------
+        2018.6.17
+            - Initial Release
+
 
     Usage Examples:
 
+    Text inside the tags are a formatted base64 encoded string. The format is below.
+    View Mode and Sort By can both be ignored in the searches by using None in those blocks.
+    Format: Base ID|Table Name|Max Results|Sort By|View Mode|API Key
 
-    Returns the Tv Channels-
+    Returns the Tv Channels
 
+    -- Base64 Unencoded String: appycq5PhSS0tygok|tv_channels|700|channel|None|keyikW1exArRfNAWj
     <dir>
-    <title>Tv Channels</title>
-    <Airtable>tv_channels</Airtable>
+        <title>TV Channels #1</title>
+        <arraki_air>YXBweWNxNVBoU1MwdHlnb2t8dHZfY2hhbm5lbHN8NzAwfGNoYW5uZWx8Tm9uZXxrZXlpa1cxZXhBclJmTkFXag==</arraki_air>
     </dir>
 
-    <dir>
-    <title>[COLOR=orange]Tv Channels2[/COLOR]</title>
-    <Airtable>channels2</Airtable>
-    </dir>
-
-    Returns the Sports Channels-
-
-    <dir>
-    <title>Sports Channels</title>
-    <Airtable>sports_channels</Airtable>
-    </dir>
-
-
-    Returns the m3u Lists-
-    <dir>
-    <title>M3U Lists</title>
-    <Airtable>m3u_lists</Airtable>
-    </dir>
-
-    Returns the 24-7 Channels
-    <dir>
-    <title>24-7 Channels</title>
-    <Airtable>247</Airtable>
-    </dir>
 
     --------------------------------------------------------------
 
 """
-
 
 
 from __future__ import absolute_import
@@ -65,7 +44,7 @@ import re
 import os
 import xbmc
 import xbmcaddon
-import json
+import json,traceback,xbmcgui
 from koding import route
 from ..plugin import Plugin
 from resources.lib.util.context import get_context_items
@@ -84,326 +63,127 @@ AddonName = xbmc.getInfoLabel('Container.PluginName')
 AddonName = xbmcaddon.Addon(AddonName).getAddonInfo('id')
 
 
-class AIRTABLE(Plugin):
-    name = "airtable"
+class ARRAKIAIR(Plugin):
+    name = "arrakiair"
 
     def process_item(self, item_xml):
-        if "<Airtable>" in item_xml:
+        if "<arraki_air>" in item_xml:
             item = JenItem(item_xml)
-            if "tv_channels" in item.get("Airtable", ""):
-                result_item = {
-                    'label': item["title"],
-                    'icon': item.get("thumbnail", addon_icon),
-                    'fanart': item.get("fanart", addon_fanart),
-                    'mode': "Tv_channels",
-                    'url': "",
-                    'folder': True,
-                    'imdb': "0",
-                    'season': "0",
-                    'episode': "0",
-                    'info': {},
-                    'year': "0",
-                    'context': get_context_items(item),
-                    "summary": item.get("summary", None)
-                }
-                result_item["properties"] = {
-                    'fanart_image': result_item["fanart"]
-                }
-                result_item['fanart_small'] = result_item["fanart"]
-                return result_item
+            result_item = {
+                'label': item["title"],
+                'icon': item.get("thumbnail", addon_icon),
+                'fanart': item.get("fanart", addon_fanart),
+                'mode': "ArrakiAir",
+                'url': item.get("arraki_air", ""),
+                'folder': True,
+                'imdb': "0",
+                'season': "0",
+                'episode': "0",
+                'info': {},
+                'year': "0",
+                'context': get_context_items(item),
+                "summary": item.get("summary", None)
+            }
+            result_item["properties"] = {
+                'fanart_image': result_item["fanart"]
+            }
+            result_item['fanart_small'] = result_item["fanart"]
+            return result_item
 
-            elif "sports_channels" in item.get("Airtable", ""):
-                result_item = {
-                    'label': item["title"],
-                    'icon': item.get("thumbnail", addon_icon),
-                    'fanart': item.get("fanart", addon_fanart),
-                    'mode': "Sports_channels",
-                    'url': "",
-                    'folder': True,
-                    'imdb': "0",
-                    'season': "0",
-                    'episode': "0",
-                    'info': {},
-                    'year': "0",
-                    'context': get_context_items(item),
-                    "summary": item.get("summary", None)
-                }
-                result_item["properties"] = {
-                    'fanart_image': result_item["fanart"]
-                }
-                result_item['fanart_small'] = result_item["fanart"]
-                return result_item                
-                
-            elif "m3u_lists" in item.get("Airtable", ""):
-                result_item = {
-                    'label': item["title"],
-                    'icon': item.get("thumbnail", addon_icon),
-                    'fanart': item.get("fanart", addon_fanart),
-                    'mode': "M3U",
-                    'url': "",
-                    'folder': True,
-                    'imdb': "0",
-                    'season': "0",
-                    'episode': "0",
-                    'info': {},
-                    'year': "0",
-                    'context': get_context_items(item),
-                    "summary": item.get("summary", None)
-                }
-                result_item["properties"] = {
-                    'fanart_image': result_item["fanart"]
-                }
-                result_item['fanart_small'] = result_item["fanart"]
-                return result_item
 
-            elif "247" in item.get("Airtable", ""):
-                result_item = {
-                    'label': item["title"],
-                    'icon': item.get("thumbnail", addon_icon),
-                    'fanart': item.get("fanart", addon_fanart),
-                    'mode': "247",
-                    'url': "",
-                    'folder': True,
-                    'imdb': "0",
-                    'season': "0",
-                    'episode': "0",
-                    'info': {},
-                    'year': "0",
-                    'context': get_context_items(item),
-                    "summary": item.get("summary", None)
-                }
-                result_item["properties"] = {
-                    'fanart_image': result_item["fanart"]
-                }
-                result_item['fanart_small'] = result_item["fanart"]
-                return result_item
-
-            elif "channels2" in item.get("Airtable", ""):
-                result_item = {
-                    'label': item["title"],
-                    'icon': item.get("thumbnail", addon_icon),
-                    'fanart': item.get("fanart", addon_fanart),
-                    'mode': "channels2",
-                    'url': "",
-                    'folder': True,
-                    'imdb': "0",
-                    'season': "0",
-                    'episode': "0",
-                    'info': {},
-                    'year': "0",
-                    'context': get_context_items(item),
-                    "summary": item.get("summary", None)
-                }
-                result_item["properties"] = {
-                    'fanart_image': result_item["fanart"]
-                }
-                result_item['fanart_small'] = result_item["fanart"]
-                return result_item                 
-
-@route(mode='channels2')
-def get_channels2():
+@route(mode='ArrakiAir', args=["url"])
+def get_arraki_air_table(param_string):
     xml = ""
-    at = Airtable('appycq5PhSS0tygok', 'TV_channels2', api_key='keyikW1exArRfNAWj')
-    match = at.get_all(maxRecords=700, sort=['channel'])
-    results = re.compile("fanart': u'(.+?)'.+?link': u'(.+?)'.+?thumbnail': u'(.+?)'.+?channel': u'(.+?)'.+?summary': u'(.+?)'",re.DOTALL).findall(str(match))
-    for fanart,link,thumbnail,channel,summary in results:
-        if "plugin" in link:
+    param_string = param_string.decode('base64')
+    param_string = param_string.split('|')
 
-            xml += "<plugin>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title>%s</title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<link>"\
-                   "<sublink>%s</sublink>"\
-                   "</link>"\
-                   "</plugin>" % (channel,channel,thumbnail,fanart,summary,link)
-                
-        else:
-            xml +=  "<item>"\
-                    "<title>%s</title>"\
-                    "<meta>"\
-                    "<content>movie</content>"\
-                    "<imdb></imdb>"\
-                    "<title>%s</title>"\
-                    "<year></year>"\
-                    "<thumbnail>%s</thumbnail>"\
-                    "<fanart>%s</fanart>"\
-                    "<summary>%s</summary>"\
-                    "</meta>"\
-                    "<link>"\
-                    "<sublink>%s</sublink>"\
-                    "</link>"\
-                    "</item>" % (channel,channel,thumbnail,fanart,summary,link)
+    view = param_string[4]
+    sort = param_string[3]
+    maxRecords = param_string[2]
+
+    # App ID, Table ID, Max Results, Sort ID, View Mode, API Key
+    at = Airtable(param_string[0], param_string[1], api_key=param_string[5])
+    if sort.lower() == 'none' and view.lower() == 'none': match = at.get_all(maxRecords=maxRecords)
+    elif sort.lower() == 'none' and view.lower() != 'none': match = at.get_all(maxRecords=maxRecords, view=[view])
+    elif sort.lower() != 'none' and view.lower() == 'none': match = at.get_all(maxRecords=maxRecords, sort=[sort])
+    elif sort.lower() != 'none' and view.lower() != 'none': match = at.get_all(maxRecords=maxRecords, sort=[sort], view=[view])
+
+    for item in match:
+        try:
+            try:
+                if item['fields']['channel']:
+                    item['fields']['title'] = item['fields']['channel']
+            except:
+                pass
+
+            xml_item = validate_at(item['fields'])
+            if 'plugin' in item['fields']['link']:
+                xml +=  "<plugin>"\
+                        "   <title>%s</title>"\
+                        "   <meta>"\
+                        "       <summary>%s</summary>"\
+                        "   </meta>"\
+                        "   <link>" % (xml_item['title'],xml_item['summary'])
+                xml +=  add_sublinks(xml_item)
+                xml +=  "   </link>"\
+                        "   <thumbnail>%s</thumbnail>"\
+                        "   <fanart>%s</fanart>"\
+                        "</plugin>" % (xml_item['thumbnail'],xml_item['fanart'])
+            else:
+                xml +=  "<item>"\
+                        "   <title>%s</title>"\
+                        "   <meta>"\
+                        "       <summary>%s</summary>"\
+                        "   </meta>"\
+                        "   <link>" % (xml_item['title'],xml_item['summary'])
+                xml +=  add_sublinks(xml_item)
+                xml +=  "   </link>"\
+                        "   <thumbnail>%s</thumbnail>"\
+                        "   <fanart>%s</fanart>"\
+                        "</item>" % (xml_item['thumbnail'],xml_item['fanart'])
+        except:
+            # continue here, so we can skip any invalid items
+            continue
+
     jenlist = JenList(xml)
     display_list(jenlist.get_list(), jenlist.get_content_type())
 
 
-@route(mode='Tv_channels')
-def new_releases():
-    xml = ""
-    at = Airtable('appEh3MpOXliHvAjw', 'TV_channels', api_key='keyOHaxsTGzHU9EEh')
-    match = at.get_all(maxRecords=700, sort=['channel'])
-    results = re.compile("fanart': u'(.+?)'.+?link': u'(.+?)'.+?thumbnail': u'(.+?)'.+?channel': u'(.+?)'.+?summary': u'(.+?)'",re.DOTALL).findall(str(match))
-    for fanart,link,thumbnail,channel,summary in results:
-        if "plugin" in link:
-
-            xml += "<plugin>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title>%s</title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<link>"\
-                   "<sublink>%s</sublink>"\
-                   "</link>"\
-                   "</plugin>" % (channel,channel,thumbnail,fanart,summary,link)
-                
-        else:
-            xml +=  "<item>"\
-                    "<title>%s</title>"\
-                    "<meta>"\
-                    "<content>movie</content>"\
-                    "<imdb></imdb>"\
-                    "<title>%s</title>"\
-                    "<year></year>"\
-                    "<thumbnail>%s</thumbnail>"\
-                    "<fanart>%s</fanart>"\
-                    "<summary>%s</summary>"\
-                    "</meta>"\
-                    "<link>"\
-                    "<sublink>%s</sublink>"\
-                    "</link>"\
-                    "</item>" % (channel,channel,thumbnail,fanart,summary,link)
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+# Tag,Alternate
+jen_checks = [ ['title','title'],['summary','title'],['link','link'],['thumbnail',addon_icon],['fanart',addon_fanart] ]
+def validate_at(item):
+    for tag in jen_checks:
+        try:
+            data_chk = item[tag[0]]
+        except:
+            if tag[0] == tag[1]:
+                item[0] = ''
+            else:
+                try: item[0] = item[1]
+                except: item[0] = ''
+    return item
 
 
-@route(mode='Sports_channels')
-def new_releases():
-    xml = ""
-    at = Airtable('apppx7NENxSaqMkM5', 'Sports_channels', api_key='keyOHaxsTGzHU9EEh')
-    match = at.get_all(maxRecords=700, sort=['channel'])
-    results = re.compile("fanart': u'(.+?)'.+?link': u'(.+?)'.+?thumbnail': u'(.+?)'.+?channel': u'(.+?)'.+?summary': u'(.+?)'",re.DOTALL).findall(str(match))
-    for fanart,link,thumbnail,channel,summary in results:
-        if "plugin" in link:
+def add_sublinks(item_xml):
+    xml = ''
+    cnt = 1
+    try:
+        if item_xml['link'] != None and item_xml['link'] != '-':
+            xml += "    <sublink>%s</sublink>" % (item_xml['link'])
+    except:
+        pass
+    build = True
+    while build == True:
+        try:
+            link = 'link'+str(cnt)
+            cnt += 1
+            if item_xml[link] != None and item_xml[link] != '-':
+                xml += "    <sublink>%s</sublink>" % (item_xml[link])
+        except:
+            build = False
+    
+    return xml
 
-            xml += "<plugin>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title>%s</title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<link>"\
-                   "<sublink>%s</sublink>"\
-                   "</link>"\
-                   "</plugin>" % (channel,channel,thumbnail,fanart,summary,link)
-                
-        else:
-            xml +=  "<item>"\
-                    "<title>%s</title>"\
-                    "<meta>"\
-                    "<content>movie</content>"\
-                    "<imdb></imdb>"\
-                    "<title>%s</title>"\
-                    "<year></year>"\
-                    "<thumbnail>%s</thumbnail>"\
-                    "<fanart>%s</fanart>"\
-                    "<summary>%s</summary>"\
-                    "</meta>"\
-                    "<link>"\
-                    "<sublink>%s</sublink>"\
-                    "</link>"\
-                    "</item>" % (channel,channel,thumbnail,fanart,summary,link)
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
-
-
-@route(mode='M3U')
-def M3u_Lists():
-    xml = ""
-    at = Airtable('appS7YaHGBb2CyIVd', 'm3u_lists', api_key='keyOHaxsTGzHU9EEh')
-    match = at.get_all(maxRecords=700, sort=['name'])
-    results = re.compile("fanart': u'(.+?)'.+?link': u'(.+?)'.+?name': u'(.+?)'.+?thumbnail': u'(.+?)'",re.DOTALL).findall(str(match))
-    for fanart,link,name,thumbnail in results:
-        xml += "<plugin>"\
-               "<title>%s</title>"\
-               "<meta>"\
-               "<content>movie</content>"\
-               "<imdb></imdb>"\
-               "<title>%s</title>"\
-               "<year></year>"\
-               "<thumbnail>%s</thumbnail>"\
-               "<fanart>%s</fanart>"\
-               "<summary></summary>"\
-               "</meta>"\
-               "<link>plugin://plugin.video.live.streamspro/?mode=1&url=%s</link>"\
-               "</plugin>" % (name,name,thumbnail,fanart,link)
-                
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
-
-@route(mode='247')
-def twenty_four_seven():
-    xml = ""
-    at = Airtable('appK3PHvFCUPbtx6G', 'twenty_four_seven', api_key='keyOHaxsTGzHU9EEh')
-    match = at.get_all(maxRecords=700, view='Grid view')
-    results = re.compile("fanart': u'(.+?)'.+?link': u'(.+?)'.+?thumbnail': u'(.+?)'.+?channel': u'(.+?)'.+?summary': u'(.+?)'",re.DOTALL).findall(str(match))
-    for fanart,link,thumbnail,channel,summary in results:
-        if "plugin" in link:
-
-            xml += "<plugin>"\
-                   "<title>%s</title>"\
-                   "<meta>"\
-                   "<content>movie</content>"\
-                   "<imdb></imdb>"\
-                   "<title>%s</title>"\
-                   "<year></year>"\
-                   "<thumbnail>%s</thumbnail>"\
-                   "<fanart>%s</fanart>"\
-                   "<summary>%s</summary>"\
-                   "</meta>"\
-                   "<link>"\
-                   "<sublink>%s</sublink>"\
-                   "</link>"\
-                   "</plugin>" % (channel,channel,thumbnail,fanart,summary,link)
-                
-        else:
-            xml +=  "<item>"\
-                    "<title>%s</title>"\
-                    "<meta>"\
-                    "<content>movie</content>"\
-                    "<imdb></imdb>"\
-                    "<title>%s</title>"\
-                    "<year></year>"\
-                    "<thumbnail>%s</thumbnail>"\
-                    "<fanart>%s</fanart>"\
-                    "<summary>%s</summary>"\
-                    "</meta>"\
-                    "<link>"\
-                    "<sublink>%s</sublink>"\
-                    "</link>"\
-                    "</item>" % (channel,channel,thumbnail,fanart,summary,link)
-    jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())        
-
-"-----------------------------------------------------------------"
 
 class Airtable():
 
