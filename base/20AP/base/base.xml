@@ -135,3 +135,9 @@
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/live.xml</link>
 <summary>Live TV Links</summary>
 </dir>
+
+<item>
+<title>Motioncam</title>
+<link>http://192.168.1.8:8081</link>
+<summary>Motioncam -pi</summary>
+</item>
