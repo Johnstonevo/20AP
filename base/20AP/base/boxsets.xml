@@ -413,7 +413,7 @@
 
 <dir>
 	<title>Marvel Collection</title>
-      <trakt>https://api.trakt.tv/users/tetharion/lists/marvel-cinematic-universe/items</trakt>
+      <trakt>https://api.trakt.tv/users/donxy/lists/marvel-cinematic-universe/items</trakt>
 	<thumbnail>https://image.tmdb.org/t/p/original/aC3VJyuNpymHAf9pyQqB20EK4v6.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
 	<content>set</content>
@@ -606,39 +606,23 @@
 
 
 <dir>
-	<title>Star Trek: The Original Series Collection (1979-1991)</title>
-	<tmdb>collection/151</tmdb>
+	<title>Star Trek</title>
+      <trakt>https://api.trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline/items</trakt>
 	<thumbnail>https://image.tmdb.org/t/p/original/zcB8KxHA4EapOoZZPAvwgmE1iGK.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/9BQj9hq0aK6yM9Tm2NJ28jg572y.jpg</fanart>
-  <summary>Star Trek: Original Motion Picture Collection contains the first six Original Series films starring the U.S.S. Enterprise's cast and crew from the 1960s TV series of the same name.
-	</summary>
+  <summary>Official Star Trek productions, including reboots, excluding fan/documentary/behind-the-scenes productions.
+
+Sorted by production order, not in-universe chronology. I think Star Trek should be viewed in production order, so it's evident how the franchise has changed over the last 50+ years.
+</summary>
 	<content>set</content>
 </dir>
 
 
-<dir>
-	<title>Star Trek: The Next Generation Collection (1994-2002)</title>
-	<tmdb>collection/115570</tmdb>
-	<thumbnail>https://image.tmdb.org/t/p/original/sddV6vaUC6x37icJS3opIXTXB07.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/original/r7MMQenUURHhAVHFymtOb8AX4Bm.jpg</fanart>
-  <summary>Star Trek: The Next Generation Motion Picture Collection contains the four Next Generation films.</summary>
-	<content>set</content>
-</dir>
 
-
-<dir>
-	<title>Star Trek: Alternate Reality Collection (2009-2016)</title>
-	<tmdb>collection/11575</tmdb>
-	<thumbnail>https://image.tmdb.org/t/p/original/w2IVqa43Ge49mrY3qSaJWpyDtz6.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/original/suPwXZLPMXQz7Cl6zjBQ9SJoRJ6.jpg</fanart>
-  <summary>J.J. Abrams' cinematic re-envisioning of the Star Trek universe portrayed by a new cast, and  in an alternate reality from earlier films and series.
-	</summary>
-	<content>set</content>
-</dir>
 
 <dir>
 	<title>Star Wars Collection</title>
-	<tmdb>collection/10</tmdb>
+      <trakt>https://api.trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline/items</trakt>
 	<thumbnail>https://image.tmdb.org/t/p/original/ghd5zOQnDaDW1mxO7R5fXXpZMu.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/d8duYyyC9J5T825Hg7grmaabfxQ.jpg</fanart>
 	<summary>An epic space opera theatrical film series that depicts the adventures of various characters "a long time ago in a galaxy far, far away".<summary>
