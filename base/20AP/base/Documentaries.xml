@@ -47,6 +47,20 @@
 
 </dir>
 
+
+
+<plugin>
+  <title>CBC Docs</title>
+  <link>plugin://plugin.video.youtube/channel/UCsEbwT3FHpAey6prlu7tNhw/</link>
+  <thumbnail>https://yt3.ggpht.com/-z3gbfHi-djE/AAAAAAAAAAI/AAAAAAAAAAA/9S8fJ4W0ZwM/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Full-length episodes of CBC documentary programming including CBC Docs POV, The Nature of Things with David Suzuki, Short Docs, and more.
+
+Short Docs are available worldwide.
+
+Full length documentaries are available only in Canada.</summary>
+</plugin>
+
+
 <dir>
 <title>Documentaries from topdocumentaryfilms.com</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/topdoc.xml</link>
