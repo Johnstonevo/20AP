@@ -83,6 +83,16 @@
 	<content>set</content>
 </dir>
 
+<dir>
+	<title>James Bond Collection (1963-2019)</title>
+	<tmdb>collection/645</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/AdTSX5FRqfeepriFsDf12XTR4fV.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/6VcVl48kNKvdXOZfJPdarlUGOsk.jpg</fanart>
+	<summary>
+	</summary>
+	<content>set</content>
+</dir>
+
 
 <dir>
 	<title>Bourne Collection</title>
