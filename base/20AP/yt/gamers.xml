@@ -41,7 +41,13 @@ The show is researched, written, edited, and created by Norman Caruso.
   </summary>
 </plugin>
 
-
+<plugin>
+  <title>Gamers Xtreme</title>
+  <link>plugin://plugin.video.youtube/channel/UC0W73p20Ou2wA9-iQKuxwIg/</link>
+  <thumbnail>https://yt3.ggpht.com/-MrYGuesMqSg/AAAAAAAAAAI/AAAAAAAAAAA/s2VAfvVNo7A/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Providing gameplay videos and reviews of the latest (and even retro) content!
+</summary>
+</plugin>
 
 <plugin>
   <title>xQcOW</title>
