@@ -91,6 +91,20 @@ Full length documentaries are available only in Canada.</summary>
   <fanart></fanart>
 </plugin>
 
+<plugin>
+  <title>The Ulster Troubles</title>
+  <link>plugin://plugin.video.youtube/playlist/PLA41B3CDECAB4E30C/</link>
+  <thumbnail></thumbnail>
+  <summary></summary>
+</plugin>
+
+<plugin>
+  <title>Funny side of the troubles</title>
+  <link>plugin://plugin.video.youtube/playlist/PLeq1Xjoo5Q1FsRp4JSUUAoIshB2VOqWx_/</link>
+  <thumbnail></thumbnail>
+  <summary></summary>
+</plugin>
+
 
 <plugin>
 <title>Youtube Documentaries 2</title>
@@ -130,6 +144,22 @@ Full length documentaries are available only in Canada.</summary>
   <fanart></fanart>
 </item>
 
+<item>
+	<title>No Stone Unturned</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt6781498</imdb>
+		<title>No Stone Unturned</title>
+		<year>2017</year>
+	</meta>
+	<link>
+  <sublink>https://www.youtube.com/watch/TMgZA1WWBR0</sublink>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+  </link>
+	<thumbnail>http://image.tmdb.org/t/p/original/emuYkqLndEqeVNY5LpFvGXfAO3O.jpg</thumbnail>
+	<fanart>http://image.tmdb.org/t/p/original/u2NBDskoEAcm1bkizX5f9zoxL34.jpg</fanart>
+</item>
 
 <item>
   <title>Soham Revisited: 15 Years On</title>
