@@ -33,6 +33,15 @@
 
 
 <plugin>
+  <title>Iain's Bass Practice Playlist</title>
+  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZO7QYK-ILZeuf0XJjhpJs9C/</link>
+  <thumbnail></thumbnail>
+  <fanart>https://wallpaper-house.com/data/out/12/wallpaper2you_524022.jpg</fanart>
+  <summary></summary>
+</plugin>
+
+
+<plugin>
 	<title>BTS</title>
 	<link>plugin://plugin.video.youtube/channel/UC3IZKseVpdzPSBaWxBxundA/</link>
 	<thumbnail>https://yt3.ggpht.com/-rl5F2klaWOs/AAAAAAAAAAI/AAAAAAAAAAA/3CyshXUOuIc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
