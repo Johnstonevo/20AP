@@ -5,12 +5,6 @@
 
 
 
-<plugin>
-  <title>Kays Seriously Bad Cooking</title>
-  <link>plugin://plugin.video.youtube/channel/UCeKWgImK1RAD9IGjWZqxmIw/</link>
-  <thumbnail></thumbnail>
-  <summary></summary>
-</plugin>
 
 
 <plugin>
@@ -30,16 +24,7 @@
 </plugin>
 
 
-<plugin>
-  <title>My Virgin Kitchen</title>
-  <link>plugin://plugin.video.youtube/channel/UCAzyupPG4vdo8jd9nJ13LAw/</link>
-  <thumbnail>https://yt3.ggpht.com/-EEXzm10q6dc/AAAAAAAAAAI/AAAAAAAAAAA/MeyIBA01MMs/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <summary>A fun food cooking channel. If you are looking for easy how to recipe tutorials mixed with food fun & easy to follow homemade cooking you may have come to the right place! I’m a self-taught cook here on YouTube inspiring you to learn how to cook with me. Recipes on my own, cooking with kids or other friends and family it’s all about trying to get you cooking easy recipes, laughing and learning and hopefully picking up some new cooking ideas.
-    There’s also a dose of food fun too, so if you like giant food videos or mini food videos, taste tests, or testing the latest kitchen gadgets you’ll probably like it here!
-    I used to be a Virgin in the kitchen (hence the name) and absolutely hated cooking or attempting to make any recipes no matter how simple!
-    I am completely self-taught in the hope that I can inspire you guys to attempt the recipes too and get in the kitchen - cooking is all about confidence! I hope you enjoy my mix of fun food recipe videos , subscribe for regular videos
-  </summary>
-</plugin>
+
 
 <plugin>
   <title>The Barrys</title>
