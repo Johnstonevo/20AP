@@ -22,6 +22,14 @@ The show is researched, written, edited, and created by Norman Caruso.
 </plugin>
 
 
+<plugin>
+  <title>Arcadology</title>
+  <link>plugin://plugin.video.youtube/channel/UCL3pKToB6ER8N6TK6ZMueUw/</link>
+  <thumbnail>https://yt3.ggpht.com/-aVbkbIQPFCk/AAAAAAAAAAI/AAAAAAAAAAA/TY_KpwsVTbE/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Hi there, my name is Spoiler Kevin, and I make history and discussion videos about video games and interactive media. Learn about the why's and wherefore's of video game history as I tackle a wide variety of topics, from Dark Souls to SimCity. If that sounds like a good time, then consider subscribing. Feel free to reach out to me on any number of social media channels found above and check out Roguelike Start, the place on the internet all my content calls home.</summary>
+</plugin>
+
+
 <item>
   <title>Overwatch League</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/yt/owl.xml</link>
