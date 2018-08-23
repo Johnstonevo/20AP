@@ -91,6 +91,19 @@ Full length documentaries are available only in Canada.</summary>
   <fanart></fanart>
 </plugin>
 
+
+
+<plugin>
+  <title>Barcroft TV</title>
+  <link>plugin://plugin.video.youtube/channel/UCfwx98Wty7LhdlkxL5PZyLA/</link>
+  <thumbnail>https://yt3.ggpht.com/-r5rStE9sVkM/AAAAAAAAAAI/AAAAAAAAAAA/xug45fuacaM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Barcroft TV is the home of amazing exclusive video.
+
+We update our YouTube site regularly with incredible real-life stories and footage - so stay tuned for more!
+</summary>
+</plugin>
+
+
 <plugin>
   <title>The Ulster Troubles</title>
   <link>plugin://plugin.video.youtube/playlist/PLA41B3CDECAB4E30C/</link>
