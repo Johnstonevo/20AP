@@ -23,12 +23,11 @@
 """
 
 import __builtin__
-import cookielib
 import os
 import re
-import time
 import urllib,urllib2
-import koding,xbmcaddon
+import cookielib
+import koding
 
 
 def check_login(source,username):
@@ -42,7 +41,7 @@ def check_login(source,username):
 def verify_login(cookiepath, username, password):
     """ check if user has supplied only a folder path, or a full path """
     if not os.path.isfile(cookiepath):
-        """ if the user supplied only a folder path, append on to the end of the path a filename. """
+        #if the user supplied only a folder path, append on to the end of the path a filename.
         cookiepath = os.path.join(cookiepath, 'cookies.lwp')
         
     """ delete any old version of the cookie file """
@@ -52,17 +51,13 @@ def verify_login(cookiepath, username, password):
         pass
 
     if username and password:
-        """ first check to see if a current session is active """
-        addon_id = xbmcaddon.Addon().getAddonInfo('id')
-        ownAddon = xbmcaddon.Addon(id=addon_id)
-        expiration = ownAddon.getSetting('WEBLOGIN_EXPIRES_AT')
-        if time.time() < expiration and len(expiration) > 1:
-            return True
         """ the header used to pretend you are a browser """
         user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-GB; rv:1.9.0.3) Gecko/2008092417 Firefox/3.0.3'
 
         """ build the form data necessary for the login """
-        login_data = urllib.urlencode({user_var:username, pwd_var:password})
+        """ One example: If using a Wordpress 4.x site to verify login, change 'username' to 'log' and
+            'password' to 'pwd' """
+        login_data = urllib.urlencode({'username':username, 'password':password})
 
         """ build the request we will make """
         req = urllib2.Request(login_url, login_data)
@@ -79,15 +74,15 @@ def verify_login(cookiepath, username, password):
         source = response.read()
         response.close()
 
-        """ check the received html for a string that will tell us if the user is logged in """
-        """ pass the username, which can be used to do this. """
+        #check the received html for a string that will tell us if the user is logged in
+        #pass the username, which can be used to do this.
         login = check_login(source,username)
 
-        """ if login suceeded, save the cookiejar """
+        #if login suceeded, save the cookiejar to disk
         if login == True:
             cj.save(cookiepath)
 
-        """ return whether we are logged in or not """
+        #return whether we are logged in or not
         return login
     else:
         return False

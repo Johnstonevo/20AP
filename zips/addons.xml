@@ -18,7 +18,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.20ap" name="20ap" version="18.8.04" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.9.02" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -349,7 +349,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.8" provider-name="Community">
+<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.7" provider-name="Community">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
