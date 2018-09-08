@@ -47,6 +47,14 @@ Be sure to follow us on our personal social media accounts if you enjoy our vide
 
 
 <plugin>
+<title>WheezyWaiter</title>
+<link>plugin://plugin.video.youtube/channel/UCQL5ABUvwY7YoW5lgMyAS_w/</link>
+<thumbnail>https://yt3.ggpht.com/a-/AN66SAwmXxsPEgix4iLKiAnY4PL6_PGvh1SMYvG24w=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+<summary>Just an average bearded 30 something dude with hundreds of clones.</summary>
+</plugin>
+
+
+<plugin>
   <title>Barshens</title>
   <link>plugin://plugin.video.youtube/channel/UCDYytfm5PZin4N0hT_nLxDQ/</link>
   <thumbnail>https://yt3.ggpht.com/-HWw1iJ_n1q8/AAAAAAAAAAI/AAAAAAAAAAA/Z8ZZnZ0Zhh4/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
