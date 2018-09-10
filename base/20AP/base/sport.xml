@@ -5,18 +5,13 @@
 
 
 
-<dir>
-<title>Sports Streams [Not Working ATM]</title>
-<sport_stream>games</sport_stream>
-<summary>Links to Live Sport</summary>
-</dir>
 
 <dir>
 <name>Live Channels</name>
-<link>plugin://script.module.mobdro</link>
-<thumbnail></thumbnail>
+<link>plugin://plugin.video.mobdro/list_channels/sports</link>
+<thumbnail>special://home/addons/plugin.video.mobdro/icon.png</thumbnail>
 <fanart></fanart>
-<summary>Live TV</summary>
+<summary>Live Sports TV</summary>
 </dir>
 
 <dir>
@@ -28,7 +23,7 @@
 </dir>
 
 <dir>
-    <title>Sports Channels  (test)</title>
+    <title>Sports Channels</title>
     <Airtable>sports_channels</Airtable>
     </dir>
 
@@ -77,3 +72,11 @@
   <link>plugin://plugin.video.youtube/channel/UCaTxfj0BzL-MaCy-YUqPRoQ/</link>
   <thumbnail>https://yt3.ggpht.com/-nmIU6cZltsU/AAAAAAAAAAI/AAAAAAAAAAA/iNCI6SgSUTQ/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </dir>
+
+
+<!--<dir>
+<title>Sports Streams [Not Working ATM]</title>
+<sport_stream>games</sport_stream>
+<summary>Links to Live Sport</summary>
+</dir>
+>-->
