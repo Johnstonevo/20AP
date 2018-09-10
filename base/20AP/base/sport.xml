@@ -27,6 +27,11 @@
 <summary>Sports Acestreams</summary>
 </dir>
 
+<dir>
+    <title>Sports Channels  (test)</title>
+    <Airtable>sports_channels</Airtable>
+    </dir>
+
 
 <dir>
   <name>Formula 1</name>

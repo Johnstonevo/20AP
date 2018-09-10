@@ -60,3 +60,29 @@
   <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
   <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
 </dir>
+
+
+    <dir>
+    <title>Tv Channels</title>
+    <Airtable>tv_channels</Airtable>
+    </dir>
+
+    <dir>
+    <title>[COLOR=orange]Tv Channels2[/COLOR]</title>
+    <Airtable>channels2</Airtable>
+    </dir>
+
+    <dir>
+    <title>24-7 Channels</title>
+    <Airtable>247</Airtable>
+    </dir>
+
+        <dir>
+    <title>OTB Trekkie</title>
+    <trekkie>all</trekkie>
+    </dir>
+
+        <dir>
+    <title>M3U Lists</title>
+    <Airtable>m3u_lists</Airtable>
+    </dir>
