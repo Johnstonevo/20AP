@@ -19,7 +19,7 @@
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" />
       <import addon="script.module.acesports" />
-      <import addon ="plugin://plugin.video.mobdro" />
+      <import addon ="plugin.video.mobdro" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>audio video</provides>
