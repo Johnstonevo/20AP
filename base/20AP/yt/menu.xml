@@ -53,6 +53,21 @@
   <name>Youtube Woodturning and Lathe workers</name>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/turning.xml</link>
   <fanart>https://upload.wikimedia.org/wikipedia/commons/3/3a/Woodturning_Indonesia.jpg</fanart>
+  <summary>People using lathes to turn various materials</summary>
+</dir>
+
+<dir>
+  <name>Carpentry</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/wood.xml</link>
+  <fanart>http://www.larsoncarpenter.com/wp-content/uploads/2015/07/802-Learn-Woodworking.jpg</fanart>
+<summary>Woodwork channels</summary>
+</dir>
+
+<dir>
+  <name>Gardening</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/gardening.xml</link>
+  <fanart></fanart>
+<summary>Growing plants and veggies</summary>
 </dir>
 
 
