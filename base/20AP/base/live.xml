@@ -26,3 +26,8 @@
 <fanart></fanart>
 <summary>Live TV</summary>
 </dir>
+
+       <dir>
+    <title>M3U Lists</title>
+    <Airtable>m3u_lists</Airtable>
+    </dir>

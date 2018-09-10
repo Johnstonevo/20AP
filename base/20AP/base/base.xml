@@ -22,6 +22,43 @@
 <fanart></fanart>
 </dir>
 
+
+<dir>
+<name>Youtube</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
+<fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
+<Summary>All the Youtube Channels</summary>
+</dir>
+
+
+<dir>
+<name>Sport</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
+<thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
+<fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
+<summary>Motorsports, Rugby and Darts</summary>
+</dir>
+
+
+<dir>
+<name>Documentaries</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml</link>
+<thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png</thumbnail>
+<fanart></fanart>
+<summary>Documentaries. Non Fiction(depending on conspiracy inclination) on loads of different subjects.</summary>
+</dir>
+
+
+
+<dir>
+<title>Live TV</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/live.xml</link>
+<summary>Live TV Links</summary>
+</dir>
+
+
+
 <dir>
 <title>Anime</title>
 <tmdb>list/47118</tmdb>
@@ -39,22 +76,6 @@
 </dir>
 
 
-<dir>
-<name>Documentaries</name>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml</link>
-<thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png</thumbnail>
-<fanart></fanart>
-<summary>Documentaries. Non Fiction(depending on conspiracy inclination) on loads of different subjects.</summary>
-</dir>
-
-
-<dir>
-<name>Youtube</name>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml</link>
-<thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
-<fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
-<Summary>All the Youtube Channels</summary>
-</dir>
 
 <dir>
 <name>Music</name>
@@ -62,23 +83,6 @@
 <thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
 <fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
 <summary>Music links and Radio Stations. </summary>
-</dir>
-
-
-<dir>
-<name>Sport</name>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
-<thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
-<fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
-<summary>Motorsports, Rugby and Darts</summary>
-</dir>
-
-<dir>
-<name>Concerts</name>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/music/concerts.xml</link>
-<thumbnail>https://cdn3.iconfinder.com/data/icons/buildings-places/512/Concert-512.png</thumbnail>
-<fanart>https://images5.alphacoders.com/349/thumb-1920-349660.jpg</fanart>
-<summary>Decent live tunes</summary>
 </dir>
 
 
@@ -129,14 +133,4 @@
 </dir>
 
 
-<dir>
-<title>Live TV</title>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/live.xml</link>
-<summary>Live TV Links</summary>
-</dir>
-
-
-        <dir>
-    <title>M3U Lists</title>
-    <Airtable>m3u_lists</Airtable>
-    </dir>
+ 

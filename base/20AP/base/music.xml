@@ -226,3 +226,15 @@ See the best of Queen right here on YouTube.
 <link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=kpop&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fkpop%2f.json%3f%26limit%3d50</link>
 <thumbnail></thumbnail>
 </plugin>
+
+
+
+<dir>
+<name>Concerts</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/music/concerts.xml</link>
+<thumbnail>https://cdn3.iconfinder.com/data/icons/buildings-places/512/Concert-512.png</thumbnail>
+<fanart>https://images5.alphacoders.com/349/thumb-1920-349660.jpg</fanart>
+<summary>Decent live tunes</summary>
+</dir>
+
+
