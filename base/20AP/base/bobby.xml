@@ -6,14 +6,9 @@
 
 
       <dir>
-            <title>B-Movies</title>
-            <mtorture></mtorture>
+            <title>Movie Torture</title>
+            <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/mt.xml
             <fanart></fanart>
             <thumbnail></thumbnail>
         </dir>
 
-
-<dir>
-<title>Havoc Horror</title>
-<link>http://apocalypticbuilds.group/eargasm/main.xml</link>
-</dir>
