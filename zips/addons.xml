@@ -18,7 +18,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.20ap" name="20ap" version="18.9.10.1" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.9.11" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -97,7 +97,7 @@
 	</extension>
 </addon>
 
-<addon id="repository.20ap" name="20ap" version="18.09.03" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="18.09.11" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 	        <dir>
             <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
@@ -115,12 +115,7 @@
 			<checksum>https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/</datadir>
 		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/MrBlamo420/Project/master/zips/</datadir>
-			<hashes>false</hashes>
-		</dir>
+
 		<dir>
 		    <info compressed="false">http://theunjudged.xyz/Repo/addons.xml</info>
 		    <checksum>http://theunjudged.xyz/Repo/addons.xml.md5</checksum>
@@ -204,30 +199,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.20aplive" name="20AP Live" version="18.05.20" provider-name="Enzo">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">20AP Live  Dependency</summary>
-    <description lang="en_gb">20AP Live  Dependency</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
-</addon>
-
-<addon id="plugin.video.f1f" name="f1f" version="18.9.10" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="18.9.11" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -463,7 +435,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.7" provider-name="Community">
+<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.9" provider-name="Community">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />
@@ -472,6 +444,7 @@
         <import addon="script.module.requests" version="2.9.1" />
         <import addon="script.module.addon.common" version="2.0.0" />
         <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
         <!--<import addon="script.module.web-pdb" version="1.0"/>-->
         <import addon="script.module.resolveurl" />
         <!--<import addon="script.module.urlresolver" />-->
@@ -491,7 +464,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.20apkids" name="20apkids" version="18.3.18" provider-name="midraal">
+<addon id="plugin.video.20apkids" name="20apkids" version="18.9.11" provider-name="enzo">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="0.5.5" />
