@@ -5,19 +5,15 @@
 ##################################################################################
 
 
+      <dir>
+            <title>B-Movies</title>
+            <mtorture>category/movies/1</mtorture>
+            <fanart></fanart>
+            <thumbnail></thumbnail>
+        </dir>
+
+
 <dir>
-  <title>Serial Killers Lite</title>
-  <link>https://mookdog.tech/mainlite.xml</link>
-  <thumbnail></thumbnail>
-  <fanart></fanart>
-  <summary></summary>
+<title>Havoc Horror</title>
+<link>http://apocalypticbuilds.group/eargasm/main.xml</link>
 </dir>
-
-
-  <dir>
-    <title>Fright Night</title>
-    <link>http://illuminatitemple.xyz/atrain/frightnightmain.xml</link>
-    <thumbnail>file://icons/fright/icon.png</thumbnail>
-    <fanart>file://icons/fright/fanart.jpg</fanart>
-    <summary>[B][COLOR darkred]Home of the Best Horror Flicks and Franchises of all Time[/COLOR][/B]</summary>
-  </dir>
