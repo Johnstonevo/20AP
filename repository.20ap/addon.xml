@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.20ap" name="20ap" version="18.9.11.1" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="18.9.13" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 	        <dir>
             <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
@@ -17,7 +17,11 @@
 			<checksum>https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/</datadir>
 		</dir>
-
+        <dir>
+		    <info compressed="false">https://teamdna.pw/Repo/addons.xml</info>
+		    <checksum>https://teamdna.pw/Repo/addons.xml.md5</checksum>
+		    <datadir zip="true">https://teamdna.pw/Repo</datadir>
+		</dir>
 		<dir>
 		    <info compressed="false">http://theunjudged.xyz/Repo/addons.xml</info>
 		    <checksum>http://theunjudged.xyz/Repo/addons.xml.md5</checksum>
