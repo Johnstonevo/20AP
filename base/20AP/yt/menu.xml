@@ -83,6 +83,14 @@
   <fanart>https://i.ytimg.com/vi/tNPYdZhl4rc/maxresdefault.jpg</fanart>
 </dir>
 
+
+<dir>
+  <name>Urban Explorers</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/urbanex.xml</link>
+  <fanart></fanart>
+</dir>
+
+
 <dir>
   <name>Gaming Youtube Channels</name>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/gamers.xml</link>

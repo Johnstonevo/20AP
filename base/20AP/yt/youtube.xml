@@ -274,15 +274,6 @@ New videos every week!!</summary>
 
 
 <plugin>
-  <title>Exploring the Unbeaten Path</title>
-  <link>plugin://plugin.video.youtube/channel/UC73dVtWf9mpjiWYkXyIlm7A/</link>
-  <thumbnail>https://yt3.ggpht.com/-rUShiHKDPpA/AAAAAAAAAAI/AAAAAAAAAAA/Fd1kmEJgaOs/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <summary>For 11 years we visit the coolest abandoned buildings in Europe, Asia, Africa and the US and experience crazy adventures.
-    After the TV series "Exitus" (Which was broadcasted in Belgium and The Netherlands in 2016) we decided to make our own channel
-  </summary>
-</plugin>
-
-<plugin>
   <title>Goodwood Road & Racing</title>
   <link>plugin://plugin.video.youtube/channel/UC8rador8CU-pTJ6p7WNiv6w/</link>
   <thumbnail>https://yt3.ggpht.com/-zMHS-SqcCLY/AAAAAAAAAAI/AAAAAAAAAAA/_8Vbx9I-v20/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
@@ -337,23 +328,6 @@ New videos every week!!</summary>
   </summary>
 </plugin>
 
-
-
-<plugin>
-  <title>ElectroBOOM</title>
-  <link>plugin://plugin.video.youtube/channel/UCJ0-OtVpF0wOKEqT2Z1HEtA/</link>
-  <thumbnail>https://yt3.ggpht.com/-iXZgN0vGYlE/AAAAAAAAAAI/AAAAAAAAAAA/6yamX7m-CMo/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <summary>Find the craziness in engineering from me, Mehdi Sadaghdar, but don't try them at home...
-  </summary>
-</plugin>
-
-<plugin>
-  <title>Afrotechmods</title>
-  <link>plugin://plugin.video.youtube/channel/UCosnWgi3eorc1klEQ8pIgJQ/</link>
-  <thumbnail>https://yt3.ggpht.com/-Z5BCK-CRpnw/AAAAAAAAAAI/AAAAAAAAAAA/yzOKIagS8G0/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <summary>Straight to the point electronics tutorial videos with practical examples taught by a professional electronics engineer.
-  </summary>
-</plugin>
 
 <plugin>
   <title>Blender Guru</title>
