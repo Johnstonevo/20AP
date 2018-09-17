@@ -1,5 +1,18 @@
 
 <plugin>
+<title>nuggetnoggin</title>
+<link>plugin://plugin.video.youtube/channel/UCm_Fbx0tAqAOB3cA4d1GnXw/</link>
+<thumbnail>https://yt3.ggpht.com/-82a1Gy6FdWs/AAAAAAAAAAI/AAAAAAAAAAA/j-gDjb5FEe8/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+<summary>I'm Michael, I have been metal detecting for 8 years now. I really enjoy discovering the past! Come along with me and feel the excitement of treasure hunting.
+
+If you are interested in purchasing a Metal Detector please visit my store at https://www.battleground-detectors.com
+
+God bless!</summary>
+</plugin>
+
+
+
+<plugin>
   <title>Broken Window Theory</title>
   <link>plugin://plugin.video.youtube/channel/UCQjlzE-BSD1PDW988vbqVjw/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AN66SAy-Lq57hbH3vbcKgZfERzfzSL4O8ldEXF_ovg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
@@ -16,4 +29,12 @@ See you in the comments or on our social media channels. Or maybe at the next ab
   <summary>For 11 years we visit the coolest abandoned buildings in Europe, Asia, Africa and the US and experience crazy adventures.
     After the TV series "Exitus" (Which was broadcasted in Belgium and The Netherlands in 2016) we decided to make our own channel
   </summary>
+</plugin>
+
+
+<plugin>
+  <title>Abandoned or Cool</title>
+  <link>plugin://plugin.video.youtube/channel/UCbVIfFGdSc4BJFL0qdglHiQ/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAyrLJcUrm39zoadjEna_Kh6ChAPkslAac5ghw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Join as as we travel the United States exploring abandoned or cool places. We try to incorporate a bit of history or fact into our videos as well as use regular and drone Footage.</summary>
 </plugin>
