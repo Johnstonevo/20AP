@@ -105,6 +105,29 @@ It's only rock 'n' roll, but we like it.</summary>
 
 
 <plugin>
+	<title>Rock Subreddit</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=autoPlay&amp;type=ALL&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2frock%2f.json%3f%26limit%3d100</link>
+	<thumbnail></thumbnail>
+  <summary>Play All from the Rock Subreddit</summary>
+</plugin>
+
+
+
+<plugin>
+	<title>Classic Rock Subreddit</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=autoPlay&amp;type=ALL&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fClassicRock%2f.json%3f%26limit%3d100</link>
+	<thumbnail></thumbnail>
+  <summary>Play All from the Classic Rock Subreddit</summary>
+</plugin>
+
+<plugin>
+	<title>Old School Cool Music  Subreddit</title>
+	<link>plugin://plugin.video.reddit_viewer/?mode=autoPlay&amp;type=ALL&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fOldSchoolCoolMusic%2f.json%3f%26limit%3d100</link>
+	<thumbnail></thumbnail>
+  <summary>Play All from the Old School Cool Music  Subreddit</summary>
+</plugin>
+
+<plugin>
   <title>Eagle Rock</title>
   <link>plugin://plugin.video.youtube/channel/UCp0uxdUViQ2LTAqRePby68g/</link>
   <thumbnail>https://yt3.ggpht.com/-ywUe39IYruQ/AAAAAAAAAAI/AAAAAAAAAAA/5MAW0jhV3aU/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
@@ -189,12 +212,6 @@ See the best of Queen right here on YouTube.
 </summary>
 </plugin>
 
-<plugin>
-	<title>test</title>
-	<link>plugin://plugin.video.youtube/play/?video_id=$1f7XwCsx4fs&list=RD1f7XwCsx4fs</link>
-	<thumbnail></thumbnail>
-  <summary></summary>
-</plugin>
 
 <plugin>
 <title>Concerts</title>
