@@ -35,7 +35,7 @@ except ImportError:
 This module is used to get/set cache for every action done in the system
 """
 
-cache_table = 'sparkle_cache'
+cache_table = 'acesports_cache'
 
 def get(function, duration, *args):
     # type: (function, int, object) -> object or None
@@ -246,7 +246,7 @@ def _find_cache_version():
         with open(versionFile, 'rb') as fh: oldVersion = fh.read()
     except: oldVersion = '0'
     try:
-        curVersion = control.addon('plugin.video.sparkle').getAddonInfo('version')
+        curVersion = control.addon('script.module.acesports').getAddonInfo('version')
         if oldVersion != curVersion:
             with open(versionFile, 'wb') as fh: fh.write(curVersion)
             return True

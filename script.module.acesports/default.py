@@ -14,7 +14,7 @@ from resources.lib.modules import cache
 from resources.lib.modules.log_utils import log
 from resources.lib.modules.subreddit_lists import streaming_subreddits
 
-addon = Addon('plugin.video.sparkle', sys.argv)
+addon = Addon('script.module.acesports', sys.argv)
 addon_handle = int(sys.argv[1])
 
 plugin = routing.Plugin()
@@ -75,7 +75,7 @@ def play():
     stream_url = plugin.args['stream_url'][0]
     log("Playing {}".format(stream_url))
     try:
-        xbmc.executebuiltin(AS_LAUNCH_LINK.format(url=stream_url, name='sparkle'))
+        xbmc.executebuiltin(AS_LAUNCH_LINK.format(url=stream_url, name='acesports'))
     except Exception as inst:
         log(inst)
 

@@ -138,7 +138,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.acesports" name="acesports" version="2018.09.29" provider-name="iwannabelikemike">
+<addon id="script.module.acesports" name="acesports" version="2018.09.29.1" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common" />
