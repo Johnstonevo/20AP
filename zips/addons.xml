@@ -258,7 +258,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.f1f" name="f1f" version="18.10.07.1" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="18.10.07.2" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -274,7 +274,7 @@
       <import addon="plugin.video.SportsDevil" version="2017.11.01"  />
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" />
-      <import addon="script.module.acesports" />
+      <import addon="plugin://plugin.video.sparkle" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video</provides>
@@ -289,36 +289,6 @@
     <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
     <platform>all</platform>
       <video_guide>xtOqLY5PJDY</video_guide>
-  </extension>
-</addon>
-
-<addon
-  id="plugin.video.SportsDevil"
-  version="2018.07.03"
-  name="SportsDevil"
-  provider-name="SportsDevil">
-  <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="script.module.dateutil" />
-   <import addon="script.module.simplejson" />
-   <import addon="script.module.six" />
-   <import addon="script.module.requests" />
-   <import addon="script.module.streamlink.base" />
-   <import addon="plugin.video.f4mTester" />
-  </requires>
-  <extension
-    point="xbmc.python.pluginsource"
-    library="default.py">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service/streamlink_proxy.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-  <reuselanguageinvoker>false</reuselanguageinvoker>
-    <summary lang="en">SportsDevil addon</summary>
-    <description lang="en">Play videos of different ad-financed sports streaming sites.</description>
-	<disclaimer lang="en">SportsDevil does not provide any streams of its own; stream quality, content and copyright are responsibility of the ad-financed source web site. For updates - check the readme.</disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <platform>all</platform>
   </extension>
 </addon>
 </addons>
