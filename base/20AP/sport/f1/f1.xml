@@ -5,17 +5,6 @@
 
 
 
-<item>
-  <title>Aus GP</title>
-  <link>
-    <sublink>http://f1livegp.stream/replays/aus.html</sublink>
-    <sublink>http://f1livegp.stream/replays/aus-2.html</sublink>
-</link>
-<fanart>https://www.momentogp.com/wp-content/uploads/2018/03/5aa1654fe76e9.image_.jpg<fanart>
-  <thumbnail>https://cdn.images.express.co.uk/img/dynamic/73/750x445/936838.jpg</thumbnail>
-</item>
-
-
 <dir>
 <title>Official Formula One Youtube Channels</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/f1yt.xml</link>
@@ -26,20 +15,27 @@
 <dir>
   <title>Formula One Movies, TV shows and Documentaries</title>
   <tmdb>list/47294<tmdb>
-    <fanart>https://www.mercedesamgf1.com/wp-content/uploads/sites/3/2017/08/enso-far-024-1280x720.jpg</fanart>
+    <fanart>https://images6.alphacoders.com/906/thumb-1920-906632.jpg</fanart>
     <thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
 </dir>
 
 <dir>
 	<title>2017 Formula One Replays</title>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/2018replays.xml</link>
+	<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon2018.png</thumbnail>
+	<fanart></fanart>
+</dir>
+
+<dir>
+	<title>2017 Formula One Replays</title>
 	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/2017replays.xml</link>
-	<thumbnail>https://lightstorage.ecodibergamo.it/mediaon/cms.quotidiani/storage/site_media/media/photologue/2017/6/11/photos/cache/formula-1-vince-hamiltonvettel-quarto-raikkonen-7_580b6af8-4ede-11e7-ac63-8437cfd3f37a_512_512_new_square_large.jpg</thumbnail>
-	<fanart>http://bosda.com/wp-content/uploads/2017/06/2.jpg</fanart>
+	<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
+	<fanart></fanart>
 </dir>
 
 <dir>
 	<title>2016 Formula One Replays</title>
 	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/2016replays.xml</link>
-	<thumbnail>https://lightstorage.laprovinciadicomo.it/mediaon/cms.quotidiani/storage/site_media/media/photologue/2016/6/5/photos/cache/lewis-hamilton-atterra-a-villa-erba-elicottero-poi-lo-spot-segretiss_9ed113ac-2766-11e6-863f-463936b25759_512_512_new_square_large.jpg</thumbnail>
+	<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
 	<fanart>https://icdn-9.motor1.com/images/mgl/xGl2q/s3/wcf-mercedes-gives-hamilton-rosberg-new-freedom-to-race-in-2016-nico-rosberg-mercedes-amg1.jpg</fanart>
 </dir>
