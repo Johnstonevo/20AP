@@ -91,6 +91,16 @@ Full length documentaries are available only in Canada.</summary>
   <fanart></fanart>
 </plugin>
 
+<dir>
+	<title>Rotten Tomatoes’ 100 Best Documentaries Ranked by Tomatometer</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-best-documentaries-ranked-by-tomatometer/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Capturing truth, life, and reality — one movie at a time. The best documentaries allow us to see the world with a fresh set of eyes, from social experiments (Super Size Me) to quirky competitions (The King of Kong) to political exposés (Citizenfour) to the ultimate cat video (Kedi). Now, we take the top movies of the form (each is Certified Fresh from at least 100 critics reviews) for our countdown list of the 100 best-reviewed documentaries ranked by Tomatometer. 
+Link: https://editorial.rottentomatoes.com/guide/100-best-documentaries/	</summary>
+</dir>
+
+
 
 
 <plugin>

@@ -21,8 +21,8 @@
 	<title>Reddit Top 250 2018 Edition</title>
       <trakt>https://api.trakt.tv/users/philrivers/lists/reddit-top-250-2018-edition/items</trakt>
 	<thumbnail>https://www.redditstatic.com/new-icon.png</thumbnail>
-	<content>set</content>
-	</summary>
+	<content>boxset</content>
+	<summary>	</summary>
 </dir>
 
 
@@ -30,6 +30,343 @@
 	<title>IMDB top Rated Movies</title>
       <trakt>https://api.trakt.tv/users/justin/lists/imdb-top-rated-movies/items</trakt>
 	<thumbnail>https://lh3.googleusercontent.com/iSetg8OcQYecAY2TH30XVLdqljGKn4yooOb6DO4PnEtscVST729Aa33oFndAniB-Fen4</thumbnail>
-	<content>set</content>
+	<content>boxset</content>
+	<summary>	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 200 Essential Movies To Watch Now</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-200-essential-movies-to-watch-now/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Welcome to our updated guide to the 200 Essential Movies To Watch Now! In our annual refresh, we’re sticking with the list’s original vision as a definitive source of movie guidance and education for all ages and stages, whether you’re a seasoned film buff or just starting out, while reflecting new trends and significant movies uncovered over the past year. The three films new to this iteration of the 200 Essential are The Adventures of Priscilla, Queen of the Desert (after a flurry of recent landmark and popular LGBTQ films, we’re shining a light on one of the best of the 1990s), Black Panther (for making leaps in on-screen representation without sacrificing any of its superhero movie obligations), and Wonder Woman (for its sheer entertainment value and re-invention of a female icon that will inspire and resonate for years and beyond).
+
+We also completely reordered the list — it is now sorted by Tomatometer, highest to lowest. Feel free to start tackling the list with whatever is the most interesting to you first…or just start at #1 and start working your way down. We think you’ll have fun either way. And best of all, every movie on the list remains Certified Fresh!
+</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 75 Best Fantasy Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-75-best-fantasy-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summaWelcome to Rotten Tomatoes’ compendium of cinema’s best-reviewed tales of swords and sorcery, fire and ice, and dungeons and…you get the idea. The swirling mythic cauldron (i.e. our database) reveals to all the 75 best-reviewed live-action fantasy movies of all time, ranked by adjusted Tomatometer with at least 20 reviews each! 
 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 100 Best War Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-best-war-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>From peacetime to frontlines, from coming home to left behind: Rotten Tomatoes presents the 100 best-reviewed war movies of all time, ranked by Adjusted Tomatometer with at least 20 reviews each. 
+	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 50 Best High School Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-50-best-high-school-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>
+See what made the honor roll in Rotten Tomatoes’ list of the 50 best American high school movies, ranked by adjusted Tomatometer with at least 20 reviews each!</summary>
+</dir>
+
+
+
+<dir>
+	<title>Rotten Tomatoes’ 110 Best Sci-Fi Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-110-best-sci-fi-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Cue the theremin, summon some extraterrestrials, and insert that social commentary: It’s Rotten Tomatoes’ list of the 100 best sci-fi movies of all time, ranked by adjusted Tomatometer from at least 40 reviews! 
+		</summary>
+</dir>
+
+
+
+<dir>
+	<title>Rotten Tomatoes’ 60 Best Adventure Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-60-best-adventure-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>The adventure movie is hard to define, but you know it when you see it. Sometimes it’s the search for fortune and glory, sometimes it’s the sweep and spectacle, and sometimes it’s all about how long it takes and how far it is from point A to B. And every once in a while, there’s that special adventure film that has it all. After meeting our criteria of a minimum of 20 reviews, we sorted these movies by Adjusted Tomatometer score to bring you the 60 best adventure films of all time! 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 64 Best Superhero Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-64-best-superhero-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>It’s a bird! It’s a plane! It’s Rotten Tomatoes’ list of the 60 best superhero movies of all time, ranked by adjusted Tomatometer with at least 20 reviews each! Read on, caped internet crusaders, and see what got inducted into the legion of Fresh! 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ Best and Worst Oscars’ Best Picture Winners</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-best-and-worst-oscars-best-picture-winners/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Every year, the Academy of Motion Picture Arts and Sciences presents a golden statue to the film representing cinema’s best.
+
+And every year, Rotten Tomatoes revisits every Best Picture winner of Oscars past — from the classics (Casablanca) to the dubious selections (The Greatest Show on Earth) — sorting them by the strict and rigorous standards of Tomatometer science. How many of the Best Picture winners have you seen? Where do your favorites rank? 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 150 Best Horror Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-150-best-horror-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>The wind forces open the curtained window. Candles snuff out in darkness. And a shiver cascades down your spine. Nope, it’s not just your imagination. Something is stalking on your screen, primed to to kill all your free time: The big, boo-tiful list of Rotten Tomatoes’ 150 Best Horror Movies of All Time!
+
+We’ve tweaked this guide behind-the-scenes ever since its publication a decade ago, but now we’re delivering the biggest update yet. The classics you’ve come to love and dread remain, but we’ve added 50 movies that further represent the best-reviewed in bloody business. There’s more mainstream maimers (Scream, The Ring), recent indies (You’re Next, Creep), Asian horror (Audition, Three…Extremes), and the ancient ones that haunt forever (Salo, Henry: Portrait of a Serial Killer). As for big-name directors, look out for Spielberg (Duel), De Palma (Sisters), and lots more Cronenberg (Scanners, Videodrome). Each of these best scary movies thrown into our bubbling cauldron had to have at least 20 reviews with a Fresh rating, before being sorted by Adjusted Tomatometer.
+
+Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 150 Best Horror Movies of All Time…it’s alive! It’s alive!!	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 10 Best-Reviewed Pro Football Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-10-best-reviewed-pro-football-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Are you ready for some football? A brand new NFL season is just around the corner, so we at Rotten Tomatoes thought it was time to compile a list of the best-reviewed movies about pro football. These movies are taking it one game at a time. They aren’t afraid to get their jerseys a little dirty. And they always give 110 percent. 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 50 Best Romantic Comedies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-50-best-romantic-comedies-of-all-time-4045237/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Like love itself, compiling our list of the 50 best romantic comedies was a little complicated. We utilized a weighted system that factors in both Tomatometer and number of reviews, and each movie needed 20 reviews to qualify. So dim the lights, pop the bubbly, and get cozy with our compendium of the best reviewed romantic comedies of all time! 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 25 Best Christmas Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-25-best-christmas-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>	We’ve made a list and checked it more than twice, and now we’re delivering the Best Christmas Movies to our nice RT readers! (If this list ends with I Saw Mommy Kissing Santa Claus, you got the naughty version, you awful person.) 
+	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ Worst Summer Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-worst-summer-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Cinema history is filled with movies that got burned under the hot summer sun, and every year, we get our share of critically panned big-budget duds (this year’s slate includes such low achievers asFantastic Four and Hot Pursuit). However, it takes a rare kind of awful to merit inclusion into RT’s Worst Summer Movies list, a compendium of cinematic horrors that were granted a wide theatrical release between the months of May and September in the years since the release of Jaws in 1975 kickstarted the blockbuster era. Without further ado, we present our countdown of the 50 worst-reviewed summer movies! 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ Best Summer Blockbusters of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-best-summer-blockbusters-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>In defense of the blockbuster, Rotten Tomatoes offers you Best Summer Movies, a countdown of the highest-rated wide releases to hit theaters during the hot season since the release of Jaws in 1975. We’re using a weighted formula that takes the Tomatometer, the number of reviews, and the year of release into account. In order to qualify, each movie needs at least 20 reviews, and to have been released wide in the months between May and August. Enough talk: grab an extra large soda and a bucket of popcorn and dive into RT’s Best Summer Movies! 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 78 Best Heist Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-78-best-heist-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Crooks. Thieves. Liars. And these are the ones we’re rooting for. In the heist and caper films, we see the hero hatching a plan, putting together a crew, and then pulling off the job, usually in order to turn the screws against an institution or person that’s wronged them — or maybe just for the thrill of sticking up banks. Either way, we put together a list of the 75 best-reviewed heist movies of all time for you to look over, each with at least 20 reviews and sorted by Adjusted Tomatometer. Just don’t get caught! 
+		</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 75 Best Computer Animated Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-75-best-computer-animated-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Not even Pixar was prepared for the way Toy Story would transform the industry when they released their groundbreaking family movie in 1995. Ever since, computer animated movies have been a steady monolith: racking up billions at the box office (and let’s not ignore ancillary markets) alongside frequent critical acclaim, creating safe spaces where kids and adults alike can revel in colorful jokes, unique characters, and high adventure. Rotten Tomatoes presents the 50 best-reviewed computer animated movies, ranked by Adjusted Tomatometer from at least 40 reviews each! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 100 Best Classic Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-best-classic-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Welcome to Rotten Tomatoes’ 100 best-reviewed classic movies of all time ranked by Adjusted Tomatometer! We define ‘classic’ as everything released up until the late-1960s, a tumultuous era that signaled a passing of the guard with national cultural revolutions, destruction of the Motion Picture Production Code, and the impending arrival of New Hollywood filmmakers. 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 100 Essential Comedy Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-essential-comedy-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>The best-reviewed lists we normally publish involve thousands of movies sorted by Adjusted Tomatometer to best distill the professional critics’ consensus, a soothing balm of agreement in the internet age.
+
+This is not that kind of list.
+
+This is 100 Essential Comedy Movies, funny flicks hand-picked by Rotten Tomatoes editors to best represent our tastes and, hey, probably yours, too. (We also did an Essential 200 Movies.) The only caveat for our comedies list: Every movie needed to be 60% (Fresh) or higher. That’s it. You’re still here? It’s over! Go read.	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 75 Best Western Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-75-best-western-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Welcome to Rotten Tomatoes’ list of the 75 best-reviewed Western movies of all time, sorted by Adjusted Tomatometer with at least 20 reviews for each selection. Additionally, we picked only classical period films, so you get outta here with that Best Picture-winning neo-Western nonsense! Now, it’s time to put on your best pa-avenging chaps, slide a bad hombre down the saloon bar top, and ride on to see how the West was Fresh! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 100 Best Action Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-best-action-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Like the Joker splitting a billiard stick and throwing it between VHS copies of Invasion U.S.A. and Missing in Action, Rotten Tomatoes staff has emerged from the bloody battle that is choosing the 100 best action movies ever. This is one hand-picked socky-chopped shotgunned list, featuring only movies that are Fresh and Certified Fresh on the Tomatometer. …And ACTION! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ Golden Globes Best Picture Winners by Tomatometer</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-golden-globes-best-picture-winners-by-tomatometer/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Since 1951, the Golden Globes have been celebrating the biggest, brightest, and starriest movies of the year. Now, we take every Golden Globe Best Motion Picture winner — including the categories for Drama, Comedy/Musical, and that brief period of unadulterated hedonism during the 1950s/1960s when Musical and Comedy were separate — and sort them all by Adjusted Tomatometer! Want to become a Golden Globes genius? Watch the movies on FandangoNow. And look back Sunday evening for the updated list with this year’s winners! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 36 Essential Fresh Holiday Family Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-36-essential-fresh-holiday-family-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>We believe the essential holiday movie (available to watch on FandangoNOW) is the movie you can’t wait to watch again – whether it’s the next day, or waiting until next year as part of an annual tradition. They’re nostalgic movies you can’t separate from memories of watching the leaves turn, the snow fall, and coming together with your family over warm food and even warmer drinks.
+
+The end of the year is a time of reflection and appreciation, and the holiday movies chosen for this list reflect our most hopeful side – whether it’s seeing Scrooge’s redemption (there’s no shortage of Christmas Carol adaptations here!), the salvation of George Bailey in It’s a Wonderful Life, or Charlie Brown’s conquest of melancholia in his legendary Christmas special.
+
+Meanwhile, other movies picked here are simply good-natured fare with plenty of snowy moments, like Cool Runnings, Eight Below, and Paddington. And finally, we come to National Lampoon’s Christmas Vacation, with perhaps the most valuable lesson: You can’t choose family, but you can choose to smile and laugh. Happy Holidays from Rotten Tomatoes! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 100 Best Animated Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-best-animated-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Hand-drawn. Computer graphics. Stop-motion. Oil paint, canvas by canvas, or stick figures, line by line. Animation isn’t a genre. It’s a medium, capable of telling any story and eliciting any emotion, from a toolbox as varied as any live-action filmmaker’s.
+
+Now we present the 100 best Fresh animated movies ever (they had to be 60% or higher on the Tomatometer), drawing from all of cinema history. 
+	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 100 Best Fresh Romance Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-100-best-fresh-romance-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>One guiding thought in putting together’s Rotten Tomatoes’ 100 best Fresh romance movies was making a list with heavy dramas and darker delights, without making it totally dour. So lighter masterpieces that fit in our best romantic comedies list (see here) tended to stay over there, as we sought out movies with sweep, an amorous kind of spectacle, and, most importantly, at least 20 reviews. So whether your date is hot or Häagen-Dazs, get ready to be couchlocked by love with these 100 best Fresh romance movies! 
+	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 47 Video Game Movies Ranked Worst to Best</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-47-video-game-movies-ranked-worst-to-best/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>You know the saying: If at first you don’t succeed, try, try (and try and try, and maybe cry, then try) again. Since the beginning with the bizzare and bleak Super Mario Bros., movies based on video games haven’t fostered the most sterling reputation. Good thing Hollywood apparently has unlimited continues! And now, we gather every video game movie adaptation with a Tomatometer and rank ’em worst to best. 	</summary>
+</dir>
+
+
+
+<dir>
+	<title>Rotten Tomatoes’ 140 Essential 80s Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-140-essential-80s-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Welcome to our big list of the most Essential 1980s movies, showcasing 140 of the decade’s best and most iconic Fresh (and not-so-Fresh) movies. That’s right, we recommend some Rotten additions for your ’80s movie playlists, because this is one decade only fully experienced with the good, the bad, and the feathered neon.
+
+Any ’80s movie with a Tomatometer was considered for our Essentials guide, and after including the truly timeless material (Raiders of the Lost Ark, Raging Bull), we focused on works that represented the cinematic trends and social themes of the era. Some of those include the fantasy epic (NeverEnding Story, Princess Bride), teen movies (Breakfast Club, Weird Science), the new corporate overlord (Wall Street, Trading Places), women making strides in the workplace (Baby Boom, Working Girl), and rising hip-hop culture (Krush Groove, Do the Right Thing).
+
+Now fire up the flux capicator and cue the workout montage because it’s time for Rotten Tomatoes’ 140 Essential ’80s Movies! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 140 Essential 90s Movies</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-140-essential-90s-movies/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Wazzup, home skillet! You must’ve left your pager in your other pair of Zubaz, ‘cuz the 1990s are trying to get in touch: The decade’s back, and it’s brought 140 friends!
+
+Rotten Tomatoes, the Fresh prince of review aggregators, presents our list of the 140 Essential ’90s Movies, ranging from Certified Fresh to Rotten, all reppin’ 10 years of cinema that upended the biz! Our selections cross the era’s cultural checkpoints, including the American independent golden era (Pulp Fiction, Good Will Hunting), animation renaissance (The Lion King, the Toy Story movies), slasher revival (Scream), and the full maturation of auteurs like Scorsese and Spielberg under the studio system…just as the same studios pumped out big, star-driven crass comedies (Happy Gilmore, There’s Something About Mary) and effects-driven blockbusters (Titanic, Independence Day).
+
+So slap on that bracelet and resurrect your Tamagotchi bestie, because these aren’t just the best ’90s movies, d	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 130 Best Sports Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-130-best-sports-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>In the arena of the sports movie, every story can be told. The impossible underdog team that survived a brutal season into the final game. The kid who’s just starting out or the veteran pulled back into the game, who both share the same odds: Against. Stories of the power of coming together as a cohesive, selfless unit, and tales of individual strength when all limits have been removed. Sports movies make us cheer, laugh, cry, and scream. They even make us think about renewing that gym membership.
+
+We’re going all the way to the end zone with our list of the 130 Best Sports Movies of All Time, sorted by Adjusted Tomatometer from at least 25 reviews each. Just about every sport ever played is here: football (Rudy), baseball (Bull Durham), hockey (Miracle), soccer (Bend It Like Beckham), boxing (Rocky), ice skating (I, Tonya). There’s racing: by foot (Without Limits), by car (Talladega Nights), and by horse (Seabiscuit). We got fictional sports (Rollerball) and sports we made up through sheer tyranny of will (Murderball). If it’s in the spirit of competition, it’s in this list. Except for sculling. Sorry, Nic.
+
+Because this is a Best Sports Movie list, there are no TV movies (we pour one out for Brian’s Song), and nothing rated Rotten — even fan favorites like The Sandlot or Any Given Sunday. Please deal with your rage accordingly before continuing.
+
+Ready?
+
+For the leisure, life, and love of the game, here are the 130 Best Sports Movies of All Time! 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ 150 Best LGBT Movies of All Time</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-150-best-lgbt-movies-of-all-time/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>It’s been a big few years for lesbian and gay movies and queer-themed films. In 2013, Blue is the Warmest Color won the Palm D’or at Cannes; in 2016, Carol earned six Oscar nominations; just a year later, for the first time in history, an LGBT film took home Best Picture. That movie was Barry Jenkins’ Moonlight, and in 2018 Call Me By Your Name almost made it two in a row for gay-themed movies at the Academy Awards, earning a Best Picture nomination. This March, Twentieth Century Fox put out Love, Simon, the first mainstream, wide-release teenage rom-com to focus on a gay character. And the critics did indeed love it.
+
+All of these films stand on the shoulders of other LGBT films that have come before. Our list of the 150 Best LGBT Movies of All Time stretches back almost 90 years to the pioneering German film, Mädchen in Uniform, which was subsequently banned by the Nazis, and crosses multiple continents, cultures, and genres. There are broad American comedies (The Birdcage), artful Korean crime dramas (The Handmaiden), groundbreaking indies (Tangerine), and landmark documentaries (Paris Is Burning). To be considered for the list, a movie had to prominently feature gay, lesbian, trans, or queer characters; concern itself centrally with LGBT themes; present its LGBT characters in a fair and realistic light; and/or be seen as a touchpoint in the evolution of queer cinema. The final list was culled from a longlist of hundreds, after the films were ranked according to the Adjusted Tomatometer, which acts as a kind of inflation adjustment, taking into consideration the Tomatometer score, as well as the number of reviews a film received relative to the average number of reviews for films in the same year it was released.
+
+We did not include miniseries, which left out seminal works like Angels in America. And we recognize that some of the films in the list will re-ignite healthy debates that have been fixtures of discussion around LGBT films — straight actors playing gay characters, cis actors playing trans characters (an issue that flared up again around the upcoming film, Girl, at this year’s Cannes Film Festival), and the historical dominance of white male perspectives. We’d encourage those debates to continue, respectfully, in the comments section below. (And speaking of comments: yes, we know that But I’m a Cheerleader is missing — we love it too! — but it’s Rotten, at 35%, so… blame the critics.) For now, join us as we celebrate Pride, and the work of hundreds of filmmakers whose talents and risks have opened up the possibilities of cinema.
+
+While we were celebrating Pride 2018, we had the cast of Netflix’s Queer Eye into Rotten Tomatoes HQ to talk about their favorite LGBT movies: check out the Fab Five’s five favorite LGBT movies. 	</summary>
+</dir>
+
+
+<dir>
+	<title>Rotten Tomatoes’ The 200 Freshest Movies of the Last 20 Years</title>
+      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-the-200-freshest-movies-of-the-last-20-years/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Can you remember a time without Rotten Tomatoes? Those sightless days of people reaching out and bumping into movies at random, like wandering through a Blockbuster with all the lights off. Those were dark and undirected times. Since the launch of RT in August of 1998, though – the site went live on August 18 of that year – movie fans have had immediate access to the largest accumulation of film reviews ever, distilled for one purpose: to get you watching the best kind of movies you want to see. (Or if you only want to watch bad movies, the site can help you find those more quickly, too.)
+
+As we mark our 20th birthday, we’re looking back on the past two decades with this guide to the 200 best-reviewed movies released since that fateful day in August of 1998. To keep the competition tight, we only included movies that had at least 80 reviews, the number at which wide-release movies qualify for Certified Fresh status; applying that rule, and limiting the total list to 200 titles, the lowest Tomatometer score you’ll find is 95%. The criteria also meant that no films from 1998 made the cut (Shakespeare in Love did come awfully close).
+
+The list, which we’ve ordered chronologically, runs the gamut of movies, ranging from popular blockbusters (Harry Potter and the Deathly Hallows – Part II, The Lord of the Rings: The Two Towers) to indies (The Wrestler, Nightcrawler) and the still underseen (Step, Gloria). Some 14 movies come from this very year made the list, among them Mission: Impossible – Fallout and BlacKkKlansman. There are seven Best Picture Oscar winners and 24 animated movies in there – 10 of which are Pixar products, and three of which come from the UK’s Aardman Animations. Documentaries make up a whopping quarter of the movies listed, and include landmark films like Bowling For Columbine and Man On Wire, while 53 of the movies listed are foreign-language, including Crouching Tiger, Hidden Dragon, and the first film on the list, Pedro Almodóvar‘s All About My Mother.
+
+A number of directors show up twice on the list – Ava DuVernay, Taika Waititi, Ryan Coogler, and Sean Baker among them – and a handful show up even more than that: Lee Unkrich, Pete Docter, Brad Bird, and Richard Linklater. Meanwhile, series like the Paddington, Before, and Toy Story films appear more than once, along with both films in The Act of Killing/The Look of Silence documentary pairing feature.
+
+So: 200 movies, 20 years. How many have you seen after all this time? And how many are you adding to your watchlist? 
+Link: https://editorial.rottentomatoes.com/guide/freshest-movies-past-20-years/	</summary>
 </dir>
