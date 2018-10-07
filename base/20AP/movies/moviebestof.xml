@@ -1,0 +1,35 @@
+
+<dir>
+  <title>1001 Movies To See Before You Die</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/1001.xml</link>
+  <thumbnail>https://20ap.000webhostapp.com/images/1001.png</thumbnail>
+  <fanart>https://gikonomova.files.wordpress.com/2013/12/its-a-wonderful-life-collage.jpg</fanart>
+  <content>boxset</content>
+  <summary>1001 of the highest rated movies</summary>
+</dir>
+
+<dir>
+  <title>TMDB Top Rated Movies</title>
+  <tmdb>movies/top_rated</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <summary>Top Rated Movies on TheMovieDB</summary>
+</dir>
+
+
+<dir>
+	<title>Reddit Top 250 2018 Edition</title>
+      <trakt>https://api.trakt.tv/users/philrivers/lists/reddit-top-250-2018-edition/items</trakt>
+	<thumbnail>https://www.redditstatic.com/new-icon.png</thumbnail>
+	<content>set</content>
+	</summary>
+</dir>
+
+
+<dir>
+	<title>IMDB top Rated Movies</title>
+      <trakt>https://api.trakt.tv/users/justin/lists/imdb-top-rated-movies/items</trakt>
+	<thumbnail>https://lh3.googleusercontent.com/iSetg8OcQYecAY2TH30XVLdqljGKn4yooOb6DO4PnEtscVST729Aa33oFndAniB-Fen4</thumbnail>
+	<content>set</content>
+	</summary>
+</dir>
