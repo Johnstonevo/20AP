@@ -25,3 +25,11 @@ We’ve tweaked this guide behind-the-scenes ever since its publication a decade
 Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 150 Best Horror Movies of All Time…it’s alive! It’s alive!!	</summary>
 </dir>
 
+
+<dir>
+	<title>Horror Films Trakt List</title>
+      <trakt>https://api.trakt.tv/users/jealad/lists/horror/items</trakt>
+	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
+	<content>boxset</content>
+	<summary></summary>
+</dir>

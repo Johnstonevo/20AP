@@ -101,6 +101,14 @@ Link: https://editorial.rottentomatoes.com/guide/100-best-documentaries/	</summa
 </dir>
 
 
+<dir>
+	<title>Documentary Films Trakt List</title>
+      <trakt>https://api.trakt.tv/users/jealad/lists/documentary/items</trakt>
+	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
+	<content>boxset</content>
+	<summary></summary>
+</dir>
+
 
 
 <plugin>

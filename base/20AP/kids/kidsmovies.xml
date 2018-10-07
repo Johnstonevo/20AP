@@ -22,3 +22,14 @@
 	</summary>
 	<content></content>
 </dir>
+
+
+
+<dir>
+	<title>Childrens Movies - Classic</title>
+      <trakt>https://api.trakt.tv/users/gymbunny/lists/childrens-movies-classic/items</trakt>
+	<thumbnail></thumbnail>
+	<content>boxset</content>
+	<summary></summary>
+</dir>
+

@@ -4,6 +4,14 @@
 <thumbnail>https://cdn3.iconfinder.com/data/icons/buildings-places/512/Concert-512.png</thumbnail>
 ##################################################################################
 
+<dir>
+	<title>Concerts Trakt List</title>
+      <trakt>https://api.trakt.tv/users/jealad/lists/concert/items</trakt>
+	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
+	<content>boxset</content>
+	<summary></summary>
+</dir>
+
 
 <item>
 <title>The Script - Live at Croke Park </title>
