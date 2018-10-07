@@ -148,9 +148,10 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.20ap" name="20ap" version="18.10.07" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.10.07.1" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
+            <import addon="script.module.dateutil" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
       <import addon="script.module.python.koding.aio" version="0.9.6.6" />
       <import addon="script.module.beautifulsoup" version="3.2.1" />
@@ -258,7 +259,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.f1f" name="f1f" version="18.10.07.3" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="18.10.07.4" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -267,6 +268,7 @@
       <import addon="script.module.requests" version="2.9.1" />
       <import addon="script.module.addon.common" version="2.0.0" />
       <import addon="script.module.xmltodict" version="0.9.0" />
+      <import addon="script.module.dateutil" />
       <!--<import addon="script.module.web-pdb" version="1.0"/>-->
       <import addon="script.module.resolveurl" />
       <import addon="plugin.video.reddit_viewer" version="3.5.0"  />

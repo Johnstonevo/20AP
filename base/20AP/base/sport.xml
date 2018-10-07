@@ -2,17 +2,11 @@
 
 ###########################################################################################################
 
-
-
-
-
 <dir>
-<name>Live Channels</name>
-<link>plugin://plugin.video.mobdro/list_channels/sports</link>
-<thumbnail>special://home/addons/plugin.video.mobdro/icon.png</thumbnail>
-<fanart></fanart>
-<summary>Live Sports TV</summary>
+<title>Live Sports Streams</title>
+<sport_stream>games</sport_stream>
 </dir>
+
 
 <dir>
 <name>Live Sports Acestreams</name>
