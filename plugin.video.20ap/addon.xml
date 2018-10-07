@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.20ap" name="20ap" version="18.9.20" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.10.07" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.universalscrapers" version="0.5.5" />
@@ -11,14 +11,11 @@
       <!--<import addon="script.module.web-pdb" version="1.0"/>-->
       <import addon="script.module.resolveurl" />
       <import addon="plugin.video.reddit_viewer" version="3.5.0"  />
-    <!--  <import addon="repository.noobsandnerds" version="2.3.2" />-->
-      <import addon="repository.illuminati" />
       <import addon="repository.jsergio" />
       <import addon="plugin.video.SportsDevil" version="2017.11.01"  />
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" />
       <import addon="script.module.acesports" />
-      <import addon ="plugin.video.mobdro" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>audio video</provides>
