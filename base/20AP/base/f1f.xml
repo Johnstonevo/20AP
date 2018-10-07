@@ -5,29 +5,8 @@
 
 
 
-<dir>
-<title>Sports Streams</title>
-<sport_stream>games</sport_stream>
-<summary>Links to Live Sport</summary>
-</dir>
-
-<dir>
-<name>LiveSport Channels</name>
-<link>plugin://script.module.20aplive/list_channels/5</link>
-<thumbnail></thumbnail>
-<fanart></fanart>
-<summary>Live TV</summary>
-</dir>
 
 
-
-<dir>
-  <name>The Man Cave</name>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
-  <thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
-  <fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
-  <Summary>The Man Shed,  Cars and things</summary>
-</dir>
 
 <dir>
   <name>Formula 1</name>
@@ -98,3 +77,11 @@
 <fanart></fanart>
 </dir>
 
+
+<dir>
+  <name>The Man Cave</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
+  <thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
+  <fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
+  <Summary>The Man Shed,  Cars and things</summary>
+</dir>
