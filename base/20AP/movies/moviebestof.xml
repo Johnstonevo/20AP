@@ -13,8 +13,29 @@
   <tmdb>movies/top_rated</tmdb>
   <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
   <fanart></fanart>
-  <summary>Top Rated Movies on TheMovieDB</summary>
+  <summary></summary>
 </dir>
+
+
+<dir>
+	<title>Kids Halloween Movies</title>
+      <trakt>https://api.trakt.tv/users/dogloverlisathekid/lists/halloween-kids-movies/items</trakt>
+	<thumbnail>http://icons.iconarchive.com/icons/arrioch/halloween/256/pumpkin-icon.png</thumbnail>
+	<content>boxset</content>
+	<summary>	</summary>
+</dir>
+
+
+<dir>
+	<title>Halloween Movies</title>
+      <trakt>https://api.trakt.tv/users/petermesh/lists/halloween-movies/items</trakt>
+	<thumbnail>http://icons.iconarchive.com/icons/arrioch/halloween/256/pumpkin-icon.png</thumbnail>
+	<content>boxset</content>
+	<summary>	</summary>
+</dir>
+
+
+
 
 
 <dir>
