@@ -367,6 +367,15 @@ Unlike many channels out there I do not do this for any money. I do it for the l
 From what started as a series aimed at the tens of people its now watched by the tens of thousands!</summary>
 </plugin>
 
+
+<plugin>
+  <title>ETA Prime</title>
+  <link>plugin://plugin.video.youtube/channel/UC_0CVCfC_3iuHqmyClu59Uw/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAzgSf30TQgezG7h6axdpSoUM-4nZFPspk-qVg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Tutorials , Retro Emulation and Gameplay On Raspberry pi , Android , PC , Mac And Other Single Board Computers.</summary>
+</plugin>
+
+
 <plugin>
   <title>Game Sack</title>
   <link>plugin://plugin.video.youtube/channel/UCT6LaAC9VckZYJUzutUW3PQ/</link>
