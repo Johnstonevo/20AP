@@ -3,6 +3,12 @@
 <fanart>https://i.pinimg.com/originals/17/e1/ff/17e1ffda42697843c9a750d336ce7c5b.jpg</fanart>
 ################################################################################
 
+  <plugin>
+     <title>Live Sport Channels</title>
+     <link>plugin://script.module.dslive/list_channels/36</link>
+     <thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>
 
 
 <dir>
