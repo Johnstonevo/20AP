@@ -21,8 +21,8 @@
 
     <dir>
 <name>Live TV (ONLINE)</name>
-<link>plugin://plugin.video.mobdro</link>
-<thumbnail>special://home/addons/plugin.video.mobdro/icon.png</thumbnail>
+<link>plugin://script.module.dslive</link>
+<thumbnail>special://home/addons/script.module.dslive/icon.png</thumbnail>
 <fanart></fanart>
 <summary>Live TV</summary>
 </dir>
