@@ -5,474 +5,56 @@
 
 
 <dir>
-  <title>Another</title>
-  <meta>
-    <content>tvshow</content>
-    <imdb>tt2176165</imdb>
-    <tvdb>254349</tvdb>
-    <tvshowtitle>Another</tvshowtitle>
-    <year>2012</year>
-  </meta>
-    <link>https://20ap.000webhostapp.com/repository.20ap/anime/another/another.xml</link>
-    <thumbnail>https://www.thetvdb.com/banners/posters/254349-5.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/254349-4.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Attack On Titan</title>
-  <meta>
-    <imdb>tt2560140</imdb>
-    <tvdb>267440</tvdb>
-    <tvshowtitle>Attack on Titan</tvshowtitle>
-    <year>2013</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/attack_on_titan/Attack%20on%20Titan.xml</link>
-  <thumbnail>https://image.tmdb.org/t/p/original/fBX1QMl4iZOKxuRuBOMnoHlmS4l.jpg</thumbnail>
-  <fanart>https://image.tmdb.org/t/p/original/jlVhGQkhOXaMyQbMoA5vae9bAmi.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Attack on Titan: Junior High</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt4906830</imdb>
-    <tvdb>299882</tvdb>
-    <tvshowtitle>Attack on Titan: Junior High</tvshowtitle>
-    <year>2015</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/attack_on_titan/Attack_on_Titan_JNR_High.xml</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/299882-1.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/299882-1.jpg</fanart>
+<title>Anime List</title>
+<tmdb>list/47118</tmdb>
+<thumbnail>https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png</thumbnail>
+<fanart>http://www.powerpointhintergrund.com/uploads/2017/05/retro-stripes-animation-3-background-video-youtube-25.jpeg</fanart>
+<summary>Japanese Cartoons, some a bit random</summary>
 </dir>
 
 
 <dir>
-  <title>Basilisk</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0856348</imdb>
-    <tvdb>78881</tvdb>
-    <tvshowtitle>Basilisk</tvshowtitle>
-    <year>2005</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/basilisk.xml</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/78881-5.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/78881-2.jpg</fanart>
+	<title>Ten Great Anime Feature-Films</title>
+      <trakt>https://api.trakt.tv/users/sp1ti/lists/ten-great-anime-feature-films/items</trakt>
+	<thumbnail></thumbnail>
+	<content>boxset</content>
+	<summary>Yeah, these weird Japanese ones for kids. I'm still shocked by the amount of people who still just ignore the medium. There is a huge variety of genres to choose from for all ages and it's not just like school girls, tentacle rape, or Dragonball. If you like film I urge you to give these a go!
+I deceided against a "Top 10" and limited the choices to one movie per director. Most of these guys have a rich body of work worth checking out.
+
+(And no, these are not obscure, it just takes a lot more to make an animated film than some indie movie..)
+
+-The End of Evangelion – dir. Hideaki Anno: 
+He is not only a great anime director but has also made some great live-action ones aswell. To enjoy the despair ahead you'll have to watch the TV series though. No worries, not only is it great but you will be rewarded with one of the most striking animated films to date. http://www.youtube.com/watch?v=bCLoNOYcVQU
+
+-Princess Mononoke – dir. Hayao Miyazaki: 
+Having seen most of his films, Mononoke was the first for me and it stuck with me the most. I guess it is a bit different than his usual works given the setting. The struggle between living with nature in harmony or taking control over it is a lot more than just good versus evil. A beautiful epic for sure. Luckily the now retired master has made some other great films aswell so there is one for everyone.
+
+Grave of the Fireflies – dir. Isao Takahata: 
+Except for this Takahata doesn't seem to enjoy the same fame or popularity as his Studio Ghibli Co-Funder friend Miyazaki which is a shame really. His movies are a lot more grounded and you know what you're at. I thought about including the terribly underwatched Gauche the Cellist but this sucker is just such a tear jerker that it should depress about everyone (and it's based on a true story).
+
+Millennium Actress – dir. Satoshi Kon: 
+I'm still saddened by Kon's death. Not one of his works isn't exceptional. Just watch them all! MA was his love letter to the actress Setsuko Hara which I'm sure you recognize if you saw her on screen once, such a captivating presence (best known for Tokyo Story).
+
+Ghost in the Shell – dir. Mamoru Oshii:
+I'm still amazed by how many people love The Matrix but have not seen Oshii's manga adaptation despite the Wachowski being quite open about it's influence. The second movie is great aswell and so is Stand Alone Complex. The score from Kenji Kawai makes it even so much better. The man also directed the first OVA series ever and some other good ones like Angel's Egg and Patlabor 2. When it comes to live action, Avalon is not bad either but he can sometimes be a hack and make something like Assault Girls... Try to find the basset hounds.
+
+Summer Wars – dir. Mamoru Hosoda:
+The director started out with some credits on Digimon before he found success in 2006 with The Girl Who Leapt Through Time. The virtual world found in Summer Wars is very much an extension of a movie he did for the show. While it's though for me to pick between this and Wolf Children I found the story here quite touching in regards of multiple generations in the family coming together where as the other is more about the mother.
+
+Akira – dir. Katsuhiro Ohtomo:
+Akira was one of the first anime movies I saw when I was younger. If you like scifi and action there is no reason for you not to see it. The maniac Kaneda became with his powers is still referenced (intentional or not) in other movies today. A balanat rip-off of the exploding Tokyo is also shown in Resident Evil Afterlife. It just became 25 years old this year and predicted the 2020 Olympic's in Tokyo ;). It was also the reason for a (short-termed) hype for anime in the US. Just go and watch it ffs!
+As for other works by Ohtmo I would say watch Steamboy if you want some steampunk (and pretty animated ice) or Rojin Z for a more slice of life scifi.
+
+A Letter to Momo - dir. Hiroyuki Okiura: 
+A suprisingly overlooked movie. It took Okiura over seven years to create together with (mainly) Production I.G. doing the hand-drawn art. It features a loveley color palette and has a story similar to what you find over at Ghibli. While it drags a bit early on it works as a whole (and is yet another touching story). The other movie credit the director has is the more well known Jin-Roh (created by the guy abit further above, Oshii) where I can see why people enjoy it a lot (a darker red riding hood) it isn't one of my favorites and is an extreme opposite to Momo.
+
+Ninja Scroll - dir. Yoshiaki Kawajiri:
+It's basicly the Sex, Drugs & Rock 'n' roll of chanbara cinema and for exactly that reason it was quite popular not too long ago at least among teens. My opinion might be still based from when I was younger but it's a fun and stylish action flick with lots of ultra violence. Kawajiri contributed a short to Animatrix so you might have seen something of his. Wicked City is also one of the more well known oldschool anime movies where you will see a "human" venus trap in action ;P.
+
+Time of Eve: The Movie - dir. Yasuhiro Yoshiura:
+Science-fiction authors (and the Japanese) have always been interested in relations between humans and androids. This movie looks at this in a great setup: Having a café with one simple rule; No discrimination between humans and robots. Inside, human looking androids are indistinguishable by appearance (they are forced to have indicators on their heads outside) and can act independently from their owners. Since I'm a sucker for the kinds of stories where the line between man and machine is blurred I enjoyed this a lot and I think it's a strong sci-fi movie even outside the medium of anime (if you're not just an action guy).
+(FYI: The movie is an extended version of an OVA series by the same name)
+As for other works by Yoshiura: I'm not really a fan of the other short ones, Patema Inverted however looks pretty great.</summary>
 </dir>
 
 
-<dir>
-  <title>Bakuman</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt1738419</imdb>
-    <tvdb>193811</tvdb>
-    <tvshowtitle>Bakuman</tvshowtitle>
-    <year>2010</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/bakuman/bakuman.xml</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/193811-6.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/193811-5.jpg</fanart>
-</dir>
-
-
-
-<dir>
-  <title>Black Butler</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt1316554</imdb>
-    <tvdb>83996</tvdb>
-    <tvshowtitle>Black Butler</tvshowtitle>
-    <year>2008</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/black_butler/black_butler.xml</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/83996-14.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/83996-2.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Black Lagoon</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0962826</imdb>
-    <tvdb>79604</tvdb>
-    <tvshowtitle>Black Lagoon</tvshowtitle>
-    <year>2006</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/blacklagoon/blacklagoon.xml</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/79604-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/79604-14.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Bleach</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0434665</imdb>
-    <tvdb>74796</tvdb>
-    <tvshowtitle>Bleach</tvshowtitle>
-    <year>2004</year>
-  </meta>
-  <link>https://github.com/Johnstonevo/20AP/blob/master/anime/Bleach/Bleach.xml</link>
-  <thumbnail>https://image.tmdb.org/t/p/original/3RUtEMburuZkk1fbD1nS3bYrJPh.jpg</thumbnail>
-  <fanart>https://image.tmdb.org/t/p/original/ivbGIcYhy9p33oOT0U3Nhk6Usg3.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Code Geass: Lelouch of the Rebellion</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0994314</imdb>
-    <tvdb>79525</tvdb>
-    <tvshowtitle>Code Geass: Lelouch of the Rebellion</tvshowtitle>
-    <year>2006</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/79525-13.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/79525-23.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Code Geass: Lelouch of the Rebellion R2</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0994314</imdb>
-    <tvdb>79525</tvdb>
-    <tvshowtitle>Code Geass: Lelouch of the Rebellion R2</tvshowtitle>
-    <year>206</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/79525-6.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/79525-23.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Corpse Party: Tortured Souls</title>
-	<meta>
-		<content>animeshow</content>
-		<imdb>tt3127798</imdb>
-		<tvdb>271988</tvdb>
-		<tvshowtitle>Corpse Party: Tortured Souls</tvshowtitle>
-		<year>2013</year>
-		<season>1</season>
-  </meta>
-    <link>https://20ap.000webhostapp.com/repository.20ap/anime/corpseparty/corpseparty.xml</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/271988-2.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/271988-2.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Corpse Princess</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt1301958</imdb>
-    <tvdb>83363</tvdb>
-    <tvshowtitle>Corpse Princess</tvshowtitle>
-    <year>2008</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/83363-3.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/83363-7.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Darker Than Black</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0995941</imdb>
-    <tvdb>80042</tvdb>
-    <tvshowtitle>Darker Than Black</tvshowtitle>
-    <year>2007</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/80042-13.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/80042-3.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Deadman Wonderland</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt1909447</imdb>
-    <tvdb>247997</tvdb>
-    <tvshowtitle>Deadman Wonderland</tvshowtitle>
-    <year>2011</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/247997-13.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/247997-8.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Death Note</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0877057</imdb>
-    <tvdb>79481</tvdb>
-    <tvshowtitle>Death Note</tvshowtitle>
-    <year>2006</year>
-  </meta>
-  <link>https://20ap.000webhostapp.com/repository.20ap/anime/death_note/Death%20Note.xml</link>
-  <thumbnail>https://image.tmdb.org/t/p/original/f8EloiCx5go0ChcZNTSHCfBoZwc.jpg</thumbnail>
-  <fanart>https://image.tmdb.org/t/p/original/2lqUOhljRVP818i54Vgl32gprka.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Death Parade</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt4279012</imdb>
-    <tvdb>289177</tvdb>
-    <tvshowtitle>Death Parade</tvshowtitle>
-    <year>2015</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/289177-1.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/289177-3.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>D.Gray-man</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0899258</imdb>
-    <tvdb>79635</tvdb>
-    <tvshowtitle>D.Gray-man</tvshowtitle>
-    <year>2006</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/79635-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/79635-10.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>D.Gray-man Hallow</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt5954268</imdb>
-    <tvdb>312878</tvdb>
-    <tvshowtitle>D.Gray-man Hallow</tvshowtitle>
-    <year>2016</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/312878-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/312878-2.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Elfen Lied</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0480489</imdb>
-    <tvdb>75941</tvdb>
-    <tvshowtitle>Elfen Lied</tvshowtitle>
-    <year>2004</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://image.tmdb.org/t/p/w440_and_h660_bestv2/nrwapb9IAJNFXzmv0k3GVDznRdR.jpg</thumbnail>
-  <fanart>https://image.tmdb.org/t/p/original/rj1tysQl34LhnZms6zc573hjKkb.jpg</fanart>
-</dir>
-
-<dir>
-  <title>ERASED</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt5249462</imdb>
-    <tvdb>303071</tvdb>
-    <tvshowtitle>ERASED</tvshowtitle>
-    <year>2016</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/303071-3.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/303071-2.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>The Heroic Legend of Arslan</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0103720</imdb>
-    <tvdb>125781</tvdb>
-    <tvshowtitle>The Heroic Legend of Arslan</tvshowtitle>
-    <year>1991</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/125781-2.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/125781-1.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Hunter X Hunter (1999)</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0426719</imdb>
-    <tvdb>79076</tvdb>
-    <tvshowtitle>Hunter X Hunter (1999)</tvshowtitle>
-    <year>1999</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/79076-7.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/79076-1.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Hunter x Hunter (2011)</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt2098220</imdb>
-    <tvdb>252322</tvdb>
-    <tvshowtitle>Hunter x Hunter (2011)</tvshowtitle>
-    <year>2011</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/252322-6.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/252322-14.jpg</fanart>
-</dir>
-
-
-
-<dir>
-  <title>Monster</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0434706</imdb>
-    <tvdb>74599</tvdb>
-    <tvshowtitle>Monster</tvshowtitle>
-    <year>2004</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/74599-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/74599-5.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>One Punch Man</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt4508902</imdb>
-    <tvdb>293088</tvdb>
-    <tvshowtitle>One Punch Man</tvshowtitle>
-    <year>2015</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/293088-2.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/293088-2.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Parasyte -the maxim-</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt3358020</imdb>
-    <tvdb>279831</tvdb>
-    <tvshowtitle>Parasyte -the maxim-</tvshowtitle>
-    <year>2014</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/279831-3.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/279831-1.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Psycho-Pass</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt2379308</imdb>
-    <tvdb>262090</tvdb>
-    <tvshowtitle>Psycho-Pass</tvshowtitle>
-    <year>2012</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/seasons/262090-1-5.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/262090-8.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Psycho-Pass 2</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt2379308</imdb>
-    <tvdb>262090</tvdb>
-    <tvshowtitle>Psycho-Pass 2</tvshowtitle>
-    <year>2012</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/seasons/262090-2-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/262090-8.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Steins;Gate</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt1910272</imdb>
-    <tvdb>244061</tvdb>
-    <tvshowtitle>Steins;Gate</tvshowtitle>
-    <year>2011</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/244061-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/244061-2.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Tokyo Ghoul</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt3741634</imdb>
-    <tvdb>281249</tvdb>
-    <tvshowtitle>Tokyo Ghoul</tvshowtitle>
-    <year>2014</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/281249-6.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/281249-9.jpg</fanart>
-</dir>
-
-<dir>
-  <title>Tokyo Ghoul A</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt5497534</imdb>
-    <tvdb>281249</tvdb>
-    <tvshowtitle>Tokyo Ghoul A</tvshowtitle>
-    <year>2015</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/281249-3.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/281249-4.jpg</fanart>
-</dir>
-
-
-<dir>
-  <title>Witchblade</title>
-  <meta>
-    <content>animeshow</content>
-    <imdb>tt0813971</imdb>
-    <tvdb>79473</tvdb>
-    <tvshowtitle>Witchblade</tvshowtitle>
-    <year>2006</year>
-  </meta>
-  <link></link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/79473-4.jpg</thumbnail>
-  <fanart>https://www.thetvdb.com/banners/fanart/original/79473-3.jpg</fanart>
-</dir>
