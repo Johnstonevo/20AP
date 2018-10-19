@@ -29,15 +29,6 @@
     <Airtable>247</Airtable>
     </dir>
 
-
-    <dir>
-<name>Live TV (ONLINE)</name>
-<link>plugin://script.module.dslive</link>
-<thumbnail>special://home/addons/script.module.dslive/icon.png</thumbnail>
-<fanart></fanart>
-<summary>Live TV</summary>
-</dir>
-
        <dir>
     <title>M3U Lists</title>
     <Airtable>m3u_lists</Airtable>
