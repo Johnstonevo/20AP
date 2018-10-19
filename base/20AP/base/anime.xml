@@ -57,4 +57,19 @@ Science-fiction authors (and the Japanese) have always been interested in relati
 As for other works by Yoshiura: I'm not really a fan of the other short ones, Patema Inverted however looks pretty great.</summary>
 </dir>
 
+<dir>
+	<title>Trakt Anime List</title>
+      <trakt>https://api.trakt.tv/users/keniah/lists/anime/items</trakt>
+	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
+	<content>boxset</content>
+	<summary></summary>
+</dir>
 
+
+<dir>
+	<title>Trakt Anime List 2</title>
+      <trakt>https://api.trakt.tv/users/ccanado/lists/anime/items</trakt>
+	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
+	<content>boxset</content>
+	<summary></summary>
+</dir>
