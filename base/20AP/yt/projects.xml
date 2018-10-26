@@ -53,6 +53,14 @@ Every week I will upload a new video. Do not miss it !!</summary>
 
 
 <plugin>
+  <title>Machine Thinking</title>
+  <link>plugin://plugin.video.youtube/channel/UCfsznjef2zGJnrCRQBXqo6Q/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAwDS6r2gOgJke2UU5Z271gmnBgaiJko6xnXkQ=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary></summary>
+</plugin>
+
+
+<plugin>
   <title>EvanAndKatelyn</title>
   <link>plugin://plugin.video.youtube/channel/UCUuMYw2l2UeWyTGYixYfRCA/</link>
   <thumbnail>https://yt3.ggpht.com/-poIhH2w02l8/AAAAAAAAAAI/AAAAAAAAAAA/UPhxau3FzCA/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
