@@ -33,3 +33,35 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
 	<content>boxset</content>
 	<summary></summary>
 </dir>
+
+<dir>
+	<name>Silly Horror Films</name>
+	<tmdb>list/47250</tmdb>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+	<content>boxset</content>
+</dir>
+
+<plugin>
+  <title>True Crime Daily</title>
+  <link>plugin://plugin.video.youtube/channel/UC69uYUqvx-vw4luuX7aHNLQ/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAy5ChmsI1jNOy_naNJ6cDf0q8DRpKuh79Jnqg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Anchored from the streets of New York City and led by renowned veteran journalist Chris Hansen, Crime Watch Daily delivered in-depth true crime sagas showcasing the very best of crime journalism. From unsolved murders to compelling mysteries, undercover investigations and shocking crimes caught on camera, the series brought stories from small towns across America to national attention.
+</summary>
+</plugin>
+
+<plugin>
+  <title>Female Killers</title>
+  <link>plugin://plugin.video.youtube/channel/UC140PSrairHki1J_Prt2aCQ/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxQX3S3c7kmV9-HkB299Jfm_o84FGGn2YdxNw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>
+</summary>
+</plugin>
+
+<plugin>
+  <title>Serial Killers Documentaries</title>
+  <link>plugin://plugin.video.youtube/channel/UCPnXkFy7z7JoLBtV2LLK2cQ/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAx9n7hapD25XbB4_f3-qlXbEOXH_w8PcTCpYg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>The only channel you need if you are looking for serial killer documentaries.
+</summary>
+</plugin>

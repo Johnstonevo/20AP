@@ -87,6 +87,36 @@ Truevision Productions
 
 
 <plugin>
+  <title>Only Human</title>
+  <link>plugin://plugin.video.youtube/channel/UCkRmoZiR_SOssKA89m1eYJg/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAzb8LQjbwMXCIQ3WWWbQsTDYbs-s1gd6siZ8w=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Only Human celebrates and explores the unique and personal qualities we all have. Our channel investigates the individual struggles life can throw at us, and offers a range of human experiences and viewpoints from amazing people from all walks of life.
+</summary>
+</plugin>
+
+<plugin>
+  <title>Wild Things</title>
+  <link>plugin://plugin.video.youtube/channel/UCbq-4OJxnziD3awH-aTezeA/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAz5PXK_c3pc8TSV8qC19HqZNYP_YHt8z6d6Yw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>From lush rainforests to sparse deserts, from friendly pets to predatory sharks and lions, Wild Things’ documentaries will take you around the world, exploring the wonders and the dangers nature has to offer. We publish at least one full length documentary a week, subscribe so you don’t miss it!
+
+Content Provided by:
+
+DRG
+ITV Global
+All3Media
+DCD Rights
+</summary>
+</plugin>
+
+<plugin>
+  <title>HBODocs </title>
+  <link>plugin://plugin.video.youtube/channel/UCbKo3HsaBOPhdRpgzqtRnqA/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxasZmwazld1fImFObboFr9WsJRMZixC-KIhA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Subscribe to the HBO Documentary Films Channel for the latest news and updates on HBO's inspirational documentaries.</summary>
+</plugin>
+
+<plugin>
   <title>CBC Docs</title>
   <link>plugin://plugin.video.youtube/channel/UCsEbwT3FHpAey6prlu7tNhw/</link>
   <thumbnail>https://yt3.ggpht.com/-z3gbfHi-djE/AAAAAAAAAAI/AAAAAAAAAAA/9S8fJ4W0ZwM/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
