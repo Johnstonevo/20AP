@@ -245,7 +245,45 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.2.1" provider-name="bromix">
+<addon
+    id="script.reddit.reader"
+    name="Reddit Reader"
+    version="1.0.8"
+    provider-name="gedisony">
+    <requires>
+        <import addon="xbmc.python"                   version="2.14.0"/>
+        <import addon="script.module.requests"        version="1.1.0"/>
+        <import addon="script.module.requests-cache"  />
+        <import addon="script.module.youtube.dl"      />
+    </requires>
+
+    <extension point="xbmc.python.script" library="default.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.ui.screensaver" library="screensaver.py" />
+
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Browse Reddit on Kodi</summary>
+        <language></language>
+        <description lang="en_GB">Reddit is a social news and entertainment website where users share and vote on content they find funny and interesting.[CR]View Reddit video and images on Kodi[CR][CR]Original by: AddonscriptorDE and rasjani [CR]Forked from https://github.com/rasjani/plugin.video.reddit_tv[CR]</description>
+        <website>http://www.reddit.com</website>
+        <source>https://github.com/gedisony/script.reddit.reader</source>
+        <forum>http://forum.kodi.tv/showthread.php?tid=287355</forum>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <email>gediso+ny at gmail dot com</email>
+        <disclaimer>This add-on is not published nor endorsed by reddit inc.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>resources/rr_fanart.png</fanart>
+            <screenshot>resources/screenshot-01.jpg</screenshot>
+            <screenshot>resources/screenshot-02.jpg</screenshot>
+            <screenshot>resources/screenshot-03.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="plugin.video.youtube" name="YouTube" version="6.2.2" provider-name="bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -259,35 +297,14 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
+6.2.2
+[fix] signature function not found on some videos
+
 6.2.1
 [fix] some streams reporting as Unavailable
 [fix] utf-8 file paths
 [fix] settings, and switch user causing perpetual busy dialog on Kodi 18
 [lang] sk_sk strings |contrib: jose1711|
-
-6.2.0
-[add] Context menu -&gt; &#39;Play with subtitles&#39; |contrib: solarus|
-[add] Option to download subtitles before playback in Settings -&gt; General -&gt; Configure subtitles
-[add] Refresh context menu to all videos/live streams
-[add] &amp;strm=true parameter for strm files in Kodi 18 |contrib: vlmaksime|
-    - use description from library and set watched status
-[add] &#39;Settings -&gt; Advanced -&gt; Use YouTube website urls&#39; for external/alternative players
-            eg. Player: MPC-BE, URL: https://www.youtube.com/watch?v=C0NyvxTJGcQ
-[fix] Reported background progress dialog percentage
-[fix] Playlist items, use video_items instead of playback_items
-[fix] search history size
-[fix] remove Spanish (Latin America)|es-419 from the setup wizard, causing invalidLanguage and invalidRelevanceLanguage errors
-[upd] Improve speed of playback starting and resolver
-            before: min: 1.5s max: 2.6s median: 1.7s
-            after:  min: 0.9s max: 2.6s median: 1.2s
-[chg] refactor logging and system version
-[chg] Localize confirmation
-[lang] el_gr strings |contrib: twilight0|
-[lang] es_es strings |contrib: roliverosc|
-[lang] es_mx strings |contrib: Intel11|
-[lang] it_it strings |contrib: SebastianoPistore|
-[lang] nl_nl strings |contrib: Markman-B|
-[lang] ru_ru strings |contrib: vlmaksime|
         </news>
         <assets>
             <icon>icon.png</icon>
