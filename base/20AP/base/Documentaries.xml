@@ -48,6 +48,73 @@
 </dir>
 
 
+<plugin>
+  <title>Timeline - World History Documentaries</title>
+  <link>plugin://plugin.video.youtube/channel/UC88lvyJe7aHZmcvzvubDFRg/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxPMVAumSTrb5TT9OBRjHzXZuc-3GgQMYHotw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Welcome to Timeline - the home of world history. Every week we'll be bringing you one-off documentaries and series from the world's top broadcasters, including the BBC, Channel 4, Discovery and PBS. We'll be exploring the mysteries of ancient Egypt, shedding light on the dark ages of medieval Europe and examining the First and Second World Wars. Subscribe so you don't miss out.
+
+Content on our channel is licensed from:
+
+Digital Rights Group
+ITV Global Studios
+All3Media International
+TVF International
+Java Films
+Off The Fence</summary>
+</plugin>
+
+
+<plugin>
+  <title>Real Stories</title>
+  <link>plugin://plugin.video.youtube/channel/UCu4XcDBdnZkV6-5z2f16M0g/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAwBVOWeFxl-QRKIc5FHa4v5YXazOFzWzw5feA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Welcome to Real Stories, the home of award-winning and compelling documentaries you need to see. We will be uploading at least four full length documentaries a week from the best documentary producers on the planet. Subscribe so you don't miss out.
+
+Content on our channel is licensed from:
+
+Digital Rights Group
+DCD Rights
+ITV Global Studios
+All3Media International
+TVF International
+Java Films
+Cargo Film & Releasing
+Sideways Film
+Truevision Productions
+</summary>
+</plugin>
+
+
+<plugin>
+  <title>Only Human</title>
+  <link>plugin://plugin.video.youtube/channel/UCkRmoZiR_SOssKA89m1eYJg/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAzb8LQjbwMXCIQ3WWWbQsTDYbs-s1gd6siZ8w=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Only Human celebrates and explores the unique and personal qualities we all have. Our channel investigates the individual struggles life can throw at us, and offers a range of human experiences and viewpoints from amazing people from all walks of life.
+</summary>
+</plugin>
+
+<plugin>
+  <title>Wild Things</title>
+  <link>plugin://plugin.video.youtube/channel/UCbq-4OJxnziD3awH-aTezeA/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAz5PXK_c3pc8TSV8qC19HqZNYP_YHt8z6d6Yw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>From lush rainforests to sparse deserts, from friendly pets to predatory sharks and lions, Wild Things’ documentaries will take you around the world, exploring the wonders and the dangers nature has to offer. We publish at least one full length documentary a week, subscribe so you don’t miss it!
+
+Content Provided by:
+
+DRG
+ITV Global
+All3Media
+DCD Rights
+</summary>
+</plugin>
+
+<plugin>
+  <title>HBODocs </title>
+  <link>plugin://plugin.video.youtube/channel/UCbKo3HsaBOPhdRpgzqtRnqA/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxasZmwazld1fImFObboFr9WsJRMZixC-KIhA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Subscribe to the HBO Documentary Films Channel for the latest news and updates on HBO's inspirational documentaries.</summary>
+</plugin>
 
 <plugin>
   <title>CBC Docs</title>

@@ -94,18 +94,17 @@ Join master hacker, engineer, and tech hobbyist Ben Heck as he tackles new and f
 </plugin>
 
 <plugin>
-  <title>Afrotechmods</title>
-  <link>plugin://plugin.video.youtube/channel/UCosnWgi3eorc1klEQ8pIgJQ/</link>
-  <thumbnail>https://yt3.ggpht.com/-Z5BCK-CRpnw/AAAAAAAAAAI/AAAAAAAAAAA/yzOKIagS8G0/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <summary>Straight to the point electronics tutorial videos with practical examples taught by a professional electronics engineer.
-  </summary>
-</plugin>
-
-
-<plugin>
   <title>Electronoobs</title>
   <link>plugin://plugin.video.youtube/channel/UCjiVhIvGmRZixSzupD0sS9Q/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AN66SAwexDsD2_5W7-cCG9PlZz8uEQn7l2wgSDzfFQ=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary>If you are interested in electronics, 3D printing or just want to build something, here you will learn all that. Tutorials on basic circuits , building printers , lights , lasers, arduino and much more. I will upload videos periodically and I'm sure that you would like them. ENJOY and learn
   </summary>
+</plugin>
+
+<plugin>
+<title>Data Science Dojo</title>
+<link>plugin://plugin.video.youtube/channel/UCzL_0nIe8B4-7ShhVPfJkgw/</link>
+<thumbnail>https://yt3.ggpht.com/a-/AN66SAy9ZfyjqlAP1tpk_Kc-EgLKblWgU3P8IQOLyQ=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+<summary>At Data Science Dojo, we believe data science is for everyone. Our in-person data science training has been attended by more than 3,500+ from over 600 companies globally. This channel contains tutorials, community talks, and courses on data science and data engineering.
+</summary>
 </plugin>

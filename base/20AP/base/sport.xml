@@ -1,6 +1,13 @@
 ###########################################################################################################
 
 ###########################################################################################################
+  <plugin>
+     <title>Live Sport Channels</title>
+     <link>plugin://script.module.dslive/list_channels/36</link>
+     <thumbnail></thumbnail>
+<fanart></fanart>
+</plugin>
+
 
 <dir>
 <title>Live Sports Streams</title>
@@ -67,10 +74,3 @@
   <thumbnail>https://yt3.ggpht.com/-nmIU6cZltsU/AAAAAAAAAAI/AAAAAAAAAAA/iNCI6SgSUTQ/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </dir>
 
-
-<!--<dir>
-<title>Sports Streams [Not Working ATM]</title>
-<sport_stream>games</sport_stream>
-<summary>Links to Live Sport</summary>
-</dir>
->-->
