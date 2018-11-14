@@ -5,20 +5,20 @@
 ##################################################################################
 
 
-      <dir>
-            <title>Movie Torture</title>
-            <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/mt.xml</link>
-            <fanart></fanart>
-            <thumbnail></thumbnail>
-        </dir>
+<dir>
+  <title>Movie Torture</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/mt.xml</link>
+  <fanart></fanart>
+  <thumbnail></thumbnail>
+</dir>
 
 
 <dir>
-	<title>Rotten Tomatoes’ 150 Best Horror Movies of All Time</title>
-      <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-150-best-horror-movies-of-all-time/items</trakt>
-	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
-	<content>boxset</content>
-	<summary>The wind forces open the curtained window. Candles snuff out in darkness. And a shiver cascades down your spine. Nope, it’s not just your imagination. Something is stalking on your screen, primed to to kill all your free time: The big, boo-tiful list of Rotten Tomatoes’ 150 Best Horror Movies of All Time!
+  <title>Rotten Tomatoes’ 150 Best Horror Movies of All Time</title>
+  <trakt>https://api.trakt.tv/users/sliver01/lists/rotten-tomatoes-150-best-horror-movies-of-all-time/items</trakt>
+  <thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+  <content>boxset</content>
+  <summary>The wind forces open the curtained window. Candles snuff out in darkness. And a shiver cascades down your spine. Nope, it’s not just your imagination. Something is stalking on your screen, primed to to kill all your free time: The big, boo-tiful list of Rotten Tomatoes’ 150 Best Horror Movies of All Time!
 
 We’ve tweaked this guide behind-the-scenes ever since its publication a decade ago, but now we’re delivering the biggest update yet. The classics you’ve come to love and dread remain, but we’ve added 50 movies that further represent the best-reviewed in bloody business. There’s more mainstream maimers (Scream, The Ring), recent indies (You’re Next, Creep), Asian horror (Audition, Three…Extremes), and the ancient ones that haunt forever (Salo, Henry: Portrait of a Serial Killer). As for big-name directors, look out for Spielberg (Duel), De Palma (Sisters), and lots more Cronenberg (Scanners, Videodrome). Each of these best scary movies thrown into our bubbling cauldron had to have at least 20 reviews with a Fresh rating, before being sorted by Adjusted Tomatometer.
 
@@ -27,19 +27,19 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
 
 
 <dir>
-	<title>Horror Films Trakt List</title>
-      <trakt>https://api.trakt.tv/users/jealad/lists/horror/items</trakt>
-	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
-	<content>boxset</content>
-	<summary></summary>
+  <title>Horror Films Trakt List</title>
+  <trakt>https://api.trakt.tv/users/jealad/lists/horror/items</trakt>
+  <thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
+  <content>boxset</content>
+  <summary></summary>
 </dir>
 
 <dir>
-	<title>Silly Horror Films</title>
-	<tmdb>list/47250</tmdb>
-	<thumbnail></thumbnail>
-	<fanart></fanart>
-	<content>boxset</content>
+  <title>Silly Horror Films</title>
+  <tmdb>list/47250</tmdb>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
 </dir>
 
 <plugin>
@@ -47,7 +47,7 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
   <link>plugin://plugin.video.youtube/channel/UC69uYUqvx-vw4luuX7aHNLQ/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AN66SAy5ChmsI1jNOy_naNJ6cDf0q8DRpKuh79Jnqg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary>Anchored from the streets of New York City and led by renowned veteran journalist Chris Hansen, Crime Watch Daily delivered in-depth true crime sagas showcasing the very best of crime journalism. From unsolved murders to compelling mysteries, undercover investigations and shocking crimes caught on camera, the series brought stories from small towns across America to national attention.
-</summary>
+  </summary>
 </plugin>
 
 <plugin>
@@ -55,7 +55,7 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
   <link>plugin://plugin.video.youtube/channel/UC140PSrairHki1J_Prt2aCQ/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AN66SAxQX3S3c7kmV9-HkB299Jfm_o84FGGn2YdxNw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary>
-</summary>
+  </summary>
 </plugin>
 
 <plugin>
@@ -63,5 +63,28 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
   <link>plugin://plugin.video.youtube/channel/UCPnXkFy7z7JoLBtV2LLK2cQ/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AN66SAx9n7hapD25XbB4_f3-qlXbEOXH_w8PcTCpYg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary>The only channel you need if you are looking for serial killer documentaries.
-</summary>
+  </summary>
 </plugin>
+
+<dir>
+  <title>Art and Artists</title>
+  <topdocs>tdcategory/art-artists</topdocs>
+</dir>
+
+
+<dir>
+  <title>More Art and Artists</title>
+  <docuh>dhcategory/art-and-artists</docuh>
+</dir>
+
+
+<dir>
+  <title>Crime Docs</title>
+  <docuh>dhcategory/crime</docuh>
+</dir>
+
+
+<dir>
+  <title>More Crime Docs</title>
+  <topdocs>tdcategory/crime</topdocs>
+</dir>
