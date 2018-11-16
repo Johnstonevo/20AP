@@ -16,7 +16,11 @@
 <sport_stream>games</sport_stream>
 </dir>
 
-
+<dir>
+    <title>Sports Channels</title>
+    <Airtable>sports_channels</Airtable>
+    </dir>
+    
 <dir>
   <name>Formula 1</name>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/f1.xml</link>
