@@ -69,22 +69,44 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
 <dir>
   <title>Art and Artists</title>
   <topdocs>tdcategory/art-artists</topdocs>
+<thumbnail>https://pbs.twimg.com/profile_images/703357615754113024/4XuVozZn_400x400.jpg</thumbnail>
 </dir>
 
 
 <dir>
   <title>More Art and Artists</title>
   <docuh>dhcategory/art-and-artists</docuh>
+<thumbnail>https://pbs.twimg.com/profile_images/697211277106659328/CRNy7aNK_400x400.jpg</thumbnail>
+</dir>
+
+<dir>
+<title>Even More Art and Artists</title>
+<docus>dscategory/art-and-artists</docus>
+<thumbnail>https://pbs.twimg.com/profile_images/476849424732131328/A2a1Z8Qc_400x400.jpeg</thumbnail>
 </dir>
 
 
 <dir>
   <title>Crime Docs</title>
   <docuh>dhcategory/crime</docuh>
+<thumbnail>https://pbs.twimg.com/profile_images/697211277106659328/CRNy7aNK_400x400.jpg</thumbnail>
 </dir>
 
 
 <dir>
   <title>More Crime Docs</title>
   <topdocs>tdcategory/crime</topdocs>
+<thumbnail>https://pbs.twimg.com/profile_images/703357615754113024/4XuVozZn_400x400.jpg</thumbnail>
+</dir>
+
+<dir>
+<title>Performing Arts</title>
+<docus>dscategory/performing-arts</docus>
+<thumbnail>https://pbs.twimg.com/profile_images/476849424732131328/A2a1Z8Qc_400x400.jpeg</thumbnail>
+</dir>
+
+<dir>
+<title>Crime</title>
+<docus>dscategory/crime</docus>
+<thumbnail>https://pbs.twimg.com/profile_images/476849424732131328/A2a1Z8Qc_400x400.jpeg</thumbnail>
 </dir>

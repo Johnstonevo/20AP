@@ -23,11 +23,25 @@
 
 <dir>
 <title>[I][B][COLORsnow]--==[COLORorange]TV[/COLOR]==--[/COLOR][/B][/I]</title>
-<tmdb>list/47132</tmdb
+<tmdb>list/47132</tmdb>
 <thumbnail>https://20ap.000webhostapp.com/images/tv.png</thumbnail>
 <fanart></fanart>
 </dir>
+<dir>
+<title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Series[/COLOR]==--[/COLOR][/B][/I</title>
+<meta>
+<summary>One Click Play section of cartoon tv series</summary>
+</meta>
+<B98>serieslist/videos_categories/series</B98>
+</dir> 
 
+<dir>
+<title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Studios[/COLOR]==--[/COLOR][/B][/I</title>
+<meta>
+<summary>One Click Play section of cartoon tv series based on the animation studio that produced them</summary>
+</meta>
+<B98>serieslist/videos_categories/studios</B98>
+</dir> 
 <dir>
 <title>[I][B][COLORsnow]--==[COLORyellow]Guitar Lessons[/COLOR]==--[/COLOR][/B][/I]</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/guitar.xml</link>
