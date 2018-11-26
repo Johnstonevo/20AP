@@ -58,7 +58,7 @@
 
 <dir>
   <title>Irish Movies</title>
-  <tmdb>lists/47286</tmdb
+  <tmdb>lists/47286</tmdb>
   <thumbnail>https://20ap.000webhostapp.com/images/irish.png</thumbnail>
   <fanart>https://i.pinimg.com/originals/39/36/65/393665aeb5ec75470644c617f4ab5568.jpg</fanart>
   <content>boxset</content>
@@ -114,6 +114,10 @@
   <fanart></fanart>
 </dir>
 
+<dir>
+    <title>BNW Movies</title>
+    <bnw>movies</bnw>
+</dir>
 
 <dir>
   <title>Search the TMDB</title>

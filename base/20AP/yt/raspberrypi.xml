@@ -108,3 +108,14 @@ Join master hacker, engineer, and tech hobbyist Ben Heck as he tackles new and f
 <summary>At Data Science Dojo, we believe data science is for everyone. Our in-person data science training has been attended by more than 3,500+ from over 600 companies globally. This channel contains tutorials, community talks, and courses on data science and data engineering.
 </summary>
 </plugin>
+
+
+<plugin>
+  <title>CodeWithOhid</title>
+  <link>plugin://plugin.video.youtube/channel/CodeWithOhid/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAx-hdU1enTNWouovDr5vk-JC-gIfLiVq-gBgg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>It's time to take your skills to another level. 
+
+What topics I am covering in this channel:
+✔️ Python   ✔️ C++   ✔️ Bootstrap   ✔️ Wireframe Design   ✔️ More Upcoming</summary>
+</plugin>

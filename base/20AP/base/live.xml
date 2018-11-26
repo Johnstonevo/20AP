@@ -1,12 +1,11 @@
 
 
-    <dir>
-<name>Live TV (ONLINE)</name>
-<link>plugin://script.module.dslive</link>
-<thumbnail>special://home/addons/script.module.dslive/icon.png</thumbnail>
+    <item>
+<name>Live TV</name>
+<swift>allthespice</swift>
 <fanart></fanart>
 <summary>Live TV</summary>
-</dir>
+</item>
 
 
     <dir>

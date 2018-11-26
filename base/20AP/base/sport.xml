@@ -1,13 +1,6 @@
 ###########################################################################################################
 
 ###########################################################################################################
-  <plugin>
-     <title>Live Sport Channels</title>
-     <link>plugin://script.module.dslive/list_channels/36</link>
-     <thumbnail></thumbnail>
-<fanart></fanart>
-</plugin>
-
 
 <dir>
 <title>Live Sports Streams</title>

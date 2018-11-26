@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugin.video.sparkle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/plugin.video.youtube" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/script.module.lambdascrapers" vcs="Git" />
+  </component>
+</project>
