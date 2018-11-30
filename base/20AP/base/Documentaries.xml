@@ -11,6 +11,15 @@
 </dir>
 
 <dir>
+<title>Nature  Documentaries via TMDB</title>
+<tmdb>list/97013</tmdb>
+<thumbnail></thumbnail>
+<fanart></fanart>
+
+</dir>
+
+
+<dir>
 <title>Music  Documentaries via TMDB</title>
 <tmdb>list/81922</tmdb>
 <thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
