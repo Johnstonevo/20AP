@@ -5,5 +5,6 @@
     <mapping directory="$PROJECT_DIR$/plugin.video.sparkle" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/plugin.video.youtube" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/script.module.lambdascrapers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tools_and_parsers" vcs="Git" />
   </component>
 </project>
