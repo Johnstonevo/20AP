@@ -34,6 +34,24 @@
       <arconaitv2>shows</arconaitv2>
     </dir>
     
+    <dir>
+    <title>United Kingdom Networks</title>
+    <tvmaze>country/United Kingdom/1</tvmaze>
+    </dir>
+
+    <dir>
+    <title>Ireland Networks</title>
+    <tvmaze>country/Ireland/1</tvmaze>
+    </dir>
+
+
+    <dir>
+    <title>Unites States Networks</title>
+    <tvmaze>country/United States/1</tvmaze>
+    </dir>
+
+
+
 
 <dir>
   <title>TMDB Top Rated TV Shows</title>

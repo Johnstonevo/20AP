@@ -22,12 +22,6 @@
 <fanart></fanart>
 </dir>
 
-<item>
-<title>Pair With Sites(Test)</title>
-<pairwith>pairlist</pairwith>
-</item>
-
-
 <dir>
 <title>Youtube</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml</link>

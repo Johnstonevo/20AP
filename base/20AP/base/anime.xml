@@ -73,3 +73,20 @@ As for other works by Yoshiura: I'm not really a fan of the other short ones, Pa
 	<content>boxset</content>
 	<summary></summary>
 </dir>
+
+<dir>
+            <title>New Dubbed Anime</title>
+            <toonmania>category/GetNewDubbed</toonmania>
+        </dir>
+
+
+        <dir>
+            <title>All Dubbed Anime</title>
+            <toonmania>category/GetAllDubbed</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Dubbed Anime</title>
+            <toonmania>category/GetPopularDubbed</toonmania>
+        </dir>
+
