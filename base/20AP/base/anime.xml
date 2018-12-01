@@ -2,6 +2,21 @@
 
 
 ##########################################################################################
+<dir>
+            <title>New Dubbed Anime</title>
+            <toonmania>category/GetNewDubbed</toonmania>
+        </dir>
+
+
+        <dir>
+            <title>All Dubbed Anime</title>
+            <toonmania>category/GetAllDubbed</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Dubbed Anime</title>
+            <toonmania>category/GetPopularDubbed</toonmania>
+        </dir>
 
 
 <dir>
@@ -74,19 +89,4 @@ As for other works by Yoshiura: I'm not really a fan of the other short ones, Pa
 	<summary></summary>
 </dir>
 
-<dir>
-            <title>New Dubbed Anime</title>
-            <toonmania>category/GetNewDubbed</toonmania>
-        </dir>
-
-
-        <dir>
-            <title>All Dubbed Anime</title>
-            <toonmania>category/GetAllDubbed</toonmania>
-        </dir>
-
-        <dir>
-            <title>Popular Dubbed Anime</title>
-            <toonmania>category/GetPopularDubbed</toonmania>
-        </dir>
 
