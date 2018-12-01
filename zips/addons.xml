@@ -142,7 +142,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.acesports" name="acesports" version="2018.09.29.1" provider-name="iwannabelikemike">
+<addon id="script.module.acesports" name="acesports" version="2018.12.01" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common" />
@@ -232,30 +232,6 @@
 		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-<addon id="plugin.video.mobdro" name="Mobdro" version="1.2" provider-name="Anonimous">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.livestreamer" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.routing" />
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_gb">Mobdro</summary>
-    <description lang="en_gb">Mobdro</description>
-    <disclaimer lang="en_gb"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license></license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
 </addon>
 
 <addon id="plugin.video.youtube" name="YouTube" version="6.2.3~beta3" provider-name="bromix">
