@@ -22,7 +22,7 @@
 
 
 <dir>
-<name>Sport</name>
+<title>Sport</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
 <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
@@ -31,7 +31,7 @@
 
 
 <dir>
-<name>Man Shed</name>
+<title>Man Shed</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
 <thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
 <fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
@@ -56,7 +56,7 @@
 
 
 <plugin>
-  <title>Iain's Playlist</title>
+  <title>Iain's Music Playlist</title>
   <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZNSZ9N_KlT4-ffYK0NYKH0p/</link>
   <thumbnail></thumbnail>
   <summary></summary>
@@ -73,7 +73,7 @@
 
 
 <dir>
-  <name>Iain's Tutorials</name>
+  <title>Iain's Youtube Tutorials</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/Tutorials.xml</link>
   <fanart></fanart>
   <summary>Stuff for Iain</summary>
@@ -81,11 +81,12 @@
 
 
 <dir>
-  <name>Adult</name>
+  <title>Adult</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/p.xml</link>
+  		<password>get/cG9ybg==</password>
   <fanart></fanart>
   <summary>Stuff for Iain</summary>
-		<password>get/cG9ybg==</password>
+
 		<thumbnail></thumbnail>
 	</dir>
 
