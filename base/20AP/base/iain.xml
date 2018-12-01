@@ -21,13 +21,6 @@
 </dir>
 
 
-<dir>
-<title>Sport</title>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
-<thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
-<fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
-<summary>Motorsports, Rugby and Darts</summary>
-</dir>
 
 
 <dir>
@@ -82,19 +75,10 @@
 
 <dir>
   <title>Adult</title>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/p.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/p.xml</link>
+  <password>get/cG9ybg==</password>
   <fanart></fanart>
   <summary>Stuff for Iain</summary>
 
 		<thumbnail></thumbnail>
 	</dir>
-
-        <item>
-            <title>Pair With Sites</title>
-            <pairwith>pairlist</pairwith>
-        </item>
-
-        <item>
-            <title>Pair Openload</title>
-            <pairwith>openload</pairwith>
-        </item>

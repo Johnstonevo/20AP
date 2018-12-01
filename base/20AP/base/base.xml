@@ -22,6 +22,11 @@
 <fanart></fanart>
 </dir>
 
+<item>
+<title>Pair With Sites(Test)</title>
+<pairwith>pairlist</pairwith>
+</item>
+
 
 <dir>
 <name>Youtube</name>
@@ -61,7 +66,7 @@
 
 <dir>
 <title>Anime</title>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/lanime.xml</link>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/anime.xml</link>
 <thumbnail>https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png</thumbnail>
 <fanart>http://www.powerpointhintergrund.com/uploads/2017/05/retro-stripes-animation-3-background-video-youtube-25.jpeg</fanart>
 <summary>Japanese Cartoons, some a bit random</summary>
