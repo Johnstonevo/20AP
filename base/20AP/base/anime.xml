@@ -2,11 +2,11 @@
 
 
 ##########################################################################################
-<dir>
+
+        <dir>
             <title>New Dubbed Anime</title>
             <toonmania>category/GetNewDubbed</toonmania>
         </dir>
-
 
         <dir>
             <title>All Dubbed Anime</title>
@@ -92,7 +92,7 @@ As for other works by Yoshiura: I'm not really a fan of the other short ones, Pa
 
 
 <item>
-<title>[COLORoreange][B]Watchcartoononline.com[/B][/COLOR]</title>
+<title>[COLORorange][B]Watchcartoononline.com[/B][/COLOR]</title>
 <link>//</link>
 </item>
 
@@ -139,4 +139,39 @@ As for other works by Yoshiura: I'm not really a fan of the other short ones, Pa
         <dir>
             <title>Search Site</title>
             <wctoon>wcsearch</wctoon>
+        </dir>
+
+<item>
+<title>[COLORorange][B]Toonmania[/B][/COLOR]</title>
+<link>//</link>
+</item>
+
+<dir>
+            <title>New Movies</title>
+            <toonmania>category/GetNewMovies</toonmania>
+        </dir>
+
+        <dir>
+            <title>All Movies</title>
+            <toonmania>category/GetAllMovies</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Movies</title>
+            <toonmania>category/GetPopularMovies</toonmania>
+        </dir>
+
+        <dir>
+            <title>New Cartoons</title>
+            <toonmania>category/GetNewCartoon</toonmania>
+        </dir>
+
+        <dir>
+            <title>All Cartoons</title>
+            <toonmania>category/GetAllCartoon</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Cartoons</title>
+            <toonmania>category/GetPopularCartoon</toonmania>
         </dir>
