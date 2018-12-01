@@ -18,7 +18,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.20ap" name="20ap" version="18.11.26.1" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.01" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -258,7 +258,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.2.3~beta1" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.2.3~beta3" provider-name="bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -278,8 +278,12 @@
 [add] 'Play audio only' context menu item
 [fix] generated dash with no supported video streams(audio only) being played when Audio only not enabled
 [fix] potential RuntimeError when retrieving total time of playing content if player is stopped immediately
+[lang] nl_nl strings |contrib: Markman-B|
 [lang] pl_pl strings |contrib: xulek|
+[lang] pl_pl strings |contrib: drrak|
 [lang] sk_sk strings |contrib: jose1711|
+[lang] el_gr strings |contrib: twilight0|
+[lang] es_es strings |contrib: roliverosc|
 
 6.2.2
 [fix] signature function not found on some videos

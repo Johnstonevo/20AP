@@ -41,13 +41,7 @@
 
 </dir>
 
-<dir>
-<title>Adult Themed  Documentaries via TMDB</title>
-<tmdb>list/81925</tmdb>
-<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
-<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
 
-</dir>
 <dir>
 <title>All Documentaries via TMDB</title>
 <tmdb>genre/movies/99</tmdb>

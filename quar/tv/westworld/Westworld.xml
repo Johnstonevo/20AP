@@ -1,0 +1,33 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>http://thetvdb.com/banners/fanart/original/296762-1.jpg</fanart>
+##########################################################################################
+
+<dir>
+<title>Westworld Season 1</title>
+<meta>
+<content>season</content>
+<imdb>tt0475784</imdb>
+<tvdb>296762</tvdb>
+<tvshowtitle>Westworld</tvshowtitle>
+<year>2016</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/westworld/Westworld%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/296762-1.jpg</thumbnail>
+</dir>
+
+<dir>
+<title>Westworld Season 2< /title>
+<meta>
+<content>season</content>
+<imdb>tt0475784</imdb>
+<tvdb>296762</tvdb>
+<tvshowtitle>Westworld</tvshowtitle>
+<year>2016</year>
+<season>2</season>
+</meta>
+<link></link>
+<thumbnail></thumbnail>
+</dir>

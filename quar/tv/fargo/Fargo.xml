@@ -1,0 +1,47 @@
+##########################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/e890UetS6XH7kqltlZ8VU6qDaHU.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/269613-20.jpg</fanart>
+##########################################################################################
+
+<dir>
+	<name>Fargo Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2802850</imdb>
+		<tvdb>269613</tvdb>
+		<tvshowtitle>Fargo</tvshowtitle>
+		<year>2014</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/fargo/Fargo1.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/269613-1-8.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Fargo Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2802850</imdb>
+		<tvdb>269613</tvdb>
+		<tvshowtitle>Fargo</tvshowtitle>
+		<year>2014</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/fargo/Fargo2.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/269613-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Fargo Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt2802850</imdb>
+		<tvdb>269613</tvdb>
+		<tvshowtitle>Fargo</tvshowtitle>
+		<year>2014</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/fargo/Fargo3.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/269613-3.jpg</thumbnail>
+</dir>

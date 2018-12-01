@@ -1,0 +1,101 @@
+##########################################################################################
+
+<cache>10800</cache>
+<thumbnail>http://thetvdb.com/banners/seasons/258107-1-4.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/258107-14.jpg</fanart>
+##########################################################################################
+
+<item>
+	<title>The Fall S01E01 - Episode 1</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt2294189</imdb>
+		<tvdb>258107</tvdb>
+		<tvshowtitle>The Fall</tvshowtitle>
+		<year>2013</year>
+		<title>Episode 1</title>
+		<premiered>2013-05-12</premiered>
+		<season>1</season>
+		<episode>1</episode>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>The Fall S01E02 - Episode 2</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt2294189</imdb>
+		<tvdb>258107</tvdb>
+		<tvshowtitle>The Fall</tvshowtitle>
+		<year>2013</year>
+		<title>Episode 2</title>
+		<premiered>2013-05-19</premiered>
+		<season>1</season>
+		<episode>2</episode>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>The Fall S01E03 - Episode 3</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt2294189</imdb>
+		<tvdb>258107</tvdb>
+		<tvshowtitle>The Fall</tvshowtitle>
+		<year>2013</year>
+		<title>Episode 3</title>
+		<premiered>2013-05-26</premiered>
+		<season>1</season>
+		<episode>3</episode>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>The Fall S01E04 - Episode 4</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt2294189</imdb>
+		<tvdb>258107</tvdb>
+		<tvshowtitle>The Fall</tvshowtitle>
+		<year>2013</year>
+		<title>Episode 4</title>
+		<premiered>2013-06-02</premiered>
+		<season>1</season>
+		<episode>4</episode>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>
+
+<item>
+	<title>The Fall S01E05 - Episode 5</title>
+	<meta>
+		<content>episode</content>
+		<imdb>tt2294189</imdb>
+		<tvdb>258107</tvdb>
+		<tvshowtitle>The Fall</tvshowtitle>
+		<year>2013</year>
+		<title>Episode 5</title>
+		<premiered>2013-06-09</premiered>
+		<season>1</season>
+		<episode>5</episode>
+		</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+</item>

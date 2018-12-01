@@ -1,0 +1,420 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+	<title>The Curse of Frankenstein (1957)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/f4dwXdeZFHzLKMNgKGe46RWsMmM.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/jBidAzvvwYWQMm5dxZwA49vErns.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Curse of Frankenstein</title>
+		<year>1957</year>
+		<imdb>tt0050280</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Horror of Dracula (1958)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/1IhbrL6kCgiIkx84lvDrOsRtamp.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/3offQjF5w1Tw8nllbDrth0Hq9xL.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Horror of Dracula</title>
+		<year>1958</year>
+		<imdb>tt0051554</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Mummy (1959)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/z9icJL7izlrLZSZRuYaOWag91xK.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/x52SBzaPwCQAibMQM7t1LkK0IHt.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Mummy</title>
+		<year>1959</year>
+		<imdb>tt0053085</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Brides of Dracula (1960)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/lhclDbG6cq0Vkoj97Zk6B8V4ehO.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/cZPHXqohPniUr368obENjimYlSQ.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Brides of Dracula</title>
+		<year>1960</year>
+		<imdb>tt0053677</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Two Faces of Dr. Jekyll (1960)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/sPhV0P8L1stGYLWtnQOAYYv031q.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xeIX3Km7cUh7Juxihh49JNPdtqO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Two Faces of Dr. Jekyll</title>
+		<year>1960</year>
+		<imdb>tt0054416</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Curse of the Werewolf (1961)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/bEooe0py5M8tvfIrjRZPmxzNsHy.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/cgnhuCuTrNJq0Xzet2flev9bG5C.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Curse of the Werewolf</title>
+		<year>1961</year>
+		<imdb>tt0054777</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Phantom Of The Opera (1962)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/itfhSxbIgsan85iY1NrquIx7qxo.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/lmpOejFsxPvXaB6r9v2tel2BcUR.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Phantom Of The Opera</title>
+		<year>1962</year>
+		<imdb>tt0056347</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Kiss Of The Vampire (1963)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/u7Yau1XKj4S9KcahdeUI5W7Q1qp.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/gaf95BqmMdZ7oK3fX3O7MUPIaO6.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Kiss Of The Vampire</title>
+		<year>1963</year>
+		<imdb>tt0057226</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Gorgon (1964)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/yk0hJB3hy3o6cAzv5tjcPoKQd9p.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xaJu0gAvuKgVOy3sD5wmuABUKvI.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Gorgon</title>
+		<year>1964</year>
+		<imdb>tt0058155</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Die! Die! My Darling! (1965)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/iRGBXG9PSc9A6yGhIqoOOq8r5dN.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/k2Q0ma55NK8nshooakwnIHZFSPn.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Die! Die! My Darling!</title>
+		<year>1965</year>
+		<imdb>tt0059106</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Rasputin The Mad Monk (1966)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/alyP6a0RlSvhhICmCx1gY8O9qNu.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/iy9rCSyecZ43nQvafcg43B4hGRz.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Rasputin The Mad Monk</title>
+		<year>1966</year>
+		<imdb>tt0059635</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Nanny (1965)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/yF4uBP1mEcnyVTxxBHLcKrZzra9.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/aqEb9Hrq4LANR82P9jkHqEeNLIF.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Nanny</title>
+		<year>1965</year>
+		<imdb>tt0059496</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>One Million Years B.C. (1966)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/bcXo4fWv3jquSnu0VI8PA2cf1xe.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/9DBa6qJgR7ACvXHK1C8HA3WsSH1.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>One Million Years B.C.</title>
+		<year>1966</year>
+		<imdb>tt0060782</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Plague Of The Zombies (1966)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/18MLLxkJHuCBLTbsQcDvMKwb4Zy.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/A9xL4nDWK5fvCPrBc7AHzc2PrjY.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Plague Of The Zombies</title>
+		<year>1966</year>
+		<imdb>tt0060841</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Witches (1966)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/32lFZxySBycJunvnCquXkPQasbL.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/bw0E7YWeMeJT1R3pV9fWG2a2Op5.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Witches</title>
+		<year>1966</year>
+		<imdb>tt0060307</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Frankenstein Must Be Destroyed (1969)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/cbz9iYGuMXOxKHlonnKD8vqxa96.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/nA8qapURhkTI2Ff3XB5fpXhNri8.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Frankenstein Must Be Destroyed</title>
+		<year>1969</year>
+		<imdb>tt0065738</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Scars of Dracula (1970)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/5daqiTuAgXfUzJruIhs3znlerec.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/n8QxwRDCMmxpf4lFlS9V0QEj65b.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Scars of Dracula</title>
+		<year>1970</year>
+		<imdb>tt0067713</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Vampire Lovers (1970)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/3f1JMXD0fzyqAHoZj5d9znYEAAl.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/bV3ZxiXeyzEY0PaDqngiqMU5UUt.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Vampire Lovers</title>
+		<year>1970</year>
+		<imdb>tt0066518</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Hands of the Ripper (1971)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/rpJcPigy81ILjyh1clmqtRSKgZg.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/6jJ2DDWfIEcr4BgYYhHOeYHf14o.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Hands of the Ripper</title>
+		<year>1971</year>
+		<imdb>tt0067176</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Frankenstein and the Monster from Hell (1974)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/5unJR4io2s7P6EVR0VoHsEy0zlO.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/vtlQRFlfDibyw9AfKLz8fmuV6s6.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Frankenstein and the Monster from Hell</title>
+		<year>1974</year>
+		<imdb>tt0071519</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>To the Devil a Daughter (1976)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/e69LEEUHwrAbzpLdS81j00avHbM.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/o9855EeOi55su3fEpvZepGoyQFO.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>To the Devil a Daughter</title>
+		<year>1976</year>
+		<imdb>tt0075334</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Hound Of The Baskervilles (1983)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/lTQMV365HigHDOf39aO3jkPYKda.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/r6M1SioIFcX8KrKQlMNLE7bhlBi.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Hound Of The Baskervilles</title>
+		<year>1983</year>
+		<imdb>tt0085692</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Let Me In (2010)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/90Y8RVSlOnWsG8PO6evI4ycXItg.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/qcnsvMdFKiMyf4gJhbi5iWpNYD6.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Let Me In</title>
+		<year>2010</year>
+		<imdb>tt1228987</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Resident (2011)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/2jO9rxa6XbpIZVDcVMm7e6TQ7Kd.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xl0so1jYGfkUm10cN3FsD8SdUEk.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Resident</title>
+		<year>2011</year>
+		<imdb>tt1334102</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Woman in Black (2012)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/sJ1jGUTMYijpQ4TryTvnC5SkQ4N.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xkXB31hBfU6A5bZlaGjNLvdfiYc.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Woman in Black</title>
+		<year>2012</year>
+		<imdb>tt1596365</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Woman in Black 2 Angel of Death (2014)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/kzWRtyMtazWA22LJXA64KKZ3slY.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/zZAJke7HMmQfc52L1AzvQkmMR3e.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Woman in Black 2 Angel of Death</title>
+		<year>2014</year>
+		<imdb>tt2339741</imdb>
+	</meta>
+</item>

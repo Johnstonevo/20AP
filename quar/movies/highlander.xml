@@ -1,0 +1,155 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+        <title>Highlander</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0091203/</imdb>
+                <title>Highlander</title>
+                <year>1986</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/6l4t1vWAFMuAiOpDT0mDWlrr5Mp.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/w1000_and_h563_bestv2/gY5NPUGGJJdaGPlEM6f2pfHNtit.jpg</fanart>
+</item>
+
+<item>
+        <title>Highlander 2 the Quickening</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0102034</imdb>
+                <title>Highlander 2 The Quickening</title>
+                <year></year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://image.tmdb.org/t/p/original/dMw4nlmkB1bHw8gBiOWfw044wfl.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://image.tmdb.org/t/p/original/7fvzzCQIQ7JrNsu5iszFXJw8IAV.jpg</fanart>
+</item>
+
+<item>
+        <title>Highlander: The Final Dimension</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0110027</imdb>
+                <title>Highlander: The Final Dimension</title>
+                <year>1994</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://image.tmdb.org/t/p/original/8ZeckjmtObR3QPjzSm4X656vFS2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://image.tmdb.org/t/p/original/ivSv7QOs9SVvwkM1nPCEdslqor4.jpg</fanart>
+</item>
+
+<item>
+        <title>Highlander: Endgame</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0144964</imdb>
+                <title>Highlander: Endgame</title>
+                <year>2000</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://image.tmdb.org/t/p/original/utUJiHnqgMP3MBoznMYUETkRxxT.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://image.tmdb.org/t/p/original/gVvvsu8IoqxzkfBGdiLwZuHDKmd.jpg</fanart>
+</item>
+
+<item>
+        <title>Highlander V: The Source</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0299981</imdb>
+                <title>Highlander</title>
+                <year>2007</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://image.tmdb.org/t/p/original/rlpEljiu8ZvjVhpuvgCqU9MvddJ.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://image.tmdb.org/t/p/original/35DjHtfZF9grTz5Mq0aXADSgwAr.jpg</fanart>
+</item>
+<item>
+        <title>Highlander: The Search For Vengeance</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0465657</imdb>
+                <title>Highlander: The Search For Vengeance</title>
+                <year>2007</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://image.tmdb.org/t/p/original/2L1jFW1S3JRgBYTCXnuU6dQE77j.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://image.tmdb.org/t/p/original/oyVJjPS9v3HWnibd2WNmvDmclEI.jpg</fanart>
+</item>
+<dir>
+        <title>Highlander The TV Series</title>
+        <meta>
+                <content>tvshow</content>
+                <imdb>tt0103442</imdb>
+                <tvdb>75160</tvdb>
+                <tvshowtitle>Highlander The TV Series</tvshowtitle>
+                <year>1992</year>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlanderseries.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/posters/75160-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/75160-10.jpg</fanart>
+</dir>
+<dir>
+        <name>Highlander The Raven</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt0144714</imdb>
+                <tvdb>75021</tvdb>
+                <tvshowtitle>Highlander The Raven</tvshowtitle>
+                <year>1998</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlanderraven.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/posters/75021-1.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/75021-1.jpg</fanart>
+</dir>
+<dir>
+        <title>Highlander: The Animated Series</title>
+        <meta>
+                <content>tvshow</content>
+                <imdb>tt0147773</imdb>
+                <tvdb>70437</tvdb>
+                <tvshowtitle>Highlander: The Animated Series</tvshowtitle>
+                <year>1994</year>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/highlander/highlandertoon.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/_cache/posters/70437-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/_cache/fanart/original/70437-1.jpg</fanart>
+</dir>

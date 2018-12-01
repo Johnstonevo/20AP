@@ -1,0 +1,19 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>http://thetvdb.com/banners/fanart/original/304219-8.jpg</fanart>
+##########################################################################################
+
+<dir>
+<title>Marvel's Luke Cage Season 1</title>
+<meta>
+<content>season</content>
+<imdb>tt3322314</imdb>
+<tvdb>304219</tvdb>
+<tvshowtitle>Marvel's Luke Cage</tvshowtitle>
+<year>2016</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/marvel/Marvels%20Luke%20Cage%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/posters/304219-2.jpg</thumbnail>
+</dir>

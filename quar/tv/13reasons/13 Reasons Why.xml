@@ -1,0 +1,21 @@
+##########################################################################################
+
+<fanart>http://thetvdb.com/banners/fanart/original/323168-3.jpg</fanart>
+<cache>10800</cache>
+<thumbnail>https://www.thetvdb.com/banners/posters/323168-1.jpg</thumbnail>
+<fanart>https://www.thetvdb.com/banners/fanart/original/323168-7.jpg</fanart>
+##########################################################################################
+
+
+<dir>
+	<name>13 Reasons Why Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1837492</imdb>
+		<tvdb>323168</tvdb>
+		<tvshowtitle>13 Reasons Why</tvshowtitle>
+		<year>2017</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/13reasons/13%20Reasons%20Why%201.xml</link>
+</dir>

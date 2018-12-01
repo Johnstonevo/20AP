@@ -1,0 +1,36 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+
+
+<item>
+	<title>Bad Boys (1995)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/1dKsSfpAqWSc5UJT9VIqK5JVFI5.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/2jNSXfITbGYxxWLJOLTh9eAx3y8.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Bad Boys</title>
+		<year>1995</year>
+		<imdb>tt0112442</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Bad Boys II (2003)</title>
+	<link>
+					<sublink>search</sublink>
+					<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/680X9apSqmAcebLg8evnnUeQNeI.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/5xQVApmdUbBlCi1QzS8NwbCF0Ne.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Bad Boys II</title>
+		<year>2003</year>
+		<imdb>tt0172156</imdb>
+	</meta>
+</item>

@@ -1,0 +1,118 @@
+################################################################################
+<cache>10800</cache>
+<fanart>https://www.thetvdb.com/banners/fanart/original/93951-2.jpg</fanart>
+<thumbnail>https://www.thetvdb.com/banners/seasons/93951-1-2.jpg</thumbnail>
+################################################################################
+
+
+<item>
+  <title>Out of Africa</title>
+  <meta>
+    <content>episode</content>
+    <imdb>tt1397256</imdb>
+    <tvdb>93951</tvdb>
+    <tvshowtitle>The Incredible Human Journey</tvshowtitle>
+    <year>2009</year>
+    <title>Out of Africa</title>
+    <premiered>2009-05-10</premiered>
+    <season>1</season>
+    <episode>1</episode>
+  </meta>
+  <link>
+    <sublink>plugin://plugin.video.youtube/play/dTdcASxv17A</sublink>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Asia</title>
+  <meta>
+    <content>episode</content>
+    <imdb>tt1397256</imdb>
+    <tvdb>93951</tvdb>
+    <tvshowtitle>The Incredible Human Journey</tvshowtitle>
+    <year>2009</year>
+    <title>Asia</title>
+    <premiered>2009-05-17</premiered>
+    <season>1</season>
+    <episode>2</episode>
+  </meta>
+  <link>
+    <sublink>plugin://plugin.video.youtube/play/0nDvyDDl25M</sublink>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Europe</title>
+  <meta>
+    <content>episode</content>
+    <imdb>tt1397256</imdb>
+    <tvdb>93951</tvdb>
+    <tvshowtitle>The Incredible Human Journey</tvshowtitle>
+    <year>2009</year>
+    <title>Europe</title>
+    <premiered>2009-05-24</premiered>
+    <season>1</season>
+    <episode>3</episode>
+  </meta>
+  <link>
+    <sublink>plugin://plugin.video.youtube/play/94VQEhxOBSY</sublink>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Australia</title>
+  <meta>
+    <content>episode</content>
+    <imdb>tt1397256</imdb>
+    <tvdb>93951</tvdb>
+    <tvshowtitle>The Incredible Human Journey</tvshowtitle>
+    <year>2009</year>
+    <title>Australia</title>
+    <premiered>2009-05-31</premiered>
+    <season>1</season>
+    <episode>4</episode>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>The Americas</title>
+  <meta>
+    <content>episode</content>
+    <imdb>tt1397256</imdb>
+    <tvdb>93951</tvdb>
+    <tvshowtitle>The Incredible Human Journey</tvshowtitle>
+    <year>2009</year>
+    <title>The Americas</title>
+    <premiered>2009-06-14</premiered>
+    <season>1</season>
+    <episode>5</episode>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>

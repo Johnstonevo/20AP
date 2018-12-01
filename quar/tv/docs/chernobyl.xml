@@ -1,0 +1,56 @@
+################################################################################
+<cache>10800</cache>
+
+<thumbnail>https://s3.amazonaws.com/user-media.venngage.com/302494-d720c8474e9496bebe2de094543194a4.png</thumbnail>
+<fanart>https://i.pinimg.com/originals/87/71/30/877130700da5c49a16a73cc770dd04d9.jpg</fanart>
+###################################################################################
+
+
+<item>
+  <title>The Babushkas of Chernobyl</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3299704</imdb>
+    <title>The Babushkas of Chernobyl</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BYmIzOTY4Y2UtYWFlZC00YzNkLTlmMzAtMTM3ZGU3NTcyMGRkL2ltYWdlXkEyXkFqcGdeQXVyNjQwMjYzNjY@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Chernobyl's Cafe</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6969550</imdb>
+    <title>Chernobyl's Cafe</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMmE3ZjI2ZTMtNjIzNS00ZTZhLWFhY2UtMDA4YjViYTgzYTYyXkEyXkFqcGdeQXVyNTM3MDMyMDQ@._V1_UY268_CR9,0,182,268_AL_.jpg></thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Life After: Chernobyl</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5653604</imdb>
+    <title>Life After: Chernobyl</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BODk2YjYyZjMtZDcxYS00ZjdmLTgyOWEtMzk1OTc1YjQ0MjU1XkEyXkFqcGdeQXVyNjkxMTc0NjY@._V1_UY268_CR182,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>

@@ -1,0 +1,592 @@
+################################################################################
+<cache>10800</cache>
+################################################################################
+
+<item>
+  <title>2001: A Space Odyssey</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0062622</imdb>
+    <title>2001: A Space Odyssey</title>
+    <year>1968</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD Only)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/90T7b2LIrL07ndYQBmSm09yqVEH.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/2sStySEMtDgfi5kbr7xW0NZxyAU.jpg</fanart>
+</item>
+
+
+<item>
+  <title>A Clockwork Orange</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0066921</imdb>
+    <title>A Clockwork Orange</title>
+    <year>1972</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD Only)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280/kgAi87gyx6b4oGJYSC36tVkJyJu.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Apocalypse Now</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0078788</imdb>
+    <title>Apocalypse Now</title>
+    <year>1979</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280/jcvJ2xcVWU9Wh0hZAxcs103s8nN.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/k91Dag8AZbhjIJqrtf7F1bQnGPg.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Big Trouble in Little China</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0090728</imdb>
+    <title>Big Trouble in Little China</title>
+    <year>1986</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/yorjHTeWauQd81QeWoqMAHXAcCj.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/fE78fvLAlOiwQYksd11Q511tAXr.jpg</fanart>
+</item>
+
+<item>
+  <title>Brubaker</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0080474</imdb>
+    <title>Brubaker</title>
+    <year>1980</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD Only)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BYzViZjU1ZjUtYjVmMi00ZWE2LWFiNGItOGJkOTliZmFhYWU4XkEyXkFqcGdeQXVyMjI4MjA5MzA@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Bullitt</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0062765</imdb>
+    <title>bullit</title>
+    <year>1968</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/oyhnoFu2oKQfAIdu9YU8I8Ne0pX.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/5N1i26OWt2pkXcYXql8Z0KZ6BXH.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Burglar</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0092710</imdb>
+    <title>Burglar</title>
+    <year>1987</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/r3XDmnL8TE3n7kAcSLGA2stgjEG.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/gjYRZ7UAUlJDCuOwiB4BF7fBVWK.jpg</fanart>
+</item>
+
+<item>
+  <title>Cobra</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0090859</imdb>
+    <title>Cobra</title>
+    <year>1986</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/jnbvydGrfPeSlYnIQ2XI3z3IDmh.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/tonRIZmCmjYNVaM6hRY4xlhEcIH.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>Convoy</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0077369</imdb>
+    <title>Convoy</title>
+    <year>1978</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/zpCy9R9tjD5sawsBk5TaXbFJhJz.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/3ngGXCx43Si2pEG22zxFr9HVkn1.jpg</fanart>
+</item>
+
+<item>
+  <title>The Crying Game</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0104036</imdb>
+    <title>The Crying Game</title>
+    <year>1992</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/9Qqk3svM0I9QuabOPDNrJZdv3XJ.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/s7pyePSPvAU3G1GjyGY3qsVmeOr.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Dances with Wolves</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0099348</imdb>
+    <title>Dances with Wolves</title>
+    <year>1990</year>
+    <premiered>1990-09-11</premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/k7tCNhl2gSUePt51ggFMiN5P8mj.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/8dmx66ee71JaaUziwc2get4NwP6.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>Easy Rider</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0064276</imdb>
+    <title>Easy Rider</title>
+    <year>1969</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/e3jHM20jbKZbXYjRwmfQOJ0VnzP.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/7HVnz5THbqJZKmAuRvF9vDNaLcK.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>Excalibur (1981)</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0082348</imdb>
+    <title>Excalibur (1981)</title>
+    <year>1981</year>
+  </meta>
+  <link>
+
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD Only)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/xpQ9taNNcgBEXrCawmqoRt3Jctc.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/5YELVKk9htZZPyiWkTrNhnI1Nb3.jpg</fanart>
+</item>
+
+<item>
+  <title>Fortress</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0106950</imdb>
+    <title>Fortress</title>
+    <year>1992</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/nzLFgdPTCmkDXZGFuTsgKGG6oo0.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/csGyWqK4dTAtSPpreU26TzoY9ua.jpg</fanart>
+</item>
+
+<item>
+  <title>Full Metal Jacket</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0093058</imdb>
+    <title>Full Metal Jacket</title>
+    <year>1987</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNzc2ZThkOGItZGY5YS00MDYwLTkyOTAtNDRmZWIwMGRhYTc0L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/nfm6JCKUaM6dT0mATmShLY6cpmc.jpg</fanart>
+</item>
+
+<item>
+  <title>Good Morning, Vietnam</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0093105</imdb>
+    <title>Good Morning, Vietnam</title>
+    <year>1987</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/aZjDSei6MXMXUCWriydI5kRsWkV.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/5HdzBJBdvaqpPHjbH3qcSqHPJ0S.jpg</fanart>
+</item>
+
+<item>
+  <title>Heathers</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0097493</imdb>
+    <title>Heathers</title>
+    <year>1988</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/38DHopfWHrWqYjphcBeAxOomled.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/5pLaYZGbweHYULiNiRehPxYuUnn.jpg</fanart>
+</item>
+
+<item>
+  <title>The Heavenly Kid </title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0089265</imdb>
+    <title>The Heavenly Kid </title>
+    <year>1985</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/w1280/yn4ri4OJI29M6wvn2ziXhHd8EuX.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/t6j5cQUjla2ehHD1zsTPM7WEYCK.jpg</fanart>
+</item>
+
+
+<item>
+  <title>The Karen Carpenter Story</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0097648</imdb>
+    <title>The Karen Carpenter Story</title>
+    <year>1989</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/cTLfyrsC9XD9TuVTctYg8eTTFss.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/9C3pcXIy532y328UT1REPftMOtF.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>Labyrinth</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0091369</imdb>
+    <title>Labyrinth</title>
+    <year>1986</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/lt7G8X1E8LUMfh6lPtnoZ4QYsKR.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/YgLdQEPrQ5Sip26pfmWd7wm6WK.jpg</fanart>
+</item>
+
+<item>
+  <title>Léon</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0110413</imdb>
+    <title>Léon</title>
+    <year>1994</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/gE8S02QUOhVnAmYu4tcrBlMTujz.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/jc17zXvWBTdZ9jUz0XPnvCGJkf3.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Next Of Kin</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0097967</imdb>
+    <title>Next Of Kin</title>
+    <year>1989</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/eJ67z2szrXL6eQYlikt7yYkeBSz.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/gZLkw18tFaArrDy38kpxQwiQQ6B.jpg</fanart>
+</item>
+
+<item>
+  <title>Nuns on the Run</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0100280</imdb>
+    <title>Nuns on the Run</title>
+    <year>1990</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/jjSx4cZbxM7S6xTT34tiebpUn3n.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/tCC9AEPYR0Vcf1uFPFvPxJpaIyn.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Overboard</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0093693</imdb>
+    <title>Overboard</title>
+    <year>1987</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/uJ5AVu5Gw5Cj7vPKRz20FVBwpyM.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/kyu7WKqnwXCly03KPmo3OQY8Kjq.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Planes, Trains & Automobiles</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0093748</imdb>
+    <title>Planes, Trains & Automobiles</title>
+    <year>1987</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/9ocp6pKCauo8HiLcJcEC82VmuRk.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/w8wOF8n52L3npxj3cBYejoc2Zkj.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Platoon</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0091763</imdb>
+    <title>Platoon</title>
+    <year>1986</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/sYPOQI57JVNmjiLI3KeZ5KA8O9i.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/a9lSR1Lu7Tphl6lSLuxvKLfqWBC.jpg</fanart>
+</item>
+
+<item>
+  <title>The Pope Must Die</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0102691</imdb>
+    <title>~The Pope Must Die</title>
+    <year>1991</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/yrYFhj8eVy2wjasv4ytqWX5FABM.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/kljM96Y0xAysiJLhzVrnqXd5jNi.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Private Benjamin</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0081375</imdb>
+    <title>Private Benjamin</title>
+    <year>1980</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/prlM1orr542htKHpWEqCOngYLn6.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/oi0rU76jYRoNGR1k4iV7qRpV271.jpg</fanart>
+</item>
+
+<item>
+  <title>Pump up the Volume</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0100436</imdb>
+    <title>Pump up the Volume</title>
+    <year>1990</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/5Re4KeKhTXRdTb52R31zNisGwqc.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/lFQN3Eshiqwx9fSxxsZdZOtuAWL.jpg</fanart>
+</item>
+
+<item>
+  <title>Schindler's List</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0108052</imdb>
+    <title>Schindler's List</title>
+    <year>1993</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/yPisjyLweCl1tbgwgtzBCNCBle.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/cTNYRUTXkBgPH3wP3kmPUB5U6dA.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Spaceballs</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0094012</imdb>
+    <title>Spaceballs</title>
+    <year>1987</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/xWt9KAcToCRdJ6JH8JyZZlhkVgG.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/f7esybp2ugbFoL11OMQECpij5F4.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>The Sting</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0070735</imdb>
+    <title>The Sting</title>
+    <year>1972</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/mQaM8fDQdFWwCTFp0TZG8fChlZ5.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/qdTTCAt35taHlFeeKZwBXLuJ5z7.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Tank Girl</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0114614</imdb>
+    <title>Tank Girl</title>
+    <year>1995</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/n3QWQhb5oVJxTLNKMLmA9xC5XwB.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/57hqf5nKwogxUXpxVQIbkdmeDiX.jpg</fanart>
+</item>
+
+<item>
+  <title>Young Guns</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt0096487</imdb>
+    <title>Young Guns</title>
+    <year>1988</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/wkGbwWHIM23BkmMBm7GQHaCZan8.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/llVClV0i94ELiR9dO47fJkPwbq6.jpg</fanart>
+</item>
+
+<item>
+  <title>Young Guns II</title>
+  <meta>
+    <content>movie</content>
+    <imdb></imdb>
+    <title>Young Guns II</title>
+    <year>1990</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/nJ14tdF1nXEJjJp5A7mSxo2dNHn.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/lWq7vZn4XKg2E7nLxgzo7hDK35g.jpg</fanart>
+</item>

@@ -1,0 +1,90 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>http://thetvdb.com/banners/fanart/original/248736-18.jpg</fanart>
+##########################################################################################
+
+
+<dir>
+<name>Grimm Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt0413573</imdb>
+<tvdb>73762</tvdb>
+<tvshowtitle>Greys Anatomy</tvshowtitle>
+<year>2005</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grimm/Grimm%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/248736-1-4.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Grimm Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt0413573</imdb>
+<tvdb>73762</tvdb>
+<tvshowtitle>Greys Anatomy</tvshowtitle>
+<year>2005</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grimm/Grimm%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/248736-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Grimm Season 3</name>
+<meta>
+<content>season</content>
+<imdb>tt0413573</imdb>
+<tvdb>73762</tvdb>
+<tvshowtitle>Greys Anatomy</tvshowtitle>
+<year>2005</year>
+<season>3</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grimm/Grimm%203.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/248736-3.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Grimm Season 4</name>
+<meta>
+<content>season</content>
+<imdb>tt0413573</imdb>
+<tvdb>73762</tvdb>
+<tvshowtitle>Greys Anatomy</tvshowtitle>
+<year>2005</year>
+<season>4</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grimm/Grimm%204.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/248736-4-4.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Grimm Season 5</name>
+<meta>
+<content>season</content>
+<imdb>tt0413573</imdb>
+<tvdb>73762</tvdb>
+<tvshowtitle>Greys Anatomy</tvshowtitle>
+<year>2005</year>
+<season>5</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grimm/Grimm%205.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/248736-5-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Grimm Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt1830617</imdb>
+		<tvdb>248736</tvdb>
+		<tvshowtitle>Grimm</tvshowtitle>
+		<year>2011</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/grimm/Grimm%206.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/248736-6-3.jpg</thumbnail>
+</dir>

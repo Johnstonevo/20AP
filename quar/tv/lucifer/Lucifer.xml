@@ -1,0 +1,49 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart>https://image.tmdb.org/t/p/w780/exa1KS62Jal0xebuoYYZS4rbTKJ.jpg</fanart>
+##########################################################################################
+
+<dir>
+  <name>Lucifer Season 1</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt4052886</imdb>
+    <tvdb>295685</tvdb>
+    <tvshowtitle>Lucifer</tvshowtitle>
+    <year>2015</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/lucifer/Lucifer%201.xml</link>
+  <thumbnail>https://image.tmdb.org/t/p/w396/xk792FI99AA6tF5Y7WuOr5aMBPU.jpg</thumbnail>
+</dir>
+
+
+<dir>
+  <name>Lucifer Season 2</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt4052886</imdb>
+    <tvdb>295685</tvdb>
+    <tvshowtitle>Lucifer</tvshowtitle>
+    <year>2015</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/lucifer/Lucifer%202.xml</link>
+  <thumbnail>http://thetvdb.com/banners/seasons/295685-2.jpg</thumbnail>
+</dir>
+
+
+<dir>
+  <name>Lucifer Season 3</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt4052886</imdb>
+    <tvdb>295685</tvdb>
+    <tvshowtitle>Lucifer</tvshowtitle>
+    <year>2015</year>
+    <season>3</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/lucifer/Lucifer%203.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/295685-3.jpg</thumbnail>
+</dir>

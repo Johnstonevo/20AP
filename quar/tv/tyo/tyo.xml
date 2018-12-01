@@ -1,0 +1,35 @@
+################################################################################
+
+<fanart>https://www.thetvdb.com/banners/fanart/original/76318-2.jpg</fanart>
+################################################################################
+
+
+<dir>
+  <name>The Young Ones - Season 1</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0083505</imdb>
+    <tvdb>76318</tvdb>
+    <tvshowtitle>The Young Ones</tvshowtitle>
+    <year>1982</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/tyo/tyo1.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/3911-1.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>The Young Ones - Season 2</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0083505</imdb>
+    <tvdb>76318</tvdb>
+    <tvshowtitle>The Young Ones</tvshowtitle>
+    <year>1982</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/tyo/tyo2.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/3911-2.jpg</thumbnail>
+  <fanart></fanart>
+</dir>

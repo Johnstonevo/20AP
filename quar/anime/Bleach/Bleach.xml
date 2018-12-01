@@ -1,0 +1,64 @@
+################################################################################
+<fanart>http://www.thetvdb.com/banners/fanart/original/74796-29.jpg</fanart>
+#################################################################################
+<dir>
+<title>Bleach TV Series</title>
+<meta>
+<content>tvshow</content>
+<imdb>tt0434665</imdb>
+<tvdb>74796</tvdb>
+<tvshowtitle>Bleach</tvshowtitle>
+<year>2004</year>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/anime/Bleach/Bleach%20Seasons.xml</link>
+<thumbnail>http://www.thetvdb.com/banners/posters/74796-1.jpg</thumbnail>
+<fanart>http://www.thetvdb.com/banners/fanart/original/74796-29.jpg</fanart>
+</dir>
+
+<item>
+<title>Bleach: Memories of Nobody (2006)</title>
+<meta>
+<content>movie</content>
+<imdb>tt1105263</imdb>
+<title>Bleach: Memories of Nobody</title>
+<year>2006</year>
+</meta>
+<link>
+<sublink>search</sublink>
+<sublink>searchsd</sublink>
+</link>
+<thumbnail>https://image.tmdb.org/t/p/w396/huswiG3nBAQ5FanHkBNW3YCHpUk.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w780/yXyL2zKapheU2845TI1mdIqo7h9.jpg</fanart>
+</item>
+
+<item>
+<title>Bleach: The DiamondDust Rebellion (2007) - Subbed</title>
+<meta>
+<content>movie</content>
+<imdb>tt1148261</imdb>
+<title>Gekijô ban Bleach: The DiamondDust Rebellion - Mô hitotsu no hyôrinmaru</title>
+<year>2007</year>
+</meta>
+<link>
+<sublink>search</sublink>
+<sublink>searchsd</sublink>
+</link>
+<thumbnail>https://image.tmdb.org/t/p/w396/s63XrtexCANLqEMv3JXXy8tOgco.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w780/oDtBhyuPyPVhHlVQCFG0FWSNlL7.jpg</fanart>
+</item>
+
+<item>
+<title>Bleach the Movie: Hell Verse (2010)</title>
+<meta>
+<content>movie</content>
+<imdb>tt1785394</imdb>
+<title>Bleach the Movie: Hell Verse</title>
+<year>2010</year>
+</meta>
+<link>
+<sublink>search</sublink>
+<sublink>searchsd</sublink>
+</link>
+<thumbnail>https://image.tmdb.org/t/p/w396/nCPk9tmj9SjSvf9jCUQUQTvgVu6.jpg</thumbnail>
+<fanart>https://image.tmdb.org/t/p/w780/dBRSXRW2hmPgWR8x6IlCnIz9xoT.jpg</fanart>
+</item>

@@ -88,15 +88,6 @@
 
 
 <dir>
-<name>Man Shed</name>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
-<thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
-<fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
-<Summary>The Man Shed Cars and things</summary>
-</dir>
-
-
-<dir>
   <title>Search Trakt</title>
   <trakt>search</trakt>
 	<thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>

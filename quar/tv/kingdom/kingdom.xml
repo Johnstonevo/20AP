@@ -1,0 +1,34 @@
+################################################################################
+<fanart>https://www.thetvdb.com/banners/fanart/original/298566-4.jpg</fanart>
+################################################################################
+
+
+<dir>
+  <name>Season 1</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt4179452</imdb>
+    <tvdb>298566</tvdb>
+    <tvshowtitle>The Last Kingdom</tvshowtitle>
+    <year>2015</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/kingdom/kingdom1.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 2</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt4179452</imdb>
+    <tvdb>298566</tvdb>
+    <tvshowtitle>The Last Kingdom</tvshowtitle>
+    <year>2015</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/kingdom/kingdom2.xml</link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</dir>

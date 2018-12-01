@@ -1,0 +1,86 @@
+##########################################################################################
+<cache>10800</cache>
+##########################################################################################
+<item>
+        <title>Dirty Harry</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0066999</imdb>
+                <title>Dirty Harry</title>
+                <year>1971</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/6AlKDmfVi5cqQFprxJCf1FWihPk.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/wpr0XLoivHwygMsYNOsQ1dUs6St.jpg</fanart>
+</item>
+
+
+<item>
+        <title>Magnum Force</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0070355</imdb>
+                <title>Magnum Force</title>
+                <year>1973</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/3gqV4jpKNFqxUWug3BRD6yUzSL1.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/ybf6U0395tyW25Vi2IoGmkS1nvL.jpg</fanart>
+</item>
+
+
+<item>
+        <title>The Enforcer</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0074483</imdb>
+                <title>The Enforcer</title>
+                <year>1976</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/ib3fs2WQsPtpFUgg5JoOWoxUem0.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/tAeUxFqTZcwVGuvUJMqNUcyojGF.jpg</fanart>
+</item>
+
+
+<item>
+        <title>Sudden Impact</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0086383</imdb>
+                <title>Sudden Impact</title>
+                <year>1983</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/AvTrLgO2wQViMeu5I0toQlBVOI7.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/l3olA9wHBvjPVr79aIs4Ywwi3DC.jpg</fanart>
+</item>
+
+
+<item>
+        <title>The Dead Pool</title>
+        <meta>
+                <content>movie</content>
+                <imdb>tt0094963</imdb>
+                <title>The Dead Pool</title>
+                <year>1988</year>
+        </meta>
+        <link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+        </link>
+        <thumbnail>https://image.tmdb.org/t/p/original/cFvblhl8o6ysFNU6FHPKLaGarEu.jpg</thumbnail>
+        <fanart>https://image.tmdb.org/t/p/original/fXwj3xRSQqjRewgIEh3GJ7xK79W.jpg</fanart>
+</item>

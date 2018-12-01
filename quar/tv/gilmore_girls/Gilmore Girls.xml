@@ -1,0 +1,102 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>http://thetvdb.com/banners/fanart/original/76568-6.jpg</fanart>
+##########################################################################################
+
+<dir>
+	<name>Gilmore Girls Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25201.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-1-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gilmore Girls Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25202.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gilmore Girls Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25203.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-3-7.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gilmore Girls Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25204.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-4-7.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gilmore Girls Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25205.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-5-7.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gilmore Girls Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25206.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-6-8.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Gilmore Girls Season 7</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0238784</imdb>
+		<tvdb>76568</tvdb>
+		<tvshowtitle>Gilmore Girls</tvshowtitle>
+		<year>2000</year>
+		<season>7</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/gilmore_girls/Gilmore%2520Girls%25207.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/76568-7-7.jpg</thumbnail>
+</dir>

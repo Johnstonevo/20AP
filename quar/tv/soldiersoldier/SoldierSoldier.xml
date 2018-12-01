@@ -1,0 +1,104 @@
+##########################################################################################
+<cache>10800</cache>
+<thumbnail>http://image.tmdb.org/t/p/w500/y6pjWPZ8H4f9WxLdSvjykjBVgRx.jpg</thumbnail>
+<fanart>http://thetvdb.com/banners/fanart/original/77300-2.jpg</fanart>
+##########################################################################################
+
+
+<dir>
+	<name>Soldier Soldier Season 1</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>1</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier1.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-1.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Soldier Soldier Season 2</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>2</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier2.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-2.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Soldier Soldier Season 3</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>3</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier3.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-3.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Soldier Soldier Season 4</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>4</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier4.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-4.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Soldier Soldier Season 5</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>5</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier5.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-5.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Soldier Soldier Season 6</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>6</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier6.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-6.jpg</thumbnail>
+</dir>
+
+<dir>
+	<name>Soldier Soldier Season 7</name>
+	<meta>
+		<content>season</content>
+		<imdb>tt0106138</imdb>
+		<tvdb>77300</tvdb>
+		<tvshowtitle>Soldier Soldier</tvshowtitle>
+		<year>1990</year>
+		<season>7</season>
+	</meta>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/soldiersoldier/SoldierSoldier7.xml</link>
+	<thumbnail>http://thetvdb.com/banners/seasons/77300-7.jpg</thumbnail>
+</dir>

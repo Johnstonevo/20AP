@@ -1,0 +1,229 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+
+<item>
+	<title>Friday the 13th (1980)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/mGJlh8oMyTDhfudvs20kFpYz0Yc.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/t1Nr3LPuvpEBAQef6f8tj8sxZrE.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th</title>
+		<year>1980</year>
+		<imdb>tt0080761</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th Part 2 (1981)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/3c6uMXqFXO9G5RVdiPB76IK3FYM.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/kbOGxG70V1sjsyngOlaDm90HHBJ.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th Part 2</title>
+		<year>1981</year>
+		<imdb>tt0082418</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th Part III (1982)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/5wg2NZyIhcMbIBAahBODXHyJ54S.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/ePhSRZqYcgBVg0TvXEYX2lPIW2z.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th Part III</title>
+		<year>1982</year>
+		<imdb>tt0083972</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th: The Final Chapter (1984)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/p5wiO9KgZH78Kvo1L6dPz8uECJ9.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xMc70LDeXVI3PJOsDehb4O16f1K.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th: The Final Chapter</title>
+		<year>1984</year>
+		<imdb>tt0087298</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th: A New Beginning (1985)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/aoc6F4Oif0JskHKO1tzZOaopYbF.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/1KEbXBRupVIm0JDbHgZ23nEFEL4.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th: A New Beginning</title>
+		<year>1985</year>
+		<imdb>tt0089173</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Jason Lives: Friday the 13th Part VI (1986)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/le636yjPeWkC74nPDIZiQBH1CVt.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/lxZxbLpg4JhGptq0CejbElATU98.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Jason Lives: Friday the 13th Part VI</title>
+		<year>1986</year>
+		<imdb>tt0091080</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th Part VII: The New Blood (1988)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/mt5ijxnTC5a0sS1oPD58Gt9UT5N.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/kQ4tce2JMld4yk6NGexevH426VL.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th Part VII: The New Blood</title>
+		<year>1988</year>
+		<imdb>tt0095179</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th Part VIII: Jason Takes Manhattan (1989)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/oAZTwZDHu56IUyq5OQM3q1xX9To.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/pCTwz9ggIcfHTQrzb1xi3UQLPxb.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th Part VIII: Jason Takes Manhattan</title>
+		<year>1989</year>
+		<imdb>tt0097388</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Jason Goes to Hell: The Final Friday (1993)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/8yLdCrD1Eh6eoGTIIQ4jNBFLkUb.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/rNqayZdhu5yCckGRjMsrpbsi55Z.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Jason Goes to Hell: The Final Friday</title>
+		<year>1993</year>
+		<imdb>tt0107254</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Jason X (2001)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/zdfRa0FLVxfRwWhwitIZhjEIepI.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/oYapQoZm7dOe7rFx4rR3v0bLX7N.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Jason X</title>
+		<year>2001</year>
+		<imdb>tt0211443</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Freddy vs. Jason (2003)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/smD9JEIKuvsllgjgrGTOzzbATeN.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/pHPi34ysBhhLVM9LVKwJ0nJPFqN.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Freddy vs. Jason</title>
+		<year>2003</year>
+		<imdb>tt0329101</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday The 13th (2009)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/j23V6CsmwQTv5ObE5VMCrHifQ3h.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/m7vZl6YTFIHm917fCBgNOb9c4Sp.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday The 13th</title>
+		<year>2009</year>
+		<imdb>tt0758746</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>His Name Was Jason: 30 Years of Friday the 13th (2009)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/7FW79uthMfXwCsNsw7WFW5fqkJw.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/ySQrf6xJHAWN13xPvSsUq7cHQAW.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>His Name Was Jason: 30 Years of Friday the 13th</title>
+		<year>2009</year>
+		<imdb>tt1282052</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Friday the 13th: The Curse of Jason (2014)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTc4ODI1MzkyNF5BMl5BanBnXkFtZTgwNTY5NzM4MTE@._V1_UY268_CR0,0,182,268_AL_.jpg</thumbnail>
+	<fanart></fanart>
+	<content>movie</content>
+	<meta>
+		<title>Friday the 13th: The Curse of Jason</title>
+		<year>2014</year>
+		<imdb>tt3234036</imdb>
+	</meta>
+</item>

@@ -1,0 +1,51 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+	<title>The Lord of the Rings: The Fellowship of the Ring (2001)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/bxVxZb5O9OxCO0oRUNdCnpy9NST.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/pIUvQ9Ed35wlWhY2oU6OmwEsmzG.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Lord of the Rings: The Fellowship of the Ring</title>
+		<year>2001</year>
+		<imdb>tt0120737</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Lord of the Rings: The Two Towers (2002)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/wf3v0Pn09jnT5HSaYal7Ami3bdA.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/dG4BmM32XJmKiwopLDQmvXEhuHB.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Lord of the Rings: The Two Towers</title>
+		<year>2002</year>
+		<imdb>tt0167261</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>The Lord of the Rings: The Return of the King (2003)</title>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/uexxR7Kw1qYbZk0RYaF9Rx5ykbj.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/8BPZO0Bf8TeAy8znF43z8soK3ys.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>The Lord of the Rings: The Return of the King</title>
+		<year>2003</year>
+		<imdb>tt0167260</imdb>
+	</meta>
+</item>

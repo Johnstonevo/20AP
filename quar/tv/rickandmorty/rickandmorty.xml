@@ -1,0 +1,53 @@
+##########################################################################################
+<cache>10800</10800>
+##########################################################################################
+<dir>
+        <name>Rick And Morty</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt2861424</imdb>
+                <tvdb>275274</tvdb>
+                <tvshowtitle>Rick And Morty</tvshowtitle>
+                <year>2013</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/rickandmorty/rickandmorty1.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/275274-1-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/275274-9.jpg</fanart>
+</dir>
+
+<dir>
+        <name>Rick And Morty</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt2861424</imdb>
+                <tvdb>275274</tvdb>
+                <tvshowtitle>Rick And Morty</tvshowtitle>
+                <year>2013</year>
+                <season>2</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/rickandmorty/rickandmorty2.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/275274-2-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/275274-10.jpg</fanart>
+</dir>
+
+<dir>
+        <name>Rick And Morty</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt2861424</imdb>
+                <tvdb>275274</tvdb>
+                <tvshowtitle>Rick And Morty</tvshowtitle>
+                <year>2013</year>
+                <season>3</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/rickandmorty/rickandmorty3.xml</link>
+        <animated_thumbnail></animated_thumbnail>
+        <thumbnail>https://www.thetvdb.com/banners/seasons/275274-3-2.jpg</thumbnail>
+        <animated_fanart></animated_fanart>
+        <fanart>https://www.thetvdb.com/banners/fanart/original/275274-6.jpg</fanart>
+</dir>

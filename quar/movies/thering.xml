@@ -1,0 +1,52 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+
+<item>
+	<title>The Ring (2002)</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt0298130</imdb>
+		<title>The Ring</title>
+		<year>2002</year>
+	</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>http://image.tmdb.org/t/p/original/zHJFdhqEXZJxG653oZvOM3PmNON.jpg</thumbnail>
+	<fanart>http://image.tmdb.org/t/p/original/gRQucG6XnNgSQn863V5ho50J3hx.jpg</fanart>
+</item>
+
+<item>
+	<title>The Ring Two (2005)</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt0377109</imdb>
+		<title>The Ring Two</title>
+		<year>2005</year>
+	</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>http://image.tmdb.org/t/p/original/mYZdcd5XeZkye72oQejkLuAGI7q.jpg</thumbnail>
+	<fanart>http://image.tmdb.org/t/p/original/tidW5tNNP99fIxbG3slm5ZnjYEq.jpg</fanart>
+</item>
+
+<item>
+	<title>Rings (2017)</title>
+	<meta>
+		<content>movie</content>
+		<imdb>tt0498381</imdb>
+		<title>Rings</title>
+		<year>2017</year>
+	</meta>
+	<link>
+		<sublink>search</sublink>
+		<sublink>searchsd</sublink>
+	</link>
+	<thumbnail>http://image.tmdb.org/t/p/original/bbxtz5V0vvnTDA2qWbiiRC77Ok9.jpg</thumbnail>
+	<fanart>http://image.tmdb.org/t/p/original/a4r8xcRwTgKIUKdWtxFXyxTZLeN.jpg</fanart>
+</item>

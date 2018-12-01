@@ -1,0 +1,18 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<dir>
+        <name>1916: The Irish Rebellion</name>
+        <meta>
+                <content>season</content>
+                <imdb>tt5313984</imdb>
+                <tvdb>656010</tvdb>
+                <tvshowtitle>1916: The Irish Rebellion</tvshowtitle>
+                <year>2016</year>
+                <season>1</season>
+        </meta>
+        <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/1916/1916e.xml</link>
+        <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNTk5NDEyMTcyOF5BMl5BanBnXkFtZTgwMTYyMTE3ODE@._V1_UY98_CR32,0,67,98_AL_.jpg</thumbnail>
+        <fanart></fanart>
+</dir>

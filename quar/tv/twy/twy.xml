@@ -1,0 +1,95 @@
+################################################################################
+<fanart>https://www.thetvdb.com/banners/fanart/original/72888-9.jpg</fanart>
+
+################################################################################
+
+
+<dir>
+  <name>Season 1</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+    <tvshowtitle>The Wonder Years</tvshowtitle>
+    <year>1988</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/twy/twy1.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/72888-1.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 2</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+    <tvshowtitle>The Wonder Years</tvshowtitle>
+    <year>1988</year>
+    <season>2</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/twy/twy2.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/72888-2.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 3</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+    <tvshowtitle>The Wonder Years</tvshowtitle>
+    <year>1988</year>
+    <season>3</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/twy/twy3.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/72888-3.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 4</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+    <tvshowtitle>The Wonder Years</tvshowtitle>
+    <year>1988</year>
+    <season>4</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/twy/twy4.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/72888-4.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 5</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+    <tvshowtitle>The Wonder Years</tvshowtitle>
+    <year>1988</year>
+    <season>5</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/twy/twy5.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/72888-5.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <name>Season 6</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt0094582</imdb>
+    <tvdb>72888</tvdb>
+    <tvshowtitle>The Wonder Years</tvshowtitle>
+    <year>1988</year>
+    <season>6</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/twy/twy6.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/72888-6.jpg</thumbnail>
+  <fanart></fanart>
+</dir>

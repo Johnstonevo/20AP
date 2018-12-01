@@ -1,0 +1,108 @@
+################################################################################
+<thumbnail>https://orig00.deviantart.net/3586/f/2011/097/c/6/c6b841cee1b83e873310b59813675ff8-d3deqpy.png</thumbnail>
+<fanart>https://dr56wvhu2c8zo.cloudfront.net/motorland/assets/0cdcaf5f-bd1a-42c3-a2ad-b3208a66aa29/documentaries_1080.jpg</fanart>
+#######################################
+
+
+<plugin>
+  <title>Gaming Historian</title>
+  <link>plugin://plugin.video.youtube/channel/UCnbvPS_rXp4PC21PG2k1UVg/</link>
+  <thumbnail>https://yt3.ggpht.com/-8EL8uV2zWuc/AAAAAAAAAAI/AAAAAAAAAAA/6cx197A77Uc/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>The Gaming Historian is a documentary series all about the history of video games. I also like to review books and certain games that I find interesting.
+
+The show is researched, written, edited, and created by Norman Caruso.
+</summary>
+</plugin>
+
+<item>
+  <title>Video Games: The Movie</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3214002</imdb>
+    <title>Video Games: The Movie</title>
+    <year>2014</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/s9Stx607lgk8PrXT15U2x7dfOfL.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+	<title>The Story of Tetris </title>
+	<link>
+		<sublink>plugin://plugin.video.youtube/play/?video_id=fQtxKmgJC8</sublink>
+	</link>
+	<content></content>
+</item>
+
+<item>
+  <title>From Bedrooms to Billions: The Amiga Years</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt4603210</imdb>
+    <title>From Bedrooms to Billions: The Amiga Years</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ0NDg3MzAzNV5BMl5BanBnXkFtZTgwMDc3MTkwNjE@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>8 Bit Generation The Commodore Wars</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5706894</imdb>
+    <title>8 Bit Generation The Commodore Wars</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZWQwMWY5OWItOTI4NS00ZGQzLWFjMjQtZmE3ZGNhNjk2ZDI2XkEyXkFqcGdeQXVyMjAyNTk0NjM@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>The New 8-bit Heroes</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt4568312</imdb>
+    <title>The New 8-bit Heroes</title>
+    <year>2016</year>
+    <premiered>2016-09-01</premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/6f3QFiOExvGB3K7FVMouNqNfozf.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Easy to Learn, Hard to Master: The Fate of Atari</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt6585674</imdb>
+    <title>Easy to Learn, Hard to Master: The Fate of Atari</title>
+    <year>2017</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/yF3Xwb5vBIkfPD4OfxS4DtdIkS2.jpg</thumbnail>
+  <fanart></fanart>
+</item>

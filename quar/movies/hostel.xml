@@ -1,0 +1,51 @@
+##########################################################################################
+
+<cache>10800</cache>
+##########################################################################################
+<item>
+	<title>Hostel (2005)</title>
+	<link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+	</link>
+	<thumbnail>hhttps://image.tmdb.org/t/p/original/zF3pEs1CUbjPgioxDH4h2MEHsWl.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/9jTL24i6meo6u5hHEPwUY8TD1N4.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Hostel</title>
+		<year>2005</year>
+		<imdb>tt0450278</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Hostel: Part II (2007)</title>
+	<link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/fRRjGgHCh6dWvRn1wSbv2VMO6JL.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/lshpN0UfiHqan1G9HalSUQVTJdJ.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Hostel: Part II</title>
+		<year>2007</year>
+		<imdb>tt0498353</imdb>
+	</meta>
+</item>
+
+<item>
+	<title>Hostel: Part III (2011)</title>
+	<link>
+                <sublink>search</sublink>
+                <sublink>searchsd</sublink>
+	</link>
+	<thumbnail>https://image.tmdb.org/t/p/original/yElnsRDzujnHDHli5UuAgrCVQsT.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/rJfhRheupRODLDzmpGPEt1VxGm9.jpg</fanart>
+	<content>movie</content>
+	<meta>
+		<title>Hostel: Part III</title>
+		<year>2011</year>
+		<imdb>tt1255916</imdb>
+	</meta>
+</item>

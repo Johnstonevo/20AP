@@ -1,0 +1,1144 @@
+####################################################################################################
+<cache>10800</cache>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+####################################################################################################
+
+
+<dir>
+  <title>Automotive Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/auto.xml</link>
+  <thumbnail>https://i.pinimg.com/736x/8e/6f/45/8e6f45ebbefa11abb69ad9cf57e92aa2--abandoned-vehicles-abandoned-cars.jpg</thumbnail>
+  <fanart>https://dr56wvhu2c8zo.cloudfront.net/motorland/assets/0cdcaf5f-bd1a-42c3-a2ad-b3208a66aa29/documentaries_1080.jpg</fanart>
+</dir>
+
+
+<dir>
+  <title>Biography Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/biog.xml</link>
+    <thumbnail>https://lh3.googleusercontent.com/6eY3-3FWpa2UNbvP6zt1H_TfDrzv2Rj0bh_UFMph1ZnD73Je6pha2ydHZsxxrxD0NKU=h900</thumbnail>
+  <fanart></fanart>
+</dir>
+
+
+<dir>
+  <title>Chernobyl Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/chernobyl.xml</link>
+  <thumbnail>https://s3.amazonaws.com/user-media.venngage.com/302494-d720c8474e9496bebe2de094543194a4.png</thumbnail>
+  <fanart>https://i.pinimg.com/originals/87/71/30/877130700da5c49a16a73cc770dd04d9.jpg</fanart>
+</dir>
+
+
+<dir>
+  <title>Gaming Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/gaming.xml</link>
+  <thumbnail>https://orig00.deviantart.net/3586/f/2011/097/c/6/c6b841cee1b83e873310b59813675ff8-d3deqpy.png</thumbnail>
+  <fanart>https://www.desktopbackground.org/download/1280x720/2015/07/27/985772_retro-gamer-images-wallpapers-game-wallpapers-localwom_1920x1080_h.jpg</fanart>
+</dir>
+
+
+
+<dir>
+  <title>Music Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/music.xml</link>
+  <thumbnail>https://cdn1.player.fm/images/7152123/series/KEpRdahx0pU6JHnl/512.jpg</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <title>Religion Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/religion.xml</link>
+  <thumbnail>https://www.parentingscience.com/images/Religious_symbols-Manop-wikimedia-commons.png</thumbnail>
+  <fanart>http://s3.amazonaws.com/assets.vision.org/uploadedimages/Home/Articles/2007summer_terror-can-we-blame-religion_1920x1080_1.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Royalty Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/royalty.xml</link>
+  <thumbnail>https://cdn0.iconfinder.com/data/icons/social-messaging-ui-color-shapes-3/3/48-512.png</thumbnail>
+  <fanart>http://www.thewatchlab.co.uk/wp-content/uploads/2016/08/royals.jpg</fanart>
+</dir>
+
+
+
+<plugin>
+  <title>Reddit Documentaries</title>
+  <link>plugin://plugin.video.reddit_viewer/?modelistSubReddit&amp;typedocumentaries&amp;urlhttps%3a%2f%2fwww.reddit.com%2fr%2fdocumentaries%2f.json%3f%26limit%3d50</link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/I/418PuxYS63L.png</thumbnail>
+  <fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
+  <content></content>
+</plugin>
+
+<dir>
+  <title>Space Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/space.xml</link>
+  <thumbnail>http://www.m1fineart.com/chris-baker/island-in-space_files/chris-baker-island-in-space.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/147071-4.jpg</fanart>
+</dir>
+<dir>
+  <title>Sport Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/sport.xml</link>
+  <thumbnail>http://iconshow.me/media/images/social/Circle-Icons-Pack-add-on-1/png/512/ct-sport.png</thumbnail>
+  <fanart>https://i.pinimg.com/originals/b1/76/c6/b176c695f03117672ab5432d9d59232b.jpg</fanart>
+</dir>
+
+
+<dir>
+  <title>Technology Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/tech.xml</link>
+  <thumbnail>http://s3.amazonaws.com/catallday/cad/wp-content/uploads/2016/03/11195602/Technology_Icon.jpg</thumbnail>
+  <fanart>https://news.bitcoin.com/wp-content/uploads/2016/01/tumotech.com_.jpg</fanart>
+</dir>
+
+
+<dir>
+  <title>War Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/war.xml</link>
+  <thumbnail>http://wardocumentaryfilms.com/wp-content/uploads/2014/08/War_Documentary_Logo.png</thumbnail>
+  <fanart></fanart>
+</dir>
+
+
+<dir>
+  <title>Wildlife Documentaries</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/wild.xml</link>
+    <thumbnail>https://i.pinimg.com/736x/09/c2/99/09c29976d90f784891880be4da5547f3--save-the-tiger-white-tigers.jpg</thumbnail>
+  <fanart>http://technuovo.com/wp-content/uploads/2017/04/love-nature-2.png</fanart>
+</dir>
+
+
+
+<plugin>
+  <title>Youtube Documentaries</title>
+  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZP8lMRveOUhCrZAEwIn_jZM/</link>
+  <thumbnail>https://yt3.ggpht.com/qgAMspKekhapIIu6oDpA1L9jTVqOdGsfRAV0UnNunasrAK7vmHAnF3roDJmcUUxWX0Asbzh1HTuGJIQ1Lws88-nd-c-c0xffffffff-rj-k-no</thumbnail>
+  <fanart></fanart>
+</plugin>
+
+
+<plugin>
+<title>Youtube Documentaries 2</title>
+<link>plugin://plugin.video.youtube/playlist/PLR3SowCQah02FYPAFXOFH2Vy1qcAmIJ_A/</link>
+<thumbnail>https://i.pinimg.com/736x/1e/70/a8/1e70a87d45aa800dfa72d08703818ec2--funny-hats-mesh-hats.jpg</thumbnail>
+</plugin>
+
+<dir>
+
+<dir>
+  <title>Seven Ages of Britain </title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt1415248</imdb>
+    <tvdb>138881</tvdb>
+    <tvshowtitle>Seven Ages of Britain </tvshowtitle>
+    <year>2010</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/7ages/7ages.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/138881-2.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/138881-1.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Origins of Us</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt2088447</imdb>
+    <tvdb>252903</tvdb>
+    <tvshowtitle>Origins of Us</tvshowtitle>
+    <year>2011</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/origins.xml</link>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/252903-1.jpg</fanart>
+  <thumbnail>https://www.thetvdb.com/banners/posters/252903-1.jpg</thumbnail>
+</dir>
+
+<dir>
+  <name>National Geographic: Year Million</name>
+  <meta>
+    <content>season</content>
+    <imdb>tt6945708</imdb>
+    <tvdb>328143</tvdb>
+    <tvshowtitle>Year Million</tvshowtitle>
+    <year>2017</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/yearmillion/yearmillion.xml</link>
+  <thumnail>https://www.thetvdb.com/banners/posters/328143-1.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/328143-1.jpg</fanart>
+</dir>
+
+<dir>
+  <title>The Incredible Human Journey</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt1397256</imdb>
+    <tvdb>93951</tvdb>
+    <tvshowtitle>The Incredible Human Journey</tvshowtitle>
+    <year>2009</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/docs/humanjourney.xml</link>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/93951-2.jpg</fanart>
+  <thumbnail>https://www.thetvdb.com/banners/seasons/93951-1-2.jpg</thumbnail>
+</dir>
+
+
+<dir>
+  <name>Joanna Lumley's India</name>
+  <meta>
+    <content>tvshow</content>
+    <imdb></imdb>
+    <tvdb>330777</tvdb>
+    <tvshowtitle>Joanna Lumley's India</tvshowtitle>
+    <year>2017</year>
+    <season>1</season>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/jl/jl.xml</link>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/330777-2.jpg</fanart>
+  <thumbnail>https://www.thetvdb.com/banners/posters/330777-1.jpg</thumbnail>
+</dir>
+
+
+<dir>
+  <title>Ancient Aliens</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt1643266</imdb>
+    <tvdb>101501</tvdb>
+    <tvshowtitle>Ancient Aliens</tvshowtitle>
+    <year>2010</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/ancient_aliens/Ancient%20Aliens.xml</link>
+  <thumbnail>http://image.tmdb.org/t/p/original/iMNRKvU0SZC43VPEFdGBVN1nzHy.jpg</thumbnail>
+  <fanart>http://thetvdb.com/banners/fanart/original/101501-6.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Tribes, Predators, and Me</title>
+  <meta>
+    <content>tvshow</content>
+    <imdb>tt5772196</imdb>
+    <tvdb>309236</tvdb>
+    <tvshowtitle>Tribes, Predators, and Me</tvshowtitle>
+    <year>2016</year>
+  </meta>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/tv/tribes/tribes.xml</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/309236-1.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/309236-1.jpg</fanart>
+</dir>
+
+<item>
+  <title>Missing 411</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt5864680</imdb>
+    <title>Missing 411</title>
+    <year>2017</year>
+    <premiered>2017-13-05</premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/cpkhQFgG8m1vRFxcXBkedR75uta.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/b63mbu56tytBxtmUsQ4lIPJiMDU.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>The Mars Generation</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt6333096</imdb>
+    <title>The Mars Generation</title>
+    <year>2017</year>
+    <premiered>2017-20-01</premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/czL0pSnPEEJJsjrJzg8q86ALvnE.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/2L6oKOhaf1Q5mk6UkJjtuROMbXj.jpg</fanart>
+</item>
+
+<item>
+  <title>Titanic: 20 Years Later with James Cameron</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt7620568</imdb>
+    <title>Titanic: 20 Years Later with James Cameron</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/zeBnlly1qpN8C3MhbC9bqdgvYfq.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/9PolVogZuHd07JIPOPTDnFAFj1p.jpg</fanart>
+</item>
+
+<item>
+  <title>Reel Injun</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt1484114</imdb>
+    <title>Reel Injun</title>
+    <year>2009</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/f6S9YEAu8LrcVfUBxcGs9iGgxAb.jpg</thumbnail>
+</item>
+
+<item>
+  <title>War & Cheese</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5847392</imdb>
+    <title>War & Cheese</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjMwZGRhYTctYjNiOC00YjI5LTlhM2YtODgzZDAwNmY3Nzc4XkEyXkFqcGdeQXVyMjMyNzkwMjE@._V1_UY268_CR147,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Harry Potter: A History Of Magic</title>
+  <meta>
+    <content>tvshow</content>
+    <tvdb>337266</tvdb>
+    <tvshowtitle>Harry Potter: A History Of Magic</tvshowtitle>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/337266-1.jpg</thumbnail>
+  <fanart>https://www.thetvdb.com/banners/fanart/original/337266-1.jpg</fanart>
+</item>
+
+
+<item>
+  <title>Long Shot</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt7344360</imdb>
+    <title>Long shot</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/zJPEipeqlGRlJw0PGzEjckJTjmY.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>American Anarchist</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6032170</imdb>
+    <title>American Anarchist</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/a6chKH9EV1txdyElSd8dwAVbiu7.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/rxBbbfswKVAjV8r0QZcfwk29jyi.jpg</fanart>
+</item>
+
+<item>
+  <title>I Am Heath Ledger</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6739646</imdb>
+    <title>I Am Heath Ledger</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/nzJ44bpFglwElWk1l24bTNXE9BX.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Return of the Clockwork Orange (Docu)</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt2107788</imdb>
+    <title>Return of the Clockwork Orange</title>
+    <year>2000</year>
+  </meta>
+  <link>
+    <sublink>https://youtu.be/B2uXHZLyfT0</sublink>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+
+
+<item>
+  <title>Michael Moore in TrumpLand</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6163356</imdb>
+    <title>Michael Moore in TrumpLand</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/h5Dx9IKtLMBLmHBW5SqHODRQ9Vb.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Michael Moore Where to Invade Next</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt4897822</imdb>
+    <title>Michael Moore Where to Invade Next</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/fu3yXLoYtMxbv3NLquCDVLNK35p.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Bowling for Columbine</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt0310793</imdb>
+    <title>Bowling for Columbine</title>
+    <year>2002</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/eQLThQmmiCyEoGDr1MdNGYOjU0M.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/oA0BhAQlmnp9ElT1iF1ezUXuNgr.jpg</fanart>
+</item>
+
+<item>
+  <title>Soham Revisited: 15 Years On</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6823920</imdb>
+    <title>Soham Revisited: 15 Years On</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://primewire.unblocked.bid/imagesp/thumbs/2793435_Soham_Revisited_15_Years_On_2017_60.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Smile Pinki</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt1360065</imdb>
+    <title>Smile Pinki</title>
+    <year>2008</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTM2NjQ0NjQyNV5BMl5BanBnXkFtZTcwMjg1ODQxNA@@._V1_UY268_CR4,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Casting JonBenet</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6333052</imdb>
+    <title>Casting JonBenet</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNDgwODk5ODk4OV5BMl5BanBnXkFtZTgwNzA3MzU4MTI@._V1_SY1000_CR0,0,675,1000_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Shannon Matthews: What Happened Next</title>
+  <meta>
+    <content>Documentary, Crime /content>
+      <imdb>tt6627612</imdb>
+      <title>Shannon Matthews: What Happened Next</title>
+      <year>2017</year>
+    </meta>
+    <link><sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMzAyMjhiOWEtMzM0Ny00MzFkLWI0YTItMzk5NTdlZmNlMjNkXkEyXkFqcGdeQXVyNDkwMzY5NjQ@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Gender Revolution</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6508408</imdb>
+    <title>Gender Revolution</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>http://www.hollywooddailystar.com/wp-content/uploads/2017/02/Gender-Rev-poster.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Trumped: Inside the Greatest Political Upset of All Time</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6408738</imdb>
+    <title>Trumped: Inside the Greatest Political Upset of All Time</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZTU2YjJlZTYtZTUxMC00OTFkLTkzZTMtOGNmZGJhNmM5N2YyXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX376_CR0,0,376,493_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Tourettes: Teenage Tics</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6494664</imdb>
+    <title>Tourettes: Teenage Tics</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>http://cdn.putlockers.fm/tourettes-teenage-tics-2017-75233.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Judi Dench All the Worlds Her Stage</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6325078</imdb>
+    <title>Judi Dench All the Worlds Her Stage</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BN2I5NmJiYzUtYjY0My00ZDcwLWEwMjAtZDE3ZDMwMmE0ZjIyL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDY0NDM0NzI@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>A World Without Down's Syndrome?</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6129126</imdb>
+    <title>A World Without Down's Syndrome?</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMmE3N2Y4YTYtOWI0Zi00MDRjLTk4NjItOTc4ODM2NTIwNzQyXkEyXkFqcGdeQXVyNDY0NDM0NzI@._V1_UY268_CR4,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Louis Theroux: Savile</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6098922</imdb>
+    <title>Louis Theroux: Savile</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTIxZDYyYWQtMjdlMC00MDkwLWIzZTMtOGVjYTI1Yzc3NDY4L2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMjYzMjA3NzI@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>I Am Not Your Negro</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5804038</imdb>
+    <title>I Am Not Your Negro</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjEyNzIzMTk3Ml5BMl5BanBnXkFtZTgwNDE1Nzc1MDI@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>For the Love of Spock</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt4572820</imdb>
+    <title>For the Love of Spock</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjM2Mjg4Mjk5Nl5BMl5BanBnXkFtZTgwMTE1OTE5OTE@._V1_UY268_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+
+<item>
+  <title>The Trans List</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5784340</imdb>
+    <title>The Trans List</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNGQ1N2NjZjUtZjg2OS00MDU2LThjNzktN2ZiODU0MDU3NDE2XkEyXkFqcGdeQXVyMTQ4OTM3MDQ@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Elstree 1976</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt4558042</imdb>
+    <title>Elstree 1976</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjQ0MDk4MDc1NV5BMl5BanBnXkFtZTgwNzk4OTQxNzE@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Fart A Documentary: The history and humor of the fart</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5939924</imdb>
+    <title>Fart A Documentary: The history and humor of the fart</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjI3MDk3MDMxNF5BMl5BanBnXkFtZTgwNzAzNzc3OTE@._V1_UY268_CR9,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Chasing Dad: A Lifelong Addiction</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5659708</imdb>
+    <title>Chasing Dad: A Lifelong Addiction</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://primewire.unblocked.bid/imagesp/thumbs/2776766_Chasing_Dad_A_Lifelong_Addiction.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>I Am Belfast</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3847390</imdb>
+    <title>I Am Belfast</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/q4Oa0FiYYihHet3PjuHwwHkiGjx.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Miss Transgender Britains New Beauty Queens</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5504696</imdb>
+    <title>Miss Transgender Britains New Beauty Queens</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BZWMzYWVlODAtY2FjZC00ZmEyLWJmM2UtYzEyZDE4NGRlODAyXkEyXkFqcGdeQXVyMTg1ODAxMTI@._V1_UY268_CR147,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>My Beautiful Broken Brain</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3815136</imdb>
+    <title>My Beautiful Broken Brain</title>
+    <year>2014</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTEzMDM3OTkxNzBeQTJeQWpwZ15BbWU4MDQ4MDg3NDQx._V1_UY268_CR4,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Secrets of the Force Awakens</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5532610</imdb>
+    <title>Secrets of the Force Awakens</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMzc2OGUzOGYtM2EyZC00Njg0LWI1M2YtMWY4YjFlYjFjZTA5XkEyXkFqcGdeQXVyMjUzNDI4OTM@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Now More Than Ever: The History of Chicago</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3807496</imdb>
+    <title>Now More Than Ever: The History of Chicago</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTg1MjQyMDk5OV5BMl5BanBnXkFtZTgwNDk3MzQ5NzE@._V1_UY268_CR12,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Sticky: A (Self) Love Story</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt1326264</imdb>
+    <title>Sticky: A (Self) Love Story</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjMzNjI4ODE1Nl5BMl5BanBnXkFtZTgwNjk3OTQ2NzE@._V1_UY268_CR10,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Rednecks Culchies</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3257064</imdb>
+    <title>Rednecks Culchies</title>
+    <year>2016</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjI3MjAxMTc2NV5BMl5BanBnXkFtZTgwNzc3NjExNzE@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>Snervous Tyler Oakley</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5073746</imdb>
+    <title>Snervous Tyler Oakley</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNDYzNDE2NDc3OV5BMl5BanBnXkFtZTgwMTAwOTYyNzE@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+</item>
+
+<item>
+  <title>Gayby Baby</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3898028</imdb>
+    <title>Gayby Baby</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTQ3MjBiMzMtZDFhMy00NDZjLWFhZjItNmQ3OTVkOGI5OTk2XkEyXkFqcGdeQXVyMzMwMjA2NjM@._V1_UY268_CR4,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+
+<item>
+  <title>He Named Me Malala</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3065132</imdb>
+    <title>He Named Me Malala</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMjQwODg2NDIyN15BMl5BanBnXkFtZTgwMTI4NDMwNjE@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>A Brave Heart The Lizzie Velasquez Story</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt3735302</imdb>
+    <title>A Brave Heart The Lizzie Velasquez Story</title>
+    <year>2015</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMTU4MTcwMzU5Ml5BMl5BanBnXkFtZTgwOTQwMzM2NDE@._V1_UY268_CR3,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>After Porn Ends</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt1291547</imdb>
+    <title>After Porn Ends</title>
+    <year>2012</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/oafknDfM7ORReGCGWgl2Cv6BPGm.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+<item>
+  <title>After Porn Ends 2</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt5168832</imdb>
+    <title>After Porn Ends 2</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search (Search)</sublink>
+    <sublink>searchsd (Search SD)</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/rfItXrtDGILwsCdmgVxX79phFuI.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+<item>
+  <title>Addicted to Porn: Chasing the Cardboard Butterfly</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt5946552</imdb>
+    <title>Addicted to Porn: Chasing the Cardboard Butterfly</title>
+    <year>2017</year>
+    <premiered>2017-03-02</premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/72Vf0T8naq5emFa5AMNMOCiGgMP.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+<item>
+  <title>Born in China</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt4629266</imdb>
+    <title>Born in China</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/10GE2GHVNU6Z6TOdfcv2cBBOK33.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/7r6FzI6TpymhXVf2QIfPR32ddi0.jpg</fanart>
+</item>
+
+
+
+<item>
+  <title>World of Compulsive Hoarders</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt1126545</imdb>
+    <title>World of Compulsive Hoarders</title>
+    <year>2007</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+<item>
+  <title>Warning: This Drug May Kill You</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6710212</imdb>
+    <title>Warning: This Drug May Kill You</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BOTVlOWZkYjctZDE5Ny00MzdmLTg2YTYtMGQ2NmJkMzE5NTNmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>LA 92</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6794424</imdb>
+    <title>LA 92</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BMzZmNDAzMmEtNTdjMi00YTlmLTk2YmYtN2MxNmE5NDY3YzVmXkEyXkFqcGdeQXVyMjU3NTI0Mg@@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+
+
+<item>
+  <title>Mommy Dead and Dearest</title>
+  <meta>
+    <content>documentary</content>
+    <imdb>tt6442978</imdb>
+    <title>Mommy Dead and Dearest</title>
+    <year>2017</year>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://images-na.ssl-images-amazon.com/images/M/MV5BNjE4NTFiZDYtZjUxOC00YmMyLTk2ZWYtM2RhMzNjZTVmYTM2XkEyXkFqcGdeQXVyMzQxNjcxNzA@._V1_UX182_CR0,0,182,268_AL_.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Dara O'Briain meets Stephen Hawking</title>
+  <meta>
+    <content>episode</content>
+    <imdb></imdb>
+    <tvdb>79660</tvdb>
+    <tvshowtitle>BBC Documentaries</tvshowtitle>
+    <year>1936</year>
+    <title>Dara O'Briain meets Stephen Hawking</title>
+    <premiered>2015-06-16</premiered>
+    <season>2015</season>
+    <episode>145</episode>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://www.thetvdb.com/banners/episodes/79660/5253896.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+
+<item>
+  <title>Sex How It Works</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt2992258</imdb>
+    <title>Sex How It Works</title>
+    <year>2013</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/23f85NiKA8GgsvrD0pjMsFQM1Sv.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/2HNnJck1qEI2gtZNKGKF4DT5tZj.jpg</fanart>
+</item>
+
+
+<item>
+  <title>The Secret Sex Life of a Single Mom</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt3295276</imdb>
+    <title>The Secret Sex Life of a Single Mom</title>
+    <year>2014</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/zKwmcBkRYwLjflUqp9OARihDfd4.jpg</thumbnail>
+  <fanart></fanart>
+</item>
+
+<item>
+  <title>The Truth About Webcam Girls</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt3620298</imdb>
+    <title>The Truth About Webcam Girls</title>
+    <year>2014</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/mE58cp29AbrHHVOkrLqEYAtMS6d.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/zLQBDo3zKN0YVdmReiRX3ha4Z9E.jpg</fanart>
+</item>
+
+<item>
+  <title>Whores' Glory</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt1327628</imdb>
+    <title></title>
+    <year>2011</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/Ah6r0YENSR4cCw3TqCAhtpZTLgf.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/fb9qJtbeDvRpR9UkbUPyJwpxeYK.jpg</fanart>
+</item>
+
+<item>
+  <title>Voyage of Time: Life's Journey</title>
+  <meta>
+    <content>movie</content>
+    <imdb>tt1945228</imdb>
+    <title>Voyage of Time: Life's Journey</title>
+    <year>2016</year>
+    <premiered></premiered>
+  </meta>
+  <link>
+    <sublink>search</sublink>
+    <sublink>searchsd</sublink>
+  </link>
+  <thumbnail>https://image.tmdb.org/t/p/original/lfdinlGEkAwZGa4FOxKN6kMAt61.jpg</thumbnail>
+  <fanart>https://image.tmdb.org/t/p/original/69aWOSnh4cgorZwX6czYUTalKi4.jpg</fanart>
+</item>

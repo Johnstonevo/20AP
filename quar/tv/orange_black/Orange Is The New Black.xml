@@ -1,0 +1,76 @@
+
+##########################################################################################
+<cache>10800</cache>
+
+<fanart>http://thetvdb.com/banners/fanart/original/264586-10.jpg</fanart>
+##########################################################################################
+
+<dir>
+<name>Orange is the New Black Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt2372162</imdb>
+<tvdb>264586</tvdb>
+<tvshowtitle>Orange is the New Black</tvshowtitle>
+<year>2013</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/orange_black/Orange%20Is%20The%20New%20Black%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/264586-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Orange is the New Black Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt2372162</imdb>
+<tvdb>264586</tvdb>
+<tvshowtitle>Orange is the New Black</tvshowtitle>
+<year>2013</year>
+<season>2</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/orange_black/Orange%20Is%20The%20New%20Black%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/264586-2-4.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Orange is the New Black Season 3</name>
+<meta>
+<content>season</content>
+<imdb>tt2372162</imdb>
+<tvdb>264586</tvdb>
+<tvshowtitle>Orange is the New Black</tvshowtitle>
+<year>2013</year>
+<season>3</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/orange_black/Orange%20Is%20The%20New%20Black%203.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/264586-3-2.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Orange is the New Black Season 4</name>
+<meta>
+<content>season</content>
+<imdb>tt2372162</imdb>
+<tvdb>264586</tvdb>
+<tvshowtitle>Orange is the New Black</tvshowtitle>
+<year>2013</year>
+<season>4</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/orange_black/Orange%20Is%20The%20New%20Black%204.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/264586-4.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Orange is the New Black Season 5</name>
+<meta>
+<content>season</content>
+<imdb>tt2372162</imdb>
+<tvdb>264586</tvdb>
+<tvshowtitle>Orange Is the New Black</tvshowtitle>
+<year>2013</year>
+<season>5</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/orange_black/Orange%20Is%20The%20New%20Black%205.xml</link>
+<thumbnail>https://image.tmdb.org/t/p/w396/x7a2pcqDeFx2KjecOkDMFBnxZ2a.jpg</thumbnail>
+</dir>

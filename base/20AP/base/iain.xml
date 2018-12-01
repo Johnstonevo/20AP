@@ -1,7 +1,58 @@
 
 
+<dir>
+  <title>TV Shows</title>
+  <tmdb>list/47121</tmdb>
+  <thumbnail>https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/FlatScreenTV-512.png</thumbnail>
+  <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Movies</title>
+  <tmdb>list/47126</tmdb>
+  <thumbnail>http://www.ultimatemoviesuggestions.com/wp-content/uploads/2017/03/cropped-Camera_cinema_consume_entertainment_film_media_movie_photo_play_record_video_television_tripod-256.png</thumbnail>
+  <fanart>https://images4.alphacoders.com/754/thumb-1920-754566.png</fanart>
+  <content>boxset</content>
+</dir>
+
+ <dir>
+    <title>OTB Trekkie</title>
+    <trekkie>all</trekkie>
+</dir>
 
 
+<dir>
+<name>Sport</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
+<thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
+<fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
+<summary>Motorsports, Rugby and Darts</summary>
+</dir>
+
+
+<dir>
+<name>Man Shed</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
+<thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
+<fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>
+<Summary>The Man Shed Cars and things</summary>
+</dir>
+
+</dir>
+<dir>
+<title>Computer  Documentaries via TMDB</title>
+<tmdb>list/81923</tmdb>
+<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+</dir>
+
+<dir>
+<title>Adult Themed  Documentaries via TMDB</title>
+<tmdb>list/81925</tmdb>
+<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+
+</dir>
 
 <dir>
   <name>Iain's Tutorials</name>
@@ -11,30 +62,21 @@
 </dir>
 
 
-
-
-
 <dir>
-<title>Recent Videos</title>
-<cnw>recent</cnw>
-</dir>
+  <name>Adult</name>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/p.xml</link>
+  <fanart></fanart>
+  <summary>Stuff for Iain</summary>
+		<password>get/cG9ybg==</password>
+		<thumbnail></thumbnail>
+	</dir>
 
-<dir>
-<title>Popular Videos</title>
-<cnw>popular</cnw>
-</dir>
+        <item>
+            <title>Pair With Sites</title>
+            <pairwith>pairlist</pairwith>
+        </item>
 
-<dir>
-<title>Categories</title>
- <link>file://adult/cnw/cats.xml</link>
-</dir>
-
-
-
-
-
-<dir>
-<title>Celebrities Sex Tape</title>
-<cnw>category/sex-tape/</cnw>
-<thumbnail>http://www.celebsnudeworld.com/media/videos/cat/28.jpg</thumbnail>
-</dir>
+        <item>
+            <title>Pair Openload</title>
+            <pairwith>openload</pairwith>
+        </item>

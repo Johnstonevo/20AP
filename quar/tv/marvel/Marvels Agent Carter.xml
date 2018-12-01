@@ -1,0 +1,33 @@
+##########################################################################################
+
+<cache>10800</cache>
+<fanart></fanart>
+##########################################################################################
+
+<dir>
+<name>Marvel's Agent Carter Season 1</name>
+<meta>
+<content>season</content>
+<imdb>tt3475734</imdb>
+<tvdb>281485</tvdb>
+<tvshowtitle>Marvel's Agent Carter</tvshowtitle>
+<year>2015</year>
+<season>1</season>
+</meta>
+<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/marvel/Marvels%20Agent%20Carter%201.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/281485-1-2.jpg</thumbnail>
+</dir>
+
+<dir>
+<name>Marvel's Agent Carter Season 2</name>
+<meta>
+<content>season</content>
+<imdb>tt3475734</imdb>
+<tvdb>281485</tvdb>
+<tvshowtitle>Marvel's Agent Carter</tvshowtitle>
+<year>2015</year>
+<season>2</season>
+</meta>
+<link>hhttps://raw.githubusercontent.com/Johnstonevo/20AP/master/tv/marvel/Marvels%20Agent%20Carter%202.xml</link>
+<thumbnail>http://thetvdb.com/banners/seasons/281485-2-4.jpg</thumbnail>
+</dir>
