@@ -9,7 +9,7 @@ Single Item
 Folder
 
 <dir>
-<name>Folder Test</name>
+<title>Folder Test</title>
 <link></link>
 <thumbnail></thumbnail>
 </dir>
@@ -69,7 +69,7 @@ Reddit
 F4M
 
 <plugin>
-<name>F4M Test</name>
+<title>F4M Test</title>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;url=Add Your Link Here</link>
 <thumbnail></thumbnail>
 <fanart></fanart>

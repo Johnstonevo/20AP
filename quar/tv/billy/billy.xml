@@ -4,7 +4,7 @@
 ################################################################################
 
 <dir>
-  <name>Billy Connolly's Route 66</name>
+  <title>Billy Connolly's Route 66</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt2058779</imdb>
@@ -19,7 +19,7 @@
 
 
 <dir>
-  <name>Billy Connolly's World Tour of Scotland</name>
+  <title>Billy Connolly's World Tour of Scotland</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt0298763</imdb>
@@ -36,7 +36,7 @@
 
 
 <dir>
-  <name>Billy Connolly's World Tour of Australia</name>
+  <title>Billy Connolly's World Tour of Australia</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt0131665</imdb>
@@ -51,7 +51,7 @@
 
 
 <dir>
-  <name>Billy Connolly's World Tour of New Zealand</name>
+  <title>Billy Connolly's World Tour of New Zealand</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt0442631</imdb>
@@ -66,7 +66,7 @@
 
 
 <dir>
-  <name>Billy Connolly's Journey To The Edge of The World</name>
+  <title>Billy Connolly's Journey To The Edge of The World</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt1506332</imdb>
@@ -80,7 +80,7 @@
 </dir>
 
 <dir>
-  <name>Billy Connolly's World Tour of England, Ireland and Wales</name>
+  <title>Billy Connolly's World Tour of England, Ireland and Wales</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt0312484</imdb>
@@ -95,7 +95,7 @@
 
 
 <dir>
-  <name>Billy Connolly's Big Send Off</name>
+  <title>Billy Connolly's Big Send Off</title>
   <meta>
     <content>tvshow</content>
     <imdb>tt3575500</imdb>

@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/250498-16.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>LEGO Star Wars Season 1</name>
+	<title>LEGO Star Wars Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4855868</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>LEGO Star Wars Season 2</name>
+	<title>LEGO Star Wars Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4855868</imdb>
@@ -31,7 +31,7 @@
 </dir>
 
 <dir>
-	<name>LEGO Star Wars Season 3</name>
+	<title>LEGO Star Wars Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4855868</imdb>
@@ -45,7 +45,7 @@
 </dir>
 
 <dir>
-	<name>LEGO Star Wars Season 4</name>
+	<title>LEGO Star Wars Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4855868</imdb>
@@ -59,7 +59,7 @@
 </dir>
 
 <dir>
-	<name>LEGO Star Wars Season 5</name>
+	<title>LEGO Star Wars Season 5</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4855868</imdb>
@@ -73,7 +73,7 @@
 </dir>
 
 <dir>
-	<name>LEGO Star Wars Season 6</name>
+	<title>LEGO Star Wars Season 6</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4855868</imdb>

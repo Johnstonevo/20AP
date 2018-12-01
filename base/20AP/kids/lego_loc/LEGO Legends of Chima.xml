@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/265393-2.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>LEGO Legends of Chima Season 1</name>
+	<title>LEGO Legends of Chima Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2356791</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>LEGO Legends of Chima Season 2</name>
+	<title>LEGO Legends of Chima Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2356791</imdb>

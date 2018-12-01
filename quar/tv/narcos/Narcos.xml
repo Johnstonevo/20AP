@@ -6,7 +6,7 @@
 ##########################################################################################
 
 <dir>
-<name>Narcos Season 1</name>
+<title>Narcos Season 1</title>
 <meta>
 <content>season</content>
 <imdb>tt2707408</imdb>
@@ -20,7 +20,7 @@
 </dir>
 
 <dir>
-<name>Narcos Season 2</name>
+<title>Narcos Season 2</title>
 <meta>
 <content>season</content>
 <imdb>tt2707408</imdb>
@@ -34,7 +34,7 @@
 </dir>
 
 <dir>
-	<name>Narcos Season 3</name>
+	<title>Narcos Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2707408</imdb>

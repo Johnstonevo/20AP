@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/283468-19.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Star Wars Rebels Season 1</name>
+	<title>Star Wars Rebels Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2930604</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>Star Wars Rebels Season 2</name>
+	<title>Star Wars Rebels Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2930604</imdb>
@@ -31,7 +31,7 @@
 </dir>
 
 <dir>
-	<name>Star Wars Rebels Season 3</name>
+	<title>Star Wars Rebels Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2930604</imdb>

@@ -5,7 +5,7 @@
 
 
 <dir>
-  <name>Season 1</name>
+  <title>Season 1</title>
   <meta>
     <content>season</content>
     <imdb>tt0094582</imdb>
@@ -20,7 +20,7 @@
 </dir>
 
 <dir>
-  <name>Season 2</name>
+  <title>Season 2</title>
   <meta>
     <content>season</content>
     <imdb>tt0094582</imdb>
@@ -35,7 +35,7 @@
 </dir>
 
 <dir>
-  <name>Season 3</name>
+  <title>Season 3</title>
   <meta>
     <content>season</content>
     <imdb>tt0094582</imdb>
@@ -50,7 +50,7 @@
 </dir>
 
 <dir>
-  <name>Season 4</name>
+  <title>Season 4</title>
   <meta>
     <content>season</content>
     <imdb>tt0094582</imdb>
@@ -65,7 +65,7 @@
 </dir>
 
 <dir>
-  <name>Season 5</name>
+  <title>Season 5</title>
   <meta>
     <content>season</content>
     <imdb>tt0094582</imdb>
@@ -80,7 +80,7 @@
 </dir>
 
 <dir>
-  <name>Season 6</name>
+  <title>Season 6</title>
   <meta>
     <content>season</content>
     <imdb>tt0094582</imdb>

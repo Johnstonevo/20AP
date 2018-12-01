@@ -37,7 +37,7 @@ add any url replacing functions here. this shouldn't usualy be necesary
 ** Main Directories
 #+BEGIN_EXAMPLE
   <dir>
-          <name></name>
+          <title></title>
           <link></link>
           <animated_thumbnail></animated_thumbnail>
           <thumbnail></thumbnail>
@@ -86,7 +86,7 @@ add any url replacing functions here. this shouldn't usualy be necesary
 ** TV Seasons
 #+BEGIN_EXAMPLE
   <dir>
-          <name></name>
+          <title></title>
           <meta>
                   <content>season</content>
                   <imdb></imdb>

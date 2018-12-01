@@ -5,7 +5,7 @@
 ##########################################################################################
 
 <dir>
-	<name>Hannibal Season 1</name>
+	<title>Hannibal Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2243973</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-	<name>Hannibal Season 2</name>
+	<title>Hannibal Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2243973</imdb>
@@ -33,7 +33,7 @@
 </dir>
 
 <dir>
-	<name>Hannibal Season 3</name>
+	<title>Hannibal Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2243973</imdb>

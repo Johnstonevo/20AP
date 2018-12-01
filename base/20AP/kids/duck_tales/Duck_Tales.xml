@@ -4,7 +4,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/75931-5.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>DuckTales Season 1</name>
+	<title>DuckTales Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0092345</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-	<name>DuckTales Season 2</name>
+	<title>DuckTales Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0092345</imdb>
@@ -32,7 +32,7 @@
 </dir>
 
 <dir>
-	<name>DuckTales Season 3</name>
+	<title>DuckTales Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0092345</imdb>
@@ -46,7 +46,7 @@
 </dir>
 
 <dir>
-	<name>DuckTales Season 4</name>
+	<title>DuckTales Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0092345</imdb>

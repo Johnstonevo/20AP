@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/78260-9.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Scooby-Doo, Where Are You! Season 1</name>
+	<title>Scooby-Doo, Where Are You! Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0063950</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>Scooby-Doo, Where Are You! Season 2</name>
+	<title>Scooby-Doo, Where Are You! Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0063950</imdb>

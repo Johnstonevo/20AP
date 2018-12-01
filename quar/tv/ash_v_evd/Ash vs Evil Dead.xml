@@ -4,7 +4,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/296295-11.jpg</fanart>
 ##########################################################################################
 <dir>
-	<name>Ash vs Evil Dead Season 1</name>
+	<title>Ash vs Evil Dead Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4189022</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-	<name>Ash vs Evil Dead Season 2</name>
+	<title>Ash vs Evil Dead Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt4189022</imdb>

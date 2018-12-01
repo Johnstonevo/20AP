@@ -19,14 +19,14 @@
     </dir>
     
 <dir>
-  <name>Formula 1</name>
+  <title>Formula 1</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/f1.xml</link>
   <thumbnail>https://yt3.ggpht.com/-p4tzDhRHziM/AAAAAAAAAAI/AAAAAAAAAAA/BgBf89zrN30/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
   <fanart>https://wallpapersontheweb.net/wallpapers/l/mercedesbenz_nico_rosberg_mercedes_amg_petronas_formula_1-8443.jpg</fanart>
 </dir>
 
 <dir>
-  <name>Rugby Union</name>
+  <title>Rugby Union</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/rugby.xml</link>
   <thumbnail>http://cdn.pulselive.com/dynamic/client/irb/static/i/meta/wr.png</thumbnail>
   <fanart>http://s1.1zoom.me/b4764/646/Men_rugby_Mud_Legs_Shorts_Knee_highs_Athletic_shoe_512998_1280x720.jpg</fanart>
@@ -35,14 +35,14 @@
 
 
 <dir>
-  <name>Moto GP</name>
+  <title>Moto GP</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/Motogp/motogp.xml</link>
   <thumbnail>https://i.pinimg.com/originals/1a/75/38/1a75382516d5358e78ba61ced6d0ff89.jpg</thumbnail>
   <fanart>https://i.ytimg.com/vi/t9uIMJRwGeo/maxresdefault.jpg</fanart>
 </dir>
 
 <dir>
-  <name>Indy Car</name>
+  <title>Indy Car</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/indy/indy.xml</link>
   <thumbnail>https://sites.google.com/site/wildqat/Home/Indy-Car-Power.jpg</thumbnail>
   <fanart>https://lh3.googleusercontent.com/L_fBVPIbyelaw-kO3fh2EqIGY06zSfeVZTUC5P8tkwJDhfHXZUerciPbKKhYiRfRAyM=h900</fanart>
@@ -50,7 +50,7 @@
 
 
 <item>
-  <name>Darts</name>
+  <title>Darts</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/darts.xml</link>
   <thumbnail>https://pbs.twimg.com/profile_images/875724789700333568/38t130uN.jpg</thumbnail>
   <fanart>https://p5.focus.de/img/fotos/crop6433881/4711333682-cfreecrop_21_9-w1280-h720-otx0_y0-q75-p5/dreimal-20-die-perfekte-ausbeute-beim-darts.jpg</fanart>
@@ -58,7 +58,7 @@
 
 
 <dir>
-  <name>Motorsport Youtube Channels</name>
+  <title>Motorsport Youtube Channels</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/motorsport.xml</link>
   <fanart>https://i.pinimg.com/originals/74/00/b0/7400b07ad1e2bcf152ed240884e2f96f.jpg</fanart>
   <thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
@@ -89,7 +89,7 @@
 
 
 <dir>
-  <name>The Man Cave</name>
+  <title>The Man Cave</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/manshed.xml</link>
   <thumbnail>https://avatarfiles.alphacoders.com/100/100363.jpg</thumbnail>
   <fanart>https://www.desktopbackground.org/download/1280x720/2014/05/20/765189_hot-rod-wallpapers_1600x1200_h.jpg</fanart>

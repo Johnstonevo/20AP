@@ -4,7 +4,7 @@
 ##########################################################################################
 
 <dir>
-	<name>Gilmore Girls Season 1</name>
+	<title>Gilmore Girls Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-	<name>Gilmore Girls Season 2</name>
+	<title>Gilmore Girls Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>
@@ -32,7 +32,7 @@
 </dir>
 
 <dir>
-	<name>Gilmore Girls Season 3</name>
+	<title>Gilmore Girls Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>
@@ -46,7 +46,7 @@
 </dir>
 
 <dir>
-	<name>Gilmore Girls Season 4</name>
+	<title>Gilmore Girls Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>
@@ -60,7 +60,7 @@
 </dir>
 
 <dir>
-	<name>Gilmore Girls Season 5</name>
+	<title>Gilmore Girls Season 5</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>
@@ -74,7 +74,7 @@
 </dir>
 
 <dir>
-	<name>Gilmore Girls Season 6</name>
+	<title>Gilmore Girls Season 6</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>
@@ -88,7 +88,7 @@
 </dir>
 
 <dir>
-	<name>Gilmore Girls Season 7</name>
+	<title>Gilmore Girls Season 7</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0238784</imdb>

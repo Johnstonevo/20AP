@@ -14,7 +14,7 @@
 
 
 <dir>
-<name>Radio</name>
+<title>Radio</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/radio.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
 <fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
@@ -212,7 +212,7 @@ See the best of Queen right here on YouTube.
 
 
 <dir>
-<name>Concerts</name>
+<title>Concerts</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/music/concerts.xml</link>
 <thumbnail>https://cdn3.iconfinder.com/data/icons/buildings-places/512/Concert-512.png</thumbnail>
 <fanart>https://images5.alphacoders.com/349/thumb-1920-349660.jpg</fanart>

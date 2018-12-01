@@ -5,7 +5,7 @@
 ##########################################################################################
 
 <dir>
-	<name>Fargo Season 1</name>
+	<title>Fargo Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2802850</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-	<name>Fargo Season 2</name>
+	<title>Fargo Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2802850</imdb>
@@ -33,7 +33,7 @@
 </dir>
 
 <dir>
-	<name>Fargo Season 3</name>
+	<title>Fargo Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2802850</imdb>

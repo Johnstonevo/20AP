@@ -29,8 +29,8 @@ def jen_list(content):
 
     items = re.compile(
         '((?:<item>.+?</item>|<dir>.+?</dir>|<plugin>.+?</plugin>|<info>.+?</info>|'
-        '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail><mode>[^<]+</mode>|'
-        '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail><date>[^<]+</date>))',
+        '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail><mode>[^<]+</mode>|'
+        '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail><date>[^<]+</date>))',
         re.MULTILINE | re.DOTALL).findall(content)
 
     results = []
@@ -47,7 +47,7 @@ def jen_list(content):
             try:
                 name = re.findall('<title>(.+?)</title>', name)[0]
             except:
-                name = re.findall('<name>(.+?)</name>', name)[0]
+                name = re.findall('<title>(.+?)</title>', name)[0]
             if '<meta>' in name:
                 raise Exception()
 
@@ -295,8 +295,8 @@ def main():
         content = str(xml)
         items = re.compile(
             '((?:<item>.+?</item>|<dir>.+?</dir>|<plugin>.+?</plugin>|<info>.+?</info>|'
-            '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail><mode>[^<]+</mode>|'
-            '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail><date>[^<]+</date>))', re.MULTILINE | re.DOTALL).findall(content)
+            '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail><mode>[^<]+</mode>|'
+            '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail><date>[^<]+</date>))', re.MULTILINE | re.DOTALL).findall(content)
         for item in items:
             dbcur.execute("INSERT INTO search Values (?, ?)",
                           (item, section["poster"]))

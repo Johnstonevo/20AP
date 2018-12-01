@@ -5,7 +5,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/72023-16.jpg</fanart>
 ##########################################################################################
 <dir>
-	<name>Deadwood Season 1</name>
+	<title>Deadwood Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0348914</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-	<name>Deadwood Season 2</name>
+	<title>Deadwood Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0348914</imdb>
@@ -33,7 +33,7 @@
 </dir>
 
 <dir>
-	<name>Deadwood Season 3</name>
+	<title>Deadwood Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0348914</imdb>

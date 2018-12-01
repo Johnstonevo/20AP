@@ -57,7 +57,7 @@ Open the default.py for your addon and add the search.db url to "__builtin__.sea
 ** Main Directories
 #+BEGIN_EXAMPLE
   <dir>
-          <name></name>
+          <title></title>
           <link></link>
           <animated_thumbnail></animated_thumbnail>
           <thumbnail></thumbnail>
@@ -106,7 +106,7 @@ Open the default.py for your addon and add the search.db url to "__builtin__.sea
 ** TV Seasons
 #+BEGIN_EXAMPLE
   <dir>
-          <name></name>
+          <title></title>
           <meta>
                   <content>season</content>
                   <imdb></imdb>
@@ -161,7 +161,7 @@ Open the default.py for your addon and add the search.db url to "__builtin__.sea
 ** Settings
 #+BEGIN_SRC xml
   <plugin>
-    <name>30701</name>
+    <title>30701</title>
     <link>plugin://plugin.video.20ap/?action=openSettings</link>
     <thumbnail></thumbnail>
     <summary>Settings for Jen Addons</summary>
@@ -170,7 +170,7 @@ Open the default.py for your addon and add the search.db url to "__builtin__.sea
 ** Search
 #+BEGIN_SRC xml
   <plugin>
-    <name>30702</name>
+    <title>30702</title>
     <link>plugin://plugin.video.20ap/?action=search</link>
     <thumbnail></thumbnail>
     <summary>Search for Jen Addon</summary>

@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/79316-5.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>The Suite Life of Zack & Cody Season 1</name>
+	<title>The Suite Life of Zack & Cody Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0426371</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>The Suite Life of Zack & Cody Season 2</name>
+	<title>The Suite Life of Zack & Cody Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0426371</imdb>
@@ -31,7 +31,7 @@
 </dir>
 
 <dir>
-	<name>The Suite Life of Zack & Cody Season 3</name>
+	<title>The Suite Life of Zack & Cody Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0426371</imdb>

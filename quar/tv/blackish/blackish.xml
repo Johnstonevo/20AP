@@ -2,7 +2,7 @@
 <cache>10800</cache>
 ##########################################################################################
 <dir>
-        <name>Black-ish Season 1</name>
+        <title>Black-ish Season 1</title>
         <meta>
                 <content>season</content>
                 <imdb>tt3487356</imdb>
@@ -18,7 +18,7 @@
         <fanart>https://www.thetvdb.com/banners/fanart/original/281511-13.jpg</fanart>
 </dir>
 <dir>
-        <name>Black-ish Season 2</name>
+        <title>Black-ish Season 2</title>
         <meta>
                 <content>season</content>
                 <imdb>tt3487356</imdb>
@@ -35,7 +35,7 @@
 </dir>
 
 <dir>
-        <name>Black-ish Season 3</name>
+        <title>Black-ish Season 3</title>
         <meta>
                 <content>season</content>
                 <imdb>tt3487356</imdb>
@@ -52,7 +52,7 @@
 </dir>
 
 <dir>
-        <name>Black-ish Season 4</name>
+        <title>Black-ish Season 4</title>
         <meta>
                 <content>season</content>
                 <imdb>tt3487356</imdb>

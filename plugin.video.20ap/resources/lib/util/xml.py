@@ -47,9 +47,9 @@ wrapper class for jen list functions
     list_pattern = re.compile(
         '((?:<item>.+?</item>|<dir>.+?</dir>|<plugin>.+?</plugin>'
         '|<info>.+?</info>|'
-        '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
+        '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
         '<mode>[^<]+</mode>|'
-        '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
+        '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
         '<date>[^<]+</date>))', re.MULTILINE | re.DOTALL)
 
     def __init__(self, url, cached=True):
@@ -234,9 +234,9 @@ wrapper class for jen list functions
             title = item["title"]
             if title == "":
                 title = item["name"]
-                koding.dolog("depricated: <name>")
+                koding.dolog("depricated: <title>")
                 koding.dolog("name: " + repr(title))
-                koding.dolog("Use <title> instead of <name> in your xml")
+                koding.dolog("Use <title> instead of <title> in your xml")
                 koding.dolog("#####################")
             try:
                 title = xbmcaddon.Addon().getLocalizedString(int(title))

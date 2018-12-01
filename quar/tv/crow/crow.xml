@@ -2,7 +2,7 @@
 <cache>10800</cache>
 ##########################################################################################
 <dir>
-        <name>Upstart Crow - Season 1</name>
+        <title>Upstart Crow - Season 1</title>
         <meta>
                 <content>season</content>
                 <imdb>tt4793190</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-        <name>Upstart Crow - Season 2</name>
+        <title>Upstart Crow - Season 2</title>
         <meta>
                 <content>season</content>
                 <imdb>tt4793190</imdb>

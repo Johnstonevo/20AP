@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/152721-9.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Victorious Season 1</name>
+	<title>Victorious Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1604099</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>Victorious Season 2</name>
+	<title>Victorious Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1604099</imdb>
@@ -31,7 +31,7 @@
 </dir>
 
 <dir>
-	<name>Victorious Season 3</name>
+	<title>Victorious Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1604099</imdb>
@@ -45,7 +45,7 @@
 </dir>
 
 <dir>
-	<name>Victorious Season 4</name>
+	<title>Victorious Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1604099</imdb>

@@ -5,7 +5,7 @@
 ###########################################################################################################
 
 <dir>
-	<name>Adventure Time Season 1</name>
+	<title>Adventure Time Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 2</name>
+	<title>Adventure Time Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -33,7 +33,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 3</name>
+	<title>Adventure Time Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -47,7 +47,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 4</name>
+	<title>Adventure Time Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -61,7 +61,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 5</name>
+	<title>Adventure Time Season 5</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -75,7 +75,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 6</name>
+	<title>Adventure Time Season 6</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -89,7 +89,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 7</name>
+	<title>Adventure Time Season 7</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -103,7 +103,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 8</name>
+	<title>Adventure Time Season 8</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>
@@ -117,7 +117,7 @@
 </dir>
 
 <dir>
-	<name>Adventure Time Season 9</name>
+	<title>Adventure Time Season 9</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1305826</imdb>

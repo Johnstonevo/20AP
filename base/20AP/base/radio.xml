@@ -3,7 +3,7 @@
 ####################################################################################################
 
 <item>
-  <name>Absolute Classic Rock</name>
+  <title>Absolute Classic Rock</title>
   <link>http://aacplus-ac-128.timlradio.co.uk/</link>
     <thumbnail>http://images.radio.orange.com/radios/medium_absolute_classic_rock.png</thumbnail>
     <fanart></fanart>
@@ -11,7 +11,7 @@
 </item>
 
 <item>
-  <name>Absolute Radio</name>
+  <title>Absolute Radio</title>
   <link>http://aacplus-ar-128.timlradio.co.uk/</link>
     <thumbnail>http://images.radio.orange.com/radios/medium_absolute_radio.png</thumbnail>
     <fanart></fanart>
@@ -19,7 +19,7 @@
 </item>
 
 <item>
-  <name>Absolute 80s</name>
+  <title>Absolute 80s</title>
   <link>http://aacplus-a8-128.timlradio.co.uk/</link>
     <thumbnail>http://images.radio.orange.com/radios/medium_absolute_radio_80s.png</thumbnail>
     <fanart></fanart>
@@ -27,7 +27,7 @@
 </item>
 
 <item>
-  <name>Absolute Radio 60s</name>
+  <title>Absolute Radio 60s</title>
   <link>http://aacplus-a6-128.timlradio.co.uk/</link>
     <thumbnail>http://images.radio.orange.com/radios/medium_absolute_radio_60s.png</thumbnail>
     <fanart></fanart>
@@ -35,7 +35,7 @@
 </item>
 
 <item>
-  <name>Absolute Radio 70s</name>
+  <title>Absolute Radio 70s</title>
   <link>http://aacplus-a7-128.timlradio.co.uk/</link>
     <thumbnail>http://images.radio.orange.com/radios/medium_absolute_radio_70s.png</thumbnail>
     <fanart></fanart>
@@ -43,7 +43,7 @@
 </item>
 
 <item>
-  <name>Absolute Radio 90s </name>
+  <title>Absolute Radio 90s </title>
   <link>http://aacplus-a9-128.timlradio.co.uk/</link>
     <thumbnail>http://images.radio.orange.com/radios/medium_absolute_radio_90s.png</thumbnail>
     <fanart></fanart>
@@ -51,7 +51,7 @@
 </item>
 
 <item>
-  <name>Absolute Radio 00s</name>
+  <title>Absolute Radio 00s</title>
   <link>http://aacplus-a0-128.timlradio.co.uk/</link>
     <thumbnail>http://ndl.mgccw.com/mu3/000/473/638/icon_n/icon_xl.png</thumbnail>
     <fanart></fanart>
@@ -59,7 +59,7 @@
 </item>
 
 <item>
-  <name>BBC Radio 1</name>
+  <title>BBC Radio 1</title>
   <link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_p</link>
     <thumbnail>https://vignette.wikia.nocookie.net/logopedia/images/d/d8/Logo_5o.gif</thumbnail>
     <fanart></fanart>
@@ -67,7 +67,7 @@
 </item>
 
 <item>
-  <name>BBC Radio 2</name>
+  <title>BBC Radio 2</title>
   <link></link>
     <thumbnail>https://vignette.wikia.nocookie.net/logopedia/images/8/8e/Radio280ssmall.png</thumbnail>
     <fanart></fanart>
@@ -76,7 +76,7 @@
 
 
 <item>
-  <name>BBC 5 Live</name>
+  <title>BBC 5 Live</title>
   <link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5live_mf_p</link>
     <thumbnail>https://vignette.wikia.nocookie.net/logopedia/images/3/31/Radio_5_1990.png/revision/latest?cb=20110422175422</thumbnail>
     <fanart></fanart>
@@ -84,7 +84,7 @@
 </item>
 
 <item>
-  <name>BBC 5 Live Sports Extra</name>
+  <title>BBC 5 Live Sports Extra</title>
   <link>http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio5extra_mf_p</link>
     <thumbnail>https://vignette.wikia.nocookie.net/logopedia/images/4/44/BBC_Radio_5_Live_Sports_Extra.svg/revision/latest/scale-to-width-down/250?cb=20091108151831</thumbnail>
     <fanart></fanart>
@@ -93,7 +93,7 @@
 
 
 <item>
-  <name>BBC Radio Ulster</name>
+  <title>BBC Radio Ulster</title>
   <link></link>
     <thumbnail>https://vignette.wikia.nocookie.net/logopedia/images/c/c9/BBC_R_Ulster_1985a.png</thumbnail>
     <fanart></fanart>
@@ -102,7 +102,7 @@
 
 
 <item>
-  <name>Cool FM</name>
+  <title>Cool FM</title>
   <link>http://icy-e-bl-09-boh.sharp-stream.com:8000/coolfm.mp3</link>
     <thumbnail>https://vignette.wikia.nocookie.net/logopedia/images/4/4f/Cool_FM_1991.png/revision/latest/scale-to-width-down/200?cb=20131214023859</thumbnail>
     <fanart></fanart>
@@ -111,7 +111,7 @@
 
 
 <item>
-  <name>U105</name>
+  <title>U105</title>
   <link>http://gbradio.cdn.tibus.net/U105</link>
     <thumbnail>https://www.u105.com/getmedia/1f0141cd-5ec1-46e1-8027-334612e15e32/u105-logo-512x512.png</thumbnail>
     <fanart></fanart>
@@ -119,7 +119,7 @@
 </item>
 
 <item>
-  <name>Radio Q Ballymena</name>
+  <title>Radio Q Ballymena</title>
   <link>http://edge-audio-03-gos2.sharp-stream.com:80/qr1070.mp3</link>
     <thumbnail>https://mm.aiircdn.com/270/442603.png</thumbnail>
     <fanart></fanart>
@@ -127,7 +127,7 @@
 </item>
 
 <item>
-  <name>Radio Q Belfast</name>
+  <title>Radio Q Belfast</title>
   <link>http://edge-audio-03-gos2.sharp-stream.com:80/qr967.mp3</link>
     <thumbnail>https://mm.aiircdn.com/270/442603.png</thumbnail>
     <fanart></fanart>
@@ -136,7 +136,7 @@
 
 
 <item>
-  <name>Belfast FM</name>
+  <title>Belfast FM</title>
   <link>http://mp3streaming.planetwideradio.com:9030/belfastfm</link>
     <thumbnail>https://s3.amazonaws.com/bit-photos/large/6039662.jpeg</thumbnail>
     <fanart></fanart>
@@ -144,7 +144,7 @@
 </item>
 
 <item>
-  <name>Kerrang</name>
+  <title>Kerrang</title>
   <link>http://icy-e-bl-05-cr.sharp-stream.com:8000/kerrang.mp3</link>
     <thumbnail>https://listenapi.s3.amazonaws.com/img/ConfigWebListenBarLogoImageUrl/23.png</thumbnail>
     <fanart></fanart>

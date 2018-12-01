@@ -4,7 +4,7 @@
 ##########################################################################################
 
 <dir>
-<name>Ballers Season 1</name>
+<title>Ballers Season 1</title>
 <meta>
 <content>season</content>
 <imdb>tt2891574</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-<name>Ballers Season 2</name>
+<title>Ballers Season 2</title>
 <meta>
 <content>season</content>
 <imdb>tt2891574</imdb>
@@ -32,7 +32,7 @@
 </dir>
 
 <dir>
-	<name>Ballers Season 3</name>
+	<title>Ballers Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2891574</imdb>

@@ -8,7 +8,7 @@
 </dir>
 
 <dir>
-	<name>Horror Film List powered by TMDB</name>
+	<title>Horror Film List powered by TMDB</title>
 	<tmdb>list/47246</tmdb>
 	<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
 	<fanart></fanart>
@@ -16,14 +16,14 @@
 </dir>
 
 <dir>
-	<name>Amityville  Collection</name>
+	<title>Amityville  Collection</title>
 <tmdb>collection/397842</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/8uCu7d43IHPwFfNS2qCyVuRP1cP.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/kPfuozrsE7pmFFolkR0xFicZDJT.jpg</fanart>
 	<content>boxset</content>
 </dir>
 <dir>
-	<name>Annabelle Collection</name>
+	<title>Annabelle Collection</title>
 	<tmdb>collection/402074</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/zJfExJWUgugWziREAikeAW69poY.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/9e4RfbKBCrQIPKL8Ix8OgibxwJa.jpg</fanart>
@@ -31,7 +31,7 @@
 </dir>
 
 <dir>
-	<name>Chucky  Collection</name>
+	<title>Chucky  Collection</title>
 <tmdb>collection/10455</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/zeMPbx550n23qnrYpUiqRWRIWv9.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/AAhYXBVIEl6WgQnzfBsauTIC25.jpg</fanart>
@@ -40,7 +40,7 @@
 
 
 <dir>
-	<name>Evil Dead  Collection</name>
+	<title>Evil Dead  Collection</title>
 	<tmdb>collection/1960</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/eWFADubShlTEUiNsPcN6BMOKakr.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/jrLLRe7pctP1aFDRuD9mt59YGHX.jpg</fanart>
@@ -48,7 +48,7 @@
 </dir>
 
 <dir>
-	<name>Exorcist Collection</name>
+	<title>Exorcist Collection</title>
 	<tmdb>collection/12263</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/gZnEheMdhKxSZQUEzphCHXldud1.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/wjMqwHkOuDBSOY5MujL5GSdlBTk.jpg</fanart>
@@ -56,7 +56,7 @@
 </dir>
 
 <dir>
-	<name>Final Destination Collection</name>
+	<title>Final Destination Collection</title>
 	<tmdb>collection/8864</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/mZUyhsfIthTl5rfdeSox702Ircr.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/y3aWOInifbGKXM34KjtcMITrZRZ.jpg</fanart>
@@ -64,7 +64,7 @@
 </dir>
 
 <dir>
-	<name>Friday The 13th Collection</name>
+	<title>Friday The 13th Collection</title>
 	<tmdb>collection/9735</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/2BMuz18SvJjfYtY5gUntZGDDS9b.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/yz9EdlfKU8bpN0hbdJMy6QkFBoN.jpg</fanart>
@@ -72,7 +72,7 @@
 </dir>
 
 <dir>
-	<name>Halloween Collection</name>
+	<title>Halloween Collection</title>
 	<tmdb>collection/91361</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/2uqHV6YcD9jEL2WuJYjXiiuRDqd.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/vGfaIrWhyrWCADWoeA1Rt56YsvK.jpg</fanart>
@@ -80,7 +80,7 @@
 </dir>
 
 <dir>
-	<name>The Mummy (Hammer Series) (1959-1971)</name>
+	<title>The Mummy (Hammer Series) (1959-1971)</title>
 	<tmdb>collection/138965</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/90f5SF3s02ndW498kGdm2lIVpYp.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/iLmCaLaw9Tn8JeFtUbhlaNVFcga.jpg</fanart>
@@ -89,7 +89,7 @@
 
 
 <dir>
-	<name>Vampire Karnstein (Hammer series) (1970-1971)</name>
+	<title>Vampire Karnstein (Hammer series) (1970-1971)</title>
 	<tmdb>collection/123740</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/dsMANCcvjdU6cbw6GUtYMoODti9.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/o8h3cj8cS9x3iBtzTC2UxNtneac.jpg</fanart>
@@ -97,7 +97,7 @@
 </dir>
 
 <dir>
-	<name>Dick Barton (Hammer series) (1949-1950)</name>
+	<title>Dick Barton (Hammer series) (1949-1950)</title>
 	<tmdb>collection/123741</tmdb>
 	<thumbnail></thumbnail>
 	<fanart></fanart>
@@ -105,7 +105,7 @@
 </dir>
 
 <dir>
-	<name>Frankenstein (Hammer Series) (1957-1973)</name>
+	<title>Frankenstein (Hammer Series) (1957-1973)</title>
 	<tmdb>collection/123720</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/fKiok5TbCKWRgfNd4Rj8gPMzGJp.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/6k7NzhLLHTmz8JOHLhhCBjEoZNn.jpg</fanart>
@@ -114,7 +114,7 @@
 
 
 <dir>
-	<name>Dracula (Hammer Series) (1958-1974)</name>
+	<title>Dracula (Hammer Series) (1958-1974)</title>
 	<tmdb>collection/123724</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/n5SozLvdQZ7cYJb22ZIwNw1DzSg.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/hybYYwBqaomfePU3uaiJfpg7ykC.jpg</fanart>
@@ -123,7 +123,7 @@
 
 
 <dir>
-	<name>Blood Island (Hammer series) (1958-1964)</name>
+	<title>Blood Island (Hammer series) (1958-1964)</title>
 	<tmdb>collection/123751</tmdb>
 	<thumbnail></thumbnail>
 	<fanart></fanart>
@@ -132,7 +132,7 @@
 
 
 <dir>
-	<name>Quatermass (Hammer series) (1955-1967)</name>
+	<title>Quatermass (Hammer series) (1955-1967)</title>
 	<tmdb>collection/123726</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/skk1tmdHnvySB8kADEtoOActyOc.jpg</thumbnail>
 	<fanart></fanart>
@@ -141,7 +141,7 @@
 
 
 <dir>
-	<name>Hostel Collection</name>
+	<title>Hostel Collection</title>
 	<tmdb>collection/86578</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/2jLQFRlH8CC9cptcANY5cEtC1q8.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/rXf4gEh8m3ZcK9KHkxT78Kscxee.jpg</fanart>
@@ -149,7 +149,7 @@
 </dir>
 
 <dir>
-	<name>Insidious Collection</name>
+	<title>Insidious Collection</title>
 	<tmdb>collection/228446</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/bA8UpUuAbET2RMQE96xT7eBPF4Q.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/w1213HKk1XKSwHiBgjkWghn9biC.jpg</fanart>
@@ -158,14 +158,14 @@
 
 
 <dir>
-	<name>Leprechaun Collection (Original Series) (1993-2014)</name>
+	<title>Leprechaun Collection (Original Series) (1993-2014)</title>
 <tmdb>collection/19285</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/kdnaM7K8T8oXwWk2QdiWEs8Zg2w.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/pRjYboGyfjO5PkY7Rdg21s4FhoI.jpg</fanart>
 	<content>boxset</content>
 </dir>
 <dir>
-	<name>Lost Boys Collection</name>
+	<title>Lost Boys Collection</title>
 	<tmdb>collection/109076</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/rpuL8zSLmVt34gwk03gSGReSjog.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/qXpWa7kDopkOyEhuZtOLgIh4SW9.jpg</fanart>
@@ -173,7 +173,7 @@
 </dir>
 
 <dir>
-	<name>Poltergeist Collection</name>
+	<title>Poltergeist Collection</title>
 	<tmdb>collection/10453</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/8Z6P04pKGvCnkmHdAl2lmbfAIbN.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/i8QZZV1olny9FCPNrxAL7Kk9CJy.jpg</fanart>
@@ -181,7 +181,7 @@
 </dir>
 
 <dir>
-	<name>Purge Collection</name>
+	<title>Purge Collection</title>
 	<tmdb>collection/256322</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/nP3c8mTSxlis4vfg0UjlkK8LRG9.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/quFWGOA4I5KCTsyDbvLh6PHNZwv.jpg</fanart>
@@ -191,7 +191,7 @@
 
 
 <dir>
-	<name>The Conjuring Collection</name>
+	<title>The Conjuring Collection</title>
 	<tmdb>collection/313086</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/z5VKhNSQKQyxm0co68HAkCqHnmX.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/opwZzjx69QvbSX1zbC0sc4J4KBX.jpg</fanart>
@@ -199,7 +199,7 @@
 </dir>
 
 <dir>
-	<name>The Grudge Collection</name>
+	<title>The Grudge Collection</title>
 	<tmdb>collection/1974</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/3RiD800pPupNXPRb4m455aVewzr.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/24PMJqKLoOpdbmnNpWwr0mYvVHb.jpg</fanart>
@@ -207,7 +207,7 @@
 </dir>
 
 <dir>
-	<name>The Omen Collection</name>
+	<title>The Omen Collection</title>
 	<tmdb>collection/10919</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/5De8Hqq0z9gmDM7SbWU0C5pTjPC.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/97vU4Y2bBmoJ3Mwi3uOAL8ahdUC.jpg</fanart>
@@ -215,14 +215,14 @@
 </dir>
 
 <dir>
-	<name>The Ring Collection</name>
+	<title>The Ring Collection</title>
 	<tmdb>collection/14563</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/500xj7l72BojMZ3tNBJY46tg5YJ.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/jXlFymc442CEMB5h3d62GeJefnW.jpg</fanart>
 	<content>boxset</content>
 </dir>
 <dir>
-	<name>Saw Collection</name>
+	<title>Saw Collection</title>
 	<tmdb>collection/656</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/xmC2A7qPEfiOkQC58fZh8srWQ5v.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/oLfS1lOmN2KIU2IQ200SDEPVEZe.jpg</fanart>
@@ -230,7 +230,7 @@
 </dir>
 
 <dir>
-	<name>Scream Collection</name>
+	<title>Scream Collection</title>
 	<tmdb>collection/2602</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/aB23MPCHRMhKLvbhmAi0C9FgtBf.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/q3uWhb5PP9bt0eRLp6xKmzXns4S.jpg</fanart>
@@ -238,7 +238,7 @@
 </dir>
 
 <dir>
-	<name>Sinister Collection</name>
+	<title>Sinister Collection</title>
 	<tmdb>collection/357173</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/tiswDSLBIphIYpkF58MVlaJ1Vak.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/4JASyGk5suaz4xwMp6irzg334k6.jpg</fanart>
@@ -246,7 +246,7 @@
 </dir>
 
 <dir>
-	<name>Stephen King Collection</name>
+	<title>Stephen King Collection</title>
 	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/movies/stephenking.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/z8cHPoqTslxRR7oWQ5wsh0fNLt2.jpg</thumbnail>
 	<fanart></fanart>
@@ -254,7 +254,7 @@
 </dir>
 
 <dir>
-	<name>Whispering Corridors Collection (South Korean)</name>
+	<title>Whispering Corridors Collection (South Korean)</title>
 	<tmdb>collection/131780</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/snxMKlOnODej8e0dXTkO5uktGBa.jpg</thumbnail>
 	<fanart></fanart>
@@ -262,7 +262,7 @@
 </dir>
 
 <dir>
-	<name>Silly Horror Films</name>
+	<title>Silly Horror Films</title>
 	<tmdb>list/47250</tmdb>
 	<thumbnail></thumbnail>
 	<fanart></fanart>

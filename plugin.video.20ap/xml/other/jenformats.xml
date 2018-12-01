@@ -3,7 +3,7 @@ If not using gifs you can remove <animated_thumbnail></animated_thumbnail> and <
 Main Directory 
 
 <dir>
-<name></name>
+<title></title>
 <link></link>
 <animated_thumbnail></animated_thumbnail>
 <thumbnail></thumbnail>
@@ -65,7 +65,7 @@ Reddit
 F4M
 
 <plugin>
-<name></name>
+<title></title>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;url=Add Your Link Here</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -128,7 +128,7 @@ TV Directory
 TV Seasons
 
 <dir>
-<name></name>
+<title></title>
 <meta>
   <content>season</content>
   <imdb></imdb>

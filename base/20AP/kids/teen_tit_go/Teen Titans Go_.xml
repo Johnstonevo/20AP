@@ -3,7 +3,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/266775-7.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Teen Titans Go! Season 1</name>
+	<title>Teen Titans Go! Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2771780</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>Teen Titans Go! Season 2</name>
+	<title>Teen Titans Go! Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2771780</imdb>
@@ -31,7 +31,7 @@
 </dir>
 
 <dir>
-	<name>Teen Titans Go! Season 3</name>
+	<title>Teen Titans Go! Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2771780</imdb>
@@ -45,7 +45,7 @@
 </dir>
 
 <dir>
-	<name>Teen Titans Go! Season 4</name>
+	<title>Teen Titans Go! Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2771780</imdb>

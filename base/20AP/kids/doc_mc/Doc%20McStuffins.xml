@@ -4,7 +4,7 @@
 <fanart>https://image.tmdb.org/t/p/original/ixEY6ODkOyINiwlJaTHaTLoNtoM.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Doc McStuffins Season 1</name>
+	<title>Doc McStuffins Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1710295</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-	<name>Doc McStuffins Season 2</name>
+	<title>Doc McStuffins Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1710295</imdb>
@@ -32,7 +32,7 @@
 </dir>
 
 <dir>
-	<name>Doc McStuffins Season 3</name>
+	<title>Doc McStuffins Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1710295</imdb>
@@ -46,7 +46,7 @@
 </dir>
 
 <dir>
-	<name>Doc McStuffins Season 4</name>
+	<title>Doc McStuffins Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1710295</imdb>

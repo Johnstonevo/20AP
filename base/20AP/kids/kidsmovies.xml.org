@@ -293,7 +293,7 @@ The Despicable Me franchise centers on Gru, a super-villain (who later becomes a
 
 
 <dir>
-	<name>Disney Movies</name>
+	<title>Disney Movies</title>
 	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/movies/disney.xml</link>
 	<thumbnail>https://c-sf.smule.com/sf/s24/arr/c8/ca/80478fc7-e06f-428c-9884-d7f625a68ddb.jpg</thumbnail>
 	<fanart>https://report.az/storage/news/300c49df2d6f14b9f8385744844b6fe2/09c08345-9666-4545-82c6-9eb8927a1c73.jpg</fanart>
@@ -739,7 +739,7 @@ The first three films in the series follow Daniel LaRusso, who learns to harness
 </item>
 
 <dir>
-	<name>Pixar Movies</name>
+	<title>Pixar Movies</title>
 	<link>https://raw.githubusercontent.com/Johnstonevo/20AP/master/movies/pixar.xml</link>
 	<thumbnail>https://68.media.tumblr.com/avatar_83df6c0a77f0_128.png</thumbnail>
 	<fanart>http://fabulousclassroom.com/wp-content/uploads/2015/01/7f017abb-f3d9-40c4-a841-d9d686dc9a56-Pixar-Movies.jpeg</fanart>

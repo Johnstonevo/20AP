@@ -5,7 +5,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/79177-2.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Life on Mars Season 1</name>
+	<title>Life on Mars Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0478942</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-	<name>Life on Mars Season 2</name>
+	<title>Life on Mars Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0478942</imdb>

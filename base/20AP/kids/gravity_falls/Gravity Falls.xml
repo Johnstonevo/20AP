@@ -4,7 +4,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/259972-1.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Gravity Falls Season 1</name>
+	<title>Gravity Falls Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1865718</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-	<name>Gravity Falls Season 2</name>
+	<title>Gravity Falls Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1865718</imdb>

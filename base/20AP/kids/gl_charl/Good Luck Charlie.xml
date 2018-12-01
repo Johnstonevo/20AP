@@ -4,7 +4,7 @@
 <fanart>http://thetvdb.com/banners/fanart/original/154341-6.jpg</fanart>
 #######################################################################################################################################
 <dir>
-	<name>Good Luck Charlie Season 1</name>
+	<title>Good Luck Charlie Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1415889</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-	<name>Good Luck Charlie Season 2</name>
+	<title>Good Luck Charlie Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1415889</imdb>
@@ -32,7 +32,7 @@
 </dir>
 
 <dir>
-	<name>Good Luck Charlie Season 3</name>
+	<title>Good Luck Charlie Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1415889</imdb>
@@ -46,7 +46,7 @@
 </dir>
 
 <dir>
-	<name>Good Luck Charlie Season 4</name>
+	<title>Good Luck Charlie Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt1415889</imdb>

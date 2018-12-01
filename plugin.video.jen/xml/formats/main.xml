@@ -35,7 +35,7 @@
   </dir>
 
   <plugin>
-    <name>Testings</name>
+    <title>Testings</title>
     <link>plugin://plugin.video.jenplugin/?action=developer</link>
     <thumbnail></thumbnail>
     <summary>Testings</summary>

@@ -4,7 +4,7 @@
 ################################################################################
 
 <dir>
-        <name>The Grand Tour Season 1</name>
+        <title>The Grand Tour Season 1</title>
         <meta>
                 <content>season</content>
                 <imdb>tt5712554</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-        <name>The Grand Tour Season 2</name>
+        <title>The Grand Tour Season 2</title>
         <meta>
                 <content>season</content>
                 <imdb>tt5712554</imdb>

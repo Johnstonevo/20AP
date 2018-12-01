@@ -5,7 +5,7 @@
 ################################################################################
 
 <dir>
-        <name>The Blue Planet</name>
+        <title>The Blue Planet</title>
         <meta>
                 <content>season</content>
                 <imdb>tt0296310</imdb>
@@ -20,7 +20,7 @@
 </dir>
 
 <dir>
-        <name>The Blue Planet II</name>
+        <title>The Blue Planet II</title>
         <meta>
                 <content>season</content>
                 <imdb>tt6769208</imdb>

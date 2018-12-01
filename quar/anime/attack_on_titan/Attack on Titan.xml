@@ -3,7 +3,7 @@
 <fanart>http://www.thetvdb.com/banners/fanart/original/267440-13.jpg</fanart>
 ################################################################################
 <dir>
-	<name>Attack on Titan Season 1</name>
+	<title>Attack on Titan Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2560140</imdb>
@@ -17,7 +17,7 @@
 </dir>
 
 <dir>
-	<name>Attack on Titan Season 2</name>
+	<title>Attack on Titan Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt2560140</imdb>

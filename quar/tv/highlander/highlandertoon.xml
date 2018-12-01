@@ -2,7 +2,7 @@
 <cache>10800</cache>
 ##########################################################################################
 <dir>
-        <name>Highlander: The Animated Series Season 1</name>
+        <title>Highlander: The Animated Series Season 1</title>
         <meta>
                 <content>season</content>
                 <imdb>tt0147773</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-        <name>Highlander: The Animated Series Season 2</name>
+        <title>Highlander: The Animated Series Season 2</title>
         <meta>
                 <content>season</content>
                 <imdb>tt0147773</imdb>

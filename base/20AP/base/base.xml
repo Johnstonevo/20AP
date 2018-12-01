@@ -7,7 +7,7 @@
 
 
 <dir>
-<name>TV</name>
+<title>TV</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/tvshows.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/tv.png</thumbnail>
 <Summary>TV Shows.  Old, New, Interesting</summary>
@@ -15,7 +15,7 @@
 </dir>
 
 <dir>
-<name>Movies</name>
+<title>Movies</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/movies.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/movie-3.png</thumbnail>
 <summary>Movie lists.  Old New, Interesting</summary>
@@ -29,7 +29,7 @@
 
 
 <dir>
-<name>Youtube</name>
+<title>Youtube</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
 <fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
@@ -38,7 +38,7 @@
 
 
 <dir>
-<name>Sport</name>
+<title>Sport</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
 <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
@@ -47,7 +47,7 @@
 
 
 <dir>
-<name>Documentaries</name>
+<title>Documentaries</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml</link>
 <thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png</thumbnail>
 <fanart></fanart>
@@ -83,7 +83,7 @@
 
 
 <dir>
-<name>Music</name>
+<title>Music</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/music.xml</link>
 <thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
 <fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
@@ -103,7 +103,7 @@
 
 
 <dir>
-<name>Bobby's Favourites</name>
+<title>Bobby's Favourites</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/bobby.xml</link>
 <summary>All Bobbys sick and twisted stuff</summary>
 <thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/images/bobby.png</thumbnail>
@@ -112,7 +112,7 @@
 
 
 <dir>
-<name>Kids</name>
+<title>Kids</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/base.xml</link>
 <thumbnail>https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png</thumbnail>
 <fanart></fanart>
@@ -120,7 +120,7 @@
 </dir>
 
 <dir>
-<name>Iain's Favourites</name>
+<title>Iain's Favourites</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/iain.xml</link>
 <summary></summary>
 <thumbnail></thumbnail>

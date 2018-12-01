@@ -13,7 +13,7 @@
 
 
 <dir>
-<name>Live Sports Acestreams</name>
+<title>Live Sports Acestreams</title>
 <link>plugin://script.module.acesports</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
 <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
@@ -27,14 +27,14 @@
 
 
 <dir>
-  <name>Formula 1</name>
+  <title>Formula 1</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/f1.xml</link>
   <thumbnail>https://yt3.ggpht.com/-p4tzDhRHziM/AAAAAAAAAAI/AAAAAAAAAAA/BgBf89zrN30/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
   <fanart>https://wallpapersontheweb.net/wallpapers/l/mercedesbenz_nico_rosberg_mercedes_amg_petronas_formula_1-8443.jpg</fanart>
 </dir>
 
 <dir>
-  <name>Rugby Union</name>
+  <title>Rugby Union</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/rugby/rugby.xml</link>
   <thumbnail>http://cdn.pulselive.com/dynamic/client/irb/static/i/meta/wr.png</thumbnail>
   <fanart>http://s1.1zoom.me/b4764/646/Men_rugby_Mud_Legs_Shorts_Knee_highs_Athletic_shoe_512998_1280x720.jpg</fanart>
@@ -43,14 +43,14 @@
 
 
 <dir>
-  <name>Moto GP</name>
+  <title>Moto GP</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/Motogp/motogp.xml</link>
   <thumbnail>http://www.logoeps.com/wp-content/uploads/2013/03/moto-gp-eps-vector-logo.png</thumbnail>
   <fanart>http://wallpapercave.com/wp/vcoHUS9.jpg</fanart>
 </dir>
 
 <dir>
-  <name>Indy Car</name>
+  <title>Indy Car</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/indy/indy.xml</link>
   <thumbnail>https://sites.google.com/site/wildqat/Home/Indy-Car-Power.jpg</thumbnail>
   <fanart></fanart>
@@ -58,7 +58,7 @@
 
 
 <dir>
-  <name>Darts</name>
+  <title>Darts</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/darts.xml</link>
   <thumbnail>https://pbs.twimg.com/profile_images/875724789700333568/38t130uN.jpg</thumbnail>
   <fanart></fanart>
@@ -66,7 +66,7 @@
 
 
 <dir>
-  <name>Super GT</name>
+  <title>Super GT</title>
   <link>plugin://plugin.video.youtube/channel/UCaTxfj0BzL-MaCy-YUqPRoQ/</link>
   <thumbnail>https://yt3.ggpht.com/-nmIU6cZltsU/AAAAAAAAAAI/AAAAAAAAAAA/iNCI6SgSUTQ/s100-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
 </dir>

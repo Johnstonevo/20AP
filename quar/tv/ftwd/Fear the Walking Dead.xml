@@ -4,7 +4,7 @@
 ##########################################################################################
 
 <dir>
-<name>Fear The Walking Dead Season 1</name>
+<title>Fear The Walking Dead Season 1</title>
 <meta>
 <content>season</content>
 <imdb>tt3743822</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-<name>Fear The Walking Dead Season 2</name>
+<title>Fear The Walking Dead Season 2</title>
 <meta>
 <content>season</content>
 <imdb>tt3743822</imdb>
@@ -32,7 +32,7 @@
 </dir>
 
 <dir>
-	<name>Fear the Walking Dead Season 3</name>
+	<title>Fear the Walking Dead Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt3743822</imdb>

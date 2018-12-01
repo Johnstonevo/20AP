@@ -47,9 +47,9 @@ wrapper class for jen list functions
     list_pattern = re.compile(
         '((?:<item>.+?</item>|<dir>.+?</dir>|<plugin>.+?</plugin>'
         '|<info>.+?</info>|'
-        '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
+        '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
         '<mode>[^<]+</mode>|'
-        '<name>[^<]+</name><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
+        '<title>[^<]+</title><link>[^<]+</link><thumbnail>[^<]+</thumbnail>'
         '<date>[^<]+</date>))', re.MULTILINE | re.DOTALL)
 
     def __init__(self, url, cached=True):

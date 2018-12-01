@@ -4,7 +4,7 @@
 ################################################################################
 
 <dir>
-  <name>Black Butler Season 1</name>
+  <title>Black Butler Season 1</title>
   <meta>
     <content>season</content>
     <imdb>tt1316554</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-  <name>Black Butler Season 2</name>
+  <title>Black Butler Season 2</title>
   <meta>
     <content>season</content>
     <imdb>tt1316554</imdb>
@@ -34,7 +34,7 @@
 </dir>
 
 <dir>
-  <name>Black Butler Season 3</name>
+  <title>Black Butler Season 3</title>
   <meta>
     <content>season</content>
     <imdb>tt1316554</imdb>

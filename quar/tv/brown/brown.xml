@@ -3,7 +3,7 @@
 ################################################################################
 
 <dir>
-  <name>Specials</name>
+  <title>Specials</title>
   <meta>
     <content>season</content>
     <imdb>tt1819022</imdb>
@@ -20,7 +20,7 @@
 
 
 <dir>
-  <name>Season 1</name>
+  <title>Season 1</title>
   <meta>
     <content>season</content>
     <imdb>tt1819022</imdb>
@@ -35,7 +35,7 @@
 </dir>
 
 <dir>
-  <name>Season 2</name>
+  <title>Season 2</title>
   <meta>
     <content>season</content>
     <imdb>tt1819022</imdb>
@@ -50,7 +50,7 @@
 </dir>
 
 <dir>
-  <name>Season 3</name>
+  <title>Season 3</title>
   <meta>
     <content>season</content>
     <imdb>tt1819022</imdb>

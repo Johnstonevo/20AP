@@ -4,7 +4,7 @@
 
 
 <dir>
-  <name>Season 1</name>
+  <title>Season 1</title>
   <meta>
     <content>season</content>
     <imdb>tt4179452</imdb>
@@ -19,7 +19,7 @@
 </dir>
 
 <dir>
-  <name>Season 2</name>
+  <title>Season 2</title>
   <meta>
     <content>season</content>
     <imdb>tt4179452</imdb>

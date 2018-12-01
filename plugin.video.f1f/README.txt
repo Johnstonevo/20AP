@@ -84,7 +84,7 @@ _________________
 
   ,----
   | <dir>
-  |         <name></name>
+  |         <title></title>
   |         <link></link>
   |         <animated_thumbnail></animated_thumbnail>
   |         <thumbnail></thumbnail>
@@ -145,7 +145,7 @@ _________________
 
   ,----
   | <dir>
-  |         <name></name>
+  |         <title></title>
   |         <meta>
   |                 <content>season</content>
   |                 <imdb></imdb>

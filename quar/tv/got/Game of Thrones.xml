@@ -6,7 +6,7 @@
 
 
 <dir>
-<name>Game of Thrones Season 1</name>
+<title>Game of Thrones Season 1</title>
 <meta>
 <content>season</content>
 <imdb>tt0944947</imdb>
@@ -20,7 +20,7 @@
 </dir>
 
 <dir>
-<name>Game of Thrones Season 2</name>
+<title>Game of Thrones Season 2</title>
 <meta>
 <content>season</content>
 <imdb>tt0944947</imdb>
@@ -34,7 +34,7 @@
 </dir>
 
 <dir>
-<name>Game of Thrones Season 3</name>
+<title>Game of Thrones Season 3</title>
 <meta>
 <content>season</content>
 <imdb>tt0944947</imdb>
@@ -48,7 +48,7 @@
 </dir>
 
 <dir>
-<name>Game of Thrones Season 4</name>
+<title>Game of Thrones Season 4</title>
 <meta>
 <content>season</content>
 <imdb>tt0944947</imdb>
@@ -62,7 +62,7 @@
 </dir>
 
 <dir>
-<name>Game of Thrones Season 5</name>
+<title>Game of Thrones Season 5</title>
 <meta>
 <content>season</content>
 <imdb>tt0944947</imdb>
@@ -76,7 +76,7 @@
 </dir>
 
 <dir>
-<name>Game of Thrones Season 6</name>
+<title>Game of Thrones Season 6</title>
 <meta>
 <content>season</content>
 <imdb>tt0944947</imdb>
@@ -90,7 +90,7 @@
 </dir>
 
 <dir>
-	<name>Game of Thrones Season 7</name>
+	<title>Game of Thrones Season 7</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0944947</imdb>

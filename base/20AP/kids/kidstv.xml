@@ -1,5 +1,5 @@
 <dir>
-<name>Adventure Time</name>
+<title>Adventure Time</title>
 <meta>
 <content>season</content>
 <imdb>tt1305826</imdb>
@@ -105,7 +105,7 @@
 
 
 <dir>
-<name>Disney's Adventures of the Gummi Bears</name>
+<title>Disney's Adventures of the Gummi Bears</title>
 <meta>
 <content>season</content>
 <imdb>tt0088528</imdb>
@@ -193,7 +193,7 @@
 </dir>
 
 <dir>
-	<name>The Fairly OddParents</name>
+	<title>The Fairly OddParents</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0235918</imdb>
@@ -207,7 +207,7 @@
 </dir>
 
 <dir>
-  <name>Frozen Planet</name>
+  <title>Frozen Planet</title>
   <meta>
     <content>TV Show</content>
     <imdb>tt2092588</imdb>
@@ -360,7 +360,7 @@
 	<fanart>http://thetvdb.com/banners/fanart/original/293614-8.jpg</fanart>
 </dir>
 <dir>
-  <name>Planet Earth</name>
+  <title>Planet Earth</title>
   <meta>
     <content>TV Show</content>
     <imdb>tt0795176</imdb>
@@ -374,7 +374,7 @@
 </dir>
 
 <dir>
-	<name>Pokemon</name>
+	<title>Pokemon</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt0176385</imdb>
@@ -511,7 +511,7 @@
 	<fanart>http://thetvdb.com/banners/fanart/original/83207-2.jpg</fanart>
 </dir>
 
-<dir><name>Teenage mutant ninja turtles</name>
+<dir><title>Teenage mutant ninja turtles</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/tmnt/Tmnt.xml</link>
 <thumbnail>http://image.tmdb.org/t/p/w500/dDz6CRcJVSH36BdqNy8wikimhPl.jpg</thumbnail></dir>
 

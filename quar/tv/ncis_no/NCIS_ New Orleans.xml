@@ -6,7 +6,7 @@
 ##########################################################################################
 
 <dir>
-	<name>NCIS: New Orleans Season 1</name>
+	<title>NCIS: New Orleans Season 1</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt3560084</imdb>
@@ -20,7 +20,7 @@
 </dir>
 
 <dir>
-	<name>NCIS: New Orleans Season 2</name>
+	<title>NCIS: New Orleans Season 2</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt3560084</imdb>
@@ -34,7 +34,7 @@
 </dir>
 
 <dir>
-	<name>NCIS: New Orleans Season 3</name>
+	<title>NCIS: New Orleans Season 3</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt3560084</imdb>
@@ -48,7 +48,7 @@
 </dir>
 
 <dir>
-	<name>NCIS: New Orleans Season 4</name>
+	<title>NCIS: New Orleans Season 4</title>
 	<meta>
 		<content>season</content>
 		<imdb>tt3560084</imdb>

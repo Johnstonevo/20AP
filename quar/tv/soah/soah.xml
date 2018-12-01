@@ -3,7 +3,7 @@
 <fanart>https://www.thetvdb.com/banners/fanart/original/289656-1.jpg<</<fanart>
 ################################################################################
 <dir>
-  <name>Season 1</name>
+  <title>Season 1</title>
   <meta>
     <content>season</content>
     <imdb>tt3425318</imdb>
@@ -18,7 +18,7 @@
 </dir>
 
 <dir>
-  <name>Season 2</name>
+  <title>Season 2</title>
   <meta>
     <content>season</content>
     <imdb>tt3425318</imdb>
@@ -33,7 +33,7 @@
 </dir>
 
 <dir>
-  <name>Season 3</name>
+  <title>Season 3</title>
   <meta>
     <content>season</content>
     <imdb>tt3425318</imdb>

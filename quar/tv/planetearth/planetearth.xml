@@ -5,7 +5,7 @@
 ################################################################################
 
 <dir>
-        <name>Planet Earth</name>
+        <title>Planet Earth</title>
         <meta>
                 <content>season</content>
                 <imdb>tt0795176</imdb>
@@ -20,7 +20,7 @@
 </dir>
 
 <dir>
-        <name>Planet Earth II</name>
+        <title>Planet Earth II</title>
         <meta>
                 <content>season</content>
                 <imdb>tt5491994</imdb>

@@ -41,7 +41,7 @@ If not using gifs you can remove <animated_thumbnail></animated_thumbnail> and <
   </dir>
 
   <plugin>
-    <name>Testings</name>
+    <title>Testings</title>
     <link>plugin://plugin.video.jenplugin/?action=developer</link>
     <thumbnail></thumbnail>
     <summary>Testings</summary>
@@ -51,7 +51,7 @@ If not using gifs you can remove <animated_thumbnail></animated_thumbnail> and <
 ==========Most Common Formats==========
 
 <dir>
-   <name></name>
+   <title></title>
    <link></link>
    <thumbnail></thumbnail>
    <fanart></fanart>
@@ -409,7 +409,7 @@ Live Channels
 ==========F4M==========
 
 <plugin>
-<name></name>
+<title></title>
 <link>plugin://plugin.video.f4mTester/?streamtype=TSDOWNLOADER&amp;url=Add Your Link Here</link>
 <thumbnail></thumbnail>
 <fanart></fanart>
@@ -461,7 +461,7 @@ TV Directory
 TV Seasons
 
 <dir>
-<name></name>
+<title></title>
 <meta>
   <content>season</content>
   <imdb></imdb>

@@ -252,9 +252,9 @@ class JenColorize(Plugin):
                 the_setting = 'white'
                 xbmcaddon.Addon().setSetting('%s' % (colorit), str(the_setting))
             color = COLOR_CHART[the_setting]
-            if "<name>" in item_xml:
-                item_xml = item_xml.replace("<name>", "<name>[COLOR FFff%s]" % color, 1)
-                item_xml = item_xml.replace("</name>", "[/COLOR]</name>", 1)
+            if "<title>" in item_xml:
+                item_xml = item_xml.replace("<title>", "<title>[COLOR FFff%s]" % color, 1)
+                item_xml = item_xml.replace("</title>", "[/COLOR]</title>", 1)
             else:
                 item_xml = item_xml.replace("<title>", "<title>[COLOR FFff%s]" % color, 1)
                 item_xml = item_xml.replace("</title>", "[/COLOR]</title>", 1)
