@@ -114,6 +114,14 @@
 <summary>Link to the Kids Add-on Playlists</summary>
 </dir>
 
+<dir>
+<name>Iain's Favourites</name>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/iain.xml</link>
+<summary></summary>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
+
 
 <dir>
   <title>Trakt Lists</title>

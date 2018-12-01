@@ -23,24 +23,6 @@
 
 
 
-
-<plugin>
-  <title>Iain's Playlist</title>
-  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZNSZ9N_KlT4-ffYK0NYKH0p/</link>
-  <thumbnail></thumbnail>
-  <summary></summary>
-</plugin>
-
-
-<plugin>
-  <title>Iain's Bass Practice Playlist</title>
-  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZO7QYK-ILZeuf0XJjhpJs9C/</link>
-  <thumbnail></thumbnail>
-  <fanart>https://wallpaper-house.com/data/out/12/wallpaper2you_524022.jpg</fanart>
-  <summary></summary>
-</plugin>
-
-
 <plugin>
 	<title>BTS</title>
 	<link>plugin://plugin.video.youtube/channel/UC3IZKseVpdzPSBaWxBxundA/</link>
