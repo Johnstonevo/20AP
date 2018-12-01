@@ -13,6 +13,7 @@
   <tmdb>movies/top_rated</tmdb>
   <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
   <fanart></fanart>
+  <content>boxset</content>
   <summary></summary>
 </dir>
 
@@ -575,4 +576,115 @@ Link: https://editorial.rottentomatoes.com/guide/freshest-movies-past-20-years/	
 	<thumbnail>http://i.imgur.com/RvHrUFj.png</thumbnail>
 	<content>boxset</content>
 	<summary></summary>
+</dir>
+
+
+<dir>
+  <title>Greatest Twist Ending</title>
+  <tmdb>list/1131</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary>Movies with unexpected mind-blowing plot twist. List created by Movie Roll App.</summary>
+</dir>
+
+
+<dir>
+  <title>Good Science Fiction Flicks</title>
+  <tmdb>list/3945</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title>Controversial Films of the 90s</title>
+  <tmdb>list/3944</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title>YA adaptations</title>
+  <tmdb>list/9883</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary>
+Film and TV series based on young adult books</summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
+</dir>
+
+<dir>
+  <title></title>
+  <tmdb>list/</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+  <summary></summary>
 </dir>
