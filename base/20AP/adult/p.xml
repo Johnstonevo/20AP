@@ -1,0 +1,43 @@
+<dir>
+<title>CNW</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/adult/cnw.xml
+<summary>Celebrities</summary>
+</dir>
+
+
+<dir>
+<title>Fxxx</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/adult/fxxxm/main.xml
+</dir>
+
+<dir>
+<title>Eporner</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/adult/ep.xml</link>
+</dir>
+
+
+<dir>
+<title>Celebrities Sex Tape</title>
+<cnw>category/sex-tape/</cnw>
+<thumbnail>http://www.celebsnudeworld.com/media/videos/cat/28.jpg</thumbnail>
+</dir>
+
+
+
+<dir>
+<title>Recent Videos</title>
+<cnw>recent</cnw>
+</dir>
+
+<dir>
+<title>Popular Videos</title>
+<cnw>popular</cnw>
+</dir>
+
+<dir>
+<title>Categories</title>
+ <link>file://adult/cnw/cats.xml</link>
+</dir>
+
+
+
