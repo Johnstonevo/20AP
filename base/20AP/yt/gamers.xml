@@ -13,6 +13,15 @@ The show is researched, written, edited, and created by Norman Caruso.
 </summary>
 </plugin>
 
+
+<plugin>
+  <title>Nostalgia Nerd</title>
+  <link>plugin://plugin.video.youtube/channel/UC7qPftDWPw9XuExpSgfkmJQ/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxxw_tRn8J00wlLanXj2gf6XbO7M8SLy-WBlg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary></summary>
+</plugin>
+
+
 <plugin>
   <title>The 8-Bit Guy</title>
   <link>plugin://plugin.video.youtube/channel/UC8uT9cgJorJPWu7ITLGo9Ww/</link>
