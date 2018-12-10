@@ -15,12 +15,37 @@
   <content>boxset</content>
 </dir>
 
- <dir>
-    <title>OTB Trekkie</title>
-    <trekkie>all</trekkie>
+
+<dir>
+  <title>Gaming Youtube Channels</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/gamers.xml</link>
+  <fanart>http://wallpaperswide.com/download/gaming_is_not_a_crime-wallpaper-1920x1080.jpg</fanart>
+</dir>
+
+<dir>
+  <title>Youtube Tech Channels</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/raspberrypi.xml</link>
+  <thumbnail>https://www.raspberrypi.org/app/uploads/2015/08/raspberry-pi-logo.png</thumbnail>
+  <fanart>https://u.cubeupload.com/Nd8UdD.png</fanart>
 </dir>
 
 
+
+<dir>
+  <title>Iain's Youtube Tutorials</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/Tutorials.xml</link>
+  <fanart></fanart>
+  <summary>Stuff for Iain</summary>
+</dir>
+
+
+</dir>
+<dir>
+<title>Computer  Documentaries via TMDB</title>
+<tmdb>list/81923</tmdb>
+<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+</dir>
 
 
 <dir>
@@ -31,27 +56,6 @@
 <Summary>The Man Shed Cars and things</summary>
 </dir>
 
-</dir>
-<dir>
-<title>Computer  Documentaries via TMDB</title>
-<tmdb>list/81923</tmdb>
-<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
-<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
-</dir>
-
-<dir>
-<title>Adult Themed  Documentaries via TMDB</title>
-<tmdb>list/81925</tmdb>
-<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
-<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
-
-</dir>
-
-<dir>
-  <title>Gaming Youtube Channels</title>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/gamers.xml</link>
-  <fanart>http://wallpaperswide.com/download/gaming_is_not_a_crime-wallpaper-1920x1080.jpg</fanart>
-</dir>
 
 <plugin>
   <title>Iain's Music Playlist</title>
@@ -59,6 +63,16 @@
   <thumbnail></thumbnail>
   <summary></summary>
 </plugin>
+
+
+ <dir>
+    <title>OTB Trekkie</title>
+    <trekkie>all</trekkie>
+</dir>
+
+
+
+
 
 
 <plugin>
@@ -71,13 +85,12 @@
 
 
 <dir>
-  <title>Iain's Youtube Tutorials</title>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/Tutorials.xml</link>
-  <fanart></fanart>
-  <summary>Stuff for Iain</summary>
+<title>Adult Themed  Documentaries via TMDB</title>
+<tmdb>list/81925</tmdb>
+<thumbnail>https://s3-eu-west-1.amazonaws.com/xapix-io-assets/logos/512_logos/the-movie-db-logo-512.png</thumbnail>
+<fanart>https://i.ytimg.com/vi/1Pch82HxI9M/maxresdefault.jpg</fanart>
+
 </dir>
-
-
 <dir>
   <title>Adult</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/adult/p.xml</link>
