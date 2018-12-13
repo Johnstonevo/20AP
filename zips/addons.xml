@@ -18,7 +18,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.20ap" name="20ap" version="18.12.01.06" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.13" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
