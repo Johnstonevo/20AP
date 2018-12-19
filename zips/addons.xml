@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.12.13" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.19" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -36,7 +36,7 @@
   </extension>
 </addon>
 
-<addon id="repository.20ap" name="20ap" version="18.11.26" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="18.12.19" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 
             <dir>
@@ -58,11 +58,7 @@
 			<checksum>https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/</datadir>
 		</dir>
-        <dir>
-		    <info compressed="false">https://teamdna.pw/Repo/addons.xml</info>
-		    <checksum>https://teamdna.pw/Repo/addons.xml.md5</checksum>
-		    <datadir zip="true">https://teamdna.pw/Repo</datadir>
-		</dir>
+
 		<dir>
 			<info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml.md5</checksum>
