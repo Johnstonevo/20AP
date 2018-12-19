@@ -36,7 +36,7 @@
   </extension>
 </addon>
 
-<addon id="repository.20ap" name="20ap" version="18.12.19" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="18.12.19.1" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 
             <dir>
@@ -106,11 +106,11 @@
 			<checksum>https://raw.githubusercontent.com/jdf76/repository/master/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/jdf76/repository/master/zips</datadir>
 		</dir>
-		<dir>
+
 			<info compressed="false">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml</info>
 			<checksum>https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml.md5</checksum>
 			<datadir zip="true">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/</datadir>
-			</dir>
+
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary lang="en">Our Own Repo</summary>
