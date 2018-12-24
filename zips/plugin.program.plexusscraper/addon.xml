@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon 
+  id="program.plexusscraper" 
+  name="Plexus Scraper" 
+  version="0.1.0" provider-name="JeremyC">
+
+  <requires>
+    <import addon="xbmc.python"	version="2.1.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Scrape a web page for Acestream and Sopcast links for Plexus</summary>
+    <description lang="en_GB">
+This is my own Program addonl.
+
+This addon scrapes a specified web page for Acestream and Sopcast links.
+These links are then used to create a history.txt file as used by Plexus.
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
