@@ -28,3 +28,6 @@
 [submodule "plugin.video.sparkle"]
 	path = plugin.video.sparkle
 	url = https://github.com/iwannabelikemike/plugin.video.sparkle.git
+[submodule "modules4all"]
+	path = modules4all
+	url = https://github.com/kmnb/modules4all.git
