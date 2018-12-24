@@ -398,7 +398,7 @@ These links are then used to create a history.txt file as used by Plexus.
         <import addon="script.module.urlresolver" version="5.0.06"/>
         <!--<import addon="script.module.resolveurl" version="5.0.06"/>-->
         <import addon="plugin.video.youtube" version="6.1.4"/>
-        <import addon="repository.xbmchub" version="3.0.0"/>
+        <!--<import addon="repository.xbmchub" version="3.0.0"/>-->
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video audio image executable</provides>
