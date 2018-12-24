@@ -1,3 +1,12 @@
 [submodule "tools_and_parsers"]
 	path = tools_and_parsers
 	url = https://github.com/muaddibttv/tools_and_parsers.git
+[submodule "program.plexus"]
+	path = program.plexus
+	url = git@github.com:Johnstonevo/program.plexus.git
+[submodule "plugin.program.plexusscraper"]
+	path = plugin.program.plexusscraper
+	url = https://github.com/ripley57/plugin.program.plexusscraper.git
+[submodule "plugin.video.youtube"]
+	path = plugin.video.youtube
+	url = https://github.com/jdf76/plugin.video.youtube.git
