@@ -1,6 +1,6 @@
 [submodule "tools_and_parsers"]
 	path = tools_and_parsers
-	url = https://github.com/muaddibttv/tools_and_parsers.git
+	url = https://github.com/Johnstonevo/tools_and_parsers.git
 [submodule "program.plexus"]
 	path = program.plexus
 	url = https://github.com/tvaddonsco/program.plexus.git
