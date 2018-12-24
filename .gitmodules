@@ -22,3 +22,6 @@
 [submodule "repository.ddurdle"]
 	path = repository.ddurdle
 	url = https://github.com/ddurdle/repository.ddurdle.git
+[submodule "script.module.tulip"]
+	path = script.module.tulip
+	url = https://github.com/Twilight0/script.module.tulip.git
