@@ -10,3 +10,6 @@
 [submodule "plugin.video.youtube"]
 	path = plugin.video.youtube
 	url = https://github.com/jdf76/plugin.video.youtube.git
+[submodule "kodiswift"]
+	path = kodiswift
+	url = https://github.com/afrase/kodiswift.git
