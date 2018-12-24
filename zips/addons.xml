@@ -36,6 +36,29 @@
   </extension>
 </addon>
 
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.1.2" provider-name="Twilight0">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.kodi-six" version="0.0.2"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Tulip Helper library</summary>
+        <description lang="en">Tulip Routine Libraries are based on Lambda's "lamlib".</description>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+        <source>https://github.com/Twilight0/script.module.tulip</source>
+        <news>
+[B]2.1.X[/B]
+- Utilize kodi-six to further improve Python 2/3 compatibility
+- Added "builtin" function into directory module, which can execute various builtin commands with arguments
+- Added various supplementary fuctions into control module
+- Added argv parameter to directory module's function to work with Leia's new python caching (requires testing)
+- Tweaked open settings window &amp; set focus methods
+- Various other tweaks</news>
+    </extension>
+</addon>
+
 <addon id="repository.20ap" name="20ap" version="18.12.19.1" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 
