@@ -3,7 +3,7 @@
 	url = https://github.com/muaddibttv/tools_and_parsers.git
 [submodule "program.plexus"]
 	path = program.plexus
-	url = git@github.com:Johnstonevo/program.plexus.git
+	url = https://github.com/tvaddonsco/program.plexus.git
 [submodule "plugin.program.plexusscraper"]
 	path = plugin.program.plexusscraper
 	url = https://github.com/ripley57/plugin.program.plexusscraper.git
@@ -13,3 +13,12 @@
 [submodule "kodiswift"]
 	path = kodiswift
 	url = https://github.com/afrase/kodiswift.git
+[submodule "script.module.lambdascrapers"]
+	path = script.module.lambdascrapers
+	url = https://github.com/I-A-C/script.module.lambdascrapers.git
+[submodule "script.module.resolveurl"]
+	path = script.module.resolveurl
+	url = https://github.com/jsergio123/script.module.resolveurl.git
+[submodule "repository.ddurdle"]
+	path = repository.ddurdle
+	url = https://github.com/ddurdle/repository.ddurdle.git
