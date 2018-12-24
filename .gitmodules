@@ -25,3 +25,6 @@
 [submodule "script.module.tulip"]
 	path = script.module.tulip
 	url = https://github.com/Twilight0/script.module.tulip.git
+[submodule "plugin.video.sparkle"]
+	path = plugin.video.sparkle
+	url = https://github.com/iwannabelikemike/plugin.video.sparkle.git
