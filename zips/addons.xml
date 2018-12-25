@@ -268,6 +268,37 @@ These links are then used to create a history.txt file as used by Plexus.
 		</extension>
 </addon>
 
+<addon id="plugin.video.shelby" name="Shelby's Add-on" version="18.12.25" provider-name="Community">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0" />
+        <import addon="script.module.universalscrapers" version="1.0.0" />
+        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+        <import addon="script.module.beautifulsoup" version="3.2.1" />
+        <import addon="script.module.requests" version="2.9.1" />
+        <import addon="script.module.addon.common" version="2.0.0" />
+        <import addon="script.module.xmltodict" version="0.9.0" />
+        <import addon="script.module.dateutil" />
+        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+        <import addon="script.module.resolveurl" />
+        <!--<import addon="script.module.urlresolver" />-->
+         <import addon="plugin.video.youtube" version="5.4.5x" />
+
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">Shelby's Little Add-on</summary>
+        <description lang="en">As of May, 2018 this is a community maintained template for learning purposes.</description>
+        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+        <platform>all</platform>
+        <website/>
+        <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+    </extension>
+</addon>
+
 <addon id="script.module.resolveurl" name="ResolveURL" version="5.0.24" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -307,7 +338,7 @@ These links are then used to create a history.txt file as used by Plexus.
 	</extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.2.3~beta4" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.3.0~alpha4" provider-name="bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -321,26 +352,18 @@ These links are then used to create a history.txt file as used by Plexus.
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-6.2.3
-[add] Next Page to 'More...' -> 'Add to...' context menu
-[add] icon and description to playlists in 'More...' -> 'Add to...' context menu on Kodi 17+
-[add] 'Play audio only' context menu item
-[fix] generated dash with no supported video streams(audio only) being played when Audio only not enabled
-[fix] potential RuntimeError when retrieving total time of playing content if player is stopped immediately
-[lang] nl_nl strings |contrib: Markman-B|
-[lang] pl_pl strings |contrib: xulek|
-[lang] pl_pl strings |contrib: drrak|
-[lang] sk_sk strings |contrib: jose1711|
-[lang] el_gr strings |contrib: twilight0|
+6.3.0
+[add] support for keymapping of some endpoints, wiki: https://kodi.wiki/view/Add-on:YouTube#Keymaps
+[add] 'Rate videos in playlists' setting to 'Settings - General - Rate after watching'
+[fix] post play add to watch history
+[fix] fix add-ons playback history not saving
+[fix] playback monitoring/post play events triggering for the wrong videos in some cases
+[upd] code cosmetics and resolve inspections
+[upd] improve watch history tracking, actively report watch times and state during playback
+[upd] sign in/out, switch user, and settings ListItems to isFolder=False and isPlayable=False
+[upd] improve watch later playlist id retrieval and feedback
+[upd] Use SPDX license identifier
 [lang] es_es strings |contrib: roliverosc|
-
-6.2.2
-[fix] signature function not found on some videos
-
-6.2.1
-[fix] some streams reporting as Unavailable
-[fix] utf-8 file paths
-[fix] settings, and switch user causing perpetual busy dialog on Kodi 18
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -381,7 +404,7 @@ These links are then used to create a history.txt file as used by Plexus.
         <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
         <language></language>
         <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <license>GPL-2.0-only</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
         <website>https://www.youtube.com</website>
         <email>ytplugin at datanet dot ws</email>
