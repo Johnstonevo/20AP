@@ -51,7 +51,7 @@ We are now a member of YawnHub.UK (@YawnHub), this site allows small creators to
 
 <plugin>
 <title>Jordan H J</title>
-<link>plugin.video.youtube/channel/UCenBYEupFr45ztQdv0Q00Gg/</link>
+<link>plugin://plugin.video.youtube/channel/UCenBYEupFr45ztQdv0Q00Gg/</link>
 <thumbnail>https://yt3.ggpht.com/a-/AAuE7mDLclXZckapQMvY4nmze4TGJ8slqSvPYbu79Q=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
 <summary>Games and Geekery - If you're into Discord, I set one up - https://discord.gg/us3yXev</summary>
 </plugin>
