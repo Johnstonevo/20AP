@@ -123,6 +123,13 @@
 
 
 <dir>
+<title>Shelby's's Favourites</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/shelby.xml</link>
+<summary></summary>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
+<dir>
   <title>Trakt Lists</title>
   <trakt>https://api.trakt.tv/users/me/lists/</trakt>
   <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
