@@ -10,15 +10,15 @@
 
 
             
-            <item>
+            <plugin>
             <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu[/COLOR]</title>
             <link>plugin://plugin.video.20ap/?description=No%20information%20available&amp;fanart=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ffanart.jpg&amp;iconimage=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ficon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dLego%20Ninjago%3a%20Masters%20of%20Spinjitzu%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu</link>
-            </item>
+            </plugin>
     
-    <item>
+    <plugin>
     <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu - Day of the Departed[/COLOR]</title>
     <link>plugin://plugin.video.20ap/?description=No%20information%20available&amp;fanart=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ffanart.jpg&amp;iconimage=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ficon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dLego%20Ninjago%3a%20Masters%20of%20Spinjitzu%20-%20Day%20of%20the%20Departed%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu-day-of-the-departed</link>
-    </item>
+    </plugin>
 
         <dir>
   <title>Shelby's TV Shows</title>
@@ -75,8 +75,8 @@
 <Summary>All the Youtube Channels</summary>
 </dir>
 
-<item>
+<plugin>
     <title>Apply the Addon's Youtube API Keys to Kodi</title>
     <ytapi>titleforyouapigoeshere/AIzaSyDyN1nmUY_MlXGZFsJdsu6_pBcK8hU6b-s/275432727141-n6pmjmsmtaru4f7ve7rvemt79nvcjr74.apps.googleusercontent.com
 /nR9MZi91EH_4Lb4Zjsq9NWrW</ytapi>
-</item>
+</plugin>
