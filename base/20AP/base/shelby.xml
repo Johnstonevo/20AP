@@ -12,25 +12,26 @@
 
 <plugin>
   <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu[/COLOR]</title>
-  <link>plugin://plugin.video.20ap/?description=No%20information%20available&amp;fanart=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ffanart.jpg&amp;iconimage=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ficon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dLego%20Ninjago%3a%20Masters%20of%20Spinjitzu%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu</link>
-<thumbnail>https://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
-<meta>
-<content>season</content>
-<tvdb>253323</tvdb>
-<tvshowtitle>Lego Ninjago: Masters of Spinjitzu</tvshowtitle>
-<year>2011</year>
-</meta>
+  <link>plugin://plugin.video.20ap/?mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/lego-ninjago-masters-of-spinjitzu</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
+  <meta>
+    <content>tvshow</content>
+    <tvdb>253323</tvdb>
+    <tvshowtitle>Lego Ninjago: Masters of Spinjitzu</tvshowtitle>
+    <year>2011</year>
+  </meta>
 </plugin>
 
 <plugin>
   <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu - Day of the Departed[/COLOR]</title>
-  <link>plugin://plugin.video.20ap/?mode=WCEpisodes&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu-day-of-the-departed</link>
-        <meta>
-                <content>movie</content>
-                <imdb>tt6881972</imdb>
-                <title>Lego Ninjago: Masters of Spinjitzu - Day of the Departed</title>
-                <year>2017</year>
-        </meta>
+  <link>plugin://plugin.video.20ap/?mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/lego-ninjago-masters-of-spinjitzu-day-of-the-departed</link>
+  <thumbnail>https://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
+  <meta>
+    <content>movie</content>
+    <imdb>tt6881972</imdb>
+    <title>Lego Ninjago: Masters of Spinjitzu - Day of the Departed</title>
+    <year>2017</year>
+  </meta>
 </plugin>
 
 <dir>
