@@ -1,26 +1,39 @@
-      <dir>
-            <title>Cartoons</title>
-            <wctoon>category/cartoon-list</wctoon>
-        </dir>
+<dir>
+  <title>Cartoons</title>
+  <wctoon>category/cartoon-list</wctoon>
+</dir>
 
-        <dir>
-            <title>Movies</title>
-            <wctoon>category/movie-list</wctoon>
-        </dir>
+<dir>
+  <title>Movies</title>
+  <wctoon>category/movie-list</wctoon>
+</dir>
 
 
-            
-            <plugin>
-            <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu[/COLOR]</title>
-            <link>plugin://plugin.video.20ap/?description=No%20information%20available&amp;fanart=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ffanart.jpg&amp;iconimage=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ficon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dLego%20Ninjago%3a%20Masters%20of%20Spinjitzu%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu</link>
-            </plugin>
-    
-    <plugin>
-    <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu - Day of the Departed[/COLOR]</title>
-    <link>plugin://plugin.video.20ap/?description=No%20information%20available&amp;fanart=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ffanart.jpg&amp;iconimage=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ficon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dLego%20Ninjago%3a%20Masters%20of%20Spinjitzu%20-%20Day%20of%20the%20Departed%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu-day-of-the-departed</link>
-    </plugin>
 
-        <dir>
+<plugin>
+  <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu[/COLOR]</title>
+  <link>plugin://plugin.video.20ap/?description=No%20information%20available&amp;fanart=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ffanart.jpg&amp;iconimage=%2fhome%2fiain%2f.kodi%2faddons%2fplugin.video.20ap%2ficon.png&amp;mode=WCEpisodes&amp;name=%5bCOLOR%20FFffffffff%5dLego%20Ninjago%3a%20Masters%20of%20Spinjitzu%5b%2fCOLOR%5d&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu</link>
+<thumbnail>https://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
+<meta>
+<content>season</content>
+<tvdb>253323</tvdb>
+<tvshowtitle>Lego Ninjago: Masters of Spinjitzu</tvshowtitle>
+<year>2011</year>
+</meta>
+</plugin>
+
+<plugin>
+  <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu - Day of the Departed[/COLOR]</title>
+  <link>plugin://plugin.video.20ap/?mode=WCEpisodes&amp;url=wcepisode%2fhttps%3a%2f%2fwww.thewatchcartoononline.tv%2fanime%2flego-ninjago-masters-of-spinjitzu-day-of-the-departed</link>
+        <meta>
+                <content>movie</content>
+                <imdb>tt6881972</imdb>
+                <title>Lego Ninjago: Masters of Spinjitzu - Day of the Departed</title>
+                <year>2017</year>
+        </meta>
+</plugin>
+
+<dir>
   <title>Shelby's TV Shows</title>
   <tmdb>list/99282</tmdb>
   <thumbnail>https://20ap.000webhostapp.com/images/tv.png</thumbnail>
@@ -36,47 +49,47 @@
 
 
 <dir>
-<title>[I][B][COLORsnow]--==[COLORorange]Movies[/COLOR]==--[/COLOR][/B][/I]</title>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmovies.xml</link>
-<thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
-<fanart></fanart>
+  <title>[I][B][COLORsnow]--==[COLORorange]Movies[/COLOR]==--[/COLOR][/B][/I]</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmovies.xml</link>
+  <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
+  <fanart></fanart>
 </dir>
 
 <dir>
-<title>[I][B][COLORsnow]--==[COLORorange]TV[/COLOR]==--[/COLOR][/B][/I]</title>
-<tmdb>list/47132</tmdb>
-<thumbnail>https://20ap.000webhostapp.com/images/tv.png</thumbnail>
-<fanart></fanart>
+  <title>[I][B][COLORsnow]--==[COLORorange]TV[/COLOR]==--[/COLOR][/B][/I]</title>
+  <tmdb>list/47132</tmdb>
+  <thumbnail>https://20ap.000webhostapp.com/images/tv.png</thumbnail>
+  <fanart></fanart>
 </dir>
 
 
 <dir>
-<title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Series[/COLOR]==--[/COLOR][/B][/I]</title>
-<meta>
-<summary>One Click Play section of cartoon tv series</summary>
-</meta>
-<B98>serieslist/videos_categories/series</B98>
-</dir> 
+  <title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Series[/COLOR]==--[/COLOR][/B][/I]</title>
+  <meta>
+    <summary>One Click Play section of cartoon tv series</summary>
+  </meta>
+  <B98>serieslist/videos_categories/series</B98>
+</dir>
 
 <dir>
-<title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Studios[/COLOR]==--[/COLOR][/B][/I]</title>
-<meta>
-<summary>One Click Play section of cartoon tv series based on the animation studio that produced them</summary>
-</meta>
-<B98>serieslist/videos_categories/studios</B98>
-</dir> 
+  <title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Studios[/COLOR]==--[/COLOR][/B][/I]</title>
+  <meta>
+    <summary>One Click Play section of cartoon tv series based on the animation studio that produced them</summary>
+  </meta>
+  <B98>serieslist/videos_categories/studios</B98>
+</dir>
 
 
 <dir>
-<title>Youtube</title>
-<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/shelby.xml</link>
-<thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
-<fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
-<Summary>All the Youtube Channels</summary>
+  <title>Youtube</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/shelby.xml</link>
+  <thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
+  <fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
+  <Summary>All the Youtube Channels</summary>
 </dir>
 
 <plugin>
-    <title>Apply the Addon's Youtube API Keys to Kodi</title>
-    <ytapi>titleforyouapigoeshere/AIzaSyDyN1nmUY_MlXGZFsJdsu6_pBcK8hU6b-s/275432727141-n6pmjmsmtaru4f7ve7rvemt79nvcjr74.apps.googleusercontent.com
+  <title>Apply the Addon's Youtube API Keys to Kodi</title>
+  <ytapi>titleforyouapigoeshere/AIzaSyDyN1nmUY_MlXGZFsJdsu6_pBcK8hU6b-s/275432727141-n6pmjmsmtaru4f7ve7rvemt79nvcjr74.apps.googleusercontent.com
 /nR9MZi91EH_4Lb4Zjsq9NWrW</ytapi>
 </plugin>
