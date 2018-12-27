@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.12.27" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.27.1" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -15,6 +15,8 @@
       <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
       <import addon="repository.jsergio" />
       <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
+      <import addon="plugin.video.shelby" optional="true" />
+
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" optional="true"/>
       <import addon="script.module.acesports" optional="true"/>
@@ -272,7 +274,7 @@ These links are then used to create a history.txt file as used by Plexus.
 		</extension>
 </addon>
 
-<addon id="plugin.video.shelby" name="Shelby's Add-on" version="18.12.25" provider-name="Community">
+<addon id="plugin.video.shelby" name="Shelby's Add-on" version="18.12.27" provider-name="Community">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <import addon="script.module.universalscrapers" version="1.0.0" />

@@ -1,66 +1,31 @@
 <dir>
-  <title>Cartoons</title>
-  <wctoon>category/cartoon-list</wctoon>
-</dir>
-
-<dir>
-  <title>Movies</title>
-  <wctoon>category/movie-list</wctoon>
-</dir>
-
-
-
-<plugin>
-  <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu[/COLOR]</title>
-  <link>plugin://plugin.video.20ap/?mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/lego-ninjago-masters-of-spinjitzu</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
+  <title>Everything Lego Ninjago</title>
+  <wctoon>wcsearch/Lego Ninjago</wctoon>
+  <thumbnail>https://image.tmdb.org/t/p/w440_and_h660_bestv2/d0bn0cY9ghed9bTjGwPsPq6QV9w.jpg</thumbnail>
   <meta>
     <content>tvshow</content>
     <tvdb>253323</tvdb>
     <tvshowtitle>Lego Ninjago: Masters of Spinjitzu</tvshowtitle>
     <year>2011</year>
   </meta>
-</plugin>
 
-<plugin>
-  <title>[COLOR FFffffffff]Lego Ninjago: Masters of Spinjitzu - Day of the Departed[/COLOR]</title>
-  <link>plugin://plugin.video.20ap/?mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/lego-ninjago-masters-of-spinjitzu-day-of-the-departed</link>
-  <thumbnail>https://www.thetvdb.com/banners/posters/253323-4.jpg</thumbnail>
-  <meta>
-    <content>movie</content>
-    <imdb>tt6881972</imdb>
-    <title>Lego Ninjago: Masters of Spinjitzu - Day of the Departed</title>
-    <year>2017</year>
-  </meta>
-</plugin>
-
-<dir>
-  <title>Shelby's TV Shows</title>
-  <tmdb>list/99282</tmdb>
-  <thumbnail>https://20ap.000webhostapp.com/images/tv.png</thumbnail>
-  <fanart></fanart>
-</dir>
-
-<dir>
-  <title>Shelby's Movies</title>
-  <tmdb>list/99284</tmdb>
-  <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
-  <fanart></fanart>
 </dir>
 
 
 <dir>
-  <title>[I][B][COLORsnow]--==[COLORorange]Movies[/COLOR]==--[/COLOR][/B][/I]</title>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmovies.xml</link>
-  <thumbnail>https://20ap.000webhostapp.com/images/movie.png</thumbnail>
-  <fanart></fanart>
+  <title>Cartoons</title>
+  <wctoon>category/cartoon-list</wctoon>
 </dir>
 
 <dir>
-  <title>[I][B][COLORsnow]--==[COLORorange]TV[/COLOR]==--[/COLOR][/B][/I]</title>
-  <tmdb>list/47132</tmdb>
-  <thumbnail>https://20ap.000webhostapp.com/images/tv.png</thumbnail>
-  <fanart></fanart>
+  <title>Animated Movies</title>
+  <wctoon>category/movie-list</wctoon>
+</dir>
+
+
+<dir>
+  <title>Search Site</title>
+  <wctoon>wcsearch</wctoon>
 </dir>
 
 
@@ -82,8 +47,38 @@
 
 
 <dir>
+  <title>Shelby's TV Shows</title>
+  <tmdb>list/99282</tmdb>
+  <thumbnail>https://shelby.000webhostapp.com/images/tv.png</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <title>Shelby's Movies</title>
+  <tmdb>list/99284</tmdb>
+  <thumbnail>https://shelby.000webhostapp.com/images/movie.png</thumbnail>
+  <fanart></fanart>
+</dir>
+
+
+<dir>
+  <title>[I][B][COLORsnow]--==[COLORorange]Movies[/COLOR]==--[/COLOR][/B][/I]</title>
+  <link>https://raw.githubusercontent.com/Johnstonevo/shelby/master/base/shelby/kids/kidsmovies.xml</link>
+  <thumbnail>https://shelby.000webhostapp.com/images/movie.png</thumbnail>
+  <fanart></fanart>
+</dir>
+
+<dir>
+  <title>[I][B][COLORsnow]--==[COLORorange]TV[/COLOR]==--[/COLOR][/B][/I]</title>
+  <tmdb>list/47132</tmdb>
+  <thumbnail>https://shelby.000webhostapp.com/images/tv.png</thumbnail>
+  <fanart></fanart>
+</dir>
+
+
+<dir>
   <title>Youtube</title>
-  <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/shelby.xml</link>
+  <link>https://raw.githubusercontent.com/Johnstonevo/shelby/master/base/shelby/yt/shelby.xml</link>
   <thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
   <fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
   <Summary>All the Youtube Channels</summary>
