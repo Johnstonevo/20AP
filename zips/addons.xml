@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.12.19" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.27" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -36,19 +36,23 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.1.2" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.2.1" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">Tulip Helper library</summary>
-        <description lang="en">Tulip Routine Libraries are based on Lambda's "lamlib".</description>
+        <summary lang="en">Tulip Helper libraries</summary>
+        <description lang="en">Tulip Routine Libraries combines the best elements from Lambda's "lamlib" and tknorris's shared modules. Also includes various enhancements, newer and improved functions and Python 3 compatibility, though the latter is largely untested.</description>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <source>https://github.com/Twilight0/script.module.tulip</source>
         <news>
+[B]2.2.X[/B]
+- Reincluded url_dispatcher module for addons that may use it in the future
+- New reload skin function
+
 [B]2.1.X[/B]
 - Utilize kodi-six to further improve Python 2/3 compatibility
 - Added "builtin" function into directory module, which can execute various builtin commands with arguments
@@ -338,7 +342,7 @@ These links are then used to create a history.txt file as used by Plexus.
 	</extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.3.0~alpha4" provider-name="bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.3.0~alpha5" provider-name="bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -363,6 +367,7 @@ These links are then used to create a history.txt file as used by Plexus.
 [upd] sign in/out, switch user, and settings ListItems to isFolder=False and isPlayable=False
 [upd] improve watch later playlist id retrieval and feedback
 [upd] Use SPDX license identifier
+[lang] de_de strings |contrib: tobhor|
 [lang] es_es strings |contrib: roliverosc|
         </news>
         <assets>

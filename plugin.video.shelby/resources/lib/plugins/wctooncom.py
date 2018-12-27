@@ -240,7 +240,7 @@ class WatchCartoon(Plugin):
 @route(mode='WatchCartoon', args=["url"])
 def get_wcstream(url):
     url = url.replace('category/', '') # Strip our category tag off.
-    url = urlparse.urljoin('https://www.watchcartoononline.com', url)
+    url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
 
     xml = fetch_from_db(url)
     if not xml:
@@ -329,7 +329,7 @@ def get_wcmainstream(subid):
     subid = subid.split('/')
 
     try:
-        html = requests.get('https://www.watchcartoononline.com').content
+        html = requests.get('https://www.thewatchcartoononline.tv').content
         thedivs = dom_parser.parseDOM(html, 'div', attrs={'class':subid[0]})[int(subid[1])]
         list_items = dom_parser.parseDOM(thedivs, 'li')
         for content in list_items:
@@ -369,7 +369,7 @@ def get_wcmainstream(subid):
 @route(mode='WCEpisodes', args=["url"])
 def get_wcepisodes(url):
     url = url.replace('wcepisode/', '') # Strip our episode tag off.
-    url = urlparse.urljoin('https://www.watchcartoononline.com', url)
+    url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
 
     xml = fetch_from_db(url)
     if not xml:
@@ -406,7 +406,7 @@ def get_wcgenre(url):
         return
     else:
         url = url.replace('wcgenre/', '') # Strip our genre tag off.
-    url = urlparse.urljoin('https://www.watchcartoononline.com/search-by-genre/', url)
+    url = urlparse.urljoin('https://www.thewatchcartoononline.tv/search-by-genre/', url)
 
 
     xml = fetch_from_db(url)
@@ -438,7 +438,7 @@ def get_wcgenre(url):
 
 
 def get_wcgenrelist():
-    url = 'https://www.watchcartoononline.com/search-by-genre/'
+    url = 'https://www.thewatchcartoononline.tv/search-by-genre/'
 
     xml = fetch_from_db(url)
     if not xml:
@@ -499,7 +499,7 @@ def get_wcsearch(url):
     total = 0
 
     try:
-        search_url = 'https://www.watchcartoononline.com/wp-json/wp/v2/posts?per_page=100&search=%s' % search.replace(' ', '%20')
+        search_url = 'https://www.thewatchcartoononline.tv/wp-json/wp/v2/posts?per_page=100&search=%s' % search.replace(' ', '%20')
         html = requests.get(search_url).content
         results = re.compile('"post","link":"(.+?)","title".+?"rendered":"(.+?)"',re.DOTALL).findall(html)
         if len(results) == 0:
@@ -541,7 +541,7 @@ def get_wcplayvideo(url):
             i = chr(int(i) - int(spread))
             url += i
         url = re.findall(r'src="(.*?)"', url)[0]
-        url = urlparse.urljoin('https://www.watchcartoononline.com', url)
+        url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
         url = requests.get(url)
         oldurl = url
         url = re.findall(r'''file:\s*['\"]([^'\"]+)['\"](?:\,\s*label:\s*|)(?:['\"]|)([\d]+|)''', url.text)
