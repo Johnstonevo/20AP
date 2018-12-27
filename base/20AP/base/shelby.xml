@@ -1,29 +1,38 @@
-<dir>
-  <title>Everything Lego Ninjago</title>
-  <wctoon>wcsearch/Lego Ninjago</wctoon>
+<plugin>
+  <title>Lego Ninjago</title>
+  <link>plugin://plugin.video.shelby/?&amp;mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/lego-ninjago-masters-of-spinjitzu</link>
   <thumbnail>https://image.tmdb.org/t/p/original/sE2MxR1tsVvjrDuozdOuJslKhzh.jpg</thumbnail>
-  <meta>
-    <content>tvshow</content>
-    <tvdb>253323</tvdb>
-    <tvshowtitle>Lego Ninjago: Masters of Spinjitzu</tvshowtitle>
-    <year>2011</year>
-  </meta>
-</dir>
+</plugin>
+
+<plugin>
+  <title>Teenage Mutant Ninja Turtles 1987</title>
+  <link>plugin://plugin.video.shelby/?&amp;mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/teenage-mutant-ninja-turtles-1987</link>
+  <thumbnail>https://www.thewatchcartoononline.tv/wp-content/catimg/114820.jpg</thumbnail>
+</plugin>
+
+<plugin>
+  <title>Teenage Mutant Ninja Turtles  2003</title>
+  <link>plugin://plugin.video.shelby/?&amp;mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/teenage-mutant-ninja-turtles-2003</link>
+  <thumbnail>https://www.thewatchcartoononline.tv/wp-content/catimg/255552.jpg</thumbnail>
+</plugin>
+
+<plugin>
+  <title>Teenage Mutant Ninja Turtles  2012</title>
+  <link>plugin://plugin.video.shelby/?&amp;mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/teenage-mutant-ninja-turtles-2012</link>
+  <thumbnail>https://www.thewatchcartoononline.tv/wp-content/catimg/255552.jpg</thumbnail>
+</plugin>
+
+<plugin>
+  <title>Rise Of The Teenage Mutant Ninja Turtles</title>
+  <link>plugin://plugin.video.shelby/?&amp;mode=WCEpisodes&amp;url=wcepisode/https://www.thewatchcartoononline.tv/anime/rise-of-the-teenage-mutant-ninja-turtles</link>
+  <thumbnail>https://www.thewatchcartoononline.tv/wp-content/catimg/652946.jpg</thumbnail>
+</plugin>
+
+
+
+
 
 <dir>
-  <title>Teenage Mutant Ninja Turtles  TV Shows</title>
-  <wctoon>wcsearch/Teenage Mutant Ninja Turtles </wctoon>
-  <thumbnail>https://www.thetvdb.com/banners/posters/74582-11.jpg</thumbnail>
-  <meta>
-    <content>tvshow</content>
-    <tvdb>74582</tvdb>
-    <tvshowtitle>Teenage Mutant Ninja Turtles </tvshowtitle>
-    <year>1987</year>
-  </meta>
-</dir>
-
-
-
 <dir>
   <title>Cartoons</title>
   <wctoon>category/cartoon-list</wctoon>
