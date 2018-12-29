@@ -131,6 +131,14 @@ Full length documentaries are available only in Canada.</summary>
 </plugin>
 
 
+<plugin>
+  <title>Historia Civilis</title>
+  <link>plugin://plugin.video.youtube/channel/UCv_vLHiWVBh_FR9vbeuiY-A/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mCOuC84RYcgsPnDdte_mzoVwbAFLs5M2NF1vQ=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Rome Freak.
+</summary>
+</plugin>
+
 <dir>
 <title>Documentaries from topdocumentaryfilms.com</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/topdoc.xml</link>
