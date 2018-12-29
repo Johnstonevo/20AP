@@ -197,6 +197,16 @@ Our website has loads of information about production as well as downloads of so
 We also sell t-shirts over here: https://store.noclip.video/</summary>
 </plugin>
 
+
+
+<plugin>
+  <title>Call Me Kevin</title>
+  <link>plugin://plugin.video.youtube/channel/UCdoPCztTOW7BJUPk2h5ttXA/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mAWVu4cdjS-CxT4Yy44jdXqDG-yuy71gbfYFA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Welcome to the channel, I hope you take a look at some of my content and subscribe if you like it!</summary>
+</plugin>
+
+
       <plugin>
         <title>Completed It Mate</title>
         <link>plugin://plugin.video.youtube/channel/UC88b1rl5tpgGxK5I-fL7hIw/</link>
