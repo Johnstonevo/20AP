@@ -51,93 +51,6 @@
 </dir>
 
 
-<plugin>
-  <title>Timeline - World History Documentaries</title>
-  <link>plugin://plugin.video.youtube/channel/UC88lvyJe7aHZmcvzvubDFRg/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxPMVAumSTrb5TT9OBRjHzXZuc-3GgQMYHotw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Welcome to Timeline - the home of world history. Every week we'll be bringing you one-off documentaries and series from the world's top broadcasters, including the BBC, Channel 4, Discovery and PBS. We'll be exploring the mysteries of ancient Egypt, shedding light on the dark ages of medieval Europe and examining the First and Second World Wars. Subscribe so you don't miss out.
-
-Content on our channel is licensed from:
-
-Digital Rights Group
-ITV Global Studios
-All3Media International
-TVF International
-Java Films
-Off The Fence</summary>
-</plugin>
-
-
-<plugin>
-  <title>Real Stories</title>
-  <link>plugin://plugin.video.youtube/channel/UCu4XcDBdnZkV6-5z2f16M0g/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AN66SAwBVOWeFxl-QRKIc5FHa4v5YXazOFzWzw5feA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Welcome to Real Stories, the home of award-winning and compelling documentaries you need to see. We will be uploading at least four full length documentaries a week from the best documentary producers on the planet. Subscribe so you don't miss out.
-
-Content on our channel is licensed from:
-
-Digital Rights Group
-DCD Rights
-ITV Global Studios
-All3Media International
-TVF International
-Java Films
-Cargo Film & Releasing
-Sideways Film
-Truevision Productions
-</summary>
-</plugin>
-
-
-<plugin>
-  <title>Only Human</title>
-  <link>plugin://plugin.video.youtube/channel/UCkRmoZiR_SOssKA89m1eYJg/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AN66SAzb8LQjbwMXCIQ3WWWbQsTDYbs-s1gd6siZ8w=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Only Human celebrates and explores the unique and personal qualities we all have. Our channel investigates the individual struggles life can throw at us, and offers a range of human experiences and viewpoints from amazing people from all walks of life.
-</summary>
-</plugin>
-
-<plugin>
-  <title>Wild Things</title>
-  <link>plugin://plugin.video.youtube/channel/UCbq-4OJxnziD3awH-aTezeA/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AN66SAz5PXK_c3pc8TSV8qC19HqZNYP_YHt8z6d6Yw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>From lush rainforests to sparse deserts, from friendly pets to predatory sharks and lions, Wild Things’ documentaries will take you around the world, exploring the wonders and the dangers nature has to offer. We publish at least one full length documentary a week, subscribe so you don’t miss it!
-
-Content Provided by:
-
-DRG
-ITV Global
-All3Media
-DCD Rights
-</summary>
-</plugin>
-
-<plugin>
-  <title>HBODocs </title>
-  <link>plugin://plugin.video.youtube/channel/UCbKo3HsaBOPhdRpgzqtRnqA/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxasZmwazld1fImFObboFr9WsJRMZixC-KIhA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Subscribe to the HBO Documentary Films Channel for the latest news and updates on HBO's inspirational documentaries.</summary>
-</plugin>
-
-<plugin>
-  <title>CBC Docs</title>
-  <link>plugin://plugin.video.youtube/channel/UCsEbwT3FHpAey6prlu7tNhw/</link>
-  <thumbnail>https://yt3.ggpht.com/-z3gbfHi-djE/AAAAAAAAAAI/AAAAAAAAAAA/9S8fJ4W0ZwM/s100-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
-  <summary>Full-length episodes of CBC documentary programming including CBC Docs POV, The Nature of Things with David Suzuki, Short Docs, and more.
-
-Short Docs are available worldwide.
-
-Full length documentaries are available only in Canada.</summary>
-</plugin>
-
-
-<plugin>
-  <title>Historia Civilis</title>
-  <link>plugin://plugin.video.youtube/channel/UCv_vLHiWVBh_FR9vbeuiY-A/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mCOuC84RYcgsPnDdte_mzoVwbAFLs5M2NF1vQ=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Rome Freak.
-</summary>
-</plugin>
 
 <dir>
 <title>Documentaries from topdocumentaryfilms.com</title>
@@ -168,12 +81,6 @@ Full length documentaries are available only in Canada.</summary>
   <content></content>
 </plugin>
 
-<plugin>
-  <title>Youtube Documentaries</title>
-  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZP8lMRveOUhCrZAEwIn_jZM/</link>
-  <thumbnail>https://yt3.ggpht.com/qgAMspKekhapIIu6oDpA1L9jTVqOdGsfRAV0UnNunasrAK7vmHAnF3roDJmcUUxWX0Asbzh1HTuGJIQ1Lws88-nd-c-c0xffffffff-rj-k-no</thumbnail>
-  <fanart></fanart>
-</plugin>
 
 <dir>
 	<title>Rotten Tomatoes’ 100 Best Documentaries Ranked by Tomatometer</title>
@@ -195,16 +102,12 @@ Link: https://editorial.rottentomatoes.com/guide/100-best-documentaries/	</summa
 
 
 
-<plugin>
-  <title>Barcroft TV</title>
-  <link>plugin://plugin.video.youtube/channel/UCfwx98Wty7LhdlkxL5PZyLA/</link>
-  <thumbnail>https://yt3.ggpht.com/-r5rStE9sVkM/AAAAAAAAAAI/AAAAAAAAAAA/xug45fuacaM/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
-  <summary>Barcroft TV is the home of amazing exclusive video.
-
-We update our YouTube site regularly with incredible real-life stories and footage - so stay tuned for more!
-</summary>
-</plugin>
-
+<dir>
+<title>Youtube Channels</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/docu.xml</link>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
 
 <plugin>
   <title>The Ulster Troubles</title>
@@ -221,11 +124,6 @@ We update our YouTube site regularly with incredible real-life stories and foota
 </plugin>
 
 
-<plugin>
-<title>Youtube Documentaries 2</title>
-<link>plugin://plugin.video.youtube/playlist/PLR3SowCQah02FYPAFXOFH2Vy1qcAmIJ_A/</link>
-<thumbnail>https://i.pinimg.com/736x/1e/70/a8/1e70a87d45aa800dfa72d08703818ec2--funny-hats-mesh-hats.jpg</thumbnail>
-</plugin>
 
 <dir>
 
