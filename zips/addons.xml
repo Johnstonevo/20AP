@@ -38,7 +38,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.2.1" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.2.2" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -54,6 +54,7 @@
 [B]2.2.X[/B]
 - Reincluded url_dispatcher module for addons that may use it in the future
 - New reload skin function
+- Log exception on client function upon failure
 
 [B]2.1.X[/B]
 - Utilize kodi-six to further improve Python 2/3 compatibility
@@ -305,7 +306,7 @@ These links are then used to create a history.txt file as used by Plexus.
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.24" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.25" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -325,7 +326,7 @@ These links are then used to create a history.txt file as used by Plexus.
 	</extension>
 </addon>
 
-<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.82" provider-name="iwannabelikemike">
+<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.83" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common" />
@@ -361,6 +362,7 @@ These links are then used to create a history.txt file as used by Plexus.
 6.3.0
 [add] support for keymapping of some endpoints, wiki: https://kodi.wiki/view/Add-on:YouTube#Keymaps
 [add] 'Rate videos in playlists' setting to 'Settings - General - Rate after watching'
+[add] Support for purchased collections |contrib: MisterD81|
 [fix] post play add to watch history
 [fix] fix add-ons playback history not saving
 [fix] playback monitoring/post play events triggering for the wrong videos in some cases
