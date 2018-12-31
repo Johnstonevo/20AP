@@ -14,7 +14,7 @@
 
 <dir>
 <title>Live Sports Acestreams</title>
-<link>plugin://script.module.acesports</link>
+<link>plugin://plugin.video.sparkle</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
 <fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
 <summary>Sports Acestreams</summary>

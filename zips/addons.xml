@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.12.27.1" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.29" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -19,7 +19,7 @@
 
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" optional="true"/>
-      <import addon="script.module.acesports" optional="true"/>
+      <import addon="plugin.video.sparkle" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>audio video</provides>
