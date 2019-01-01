@@ -2,6 +2,11 @@
 <cache>10800</cache>
 <fanart>https://i.pinimg.com/originals/c4/83/cc/c483cc76c1f5dba29c94775116eedffd.png</fanart>
 #################################################################################
+<dir>
+<title>[COLORorange]Ministry of Retro Gaming[/COLOR]</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/mrg.xml</link>
+</dir>
+
 
 <plugin>
   <title>Gaming Historian</title>
@@ -19,26 +24,6 @@ The show is researched, written, edited, and created by Norman Caruso.
   <link>plugin://plugin.video.youtube/channel/UC7qPftDWPw9XuExpSgfkmJQ/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AN66SAxxw_tRn8J00wlLanXj2gf6XbO7M8SLy-WBlg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary></summary>
-</plugin>
-
-<plugin>
-  <title>Grumpy Retro Gamers</title>
-  <link>plugin://plugin.video.youtube/channel/UClpniF0RN4YBsafDwFfuOwQ/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mCC1LzZ8h7I9nZwqobvmm1LwjFLETqDKXtCXw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Reviews, features and let's plays from the Internet's Grumpy Retro Gamers.
-
-Please like, comment, share and subscribe - we look forward to hearing from you!
-
-Love games, still grumpy!
-
-Please note that all donations, snail mail, etc. should be sent to the below address...
-
-Grumpy Retro Gamers
-Stage 2 Studios
-13 Brassmill Enterprise Centre
-Brassmill Lane
-Bath
-BA1 3JN</summary>
 </plugin>
 
 
