@@ -111,6 +111,14 @@ If you want to help make the gaming community a better place, join the Hoof Troo
   </summary>
 </plugin>
 
+
+<plugin>
+  <title>The Big Stack Podcast</title>
+  <link>plugin://plugin.video.youtube/channel/UCkIop2RmHx0WMMRYCUoVBJw/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mBQ8jOP7Znjfv2zqOqcbDASdalvD0nzJcEdZg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>A video game and variety podcast featuring Boogie2988 and Big Breakfast.</summary>
+</plugin>
+
 <plugin>
   <title>Ahoy </title>
   <link>plugin://plugin.video.youtube/channel/UCE1jXbVAGJQEORz9nZqb5bQ/</link>
