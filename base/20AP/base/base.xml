@@ -32,6 +32,15 @@
 
 
 <dir>
+<title>Twitch</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/twitch.xml</link>
+<thumbnail>https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png</thumbnail>
+<summary></summary>
+<fanart></fanart>
+</dir>
+
+
+<dir>
 <title>Sport</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
 <thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
