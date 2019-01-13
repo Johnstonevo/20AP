@@ -1,0 +1,19 @@
+<plugin>
+  <title>ScheifferBatesLIVE</title>
+  <link>
+    <sublink>plugin://plugin.video.twitch/?use_player=True&channel_id=43087577&amp;&mode=play  (Live Link)</sublink>
+    <sublink>plugin://plugin.video.twitch/?channel_id=43087577&amp;mode=channel_videos (VODs)</sublink>
+</link>
+  <thumbnail>https://static-cdn.jtvnw.net/jtv_user_pictures/513a8b71-83b4-4fde-ad7c-b44cfbcc7ae6-profile_image-300x300.png</thumbnail>
+  <summary></summary>
+</plugin>
+
+<plugin>
+  <title>livewithjazza</title>
+  <link>
+    <sublink>plugin://plugin.video.twitch/?use_player=True&channel_id=54975686&amp;&mode=play  (Live Link)</sublink>
+    <sublink>plugin://plugin.video.twitch/?channel_id=54975686&amp;mode=channel_videos (VODs)</sublink>
+</link>
+  <thumbnail>https://static-cdn.jtvnw.net/jtv_user_pictures/livewithjazza-profile_image-s8yu9Y8v2UjwDXf-300x300.jpg</thumbnail>
+  <summary></summary>
+</plugin>
