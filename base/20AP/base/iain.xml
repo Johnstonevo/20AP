@@ -31,6 +31,14 @@
 
 
 
+<plugin>
+  <title>Iains YT List</title>
+  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZOF8z90V8MnExtbnAXwaFrf/</link>
+  <thumbnail></thumbnail>
+  <summary></summary>
+</plugin>
+
+
 <dir>
   <title>Iain's Youtube Tutorials</title>
   <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/Tutorials.xml</link>
