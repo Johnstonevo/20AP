@@ -17,3 +17,13 @@
   <thumbnail>https://static-cdn.jtvnw.net/jtv_user_pictures/livewithjazza-profile_image-s8yu9Y8v2UjwDXf-300x300.jpg</thumbnail>
   <summary></summary>
 </plugin>
+
+<plugin>
+  <title>drawwithjazza</title>
+  <link>
+    <sublink>plugin://plugin.video.twitch/?use_player=True&channel_id=70051109&amp;&mode=play  (Live Link)</sublink>
+    <sublink>plugin://plugin.video.twitch/?channel_id=70051109&amp;mode=channel_videos (VODs)</sublink>
+</link>
+  <thumbnail>https://static-cdn.jtvnw.net/jtv_user_pictures/drawwithjazza-profile_image-cdb585f320a1298d-300x300.jpeg</thumbnail>
+  <summary></summary>
+</plugin>
