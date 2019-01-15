@@ -1,72 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.20ap" name="20ap" version="18.12.29" provider-name="Enzo">
-  <requires>
-      <import addon="xbmc.python" version="2.19.0" />
-     <import addon="script.module.dateutil" />
-     <import addon="script.module.universalscrapers" version="0.5.5" />
-      <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-      <import addon="script.module.beautifulsoup" version="3.2.1" />
-      <import addon="script.module.requests" version="2.9.1" />
-      <import addon="script.module.addon.common" version="2.0.0" />
-      <import addon="script.module.xmltodict" version="0.9.0" />
-      <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-      <import addon="script.module.resolveurl" />
-      <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
-      <import addon="repository.jsergio" />
-      <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
-      <import addon="plugin.video.shelby" optional="true" />
-
-      <import addon="plugin.video.youtube" version="5.4.5x" />
-      <import addon="program.plexus" optional="true"/>
-      <import addon="plugin.video.sparkle" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>audio video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Our Own Add-On</summary>
-    <summary lang="he"></summary>
-    <description lang="en">Our Own Add-On</description>
-    <description lang="he"></description>
-    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-    <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
-    <platform>all</platform>
-      <website></website>
-      <video_guide>xtOqLY5PJDY</video_guide>
-  </extension>
+<addon id="script.module.acesports" name="acesports" version="2018.12.01" provider-name="iwannabelikemike">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.addon.common" />
+		<import addon="script.module.requests"  />
+		<import addon="script.module.beautifulsoup4"  />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides></provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Just a little sparkle.</summary>
+		<description lang="en">A small plugin for playing reddit acestreams
+		</description>
+		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
+		<platform>all</platform>
+	</extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.2.2" provider-name="Twilight0">
-    <requires>
-        <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.kodi-six" version="0.0.2"/>
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Tulip Helper libraries</summary>
-        <description lang="en">Tulip Routine Libraries combines the best elements from Lambda's "lamlib" and tknorris's shared modules. Also includes various enhancements, newer and improved functions and Python 3 compatibility, though the latter is largely untested.</description>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-        <source>https://github.com/Twilight0/script.module.tulip</source>
-        <news>
-[B]2.2.X[/B]
-- Reincluded url_dispatcher module for addons that may use it in the future
-- New reload skin function
-- Log exception on client function upon failure
-
-[B]2.1.X[/B]
-- Utilize kodi-six to further improve Python 2/3 compatibility
-- Added "builtin" function into directory module, which can execute various builtin commands with arguments
-- Added various supplementary fuctions into control module
-- Added argv parameter to directory module's function to work with Leia's new python caching (requires testing)
-- Tweaked open settings window &amp; set focus methods
-- Various other tweaks</news>
-    </extension>
-</addon>
-
-<addon id="repository.20ap" name="20ap" version="18.12.19.1" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="19.01.15" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
 
             <dir>
@@ -101,9 +54,24 @@
 			<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
 		</dir>
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+				<info compressed="false">https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
+		</dir>
+		<dir>
+				<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+				<info compressed="false">https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/13Clowns/_scrapers/master/</datadir>
+		</dir>
+		<dir>
+				<info compressed="false">https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">http://Rockodi.com/addons.xml</info>
@@ -150,78 +118,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.acesports" name="acesports" version="2018.12.01" provider-name="iwannabelikemike">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.addon.common" />
-		<import addon="script.module.requests"  />
-		<import addon="script.module.beautifulsoup4"  />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides></provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Just a little sparkle.</summary>
-		<description lang="en">A small plugin for playing reddit acestreams
-		</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon
-  id="program.plexusscraper"
-  name="Plexus Scraper"
-  version="0.1.0" provider-name="JeremyC">
-
-  <requires>
-    <import addon="xbmc.python"	version="2.1.0"/>
-  </requires>
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en_GB">Scrape a web page for Acestream and Sopcast links for Plexus</summary>
-    <description lang="en_GB">
-This is my own Program addonl.
-
-This addon scrapes a specified web page for Acestream and Sopcast links.
-These links are then used to create a history.txt file as used by Plexus.
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="program.plexus"
-       name="Plexus"
-       version="0.1.8"
-       provider-name="tvaddons">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">Plexus - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)</description>
-    <description lang="pt">Plexus - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)</description>
-    <description lang="es">Plexus - Una estructura compleja conteniendo una intrincada red de partes. Plexus añade soporte nativo peer-to-peer (AceStream y SopCast) al Centro de Entretenimiento Kodi para varias plataformas.[CR][CR]Documentacion: (falta)</description>
-	<disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-   	<disclaimer lang="es">El autor no aloja ni distribuye cualquier contenido que ud. pudiera reproducir usando este addon. El autor no tiene participacion en el desarrollo de cualquier tecnologia incluida. Cuando requiera ayuda en el foro de Kodi por favor respete las reglas (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <platform>all</platform>
-	<forum>https://www.tvaddons.co/forums</forum>
-	<website>https://www.tvaddons.co</website>
-  </extension>
-</addon>
-
-<addon id="plugin.video.f1f" name="f1f" version="18.11.26" provider-name="Enzo">
+<addon id="plugin.video.20ap" name="20ap" version="18.12.29" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -236,12 +133,14 @@ These links are then used to create a history.txt file as used by Plexus.
       <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
       <import addon="repository.jsergio" />
       <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
+      <import addon="plugin.video.shelby" optional="true" />
+
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" optional="true"/>
       <import addon="plugin.video.sparkle" optional="true"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>video</provides>
+      <provides>audio video</provides>
   </extension>
   <extension point="xbmc.service" library="service.py" start="[login|startup]" />
   <extension point="xbmc.addon.metadata">
@@ -252,27 +151,9 @@ These links are then used to create a history.txt file as used by Plexus.
     <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
     <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
     <platform>all</platform>
+      <website></website>
       <video_guide>xtOqLY5PJDY</video_guide>
   </extension>
-</addon>
-
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.0" provider-name="I-A-C">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="CleanupService.py" start="startup" />
-		<extension point="xbmc.addon.metadata">
-			<platform>all</platform>
-			<summary lang="en">Lambdascrapers Module</summary>
-			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-        		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        		<license>Beerware rev. 42</license>
-		</extension>
 </addon>
 
 <addon id="plugin.video.shelby" name="Shelby's Add-on" version="18.12.27" provider-name="Community">
@@ -297,214 +178,6 @@ These links are then used to create a history.txt file as used by Plexus.
     <extension point="xbmc.service" library="service.py" start="[login|startup]" />
     <extension point="xbmc.addon.metadata">
         <summary lang="en">Shelby's Little Add-on</summary>
-        <description lang="en">As of May, 2018 this is a community maintained template for learning purposes.</description>
-        <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        <platform>all</platform>
-        <website/>
-        <video_guide>https://youtu.be/0kFhoWahtFw</video_guide>
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-    </extension>
-</addon>
-
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.25" provider-name="jsergio">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
-</addon>
-
-<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.83" provider-name="iwannabelikemike">
-	<requires>
-		<import addon="xbmc.python" version="2.25.0"/>
-		<import addon="script.module.addon.common" />
-		<import addon="script.module.requests"  />
-		<import addon="script.module.beautifulsoup4"  />
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Just a little sparkle.</summary>
-		<description lang="en">A small plugin for playing reddit acestreams
-		</description>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.youtube" name="YouTube" version="6.3.0~beta3" provider-name="bromix">
-    <requires>
-        <import addon="xbmc.python" version="2.20.0"/>
-        <import addon="script.module.six" version="1.11.0"/>
-        <import addon="script.module.requests" version="2.12.4"/>
-        <import addon="script.module.inputstreamhelper" version="0.2.2" optional="true"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="resources/lib/default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="resources/lib/startup.py" start="login"/>
-    <extension point="xbmc.python.module" library="resources/lib/"/>
-    <extension point="xbmc.addon.metadata">
-        <news>
-6.3.0
-[add] support for keymapping of some endpoints, wiki: https://kodi.wiki/view/Add-on:YouTube#Keymaps
-[add] 'Rate videos in playlists' setting to 'Settings - General - Rate after watching'
-[add] Support for purchased collections |contrib: MisterD81|
-[fix] Live stream playback
-[fix] post play add to watch history
-[fix] fix add-ons playback history not saving
-[fix] playback monitoring/post play events triggering for the wrong videos in some cases
-[fix] call setResolvedUrl(False) if get_video_streams fails
-[upd] code cosmetics and resolve inspections
-[upd] improve watch history tracking, actively report watch times and state during playback
-[upd] sign in/out, switch user, and settings ListItems to isFolder=False and isPlayable=False
-[upd] improve watch later playlist id retrieval and feedback
-[upd] Use SPDX license identifier
-[lang] de_de strings |contrib: tobhor|
-[lang] el_gr strings |contrib: twilight0|
-[lang] es_es strings |contrib: roliverosc|
-[lang] ko_kr strings |contrib: parkmino|
-[lang] nl_nl strings |contrib: Markman-B|
-        </news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-        <summary lang="en_GB">Plugin for YouTube</summary>
-        <description lang="en_GB">YouTube is one of the biggest video-sharing websites of the world.</description>
-        <disclaimer lang="en_GB">This plugin is not endorsed by Google</disclaimer>
-        <summary lang="he_IL">תוסף עבור YouTube</summary>
-        <description lang="he_IL">YouTube הוא אחד מאתרי שיתוף הווידאו הגדולים בעולם.</description>
-        <summary lang="de_DE">Plugin für YouTube</summary>
-        <description lang="de_DE">YouTube ist eines der größten Video-Sharing-Websites der Welt.</description>
-        <summary lang="pl_PL">Wtyczka YouTube</summary>
-        <description lang="pl_PL">YouTube jest jednym z największych na świecie serwisów udostępniania wideo.</description>
-        <summary lang="hu_HU">YouTube kiegészítő</summary>
-        <description lang="hu_HU">A YouTube világ egyik legnagyobb videómegosztó weboldala.</description>
-        <summary lang="es_ES">Plugin para YouTube</summary>
-        <description lang="es_ES">YouTube es uno de los sitios web para compartir videos más grande del mundo.</description>
-        <disclaimer lang="es_ES">Este add-on no está respaldado por Google</disclaimer>
-        <summary lang="es_MX">Plugin para YouTube</summary>
-        <description lang="es_MX">YouTube es uno de los más grandes sitios web de intercambio de videos del mundo.</description>
-        <disclaimer lang="es_MX">Este add-on no está respaldado por Google</disclaimer>
-        <summary lang="ru_RU">Видеодополнение YouTube</summary>
-        <description lang="ru_RU">YouTube - популярнейший видеохостинговый сайт, предоставляющий пользователям услуги хранения, доставки и показа видео.</description>
-        <summary lang="fr_FR">Plugin pour YouTube</summary>
-        <description lang="fr_FR">YouTube est l'un des plus grands sites de partage vidéos du monde.</description>
-        <summary lang="zh_CN">YouTube附加元件</summary>
-        <description lang="zh_CN">「Youtube」是全世界最大的影片分享網站</description>
-        <summary lang="zh_TW">YouTube附加元件</summary>
-        <description lang="zh_TW">「Youtube」是全世界最大的影片分享網站</description>
-        <disclaimer lang="zh_TW">此附加元件未由Google支持</disclaimer>
-        <summary lang="bg_BG">Добавка за YouTube</summary>
-        <description lang="bg_BG">YouTube е един от най-големите уеб сайтове за споделяне на видео в целия свят.</description>
-        <summary lang="el_GR">Πρόσθετο YouTube</summary>
-        <description lang="el_GR">Το YouTube είναι μία από τις μεγαλύτερες ιστοσελίδες διαμοιρασμού βίντεο στον κόσμο.</description>
-        <disclaimer lang="el_GR">Η παρούσα μικροεφαρμογή δεν έχει υϊοθετηθεί από την Google</disclaimer>
-        <summary lang="nb_NO">Tillegg for YouTube</summary>
-        <description lang="nb_NO">YouTube er en av verdens største nettsider for videodeling.</description>
-        <language></language>
-        <platform>all</platform>
-        <license>GPL-2.0-only</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=325740</forum>
-        <website>https://www.youtube.com</website>
-        <email>ytplugin at datanet dot ws</email>
-        <source>https://github.com/jdf76/plugin.video.youtube</source>
-        <reuselanguageinvoker>true</reuselanguageinvoker>
-    </extension>
-</addon>
-
-<addon id="plugin.program.reddit_browser" name="Reddit Browser" version="1.0.2.1" provider-name="tvaddons">
-    <requires>
-        <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.tulip" version="2.0.22"/>
-        <import addon="script.module.pyxbmct" version="1.2.0"/>
-        <import addon="script.module.urlresolver" version="5.0.06"/>
-        <!--<import addon="script.module.resolveurl" version="5.0.06"/>-->
-        <import addon="plugin.video.youtube" version="6.1.4"/>
-        <!--<import addon="repository.xbmchub" version="3.0.0"/>-->
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video audio image executable</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>false</reuselanguageinvoker>
-        <platform>all</platform>
-        <summary lang="en_GB">Reddit Browser addon</summary>
-        <summary lang="el_GR">Πρόσθετο Reddit Browser</summary>
-        <description lang="en_GB">Reddit Browser is an addon able to browse Reddit and play various forms of media and show text comments</description>
-        <description lang="el_GR">Το πρόσθετο Reddit Browser είναι μια μικροεφαρμογή πλοήγησης του Reddit που επιτρέπει την αναπαραγωγή διαφόρων ειδών πολυμέσων και προβολή σχολίων και νημάτων</description>
-        <disclaimer lang="en_GB">Kodi is a registered trademark of the XBMC Foundation.[CR]We are not connected to or in any other way affiliated with Kodi - DMCA: legal@tvaddons.co</disclaimer>
-        <language>en</language>
-        <license>GNU GPL, version 2</license>
-        <website>https://www.tvaddons.co/</website>
-        <forum>https://www.tvaddons.co/forums/index.php</forum>
-        <source>https://github.com/tvaddonsco/plugin.program.reddit_browser</source>
-        <size>1711463</size>
-        <news>1.0.2 ~ 15-10-2018
-- Minor fix for advanced search regarding the appendance of default hosts
-- Updated greek translation for first time prompts
-
-1.0.1 ~ 14-10-2018
-- Removed some misc google domains from default searchable domains
-- Added a few other domains
-- Amended installed size
-
-1.0.0 ~ 13-10-2018
-- Initial Version</news>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="repository.ddurdle" name="ddurdle's Cloud Services KODI XBMC Addons" version="1.0.4" provider-name="ddurdle">
-	<extension point="xbmc.addon.repository" name="ddurdle's Cloud Services KODI XBMC Addon Repository">
-		<info compressed="false">https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml</info>
-		<checksum>https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml.md5</checksum>
-		<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>Install ddurdle's Cloud Services Addons</summary>
-		<description>Download and install cloud service addons by ddurdle</description>
-		<platform>all</platform>
-	</extension>
-</addon>
-
-<addon id="plugin.video.jen" name="Jen Plugin Playground" version="1.9" provider-name="Community">
-    <requires>
-        <import addon="xbmc.python" version="2.19.0" />
-        <import addon="script.module.universalscrapers" version="1.0.0" />
-        <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-        <import addon="script.module.beautifulsoup" version="3.2.1" />
-        <import addon="script.module.requests" version="2.9.1" />
-        <import addon="script.module.addon.common" version="2.0.0" />
-        <import addon="script.module.xmltodict" version="0.9.0" />
-        <import addon="script.module.dateutil" />
-        <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-        <import addon="script.module.resolveurl" />
-        <!--<import addon="script.module.urlresolver" />-->
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>audio video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">Bob's little sister</summary>
         <description lang="en">As of May, 2018 this is a community maintained template for learning purposes.</description>
         <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
         <platform>all</platform>
@@ -544,5 +217,40 @@ These links are then used to create a history.txt file as used by Plexus.
         <website></website>
         <video_guide></video_guide>
     </extension>
+</addon>
+
+<addon id="plugin.video.f1f" name="f1f" version="18.11.26" provider-name="Enzo">
+  <requires>
+      <import addon="xbmc.python" version="2.19.0" />
+     <import addon="script.module.dateutil" />
+     <import addon="script.module.universalscrapers" version="0.5.5" />
+      <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+      <import addon="script.module.beautifulsoup" version="3.2.1" />
+      <import addon="script.module.requests" version="2.9.1" />
+      <import addon="script.module.addon.common" version="2.0.0" />
+      <import addon="script.module.xmltodict" version="0.9.0" />
+      <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+      <import addon="script.module.resolveurl" />
+      <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
+      <import addon="repository.jsergio" />
+      <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
+      <import addon="plugin.video.youtube" version="5.4.5x" />
+      <import addon="program.plexus" optional="true"/>
+      <import addon="plugin.video.sparkle" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Our Own Add-On</summary>
+    <summary lang="he"></summary>
+    <description lang="en">Our Own Add-On</description>
+    <description lang="he"></description>
+    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+    <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+    <platform>all</platform>
+      <video_guide>xtOqLY5PJDY</video_guide>
+  </extension>
 </addon>
 </addons>

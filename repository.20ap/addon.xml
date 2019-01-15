@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="repository.20ap" name="20ap" version="18.12.19.1" provider-name="Enzo">
+<addon id="repository.20ap" name="20ap" version="19.01.15" provider-name="Enzo">
 	<extension point="xbmc.addon.repository" name="20ap">
-	  
-            <dir>      
+
+            <dir>
             <info compressed="false">http://ukodi1.com/_repo/addons.xml</info>
             <checksum>http://ukodi1.com/_repo/addons.xml.md5</checksum>
             <datadir zip="true">http://ukodi1.com/_repo/</datadir>
             <hashes>false</hashes>
             </dir>
-            
+
 	        <dir>
             <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
@@ -34,9 +34,24 @@
 			<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
 		</dir>
 		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+				<info compressed="false">https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
+		</dir>
+		<dir>
+				<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+		</dir>
+		<dir>
+				<info compressed="false">https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/13Clowns/_scrapers/master/</datadir>
+		</dir>
+		<dir>
+				<info compressed="false">https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips</datadir>
 		</dir>
 		<dir>
 			<info compressed="false">http://Rockodi.com/addons.xml</info>
