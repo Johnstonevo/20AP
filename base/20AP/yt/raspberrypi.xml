@@ -4,6 +4,14 @@
 ##########################################################################################
 
 
+
+<plugin>
+  <title>buildwithpython</title>
+  <link>plugin://plugin.video.youtube/channel/UCirPbvoHzD78Lnyll6YYUpg/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mClB0hGNcgwL7DGBKyErVNwlh6kmodS_RCyJg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Learn python by building in-depth projects and going beyond the basics. The channel currently includes Python Network Programming, Socket Programming, building GUI's, Python Web Development using Django.
+</summary>
+</plugin>
 <plugin>
   <title>Hackster.IO</title>
   <link>plugin://plugin.video.youtube/channel/UCqQzKnjSPjkJGMcjPg-Wktw/</link>
