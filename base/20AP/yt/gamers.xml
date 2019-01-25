@@ -59,7 +59,7 @@ It's a small mail box, so please email before sending!
   <thumbnail>hhttps://yt3.ggpht.com/a-/AAuE7mAGW5YPwxenrR_kcfTaI_9JiqYiD8i21AsoLw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary>Retro gaming fun!
 
-SUBSCRIBE! 
+SUBSCRIBE!
 Please enjoy!
 Support us on Patreon!
 https://www.patreon.com/happyconsolegamer
@@ -212,7 +212,7 @@ If you'd like to ask a question or just say hi, the LGR Twitter is the best opti
   <title>NakeyJakey</title>
   <link>plugin://plugin.video.youtube/channel/UCSdma21fnJzgmPodhC9SJ3g/</link>
   <thumbnail>https://yt3.ggpht.com/a-/AAuE7mD1ynMlWaKt3vhLyWJwbegkM31-P-ty0CbBcw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
-  <summary>Mainly video game stuff, with a side of my music stuff, also with a side of hot boy stuff. New videos every week (most of the time.) 
+  <summary>Mainly video game stuff, with a side of my music stuff, also with a side of hot boy stuff. New videos every week (most of the time.)
 Dog bless.
 
 get in touch! email - jacob.m.christensen@gmail.com</summary>
@@ -390,4 +390,15 @@ Also, I do not use Pokémon Showdown. Anyone claiming to be me on that is lying.
   <summary>We make entertaining videos about technology, including tech reviews, showcases and other content.
 
 LinusTechTips@gmail.com - Business inquiries only. All others will be ignored.</summary>
+</plugin>
+
+
+
+<plugin>
+  <title>Asobi tech</title>
+  <link>plugin://plugin.video.youtube/channel/UCz_aEO61gvZ87E0IXf4DxuA/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mC6f4Cy-FyG8MZttHaCfyN8Ifrq41risAKzRw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Spare time Indiegame Dev, full time tech enthusiast. All things geek.
+Retrogaming in a big way.
+</summary>
 </plugin>
