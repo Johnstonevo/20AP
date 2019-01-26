@@ -41,6 +41,12 @@
 </dir>
 
 <dir>
+	<title>1996 Formula One Replays</title>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/1996replays.xml</link>
+	<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
+	<fanart></fanart>
+</dir>
+<dir>
 	<title>1995 Formula One Replays</title>
 	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/1995replays.xml</link>
 	<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
