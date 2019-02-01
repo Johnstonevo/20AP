@@ -22,7 +22,7 @@ The show is researched, written, edited, and created by Norman Caruso.
 <plugin>
   <title>Nostalgia Nerd</title>
   <link>plugin://plugin.video.youtube/channel/UC7qPftDWPw9XuExpSgfkmJQ/</link>
-  <thumbnail>https://yt3.ggpht.com/a-/AN66SAxxw_tRn8J00wlLanXj2gf6XbO7M8SLy-WBlg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mBTY9lDeHtikhKDeNcosC6hHBEeEg6qeDinFw=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary></summary>
 </plugin>
 
@@ -390,6 +390,23 @@ Also, I do not use Pokémon Showdown. Anyone claiming to be me on that is lying.
   <summary>We make entertaining videos about technology, including tech reviews, showcases and other content.
 
 LinusTechTips@gmail.com - Business inquiries only. All others will be ignored.</summary>
+</plugin>
+
+
+
+<plugin>
+  <title>Friday Night Arcade</title>
+  <link>
+    <sublink>plugin://plugin.video.youtube/channel/UCjEN5VCee_DVS4xrUbeI8XA/</sublink>
+  <sublink>plugin://plugin.video.youtube/channel//UCXuCoWMGnnCdrsy0bdtkLlg/</sublink>
+</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mDNZmjXHknRN-6vnz-aLcJbf14BWcHAfoBvuA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Aaron is reviewing retro games and old video game consoles including Atari, NES, SNES, N64, Sega Master System, Genesis, Dreamcast, TurboGraphx 16 and more.
+
+New Episodes Every Friday at 6AM CT.
+
+For Aaron's Gameplay and Live Stream videos, check out Friday Night Arcade Plays!
+</summary>
 </plugin>
 
 
