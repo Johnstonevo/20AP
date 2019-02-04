@@ -322,16 +322,6 @@ From what started as a series aimed at the tens of people its now watched by the
   </summary>
 </plugin>
 
-<plugin>
-  <title>Gaming Historian</title>
-  <link>plugin://plugin.video.youtube/channel/UCnbvPS_rXp4PC21PG2k1UVg/</link>
-  <thumbnail>https://yt3.ggpht.com/-8EL8uV2zWuc/AAAAAAAAAAI/AAAAAAAAAAA/6cx197A77Uc/s288-c-k-no-mo-rj-c0xffffff/photo.jpg</thumbnail>
-  <summary>The Gaming Historian is a documentary series all about the history of video games. I also like to review books and certain games that I find interesting.
-
-The show is researched, written, edited, and created by Norman Caruso.
-
-If you like what I do and would like to support the show, please consider joining my Patreon. http://www.patreon.com/gaminghistorian</summary>
-</plugin>
 
 <plugin>
   <title>TheAngryHoneyBadger</title>
@@ -441,3 +431,13 @@ Retrogaming in a big way.
 
 
 
+
+<plugin>
+  <title>Kim Justice</title>
+  <link>plugin://plugin.video.youtube/channel/UC9ZWVL1Elyt2cdiQYjxS_1w/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mA7DsoTlNa1TzU5xX0pRkkBMle-pmANGacvNg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>I'm Kim Justice. I make documentaries about old computer and video games, mostly with a European slant - it's all about the ZX Spectrum, the Commodore Amiga, the C64, plenty of great companies like Ocean Software, rises and falls, tales of technological and bureaucratic disaster...all sorts. I do Sega and Sony too. I also do wrestling, old TV, music, 16th century faith healers and anything else that catches my interest. Enjoy!
+
+Social links are below you, above you (twice) and probably in several other places around here - do follow!
+</summary>
+</plugin>
