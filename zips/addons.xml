@@ -20,99 +20,42 @@
 	</extension>
 </addon>
 
-<addon id="repository.20ap" name="20ap" version="19.01.15.1" provider-name="Enzo">
-	<extension point="xbmc.addon.repository" name="20ap">
-
-            <dir>
-            <info compressed="false">http://ukodi1.com/_repo/addons.xml</info>
-            <checksum>http://ukodi1.com/_repo/addons.xml.md5</checksum>
-            <datadir zip="true">http://ukodi1.com/_repo/</datadir>
-            <hashes>false</hashes>
-            </dir>
-
-	        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
-            <hashes>false</hashes>
-        </dir>
-
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/</datadir>
-		</dir>
-
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/teverz/teverz/master/_repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/teverz/teverz/master/_repo/</datadir>
-		</dir>
-
-		<dir>
-			<info compressed="false">https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml</info>
-			<checksum>https://raw.github.com/ddurdle/repository.ddurdle/master/addons.xml.md5</checksum>
-			<datadir zip="true">http://dmdsoftware.net/repository.ddurdle/</datadir>
-		</dir>
-		<dir>
-				<info compressed="false">https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/13Clowns/_zips/master/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/13Clowns/_zips/master/</datadir>
-		</dir>
-		<dir>
-				<info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
-		</dir>
-		<dir>
-				<info compressed="false">https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/13Clowns/_scrapers/master/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/13Clowns/_scrapers/master/</datadir>
-		</dir>
-		<dir>
-				<info compressed="false">https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips/addons.xml</info>
-				<checksum>https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips/addons.xml.md5</checksum>
-				<datadir zip="true">https://raw.githubusercontent.com/Dr-Know99/Global-Scrapers-Repo/master/zips</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">http://Rockodi.com/addons.xml</info>
-			<checksum>http://Rockodi.com/addons.xml.md5</checksum>
-			<datadir zip="true">http://Rockodi.com/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">http://supremacy.org.uk/zip/plugin/addon.xml</info>
-			<checksum>http://supremacy.org.uk/zip/plugin/addons.xml.md5</checksum>
-			<datadir zip="true">http://supremacy.org.uk/zip/plugin/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://bitbucket.org/griffin303/griffin/raw/master/zips/addons.xml</info>
-			<checksum>https://bitbucket.org/griffin303/griffin/raw/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://bitbucket.org/griffin303/griffin/raw/master/zips/</datadir>
-			<hashes>false</hashes>
-		</dir>
-		<dir>
-			<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
-		</dir>
-		<dir>
-			<info compressed="false">https://addoncloud.org/ukturk/install/repo/addons.xml</info>
-			<checksum>https://addoncloud.org/ukturk/install/repo/addons.xml.md5</checksum>
-			<datadir zip="true">https://addoncloud.org/ukturk/install/repo/</datadir>
-		</dir>
+<addon id="repository.20ap" name="20ap" version="19.02.09" provider-name="Enzo">
+<extension point="xbmc.addon.repository" name="20ap">
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/PiDiaries/repository.mpd/master/zips/</datadir>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/jenaddon/repository.jenrepo/master/zips/</datadir>
+<hashes>false</hashes>
+</dir>
+<dir>
+<info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+</dir>
 
 
-			<info compressed="false">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/</datadir>
+<info compressed="false">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml</info>
+<checksum>https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/addons.xml.md5</checksum>
+<datadir zip="true">https://raw.githubusercontent.com/Johnstonevo/20ap/master/zips/</datadir>
 
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Our Own Repo</summary>
-		<description lang="en">Repo for our own stuff</description>
-		<genre>comedy,documentary,movies,music,sports,uk</genre>
-		<platform>all</platform>
-	</extension>
+</extension>
+<extension point="xbmc.addon.metadata">
+<summary lang="en">Our Own Repo</summary>
+<description lang="en">Repo for our own stuff</description>
+<genre>comedy,documentary,movies,music,sports,uk</genre>
+<platform>all</platform>
+</extension>
 </addon>
 
 <addon id="script.module.acesports" name="acesports" version="2018.12.01" provider-name="iwannabelikemike">
