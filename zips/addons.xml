@@ -178,7 +178,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.3.2~alpha4" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.4.1~alpha3" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -192,27 +192,16 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-6.3.2
-[fix] some videos not playing when logged in
-[fix] reset function cache at restart/update to resolve issues persisting due to cached results
-[fix] service potentially not shutting down http server
-[fix] added to playlist/subscriptions notifications
-[fix] only generate mpeg-dash file if adaptive formats are available
-[fix] map frame rates to more common representation to lessen the chance of double refresh changes (applies only to generated mpeg-dash files)
-[fix] currently playing file check when playing file is a plugin:// url
-[chg] Settings - General - Autoplay suggested videos
-        - limit playlist size to 1000 videos
-        - request less relevant videos at one time
-        - old behavior: add 50 most relevant videos for each video played, repeats allowed
-            - result: a lot of barely relevant videos in groups of 50
-        - new behavior: add single most relevant video, no repeats
-            - result: next video is always the most relevant video to the last video played
-[upd] player javascript retrieval
-
-6.3.1
-[fix] ensure playback monitoring is monitoring the correct item
-[fix] check for abortRequested while processing purchased collections
-[upd] Use setArt instead of iconImage, thumbnailImage and setProperty('fanart_image')
+6.4.1
+[upd] Use the activation url provided by the authentication request
+[add] add Settings - MPEG-DASH - Default to WEBM adaptation set
+        - required for 4k stream automatic selection
+[add] add Settings - MPEG-DASH - Include VP9.2
+        - includes HDR content in the manifest
+[add] add support for &amp;hide_folders=true parameter in search query urls
+        - when added to the url it will hide the Playlists, Channels, and Live folders
+[fix] fix playback of Purchases
+[fix] mpeg-dash frame rate representation
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -564,7 +553,7 @@ These links are then used to create a history.txt file as used by Plexus.
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.2.6" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.0" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -577,6 +566,13 @@ These links are then used to create a history.txt file as used by Plexus.
         <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
         <source>https://github.com/Twilight0/script.module.tulip</source>
         <news>
+[B]2.3.X[/B]
+- Add function (directory) can now set plugin category for skins to display
+- Changed all "BaseException" into "Exception"
+- Replaced builtin eval with ast.literaleval which is more secure
+- Added the fuzzywuzzy library for fuzzy string matching
+- Various other tweaks
+
 [B]2.2.X[/B]
 - Reincluded url_dispatcher module for addons that may use it in the future
 - New reload skin function
@@ -588,15 +584,7 @@ These links are then used to create a history.txt file as used by Plexus.
 - Added StringIO in compat module
 - Plugin url optimization with join string method on directory module
 - m3u_maker renamed to playlist_maker
-- Added tvg-logo parameter into playlist_maker
-
-[B]2.1.X[/B]
-- Utilize kodi-six to further improve Python 2/3 compatibility
-- Added "builtin" function into directory module, which can execute various builtin commands with arguments
-- Added various supplementary fuctions into control module
-- Added argv parameter to directory module's function to work with Leia's new python caching (requires testing)
-- Tweaked open settings window &amp; set focus methods
-- Various other tweaks</news>
+- Added tvg-logo parameter into playlist_maker</news>
     </extension>
 </addon>
 
