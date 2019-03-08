@@ -5,6 +5,15 @@
 
 
 
+
+<dir>
+  <title>Formula One Movies, TV shows and Documentaries</title>
+  <tmdb>list/47294<tmdb>
+    <fanart>https://images6.alphacoders.com/906/thumb-1920-906632.jpg</fanart>
+    <thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
+</dir>
+
+
 <dir>
 <title>Official Formula One Youtube Channels</title>
 <link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/f1yt.xml</link>
@@ -13,10 +22,10 @@
 </dir>
 
 <dir>
-  <title>Formula One Movies, TV shows and Documentaries</title>
-  <tmdb>list/47294<tmdb>
-    <fanart>https://images6.alphacoders.com/906/thumb-1920-906632.jpg</fanart>
-    <thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
+	<title>Formula 1 Drive to survive</title>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/d2s.xml</link>
+	<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/f1/icon.png</thumbnail>
+	<fanart></fanart>
 </dir>
 
 <dir>
