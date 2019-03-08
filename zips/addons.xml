@@ -299,6 +299,24 @@ These links are then used to create a history.txt file as used by Plexus.
   </extension>
 </addon>
 
+<addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.2" provider-name="mcobit">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>executable</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <platform>linux</platform>
+        <disclaimer>For Kodi linux (tested on OSMC final)</disclaimer>
+        <summary lang="en">Launch RetroPie from Kodi.</summary>
+        <description lang="en">Launch RetroPie from Kodi.</description>
+        <website>https://github.com/mcobit/retrosmc/</website>
+        <email>me@me.me</email>
+    </extension>
+</addon>
+
 <addon id="griffin" name="Griffin Repo" version="0.0.7" provider-name="griffin_303">
 	<extension point="xbmc.addon.repository" name="Griffin Repository">
             <dir>
@@ -376,23 +394,28 @@ These links are then used to create a history.txt file as used by Plexus.
     </extension>
 </addon>
 
-<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="1.8.0" provider-name="I-A-C">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="script.module.beautifulsoup4"/>
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.service" library="CleanupService.py" start="startup" />
-		<extension point="xbmc.addon.metadata">
-			<platform>all</platform>
-			<summary lang="en">Lambdascrapers Module</summary>
-			<description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-        		<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-        		<license>Beerware rev. 42</license>
-		</extension>
+<addon id="script.module.lambdascrapers" name="Lambdascrapers Module" version="2.0.0" provider-name="I-A-C">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">Lambdascrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+    </assets>
+    <news></news>
+    </extension>
 </addon>
 
 <addon id="plugin.video.20apkids" name="20apkids" version="18.9.11" provider-name="enzo">
@@ -552,6 +575,48 @@ These links are then used to create a history.txt file as used by Plexus.
 	<forum>https://www.tvaddons.co/forums</forum>
 	<website>https://www.tvaddons.co</website>
   </extension>
+</addon>
+
+<addon id="repository.onenation" name="OneNation Repo" version="1.0.5" provider-name="OneNation">
+	<extension point="xbmc.addon.repository" name="OneNation Repo">
+		<info compressed="false">https://www.onenation.appboxes.co/repository/repofiles/addons.xml</info>
+		<checksum>https://www.onenation.appboxes.co/repository/repofiles/addons.xml.md5</checksum>
+		<datadir zip="true">https://www.onenation.appboxes.co/repository/repofiles/</datadir>
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/jsergio123/zips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/jsergio123/zips/master/</datadir>
+        </dir>
+ <dir>
+		<info compressed="false">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/totalrevolution/python-koding/master/zips/</datadir>
+	</dir>
+	<dir>
+		<info compressed="false">https://raw.githubusercontent.com/duncanh52/modrepo/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/duncanh52/modrepo/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/duncanh52/modrepo/master/plugins/</datadir>
+	</dir>
+ <dir>
+                <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+                <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            </dir>
+ <dir>
+		<info compressed="false">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml</info>
+		<checksum>https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/tvaddonsco/tva-resolvers-repo/raw/master/zips/</datadir>
+	</dir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">OneNation Repo</summary>
+		<description lang="en_GB">The home of the OneNation Plugins.</description>
+		<disclaimer lang="en_GB"></disclaimer>
+	<platform>all</platform>
+	<language>en</language>
+	<license>GNU GENERAL PUBLIC LICENSE Version 2</license>
+	<email></email>
+	</extension>
 </addon>
 
 <addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.0" provider-name="Twilight0">
