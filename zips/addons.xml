@@ -450,6 +450,29 @@ These links are then used to create a history.txt file as used by Plexus.
     </extension>
 </addon>
 
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.1.0" provider-name="doko">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="script.module.requests"/>
+        <import addon="script.module.beautifulsoup4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="Default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">WatchNixtoons2</summary>
+        <description lang="en">
+Watch cartoons and anime from [COLOR khaki][B]WatchCartoonOnline.io[/B][/COLOR].
+
+Support WatchCartoonOnline with a PayPal donation to:
+[COLOR lavender][B]wcohelp@yandex.com[/B][/COLOR]
+
+Add-on by doko.</description>
+        <platform lang="en">all</platform>
+        <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
+    </extension>
+</addon>
+
 <addon id="repository.maverickrepo" name="[COLOR lime]MaverickTV Repo[/COLOR]" version="3.5" provider-name="Maverick TV">
 <extension point="xbmc.addon.repository" name="[COLOR lime]MaverickTV Repo[/COLOR]">
 	<dir>
@@ -482,6 +505,23 @@ These links are then used to create a history.txt file as used by Plexus.
 		<description>The MaverickTV Repository for add-on and dependencies</description>
 		<platform>all</platform>
 	</extension>
+</addon>
+
+<addon id="plugin.video.ctoonkodi" name="CTOON Kodi" version="0.3.9" provider-name="doko, Tikipeter">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="Main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en"></summary>
+    <description lang="en">[COLOR mediumpurple][B]CTOON Kodi[/B][/COLOR][CR][CR]A simple addon for streaming cartoon episodes from the [B]ctoon.party[/B] website.[CR][CR]Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B][/COLOR]</description>
+    <news>[COLOR mediumpurple][B]CTOON Kodi[/B][/COLOR] - Cartoons[CR][CR][B]0.3.9:[/B][CR]- Added settings (autoplay, clear cache)[CR]- Added disk and memory caching.[CR][CR][B]0.3.0:[/B][CR]- Added support for the CTOON web API.</news>
+    <disclaimer lang="en"></disclaimer>
+    <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="repository.13clowns" name="[B][COLOR red]13Clowns[/COLOR] Repo[/B]" version="2.0.4" provider-name="13Clowns">
