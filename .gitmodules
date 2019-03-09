@@ -34,3 +34,9 @@
 [submodule "plugin.program.reddit_browser"]
 	path = plugin.program.reddit_browser
 	url = https://github.com/Johnstonevo/plugin.program.reddit_browser.git
+[submodule "plugin.video.watchnixtoons2"]
+	path = plugin.video.watchnixtoons2
+	url = https://github.com/doko-desuka/plugin.video.watchnixtoons2.git
+[submodule "plugin.video.ctoonkodi"]
+	path = plugin.video.ctoonkodi
+	url = https://github.com/doko-desuka/plugin.video.ctoonkodi.git
