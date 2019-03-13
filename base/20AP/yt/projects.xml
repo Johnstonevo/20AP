@@ -112,9 +112,16 @@ Whether it’s a video with our expert blacksmiths forging Katarina’s Daggers 
 
 
 <plugin>
+  <title>Jackman Works</title>
+  <link>plugin://plugin.video.youtube/channel/UCaI4Tib6te88f_P9r8w5Tmw/</link>
+  <thumbnail>https://yt3.ggpht.com/-4WA7gNrIGMM/AAAAAAAAAAI/AAAAAAAAAAA/OJAf3t3mH5U/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <summary>Hello, I'm The Redsmith. I'm a maker. I mainly work with wood, metal and leather</summary>
+</plugin>
+
+<plugin>
   <title>The Redsmith</title>
   <link>plugin://plugin.video.youtube/channel/UCqV0qSeS6i0qdymBFlLvnOw/</link>
-  <thumbnail>https://yt3.ggpht.com/-zQ-wdJQCIe8/AAAAAAAAAAI/AAAAAAAAAAA/A6eUwf5rvIE/s288-mo-c-c0xffffffff-rj-k-no/photo.jpg</thumbnail>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mCPX6NHr9YoV4eXCFadryuy5o7gzg_Yfx05cg=s88-mo-c-c0xffffffff-rj-k-no</thumbnail>
   <summary>Hello, I'm The Redsmith. I'm a maker. I mainly work with wood, metal and leather.</summary>
 </plugin>
 
