@@ -1,14 +1,3 @@
-<item>
-  <title>Warmup</title>
-  <link>https://www.youtube.com/watch/4kFJRvm4ttA</link>
-</item>
-
-<item>
-  <title></title>
-  <link>https://www.youtube.com/watch/</link>
-  <thumbnail>https://pbs.twimg.com/profile_images/806255918606389248/BqZps0ro.jpg</thumbnail>
-  <referer>no</referer>
-</item>
 
 <plugin>
   <title>Offical Indy Car Youtube Channel</title>
@@ -24,3 +13,15 @@
   <fanart>https://i.ytimg.com/vi/OstwNvchjmQ/maxresdefault.jpg</fanart>
   <summary></summary>
 </plugin>
+
+
+<dir>
+<title>2019 Indy Car replays</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/indy/replays.xml</link>
+</dir>
+
+
+<dir>
+<title>2019 Indy Lites replays</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/sport/indy/litesreplays.xml</link>
+</dir>
