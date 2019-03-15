@@ -58,7 +58,7 @@
 </extension>
 </addon>
 
-<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.83" provider-name="iwannabelikemike">
+<addon id="plugin.video.sparkle" name="Sparkle" version="0.0.84" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
 		<import addon="script.module.addon.common" />
@@ -178,7 +178,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.4.1~alpha4" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.4.1~alpha5" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -203,6 +203,8 @@
 [fix] fix playback of Purchases
 [fix] fixed saved playlists that don't belong to a channel
 [fix] mpeg-dash frame rate representation
+[fix] playback monitor when quickly changing videos
+[lang] nl_nl strings |contrib: MB1968|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -450,24 +452,38 @@ These links are then used to create a history.txt file as used by Plexus.
     </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.1.0" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.2.2" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.19.0"/>
         <import addon="script.module.requests"/>
-        <import addon="script.module.beautifulsoup4"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="Default.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">WatchNixtoons2</summary>
+        <news>
+[COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.2.2:[/B]
+- New context-menu: [I]Show Information[/I]
+- New 'Latest Movies' area.
+
+[B]0.2.1:[/B]
+- Fixed the Genres search
+- Fixed multipart item titles
+
+[B]0.2.0:[/B]
+- Bug fixes
+- Speed improvements
+- Added a "Clean Episode Titles" setting.
+        </news>
         <description lang="en">
 Watch cartoons and anime from [COLOR khaki][B]WatchCartoonOnline.io[/B][/COLOR].
 
 Support WatchCartoonOnline with a PayPal donation to:
 [COLOR lavender][B]wcohelp@yandex.com[/B][/COLOR]
 
-Add-on by doko.</description>
+Add-on by doko.
+        </description>
         <platform lang="en">all</platform>
         <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
     </extension>
