@@ -1,0 +1,45 @@
+<dir>
+    <title>UK Networks</title>
+    <tvmaze>country/United Kingdom/1</tvmaze>
+</dir>
+
+<dir>
+    <title>Crime Scene</title>
+    <tmdb>list/97542</tmdb>
+    <thumbnail></thumbnail>
+    <fanart></fanart>
+    <summary>Crime Scene TV. 
+    </summary>
+</dir>
+
+
+<dir>
+    <title>TMDB Top Rated TV Shows</title>
+    <tmdb>tv/top_rated</tmdb>
+    <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+    <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+
+</dir>
+
+
+<dir>
+  <title>TMDB TV  List</title>
+  <tmdb>list/107608</tmdb>
+  <thumbnail>https://www.themoviedb.org/static_cache/v4/logos/293x302-powered-by-square-green-3ee4814bb59d8260d51efdd7c124383540fc04ca27d23eaea3a8c87bfa0f388d.png</thumbnail>
+</dir>
+
+
+<dir>
+    <title>Trending Shows on Trakt</title>
+    <trakt>https://api.trakt.tv/shows/trending</trakt>
+    <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+    <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+</dir>
+
+
+<dir>
+    <title>Search Trakt</title>
+    <trakt>search</trakt>
+    <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+    <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
+</dir>

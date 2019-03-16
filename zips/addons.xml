@@ -58,6 +58,44 @@
 </extension>
 </addon>
 
+<addon id="plugin.video.penny" name="penny" version="19.02.09" provider-name="Enzo">
+  <requires>
+      <import addon="xbmc.python" version="2.19.0" />
+     <import addon="script.module.dateutil" />
+     <import addon="script.module.universalscrapers" version="0.5.5" />
+      <import addon="script.module.python.koding.aio" version="0.9.6.6" />
+      <import addon="script.module.beautifulsoup" version="3.2.1" />
+      <import addon="script.module.requests" version="2.9.1" />
+      <import addon="script.module.addon.common" version="2.0.0" />
+      <import addon="script.module.xmltodict" version="0.9.0" />
+      <!--<import addon="script.module.web-pdb" version="1.0"/>-->
+      <import addon="script.module.resolveurl" />
+      <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
+      <import addon="repository.jsergio" optional="true"/>
+      <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
+      <!--<import addon="plugin.video.shelby" optional="true" />-->
+
+      <import addon="plugin.video.youtube" version="5.4.5x" />
+      <import addon="program.plexus" optional="true"/>
+      <import addon="plugin.video.sparkle" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Our Own Add-On</summary>
+    <summary lang="he"></summary>
+    <description lang="en">Our Own Add-On</description>
+    <description lang="he"></description>
+    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+    <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
+    <platform>all</platform>
+      <website></website>
+      <video_guide>xtOqLY5PJDY</video_guide>
+  </extension>
+</addon>
+
 <addon id="plugin.video.sparkle" name="Sparkle" version="0.0.84" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
@@ -178,7 +216,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.penny" name="penny" version="19.02.09" provider-name="Enzo">
+<addon id="plugin.video.penny" name="Penny" version="19.03.16" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
@@ -190,14 +228,10 @@
       <import addon="script.module.xmltodict" version="0.9.0" />
       <!--<import addon="script.module.web-pdb" version="1.0"/>-->
       <import addon="script.module.resolveurl" />
-      <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
-      <import addon="repository.jsergio" optional="true"/>
-      <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
+      <import addon="repository.universalscrapers" />
       <!--<import addon="plugin.video.shelby" optional="true" />-->
-
       <import addon="plugin.video.youtube" version="5.4.5x" />
-      <import addon="program.plexus" optional="true"/>
-      <import addon="plugin.video.sparkle" optional="true"/>
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>audio video</provides>
@@ -313,6 +347,23 @@
         <platform>all</platform>
     </extension>
 </addon>
+
+    <addon id="repository.universalscrapers" name="universalscrapers-repository" version="1.0.0" provider-name="universalscrapers">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="universalscrapers">
+            <info compressed="false">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/teamuniversal/scrapers/master/_modules4all/zips/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+            <description>carrying on the dream</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
 
 <addon
   id="program.plexusscraper"
