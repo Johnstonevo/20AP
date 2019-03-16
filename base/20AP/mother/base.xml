@@ -1,0 +1,155 @@
+##########################################################################################
+<cache>10800</cache>
+<fanart>http://www.powerpointhintergrund.com/uploads/2017/05/retro-stripes-animation-3-background-video-youtube-25.jpeg</fanart>
+<thumbnail>https://www.howtogeek.com/wp-content/uploads/2016/04/kodi_512x512.png</thumbnail>
+##########################################################################################
+
+
+
+<dir>
+<title>TV</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/tvshows.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/tv.png</thumbnail>
+<Summary>TV Shows.  Old, New, Interesting</summary>
+<fanart></fanart>
+</dir>
+
+<dir>
+<title>Movies</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/movies.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/movie-3.png</thumbnail>
+<summary>Movie lists.  Old New, Interesting</summary>
+<fanart></fanart>
+</dir>
+
+<dir>
+<title>Youtube</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/youtube_1.png</thumbnail>
+<fanart>http://digitalmediawire.com/wp-content/uploads/2017/02/YouTube-.jpg</fanart>
+<Summary>All the Youtube Channels</summary>
+</dir>
+
+
+<dir>
+<title>Twitch</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/twitch.xml</link>
+<thumbnail>https://cdn1.iconfinder.com/data/icons/micon-social-pack/512/twitch-512.png</thumbnail>
+<summary></summary>
+<fanart></fanart>
+</dir>
+
+
+<dir>
+<title>Sport</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/sport.xml</link>
+<thumbnail>https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/run-512.png</thumbnail>
+<fanart>http://www.4usky.com/data/out/25/164201171-darts-wallpapers.png</fanart>
+<summary>Motorsports, Rugby and Darts</summary>
+</dir>
+
+
+<dir>
+<title>Documentaries</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml</link>
+<thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png</thumbnail>
+<fanart></fanart>
+<summary>Documentaries. Non Fiction(depending on conspiracy inclination) on loads of different subjects.</summary>
+</dir>
+
+
+
+<dir>
+<title>Live TV</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/live.xml</link>
+<summary>Live TV Links</summary>
+</dir>
+
+
+
+<dir>
+<title>Anime</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/anime.xml</link>
+<thumbnail>https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png</thumbnail>
+<fanart>http://www.powerpointhintergrund.com/uploads/2017/05/retro-stripes-animation-3-background-video-youtube-25.jpeg</fanart>
+<summary>Japanese Cartoons, some a bit random</summary>
+</dir>
+
+<dir>
+<title>Stand Up Comedy</title>
+<tmdb>list/47124</tmdb>
+<fanart>https://images-eu.ssl-images-amazon.com/images/I/51jBUlwnStL.jpg</fanart>
+<thumbnail>http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Comedy-2-icon.png</thumbnail>
+<summary>Stand-Up Comedy</summary>
+</dir>
+
+
+
+<dir>
+<title>Music</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/music.xml</link>
+<thumbnail>http://simpleicon.com/wp-content/uploads/radio.png</thumbnail>
+<fanart>http://eskipaper.com/images/radio-wallpaper-1.jpg</fanart>
+<summary>Music links and Radio Stations. </summary>
+</dir>
+
+
+
+<dir>
+  <title>Search Trakt</title>
+  <trakt>search</trakt>
+	<thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+  <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/05/trakt_tv.jpg</fanart>
+  <summary>Search on Trakt for TV Shows and Movies</summary>
+</dir>
+
+
+
+<dir>
+<title>Bobby's Favourites</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/bobby.xml</link>
+<summary>All Bobbys sick and twisted stuff</summary>
+<thumbnail>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/images/bobby.png</thumbnail>
+<fanart></fanart>
+</dir>
+
+
+<dir>
+<title>Kids</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/base.xml</link>
+<thumbnail>https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png</thumbnail>
+<fanart></fanart>
+<summary>Link to the Kids Add-on Playlists</summary>
+</dir>
+
+<dir>
+<title>Iain's Favourites</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/iain.xml</link>
+<summary></summary>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
+
+
+<dir>
+<title>Shelby's Favourites</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/shelby.xml</link>
+<summary></summary>
+<thumbnail></thumbnail>
+<fanart></fanart>
+</dir>
+<dir>
+  <title>Trakt Lists</title>
+  <trakt>https://api.trakt.tv/users/me/lists/</trakt>
+  <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
+  <fanart>http://wwwares-project-blogcom-9ueui6uviy.stackpathdns.com/wp-content/uploads/2017/05/trakt_tv.jpg</fanart>
+<Summary>Back up lists on Trakt incase TMDB goes down</summary>
+</dir>
+
+
+
+<item>
+    <title>Apply the Addon's Youtube API Keys to Kodi</title>
+    <ytapi>Youtube-pi/AIzaSyDyN1nmUY_MlXGZFsJdsu6_pBcK8hU6b-s/275432727141-n6pmjmsmtaru4f7ve7rvemt79nvcjr74.apps.googleusercontent.com
+/nR9MZi91EH_4Lb4Zjsq9NWrW</ytapi>
+</item>
