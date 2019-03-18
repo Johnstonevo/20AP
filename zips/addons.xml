@@ -58,44 +58,6 @@
 </extension>
 </addon>
 
-<addon id="plugin.video.penny" name="penny" version="19.02.09" provider-name="Enzo">
-  <requires>
-      <import addon="xbmc.python" version="2.19.0" />
-     <import addon="script.module.dateutil" />
-     <import addon="script.module.universalscrapers" version="0.5.5" />
-      <import addon="script.module.python.koding.aio" version="0.9.6.6" />
-      <import addon="script.module.beautifulsoup" version="3.2.1" />
-      <import addon="script.module.requests" version="2.9.1" />
-      <import addon="script.module.addon.common" version="2.0.0" />
-      <import addon="script.module.xmltodict" version="0.9.0" />
-      <!--<import addon="script.module.web-pdb" version="1.0"/>-->
-      <import addon="script.module.resolveurl" />
-      <import addon="plugin.video.reddit_viewer" version="3.5.0"  optional="true"/>
-      <import addon="repository.jsergio" optional="true"/>
-      <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
-      <!--<import addon="plugin.video.shelby" optional="true" />-->
-
-      <import addon="plugin.video.youtube" version="5.4.5x" />
-      <import addon="program.plexus" optional="true"/>
-      <import addon="plugin.video.sparkle" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-      <provides>audio video</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="[login|startup]" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Our Own Add-On</summary>
-    <summary lang="he"></summary>
-    <description lang="en">Our Own Add-On</description>
-    <description lang="he"></description>
-    <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-    <disclaimer lang="he">מחבר ההרחבה זה אינו מארח את התוכן שיתכן ויימצא ואין לו זיקה לאף אחד מספקי התוכן. הרחבה רק מחפשת תוכן שקיים באתרי אינטרנט. השימוש בהרחבה הוא על אחריותך בלבד!</disclaimer>
-    <platform>all</platform>
-      <website></website>
-      <video_guide>xtOqLY5PJDY</video_guide>
-  </extension>
-</addon>
-
 <addon id="plugin.video.sparkle" name="Sparkle" version="0.0.84" provider-name="iwannabelikemike">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0"/>
@@ -576,6 +538,22 @@ Add-on by doko.
         <platform lang="en">all</platform>
         <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
     </extension>
+</addon>
+
+<addon id="plugin.video.itv" name="ITV" version="2.5.9" provider-name="LittleWiz">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension library="service.py" point="xbmc.service"  start="startup"/>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary>Plugin for ITV Live Tv Player</summary>
+    <description>ITV Player Front End</description>
+    <news>Fixed regex so video links are now being picked up correctly</news>
+  </extension>
 </addon>
 
 <addon id="repository.maverickrepo" name="[COLOR lime]MaverickTV Repo[/COLOR]" version="3.5" provider-name="Maverick TV">
