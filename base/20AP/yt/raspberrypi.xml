@@ -3,7 +3,17 @@
 <fanart>https://u.cubeupload.com/Nd8UdD.png</fanart>
 ##########################################################################################
 
+<plugin>
+  <title>Moondra</title>
+  <link>plugin://plugin.video.youtube/channel/UC0bkqrWNBKxGZi-4gIfaCpg/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mBqAHWqKJrsHFRL1KspcRFozEg8GMQVq898bg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>What's going on guys, I love all things related to science and technology.
+This channel will mainly focus on Python related tutorials, but I'm also learning Swift at the moment as well have an interest in C++/ Cuda to optimize my code. 
 
+Please leave comments and feedback as to what you like or dislike, and what you would like to see.
+
+Thanks for stopping by!
+</plugin>
 
 <plugin>
   <title>buildwithpython</title>
