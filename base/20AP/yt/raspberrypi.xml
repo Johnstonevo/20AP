@@ -58,6 +58,13 @@ http://shop.pimoroni.com</summary>
 
 
 <plugin>
+  <title>straight_code</title>
+  <link>plugin://plugin.video.youtube/channel/UCOWWngv1kr1PHDIb6MWwnJA/</link>
+  <thumbnail></thumbnail>
+  <summary></summary>
+</plugin>
+
+<plugin>
   <title>Geek Gurl Diaries</title>
   <link>plugin://plugin.video.youtube/channel/UCxrp2coE9wRrnlOO3V3UmdQ/</link>
   <thumbnail></thumbnail>
