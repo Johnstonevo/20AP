@@ -38,6 +38,16 @@ Thanks for stopping by!
 
 
 <plugin>
+  <title>Maddie Moate</title>
+  <link>plugin://plugin.video.youtube/channel/UCQ0_JQL4wdQd-Xe5hC4PwTg/</link>
+  <thumbnail>https://yt3.ggpht.com/a-/AAuE7mCtQbmehBKcwPdO-DLsbrU4vdQVo3CXFCuPaQ=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary>Hi everyone, I'm Maddie! This channel is where I like to share my personal adventures and discoveries as I ask questions and go in search of answers. Packed with videos about animals, plants, travel and technology, there's always something new to learn and explore!
+
+(I'm also a BAFTA winning TV Presenter and an online science host so you might recognise me from CBeebies “Do You Know?”, finding out how things work and how things are made, or from BBC Earth's “Earth Unplugged” where I come to face with incredible wildlife and talk about the future of our planet!)
+
+Subscribe to join the adventure and don't forget to #staycurious!</summary>
+</plugin>
+<plugin>
   <title>Pimoroni</title>
   <link>plugin://plugin.video.youtube/channel/UCuiDNTaTdPTGZZzHm0iriGQ/</link>
   <thumbnail>https://pbs.twimg.com/profile_images/886668856089079836/OcvZ5_wV_400x400.jpg</thumbnail>
