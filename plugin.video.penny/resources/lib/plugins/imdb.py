@@ -585,7 +585,7 @@ def imdbseries(url):
     url = url.replace("tvshows/mostviews","http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date[0]&sort=num_votes,desc&count=40&start=1")
     url = url.replace("tvshows/boxoffice","http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date%5B0%5D&count=40&start=1&sort=boxoffice_gross_us,desc")
     url = url.replace("tvshows/alphabetical","http://www.imdb.com/search/title?title_type=tv_series,mini_series&num_votes=100,&release_date=,date%5B0%5D&count=40&start=1&sort=alpha,asc")
-
+    url = url.replace("tvshows/50s", "https://www.imdb.com/search/title?title_type=tv_series&release_date=1950-01-01,1959-12-31&user_rating=5.0,10.0"
     listhtml = getHtml(url)
     match = re.compile(
             '<img alt=".+?"\nclass="loadlate"\nloadlate="(.+?)"\ndata-tconst="(.+?)"\nheight="98"\nsrc=".+?"\nwidth="67" />\n</a>.+?</div>\n.+?<div class="lister-item-content">\n<h3 class="lister-item-header">\n.+?<span class="lister-item-index unbold text-primary">.+?</span>\n.+?\n.+?<a href=".+?"\n>(.+?)</a>\n.+?<span class="lister-item-year text-muted unbold">(.+?)</span>',
