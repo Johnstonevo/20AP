@@ -226,7 +226,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.2.5" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.2.6" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.requests"/>
@@ -237,6 +237,10 @@
     <extension point="xbmc.addon.metadata">
         <news>
 [COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+
+[B]0.2.6:[/B]
+- Fix for when the chapter popup has blank labels.
+
 [B]0.2.5:[/B]
 - Added backup host method.
 - Added dialog for rare multi-chapter episodes.
@@ -244,13 +248,9 @@
 
 [B]0.2.4:[/B]
 - Update to website changes (media playing).
-
-[B]0.2.3:[/B]
-- Bug fixes.
-- Improved the [I]Show Information[/I] context-menu.
         </news>
         <description lang="en">
-Watch cartoons and anime from [COLOR lavender][B]WatchCartoonOnline.io[/B][/COLOR].
+Watch cartoons and anime from [COLOR orange][B]WatchCartoonOnline.io[/B][/COLOR].
 
 Support the WatchCartoonOnline website with a PayPal donation to:
 [COLOR khaki][B]wcohelp@yandex.com[/B][/COLOR]
