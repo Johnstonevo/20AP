@@ -13,6 +13,62 @@
     </summary>
 </dir>
 
+<dir>
+	<title>50's TV</title>
+      <trakt>https://api.trakt.tv/users/nutthouse/lists/50-s-tv/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Top 50ish rated shows first aired in the 50's</summary>
+</dir>
+
+<dir>
+	<title>60's TV</title>
+      <trakt>https://api.trakt.tv/users/nutthouse/lists/60-s-tv/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Top 50ish rated shows first aired in the 60's</summary>
+</dir>
+
+
+<dir>
+	<title>70's TV</title>
+      <trakt>https://api.trakt.tv/users/nutthouse/lists/70-s-tv/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Top 50ish rated shows first aired in the 70's</summary>
+</dir>
+
+
+
+<dir>
+	<title>80's TV</title>
+      <trakt>https://api.trakt.tv/users/nutthouse/lists/80-s-tv/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Top 50ish rated shows first aired in the 80's</summary>
+</dir>
+
+
+
+<dir>
+	<title>90's TV</title>
+      <trakt>https://api.trakt.tv/users/nutthouse/lists/90-s-tv/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Top 50ish rated shows first aired in the 90's</summary>
+</dir>
+
+
+<dir>
+	<title>00's TV</title>
+      <trakt>https://api.trakt.tv/users/nutthouse/lists/00-s-tv/items</trakt>
+	<thumbnail>https://pbs.twimg.com/profile_images/1048288595973365762/m2tKxndI_400x400.jpg</thumbnail>
+	<content>boxset</content>
+	<summary>Top 50ish rated shows first aired in the 00's</summary>
+</dir>
+
+
+
 
 <dir>
     <title>TMDB Top Rated TV Shows</title>
@@ -44,3 +100,6 @@
     <thumbnail>https://trakt.tv/assets/logos/header@2x-56e5ba415108fa367fd64e5b5df9d0c5.png</thumbnail>
     <fanart>https://us.v-cdn.net/6025034/uploads/ipb/monthly_11_2010/post-25236-048502800%201289080759.jpg</fanart>
 </dir>
+
+
+
