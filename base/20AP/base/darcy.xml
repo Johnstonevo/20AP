@@ -21,6 +21,13 @@
   <summary> </summary>
 </plugin>
 
+<plugin>
+  <title>The Norris Nuts</title>
+  <link>plugin://plugin.video.youtube/channel/UCYd0us2OtW4d4-1cfpT2ktw/</link>
+  <thumbnail>https://yt3.ggpht.com/a/AGF-l78D27wAwW5G03gdKFJrjh-u7xDTkWCRROrmIg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary> </summary>
+</plugin>
+
 
 <plugin>
   <title>Vat19</title>
