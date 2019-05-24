@@ -138,6 +138,16 @@
 <thumbnail></thumbnail>
 <fanart></fanart>
 </dir>
+
+<dir>
+<title>Darcy's Favourites</title>
+<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/darcy.xml</link>
+<summary></summary>
+<thumbnail>https://www.smashbros.com/wiiu-3ds/images/character/pikachu/main.png</thumbnail>
+<fanart></fanart>
+</dir>
+
+
 <dir>
   <title>Trakt Lists</title>
   <trakt>https://api.trakt.tv/users/me/lists/</trakt>

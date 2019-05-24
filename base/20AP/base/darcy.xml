@@ -1,0 +1,31 @@
+<dir>
+	<title>Pokemon</title>
+      <trakt>https://api.trakt.tv/users/douglasamcintosh/lists/pokemon/items</trakt>
+	<thumbnail>https://www.smashbros.com/wiiu-3ds/images/character/pikachu/main.png</thumbnail>
+	<content>boxset</content>
+	<summary>	</summary>
+</dir>
+
+
+<plugin>
+  <title>Rosanna Pansino</title>
+  <link>plugin://plugin.video.youtube/channel/UCjwmbv6NE4mOh8Z8VhPUx1Q/</link>
+  <thumbnail>https://yt3.ggpht.com/a/AGF-l7-0fGvPssLw7V4DB8BofSP4vHzRxMmVoxeBwA=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary> Welcome to my channel! I'm Rosanna Pansino and I really enjoy creating content on YouTube! </summary>
+</plugin>
+
+<plugin>
+  <title>Brandon Farris</title>
+  <link>plugin://plugin.video.youtube/channel/UC3v6sjWuPxtW36jQ-if4OuA/</link>
+  <thumbnail>https://yt3.ggpht.com/a/AGF-l79szoop6p8fyX43KLWLo0ZCXC1X5X8E_VfmZg=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary> </summary>
+</plugin>
+
+
+<plugin>
+  <title>Vat19</title>
+  <link>plugin://plugin.video.youtube/channel/UCjwmbv6NE4mOh8Z8VhPUx1Q/</link>
+  <thumbnail>UCDRbNGFusqlXX4a5vwi9ouQ</thumbnail>
+  <summary> </summary>
+</plugin>
+
