@@ -47,6 +47,35 @@
   <fanart></fanart>
 </dir>
 
+<dir>
+	<title>DC Extended Universe</title>
+      <trakt>https://api.trakt.tv/users/tetharion/lists/worlds-of-dc/items</trakt>
+	<thumbnail>https://vignette.wikia.nocookie.net/wwcbm/images/b/bc/Dc_cinematic_universe-logo.png</thumbnail>
+	<fanart>http://res.cloudinary.com/culturemap-com/image/upload/q_auto/ar_4:3,c_fill,g_faces:center,w_1200/v1510845927/photos/265138_original.jpg</fanart>
+  <summary>The DC Extended Universe (DCEU) is an unofficial term used to refer to an American media franchise and shared universe that is centered on a series of superhero films, distributed by Warner Bros. Pictures and based on characters that appear in American comic books by DC Comics. The shared universe, much like the original DC Universe in comic books and the television programs, was established by crossing over common plot elements, settings, cast, and characters. The films have been in production since 2011 and in that time Warner Bros. has distributed five films. The series has grossed over $3.7 billion at the global box office, currently making it the fourteenth highest-grossing film franchise.
+  </summary>
+	<content>set</content>
+</dir>
+
+<dir>
+	<title>Marvel Collection</title>
+      <trakt>https://api.trakt.tv/users/donxy/lists/marvel-cinematic-universe/items</trakt>
+	<thumbnail>https://image.tmdb.org/t/p/original/aC3VJyuNpymHAf9pyQqB20EK4v6.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
+	<content>set</content>
+	<summary>The Marvel Cinematic Universe (MCU) is an American media franchise and shared universe that is centered on a series of superhero films, independently produced by Marvel Studios and based on characters that appear in American comic books published by Marvel Comics. The franchise has expanded to include comic books, short films, television series, and digital series. The shared universe, much like the original Marvel Universe in comic books, was established by crossing over common plot elements, tings, cast, and characters. Phil Coulson, portrayed by Clark Gregg, is an original character to the MCU and the only character to appear across all the different media of the MCU.
+	</summary>
+</dir>
+
+
+<dir>
+	<title>Star Wars Collection</title>
+      <trakt>https://api.trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline/items</trakt>
+	<thumbnail>https://image.tmdb.org/t/p/original/ghd5zOQnDaDW1mxO7R5fXXpZMu.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/d8duYyyC9J5T825Hg7grmaabfxQ.jpg</fanart>
+	<summary>An epic space opera theatrical film series that depicts the adventures of various characters "a long time ago in a galaxy far, far away".<summary>
+		<content>set</content>
+	</dir>
 
 <dir>
   <title>[I][B][COLORsnow]--==[COLORorange]Movies[/COLOR]==--[/COLOR][/B][/I]</title>
