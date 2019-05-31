@@ -15,7 +15,7 @@
       <import addon="repository.jsergio" optional="true"/>
       <import addon="plugin.video.SportsDevil" version="2017.11.01" optional="true" />
       <!--<import addon="plugin.video.shelby" optional="true" />-->
-      <import addon="plugin.video.watchnixtoons2" version="2017.11.01" optional="true" />
+      <import addon="plugin.video.watchnixtoons2"  optional="true" />
 
       <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="program.plexus" optional="true"/>
