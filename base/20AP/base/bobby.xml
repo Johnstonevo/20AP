@@ -42,6 +42,14 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
   <content>boxset</content>
 </dir>
 
+<dir>
+  <title>TV</title>
+  <tmdb>list/113086</tmdb>
+  <thumbnail></thumbnail>
+  <fanart></fanart>
+  <content>boxset</content>
+</dir>
+
 <plugin>
   <title>True Crime Daily</title>
   <link>plugin://plugin.video.youtube/channel/UC69uYUqvx-vw4luuX7aHNLQ/</link>
