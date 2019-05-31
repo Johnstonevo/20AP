@@ -179,7 +179,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.penny" name="Penny" version="19.04.24" provider-name="Enzo">
+<addon id="plugin.video.penny" name="Penny" version="19.05.31" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
