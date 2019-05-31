@@ -290,7 +290,7 @@ def get_wcstream(url):
 @route(mode='TopFifty', args=["url"])
 def get_wctopfiftystream(url):
     url = url.replace('topfifty/', '') # Strip our category tag off.
-    url = urlparse.urljoin('https://www.watchcartoononline.io', url)
+    url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
 
     xml = fetch_from_db(url)
     if not xml:
