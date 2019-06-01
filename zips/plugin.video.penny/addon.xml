@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.penny" name="Penny" version="19.05.31" provider-name="Enzo">
+<addon id="plugin.video.penny" name="Penny" version="19.06.01" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
+           <import addon="repository.jenrepo" />
+
      <import addon="script.module.universalscrapers" version="0.5.5" />
       <import addon="script.module.python.koding.aio" version="0.9.6.6" />
       <import addon="script.module.beautifulsoup" version="3.2.1" />

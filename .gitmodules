@@ -40,3 +40,7 @@
 [submodule "plugin.video.ctoonkodi"]
 	path = plugin.video.ctoonkodi
 	url = https://github.com/doko-desuka/plugin.video.ctoonkodi.git
+
+[submodule "scrapers"]
+	path = scrapers
+	url = https://github.com/teamuniversal/scrapers.git
