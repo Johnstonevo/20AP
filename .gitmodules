@@ -44,3 +44,6 @@
 [submodule "scrapers"]
 	path = scrapers
 	url = https://github.com/teamuniversal/scrapers.git
+[submodule "plugin.video.wonderfulsubs"]
+	path = plugin.video.wonderfulsubs
+	url = https://github.com/DxCx/plugin.video.wonderfulsubs.git
