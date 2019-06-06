@@ -13,7 +13,7 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.4.1" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.5.0~alpha1" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -27,8 +27,14 @@
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-6.4.2
+6.5.0
+[add] Video quality selection to Settings - MPEG-DASH
+[add] Limit to 30fps to Settings - MPEG-DASH
 [fix] unescape html entities in title and plot
+[fix] handling of invalid grant when refreshing access token
+[fix] adding suggested videos when played from some widgets
+[fix] http server /client_ip using Python 3 |contrib: t6|
+[upd] refactor youtube_resolver.resolve
 [lang] es_es strings |contrib: roliverosc|
         </news>
         <assets>
@@ -565,7 +571,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.6" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.7" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
