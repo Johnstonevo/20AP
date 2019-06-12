@@ -33,7 +33,7 @@
 
 <plugin>
   <title>Iains YT List</title>
-  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZOF8z90V8MnExtbnAXwaFrf/</link>
+  <link>plugin://plugin.video.youtube/channel/UCPGjTYRMau-ZMvt7uHHYZHg/playlist/PLMAWrySkMfZOF8z90V8MnExtbnAXwaFrf/</link>
   <thumbnail></thumbnail>
   <summary></summary>
 </plugin>
@@ -67,7 +67,7 @@
 
 <plugin>
   <title>Iain's Music Playlist</title>
-  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZNSZ9N_KlT4-ffYK0NYKH0p/</link>
+  <link>plugin://plugin.video.youtube/channel/UCPGjTYRMau-ZMvt7uHHYZHg/playlist/PLMAWrySkMfZNSZ9N_KlT4-ffYK0NYKH0p/</link>
   <thumbnail></thumbnail>
   <summary></summary>
 </plugin>
@@ -85,7 +85,7 @@
 
 <plugin>
   <title>Iain's Bass Practice Playlist</title>
-  <link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZO7QYK-ILZeuf0XJjhpJs9C/</link>
+  <link>plugin://plugin.video.youtube/channel/UCPGjTYRMau-ZMvt7uHHYZHg/playlist/PLMAWrySkMfZO7QYK-ILZeuf0XJjhpJs9C/</link>
   <thumbnail></thumbnail>
   <fanart>https://wallpaper-house.com/data/out/12/wallpaper2you_524022.jpg</fanart>
   <summary></summary>

@@ -33,7 +33,10 @@
 
 <plugin>
 	<title>Best of Classic Rock</title>
-	<link>plugin://plugin.video.youtube/playlist/PLBD5pRttJ7N0vCfh4NpEg7Vw47hfeCxuE/</link>
+	<link>
+  <sublink>plugin://plugin.video.youtube/channel/UCzji-vt6NWVvglrpiTtGp1A/playlist/PLBD5pRttJ7N0vCfh4NpEg7Vw47hfeCxuE/ (List 1)</sublink>
+  <sublink>plugin://plugin.video.youtube/channel/UCTsCUXSURJUxvwCEJYb9wDQ/playlist/PLQVvhjC4Ueuo48Cesn_oEb0svb2tanMz9/ (List 2)</sublink>
+  </link>
 	<thumbnail></thumbnail>
   <summary></summary>
 </plugin>
@@ -47,7 +50,7 @@
 
 <plugin>
 	<title>Music of Beavis and Butthead</title>
-	<link>plugin://plugin.video.youtube/playlist/PLMAWrySkMfZMR1c1LV0d-OoumEmRW6G4q/</link>
+	<link>plugin://plugin.video.youtube/channel/UCPGjTYRMau-ZMvt7uHHYZHg/playlist/PLMAWrySkMfZMR1c1LV0d-OoumEmRW6G4q/</link>
 	<thumbnail>http://files.gamebanana.com/img/ico/sprays/spraybandb_2.png</thumbnail>
   <summary></summary>
 </plugin>
@@ -77,15 +80,15 @@ It's only rock 'n' roll, but we like it.</summary>
 </plugin>
 
 <plugin>
-	<title>I Wanna Rock Super Gigantic Playlist 1</title>
-	<link>plugin://plugin.video.youtube/playlist/PLWwAypAcFRgKAIIFqBr9oy-ZYZnixa_Fj/</link>
+	<title>I Wanna Rock Super Gigantic Playlist 1: Hardrock, AOR, Metal and more !!! 5000 music videos !!!</title>
+	<link>plugin://plugin.video.youtube/channel/UCHSPWoY1J5fbDVbcnyeqwdw/playlist/PLWwAypAcFRgKAIIFqBr9oy-ZYZnixa_Fj/</link>
 	<thumbnail></thumbnail>
   <summary></summary>
 </plugin>
 
 <plugin>
-	<title>I Wanna Rock Super Gigantic Playlist 2</title>
-	<link>plugin://plugin.video.youtube/playlist/PLWwAypAcFRgLB-CsYClUNaC84BqISQaDb/</link>
+	<title>I Wanna Rock Super Gigantic Playlist 2 Runner ups: Classic Hardrock And Metal & The Next Big Thing/Band In Music ? (Hardrock, AOR, Metal and more !!!)</title>
+	<link>plugin://plugin.video.youtube/channel/UCHSPWoY1J5fbDVbcnyeqwdw/playlist/PLWwAypAcFRgLB-CsYClUNaC84BqISQaDb/</link>
 	<thumbnail></thumbnail>
   <summary></summary>
 </plugin>
@@ -94,19 +97,11 @@ It's only rock 'n' roll, but we like it.</summary>
 
 <plugin>
   <title>Easy Rider OST</title>
-  <link>plugin://plugin.video.youtube/playlist/PL0Yz-P1uQT4qFq0xtOvGJYGClW8RNR_Ly/</link>
+  <link>plugin://plugin.video.youtube/channel/UCOOj626X7j5pwLatWja8uCQ/playlist/PL0Yz-P1uQT4qFq0xtOvGJYGClW8RNR_Ly/</link>
   <thumbnail>https://upload.wikimedia.org/wikipedia/en/1/1d/Easyrider1970.jpg</thumbnail>
   <summary>Music from the Film Easy Rider</summary>
 </plugin>
 
-
-
-<plugin>
-  <title>Classic Rock/Chill-Rock</title>
-  <link>plugin://plugin.video.youtube/playlist/PLoHIXX0JqUmGC4BEaLMr7L0JArXHej-rj/</link>
-  <thumbnail></thumbnail>
-  <summary></summary>
-</plugin>
 
 
 <plugin>
@@ -197,7 +192,7 @@ See the best of Queen right here on YouTube.
 
 <plugin>
 <title>Concerts</title>
-<link>plugin://plugin.video.youtube/playlist/PLy39KCFQDD_5OMiXims0HiMqIuf5qBDk2/</link>
+<link>plugin://plugin.video.youtube/channel/UCYQs5wbnkq7O7AQLsCK8lDQ/playlist/PLy39KCFQDD_5OMiXims0HiMqIuf5qBDk2/</link>
 <thumbnail>http://i.imgur.com/95GCBsO.jpg</thumbnail>
 </plugin>
 
