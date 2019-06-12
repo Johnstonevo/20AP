@@ -118,3 +118,18 @@ Ready to settle in for dark nights of Fresh fear? Then flip the switch on The 15
 <docus>dscategory/crime</docus>
 <thumbnail>https://pbs.twimg.com/profile_images/476849424732131328/A2a1Z8Qc_400x400.jpeg</thumbnail>
 </dir>
+
+plugin://plugin.video.youtube/channel/UCeUv0pn7_-mRYC6mrjHJmrA/playlist/PLHpFb5QUIZpdVUU-FxIdqgF4N_xiaT213/
+
+<plugin>
+  <title>Vikings Chant</title>
+  <link>plugin://plugin.video.youtube/channel/UCeUv0pn7_-mRYC6mrjHJmrA/playlist/PLHpFb5QUIZpdVUU-FxIdqgF4N_xiaT213/</link>
+  <thumbnail>https://i9.ytimg.com/s_p/OLAK5uy_nf0IsTLu6IsPCm3Jfvx7-P1t2E6PzUT-A/sddefault.jpg</thumbnail>
+  <summary></summary>
+</plugin>
+<plugin>
+  <title>Danheim</title>
+  <link>plugin://plugin.video.youtube/channel/UCLTQVYwu-M-MnfOJDKlFnOQ/</link>
+  <thumbnail>https://yt3.ggpht.com/a/AGF-l78Vhi47HTGLymCvXngmh4pS1v2YpYUpRxti7Q=s288-mo-c-c0xffffffff-rj-k-no</thumbnail>
+  <summary></summary>
+</plugin>
