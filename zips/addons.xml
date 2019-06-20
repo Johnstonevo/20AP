@@ -32,11 +32,13 @@
 [add] Limit to 30fps to Settings - MPEG-DASH
 [add] Uploads playlist to channel playlists
 [chg] Use search for channel videos instead of the Uploads playlist
+[fix] Playback monitoring using Python 3
 [fix] unescape html entities in title and plot
 [fix] handling of invalid grant when refreshing access token
 [fix] adding suggested videos when played from some widgets
 [fix] http server /client_ip using Python 3 |contrib: t6|
 [upd] refactor youtube_resolver.resolve
+[lang] el_gr strings |contrib: twilight0|
 [lang] es_es strings |contrib: roliverosc|
 [lang] ko_kr strings |contrib: parkmino|
         </news>
@@ -574,7 +576,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.7" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.8" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -594,6 +596,7 @@ Add-on by doko.
 - Moved all user agent related functions and strings into new user_agent module
 - Added datetime keys for youtube videos
 - Compat module enhancements
+- Cleantitle module enhancements
 - Directory module bugfixes
 - Added replace xml codes function
 - Various other tweaks
