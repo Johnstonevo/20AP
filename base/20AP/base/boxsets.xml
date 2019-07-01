@@ -432,7 +432,6 @@
 
 <dir>
 	<title>Marvel Collection</title>
-      <!--<trakt>https://api.trakt.tv/users/donxy/lists/marvel-cinematic-universe/items</trakt> -->
 	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/mu.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/aC3VJyuNpymHAf9pyQqB20EK4v6.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
