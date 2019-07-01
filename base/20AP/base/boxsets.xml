@@ -214,7 +214,7 @@
 
 <dir>
 	<title>Fantastic Beasts Collection</title>
-	<tmdb>collection/435259</tmdb>
+	<<tmdb>collection/435259</tmdb>>
 	<thumbnail>https://image.tmdb.org/t/p/original/wsVseA7i3FqX24m26Z2gD3EtH4l.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/jc1Sh8U6dvWv9rHaRl8aosTAoPN.jpg</fanart>
 	<summary>Fantastic Beasts and Where to Find Them is a 2016 fantasy film directed by David Yates. A spin-off of the Harry Potter film series, it was produced and written by J. K. Rowling, in her screenwriting debut, and inspired by her book of the same name. The film stars Eddie Redmayne as Newt Scamander with Katherine Waterston, Dan Fogler, Alison Sudol, Ezra Miller, Samantha Morton, Jon Voight, Carmen Ejogo, Ron Perlman and Colin Farrell in supporting roles. It is the first instalment in the Fantastic Beasts series, and the ninth overall in J. K. Rowling's Wizarding World. Initially, in October 2014, the studio announced the film would be the start of a trilogy. The sequel is  to be released on 16 November 2018, followed by the third on 20 November 2020. In July 2016, David Yates confirmed that Rowling had written the screenplay for the second film and has ideas for the third. However, in October 2016 Rowling confirmed that the series would comprise five films.
@@ -264,7 +264,7 @@
 
 <dir>
 	<title>Harry Potter Collection</title>
-	<tmdb>collection/1241</tmdb>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/hp.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/8Xmkc1HvCOpMlbFvVabrtr6HAsp.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/hWK8gTH2riuv65Ej43hPSeE16Mu.jpg</fanart>
 	<content>set</content>
@@ -432,7 +432,8 @@
 
 <dir>
 	<title>Marvel Collection</title>
-      <trakt>https://api.trakt.tv/users/donxy/lists/marvel-cinematic-universe/items</trakt>
+      <!--<trakt>https://api.trakt.tv/users/donxy/lists/marvel-cinematic-universe/items</trakt> -->
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/mu.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/aC3VJyuNpymHAf9pyQqB20EK4v6.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
 	<content>set</content>

@@ -56,7 +56,10 @@
   </summary>
 	<content>set</content>
 </dir>
-
+ <dir>
+    <title>DC Comics</title>
+    <dccomics>all</dccomics>
+    </dir>
 <dir>
 	<title>Marvel Collection</title>
       <trakt>https://api.trakt.tv/users/donxy/lists/marvel-cinematic-universe/items</trakt>
