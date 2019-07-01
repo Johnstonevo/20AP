@@ -2,23 +2,36 @@
 
 
 ##########################################################################################
-        <dir>
+     <dir>
             <title>Dubbed Anime</title>
-            <wctoon>category/dubbed-anime-list</wctoon>
+            <animetoon>category/dubbed-anime</animetoon>
         </dir>
-        
-        <dir>
-            <title>Most Popular Series</title>
-            <wctoon>main/sidebar-titles/0</wctoon>
-        </dir>
+
 
         <dir>
-            <title>Latest Series Added</title>
-            <wctoon>main/recent-release-main/1</wctoon>
+            <title>Latest Releases (Full List)</title>
+            <animetoon>wcdaily-updates</animetoon>
         </dir>
 
+        <dir>
+            <title>Popular Series (Full List)</title>
+            <animetoon>popular-list</animetoon>
+        </dir>
 
+        <dir>
+            <title>Cartoons</title>
+            <animetoon>category/cartoon</animetoon>
+        </dir>
 
+        <dir>
+            <title>Movies</title>
+            <animetoon>category/movies</animetoon>
+        </dir>
+
+        <dir>
+            <title>Search Movies</title>
+            <animetoon>wcsearch</animetoon>
+        </dir>
 
 <dir>
 <title>Anime To Watch  List</title>
@@ -90,105 +103,3 @@ As for other works by Yoshiura: I'm not really a fan of the other short ones, Pa
 	<summary></summary>
 </dir>
 
-
-
-<item>
-<title>[COLORorange][B]Watchcartoononline.com[/B][/COLOR]</title>
-<link>//</link>
-</item>
-
-
-        <dir>
-            <title>Subbed Anime</title>
-            <wctoon>category/subbed-anime-list</wctoon>
-        </dir>
-
-        <dir>
-            <title>Cartoons</title>
-            <wctoon>category/cartoon-list</wctoon>
-        </dir>
-
-        <dir>
-            <title>Movies</title>
-            <wctoon>category/movie-list</wctoon>
-        </dir>
-
-        <dir>
-            <title>Ova Series</title>
-            <wctoon>category/ova-list</wctoon>
-        </dir>
-<dir>
-            <title>50 Latest Releases</title>
-            <wctoon>topfifty/last-50-recent-release</wctoon>
-        </dir>
-
-        <dir>
-            <title>Search Site</title>
-            <wctoon>wcsearch</wctoon>
-        </dir>
-<item>
-            <title>[COLORorange][B]https://www.watchcartoononline.io/[/B][/COLOR]</title>
-            <link>//</link>
-        </item>
-        
-                  <dir>
-            <title>Dubbed Anime</title>
-            <wctoon2>category/dubbed-anime-list</wctoon2>
-        </dir>
-        
-        <dir>
-            <title>50 Latest Releases</title>
-            <wctoon2>topfifty/last-50-recent-release</wctoon2>
-        </dir>
-
-        <dir>
-            <title>Today's Picks</title>
-            <wctoon2>main/today</wctoon2>
-        </dir>
-
-        <dir>
-            <title>Most Popular</title>
-            <wctoon2>main/popular</wctoon2>
-        </dir>
-
-
-        <dir>
-            <title>Search Site</title>
-            <wctoon2>wcsearch</wctoon2>
-        </dir>
-
-        <item>
-            <title>[COLORorange][B]http://www.animetoon.org/[/B][/COLOR]</title>
-            <link>//</link>
-        </item>
-        
-        <dir>
-            <title>Dubbed Anime</title>
-            <animetoon>category/dubbed-anime</animetoon>
-        </dir>
-
-
-        <dir>
-            <title>Latest Releases (Full List)</title>
-            <animetoon>wcdaily-updates</animetoon>
-        </dir>
-
-        <dir>
-            <title>Popular Series (Full List)</title>
-            <animetoon>popular-list</animetoon>
-        </dir>
-
-        <dir>
-            <title>Cartoons</title>
-            <animetoon>category/cartoon</animetoon>
-        </dir>
-
-        <dir>
-            <title>Movies</title>
-            <animetoon>category/movies</animetoon>
-        </dir>
-
-        <dir>
-            <title>Search Movies</title>
-            <animetoon>wcsearch</animetoon>
-        </dir>

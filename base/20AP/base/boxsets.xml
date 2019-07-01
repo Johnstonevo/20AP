@@ -641,7 +641,7 @@ Sorted by production order, not in-universe chronology. I think Star Trek should
 
 <dir>
 	<title>Star Wars Collection</title>
-      <trakt>https://api.trakt.tv/users/ruben_vw_/lists/star-wars-canon-timeline/items</trakt>
+	<link>https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/sw.xml</link>
 	<thumbnail>https://image.tmdb.org/t/p/original/ghd5zOQnDaDW1mxO7R5fXXpZMu.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/d8duYyyC9J5T825Hg7grmaabfxQ.jpg</fanart>
 	<summary>An epic space opera theatrical film series that depicts the adventures of various characters "a long time ago in a galaxy far, far away".<summary>

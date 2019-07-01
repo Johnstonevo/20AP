@@ -563,7 +563,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.shelby" name="Shelby's Add-on" version="19.07.01" provider-name="Community">
+<addon id="plugin.video.shelby" name="Shelby's Add-on" version="19.07.01.2" provider-name="Community">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
       <import addon="repository.jenrepo" />
