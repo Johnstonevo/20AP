@@ -47,3 +47,6 @@
 [submodule "plugin.video.wonderfulsubs"]
 	path = plugin.video.wonderfulsubs
 	url = https://github.com/DxCx/plugin.video.wonderfulsubs.git
+[submodule "plugin.video.venom"]
+	path = plugin.video.venom
+	url = https://github.com/123Venom/plugin.video.venom.git
