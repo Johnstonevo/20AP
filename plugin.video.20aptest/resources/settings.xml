@@ -461,12 +461,12 @@
 	    <setting id="jen_tmdb" label="Scan Movie Data For JEN (This can be slow on its initial run)" type="bool" default="false" />
 	    <setting id="jen_progress" type="bool" label="Display Progress Bar in JEN" default="false" />
 	    <setting id="jen_cat-1" type="bool" label="Enable Jen Category 1" default="true" />
-	    <setting id="jen_name_cat-1" type="text" label="Category Name" default="Movies" visible= "eq(-1,true)" enable="eq(-1,true)" />
+	    <setting id="jen_name_cat-1" type="text" label="Category Name" default="Old Add-On Lists" visible= "eq(-1,true)" enable="eq(-1,true)" />
 		<setting id="jen_icon_cat-1" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
 		<setting id="jen_fan_cat-1" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
-	    <setting id="Pastebin-1-1" label="Jen address Cat 1" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/movies.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
+	    <setting id="Pastebin-1-1" label="Jen address Cat 1" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/base.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
 	   
-	
+	<!--
 		<setting id="jen_cat-2" type="bool" label="Enable Jen Category 2." default="true" />
 	    <setting id="jen_name_cat-2" type="text" label="Category Name" default="TV" visible= "eq(-1,true)" enable="eq(-1,true)" />
 	    <setting id="jen_icon_cat-2" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
@@ -492,7 +492,7 @@
 	    <setting id="jen_icon_cat-6" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
 		<setting id="jen_fan_cat-6" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
 	    <setting id="Pastebin-6-1" label="Jen address cat 6" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
-
+-->
 	</category>
 	
 	

@@ -2953,11 +2953,12 @@ def main_menu():
       level_index=(match[0]/100)
       if level_index>9:
         level_index=9
-      addDir3('Movies'.decode('utf8'),'www',13,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
-      addDir3('TV Shows'.decode('utf8'),'www',14,BASE_LOGO+'tvshow.png','https://i.imgur.com/a174Ipu.jpg','Tv Shows'.decode('utf8'))
-      addDir3('Kids'.decode('utf8'),'www',44,BASE_LOGO+'kids.png','https://www.desktopbackground.org/download/o/2013/09/27/645377_kids-kung-fu-panda-3-movie-4k-wallpapers_3840x2160_h.jpg','Kids'.decode('utf8'))
-      addDir3('Anime'.decode('utf8'),'www',68,BASE_LOGO+'anime.png','https://images.wallpaperscraft.com/image/girls_und_panzer_nishizumi_miho_tank_hill_girl_100910_3840x2160.jpg','Anime'.decode('utf8'))
-      addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','https://scotch-res.cloudinary.com/image/upload/w_900,q_auto:good,f_auto/v1549206813/gyxlxwotow6xxysb527u.png','Live Sports'.decode('utf8'))
+      addDir3('Movies'.decode('utf8'),'www',13,'http://simpleicon.com/wp-content/uploads/movie-3.png','https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg','Movies'.decode('utf8'))
+      addDir3('TV Shows'.decode('utf8'),'www',14,'http://simpleicon.com/wp-content/uploads/tv.png','','Tv Shows'.decode('utf8'))
+      addDir3('Kids'.decode('utf8'),'www',44,'https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png','','Kids'.decode('utf8'))
+      addDir3('Anime'.decode('utf8'),'www',68,'https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png','','Anime'.decode('utf8'))
+      addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','','Live Sports'.decode('utf8'))
+      #addDir3('Box'.decode('utf8'),'www',153,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
 
       
       
@@ -2969,28 +2970,46 @@ def movies_menu():
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
     
       all_img=cache.get(get_movie_poster,24, table='posters')
-      addDir3('Nutthouse Modern','http://api.themoviedb.org/4/list/43994?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
-      addDir3('Nutthouse 00s','http://api.themoviedb.org/4/list/79502?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
-      addDir3('Nutthouse Classics','http://api.themoviedb.org/4/list/47126?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
+      addDir3('Nutthouse Modern','http://api.themoviedb.org/4/list/43994?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse Modern')
+      addDir3('Nutthouse 00\'s','http://api.themoviedb.org/4/list/79502?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse 00\'s')
+      addDir3('Nutthouse Classics','http://api.themoviedb.org/4/list/47126?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'http://www.ultimatemoviesuggestions.com/wp-content/uploads/2017/03/cropped-Camera_cinema_consume_entertainment_film_media_movie_photo_play_record_video_television_tripod-256.png',all_img[13],'Nutthouse Classics')
  
  
-      addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',2,BASE_LOGO+'genres.png',all_img[0],'Genres'.decode('utf8'))
-      addDir3('Popular','http://api.themoviedb.org/3/movie/popular?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'popular.png',all_img[4],'Popular')
-      addDir3('Once click free movies','https://moviesmax.net',150,'https://logos.flamingtext.com/Name-Logos/Movies-design-amped-name.png',all_img[1],'Once click free movies')
+      addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',2,'',all_img[0],'Genres'.decode('utf8'))
+      addDir3('Popular','http://api.themoviedb.org/3/movie/popular?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[4],'Popular')
+      addDir3('Once click free movies','https://moviesmax.net',150,'',all_img[1],'Once click free movies')
       
-      addDir3('Hot Movies','http://api.themoviedb.org/3/trending/movie/week?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
-      addDir3('By Years'.decode('utf8'),'movie_years&page=1',3,'http://www.greenmancreations.com/images/logo-design/movieworld-logo.jpg',all_img[2],'By Years'.decode('utf8'))
+      addDir3('Hot Movies','http://api.themoviedb.org/3/trending/movie/week?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'Hot Movies')
+      addDir3('By Years'.decode('utf8'),'movie_years&page=1',3,'',all_img[2],'By Years'.decode('utf8'))
       
-      addDir3('Based on true story','https://www.imdb.com/search/title?genres=biography&sort=num_votes,desc&explore=title_type,genres',114,BASE_LOGO+'based.png',all_img[14],'Based on true story',isr=' ')
-      addDir3('Studio'.decode('utf8'),'movie',112,BASE_LOGO+'studio.png','https://cdn-static.denofgeek.com/sites/denofgeek/files/styles/main_wide/public/2016/04/movlic_studios_1.jpg?itok=ih8Z7wOk','Studio')
-      addDir3('IMDB Popular','https://www.imdb.com/chart/moviemeter?ref_=nv_mv_mpm',114,BASE_LOGO+'imdbp.png',all_img[15],'IMDB Popular',isr=' ')
- 
+      addDir3('Based on true story','https://www.imdb.com/search/title?genres=biography&sort=num_votes,desc&explore=title_type,genres',114,'',all_img[14],'Based on true story',isr=' ')
+      addDir3('Studio'.decode('utf8'),'movie',112,BASE_LOGO+'studio.png','','Studio')
+      addDir3('IMDB Popular','https://www.imdb.com/chart/moviemeter?ref_=nv_mv_mpm',114,'',all_img[15],'IMDB Popular',isr=' ')
+      addDir3('Iain\'s Movies','http://api.themoviedb.org/4/list/97041?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'Iain\'s  Movies')
+
      
      
      
      
      
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
+
+def movies_boxsets():
+      import datetime
+      #all_img=get_movie_poster()
+      now = datetime.datetime.now()
+      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+    
+      all_img=cache.get(get_movie_poster,24, table='posters')
+      addDir3('300','https://api.themoviedb.org/3/collection/125570?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
+
+ 
+
+    
+     
+      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
 
       match = dbcur.fetchone()
       if match!=None:
@@ -3018,15 +3037,15 @@ def tv_neworks():
     elif Addon.getSetting("order_networks")=='1':
         order_by='first_air_date.desc'
 
-    addDir3('NetFlix'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=213&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://art.pixilart.com/705ba833f935409.png','https://i.ytimg.com/vi/fJ8WffxB2Pg/maxresdefault.jpg','NetFlix'.decode('utf8'))
-    addDir3('HBO'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=49&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://filmschoolrejects.com/wp-content/uploads/2018/01/hbo-logo.jpg','https://www.hbo.com/content/dam/hbodata/brand/hbo-static-1920.jpg','HBO'.decode('utf8'))
-    addDir3('CBS'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=16&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://cdn.freebiesupply.com/logos/large/2x/cbs-logo-png-transparent.png','https://tvseriesfinale.com/wp-content/uploads/2014/10/cbs40-590x221.jpg','HBO'.decode('utf8'))
-    addDir3('SyFy'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=77&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://cdn.collider.com/wp-content/uploads/syfy-logo1.jpg','https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fewedit.files.wordpress.com%2F2017%2F05%2Fdefault.jpg&w=1100&c=sc&poi=face&q=85','SyFy'.decode('utf8'))
-    addDir3('The CW'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=71&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://www.broadcastingcable.com/.image/t_share/MTU0Njg3Mjc5MDY1OTk5MzQy/tv-network-logo-cw-resized-bc.jpg','https://i2.wp.com/nerdbastards.com/wp-content/uploads/2016/02/The-CW-Banner.jpg','The CW'.decode('utf8'))
+    addDir3('NetFlix'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=213&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://art.pixilart.com/705ba833f935409.png','','NetFlix'.decode('utf8'))
+    addDir3('HBO'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=49&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://filmschoolrejects.com/wp-content/uploads/2018/01/hbo-logo.jpg','','HBO'.decode('utf8'))
+    addDir3('CBS'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=16&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://cdn.freebiesupply.com/logos/large/2x/cbs-logo-png-transparent.png','','HBO'.decode('utf8'))
+    addDir3('SyFy'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=77&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://cdn.collider.com/wp-content/uploads/syfy-logo1.jpg','','SyFy'.decode('utf8'))
+    addDir3('The CW'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=71&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://www.broadcastingcable.com/.image/t_share/MTU0Njg3Mjc5MDY1OTk5MzQy/tv-network-logo-cw-resized-bc.jpg','','The CW'.decode('utf8'))
     addDir3('ABC'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=2&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://logok.org/wp-content/uploads/2014/03/abc-gold-logo-880x660.png','https://i.ytimg.com/vi/xSOp4HJTxH4/maxresdefault.jpg','ABC'.decode('utf8'))
-    addDir3('NBC'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=6&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://designobserver.com/media/images/mondrian/39684-NBC_logo_m.jpg','https://www.nbcstore.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/n/b/nbc_logo_black_totebagrollover.jpg','NBC'.decode('utf8'))
-    addDir3('AMAZON'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=1024&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png','https://cdn.images.express.co.uk/img/dynamic/59/590x/Amazon-Fire-TV-Amazon-Fire-TV-users-Amazon-Fire-TV-stream-Amazon-Fire-TV-Free-Dive-TV-channel-Amazon-Fire-TV-news-Amazon-1010042.jpg?r=1535541629130','AMAZON'.decode('utf8'))
-    addDir3('Hulu'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=453&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i1.wp.com/thetalkinggeek.com/wp-content/uploads/2012/03/hulu_logo_spiced-up.png?resize=300%2C225&ssl=1','https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi677r77IbeAhURNhoKHeXyB-AQjRx6BAgBEAU&url=https%3A%2F%2Fwww.hulu.com%2F&psig=AOvVaw0xW2rhsh4UPsbe8wPjrul1&ust=1539638077261645','hulu'.decode('utf8'))
+    addDir3('NBC'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=6&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://designobserver.com/media/images/mondrian/39684-NBC_logo_m.jpg','','NBC'.decode('utf8'))
+    addDir3('AMAZON'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=1024&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png','','AMAZON'.decode('utf8'))
+    addDir3('Hulu'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_networks=453&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i1.wp.com/thetalkinggeek.com/wp-content/uploads/2012/03/hulu_logo_spiced-up.png?resize=300%2C225&ssl=1','','hulu'.decode('utf8'))
 
 def movie_prodiction():
     if Addon.getSetting("order_networks")=='0':
@@ -3036,33 +3055,38 @@ def movie_prodiction():
     elif Addon.getSetting("order_networks")=='1':
         order_by='first_air_date.desc'
 
-    addDir3('Marvel'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=7505&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','https://images-na.ssl-images-amazon.com/images/I/91YWN2-mI6L._SL1500_.jpg','Marvel'.decode('utf8'))
-    addDir3('DC Studios'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=9993&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://pmcvariety.files.wordpress.com/2013/09/dc-comics-logo.jpg?w=1000&h=563&crop=1','http://www.goldenspiralmedia.com/wp-content/uploads/2016/03/DC_Comics.jpg','DC Studios'.decode('utf8'))
+    addDir3('Marvel'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=7505&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','','Marvel'.decode('utf8'))
+    addDir3('DC Studios'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=9993&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://pmcvariety.files.wordpress.com/2013/09/dc-comics-logo.jpg?w=1000&h=563&crop=1','','DC Studios'.decode('utf8'))
     addDir3('Lucasfilm'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=1&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://fontmeme.com/images/lucasfilm-logo.png','https://i.ytimg.com/vi/wdYaG3o3bgE/maxresdefault.jpg','Lucasfilm'.decode('utf8'))
-    addDir3('Warner Bros.'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=174&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://looking.la/wp-content/uploads/2017/10/warner-bros.png','https://cdn.arstechnica.net/wp-content/uploads/2016/09/warner.jpg','SyFy'.decode('utf8'))
-    addDir3('Walt Disney Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=2&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/9wDrIrdMh6o/hqdefault.jpg','https://vignette.wikia.nocookie.net/logopedia/images/7/78/Walt_Disney_Pictures_2008_logo.jpg/revision/latest?cb=20160720144950','Walt Disney Pictures'.decode('utf8'))
-    addDir3('Pixar'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=3&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://elestoque.org/wp-content/uploads/2017/12/Pixar-lamp.png','https://wallpapercave.com/wp/GysuwJ2.jpg','Pixar'.decode('utf8'))
-    addDir3('Paramount'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=4&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Paramount_Pictures_2010.svg/1200px-Paramount_Pictures_2010.svg.png','https://vignette.wikia.nocookie.net/logopedia/images/a/a1/Paramount_Pictures_logo_with_new_Viacom_byline.jpg/revision/latest?cb=20120311200405&format=original','Paramount'.decode('utf8'))
-    addDir3('Columbia Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=5&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://static.tvtropes.org/pmwiki/pub/images/lady_columbia.jpg','https://vignette.wikia.nocookie.net/marveldatabase/images/1/1c/Columbia_Pictures_%28logo%29.jpg/revision/latest/scale-to-width-down/1000?cb=20141130063022','Columbia Pictures'.decode('utf8'))
+    addDir3('Warner Bros.'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=174&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://looking.la/wp-content/uploads/2017/10/warner-bros.png','','SyFy'.decode('utf8'))
+    addDir3('Walt Disney Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=2&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/9wDrIrdMh6o/hqdefault.jpg','','Walt Disney Pictures'.decode('utf8'))
+    addDir3('Pixar'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=3&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://elestoque.org/wp-content/uploads/2017/12/Pixar-lamp.png','','Pixar'.decode('utf8'))
+    addDir3('Paramount'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=4&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Paramount_Pictures_2010.svg/1200px-Paramount_Pictures_2010.svg.png','','Paramount'.decode('utf8'))
+    addDir3('Columbia Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=5&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://static.tvtropes.org/pmwiki/pub/images/lady_columbia.jpg','','Columbia Pictures'.decode('utf8'))
     addDir3('DreamWorks'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=7&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://www.dreamworksanimation.com/share.jpg','https://www.verdict.co.uk/wp-content/uploads/2017/11/DA-hero-final-final.jpg','DreamWorks'.decode('utf8'))
-    addDir3('Miramax'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=14&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://vignette.wikia.nocookie.net/disney/images/8/8b/1000px-Miramax_1987_Print_Logo.png/revision/latest?cb=20140902041428','https://i.ytimg.com/vi/4keXxB94PJ0/maxresdefault.jpg','Miramax'.decode('utf8'))
-    addDir3('20th Century Fox'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=25&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://pmcdeadline2.files.wordpress.com/2017/03/20th-century-fox-cinemacon1.jpg?w=446&h=299&crop=1','https://vignette.wikia.nocookie.net/simpsons/images/8/80/TCFTV_logo_%282013-%3F%29.jpg/revision/latest?cb=20140730182820','20th Century Fox'.decode('utf8'))
-    addDir3('Sony Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=34&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sony_Pictures_Television_logo.svg/1200px-Sony_Pictures_Television_logo.svg.png','https://vignette.wikia.nocookie.net/logopedia/images/2/20/Sony_Pictures_Digital.png/revision/latest?cb=20140813002921','Sony Pictures'.decode('utf8'))
-    addDir3('Lions Gate Films'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=35&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://image.wikifoundry.com/image/1/QXHyOWmjvPRXhjC98B9Lpw53003/GW217H162','https://vignette.wikia.nocookie.net/fanon/images/f/fe/Lionsgate.jpg/revision/latest?cb=20141102103150','Lions Gate Films'.decode('utf8'))
-    addDir3('Orion Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=41&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/43OehM_rz8o/hqdefault.jpg','https://i.ytimg.com/vi/g58B0aSIB2Y/maxresdefault.jpg','Lions Gate Films'.decode('utf8'))
-    addDir3('MGM'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=21&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://pbs.twimg.com/profile_images/958755066789294080/L9BklGz__400x400.jpg','https://assets.entrepreneur.com/content/3x2/2000/20150818171949-metro-goldwun-mayer-trade-mark.jpeg','MGM'.decode('utf8'))
-    addDir3('New Line Cinema'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=12&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://upload.wikimedia.org/wikipedia/en/thumb/0/04/New_Line_Cinema.svg/1200px-New_Line_Cinema.svg.png','https://vignette.wikia.nocookie.net/theideas/images/a/aa/New_Line_Cinema_logo.png/revision/latest?cb=20180210122847','New Line Cinema'.decode('utf8'))
-    addDir3('Gracie Films'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=18&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/q_slAJmZBeQ/hqdefault.jpg','https://i.ytimg.com/vi/yGofbuJTb4g/maxresdefault.jpg','Gracie Films'.decode('utf8'))
-    addDir3('Imagine Entertainment'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=23&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://s3.amazonaws.com/fs.goanimate.com/files/thumbnails/movie/2813/1661813/9297975L.jpg','https://www.24spoilers.com/wp-content/uploads/2004/06/Imagine-Entertainment-logo.jpg','Imagine Entertainment'.decode('utf8'))
-    
+    addDir3('Miramax'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=14&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://vignette.wikia.nocookie.net/disney/images/8/8b/1000px-Miramax_1987_Print_Logo.png/revision/latest?cb=20140902041428','h','Miramax'.decode('utf8'))
+    addDir3('20th Century Fox'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=25&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://pmcdeadline2.files.wordpress.com/2017/03/20th-century-fox-cinemacon1.jpg?w=446&h=299&crop=1','','20th Century Fox'.decode('utf8'))
+    addDir3('Sony Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=34&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sony_Pictures_Television_logo.svg/1200px-Sony_Pictures_Television_logo.svg.png','','Sony Pictures'.decode('utf8'))
+    addDir3('Lions Gate Films'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=35&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'http://image.wikifoundry.com/image/1/QXHyOWmjvPRXhjC98B9Lpw53003/GW217H162','','Lions Gate Films'.decode('utf8'))
+    addDir3('Orion Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=41&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/43OehM_rz8o/hqdefault.jpg','','Lions Gate Films'.decode('utf8'))
+    addDir3('MGM'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=21&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://pbs.twimg.com/profile_images/958755066789294080/L9BklGz__400x400.jpg','','MGM'.decode('utf8'))
+    addDir3('New Line Cinema'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=12&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://upload.wikimedia.org/wikipedia/en/thumb/0/04/New_Line_Cinema.svg/1200px-New_Line_Cinema.svg.png','','Line Cinema'.decode('utf8'))
+    addDir3('Gracie Films'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=18&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/q_slAJmZBeQ/hqdefault.jpg','','Gracie Films'.decode('utf8'))
+    addDir3('Imagine Entertainment'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=23&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://s3.amazonaws.com/fs.goanimate.com/files/thumbnails/movie/2813/1661813/9297975L.jpg','','Imagine Entertainment'.decode('utf8'))
+
+
+
+
+
+
 def tv_menu():
       import datetime
       now = datetime.datetime.now()
       all_img=cache.get(get_tv_poster,24, table='posters')
-      addDir3('Nutthouse Currently Running TV Shows','http://api.themoviedb.org/4/list/47121?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Nutthouse Currently Running TV Shows')
-      addDir3('Nutthouse Finished TV Series','http://api.themoviedb.org/4/list/47119?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Nutthouse Finished TV Series')
+      addDir3('Nutthouse Currently Running TV Shows','http://api.themoviedb.org/4/list/47121?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/FlatScreenTV-512.png',all_img[13],'Nutthouse Currently Running TV Shows')
+      addDir3('Nutthouse Finished TV Series','http://api.themoviedb.org/4/list/47119?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn4.iconfinder.com/data/icons/retro-tv/100/vintage_tv8_fixed-512.png',all_img[13],'Nutthouse Finished TV Series')
       addDir3('Nutthouse Crime Scene','http://api.themoviedb.org/4/list/97542?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Nutthouse Crime Scene')
-      addDir3('Nutthouse Kids TV ','http://api.themoviedb.org/4/list/47132?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Nutthouse Kids TV')
+      addDir3('Nutthouse Kids TV ','http://api.themoviedb.org/4/list/47132?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn4.iconfinder.com/data/icons/retro-tv/100/vintage_tv8_fixed-512.png',all_img[13],'Nutthouse Kids TV')
 
       addDir3('Popular','http://api.themoviedb.org/3/tv/popular?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'populartv.png',all_img[1],'Popular')
       addDir3('Running Series','https://api.themoviedb.org/3/tv/on_the_air?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'running.png',all_img[8],'Running series')
@@ -3072,14 +3096,15 @@ def tv_menu():
       addDir3('Favourite Shows','tv',18,BASE_LOGO+'favoritestv.png','http://4.bp.blogspot.com/-8q4ops3bX_0/T0TWUOu5ETI/AAAAAAAAA1A/AQMDv0Sv4Cs/s1600/logo1.gif','Favorites shows')
       addDir3('Recommended Shows for You','www',27,BASE_LOGO+'recotv.png',all_img[5],'Recommended shows for you based on your history',isr=' ')
       addDir3('Popular IMDB','https://www.imdb.com/search/title?title_type=tv_series',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 50s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1950-01-01,1959-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 60s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1960-01-01,1969-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 70s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1970-01-01,1979-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 80s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1980-01-01,1989-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 90s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1990-01-01,1999-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 00s','https://www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular IMDB',isr=' ')
+      addDir3('Popular 50\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1950-01-01,1959-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 50\'s',isr=' ')
+      addDir3('Popular 60\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1960-01-01,1969-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 60\'s',isr=' ')
+      addDir3('Popular 70\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1970-01-01,1979-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 70\'s',isr=' ')
+      addDir3('Popular 80\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1980-01-01,1989-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 80\'s',isr=' ')
+      addDir3('Popular 90\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1990-01-01,1999-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 90\'s',isr=' ')
+      addDir3('Popular 00\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 00\'s',isr=' ')
       addDir3('Series Tracker','tv',32,BASE_LOGO+'tracks.png',all_img[6],'Series tracker',isr=' ')
       addDir3('Watched Shows','tv',91,BASE_LOGO+'watchedtv.png',all_img[7],'watched shows',isr=' ')
+      addDir3('Iain\'s TV','http://api.themoviedb.org/4/list/97042?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Iain\'s  TV')
 
       dbcur.execute("SELECT * FROM lastlinktv WHERE o_name='f_name'")
 
@@ -14349,6 +14374,8 @@ elif mode2==151:
     red_tv(iconimage,fanart)
 elif mode2==152:
     red_tv_chan(url,iconimage,fanart)
+elif mode2==153:
+  movies_boxsets()
 elif mode2==999:
     xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'Episode not aired yet...'.decode('utf8'))).encode('utf-8'))
 if len(sys.argv)>1:
