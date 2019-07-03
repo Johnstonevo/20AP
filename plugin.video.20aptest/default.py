@@ -2958,6 +2958,7 @@ def main_menu():
       addDir3('Kids'.decode('utf8'),'www',44,'https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png','','Kids'.decode('utf8'))
       addDir3('Anime'.decode('utf8'),'www',68,'https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png','','Anime'.decode('utf8'))
       addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','','Live Sports'.decode('utf8'))
+      addDir3('Old lists'.decode('utf8'),'www',42,BASE_LOGO+'jen.png','https://geek-prime.com/wp-content/uploads/2014/02/Destiny-2-4k-hd-wallpaper-invasion-ghaul.jpg','Old Lists'.decode('utf8'))
       #addDir3('Box'.decode('utf8'),'www',153,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
 
       
@@ -10208,6 +10209,7 @@ def play(name,url,iconimage,fanart,description,data,season,episode,original_titl
                              thread[0].start()
                         resolve_magnet(url,listItem,AWSHandler,info,mag_start_time)
                         
+                        
                         xbmc.sleep(500)
                         xbmc.executebuiltin('Dialog.Close(okdialog, true)')
                         return 'ok'
@@ -13315,7 +13317,7 @@ def get_torrent_file(silent_mode=False):
             for chunk in r.iter_content(chunk_size=1024): 
                 dl += len(chunk)
                 done = int(100 * dl / total_length)
-                dp.update(done, 'Please wait','Downlading player', '' )
+                dp.update(done, 'Please wait','Downloading player', '' )
                 if chunk: # filter out keep-alive new chunks
                     f.write(chunk)
                     #f.flush() commented by recommendation from J.F.Sebastian

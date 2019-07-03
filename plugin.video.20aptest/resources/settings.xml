@@ -2,7 +2,7 @@
 <settings>	
 	<category label="General">
 		
-		<setting id="save_time"  type="number"  label="Cache Save Time (in hours)" visible="true" default="72"/>		
+		<setting id="save_time"  type="number"  label="Cache Save Time (in hours)" visible="true" default="24"/>		
 		<setting id="general.access.code" type="text" default="opensesame" visible="hidden" />
 		<setting id="scraping.providers.pages" type="text" default="3" visible="hidden" />
 		<setting id="scraping.providers.timeout" type="text" default="18" visible="hidden" />
@@ -11,7 +11,7 @@
 		<setting label="[COLOR dodgerblue]Each page contains 20 results with a 10 page maximum[/COLOR]" type="lsep"/>
 		<setting id="num_p"  type="number"  label="Pages To Scan" visible="true" default="1"/>		
 
-		<setting id="strm" type="folder" label="STRM Folder" default="C:\"/>
+		<setting id="strm" type="folder" label="STRM Folder" default=""/>
 		<setting id="debugmode" label="Debug Mode" type="bool" default="false" />
 		<setting id="server_test_one" label="Server Test Mode" type="bool" default="false" />
 		
@@ -48,7 +48,7 @@
 		<setting label="[COLOR dodgerblue]Scraping In New Window[/COLOR]"  type="lsep"/>
 		
 		<setting id="new_server_dp" label="Enable Scraping New Windows" type="bool"  default="true" />		
-		<setting id="new_server_dp_option" type="enum" label="Window Style" visible="eq(-1,true)" values="Detailed|Movie|Recommended|Random" default="1" />		
+		<setting id="new_server_dp_option" type="enum" label="Window Style" visible="eq(-1,true)" values="Detailed|Movie|Recommended|Random" default="2" />		
 		<setting id="video_in_sources" label="Display Trailer In Window-Movies" type="bool" visible="eq(-2,true)" default="true" />
 		<setting id="video_in_sources_tv" label="Display Trailer In Window-TV" type="bool" visible="eq(-3,true)" default="true" />
 		
@@ -74,7 +74,7 @@
 		
 		<setting label="[COLOR dodgerblue]Auto Quality Selection[/COLOR]" type="lsep"/>
 		<setting id="auto_q" type="bool" label="Enable Auto Quality Selection" default="true" />
-		<setting id="quality" type="enum" label="Choose Auto Quality Selection" values="1080p|720p|480p|360p" visible="eq(-1,true)" default="0" />
+		<setting id="quality" type="enum" label="Choose Auto Quality Selection" values="1080p|720p|480p|360p" visible="eq(-1,true)" default="2" />
 		<setting id="show_p2" label="Display Sources In Pause" type="bool" default="false" />
 		<setting id="show_p_time"  type="number"  label="Close After (in secs)" visible="true" default="20"/>
 		<setting id="adv_watched" label="Advanced Last Playing Point" type="bool" default="true" />
@@ -101,7 +101,7 @@
 		
 		<setting id="allow_free" label="Allow Free torrent player" type="bool" default="true" />
 		<setting label="[COLOR dodgerblue]Use of Torrents without RD or VPN is NOT Recommended[/COLOR]" type="lsep" />
-		<setting id="torrent_warning" label="Enable Torrent Warning" type="bool"  default="true" />
+		<setting id="torrent_warning" label="Enable Torrent Warning" type="bool"  default="false" />
 		<setting id="magnet" label="Enable Torrent Sources" type="bool" default="true" />		
 		<setting id="all_t" type="enum" label="Display Option" visible="eq(-1,true)" values="All Sources Together|Only Torrents|Torrents In Seperated Categories." default="0" />
 		<setting id="order_torrents_new" label="Order By Seeders" type="bool" default="false" />
@@ -190,8 +190,8 @@
 	    
         
 	    <setting id="auto_q_source" type="bool" label="Enable Quality Filter" default="true" />
-	    <setting id="max_quality_m" type="enum" label="Movies" values="2160p|1080p|720p|480p|360p" default="0" />
-	    <setting id="max_quality_t" type="enum" label="TV" values="2160p|1080p|720p|480p|360p" default="0" />	
+	    <setting id="max_quality_m" type="enum" label="Movies" values="2160p|1080p|720p|480p|360p" default="2" />
+	    <setting id="max_quality_t" type="enum" label="TV" values="2160p|1080p|720p|480p|360p" default="2" />	
 	</category>
 	
 	<category label="Main Menu Items">
