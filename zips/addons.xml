@@ -323,7 +323,7 @@
 
 <addon id="plugin.video.20aptest"
 	   name="20aptest"
-	   version="1.3.0"
+	   version="19.07.03"
 	   provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -344,8 +344,8 @@
   </extension>
   <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="he">The Moment You've All Been Waiting For... is FINALLY HERE </summary>
-    <description lang="he">Finally destiny is here, a new and revolutionary way to enjoy kodi.</description>
+    <summary lang="en">version="1.3.0"</summary>
+    <description lang="en"></description>
     <platform>all</platform>
   </extension>
 </addon>
