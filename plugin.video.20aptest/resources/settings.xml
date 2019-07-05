@@ -47,7 +47,7 @@
 		
 		<setting label="[COLOR dodgerblue]Scraping In New Window[/COLOR]"  type="lsep"/>
 		
-		<setting id="new_server_dp" label="Enable Scraping New Windows" type="bool"  default="true" />		
+		<setting id="new_server_dp" label="Enable Scraping New Windows" type="bool"  default="false" />		
 		<setting id="new_server_dp_option" type="enum" label="Window Style" visible="eq(-1,true)" values="Detailed|Movie|Recommended|Random" default="2" />		
 		<setting id="video_in_sources" label="Display Trailer In Window-Movies" type="bool" visible="eq(-2,true)" default="true" />
 		<setting id="video_in_sources_tv" label="Display Trailer In Window-TV" type="bool" visible="eq(-3,true)" default="true" />
@@ -74,13 +74,13 @@
 		
 		<setting label="[COLOR dodgerblue]Auto Quality Selection[/COLOR]" type="lsep"/>
 		<setting id="auto_q" type="bool" label="Enable Auto Quality Selection" default="true" />
-		<setting id="quality" type="enum" label="Choose Auto Quality Selection" values="1080p|720p|480p|360p" visible="eq(-1,true)" default="2" />
+		<setting id="quality" type="enum" label="Choose Auto Quality Selection" values="1080p|720p|480p|360p" visible="eq(-1,true)" default="1" />
 		<setting id="show_p2" label="Display Sources In Pause" type="bool" default="false" />
 		<setting id="show_p_time"  type="number"  label="Close After (in secs)" visible="true" default="20"/>
 		<setting id="adv_watched" label="Advanced Last Playing Point" type="bool" default="true" />
 		<setting label="[COLOR dodgerblue]Show Trailer from Source Search (When Not in Source Window Display)[/COLOR]" type="lsep"/>
-		<setting id="trailer_dp" label="Enable Trailer" type="bool" default="false" />
-		<setting id="trailer_wait" label="Wait For The Trailer To End" type="bool" default="true" />
+		<setting id="trailer_dp" label="Enable Trailer" type="bool" default="true" />
+		<setting id="trailer_wait" label="Wait For The Trailer To End" type="bool" default="false" />
 		
 		
 		
@@ -89,9 +89,9 @@
 		<setting label="[COLOR dodgerblue]Fast Play (When Not in Source Window Mode)[/COLOR]" type="lsep"/>
 		
 		
-		<setting id="fast_play2_movie" label="Auto Play Movies" type="bool" default="false" />
-		<setting id="fast_play2_tv" label="Auto Play TV Shows" type="bool" default="false" />
-		<setting id="src_disp" label="Display Sources When Done" type="bool" default="true" />
+		<setting id="fast_play2_movie" label="Auto Play Movies" type="bool" default="true" />
+		<setting id="fast_play2_tv" label="Auto Play TV Shows" type="bool" default="true" />
+		<setting id="src_disp" label="Display Sources When Done" type="bool" default="false" />
 		
 	</category>	
 	
@@ -103,15 +103,15 @@
 		<setting label="[COLOR dodgerblue]Use of Torrents without RD or VPN is NOT Recommended[/COLOR]" type="lsep" />
 		<setting id="torrent_warning" label="Enable Torrent Warning" type="bool"  default="false" />
 		<setting id="magnet" label="Enable Torrent Sources" type="bool" default="true" />		
-		<setting id="all_t" type="enum" label="Display Option" visible="eq(-1,true)" values="All Sources Together|Only Torrents|Torrents In Seperated Categories." default="0" />
-		<setting id="order_torrents_new" label="Order By Seeders" type="bool" default="false" />
-		<setting id="min_seed"  type="number"  label="Minimum Seed Numbers" visible="eq(-3,true)" default="0"/>
+		<setting id="all_t" type="enum" label="Display Option" visible="eq(-1,true)" values="All Sources Together|Only Torrents|Torrents In Seperated Categories." default="2" />
+		<setting id="order_torrents_new" label="Order By Seeders" type="bool" default="true" />
+		<setting id="min_seed"  type="number"  label="Minimum Seed Numbers" visible="eq(-3,true)" default="10"/>
 		<setting id="size_limit"  type="number"  label="Filter Sources Larger Than (Gb)" visible="eq(-4,true)" default="4"/>
 		<setting id="players_new" type="enum" label="Choose Player" visible="eq(-5,true)
 "values="Quasar|Pulsar|KmediaTorrent|Torrenter|YATP|XBMCtorrent|PopcornTime|Destiny|Acestream|Choose" default="7" />
 		
-        <setting label="*** Download Destiny Torrent Player ***" visible="eq(-6,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=118&url=www)"/>
-		<setting label="*** Remove Destiny Torrent Player ***" visible="eq(-7,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=119&url=www)"/> 
+        <setting label="*** Download 20APTorrent Player ***" visible="eq(-6,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=118&url=www)"/>
+		<setting label="*** Remove 20APTorrent Player ***" visible="eq(-7,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=119&url=www)"/> 
 
     <!-- Start torrent servers --> 
 	<setting id="1337x" label="1337x [COLOR aqua] (Tv) [/COLOR]  [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
@@ -193,11 +193,11 @@
 	    <setting id="max_quality_m" type="enum" label="Movies" values="2160p|1080p|720p|480p|360p" default="2" />
 	    <setting id="max_quality_t" type="enum" label="TV" values="2160p|1080p|720p|480p|360p" default="2" />	
 	</category>
-	
+	<!-->
 	<category label="Main Menu Items">
 		
 		
-		<setting id="m_what" type="bool" label="What is Destiny - A Simple Guide" default="true" />
+		<setting id="m_what" type="bool" label="What is 20AP- A Simple Guide" default="false" />
 		<setting id="m_movies" type="bool" label="Movies" default="true" />
 		<setting id="m_tvshows" type="bool" label="TV Shows" default="true" />
 		<setting id="m_kids" type="bool" label="Kids" default="true" />
@@ -221,7 +221,7 @@
 		<setting id="m_search" type="bool" label="Search" default="true" />
 		<setting id="m_trakt" type="bool" label="Trakt" default="true" />		
 	</category>
-	
+	-->
 	<category label="Favourite Sources">
 		
 		
@@ -240,7 +240,7 @@
 		<setting type="lsep" label="[COLOR dodgerblue]TV[/COLOR]" />
 		
 		
-		<setting id="fav_servers_en_tv" label="Enable Favourite Sources" type="bool" default="true" />
+		<setting id="fav_servers_en_tv" label="Enable Favourite Sources" type="bool" default="false" />
 		
 		<setting label="[COLOR dodgerblue]Enter source names separated by a comma (,) between each one[/COLOR]" type="lsep" visible= "eq(-1,true)"/>
 		<setting id="fav_servers_tv" type="text" label="Enter" default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
@@ -278,13 +278,13 @@
 	<category label="Trakt">
 		
 		
-		<setting id="use_trak" label="Use TRAKT" type="bool" default="false" />
-		<setting id="trac_trk" label="Open Series Tracker in TRAKT" type="bool" default="false" />
-		<setting id="time_to_save" label="Mark the Movie / TV Show as Watched after viewing % of the show" type="number" default="75" />
+		<setting id="use_trak" label="Use TRAKT" type="bool" default="true" />
+		<setting id="trac_trk" label="Open Series Tracker in TRAKT" type="bool" default="true" />
+		<setting id="time_to_save" label="Mark the Movie / TV Show as Watched after viewing % of the show" type="number" default="90" />
 		<setting label="Reset Trakt Authentication" option="close" type="action" action="RunPlugin(plugin://plugin.video.20aptest?mode2=30&url=www)"/>	
-		<setting label="trakt access token" id="trakt_access_token" type="text" visible="false" />
-	    <setting label="trakt refresh token" id="trakt_refresh_token" type="text" visible="false" />
-	    <setting label="trakt refresh token" id="trakt_expires_at" type="text" visible="false" />
+		<setting label="trakt access token" id="trakt_access_token" type="text" visible="true" />
+	    <setting label="trakt refresh token" id="trakt_refresh_token" type="text" visible="true" />
+	    <setting label="trakt refresh token" id="trakt_expires_at" type="text" visible="true" />
 		
 	</category>
 	
@@ -299,7 +299,8 @@
 		<setting id="px" label="Location X" type="number" default="10" />
 		<setting id="py" label="Location Y" type="number" default="10" />
 	</category>
-	
+
+	<!--
 	<category label="Real Debrid">
 		
 		
@@ -335,8 +336,10 @@
 		
 		<setting label="RD Re-Authentication " option="close" type="action" action="RunPlugin(plugin://plugin.video.20aptest?mode2=138&url=www)"/>		
 		<setting id="rd_menu_enable" label="Add RD sources button to sources" type="bool" default="false" />
+-->
 
 	<!-- Start RD servers -->
+	<!--
 	<setting id="0day" label="0day [COLOR aqua] (Tv) [/COLOR]  [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
 	<setting id="300mbfilms" label="300mbfilms [COLOR aqua] (Tv) [/COLOR]  [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
 	<setting id="bestmoviez" label="bestmoviez [COLOR aqua] (Tv) [/COLOR]  [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
@@ -351,8 +354,10 @@
 	<setting id="rlsbb" label="rlsbb [COLOR aqua] (Tv) [/COLOR]  [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
 	<setting id="scenerls" label="scenerls [COLOR aqua] (Tv) [/COLOR]  [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
 	<setting id="ultrahd" label="ultrahd [COLOR pink] (Movies) [/COLOR] " type="bool" default="true" />
+	-->
 <!-- End RD servers -->		
-	</category>
+<!--	</category> 
+
 	
 	<category label="M3u8 Address">
 		
@@ -401,6 +406,7 @@
 		
 		<setting label="Check Connection" option="close" type="action" visible="eq(-7,1)" action="RunPlugin(plugin://plugin.video.20aptest?mode2=90&url=www)"/>
 	</category>
+	-->
 	<!-- APIS -->
     <category label="Jen Settings">
 		
@@ -412,7 +418,7 @@
         <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.20aptest/" visible="false"/>
         <setting label="TVDB API Key" type="text" id="TVdb_api_key" option="hidden" default="EAA6424DF5E5BE87" visible="eq(-3,true)"/>
         <setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="aa28550e5a65f567fc512bd0290ce6fb" visible="eq(-4,true)"/>
-        <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="3e3c7a3f4f5c2f09154a4759e4cdd23c33b055e0c492d2c635f05539c974a0f6" visible="eq(-5,true)"/>
+        <setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="826f424de711d416abc0f2d9ffae98406dd2489ab7a7f1089b9635ae3c5476ed" visible="eq(-5,true)"/>
         <setting label="Trakt Client Secret" type="text" id="trakt_api_client_secret" option="hidden" visible="!eq(-1,true) + eq(-6,true)" default="3e3c7a3f4f5c2f09154a4759e4cdd23c33b055e0c492d2c635f05539c974a0f6"/>
         <setting label="Last.fm API Key" type="text" id="lastfm_api_key" option="hidden" default="d8046236b87a509f970222bb5c6b43db" visible="eq(-7,true)"/>
         <setting label="Last.fm Secret" type="text" id="lastfm_secret" option="hidden" visible="!eq(-1,true) + eq(-8,true)" default="0ba224b0aeffc272443f762df1918206"/>
@@ -432,9 +438,9 @@
         <!-- filtering settings -->
         <setting label="Filtering Options" type="lsep"/>
         <setting id="allow_debrid" label="Enable Debrid" type="bool" default="false"/>
-        <setting id="allow_openload" label="Allow openload links" type="bool" default="false"/>
-        <setting id="allow_the_video_me" label="Allow thevideo.me links" type="bool" default="false"/>
-        <setting id="allow_vidup_me" label="Allow vidup.me links" type="bool" default="false"/>
+        <setting id="allow_openload" label="Allow openload links" type="bool" default="true"/>
+        <setting id="allow_the_video_me" label="Allow thevideo.me links" type="bool" default="true"/>
+        <setting id="allow_vidup_me" label="Allow vidup.me links" type="bool" default="true"/>
         <setting label="Message options" type="lsep" visible="false"/>
         <setting id="disable_messages" label="Disable all loading messages" type="bool" default="false" visible="false"/>
         <setting id="enable_offensive" label="Enable possibly offensive messages" type="bool" default="false" enable="eq(-1,false)" visible="false"/>
@@ -466,7 +472,7 @@
 		<setting id="jen_fan_cat-1" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
 	    <setting id="Pastebin-1-1" label="Jen address Cat 1" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/base.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
 	   
-	<!--
+	
 		<setting id="jen_cat-2" type="bool" label="Enable Jen Category 2." default="true" />
 	    <setting id="jen_name_cat-2" type="text" label="Category Name" default="TV" visible= "eq(-1,true)" enable="eq(-1,true)" />
 	    <setting id="jen_icon_cat-2" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
@@ -492,7 +498,7 @@
 	    <setting id="jen_icon_cat-6" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
 		<setting id="jen_fan_cat-6" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
 	    <setting id="Pastebin-6-1" label="Jen address cat 6" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
--->
+
 	</category>
 	
 	
@@ -590,7 +596,7 @@
 		<setting id="subs_px" label="Location X" type="number" default="10" enable="!eq(-10,false)"/>
 		<setting id="subs_py" label="Location Y" type="number" default="10" enable="!eq(-11,false)"/>
     </category>
-
+<!--
 	<category label="Mail log file">
 		
         
@@ -607,7 +613,7 @@
 		
 	</category>
 	
-	
+	-->
 
 		
 	</settings>

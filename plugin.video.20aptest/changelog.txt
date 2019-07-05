@@ -61,7 +61,7 @@ Enjoy.
 *[COLOR lightblue][B]v1.1.8[/B]
 * [COLOR lightblue]These are the changes made in this version...[/COLOR]
 * fix error when entering Open season or season's episodes in Series tracker.
-* added subtitle support ,Destiny style ☻.
+* added subtitle support ,20APstyle ☻.
 * fix cartoon section not playing in kids.
 * Added Liked lists in TRAKT.
 * fixed free torrent player.
@@ -72,7 +72,7 @@ Enjoy.
 *[COLOR lightblue][B]v1.1.7[/B]
 * [COLOR lightblue]These are the changes made in this version...[/COLOR]
 * Fix the RD mutli resolve requests.
-* Next version will have subtitle downloader done in Destiny Style ☻.
+* Next version will have subtitle downloader done in 20APStyle ☻.
  Something to wait for...
 Enjoy.
  [/COLOR]

@@ -65,7 +65,7 @@ def Keyboard(heading='',default='',hidden=False,return_false=False,autoclose=Fal
     
     else:
         return False
-TRAKT_API_KEY = "8ed545c0b7f92cc26d1ecd6326995c6cf0053bd7596a98e962a472bee63274e6"
+TRAKT_API_KEY = "826f424de711d416abc0f2d9ffae98406dd2489ab7a7f1089b9635ae3c5476ed"
 from general import trakt_authenticate
 
 def get_season_data(id,season):

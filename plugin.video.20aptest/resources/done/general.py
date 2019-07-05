@@ -89,7 +89,7 @@ BASE_URL = 'http://api.trakt.tv'
 SETTING_TRAKT_EXPIRES_AT = "trakt_expires_at"
 SETTING_TRAKT_ACCESS_TOKEN = "trakt_access_token"
 SETTING_TRAKT_REFRESH_TOKEN = "trakt_refresh_token"
-CLIENT_ID = "8ed545c0b7f92cc26d1ecd6326995c6cf0053bd7596a98e962a472bee63274e6"
+CLIENT_ID = "826f424de711d416abc0f2d9ffae98406dd2489ab7a7f1089b9635ae3c5476ed"
 CLIENT_SECRET = "1ec4f37e5743e3086abace0c83444c25d9b655d1d77b793806b2c8205a510426"
 
 def reset_trakt():

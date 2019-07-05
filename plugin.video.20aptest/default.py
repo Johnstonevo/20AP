@@ -2948,7 +2948,7 @@ def main_menu():
       if len(sys.argv)<2:
        return 0
       dbcur.execute("SELECT COUNT(*) FROM AllData")
-      fix_setting()
+      #fix_setting()
       match = dbcur.fetchone()
       level_index=(match[0]/100)
       if level_index>9:
@@ -2960,6 +2960,8 @@ def main_menu():
       addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','','Live Sports'.decode('utf8'))
       addDir3('Old lists'.decode('utf8'),'www',42,BASE_LOGO+'jen.png','https://geek-prime.com/wp-content/uploads/2014/02/Destiny-2-4k-hd-wallpaper-invasion-ghaul.jpg','Old Lists'.decode('utf8'))
       #addDir3('Box'.decode('utf8'),'www',153,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
+      addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png',domain_s+'www.mjdtech.net/content/images/2016/02/traktfeat.jpg','Trakt')
+   
 
       
       
@@ -2974,7 +2976,7 @@ def movies_menu():
       addDir3('Nutthouse Modern','http://api.themoviedb.org/4/list/43994?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse Modern')
       addDir3('Nutthouse 00\'s','http://api.themoviedb.org/4/list/79502?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse 00\'s')
       addDir3('Nutthouse Classics','http://api.themoviedb.org/4/list/47126?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'http://www.ultimatemoviesuggestions.com/wp-content/uploads/2017/03/cropped-Camera_cinema_consume_entertainment_film_media_movie_photo_play_record_video_television_tripod-256.png',all_img[13],'Nutthouse Classics')
- 
+
  
       addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',2,'',all_img[0],'Genres'.decode('utf8'))
       addDir3('Popular','http://api.themoviedb.org/3/movie/popular?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[4],'Popular')
@@ -2983,17 +2985,41 @@ def movies_menu():
       addDir3('Hot Movies','http://api.themoviedb.org/3/trending/movie/week?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'Hot Movies')
       addDir3('By Years'.decode('utf8'),'movie_years&page=1',3,'',all_img[2],'By Years'.decode('utf8'))
       
-      addDir3('Based on true story','https://www.imdb.com/search/title?genres=biography&sort=num_votes,desc&explore=title_type,genres',114,'',all_img[14],'Based on true story',isr=' ')
+      addDir3('Based on True Story','https://www.imdb.com/search/title/?genres=biography&title_type=movie,genres&view=simple',114,BASE_LOGO+'based.png',all_img[14],'Based on true story',isr=' ')
       addDir3('Studio'.decode('utf8'),'movie',112,BASE_LOGO+'studio.png','','Studio')
       addDir3('IMDB Popular','https://www.imdb.com/chart/moviemeter?ref_=nv_mv_mpm',114,'',all_img[15],'IMDB Popular',isr=' ')
       addDir3('Iain\'s Movies','http://api.themoviedb.org/4/list/97041?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'Iain\'s  Movies')
 
      
+      addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],'Rotten Tomatoes: Best Horror Movies Of All Time'.decode('utf8'))
+
      
-     
-     
+      #addDir3('Boxsets'.decode('utf8'),'www',153,'http://simpleicon.com/wp-content/uploads/movie-3.png','https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg','Boxsets'.decode('utf8'))
+
      
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
+
+
+
+
+      match = dbcur.fetchone()
+      if match!=None:
+       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
+       try:
+           if url!=' ':
+             if 'http' not  in url:
+           
+               url=url.decode('base64')
+              
+             addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+       except  Exception as e:
+         logging.warning(e)
+         pass
+      
+      addDir3('Search','http://api.themoviedb.org/3/search/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&query=%s&language=en&append_to_response=origin_country&page=1',3,BASE_LOGO+'searchm.png','http://www.videomotion.co.il/wp-content/uploads/whatwedo-Pic-small.jpg','search')
+      addDir3('Recommended for YOU','www',26,BASE_LOGO+'recomm.png',all_img[14],'Recommended for YOU',isr=' ')
+      addDir3('Lastest HD'.decode('utf8'),domain_s+'www.dvdsreleasedates.com/movies/',28,BASE_LOGO+'latest.png',all_img[5],'Lastest HD'.decode('utf8'),isr=' ')
 
 
 def movies_boxsets():
@@ -3025,10 +3051,8 @@ def movies_boxsets():
        except  Exception as e:
          logging.warning(e)
          pass
-      
-      addDir3('Search','http://api.themoviedb.org/3/search/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&query=%s&language=en&append_to_response=origin_country&page=1',3,BASE_LOGO+'searchm.png','http://www.videomotion.co.il/wp-content/uploads/whatwedo-Pic-small.jpg','search')
-      addDir3('Recommended for YOU','www',26,BASE_LOGO+'recomm.png',all_img[14],'Recommended for YOU',isr=' ')
-      addDir3('Lastest HD'.decode('utf8'),domain_s+'www.dvdsreleasedates.com/movies/',28,BASE_LOGO+'latest.png',all_img[5],'Lastest HD'.decode('utf8'),isr=' ')
+
+
 
 def tv_neworks():
     if Addon.getSetting("order_networks")=='0':
@@ -3103,6 +3127,7 @@ def tv_menu():
       addDir3('Popular 80\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1980-01-01,1989-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 80\'s',isr=' ')
       addDir3('Popular 90\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1990-01-01,1999-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 90\'s',isr=' ')
       addDir3('Popular 00\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 00\'s',isr=' ')
+      addDir3('Based on true story','https://www.imdb.com/search/title/?title_type=tv_series&genres=biography&sort=num_votes,desc&explore=title_type,genres',114,'',all_img[8],'Based on true story',isr=' ')
       addDir3('Series Tracker','tv',32,BASE_LOGO+'tracks.png',all_img[6],'Series tracker',isr=' ')
       addDir3('Watched Shows','tv',91,BASE_LOGO+'watchedtv.png',all_img[7],'watched shows',isr=' ')
       addDir3('Iain\'s TV','http://api.themoviedb.org/4/list/97042?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Iain\'s  TV')
@@ -8559,6 +8584,10 @@ def get_jen_cat():
             fan='https://koditips.com/wp-content/uploads/jen-kodi.jpg'
         if cat_ena=='true':
           addDir3(Addon.getSetting("jen_name_cat-"+str(i)),str(i),43,icon,fan,Addon.getSetting("jen_name_cat-"+str(i)))
+
+
+
+
 def fix_name_origin(saved_name,original_title):
          regex_name='] (.+?) -'
 
