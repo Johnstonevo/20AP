@@ -19,18 +19,12 @@
 [submodule "script.module.resolveurl"]
 	path = script.module.resolveurl
 	url = https://github.com/jsergio123/script.module.resolveurl.git
-[submodule "repository.ddurdle"]
-	path = repository.ddurdle
-	url = https://github.com/ddurdle/repository.ddurdle.git
 [submodule "script.module.tulip"]
 	path = script.module.tulip
 	url = https://github.com/Twilight0/script.module.tulip.git
 [submodule "plugin.video.sparkle"]
 	path = plugin.video.sparkle
 	url = https://github.com/iwannabelikemike/plugin.video.sparkle.git
-[submodule "modules4all"]
-	path = modules4all
-	url = https://github.com/kmnb/modules4all.git
 [submodule "plugin.program.reddit_browser"]
 	path = plugin.program.reddit_browser
 	url = https://github.com/Johnstonevo/plugin.program.reddit_browser.git
@@ -40,7 +34,6 @@
 [submodule "plugin.video.ctoonkodi"]
 	path = plugin.video.ctoonkodi
 	url = https://github.com/doko-desuka/plugin.video.ctoonkodi.git
-
 [submodule "scrapers"]
 	path = scrapers
 	url = https://github.com/teamuniversal/scrapers.git
@@ -50,3 +43,4 @@
 [submodule "plugin.video.venom"]
 	path = plugin.video.venom
 	url = https://github.com/123Venom/plugin.video.venom.git
+
