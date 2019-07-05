@@ -110,6 +110,94 @@
 </extension>
 </addon>
 
+<addon id="plugin.video.seren" version="0.2.35" name="Seren" provider-name="Nixgates">
+	<requires>
+		<import addon="xbmc.python" version="2.19.0" />
+		<import addon="script.module.requests" version="2.19.1" />
+		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
+		<import addon="script.module.metahandler" version="1.0.0" />
+		<import addon="plugin.video.youtube" version="6.2.0"/>
+		<import addon="script.module.addon.signals" version="0.0.1"/>
+		<import addon="script.module.dateutil" version="2.7.3"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="seren.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Seren - This Addon is currently in beta. Please be aware there may be bugs present</summary>
+		<description lang="en">
+		</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<forum></forum>
+		<website></website>
+		<source></source>
+		<disclaimer lang="en">The author of this addon takes no responsibility for any 3rd party intergration or modification of this software, please ensure your use of this software abides by your local and insterstate laws.</disclaimer>
+		<assets>
+			<icon>temp-icon.png</icon>
+			<fanart>temp-fanart.png</fanart>
+		</assets>
+		<news>
+Changelog 0.2.35:
+Seren now utilizes Kodi Repository dateutil package
+
+Changelog 0.2.34:
+Cleaned up logging
+
+Changelog 0.2.33:
+Premiumize Cloud Inspection now includes size for identified items
+Cloud Inspection threads now gracefully exit if pre-emptive termination limit is reached
+Increased file identification
+Fixed delay with getsources window showing
+
+Changelog 0.2.32:
+Fixed is_aired format error
+Fixed issue with hide SD removing cloud files
+
+Changelog 0.2.31:
+Fixed issue with un-aired episodes being added to playlist after smartplay speedup
+Seren now confirms TMDB year information with IMDB prior to scraping
+Fixed issues with Seren identifying sources from the users premiumize cloud
+
+Changelog 0.2.30:
+Fixed dictionary key issue for show items in smartPlay modules created with new workaround
+
+Changelog 0.2.29:
+Added removal of duplicate space characters to clean title function
+Added support for single episode folders to Premiumize cloud inspection
+
+Changelog 0.2.28:
+Fixed issue with addonName variable change
+
+Changelog 0.2.27:
+Adjusted RD cache inspection to allow multiple video files within a single movie item
+Adjust RD movie resolving to pull largest file out of torrent item
+Seren now polls Kodi for supported video containers instead of hardcoding
+Fixed key error when marking episode as watched in local database
+Added settings cache dictionary to reduce Kodi's logging of "trying to load setting definitions from old format..."
+Cleaned up addon logging
+
+Changelog 0.2.26:
+Fix Auto Episode Resume
+
+Changelog 0.2.25:
+Movie years now uses the popular API endpoint
+Added option to enable Debrid Cloud inspection during scrape
+Added Upcoming Episodes to My Shows menu
+Added By Actor search to Discover Show/Movie menus
+"Hide Un-Aired Episodes" renamed to "Hide Un-Aired Items"
+"Hide Un-Aired Items" setting now applies to movie/show/season menus as well
+Marking show/season item as watched/collected now triggers a background re-sync of relevant items
+Increased resolving restrictions
+Playstyle for Episodes and Movies are now seperate
+Fixed issue with Premiumize Torrent File Picker
+Speed Increase for playlist building
+
+		</news>
+	</extension>
+</addon>
+
 <addon id="plugin.video.venom" version="3.0.1" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
@@ -566,6 +654,25 @@ These links are then used to create a history.txt file as used by Plexus.
     </extension>
 </addon>
 
+<addon id="plugin.video.iplayerwww" name="iPlayer WWW" version="2.5.4" provider-name="CaptainT, Cas, ihurst, primaeval">
+  <requires>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.requests" version="2.7.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>audio video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">TV and Radio from BBC iPlayer</summary>
+    <description lang="en">This add-on enables playing of Live and Catchup TV (UK only) and Radio content (UK or international) from the BBC iPlayer website. It is not created, maintained or in any way affiliated with the BBC. The add-on only provides an interface to access the BBC iPlayer website from Kodi.</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=239378</forum>
+    <source>https://github.com/vonH/plugin.video.iplayerwww</source>
+    <disclaimer lang="en">This add-on is a front end to the BBC iPlayer website. It is not an official BBC product. A UK TV Licence is required to watch the live, catch-up, or on-demand TV content.</disclaimer>
+  </extension>
+</addon>
+
 <addon id="plugin.program.reddit_browser" name="Reddit Browser" version="1.0.2.1" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
@@ -665,6 +772,103 @@ These links are then used to create a history.txt file as used by Plexus.
     </extension>
 </addon>
 
+<addon id="plugin.googledrive" name="Google Drive" version="1.3.0" provider-name="Carlos Guzman (cguZZman)">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="script.module.clouddrive.common" version="1.2.8"/>
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>image audio video</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en_GB">Google Drive for KODI</summary>
+		<description lang="en_GB">
+Play all your media from Google Drive including Videos, Music and Pictures (including Google Photos).
+ - Unlimited number of accounts.
+ - Team Drives support
+ - Google Photos support
+ - Search over your drive.
+ - Auto-Refreshed slideshow.
+ - Export your videos to your library (.strm files)
+ - Use Google Drive as a source
+ - This program is not affiliated with or sponsored by Google.
+		</description>
+		<summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
+		<description lang="he_IL">
+הפעל את כל המדיה שלך מ- Google Drive כולל וידאו, מוסיקה ותמונות.
+  - מספר בלתי מוגבל של חשבונות.
+  - חיפוש ומציאת הכונן שלך.
+  - ריענון מצגת אוטומטית.
+  - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
+  - שימוש ב-Google Drive כמקור
+  - תוכנית זו אינה קשורה או ממומנת על ידי Google.
+		</description>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+		<source>https://github.com/cguZZman/plugin.googledrive</source>
+		<forum>https://github.com/cguZZman/plugin.googledrive/issues</forum>
+		<website>https://addons.kodi.tv/show/plugin.googledrive</website>
+		<news>
+v1.3.0 released Jan 4, 2019:
+- Ability to specify default playback quality
+v1.2.12 released Oct 2, 2018:
+- Google Photos resolution fix
+v1.2.11 released Sep 20, 2018:
+- Resume points and watched status for strm files in library
+v1.2.10 released Sep 12, 2018:
+- Google Photos fix
+- Order by date fix
+v1.2.8 released Sep 11, 2018:
+- Subtitles assigned in source mode
+- Fixes
+v1.2.6 released Aug 26, 2018:
+- Team drive list fix
+v1.2.4 released Aug 24, 2018:
+- strm files saved in the cloud are exported as is.
+v1.2.3 released Aug 17, 2018:
+- Auto export and watch export folder.
+- Fixes
+v1.2.2 released Jul 15, 2018:
+- Fix requesting files with a single quote in the name in source mode.
+v1.2.1 released Jul 14, 2018:
+- Source mode fix
+v1.2.0 released Jul 12, 2018:
+- Team Drive support
+v1.1.0 released Jul 11, 2018:
+- New mode for source and download services. Both moved to respective addons.
+- Source service fixed.
+v1.0.5 released July 6, 2018:
+- Fix display more than 100 files in source mode
+v1.0.4 released July 5, 2018:
+- Fix exporting and google photos
+v1.0.3 released April 13, 2018:
+- Fix bug playing files with a single quote in the name.
+v1.0.2 released March 15, 2018:
+- Bug fixes
+- Auto export strm
+- Select stream format
+v1.0.1 released Nov 30, 2017:
+- Bug fixes
+v1.0.0 Nov 6, 2017:
+- First release
+		</news>
+		<disclaimer lang="en_GB">
+This cloud drive addon uses a third-party authentication mechanism commonly known as OAuth 2.0.
+If you want to know more about OAuth 2.0 you can visit the following pages:
+- https://oauth.net/2/
+- https://developers.google.com/identity/protocols/OAuth2
+- https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth
+
+Kodi and myself take no responsibility or liability.
+
+The authentication server URL is specified in Settings / Advanced / Sign-in Server. The Sign-in Server implements the OAuth 2.0 protocol.
+The complete source code of the Sign-in Server can be download here: https://github.com/cguZZman/drive-login
+You can clone the project and host it in your own server.
+		</disclaimer>
+	</extension>
+</addon>
+
 <addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.3.0" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
@@ -701,22 +905,6 @@ Add-on by doko.
         <platform lang="en">all</platform>
         <disclaimer lang="en">The authors of this addon do not host any of the content found or have any affiliation with the content providers. This add-on only scrapes web pages.</disclaimer>
     </extension>
-</addon>
-
-<addon id="plugin.video.itv" name="ITV" version="2.5.9" provider-name="LittleWiz">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension library="service.py" point="xbmc.service"  start="startup"/>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary>Plugin for ITV Live Tv Player</summary>
-    <description>ITV Player Front End</description>
-    <news>Fixed regex so video links are now being picked up correctly</news>
-  </extension>
 </addon>
 
 <addon id="script.module.urlresolver" name="URLResolver" version="5.0.38" provider-name="tvaddons">
@@ -756,6 +944,42 @@ Add-on by doko.
     <news>[COLOR mediumpurple][B]CTOON Kodi[/B][/COLOR] - Cartoons[CR][CR][B]0.3.9:[/B][CR]- Added settings (autoplay, clear cache)[CR]- Added disk and memory caching.[CR][CR][B]0.3.0:[/B][CR]- Added support for the CTOON web API.</news>
     <disclaimer lang="en"></disclaimer>
     <platform>all</platform>
+  </extension>
+</addon>
+
+<addon id="plugin.video.lazyf1" version="2019.0.2" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.lazyf1.images" optional="false"/>
+    <import addon="plugin.video.yatp" optional="true"/>
+    <import addon="script.module.torrent2http" optional="false"/>
+    <import addon="script.module.torrent.ts" optional="true"/>
+    <import addon="script.module.torrserver" optional="false"/>
+    <import addon="script.module.beautifulsoup4" version="4.3.0"/>
+    <import addon="script.module.requests" optional="false"/>
+    <import addon="script.module.simpleplugin"/>
+    <import addon="script.module.pyxbmct" version="1.1.4"/>
+    <import addon="script.module.vsdbg"/>
+
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Best for watch Formula 1 Championship (Russian content)</summary>
+    <summary lang="ru">Formula 1 для удобного просмотра</summary>
+    <description lang="en">Best for watch Formula 1 Championship (Russian content)</description>
+    <description lang="ru">Formula 1 для удобного просмотра</description>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshot-02.jpg</screenshot>
+      <screenshot>resources/screenshot-03.jpg</screenshot>
+      <screenshot>resources/screenshot-04.jpg</screenshot>
+      <screenshot>resources/screenshot-05.jpg</screenshot>
+    </assets>
   </extension>
 </addon>
 
@@ -879,6 +1103,65 @@ Add-on by doko.
     <platform>all</platform>
 	<forum>https://www.tvaddons.co/forums</forum>
 	<website>https://www.tvaddons.co</website>
+  </extension>
+</addon>
+
+<addon id="plugin.video.catchuptvandmore"
+       name="Catch-up TV &amp; More"
+       version="0.2.8"
+       provider-name="SylvainCcchetto,wwark">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.youtube.dl" version="18.225.0"/>
+    <import addon="script.module.requests" version="2.12.4"/>
+    <import addon="script.module.codequick" version="0.9.10"/>
+    <import addon="script.module.pytz" version="2014.2"/>
+    <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.pyqrcode" version="0.0.1"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>false</reuselanguageinvoker>
+    <summary lang="fr_fr">Catch-Up TV &amp; More : Replay TV, Live TV et bien plus encore.</summary>
+    <description lang="fr_fr">Catch-Up TV &amp; More regroupe dans un même plugin Kodi l'ensemble des vidéos des différents services et chaînes de Replay TV (rattrapage TV) ainsi que l'accès au direct. De plus, cette extension vous permet d'accéder rapidement aux vidéos et contenus proposés par certains sites internet.</description>
+    <disclaimer lang="fr_fr">Retours de bugs, propositions d'améliorations ou d'ajout de contenus sont les bienvenue ! GitHub ou e-mail.</disclaimer>
+    <summary lang="en_gb">Catch-Up TV &amp; More: It's all in the title.</summary>
+    <description lang="en_gb">Catch-Up TV &amp; More brings together in one Kodi add-on all the videos of the various services and channels of catch-up TV and live TV. Furthermore, this add-on allows you to quickly access the videos and content offered by certain websites.</description>
+    <disclaimer lang="en_gb">Bug reports, suggestions for improvements or content additions are welcome! GitHub or e-mail.</disclaimer>
+    <description lang="he_il">ההרחבה מאפשרת לך להתעדכן בתוכן השידורים תוסף אחד של קודי מרכז את כל קטעי וידאו של שירותים שונים וערוצי תוכן משודר. בנוסף, תוספת זו מאפשרת לך לגשת במהירות לסרטונים ולתכנים המוצעים על ידי אתרים מסוימים.</description>
+    <disclaimer lang="he_il">דוחות שגיאה, הצעות לשיפור או תוספות תוכן יתקבלו בברכה! ל-GitHub או אימייל.</disclaimer>
+    <summary lang="nl_nl">Catch-Up TV &amp; More: Replay tv, Live tv en meer.</summary>
+    <description lang="nl_nl">Catch-Up TV &amp; More brengt replay en live tv van verschikkende diensten en kanalen samen in één Kodi add-on. Bovendien stelt deze add-on u instaat video's van bepaalde websites makkelijk te benaderen.</description>
+    <disclaimer lang="nl_nl">Bug meldingen, suggesties ter verbetering of additionele inhouden zijn welkom! Via GitHub of e-mail.</disclaimer>
+
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>https://forum.kodi.tv/showthread.php?tid=307107</forum>
+    <website>https://catch-up-tv-and-more.github.io/</website>
+    <email>catch.up.tv.and.more at gmail dot com</email>
+    <source>https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore</source>
+    <news>
+[Version 0.2.8]
+[Fix] Live TV - L'équipe TV (FR)
+[Fix] Live TV - NRJ 12 / Cherie 25 (FR)
+[Add] Live TV - Home (UK)
+[Fix] Catch-up TV - MyTF1 (FR)
+[Remove] Catch-up TV - TFOU (FR)
+[Fix] Catch-up TV - France TV Spectacles et Culture (FR)
+    </news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+      <screenshot>resources/screenshots/screenshot-01.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-02.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-04.jpg</screenshot>
+      <screenshot>resources/screenshots/screenshot-05.jpg</screenshot>
+    </assets>
   </extension>
 </addon>
 

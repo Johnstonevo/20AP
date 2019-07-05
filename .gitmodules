@@ -47,3 +47,21 @@
 [submodule "script.module.urlresolver"]
 	path = script.module.urlresolver
 	url = https://github.com/tvaddonsco/script.module.urlresolver.git
+[submodule "plugin.googledrive"]
+	path = plugin.googledrive
+	url = https://github.com/cguZZman/plugin.googledrive.git
+[submodule "plugin.video.iplayerwww"]
+	path = plugin.video.iplayerwww
+	url = https://github.com/vonH/plugin.video.iplayerwww.git
+[submodule "plugin.video.seren"]
+	path = plugin.video.seren
+	url = https://github.com/nixgates/plugin.video.seren.git
+[submodule "plugin.video.catchuptvandmore"]
+	path = plugin.video.catchuptvandmore
+	url = https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore.git
+[submodule "repo.plugin.video.9anime"]
+	path = repo.plugin.video.9anime
+	url = https://github.com/DxCx/repo.plugin.video.9anime.git
+[submodule "plugin.video.lazyf1"]
+	path = plugin.video.lazyf1
+	url = https://github.com/vadyur/plugin.video.lazyf1.git
