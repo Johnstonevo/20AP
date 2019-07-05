@@ -44,3 +44,6 @@
 	path = plugin.video.venom
 	url = https://github.com/123Venom/plugin.video.venom.git
 
+[submodule "script.module.urlresolver"]
+	path = script.module.urlresolver
+	url = https://github.com/tvaddonsco/script.module.urlresolver.git
