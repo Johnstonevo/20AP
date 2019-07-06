@@ -1,23 +1,4 @@
 
-
-
-<dir>
-  <title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Series[/COLOR]==--[/COLOR][/B][/I]</title>
-  <meta>
-    <summary>One Click Play section of cartoon tv series</summary>
-  </meta>
-  <B98>serieslist/videos_categories/series/</B98>
-</dir>
-
-<dir>
-  <title>[I][B][COLORsnow]--==[COLORyellow]Cartoon Studios[/COLOR]==--[/COLOR][/B][/I]</title>
-  <meta>
-    <summary>One Click Play section of cartoon tv series based on the animation studio that produced them</summary>
-  </meta>
-  <B98>serieslist/videos_categories/studios/</B98>
-</dir>
-
-
 <dir>
   <title>Shelby's TV Shows</title>
   <tmdb>list/99282</tmdb>
