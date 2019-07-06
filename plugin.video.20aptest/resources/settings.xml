@@ -474,10 +474,11 @@
 	   
 	
 		<setting id="jen_cat-2" type="bool" label="Enable Jen Category 2." default="true" />
-	    <setting id="jen_name_cat-2" type="text" label="Category Name" default="TV" visible= "eq(-1,true)" enable="eq(-1,true)" />
+	    <setting id="jen_name_cat-2" type="text" label="Category Name." default="Boxsets" visible= "eq(-1,true)" enable="eq(-1,true)" />
 	    <setting id="jen_icon_cat-2" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
 		<setting id="jen_fan_cat-2" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
-	    <setting id="Pastebin-2-1" label="Jen address cat 2" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/tvshows.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
+	    <setting id="Pastebin-2-1" label="Jen address cat 2" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/boxsets.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
+
 
 	
 		<setting id="jen_cat-3" type="bool" label="Enable Jen Category 3." default="true" />
@@ -492,6 +493,12 @@
 		<setting id="jen_fan_cat-4" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
 	    <setting id="Pastebin-4-1" label="Jen address cat 4" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/bobby.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
  
+		<setting id="jen_cat-5" type="bool" label="Enable Jen Category 5." default="true" />
+	    <setting id="jen_name_cat-5" type="text" label="Category Name." default="Documentaries" visible= "eq(-1,true)" enable="eq(-1,true)" />
+	    <setting id="jen_icon_cat-5" type="text" label="Category Icon." default="" visible= "eq(-2,true)" enable="eq(-2,true)" />
+		<setting id="jen_fan_cat-5" type="text" label="Category Fanart." default="" visible= "eq(-3,true)" enable="eq(-3,true)" />
+	    <setting id="Pastebin-5-1" label="Jen address cat 5" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
+
 
 		<setting id="jen_cat-6" type="bool" label="Enable Jen Category 6." default="true" />
 	    <setting id="jen_name_cat-6" type="text" label="Category Name." default="Documentaries" visible= "eq(-1,true)" enable="eq(-1,true)" />

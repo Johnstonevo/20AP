@@ -2944,7 +2944,6 @@ class SelectorDialog(xbmcgui.WindowXMLDialog):
 
 def main_menu():
       
-      
       if len(sys.argv)<2:
        return 0
       dbcur.execute("SELECT COUNT(*) FROM AllData")
@@ -2957,16 +2956,21 @@ def main_menu():
       addDir3('TV Shows'.decode('utf8'),'www',14,'http://simpleicon.com/wp-content/uploads/tv.png','','Tv Shows'.decode('utf8'))
       addDir3('Kids'.decode('utf8'),'www',44,'https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png','','Kids'.decode('utf8'))
       addDir3('Anime'.decode('utf8'),'www',68,'https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png','','Anime'.decode('utf8'))
-      addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','','Live Sports'.decode('utf8'))
-      addDir3('Old lists'.decode('utf8'),'www',42,BASE_LOGO+'jen.png','https://geek-prime.com/wp-content/uploads/2014/02/Destiny-2-4k-hd-wallpaper-invasion-ghaul.jpg','Old Lists'.decode('utf8'))
-      #addDir3('Box'.decode('utf8'),'www',153,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
+      addDir3('Documentaries','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml',43,'http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png','','Documentaries')
+      #addDir3('Old lists'.decode('utf8'),'www',42,BASE_LOGO+'jen.png','https://geek-prime.com/wp-content/uploads/2014/02/Destiny-2-4k-hd-wallpaper-invasion-ghaul.jpg','Old Lists'.decode('utf8'))
       addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png',domain_s+'www.mjdtech.net/content/images/2016/02/traktfeat.jpg','Trakt')
-   
-
+      #addDir3(Addon.getSetting("jen_name_cat-"+str(3)),str(3),43,'icon','fan',Addon.getSetting("jen_name_cat-"+str(3)))
+      addDir3('Youtube','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml',43,'http://simpleicon.com/wp-content/uploads/youtube_1.png','','Youtube')
+      addDir3('Bobby\'s List','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/bobby.xml',43,'https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/images/bobby.png','','Bobby\'s List')
+      addDir3('Darcy\'s List','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/darcy.xml',43,'','','Darcy\'s List')
+      addDir3('Shelby\'s List','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/shelby.xml',43,'','','Shelby\'s List')
+      addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','','Live Sports'.decode('utf8'))
       
       
       
 def movies_menu():
+      
+
       import datetime
       #all_img=get_movie_poster()
       now = datetime.datetime.now()
@@ -2976,6 +2980,8 @@ def movies_menu():
       addDir3('Nutthouse Modern','http://api.themoviedb.org/4/list/43994?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse Modern')
       addDir3('Nutthouse 00\'s','http://api.themoviedb.org/4/list/79502?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse 00\'s')
       addDir3('Nutthouse Classics','http://api.themoviedb.org/4/list/47126?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'http://www.ultimatemoviesuggestions.com/wp-content/uploads/2017/03/cropped-Camera_cinema_consume_entertainment_film_media_movie_photo_play_record_video_television_tripod-256.png',all_img[13],'Nutthouse Classics')
+      addDir3('Boxsets','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/boxsets.xml',43,'https://20ap.000webhostapp.com/images/movie.png',all_img[13],'Boxsets')
+      addDir3('Kids Movies','ttps://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmovies.xml',43,'https://20ap.000webhostapp.com/images/movie.png',all_img[13],'Kids Movies')
 
  
       addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',2,'',all_img[0],'Genres'.decode('utf8'))
@@ -2988,14 +2994,12 @@ def movies_menu():
       addDir3('Based on True Story','https://www.imdb.com/search/title/?genres=biography&title_type=movie,genres&view=simple',114,BASE_LOGO+'based.png',all_img[14],'Based on true story',isr=' ')
       addDir3('Studio'.decode('utf8'),'movie',112,BASE_LOGO+'studio.png','','Studio')
       addDir3('IMDB Popular','https://www.imdb.com/chart/moviemeter?ref_=nv_mv_mpm',114,'',all_img[15],'IMDB Popular',isr=' ')
+      addDir3('Horror','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/horror.xml',43,'https://20ap.000webhostapp.com/images/horror.png',all_img[13],'Boxsets')
+      addDir3('Best Of Lists','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/moviebestof.xml',43,'',all_img[13],'Best Of Lists')
       addDir3('Iain\'s Movies','http://api.themoviedb.org/4/list/97041?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'Iain\'s  Movies')
-
      
-      addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],'Rotten Tomatoes: Best Horror Movies Of All Time'.decode('utf8'))
 
-     
-      #addDir3('Boxsets'.decode('utf8'),'www',153,'http://simpleicon.com/wp-content/uploads/movie-3.png','https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg','Boxsets'.decode('utf8'))
-
+    
      
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
 
@@ -3022,15 +3026,24 @@ def movies_menu():
       addDir3('Lastest HD'.decode('utf8'),domain_s+'www.dvdsreleasedates.com/movies/',28,BASE_LOGO+'latest.png',all_img[5],'Lastest HD'.decode('utf8'),isr=' ')
 
 
-def movies_boxsets():
-      import datetime
+#def movies_boxsets():
+#       import datetime
       #all_img=get_movie_poster()
-      now = datetime.datetime.now()
-      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+#      now = datetime.datetime.now()
+#      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
     
-      all_img=cache.get(get_movie_poster,24, table='posters')
-      addDir3('300','https://api.themoviedb.org/3/collection/125570?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
-
+#      all_img=cache.get(get_movie_poster,24, table='posters')
+      #addDir3('300','https://api.themoviedb.org/3/collection/125570?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
+#      addDir3('The Beatles','users/lockebcl/lists/the-beatles/items/',31,'',all_img[0],'The Beatles'.decode('utf8'))
+#      addDir3('DC Extended Universe','users/tetharion/lists/worlds-of-dc/items/',31,'',all_img[0],'DC Extended Universe'.decode('utf8'))
+#      addDir3('','/',31,'',all_img[0],''.decode('utf8'))
+#      addDir3('','/',31,'',all_img[0],''.decode('utf8'))
+#      addDir3('','/',31,'',all_img[0],''.decode('utf8'))
+#      addDir3('','/',31,'',all_img[0],''.decode('utf8'))
+#      addDir3('Harry Potter','users/goldveia/lists/harry-potter/items/',31,'',all_img[0],'Harry Potter'.decode('utf8'))
+#      addDir3('Marvel Collection','users/donxy/lists/marvel-cinematic-universe/items/',31,'Marvel Collection',all_img[0],''.decode('utf8'))
+#      addDir3('Star Trek','users/dgw/lists/star-trek-canon/items/',31,'',all_img[0],''.decode('utf8'))
+#      addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],'Rotten Tomatoes: Best Horror Movies Of All Time'.decode('utf8'))
  
 
     
@@ -3047,7 +3060,7 @@ def movies_boxsets():
            
                url=url.decode('base64')
               
-             addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
        except  Exception as e:
          logging.warning(e)
          pass
@@ -5509,8 +5522,8 @@ def get_jen_list(url,icon,fan):
     for i in range (1,40):
         if stop_all==1:
           break
-        url2=Addon.getSetting("Pastebin-%s-"%url+str(i))
- 
+        #url2=Addon.getSetting("Pastebin-%s-"%url+str(i))
+        url2='https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/'+url
         if 'http' not in url2:
           continue
         if Addon.getSetting("jen_fan_cat-"+str(i)):
@@ -8569,7 +8582,7 @@ def fast_play(final_link):
     ok=xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=listItem)
 def get_jen_cat():
     #addNolink( '[COLOR blue][B][I]Update Jen DB[/I][/B][/COLOR]', 'www',131,False, iconimage="DefaultFolder.png",fanart="DefaultFolder.png",description=' ')
-    for i in range (1,7):
+    for i in range (1,20):
 
         cat_ena=Addon.getSetting("jen_cat-"+str(i))
         
@@ -14518,3 +14531,6 @@ done1=1
 logging.warning('Fullscreen')
 
 
+########################################################################################################
+##EXTRAS##
+########################################################################################################
