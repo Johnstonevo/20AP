@@ -1,19 +1,4 @@
 
-<dir>
-  <title>Cartoons</title>
-  <wctoon>category/cartoon-list</wctoon>
-</dir>
-
-<dir>
-  <title>Animated Movies</title>
-  <wctoon>category/movie-list</wctoon>
-</dir>
-
-
-<dir>
-  <title>Search Site</title>
-  <wctoon>wcsearch</wctoon>
-</dir>
 
 
 <dir>
@@ -21,7 +6,7 @@
   <meta>
     <summary>One Click Play section of cartoon tv series</summary>
   </meta>
-  <B98>serieslist/videos_categories/series</B98>
+  <B98>serieslist/videos_categories/series/</B98>
 </dir>
 
 <dir>
@@ -29,7 +14,7 @@
   <meta>
     <summary>One Click Play section of cartoon tv series based on the animation studio that produced them</summary>
   </meta>
-  <B98>serieslist/videos_categories/studios</B98>
+  <B98>serieslist/videos_categories/studios/</B98>
 </dir>
 
 
