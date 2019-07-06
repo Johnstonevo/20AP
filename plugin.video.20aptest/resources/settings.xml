@@ -453,7 +453,7 @@
 		
     </category>
 	
-	
+	<!--
 	<category label="Jen Address">
 	    
         
@@ -507,7 +507,7 @@
 	    <setting id="Pastebin-6-1" label="Jen address cat 6" type="text" default="https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml" visible= "eq(-4,true)" enable="eq(-4,true)"/>
 
 	</category>
-	
+	-->
 	
 		    <category label="Torrent Player">
 	    

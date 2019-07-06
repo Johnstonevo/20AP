@@ -2860,16 +2860,17 @@ def kids_world():
     order_by='original_title.asc'
     addDir3('Kid\'s Movies','http://api.themoviedb.org/4/list/47128?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://20ap.000webhostapp.com/images/movie.png','','')
     addDir3('Kid\'s TV','http://api.themoviedb.org/4/list/47132?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://20ap.000webhostapp.com/images/movie.png','','')
-    addDir3('Kid\'s Boxsets','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/kids/kidsmoviesbox.xml',43,'https://orig00.deviantart.net/cb42/f/2015/092/4/7/disney_pixar_folder_icon_by_mikromike-d8o56l8.png','','Kids Boxsets')
+    addDir3('Kid\'s Boxsets','kids/kidsmoviesbox.xml',43,'https://orig00.deviantart.net/cb42/f/2015/092/4/7/disney_pixar_folder_icon_by_mikromike-d8o56l8.png','','Kids Boxsets')
   
     addDir3('Cartoons'.decode('utf8'),'www',58,BASE_LOGO+'cartoons.png','http://digitalspyuk.cdnds.net/16/31/980x490/landscape-1470221630-cartoon-heroes.jpg','Cartoons'.decode('utf8'))
     addDir3('Children\'s Movies - Classic','users/gymbunny/lists/childrens-movies-classic/items/',31,'',all_img[0],''.decode('utf8'))
     addDir3('Pixar'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=3&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://elestoque.org/wp-content/uploads/2017/12/Pixar-lamp.png','','Pixar'.decode('utf8'))
     addDir3('Walt Disney Pictures'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=2&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://i.ytimg.com/vi/9wDrIrdMh6o/hqdefault.jpg','','Walt Disney Pictures'.decode('utf8'))
-    addDir3('Pokemon','users/douglasamcintosh/lists/pokemon/items/',31,'',all_img[0],''.decode('utf8'))
+    addDir3('Pokemon Movies'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=12654&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'','',''.decode('utf8'))
+    addDir3('Pokemon TV'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=12654&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'','',''.decode('utf8'))
 
-    addDir3('Darcy\'s List','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/darcy.xml',43,'','','Darcy\'s List')
-    addDir3('Shelby\'s List','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/shelby.xml',43,'','','Shelby\'s List')
+    addDir3('Darcy\'s List','base/darcy.xml',43,'','','Darcy\'s List')
+    addDir3('Shelby\'s List','base/shelby.xml',43,'','','Shelby\'s List')
 
     addDir3('Search Watchcartoon'.decode('utf8'),'search',62,'https://upload.wikimedia.org/wikipedia/commons/0/0e/Wikipe-tan_sailor_fuku.png','https://worldwithouthorizons.com/wp-content/uploads/Artsy-2016-4K-Anime-Wallpaper-1280x720.jpg','Search'.decode('utf8'))
 
@@ -2963,6 +2964,7 @@ def main_menu():
        return 0
       dbcur.execute("SELECT COUNT(*) FROM AllData")
       #fix_setting()
+      order_by='primary_release_date.desc'
       match = dbcur.fetchone()
       level_index=(match[0]/100)
       if level_index>9:
@@ -2971,15 +2973,17 @@ def main_menu():
       addDir3('TV Shows'.decode('utf8'),'www',14,'http://simpleicon.com/wp-content/uploads/tv.png','','Tv Shows'.decode('utf8'))
       addDir3('Kids'.decode('utf8'),'www',44,'https://www.shareicon.net/data/512x512/2016/10/11/842254_people_512x512.png','','Kids'.decode('utf8'))
       addDir3('Anime'.decode('utf8'),'www',68,'https://cdn3.iconfinder.com/data/icons/people-professions/512/anime_2-512.png','','Anime'.decode('utf8'))
-      addDir3('Documentaries','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/Documentaries.xml',43,'http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png','','Documentaries')
-      addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png',domain_s+'www.mjdtech.net/content/images/2016/02/traktfeat.jpg','Trakt')
-      addDir3('Gamer YT','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/mrg.xml',43,'http://simpleicon.com/wp-content/uploads/youtube_1.png','','Inc Lashana\'s Grumpy Dwarf')
-      addDir3('Youtube','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/menu.xml',43,'http://simpleicon.com/wp-content/uploads/youtube_1.png','','Youtube')
+      addDir3('Documentaries','base/Documentaries.xml',43,'http://icons.iconarchive.com/icons/icons8/android/512/Cinema-Documentary-icon.png','','Documentaries')
+      addDir3('Gamer YT','yt/mrg.xml',43,'http://simpleicon.com/wp-content/uploads/youtube_1.png','','Inc Lashana\'s Grumpy Dwarf')
+      addDir3('Youtube','yt/menu.xml',43,'','','')
+      addDir3('Radio','base/radio.xml',43,'','','')
       addDir3('Bobby\'s'.decode('utf8'),'www',154,'','','Bobby\'s'.decode('utf8'))
       addDir3('Iain\'s'.decode('utf8'),'www',153,'','','Iain\'s'.decode('utf8'))
-      addDir3('Old lists'.decode('utf8'),'www',42,BASE_LOGO+'jen.png','https://geek-prime.com/wp-content/uploads/2014/02/Destiny-2-4k-hd-wallpaper-invasion-ghaul.jpg','Old Lists'.decode('utf8'))
-      
-      
+      addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png',domain_s+'www.mjdtech.net/content/images/2016/02/traktfeat.jpg','Trakt')
+      addDir3('Old lists','base/base.xml',43,'','','')
+
+
+
 def movies_menu():
       
 
@@ -2987,17 +2991,17 @@ def movies_menu():
       #all_img=get_movie_poster()
       now = datetime.datetime.now()
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
-    
+      order_by='primary_release_date.desc'
       all_img=cache.get(get_movie_poster,24, table='posters')
       addDir3('Once click free movies','https://moviesmax.net',150,'',all_img[1],'Once click free movies')
       addDir3('Nutthouse Modern','http://api.themoviedb.org/4/list/43994?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse Modern')
       addDir3('Nutthouse 00\'s','http://api.themoviedb.org/4/list/79502?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png',all_img[13],'Nutthouse 00\'s')
       addDir3('Nutthouse Classics','http://api.themoviedb.org/4/list/47126?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'http://www.ultimatemoviesuggestions.com/wp-content/uploads/2017/03/cropped-Camera_cinema_consume_entertainment_film_media_movie_photo_play_record_video_television_tripod-256.png',all_img[13],'Nutthouse Classics')
-      addDir3('Boxsets','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/boxsets.xml',43,'https://20ap.000webhostapp.com/images/movie.png',all_img[13],'Boxsets')
-      addDir3('DC Extended Universe','users/tetharion/lists/worlds-of-dc/items/',31,'',all_img[0],'DC Extended Universe'.decode('utf8'))
+      addDir3('Boxsets','base/boxsets.xml',43,'https://20ap.000webhostapp.com/images/movie.png',all_img[13],'Boxsets')
+      addDir3('DC '.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=9993&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'','','DC Extended Universe'.decode('utf8'))
       addDir3('Harry Potter','users/goldveia/lists/harry-potter/items/',31,'',all_img[0],'Harry Potter'.decode('utf8'))
-      addDir3('Marvel Collection','users/donxy/lists/marvel-cinematic-universe/items/',31,'Marvel Collection',all_img[0],''.decode('utf8'))
-      addDir3('Best Of Lists','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/movies/moviebestof.xml',43,'',all_img[13],'Best Of Lists')
+      addDir3('Marvel'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=7505&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','','Marvel'.decode('utf8'))
+      addDir3('Best Of Lists','movies/moviebestof.xml',43,'',all_img[13],'Best Of Lists')
       addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',2,'',all_img[0],'Genres'.decode('utf8'))
       addDir3('Popular','http://api.themoviedb.org/3/movie/popular?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[4],'Popular')
       
@@ -3007,7 +3011,7 @@ def movies_menu():
       addDir3('Based on True Story','https://www.imdb.com/search/title/?genres=biography&title_type=movie,genres&view=simple',114,BASE_LOGO+'based.png',all_img[14],'Based on true story',isr=' ')
       addDir3('Studio'.decode('utf8'),'movie',112,BASE_LOGO+'studio.png','','Studio')
       addDir3('IMDB Popular','https://www.imdb.com/chart/moviemeter?ref_=nv_mv_mpm',114,'',all_img[15],'IMDB Popular',isr=' ')
-      addDir3('Horror','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/horror.xml',43,'https://20ap.000webhostapp.com/images/horror.png',all_img[13],'Boxsets')
+      addDir3('Horror','base/horror.xml',43,'https://20ap.000webhostapp.com/images/horror.png',all_img[13],'Boxsets')
     
      
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
@@ -3038,6 +3042,7 @@ def movies_menu():
 def iains():
       import datetime
       #all_img=get_movie_poster()
+      order_by='primary_release_date.desc'
       now = datetime.datetime.now()
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
     
@@ -3047,9 +3052,9 @@ def iains():
       addDir3('Iain\'s TV','http://api.themoviedb.org/4/list/97042?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'Iain\'s  TV')
       addDir3('Nutthouse Man Shed','http://api.themoviedb.org/4/list/47260?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'')
       addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','','Live Sports'.decode('utf8'))
-      addDir3('Youtube Tech Channels','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/raspberrypi.xml',43,'',all_img[13],'')
-      addDir3('Youtube Tutorials','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/Tutorials.xml',43,'',all_img[13],'')
-      addDir3('F1F','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/f1f.xml',43,'',all_img[13],'')
+      addDir3('Youtube Tech Channels','yt/raspberrypi.xml',43,'',all_img[13],'')
+      addDir3('Youtube Tutorials','yt/Tutorials.xml',43,'',all_img[13],'')
+      addDir3('F1F','f1f.xml',43,'',all_img[13],'')
       addDir3('Star Trek','users/dgw/lists/star-trek-canon/items/',31,'',all_img[0],''.decode('utf8'))
     
      
@@ -3075,6 +3080,7 @@ def bobbys():
       import datetime
       #all_img=get_movie_poster()
       now = datetime.datetime.now()
+      order_by='primary_release_date.desc'
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
     
       all_img=cache.get(get_movie_poster,24, table='posters')
@@ -3082,9 +3088,11 @@ def bobbys():
 
       addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],'Rotten Tomatoes: Best Horror Movies Of All Time'.decode('utf8'))
       addDir3('Horror Films Trakt List','users/jealad/lists/horror/items/',31,'',all_img[0],''.decode('utf8'))
+      addDir3('Hammer Films'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=1314&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'','',''.decode('utf8'))
+
       addDir3('Silly Horror Films','http://api.themoviedb.org/4/list/47250?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'')
       addDir3('TV','http://api.themoviedb.org/4/list/113086?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Youtube','https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/yt/bobby.xml',43,'',all_img[13],'')
+      addDir3('Youtube','yt/bobby.xml',43,'',all_img[13],'')
 
     
      
@@ -3105,6 +3113,32 @@ def bobbys():
          logging.warning(e)
          pass
 
+def music():
+      import datetime
+      #all_img=get_movie_poster()
+      now = datetime.datetime.now()
+      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+    
+      all_img=cache.get(get_movie_poster,24, table='posters')
+
+    
+     
+      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
+
+      match = dbcur.fetchone()
+      if match!=None:
+       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
+       try:
+           if url!=' ':
+             if 'http' not  in url:
+           
+               url=url.decode('base64')
+              
+             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+       except  Exception as e:
+         logging.warning(e)
+         pass
 
 
 def tv_neworks():
@@ -3161,6 +3195,7 @@ def tv_menu():
       import datetime
       now = datetime.datetime.now()
       all_img=cache.get(get_tv_poster,24, table='posters')
+      order_by='primary_release_date.asc'
       addDir3('Nutthouse Currently Running TV Shows','http://api.themoviedb.org/4/list/47121?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn3.iconfinder.com/data/icons/pictofoundry-pro-vector-set/512/FlatScreenTV-512.png',all_img[13],'Nutthouse Currently Running TV Shows')
       addDir3('Nutthouse Finished TV Series','http://api.themoviedb.org/4/list/47119?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,'https://cdn4.iconfinder.com/data/icons/retro-tv/100/vintage_tv8_fixed-512.png',all_img[13],'Nutthouse Finished TV Series')
       addDir3('Nutthouse Crime Scene','http://api.themoviedb.org/4/list/97542?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Nutthouse Crime Scene')
@@ -3180,6 +3215,7 @@ def tv_menu():
       addDir3('Popular 80\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1980-01-01,1989-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 80\'s',isr=' ')
       addDir3('Popular 90\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=1990-01-01,1999-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 90\'s',isr=' ')
       addDir3('Popular 00\'s','https://www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,BASE_LOGO+'popimdbtv.png',all_img[8],'Popular 00\'s',isr=' ')
+      addDir3('Marvel'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=aa28550e5a65f567fc512bd0290ce6fb&with_companies=7505&language=en&sort_by={0}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','','Marvel'.decode('utf8'))
       addDir3('Based on true story','https://www.imdb.com/search/title/?title_type=tv_series&genres=biography&sort=num_votes,desc&explore=title_type,genres',114,'',all_img[8],'Based on true story',isr=' ')
       addDir3('Series Tracker','tv',32,BASE_LOGO+'tracks.png',all_img[6],'Series tracker',isr=' ')
       addDir3('Watched Shows','tv',91,BASE_LOGO+'watchedtv.png',all_img[7],'watched shows',isr=' ')
@@ -5563,7 +5599,7 @@ def get_jen_list(url,icon,fan):
         if stop_all==1:
           break
         #url2=Addon.getSetting("Pastebin-%s-"%url+str(i))
-        url2='https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/base/'+url
+        url2='https://raw.githubusercontent.com/Johnstonevo/20ap/master/base/20AP/'+url
         if 'http' not in url2:
           continue
         if Addon.getSetting("jen_fan_cat-"+str(i)):
@@ -14462,6 +14498,9 @@ elif mode2==153:
   iains()
 elif mode2==154:
   bobbys()
+elif mode2==155:
+  music()
+
 elif mode2==999:
     xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'Episode not aired yet...'.decode('utf8'))).encode('utf-8'))
 if len(sys.argv)>1:
