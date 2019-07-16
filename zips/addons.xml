@@ -728,7 +728,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.0.21" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.0.24" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -758,6 +758,16 @@ Add-on by doko.
 			<fanart>fanart-fox-gold-final.png</fanart>
 		</assets>
 		<news>
+Changelog 1.0.24:
+Fix Automatic Episode Resume
+
+Changelog 1.0.23:
+Fixed disable/enabled of providers
+Clean up some missed logging
+
+Changelog 1.0.22:
+Fixed Background Scraping Display style
+
 Changelog 1.0.21:
 Fixed issue with Custom Providers refresh not honoring disabled status (Actually this time)
 Added try/except for property/progress updates in getSources module
