@@ -58,3 +58,6 @@
 	path = repo.plugin.video.9anime
 	url = https://github.com/DxCx/repo.plugin.video.9anime.git
 
+[submodule "plugin.video.9anime"]
+	path = plugin.video.9anime
+	url = https://github.com/DxCx/plugin.video.9anime.git

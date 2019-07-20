@@ -519,7 +519,7 @@ Speed Increase for playlist building
 
 <addon id="plugin.video.20aptest"
 	   name="20aptest"
-	   version="19.07.20"
+	   version="19.07.20.1"
 	   provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -636,12 +636,12 @@ These links are then used to create a history.txt file as used by Plexus.
   </extension>
 </addon>
 
-<addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.3" provider-name="mcobit">
+<addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.4" provider-name="mcobit">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>games</provides>
+        <provides>game</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
         <language/>

@@ -22,6 +22,21 @@
 	<content>set</content>
 </dir>
 
+<dir>
+	<title>Ant-Man Collection (2015-2018)</title>
+	<tmdb>collection/422834</tmdb>
+	<summary>A superhero film series based on the Marvel Comics character Ant-Man, and part of the Marvel Cinematic Universe (MCU) series. The series is centered on Scott Lang, an ex-convict that stole a suit that allows him to change his size. Hank Pym, the original Ant-Man, discovered the subatomic particles that make the transformation possible. Hank mentors Scott to take over the superhero alias.</summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/s0Sl2YemtW2ZwhkrrKksbTUja1L.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/2KjtWUBiksmN8LsUouaZnxocu5N.jpg</fanart>
+</dir>
+
+<dir>
+	<title>The Avengers Collection (2012-2019)</title>
+	<tmdb>collection/86311</tmdb>
+	<summary>A superhero film series produced by Marvel Studios based on the Marvel Comics superhero team of the same name, and part of the Marvel Cinematic Universe (MCU). The series features an ensemble cast from the Marvel Cinematic Universe series films, as they join forces for the peacekeeping organization S.H.I.E.L.D. led by Nick Fury.</summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/yFSIUVTCvgYrpalUktulvk3Gi5Y.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/zuW6fOiusv4X9nnW3paHGfXcSll.jpg</fanart>
+</dir>
 
 <dir>
 	<title>Back To The Future Collection</title>
@@ -61,6 +76,13 @@
 	  <content>set</content>
     </dir>
 
+<dir>
+	<title>Black Panther Collection (2018-2021)</title>
+	<tmdb>collection/529892</tmdb>
+	<summary></summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/uVnN6KnfDuHiC8rsVsSc7kk0WRD.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/1Jj7Frjjbewb6Q6dl6YXhL3kuvL.jpg</fanart>
+</dir>
 
 
 <dir>
@@ -103,6 +125,13 @@
 	<summary>Matt Damon is Jason Bourne, an elite government agent determined to outwit and outmaneuver anyone who stands in the way of his finding out the secrets of his mysterious past. Follow his explosive, action-packed adventures in five blockbuster films from one of the most popular series of all time: The Bourne Identity, The Bourne Supremacy, The Bourne Ultimatum, The Bourne Legacy and Jason Bourne.</summary>
 </dir>
 
+<dir>
+	<title>Captain America Collection (2011-2016)</title>
+	<tmdb>collection/131295</tmdb>
+	<summary>A superhero film series based on the Marvel Comics character Captain America, and part of the Marvel Cinematic Universe (MCU) series. The series is centered on Steve Rogers, a man from World War II era Brooklyn who is transformed into super-soldier Captain America.</summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/r14U0p13M99ccWhMg0wHprp8TQi.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/nZSYqitBkAvmoq5IrsGsSWuhSC8.jpg</fanart>
+</dir>
 
 <dir>
 	<title>Cocoon Collection (1985-1988)</title>
@@ -134,13 +163,6 @@
 
 
 
-<dir>
-	<title>Cloverfield Collection (2008-2018)</title>
-	<tmdb></tmdb>
-	<summary></summary>
-	<thumbnail>https://image.tmdb.org/t/p/original/as01o40tJ2FhtheqeXf7bVZ0EQO.jpg</thumbnail>
-	<fanart></fanart>
-</dir>
 
 <dir>
 	<title>DC Extended Universe</title>
@@ -152,6 +174,14 @@
 	<content>set</content>
 </dir>
 
+<dir>
+	<title>Deadpool Collection (2016-2018)</title>
+	<tmdb>collection/448150</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/u9vctxUKeGRZ4x2Yiaqj2y3AeYv.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/hBQOWY8qWXJVFAc8yLTh1teIu43.jpg</fanart>
+  <summary></summary>
+	<content>boxset</content>
+</dir>
 
 <dir>
 	<title>Death Wish Collection (1974-1994)</title>
@@ -244,6 +274,17 @@
 </dir>
 
 <dir>
+	<title>Godzilla Collection (2014-2020)</title>
+	<tmdb>collection/535313</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/gsquLHxpVk8PxIQnnRYAIAzArWE.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/rgUy42XHhUyrM1IZzSLYjQcchq4.jpg</fanart>
+	<summary>
+	</summary>
+	<content>set</content>
+</dir>
+
+
+<dir>
 	<title>Gremlins Collection</title>
 	<tmdb>collection/89151</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/mcrb8SdAOrJpSMbWWS3Hv304FCG.jpg</thumbnail>
@@ -251,6 +292,15 @@
 	<content>set</content>
 	<summary>Gremlins is a 1984 American horror comedy film directed by Joe Dante, Steven Spielberg was the film's executive producer and the screenplay was written by Chris Columbus. The film is about a young man who receives a strange creature called a Mogwai as a pet, which then spawns other creatures who transform into small, destructive, evil monsters. This story was continued with a sequel, Gremlins 2: The New Batch, released in 1990. Unlike the lighter sequel, the original Gremlins opts for more black comedy, which is balanced against a Christmas-time ting. Both films were the center of large merchandising campaigns.</summary>
 </dir>
+
+<dir>
+	<title>Guardians of the Galaxy Collection (2014-2022)</title>
+	<tmdb>collection/284433</tmdb>
+	<summary>A superhero film series based on the Marvel Comics superhero team Guardians of the Galaxy, and part of the Marvel Cinematic Universe (MCU) series. The series is centered on a band of former intergalactic outlaws, who have teamed together to protect the Galaxy from planetary threats. Led by Peter Quill (Star-Lord) the roster includes Gamora, Drax the Destroyer, Rocket Raccon & Groot.</summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/kFWLxUwcSpiLzszZbxUIZT9g6WR.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/b09vRh5oOda2REMlv9yiMxULRIt.jpg</fanart>
+</dir>
+
 
 <dir>
 	<title>Harold & Kumar Collection (2004-2011)</title>
@@ -356,6 +406,14 @@
 </dir>
 
 <dir>
+	<title>Iron Man Collection (2008-2013)</title>
+	<tmdb>collection/131292</tmdb>
+	<summary>A superhero film series based on the Marvel Comics character of the same name and part of the Marvel Cinematic Universe (MCU) series. Tony Stark AKA Iron Man, an industrialist and master engineer uses a powered exoskeleton to fight foes, with the aid of his personal assistant and love interest Pepper Potts.</summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/fbeJ7f0aD4A112Bc1tnpzyn82xO.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/rI8zOWkRQJdlAyQ6WJOSlYK6JxZ.jpg</fanart>
+</dir>
+
+<dir>
 	<title>Jack Reacher Collection</title>
 	<tmdb>collection/403374</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/7baSUtFKi8PQ9SLo6ECYBfAW2K8.jpg</thumbnail>
@@ -367,12 +425,32 @@
 
 
 <dir>
+	<title>John Wick Collection (2014-2021)</title>
+	<tmdb>collection/404609</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/uGhPxTrmT5yASzZrR1oz1ft9UWr.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/fSwYa5q2xRkBoOOjueLpkLf3N1m.jpg</fanart>
+	<content>set</content>
+	<summary>A neo-noir action thriller film series that follows a former assassin, Jonathan 'John' Wick who come outs of retirement seeking vengeance for the theft of his vintage car and the killing of his puppy.</summary>
+</dir>
+
+
+<dir>
 	<title>Jump Street Collection</title>
 	<tmdb>collection/212562</tmdb>
 	<thumbnail>https://image.tmdb.org/t/p/original/vufY0iuDNXGEdYOgZNcJFAEZeak.jpg</thumbnail>
 	<fanart>https://image.tmdb.org/t/p/original/iiAbTNYXpMadPDH4MkjUoJzcGn4.jpg</fanart>
 	<content>set</content>
 	<summary>A series of films based on the lives of the Jump Street program, an undercover police unit in which young-looking detectives infiltrate schools and similar tings attended by minors to investigate crimes.
+	</summary>
+</dir>
+
+<dir>
+	<title>Jurassic Park Collection (1993-2021)</title>
+	<tmdb>collection/328</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/qIm2nHXLpBBdMxi8dvfrnDkBUDh.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/njFixYzIxX8jsn6KMSEtAzi4avi.jpg</fanart>
+	<content>set</content>
+	<summary>An American science fiction adventure film series based on the novel of the same name by Michael Crichton. The films center on the fictional Isla Nublar near Costa Rica in the Central American Pacific Coast, where a billionaire philanthropist and a small team of genetic scientists have created an amusement park of cloned dinosaurs.
 	</summary>
 </dir>
 
@@ -482,6 +560,25 @@
 	<content>boxset</content>
 </dir>
 
+
+
+<dir>
+	<title>Men In Black Collection (1997-2019)</title>
+	<tmdb>collection/86055</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/rWcgZaoJ0nxTFRn0H6w9bdtoDUI.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xKz6YaOvmnIJQ3MYIpnaa7FBaAB.jpg</fanart>
+	<content>set</content>
+	<summary>Men in Black is a series of American science fiction action comedy films directed by Barry Sonnenfeld, and based on Malibu / Marvel comic book series The Men in Black by Lowell Cunningham. The first film, Men in Black, was released in 1997, the second film, Men in Black II, in 2002, and the third film, Men in Black 3 was released in 2012.</summary>
+</dir>
+
+<dir>
+	<title>Mission: Impossible Collection (1996-2022)</title>
+	<tmdb>collection/87359</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/geEjCGfdmRAA1skBPwojcdvnZ8A.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/49L0c5utmm0A4BkeDafM9BOhyBT.jpg</fanart>
+	<content>set</content>
+	<summary>Mission: Impossible is a series of a secret agent thriller films based on the popular television series. They chronicle the missions of a team of secret government agents known as the Impossible Missions Force (IMF) under the leadership of Hunt.</summary>
+</dir>
 
 <dir>
 	<title>Monty Python Collection</title>
@@ -623,6 +720,18 @@
 	<content>set</content>
 </dir>
 
+
+
+<dir>
+	<title>Spider-Man (Avengers) Collection (2017-2019)</title>
+	<tmdb>collection/531241</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/nogV4th2P5QWYvQIMiWHj4CFLU9.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/AvnqpRwlEaYNVL6wzC4RN94EdSd.jpg</fanart>
+	<summary>A superhero film series based on the Marvel character Spider-Man, portrayed by Tom Holland. The series is centred on Peter Parker, an academically gifted but socially inept high school student who fights crime as Spider-Man, a member of The Avengers.</summary>
+	<content>set</content>
+</dir>
+
+
 <dir>
 	<title>Smokey And The Bandit Collection</title>
 	<tmdb>collection/87220</tmdb>
@@ -703,6 +812,15 @@ Sorted by production order, not in-universe chronology. I think Star Trek should
 	<content>set</content>
 </dir>
 
+<dir>
+	<title>Thor Collection (2011-2017)</title>
+	<tmdb>collection/131296</tmdb>
+	<summary>A superhero film series based on the comic book character of the same name published by Marvel Comics, and part of the Marvel Cinematic Universe (MCU) film series. The series centers on Thor, the crown prince of Asgard.</summary>
+	<thumbnail>https://image.tmdb.org/t/p/original/yw7gr7DhHHVTLlO8Se8uH17TDMA.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/FZhEgAes4PX86BJGJPXyZCXHrj.jpg</fanart>
+</dir>
+
+
 	<dir>
 		<title>Transformers Collection</title>
 		<tmdb>collection/8650</tmdb>
@@ -782,3 +900,12 @@ Sorted by production order, not in-universe chronology. I think Star Trek should
 			<thumbnail>https://image.tmdb.org/t/p/original/6BYNXJ6fS7HKsotqWiUJzYiFZJ0.jpg</thumbnail>
 			<fanart>https://image.tmdb.org/t/p/original/22p3xTTuXc9FEnzyGlfB9KBtR4Y.jpg</fanart>
 		</dir>
+
+
+<dir>
+	<title></title>
+	<tmdb>collection/</tmdb>
+	<summary></summary>
+	<thumbnail></thumbnail>
+	<fanart></fanart>
+</dir>

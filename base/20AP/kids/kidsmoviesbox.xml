@@ -220,6 +220,8 @@ The first three films in the series follow Daniel LaRusso, who learns to harness
 </dir>
 
 
+
+
 <dir>
 	<title>Pokémon Collection (1998-2017)</title>
 	<tmdb>collection/34055</tmdb>
@@ -269,6 +271,14 @@ The first three films in the series follow Daniel LaRusso, who learns to harness
 	<content>boxset</content>
 </dir>
 
+<dir>
+	<title>Spider-Man (Avengers) Collection (2017-2019)</title>
+	<tmdb>collection/531241</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/nogV4th2P5QWYvQIMiWHj4CFLU9.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/AvnqpRwlEaYNVL6wzC4RN94EdSd.jpg</fanart>
+	<summary>A superhero film series based on the Marvel character Spider-Man, portrayed by Tom Holland. The series is centred on Peter Parker, an academically gifted but socially inept high school student who fights crime as Spider-Man, a member of The Avengers.</summary>
+	<content>set</content>
+</dir>
 
 
 
@@ -314,5 +324,14 @@ Teenage Mutant Ninja Turtles is a film series based on the comic book characters
 	<fanart>https://image.tmdb.org/t/p/w1000_and_h563_face/9FBwqcd9IRruEDUrTdcaafOMKUq.jpg</fanart>
   <summary>Toy Story is a CGI animated media franchise created by Pixar and distributed by Walt Disney Pictures. The franchise is based on the anthropomorphic concept that all toys, unknown to humans, are secretly alive, and the films focus on a diverse group of toys that feature a classic cowboy named Sheriff Woody and a modern spaceman named Buzz Lightyear. The group unexpectedly embark on adventures that challenge and change them.
   </summary>
+	<content>boxset</content>
+</dir>
+<dir>
+	<title>Wreck-It Ralph Collection (2012-2018)</title>
+	<tmdb>collection/404825</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/ybIRfvxi0iNauoOAGyRRAZE6QQh.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/KmHRL6xX7XVOMwzDI2MtOW0I4D.jpg</fanart>
+  <summary>A computer-animated action-adventure comedy film series that follows the adventures of video game characters from Litwak's Family Fun Center & Arcade: Wreck-It Ralph, the antagonist of the arcade game Fix-It Felix Jr; Vanellope von Schweetz, a racer/glitch in Sugar Rush; Fix-It Felix Jr., a repairman who is the hero of Fix-It Felix Jr; Sergeant Tamora Jean Calhoun, the lead character of Hero's Duty and many other characters that are introduced along the way.
+	</summary>
 	<content>boxset</content>
 </dir>
