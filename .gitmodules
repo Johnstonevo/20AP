@@ -7,7 +7,6 @@
 [submodule "plugin.video.youtube"]
 	path = plugin.video.youtube
 	url = https://github.com/jdf76/plugin.video.youtube.git
-
 [submodule "script.module.lambdascrapers"]
 	path = script.module.lambdascrapers
 	url = https://github.com/I-A-C/script.module.lambdascrapers.git
@@ -29,16 +28,12 @@
 [submodule "plugin.video.ctoonkodi"]
 	path = plugin.video.ctoonkodi
 	url = https://github.com/doko-desuka/plugin.video.ctoonkodi.git
-[submodule "scrapers"]
-	path = scrapers
-	url = https://github.com/teamuniversal/scrapers.git
 [submodule "plugin.video.wonderfulsubs"]
 	path = plugin.video.wonderfulsubs
 	url = https://github.com/DxCx/plugin.video.wonderfulsubs.git
 [submodule "plugin.video.venom"]
 	path = plugin.video.venom
 	url = https://github.com/123Venom/plugin.video.venom.git
-
 [submodule "script.module.urlresolver"]
 	path = script.module.urlresolver
 	url = https://github.com/tvaddonsco/script.module.urlresolver.git
@@ -54,13 +49,6 @@
 [submodule "plugin.video.catchuptvandmore"]
 	path = plugin.video.catchuptvandmore
 	url = https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore.git
-[submodule "repo.plugin.video.9anime"]
-	path = repo.plugin.video.9anime
-	url = https://github.com/DxCx/repo.plugin.video.9anime.git
-
-[submodule "plugin.video.9anime"]
-	path = plugin.video.9anime
-	url = https://github.com/DxCx/plugin.video.9anime.git
 [submodule "plugin.video.openmeta"]
 	path = plugin.video.openmeta
 	url = https://github.com/a4k-openproject/plugin.video.openmeta.git
