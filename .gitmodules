@@ -61,3 +61,6 @@
 [submodule "plugin.video.9anime"]
 	path = plugin.video.9anime
 	url = https://github.com/DxCx/plugin.video.9anime.git
+[submodule "plugin.video.openmeta"]
+	path = plugin.video.openmeta
+	url = https://github.com/a4k-openproject/plugin.video.openmeta.git
