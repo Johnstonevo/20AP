@@ -52,3 +52,6 @@
 [submodule "plugin.video.openmeta"]
 	path = plugin.video.openmeta
 	url = https://github.com/a4k-openproject/plugin.video.openmeta.git
+[submodule "plugin.video.lazyf1"]
+	path = plugin.video.lazyf1
+	url = https://github.com/vadyur/plugin.video.lazyf1.git
