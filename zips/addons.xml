@@ -129,6 +129,7 @@ You can clone the project and host it in your own server.
 [add] Adaptive (MP4) and Adaptive (WEBM) to MPEG-DASH - Video quality
 [fix] live stream playback
 [fix] sqlite requests breaking when another add-on/module uses sqlite3.register_converter(..)
+[fix] signal endofdirectory in case of a provider navigation exception |contrib: enen92|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -539,7 +540,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="plugin.video.wonderfulsubs" name="WonderfulSubs : Anime Subs &amp; Dubs" provider-name="DxCx" version="0.0.23">
+<addon id="plugin.video.wonderfulsubs" name="WonderfulSubs : Anime Subs &amp; Dubs" provider-name="DxCx" version="0.0.24">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.12.4" />
