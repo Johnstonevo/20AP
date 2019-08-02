@@ -580,7 +580,7 @@ Fixed CM options not showing if context menu addon not installed
 
 <addon id="plugin.video.20aptest"
 	   name="20aptest"
-	   version="19.08.02"
+	   version="19.08.02.1"
 	   provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
