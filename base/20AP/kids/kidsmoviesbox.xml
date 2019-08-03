@@ -121,15 +121,7 @@ The Despicable Me franchise centers on Gru, a super-villain (who later becomes a
 	<content>boxset</content>
 </dir>
 
-<dir>
-	<title>Back to the Future Collection (1985-1990)</title>
-	<tmdb>collection/264</tmdb>
-	<thumbnail>https://image.tmdb.org/t/p/original/UV8VEgAxgKVnCVnZhFACmhxjE4.jpg</thumbnail>
-	<fanart>https://image.tmdb.org/t/p/original/jahCHmGrfVg66FWhwkibjJyszHT.jpg</fanart>
-  <summary>The family friendly action packed, sci-fi Back to the Future movie collection.
-	</summary>
-	<content>boxset</content>
-</dir>
+
 
 <dir>
 	<title>Harry Potter Collection (2001-2011)</title>
@@ -141,6 +133,15 @@ The Despicable Me franchise centers on Gru, a super-villain (who later becomes a
 	<content>boxset</content>
 </dir>
 
+<dir>
+	<title>Honey, I Shrunk the Kids Collection (1989-1997)</title>
+	<tmdb>collection/72119</tmdb>
+	<thumbnail>https://image.tmdb.org/t/p/original/UV8VEgAxgKVnCVnZhFACmhxjE4.jpg</thumbnail>
+	<fanart>https://image.tmdb.org/t/p/original/xxIwqQARS0RZu5cIENahqZSRw2a.jpg</fanart>
+  <summary>Honey, I Shrunk the Kids is an American Disney comedy franchise that focuses on Wayne Szalinski, a "nutty" inventor who develops electronic machines that cause havoc.
+  </summary>
+	<content>boxset</content>
+</dir>
 
 <dir>
 	<title>Hotel Transylvania Collection (2012-2018)</title>
