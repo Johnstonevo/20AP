@@ -1,0 +1,39 @@
+       <dir>
+            <title>Latest Releases (Short List)</title>
+            <animetoon>main/updates/0</animetoon>
+        </dir>
+
+        <dir>
+            <title>Latest Releases (Full List)</title>
+            <animetoon>wcdaily-updates</animetoon>
+        </dir>
+
+        <dir>
+            <title>Popular Series (Short List)</title>
+            <animetoon>main/popular_series/0</animetoon>
+        </dir>
+
+        <dir>
+            <title>Popular Series (Full List)</title>
+            <animetoon>popular-list</animetoon>
+        </dir>
+
+        <dir>
+            <title>Dubbed Anime</title>
+            <animetoon>category/dubbed-anime</animetoon>
+        </dir>
+
+        <dir>
+            <title>Cartoons</title>
+            <animetoon>category/cartoon</animetoon>
+        </dir>
+
+        <dir>
+            <title>Movies</title>
+            <animetoon>category/movies</animetoon>
+        </dir>
+
+        <dir>
+            <title>Search Movies</title>
+            <animetoon>wcsearch</animetoon>
+        </dir>

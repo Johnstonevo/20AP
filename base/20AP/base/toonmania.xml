@@ -1,0 +1,46 @@
+        <dir>
+            <title>New Movies</title>
+            <toonmania>category/GetNewMovies</toonmania>
+        </dir>
+
+        <dir>
+            <title>All Movies</title>
+            <toonmania>category/GetAllMovies</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Movies</title>
+            <toonmania>category/GetPopularMovies</toonmania>
+        </dir>
+
+        <dir>
+            <title>New Cartoons</title>
+            <toonmania>category/GetNewCartoon</toonmania>
+        </dir>
+
+        <dir>
+            <title>All Cartoons</title>
+            <toonmania>category/GetAllCartoon</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Cartoons</title>
+            <toonmania>category/GetPopularCartoon</toonmania>
+        </dir>
+
+        <dir>
+            <title>New Dubbed Anime</title>
+            <toonmania>category/GetNewDubbed</toonmania>
+        </dir>
+
+        <dir>
+            <title>All Dubbed Anime</title>
+            <toonmania>category/GetAllDubbed</toonmania>
+        </dir>
+
+        <dir>
+            <title>Popular Dubbed Anime</title>
+            <toonmania>category/GetPopularDubbed</toonmania>
+        </dir>
+
+
