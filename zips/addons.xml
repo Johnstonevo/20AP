@@ -1318,7 +1318,7 @@ You can clone the project and host it in your own server.
 
 <addon id="plugin.video.20aptest"
 	   name="20aptest"
-	   version="19.08.06"
+	   version="19.08.17"
 	   provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
