@@ -55,3 +55,6 @@
 [submodule "plugin.video.lazyf1"]
 	path = plugin.video.lazyf1
 	url = https://github.com/vadyur/plugin.video.lazyf1.git
+[submodule "plugin.video.emby"]
+	path = plugin.video.emby
+	url = https://github.com/MediaBrowser/plugin.video.emby.git
