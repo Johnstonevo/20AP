@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.venom" version="3.1.7" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.0.8" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -7,7 +7,7 @@
 		<import addon="script.module.beautifulsoup4" version="4.5.3"/>
 		<import addon="script.module.metahandler" version="1.0.0" />
 		<import addon="plugin.video.youtube" version="6.2.0"/>
-		<import addon="script.module.resolveurl" version="5.0.0"/>
+		<import addon="script.module.resolveurl" />
 		<import addon="script.module.openscrapers" />
 		<import addon="script.module.addon.signals" version="0.0.1"/>
 	</requires>
@@ -36,13 +36,15 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.1.7 - Aug 18, 2019[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Finished actor profile pics for TVShows,
-    Seasons, and Episodes.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed sorting of some MyTVShows lists not
-    filter for "The, "An", and "A".[/I]
-[COLOR yellow]--[/COLOR][I] Added Re-Scrape option to Context Menu
-    to bypass cached links.[/I]
+[B][COLOR red]Update - v3.0.8 - July 21, 2019[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed People(TV Search.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed log error "Error getting plugin" for some
+    menu functions that incorrectly set isFolder.[/I]
+[COLOR yellow]--[/COLOR][I] Moved TMDb throttling logging to Venom debug
+    log.[/I]
+[COLOR yellow]--[/COLOR][I] Changed Trakt user lists to "episodes" if 
+    "unwatched count" is disabled. Unwatched
+    count only shows if listItems="tvshows".[/I]
 		</news>
 	</extension>
 
