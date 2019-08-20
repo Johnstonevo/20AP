@@ -312,24 +312,6 @@ Fixed CM options not showing if context menu addon not installed
 	</extension>
 </addon>
 
-<addon id="plugin.game.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.5" provider-name="mcobit">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>game</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <language/>
-        <platform>linux</platform>
-        <disclaimer>For Kodi linux (tested on OSMC final)</disclaimer>
-        <summary lang="en">Launch RetroPie from Kodi.</summary>
-        <description lang="en">Launch RetroPie from Kodi.</description>
-        <website>https://github.com/mcobit/retrosmc/</website>
-        <email>me@me.me</email>
-    </extension>
-</addon>
-
 <addon id="repository.Rockcrusher" name="[COLOR red]Rocks Repository[/COLOR]" version="2.2" provider-name="Rock">
 	<extension point="xbmc.addon.repository" name="[COLOR red]Rocks Repository[/COLOR]">
         <info compressed="false">http://Rockodi.com/addons.xml</info>
@@ -1357,6 +1339,24 @@ You can clone the project and host it in your own server.
 		<summary lang="en">Proxy for f4m</summary>
 		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
 	</extension>
+</addon>
+
+<addon id="plugin.program.retrosmc-launcher" name="Retrosmc Launcher" version="0.0.6" provider-name="mcobit">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+        <provides>game</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <language/>
+        <platform>linux</platform>
+        <disclaimer>For Kodi linux (tested on OSMC final)</disclaimer>
+        <summary lang="en">Launch RetroPie from OSMC.</summary>
+        <description lang="en">Launch RetroPie from OSMC.</description>
+        <website>https://github.com/mcobit/retrosmc/</website>
+        <email>me@me.me</email>
+    </extension>
 </addon>
 
 <addon id="repository.20ap" name="20ap" version="19.08.19" provider-name="Enzo">

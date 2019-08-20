@@ -2,7 +2,7 @@
 
 # Script by mcobit
 
-. /home/$USER/.kodi/addons/plugin.game.retrosmc-launcher/scripts/retrosmc-config.cfg
+. /home/osmc/.kodi/addons/plugin.program.retrosmc-launcher/scripts/retrosmc-config.cfg
 
 # ugly fix for people having trouble with CEC
 

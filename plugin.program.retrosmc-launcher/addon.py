@@ -19,8 +19,8 @@ __credits__ = "mcobit"
 __version__ = "0.0.1"
 
 dialog = xbmcgui.Dialog()
-addon = xbmcaddon.Addon(id='plugin.game.retrosmc-launcher')
+addon = xbmcaddon.Addon(id='plugin.program.retrosmc-launcher')
 
-output=os.popen("/home/$USER/.kodi/addons/plugin.game.retrosmc-launcher/scripts/retropie.sh").read()
+output=os.popen("/home/osmc/.kodi/addons/plugin.program.retrosmc-launcher/scripts/retropie.sh").read()
 #dialog.ok("Starting RetroPie",output)
 #print output

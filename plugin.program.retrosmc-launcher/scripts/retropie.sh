@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-cd /home/$USER
+cd /home/osmc
 # This scripts starts the attract watchdog deamon and
 # attract itself while stopping KODI afterwards.
 # Script by mcobit
@@ -12,11 +12,11 @@ sudo openvt -c 7 -s -f clear
 
 # start the watchdog script
 
-sudo su  $USER -c "sh /home/$USER/.kodi/addons/plugin.game.retrosmc-launcher/scripts/retropie_watchdog.sh &" &
+sudo su  osmc -c "sh /home/osmc/.kodi/addons/plugin.program.retrosmc-launcher/scripts/retropie_watchdog.sh &" &
 
 # check if emulationstation script in chroot is changed and if so, create altered script
 
-sudo chown $user:$user /usr/bin/emulationstation
+sudo chown osmc:osmc /usr/bin/emulationstation
 
 echo '#!/bin/bash
 es_bin="/opt/retropie/supplementary/emulationstation/emulationstation"
@@ -33,13 +33,13 @@ $es_bin "$@"' > "/usr/bin/emulationstation"
 
 # start emulationstation on vitrual terminal 7 and detach it
 
-sudo su  $USER -c "nohup openvt -c 7 -f -s emulationstation >/dev/null 2>&1 &" &
+sudo su  osmc -c "nohup openvt -c 7 -f -s emulationstation >/dev/null 2>&1 &" &
 
 # clear the screen again
 
 sudo openvt -c 7 -s -f clear
 
-# wait a bit to make sure emulationstation is running detached from kodi
+# wait a bit to make sure emulationstation is running detached from OSMC
 
 sleep 0.5
 
