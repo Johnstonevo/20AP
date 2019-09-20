@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="script.service.kodimal" version="0.5.1" name="KodiMAL" provider-name="Zvon">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0" />
+		<import addon="xbmc.json" version="7.0.0" />
+		<import addon="script.module.elementtree" />
+		<import addon="script.module.requests" version="2.18.4" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="kodi.context.item">
+		<menu id="kodi.core.main">
+			<item library="context.py">
+				<label>500</label>
+				<visible>String.IsEqual(ListItem.dbtype,"movie")</visible>
+			</item>
+		</menu>
+	</extension>
+	<extension point="xbmc.python.script" library="default.py"></extension>
+	<extension point="xbmc.service" library="updater.py" start="login"></extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>MAL Updater script for Kodi by kuroshi, maitained by zvon</summary>
+		<description>KodiMAL is a simple updater script for MAL, based on your Kodi library. Currently it only deals with watched and plan to watch shows, and marks shows that are completely watched as complete. It still has a long way to go.</description>
+		<disclaimer>This is still very experimental. Don't blame me if it messes up Kodi, MAL, or kills your cat. Really. (Released under GPLv3)</disclaimer>
+	</extension>
+</addon>

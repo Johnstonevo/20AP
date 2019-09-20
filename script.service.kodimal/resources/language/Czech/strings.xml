@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<!--MAL Settings needed-->
+	<string id="100">MyAnimeList Přihlašovací Údaje</string>
+	<string id="101">Uživatelské Jméno</string>
+	<string id="102">Heslo</string>
+	<string id="103">Spustit Nastavení</string>
+
+	<!--Notifications for errors and things-->
+	<string id="200">Uživatelské jméno nebo heslo je nesprávné.</string>
+	<string id="201">Nebylo nastaveno uživatelské jméno nebo heslo. Prosím zadejte tyto údaje.</string>
+	<string id="202">Připojení k MAL se nezdařilo.</string>
+
+	<!--Debug Notices-->
+	<string id="300">Začíná MAL Aktualizace</string>
+	<string id="301">položka(y) aktualizovány.</string>
+	<string id="302">označeno jako dokončené.</string>
+	<string id="303">označeno jako sledované, momentální epizoda</string>
+	<string id="304">označeno jako 'chci se podívat'.</string>
+
+	<!--Setup script strings-->
+	<string id="400">Nebylo nalezeno na MAL</string>
+	<string id="401">Uložit předchozí sekce</string>
+	<string id="402">Skrýt položku</string>
+	<string id="403">Manuální vyhledávání</string>
+	<string id="404">Generuji seznam namapování z XBMC na MAL</string>
+	<string id="405">Prosím vyčkejte, toto může několik minut trvat</string>
+	<string id="406">Přemapovávám</string>
+	<string id="407">Manuálně vyhledat</string>
+	<string id="408">KodiMAL Nastavení</string>
+	<string id="409">Vyberte položku, které spravit mapování</string>
+	<string id="410">Ověřuji uživatelské jméno a heslo</string>
+	<string id="411">Při získávání informací z MAL nastala chyba</string>
+	<string id="412">Zadejte vyhledávací řetězec pro MAL</string>
+	<string id="413">Zapisuji nový mapující soubor</string>
+	<string id="414">KodiMAL naslouchá videím...</string>
+
+	<string id="500">Přidat film na MAL</string>
+
+</strings>
