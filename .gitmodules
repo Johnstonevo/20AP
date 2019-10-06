@@ -58,3 +58,6 @@
 [submodule "plugin.video.emby"]
 	path = plugin.video.emby
 	url = https://github.com/MediaBrowser/plugin.video.emby.git
+[submodule "jellyfin-kodi"]
+	path = jellyfin-kodi
+	url = https://github.com/jellyfin/jellyfin-kodi.git
