@@ -1488,7 +1488,7 @@ You can clone the project and host it in your own server.
   </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.3.6" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.3.7" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.requests"/>
@@ -1499,6 +1499,9 @@ You can clone the project and host it in your own server.
     <extension point="xbmc.addon.metadata">
         <news>
 [COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.3.7:[/B]
+- Fixed thumbnail images with the Show Information context menu.
+
 [B]0.3.6:[/B]
 - Updated the URL to the website, after a domain change.
 
@@ -1515,10 +1518,6 @@ You can clone the project and host it in your own server.
 
 [B]0.3.2:[/B]
 - Fixed a fault in the stream getting logic.
-
-[B]0.3.1:[/B]
-- Fixed a new way of getting video streams.
-- Added "liked" lists to the Trakt search (besides your own lists).
         </news>
         <description lang="en">
 Watch cartoons and anime from [COLOR orange][B]WatchCartoonOnline.io[/B][/COLOR].
