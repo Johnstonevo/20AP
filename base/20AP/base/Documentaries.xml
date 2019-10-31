@@ -69,7 +69,7 @@
 
 <plugin>
   <title>Reddit Documentaries</title>
-  <link>plugin://plugin.video.reddit_viewer/?mode=listSubReddit&amp;type=Documentaries&amp;url=https%3a%2f%2fwww.reddit.com%2fr%2fDocumentaries%2f.json%3f%26limit%3d50</link>
+  <overwatch>r/Documentaries</overwatch>
   <thumbnail>https://images-na.ssl-images-amazon.com/images/I/418PuxYS63L.png</thumbnail>
   <fanart>https://images.alphacoders.com/212/thumb-1920-212643.jpg</fanart>
   <content></content>
