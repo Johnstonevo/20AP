@@ -13,7 +13,7 @@
 
         <dir>
             <title>Subreddit title | hot</title>
-            <reddit>r/subreddit</reddit>
+            <reddit>subreddit</reddit>
         </dir>
 
 """
@@ -36,7 +36,7 @@ import os
 import sys
 
 
-CACHE_TIME = 15 # change to wanted cache time in seconds
+CACHE_TIME = 10800 # change to wanted cache time in seconds
 
 addon_id = xbmcaddon.Addon().getAddonInfo('id')
 addon_fanart = xbmcaddon.Addon().getAddonInfo('fanart')
@@ -50,7 +50,7 @@ reddit = praw2.Reddit(client_id='nza3RQ0hwoEOZA',
 reg_items = ['vimeo','dailymotion','rutube','vid.ag','thevideobee','vidzi.tv','drive.google','streamable.com']
 unreg_items = ['v.redd.it','myspace','nfb.ca','thevideobee','dotsub','en.musicplayon.com','vkontakte.ru','veehd.com','snagfilms','liveleak.com','imdb.com','disclose.tv','videoweed.es','putlocker','vid.ag','vice.com']
 image_items = ['.png','.jpg','.gif']
-
+now = time.time()-60
 
 
 class RedDit(Plugin):
@@ -60,22 +60,21 @@ class RedDit(Plugin):
     def process_item(self, item_xml):
         if "<reddit>" in item_xml:
             item = JenItem(item_xml)
-            if "r/" in item.get("reddit", ""):
-                result_item = {
-                    'label': item["title"],
-                    'icon': item.get("thumbnail", addon_icon),
-                    'fanart': item.get("fanart", addon_fanart),
-                    'mode': "RedDit",
-                    'url': item.get("reddit", ""),
-                    'folder': True,
-                    'imdb': "0",
-                    'content': "files",
-                    'season': "0",
-                    'episode': "0",
-                    'info': {},
-                    'year': "0",
-                    'context': get_context_items(item),
-                    "summary": item.get("summary", None)
+            result_item = {
+                'label': item["title"],
+                'icon': item.get("thumbnail", addon_icon),
+                'fanart': item.get("fanart", addon_fanart),
+                'mode': "RedDit",
+                'url': item.get("reddit", ""),
+                'folder': True,
+                'imdb': "0",
+                'content': "files",
+                'season': "0",
+                'episode': "0",
+                'info': {},
+                'year': "0",
+                'context': get_context_items(item),
+                "summary": item.get("summary", None)
                 }
             result_item['fanart_smday'] = result_item["fanart"]
             return result_item
@@ -95,7 +94,7 @@ def get_RedDit(url):
     elif not xml:
         xml = ""
         try:
-            for submission in reddit.subreddit(url).hot(limit=250):
+            for submission in reddit.subreddit(url).new(limit=200):
                 redd_flair = submission.link_flair_text
                 redd_title = submission.title
                 redd_url = submission.url
@@ -120,7 +119,7 @@ def get_RedDit(url):
                                     "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
                                     "    <link>%s</link>"\
                                     "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
-                                    "    <summary>Playlists are not working on some Kodi builds, sorry.\n %s\n%s</summary>"\
+                                    "    <summary>%s\n%s</summary>"\
                                     "    <premiered>%s<premiered>"\
                                     "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
                         
@@ -131,34 +130,35 @@ def get_RedDit(url):
                                     "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
                                     "    <link>%s</link>"\
                                     "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
-                                    "    <summary>Playlists are not working on some Kodi builds, sorry.\n %s\n%s</summary>"\
+                                    "    <summary>%s\n%s</summary>"\
                                     "    <premiered>%s<premiered>"\
                                     "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
                     
                     elif 'twitch' in redd_url:
-                        redd_url = replace("https://www.twitch.tv/videos/", 'plugin://plugin.video.twitch/?video_id=').replace("https://clips.twitch.tv/", 'plugin://plugin.video.twitch/?use_player=True&mode=play&amp;slug=')
-                        xml += "<item>"\
-                            "    <title>[COLORff6441a5]%s [/COLOR]| %s | twitch hot </title>"\
-                            "    <link>%s</link>"\
-                            "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
-                            "    <summary%s \n\n %s</summary>"\
-                            "    <premiered>%s</premiered>"\
-                            "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                            redd_url = redd_url.replace("https://www.twitch.tv/videos/",'plugin://plugin.video.twitch/?video_id=').replace("https://clips.twitch.tv/",'plugin://plugin.video.twitch/?use_player=True&mode=play&amp;slug=')
+                            xml += "<plugin>"\
+                                "    <title>[COLORff6441a5]%s [/COLOR]| %s </title>"\
+                                "    <link>%s</link>"\
+                                "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.twitch/icon.png</thumbnail>"\
+                                "    <summary>Twitch \n%s \n\n %s</summary>"\
+                                "    <premiered>%s</premiered>"\
+                                "</plugin>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                        
 
 
                     elif any(x in redd_url for x in reg_items):
-                        xml += "<item>"\
-                            "    <title>[COLORffffff00]%s [/COLOR]| %s</title>"\
-                            "    <link>%s</link>"\
-                            "    <thumbnail></thumbnail>"\
-                            "    <summary%s \n\n %s</summary>"\
-                            "    <premiered>%s</premiered>"\
-                            "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                            xml += "<item>"\
+                                "    <title>[COLORffffff00]%s [/COLOR]| %s</title>"\
+                                "    <link>%s</link>"\
+                                "    <thumbnail></thumbnail>"\
+                                "    <summary%s \n\n %s</summary>"\
+                                "    <premiered>%s</premiered>"\
+                                "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
                     
                     elif any(x in redd_url for x in image_items):
                         xml += "<item>"\
                             "    <title>[COLORwhite]%s [/COLOR]| %s</title>"\
-                            "    <reddit>r/%s</reddit>"\
+                            "    <reddit>%s</reddit>"\
                             "    <thumbnail>%s</thumbnail>"\
                             "    <summary%s \n\n %s</summary>"\
                             "    <fanart>%s</fanart>"\
@@ -171,13 +171,14 @@ def get_RedDit(url):
                 except:
                     continue
 
-            for submission in reddit.subreddit(url).new(limit=250):
+
+            for submission in reddit.subreddit(url).hot(limit=200):
+                redd_flair = submission.link_flair_text
+                redd_title = submission.title
+                redd_url = submission.url
+                redd_summary = submission.selftext
+                redd_date = datetime.utcfromtimestamp(submission.created_utc).strftime('%d-%m-%y')
                 try:
-                    redd_flair = submission.link_flair_text
-                    redd_title = submission.title
-                    redd_url = submission.url
-                    redd_summary = submission.selftext
-                    redd_date = datetime.utcfromtimestamp(submission.created_utc).strftime('%d-%m-%y')                
                     if 'youtu' in redd_url:
                         if 'playlist' in redd_url:
                             video_id = redd_url.split("=")[-1]
@@ -196,7 +197,7 @@ def get_RedDit(url):
                                     "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
                                     "    <link>%s</link>"\
                                     "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
-                                    "    <summary>Playlists are not working on some Kodi builds, sorry.\n %s\n%s</summary>"\
+                                    "    <summary>%s\n%s</summary>"\
                                     "    <premiered>%s<premiered>"\
                                     "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
                         
@@ -207,47 +208,123 @@ def get_RedDit(url):
                                     "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
                                     "    <link>%s</link>"\
                                     "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
-                                    "    <summary>Playlists are not working on some Kodi builds, sorry.\n %s\n%s</summary>"\
+                                    "    <summary>%s\n%s</summary>"\
                                     "    <premiered>%s<premiered>"\
                                     "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
                     
                     elif 'twitch' in redd_url:
-                        redd_url = replace("https://www.twitch.tv/videos/", 'plugin://plugin.video.twitch/?video_id=').replace("https://clips.twitch.tv/", 'plugin://plugin.video.twitch/?use_player=True&mode=play&amp;slug=')
-                        xml += "<item>"\
-                            "    <title>[COLORff6441a5]%s [/COLOR]| %s</title>"\
-                            "    <link>%s</link>"\
-                            "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
-                            "    <summary%s \n\n %s</summary>"\
-                            "    <premiered>%s</premiered>"\
-                            "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                            redd_url = redd_url.replace("https://www.twitch.tv/videos/",'plugin://plugin.video.twitch/?video_id=').replace("https://clips.twitch.tv/",'plugin://plugin.video.twitch/?use_player=True&mode=play&amp;slug=')
+                            xml += "<plugin>"\
+                                "    <title>[COLORff6441a5]%s [/COLOR]| %s </title>"\
+                                "    <link>%s</link>"\
+                                "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.twitch/icon.png</thumbnail>"\
+                                "    <summary>Twitch \n%s \n\n %s</summary>"\
+                                "    <premiered>%s</premiered>"\
+                                "</plugin>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                        
 
 
                     elif any(x in redd_url for x in reg_items):
-                        xml += "<item>"\
-                            "    <title>[COLORffffff00]%s [/COLOR]| %s</title>"\
-                            "    <link>%s</link>"\
-                            "    <thumbnail></thumbnail>"\
-                            "    <summary%s \n\n %s</summary>"\
-                            "    <premiered>%s</premiered>"\
-                            "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                            xml += "<item>"\
+                                "    <title>[COLORffffff00]%s [/COLOR]| %s</title>"\
+                                "    <link>%s</link>"\
+                                "    <thumbnail></thumbnail>"\
+                                "    <summary%s \n\n %s</summary>"\
+                                "    <premiered>%s</premiered>"\
+                                "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
                     
                     elif any(x in redd_url for x in image_items):
                         xml += "<item>"\
                             "    <title>[COLORwhite]%s [/COLOR]| %s</title>"\
-                            "    <reddit>r/%s</reddit>"\
+                            "    <reddit>%s</reddit>"\
                             "    <thumbnail>%s</thumbnail>"\
                             "    <summary%s \n\n %s</summary>"\
                             "    <fanart>%s</fanart>"\
                             "    <premiered>%s</premiered>"\
                             "</item>" % (redd_title,redd_date,redd_url,redd_url,redd_flair,redd_summary,redd_url,redd_date)
-
+                    
                     else:
                         continue
                     
                 except:
                     continue
 
+            for submission in reddit.subreddit(url).top(limit=200, time_filter='all'):
+                try:
+                    redd_flair = submission.link_flair_text
+                    redd_title = submission.title
+                    redd_url = submission.url
+                    redd_summary = submission.selftext
+                    redd_date = datetime.utcfromtimestamp(submission.created_utc).strftime('%d-%m-%y')              
+                    if 'youtu' in redd_url:
+                        if 'playlist' in redd_url:
+                            video_id = redd_url.split("=")[-1]
+                            redd_url = 'plugin://plugin.video.youtube/playlist/%s/' % video_id
+                            xml += "<item>"\
+                                    "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
+                                    "    <link>%s</link>"\
+                                    "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
+                                    "    <summary>Playlists are not working on some Kodi builds, sorry.\n %s\n%s</summary>"\
+                                    "    <premiered>%s<premiered>"\
+                                    "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
+                        
+                        elif 'attribution_link' in redd_url:
+                            redd_url = redd_url.split("a=")[-1]
+                            xml += "<item>"\
+                                    "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
+                                    "    <link>%s</link>"\
+                                    "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
+                                    "    <summary>%s\n%s</summary>"\
+                                    "    <premiered>%s<premiered>"\
+                                    "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
+                        
+                        else:
+                            redd_url = redd_url.replace("/m.",'')
 
+                            xml += "<item>"\
+                                    "    <title>[COLORffff0000]%s[/COLOR]|  %s</title>"\
+                                    "    <link>%s</link>"\
+                                    "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.youtube/icon.png</thumbnail>"\
+                                    "    <summary>%s\n%s</summary>"\
+                                    "    <premiered>%s<premiered>"\
+                                    "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_title,redd_date)
+                    
+                    elif 'twitch' in redd_url:
+                            redd_url = redd_url.replace("https://www.twitch.tv/videos/",'plugin://plugin.video.twitch/?video_id=').replace("https://clips.twitch.tv/",'plugin://plugin.video.twitch/?use_player=True&mode=play&amp;slug=')
+                            xml += "<plugin>"\
+                                "    <title>[COLORff6441a5]%s [/COLOR]| %s </title>"\
+                                "    <link>%s</link>"\
+                                "    <thumbnail>http://mirrors.kodi.tv/addons/leia/plugin.video.twitch/icon.png</thumbnail>"\
+                                "    <summary>Twitch \n%s \n\n %s</summary>"\
+                                "    <premiered>%s</premiered>"\
+                                "</plugin>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                        
+
+
+                    elif any(x in redd_url for x in reg_items):
+                            xml += "<item>"\
+                                "    <title>[COLORffffff00]%s [/COLOR]| %s</title>"\
+                                "    <link>%s</link>"\
+                                "    <thumbnail></thumbnail>"\
+                                "    <summary%s \n\n %s</summary>"\
+                                "    <premiered>%s</premiered>"\
+                                "</item>" % (redd_title,redd_date,redd_url,redd_flair,redd_summary,redd_date)
+                    
+                    elif any(x in redd_url for x in image_items):
+                        xml += "<item>"\
+                            "    <title>[COLORwhite]%s [/COLOR]| %s</title>"\
+                            "    <reddit>%s</reddit>"\
+                            "    <thumbnail>%s</thumbnail>"\
+                            "    <summary%s \n\n %s</summary>"\
+                            "    <fanart>%s</fanart>"\
+                            "    <premiered>%s</premiered>"\
+                            "</item>" % (redd_title,redd_date,redd_url,redd_url,redd_flair,redd_summary,redd_url,redd_date)
+                    
+                    else:
+                        continue
+                    
+                except:
+                    continue
         except:
             pass
 

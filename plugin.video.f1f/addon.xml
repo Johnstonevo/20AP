@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.f1f" name="f1f" version="19.11.01" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="19.11.01.2" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" /> 
