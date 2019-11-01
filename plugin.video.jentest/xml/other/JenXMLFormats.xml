@@ -42,7 +42,7 @@ If not using gifs you can remove <animated_thumbnail></animated_thumbnail> and <
 
   <plugin>
     <name>Testings</name>
-    <link>plugin://plugin.video.jentestplugin/?action=developer</link>
+    <link>plugin://plugin.video.jenplugin/?action=developer</link>
     <thumbnail></thumbnail>
     <summary>Testings</summary>
   </plugin>

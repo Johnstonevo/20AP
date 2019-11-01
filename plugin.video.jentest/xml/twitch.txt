@@ -1,0 +1,6 @@
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (6) Could not resolve host: ^C
+curl: (6) Could not resolve host: GET
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   408  100   408    0     0   1342      0 --:--:-- --:--:-- --:--:--  9488
+{"data":[{"id":"126162810","login":"agilities","display_name":"agilities","type":"","broadcaster_type":"partner","description":"","profile_image_url":"https://static-cdn.jtvnw.net/jtv_user_pictures/dae6fffb11448354-profile_image-300x300.jpeg","offline_image_url":"https://static-cdn.jtvnw.net/jtv_user_pictures/bb5e1129-45d5-4b9e-8b4e-4434758f0d2f-channel_offline_image-1920x1080.png","view_count":1833752}]}

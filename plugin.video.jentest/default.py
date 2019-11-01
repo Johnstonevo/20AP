@@ -251,9 +251,9 @@ def settings():
     xbmcaddon.Addon().openSettings()
 
 
-@route(mode="ScraperSettings")
-def scraper_settings():
-    xbmcaddon.Addon('script.module.universalscrapers').openSettings()
+#@route(mode="ScraperSettings")
+#def scraper_settings():
+#    xbmcaddon.Addon('script.module.universalscrapers').openSettings()
 
 
 @route(mode="ResolverSettings")
