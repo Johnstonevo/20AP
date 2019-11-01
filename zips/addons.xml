@@ -1187,7 +1187,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="plugin.video.f1f" name="f1f" version="19.06.01" provider-name="Enzo">
+<addon id="plugin.video.f1f" name="f1f" version="19.11.01" provider-name="Enzo">
   <requires>
       <import addon="xbmc.python" version="2.19.0" />
      <import addon="script.module.dateutil" />
