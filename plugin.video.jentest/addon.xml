@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.jentest" name="[B]jentest[/B]" version="19.10.26" provider-name="MyPiDiaries">
+<addon id="plugin.video.jentest" name="[B]jentest[/B]" version="19.10.31" provider-name="MyPiDiaries">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
         <!--<import addon="script.module.universalscrapers" version="0.5.5"/>-->
