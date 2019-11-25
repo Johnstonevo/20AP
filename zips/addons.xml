@@ -120,6 +120,9 @@ COLOR yellow]--[/COLOR][I] Added new setting Category called "Shortcuts".  This 
         <news>
 [fix] playback of some videos with no adaptive video streams
 [fix] don't update watch history when incognito/screensaver/live |contrib: regseb|
+[lang] el_gr strings |contrib: twilight0|
+[lang] es_es strings |contrib: roliverosc|
+[lang] pt_br strings |contrib: MediaBrasil|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -758,7 +761,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.ctoonkodi" name="CTOON Kodi" version="0.3.10" provider-name="doko, mkody, Tikipeter">
+<addon id="plugin.video.ctoonkodi" name="CTOON Kodi" version="0.4.0" provider-name="doko, mkody, Tikipeter">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.requests" />
@@ -776,6 +779,9 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
         </description>
         <news>
 [COLOR mediumpurple][B]CTOON Kodi[/B][/COLOR] - Cartoons
+
+[B]0.4.0:[/B]
+- Recreated the logo. That thing was annoying me with how distracting it was.
 
 [B]0.3.10:[/B]
 - Added support for episodes thumbnail and subtitles (see settings).
