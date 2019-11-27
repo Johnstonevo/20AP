@@ -3023,7 +3023,7 @@ def movies_menu():
       if allow_debrid:
 	  
 	  addDir3('One Click RD Movies','www',149,BASE_LOGO+'oneclickrd.png',all_img[19],'One Click RD Movies')
-      addDir3('One Click Free Movies','https://moviesmax.net',150,BASE_LOGO+'oneclickfree.png',all_img[1],'One Click Free Movies')
+      #addDir3('One Click Free Movies','https://moviesmax.net',150,BASE_LOGO+'oneclickfree.png',all_img[1],'One Click Free Movies')
       
       addDir3('Hot Movies','http://api.themoviedb.org/3/trending/movie/week?api_key=1248868d7003f60f2386595db98455ef&language=en&page=1',3,BASE_LOGO+'hotmovies.png',all_img[13],'Hot Movies')
       addDir3('Lastest HD'.decode('utf8'),domain_s+'www.dvdsreleasedates.com/movies/',28,BASE_LOGO+'latest.png',all_img[5],'Lastest HD'.decode('utf8'),isr=' ')
@@ -13567,23 +13567,78 @@ def run_page():
         
         
 def live_tv():
-    #taken from WOW sports live apk
+    #taken from New WOW sports live apk
     headers={
-    'Cache-Control': 'max-age=0',
-    'Data-Agent': 'The Stream',
+            'Connection': 'keep-alive',
 
-    'Connection': 'Keep-Alive',
-    'Accept-Encoding': 'utf-8',
-    'User-Agent': 'okhttp/3.8.1'}
-    url='http://wowsportslive.com/the_stream/the_stream/api/get_posts/?api_key=cda11uT8cBLzm6a1YvsiUWOEgrFowk95K2DM3tHAPRCX4ypGjN&page=1&count=600'
-    x=requests.get(url,headers=headers).json()
-    for items in x['posts']:
-        plot=items['channel_description']
-        icon='http://wowsportslive.com/the_stream/the_stream/upload/'+items['channel_image']
-        name=items['channel_name']
-        link=items['channel_url']
-        addLink(name,link,5,False,iconimage=icon,fanart=icon,description=plot)
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Origin': 'null',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'crow/2.3',
+            'content-type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'utf-8',
+            'Accept-Language': 'en-US',
+            'X-Requested-With': 'com.wowsports3'}
+    url='https://wavesuhigh.xyz/data_002/data_003/streams.php'
+    data={'token':'dbca79a3fda0b34f6a97898456c1cd10'}
+    x=requests.post(url,headers=headers,data=urllib.urlencode(data)).content
+    regex="<tr onclick\=window\.location\='(.+?)'.+?<h5 style='.+?'>(.+?)<.+?</tr>"
+    mm=re.compile(regex,re.DOTALL).findall(x)
+    for lk,nm in mm:
+        plot=' '
+        icon='https://www.mdr.de/sport/fussball1810_v-variantBig16x9_w-576_zc-915c23fa.jpg?version=47364'
+        name=nm
+        link=lk
+        addLink(name,'wow_sport%%%'+link,5,False,iconimage=icon,fanart=icon,description=plot)
+# in play function put:
+#     if 'wow_sport' in url:
+#       url=get_wow(url)
+#for Play:
+def get_wow(url):
+    headers={
+            'Connection': 'keep-alive',
 
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+            'Origin': 'null',
+            'Upgrade-Insecure-Requests': '1',
+            'User-Agent': 'crow/2.3',
+            'content-type': 'application/x-www-form-urlencoded',
+            'Accept-Encoding': 'utf-8',
+            'Accept-Language': 'en-US',
+            'X-Requested-With': 'com.wowsports3'}
+    url='https://wavesuhigh.xyz/data_002/data_003/'+url.split('%%%')[1]
+    data={'token':'dbca79a3fda0b34f6a97898456c1cd10'}
+    x=requests.post(url,headers=headers,data=urllib.urlencode(data)).content
+    if '#EXTM3U' in x:
+        return url
+    if "new Date('" in x:
+        regex=re.compile("new Date\('(.+?)'")
+        nn=re.compile(regex).findall(x)
+        xbmcgui.Dialog().ok('Not Yet',"Starts at:"+nn[0])
+        sys.exit()
+    regex="<a class='btn btn-success btn-block justify-content-center align-items-center align-content-center visible' role='button'.+?href=(.+?)>(.+?)</a>"
+    mm=re.compile(regex,re.DOTALL).findall(x)
+    all_lk=[]
+    all_nm=[]
+    for lk,nm in mm:
+        all_lk.append(lk)
+        all_nm.append(nm)
+    ret = xbmcgui.Dialog().select("Choose", all_nm)
+    if ret!=-1:
+     
+        ff_link=all_lk[ret]
+        url='https://wavesuhigh.xyz/data_002/data_003/'+ff_link
+        x=requests.post(url,headers=headers,data=urllib.urlencode(data)).url
+        headers={'User-Agent': '/5.3 (Linux;Android 6.0.1) ExoPlayerLib/2.9.5',
+                #'Accept-Encoding': 'identity',
+
+                'Connection': 'Keep-Alive'}
+        head=urllib.urlencode(headers)
+        x=x+"|"+head
+        return x
+    else:
+        sys.exit()
+        
 def trakt_liked(url,iconImage,fanart,page):
     o_url=url
     responce,pages=call_trakt(url,pagination=True,page=page)

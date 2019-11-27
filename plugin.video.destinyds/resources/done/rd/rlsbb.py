@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-"""
+'''
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -13,7 +13,7 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-"""
+'''
 
 import re,urllib,urlparse,json
 
@@ -24,7 +24,7 @@ from resources.lib.modules import debrid
 from resources.lib.modules import log_utils
 from resources.lib.modules import source_utils
 from resources.lib.modules import cfscrape
-import logging
+
 class source:
     def __init__(self):
         self.priority = 1
@@ -71,9 +71,8 @@ class source:
             if url == None: return sources
 
             if debrid.status() == False: raise Exception()
-            
-            data = urlparse.parse_qs(url)
 
+            data = urlparse.parse_qs(url)
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
             title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
             hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
@@ -110,19 +109,19 @@ class source:
 
             
             for loopCount in range(0,2):
-                if loopCount == 1 or (r == None  ):                     
-                    if 'tvshowtitle' in data:
+                if loopCount == 1 or (r == None and 'tvshowtitle' in data):                     
                     
-                        premDate = re.sub('[ \.]','-',data['premiered'])                            
-                        query = re.sub('[\\\\:;*?"<>|/\-\']', '', data['tvshowtitle'])              
-                        query = query.replace("&", " and ").replace("  ", " ").replace(" ", "-")    
-                        query = query + "-" + premDate                      
-                        
-                        url = "http://rlsbb.to/" + query            
-                        url = url.replace('The-Late-Show-with-Stephen-Colbert','Stephen-Colbert')   
-                        
+                    
+                    premDate = re.sub('[ \.]','-',data['premiered'])                            
+                    query = re.sub('[\\\\:;*?"<>|/\-\']', '', data['tvshowtitle'])              
+                    query = query.replace("&", " and ").replace("  ", " ").replace(" ", "-")    
+                    query = query + "-" + premDate                      
+                    
+                    url = "http://rlsbb.to/" + query            
+                    url = url.replace('The-Late-Show-with-Stephen-Colbert','Stephen-Colbert')   
+                    
 
-                        r = scraper.get(url).content
+                    r = scraper.get(url).content
                     
                 posts = client.parseDOM(r, "div", attrs={"class": "content"})
                 hostDict = hostprDict + hostDict
@@ -182,8 +181,7 @@ class source:
             check = [i for i in sources if not i['quality'] == 'CAM']
             if check: sources = check
             return sources
-        except Exception as e:
-            logging.warning(e)
+        except:
             return sources
 
     def resolve(self, url):

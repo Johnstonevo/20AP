@@ -25,6 +25,7 @@ from resources.lib.extensions import metadata
 from resources.lib.extensions import tools
 from resources.lib.externals.beautifulsoup import BeautifulSoup
 
+
 class source:
 
 	def __init__(self):
@@ -32,8 +33,8 @@ class source:
 		self.priority = 0
 		self.language = ['un']
 		self.domains = ['pirateiro.com']
-		self.base_link = 'https://pirateiro.com'
-		self.search_link = '/torrents/?orderby=seeders&cat=%d&search=%s&page=%d'
+		self.base_link = 'http://pirateiro.com'
+		self.search_link = '%s/torrents/?search=%s+%s'
 		self.category_movies = 300
 		self.category_shows = 700
 

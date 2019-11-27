@@ -1,4 +1,21 @@
-﻿[COLOR yellow][B]V1.3.5[/B]
+﻿[COLOR yellow][B]V1.3.8[/B]
+ - Fixed Live Sport Code From The Original Dev. 
+ - Removed One Click Free Movies (Site Is Dead)
+ - Fixed RD One Click Movies.
+ - Removed Some Dead Scrapers
+
+
+[COLOR yellow][B]V1.3.7[/B]
+ - Added Some More Non-Torrent Premium Scrapers.
+ - Fixed Iwaatch.
+ - Removed Some Dead Scrapers
+ - If you dont use real Debrid or a VPN.
+ - Turn Off Torrents In Settings.
+
+[COLOR yellow][B]V1.3.6[/B]
+ - Push To Fix Deathstar Section.
+
+[COLOR yellow][B]V1.3.5[/B]
  - Fixed Free Torrents.
  - Turn Real Debrid On In Settings.
  - Updated One Click RD

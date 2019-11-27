@@ -31,7 +31,7 @@ class source:
 		self.priority = 0
 		self.language = ['un']
 		self.domains = ['1337x.to', 'x1337x.ws', '1337x.unblockall.org', '1337x.unblocker.cc']
-		self.base_link = 'https://1337x.to'
+		self.base_link = 'https://1337x.org.'
 		self.search_link = '/sort-category-search/%s/%s/seeders/desc/%i/'
 		self.category_movies = 'Movies'
 		self.category_shows = 'TV'

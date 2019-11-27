@@ -1180,7 +1180,7 @@ You can clone the project and host it in your own server.
 
 <addon id="plugin.video.destinyds"
 	   name="Destiny of Deathstar"
-	   version="1.3.6"
+	   version="1.3.8"
 	   provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -1456,7 +1456,7 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
 
 <addon id="plugin.video.20aptest"
 	   name="20aptest"
-	   version="19.11.02"
+	   version="19.11.27"
 	   provider-name="Dark Child">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>

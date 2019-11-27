@@ -21,8 +21,8 @@ class source:
         self.priority = 1
         self.language = ['en']
         self.domains = ['kickass2.cc']
-        self.base_link = 'https://kickass2.cc/'
-        self.search = 'https://kickass2.cc/usearch/{0}'
+        self.base_link = 'https://kickasstorrent.cr/'
+        self.search = 'https://kickasstorrent.cr/usearch/{0}'
 
 
     def movie(self, imdb, title, localtitle, aliases, year):

@@ -9,7 +9,7 @@ class sources:
 
     def __init__(self):
         self.domain = "thepiratebay.org"
-        self.base_link = 'https://thepiratebay.org/'
+        self.base_link = 'https://tpb.agency'
         self.search_link = 'search/'
         self.threads = []
         self.threadResults = []

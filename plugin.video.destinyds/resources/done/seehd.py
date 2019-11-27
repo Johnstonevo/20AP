@@ -1,128 +1,81 @@
 # -*- coding: utf-8 -*-
-# Universal Scrapers
-# 30/10/2018 -BUG
 
-import re,logging
-import xbmcaddon,time
-import xbmc, urllib
-from universalscrapers.scraper import Scraper
-from universalscrapers.common import clean_title, filter_host, get_rd_domains, send_log, error_log
-from resources.lib.modules import client,cfscrape
+'''
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-dev_log = xbmcaddon.Addon('plugin.video.destinyds').getSetting("dev_log")
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-class seehd(Scraper):
-    domains = ['http://www.seehd.pl']
-    name = "SeeHD"
-    sources = []
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
 
+import re
+import urllib
+import urlparse
+from resources.lib.modules import cleantitle
+from resources.lib.modules import client
+from resources.lib.modules import proxy
+from resources.lib.modules import cfscrape
+
+class source:
     def __init__(self):
+        self.priority = 1
+        self.language = ['en']
+        self.domains = ['seehd.pl']
         self.base_link = 'http://www.seehd.pl'
-        self.search_link = '/search/%s/feed/rss2/'
-        self.scraper = cfscrape.create_scraper()
-    def scrape_movie(self, title, year, imdb, debrid = False):
-        if 1:#try:
-            logging.warning('scrape')
-            start_time = time.time()
-            
-            search_id = '%s %s' % (title, year)
-            start_url = self.base_link + self.search_link % urllib.quote_plus(search_id)
-            #print '::::::::::::: START URL '+start_url
-            html = self.scraper.get(start_url).content
-            
-            items = client.parseDOM(html, 'item')
-            logging.warning(start_url)
-            item = [i for i in items if imdb in i][0]
+        self.search_link = '/%s-%s-watch-online/'
 
-            self.get_source(item, title, year, "", "", debrid, start_time)
-         
-            #print self.sources
-            return self.sources
-        #except Exception, argument:
-        #    if dev_log == 'true':
-        #        error_log(self.name, argument)
-
-    def scrape_episode(self, title, show_year, year, season, episode, imdb, tvdb, debrid=False):
+    def movie(self, imdb, title, localtitle, aliases, year):
         try:
-            start_time = time.time()
-            hdlr = 'S%02dE%02d' % (int(season), int(episode))
-            search_id = '%s %s' % (title, hdlr)
-            start_url = self.base_link + self.search_link % urllib.quote_plus(search_id)
-            
-            html = self.scraper.get(start_url).content
-
-            items = client.parseDOM(html, 'item')
-            for item in items:
-                
-                name = client.parseDOM(item, 'title')[0]
-                name = client.replaceHTMLCodes(name)
-                t = name.split(hdlr)[0]
-             
-                if not clean_title(title).replace('the','') == clean_title(t).replace('the',''):
-                    continue
-                if not hdlr in name:
-                    continue
-                logging.warning('IN')
-                self.get_source(item, title, year, season, episode, debrid, start_time)
-            #print self.sources
-            return self.sources
-        except Exception as e:
-            logging.warning(e)
-            if dev_log == 'true':
-                error_log(self.name, argument)
-
-    def get_source(self,item_url, title, year, season, episode, debrid, start_time):
+            title = cleantitle.geturl(title)
+            url = self.base_link + self.search_link % (title,year)
+            return url
+        except:
+            return
+			
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
         try:
-            count = 0
+            url = cleantitle.geturl(tvshowtitle)
+            return url
+        except:
+            return
+ 
+    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+        try:
+            if not url: return
+            title = url
+            season = '%02d' % int(season)
+            episode = '%02d' % int(episode)
+            se = 's%se%s' % (season,episode)
+            url = self.base_link + self.search_link % (title,se)
+            return url
+        except:
+            return
 
-            frames = []
-            frames += client.parseDOM(item_url, 'iframe', ret='src')
-            frames += client.parseDOM(item_url, 'a', ret='href')
-            frames += client.parseDOM(item_url, 'source', ret='src')
-            frames += client.parseDOM(item_url, 'enclosure', ret='url')
 
-            #xbmc.log('@#@LINKS: %s' % frames, xbmc.LOGNOTICE)
+    def sources(self, url, hostDict, hostprDict):
+        try:
+            sources = []
+            scraper = cfscrape.create_scraper()
+            r = scraper.get(url).content
             try:
-                q = re.findall('<strong>Quality:</strong>([^<]+)', item_url, re.DOTALL)[0]
-                if 'high' in q.lower():
-                    qual = '720p'
-                elif 'cam' in q.lower():
-                    qual = 'CAM'
-                else:
-                    qual = 'SD'
+                match = re.compile('<iframe.+?src="(.+?)://(.+?)/(.+?)"').findall(r)
+                for http,host,url in match: 
+                    host = host.replace('www.','')
+                    url = '%s://%s/%s' % (http,host,url)
+                    if 'seehd' in host: pass
+                    else: sources.append({'source': host,'quality': 'HD','language': 'en','url': url,'direct': False,'debridonly': False}) 
             except:
-                qual = 'SD'
-            
-            for link in frames:
-                if 'http://24hd.org' in link: continue
-                if '.pl/link/' in link: continue
-                if 'seehd.pl/d/' in link:
-                    #scraper = cfscrape.create_scraper()
-                    r = self.scraper.get(link).content
-                    link = client.parseDOM(r, 'iframe', ret='src')[0]
+                return
+        except Exception:
+            return
+        return sources
 
-                host = link.split('//')[1].replace('www.', '')
-                host = host.split('/')[0].lower()
-                if debrid is True:
-                    rd_domains = get_rd_domains()
-                    if host not in rd_domains: continue
-                    #xbmc.log('@#@RD-LINKS: %s' % link, xbmc.LOGNOTICE)
-                    count += 1
-                    self.sources.append(
-                        {'source': host, 'quality': qual, 'scraper': self.name, 'url': link, 'direct': False, 'debridonly': True})
-
-
-                if not filter_host(host): continue
-                #xbmc.log('@#@NORMAL-LINKS: %s' % link, xbmc.LOGNOTICE)
-                count += 1
-                self.sources.append(
-                    {'source': host, 'quality': qual, 'scraper': self.name, 'url': link, 'direct': False})
-
-            if dev_log == 'true':
-                end_time = time.time() - start_time
-                send_log(self.name,end_time,count,title,year)
-        except Exception, argument:
-            if dev_log == 'true':
-                error_log(self.name,argument)
-
-#seehd().scrape_movie('Deadpool 2', '2018', '', False)
+    def resolve(self, url):
+        return url
