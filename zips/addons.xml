@@ -286,7 +286,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.44" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.45" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -641,7 +641,7 @@ You can clone the project and host it in your own server.
 
 <addon  id="plugin.video.emby"
         name="Emby"
-        version="4.1.16"
+        version="4.1.17"
         provider-name="angelblue05, sualfred">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
