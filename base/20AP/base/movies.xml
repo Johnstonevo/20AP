@@ -4,6 +4,16 @@
 <fanart>https://fanart.tv/fanart/movies/2344/moviebackground/the-matrix-collection-52c80a2f23f54.jpg</fanart>
 ####################################################################################################
 <dir>
+	<title>New Releases</title>
+      <trakt>https://api.trakt.tv/users/garycrawfordgc/lists/latest-releases/items/</trakt>
+	<thumbnail></thumbnail>
+	<content>boxset</content>
+	<summary>	</summary>
+</dir>
+
+
+
+<dir>
   <title>2011-Current Movies</title>
   <tmdb>list/43994</tmdb>
   <thumbnail>https://cdn3.iconfinder.com/data/icons/line/36/movie_camera-512.png</thumbnail>
