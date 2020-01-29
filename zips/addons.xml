@@ -100,7 +100,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.5.3~beta1" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.6.0" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -127,6 +127,7 @@
 [lang] pt_br strings |contrib: MediaBrasil|
 [lang] cs_cz strings |contrib: llzn.cz|
 [lang] it_it strings |contrib: SebastianoPistore|
+[lang] de_de strings |contrib: tweimer|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -1391,7 +1392,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.7" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.8" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1437,6 +1438,21 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.8:
+Tighten and speed up PM cloud file inspection
+Multiple fixes to TMDb module
+buildSimpleTorrentInfo now more safe for shows that lack information
+Added compatibility for Trakt usernames with non ASCII characters
+Created new regex method for identifying files inside a pack
+Premiumize resolver now uses regex method
+Real Debrid resolver now uses regex method
+Reworked RD cache check method to use new new methods created
+Cleaned up Real Debrid resolver method
+Cleaned up Premiumize resolver method
+Genre lists now use the trending endpoint to provide more current/relevant titles
+Fix possible double resolving of source in source select if not using auto-try next source
+Fixed Play from random point not clearing playing items from playlist
+
 Changelog 1.6.7:
 Fix season sort due to stringed season number from TMDb module
 
