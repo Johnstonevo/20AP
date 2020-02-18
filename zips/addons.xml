@@ -494,10 +494,10 @@
 	</extension>
 </addon>
 
-<addon id="plugin.googledrive" name="Google Drive" version="1.3.2" provider-name="Carlos Guzman (cguZZman)">
+<addon id="plugin.googledrive" name="Google Drive" version="1.3.3" provider-name="Carlos Guzman (cguZZman)">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
-		<import addon="script.module.clouddrive.common" version="1.2.9"/>
+		<import addon="script.module.clouddrive.common" version="1.2.10"/>
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="addon.py">
 		<provides>image audio video</provides>
@@ -536,6 +536,8 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
 			<fanart>fanart.jpg</fanart>
 		</assets>
 		<news>
+v1.3.3 released Feb 14, 2020:
+- Check for google ban
 v1.3.2 released Feb 12, 2020:
 - Fix video playback in google photos
 - Fix search
@@ -600,7 +602,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.5.9" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.5.10" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -1192,7 +1194,7 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
     </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.1" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.2" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.requests"/>
@@ -1203,6 +1205,12 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
     <extension point="xbmc.addon.metadata">
         <news>
 [COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.4.2:[/B]
+- Added a [B]Tools[/B] category to the settings. Each tool brings up a confirmation dialog
+explaining how they work, so you can read before using.
+- Tools added: Restore Watched Episodes, Update Favourites.
+- Minor fix to movie titles.
+
 [B]0.4.1:[/B]
 - Changed to a WatchCartoonOnline domain that's updated more frequently.
 - Fix for letters in episode numbers (when using the "Clean Episode Titles" option).
@@ -1221,14 +1229,6 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
 
 [B]0.3.6:[/B]
 - Updated the URL to the website, after a domain change.
-
-[B]0.3.5:[/B]
-- Fixed the Episode and Movie searches, the results are now playable.
-- Added the "Always Show Multi-chapter Dialog" setting, for use w/ shows that split episodes in parts.
-- Improved the Trakt listings, they now support movies, shows, seasons and episodes.
-
-[B]0.3.4:[/B]
-- Added a simple search history feature, see Search -> "Search History" menu.
         </news>
         <description lang="en">
 Watch cartoons and anime from [COLOR orange][B]www.TheWatchCartoonOnline.tv[/B][/COLOR].
