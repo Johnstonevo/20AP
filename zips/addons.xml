@@ -312,7 +312,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.53" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.54" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -346,6 +346,7 @@
     <import addon="script.module.six" />
     <import addon="script.module.kodi-six" />
     <import addon="script.module.addon.signals" version="0.0.1"/>
+    <import addon="script.module.futures" version="2.2.0"/>
   </requires>
   <extension    point="xbmc.python.pluginsource"
                 library="default.py">
@@ -781,7 +782,7 @@ You can clone the project and host it in your own server.
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.37" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
