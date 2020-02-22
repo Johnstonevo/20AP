@@ -1326,7 +1326,7 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
     </extension>
 </addon>
 
-<addon id="plugin.video.shelby" name="Shelby's Add-on" version="19.07.01.2" provider-name="Community">
+<addon id="plugin.video.shelby" name="Shelby's Add-on" version="20.02.22" provider-name="Community">
     <requires>
         <import addon="xbmc.python" version="2.19.0" />
       <import addon="repository.jenrepo" />
@@ -1339,7 +1339,7 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
         <import addon="script.module.dateutil" />
         <!--<import addon="script.module.web-pdb" version="1.0"/>-->
         <import addon="script.module.resolveurl" />
-        <!--<import addon="script.module.urlresolver" />-->
+        <import addon="script.module.urlresolver" />
          <import addon="plugin.video.youtube" version="5.4.5x" />
       <import addon="plugin.video.watchnixtoons2" optional="true" />
 
