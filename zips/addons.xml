@@ -1436,7 +1436,7 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
 </extension>
 </addon>
 
-<addon id="plugin.video.20aptest" name="20aptest" version="20.03.13" provider-name="Dark Child">
+<addon id="plugin.video.20aptest" name="20aptest" version="20.03.13.22" provider-name="Dark Child">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.requests"/>

@@ -71,7 +71,7 @@ put the information into - 'plugin.video.20aptest\resources\done' folder and tha
 
 One minor exception :
 These new scrapers (that are basicly the same) like Openscrapers change their import location, so to use them just change it back.
-For example: Change the import point which would look something like 'from openscrapers.modules' to 'from resources.lib.modules'.
+For example: Change the import point which would look something like 'from resources.lib.modules' to 'from resources.lib.modules'.
 For the moment however, 20APhas all the available working scrapers from all of the best addons.
 
 For Your Information:
