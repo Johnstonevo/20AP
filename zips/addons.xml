@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="plugin.video.venom" version="3.5.2" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.5.5" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -39,18 +39,12 @@
 			<screenshot>resources/screenshots/screenshot03a.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.5.2 - Feb. 22, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Trailer module updated with new api keys to fix google
-    search of youtube for trailers[/I]
-[COLOR yellow]--[/COLOR][I] Changed how restarting a previousely watched movie
-    or episode is handled. Previousely the title would be
-    marked unwatched upon replaying a previousely
-    watched item. Now the watched indicator is not
-    changed.[/I]
-[COLOR yellow]--[/COLOR][I] Added ability to pass to skin resume points.  This now
-    allows for skin to use a watched progress indicator.[/I]
-[COLOR yellow]--[/COLOR][I] Added TMDB Box Office to Movie Menu and
-    setting page option to remove item from navigation.[/I]
+[B][COLOR red]Update - v3.5.5 - March 19, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Dialog source select now respects setting for
+    "Multiline Source list" like Directory source list.[/I]
+[COLOR yellow]--[/COLOR][I] Added setting to "Sort torrents by size".  The new
+    setting is enabled by default and found under
+    "Torrent Settings".[/I]
 		</news>
 	</extension>
 </addon>
@@ -309,7 +303,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.56" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.57" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -334,7 +328,7 @@
 
 <addon  id="plugin.video.jellyfin"
         name="Jellyfin"
-        version="0.5.0"
+        version="0.5.1"
         provider-name="Jellyfin Contributors, angelblue05">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -373,25 +367,8 @@
     <summary lang="en"></summary>
     <description lang="en">Welcome to Jellyfin for Kodi!&#10;A whole new way to manage and view your media library. The Jellyfin addon for Kodi combines the best of Kodi - ultra smooth navigation, beautiful UIs and playback of any file under the sun, and Jellyfin - the most powerful fully open source multi-client media metadata indexer and server.&#10;&#10;Jellyfin for Kodi is the absolute best way to enjoy the incredible Kodi playback engine combined with the power of Jellyfin's centralized database. Features:&#10;* Direct integration with the Kodi library for native Kodi speed&#10;* Instant synchronization with the Jellyfin server&#10;* Full support for Movie, TV and Music collections&#10;* Jellyfin Server direct stream and transcoding support - use Kodi when you are away from home!</description>
     <news>
-    v0.5.0 (2020-03-04)
-      #167 Removed unnecessary log messages and changed some to debug
-      #172 Added support for Kodi 19 (and Python 3)
-      #188 Fix kodi 19 websocket control
-      #190 Fix Obj error
-      #192 Fix playlist paths
-      #193 Replaced debug output of json.dumps with an indirection to lazy __str__
-      #194 Dont modify a list as you are traversing it
-      #195 Fix empty download thread list
-      #197 Move the responsibility of the maximum number of threads to the UI
-      #200 Resort to the expensive database lookup only if the person exists in the database
-      #201 Allow for UI updates as the library is being sync'ed
-      #202 Parallelize multiple http GETs
-      #207 Make commands python 2/3 compatible
-      #209 Reduce execute and fetch one calls
-      #211 Finish getitem cleanup in library
-      #212 Bad dates are bad
-      #214 Fix re-running library updates
-      #215 Remove duplicated code and rename UpdatedWorker class
+    v0.5.1 (2020-03-08)
+      #224 Fix ascii errors
     </news>
     <assets>
       <icon>resources/icon.png</icon>
@@ -630,6 +607,31 @@ You can clone the project and host it in your own server.
         <summary>f4mTester</summary>
         <description></description>
         <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.106" provider-name="Addons4Kodi">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py">
+        <provides>executable</provides>
+    </extension>
+        <extension point="xbmc.addon.metadata">
+            <platform>all</platform>
+            <summary lang="en">OpenScrapers Module</summary>
+            <description>Scrape common video host for URL's to be playable in Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
+                <disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart></fanart>
+    </assets>
+    <news>v0.0.1.98 - Scraper updates and language additions</news>
     </extension>
 </addon>
 
@@ -878,7 +880,7 @@ Help keep CTOON alive, donate to the host: [COLOR khaki][B]ko-fi.com/A637AV5[/B]
     </extension>
 </addon>
 
-<addon id="plugin.video.lazyf1" version="2019.0.2" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
+<addon id="plugin.video.lazyf1" version="2020.0.0" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.lazyf1.images" optional="false"/>
