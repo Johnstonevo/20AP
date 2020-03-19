@@ -2965,6 +2965,10 @@ class SelectorDialog(xbmcgui.WindowXMLDialog):
             self.insideIndex = num
 
 def main_menu():
+      import datetime
+      now = datetime.datetime.now()
+      all_img_tv=cache.get(get_tv_poster,24, table='posters')
+      all_img_mov=cache.get(get_movie_poster,24, table='posters')
       
       if len(sys.argv)<2:
        return 0
@@ -2975,8 +2979,9 @@ def main_menu():
       level_index=(match[0]/100)
       if level_index>9:
         level_index=9
-      addDir3('Movies'.decode('utf8'),'www',13,BASE_LOGO+'popcorn.png','','Movies'.decode('utf8'))
-      addDir3('TV Shows'.decode('utf8'),'www',14,BASE_LOGO+'tv.png','',''.decode('utf8'))
+      addDir3('TV Series Tracker','tv',32,'',all_img_tv[6],'',isr=' ')
+      addDir3('Movies'.decode('utf8'),'www',13,all_img_mov[6],'','Movies'.decode('utf8'))
+      addDir3('TV Shows'.decode('utf8'),'www',14,all_img_tv[6],'',''.decode('utf8'))
       addDir3('Kids'.decode('utf8'),'www',44,BASE_LOGO+'kids.png','','Kids'.decode('utf8'))
       addDir3('Holidays'.decode('utf8'),'www',158,BASE_LOGO+'','',''.decode('utf8'))
       addDir3('Anime'.decode('utf8'),'www',157,BASE_LOGO+'anime.png','','Anime'.decode('utf8'))
@@ -3328,6 +3333,8 @@ def tv_menu():
       now = datetime.datetime.now()
       all_img=cache.get(get_tv_poster,24, table='posters')
       order_by='primary_release_date.asc'
+      addDir3('TV Series Tracker','tv',32,'',all_img[6],'',isr=' ')
+
       addDir3('Currently Running TV Shows','http://api.themoviedb.org/4/list/47121?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
       addDir3('Finished TV Series','http://api.themoviedb.org/4/list/47119?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
       addDir3('Crime Scene','http://api.themoviedb.org/4/list/97542?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
@@ -3355,8 +3362,6 @@ def tv_menu():
       addDir3('Popular 00\'s'.decode('utf8'),domain_s+'www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
       addDir3('Marvel'.decode('utf8'),domain_s+'api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_companies=7505&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,domain_s+'yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','','Marvel'.decode('utf8'))
       addDir3('Based on true story',domain_s+'www.imdb.com/search/title/?title_type=tv_series&genres=biography&sort=num_votes,desc',114,'',all_img[8],'',isr=' ')
-      addDir3('Series Tracker','tv',32,'',all_img[6],'',isr=' ')
-      addDir3('Watched Shows','tv',91,'',all_img[7],'',isr=' ')
       #addDir3('Iain\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/97042?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
       if Addon.getSetting("use_trak")=='true':
         addDir3('Rolling Stone\'s 100 Greatest TV Shows of All Time'.decode('utf8'),'users/redouaaane/lists/rolling-stone-s-100-greatest-tv-shows-of-all-time/items/',31,'',all_img[0],''.decode('utf8'))

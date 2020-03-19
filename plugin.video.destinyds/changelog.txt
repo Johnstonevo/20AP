@@ -1,4 +1,11 @@
-﻿[COLOR yellow][B]V1.3.8[/B]
+﻿[COLOR yellow][B]V1.3.9[/B]
+ - Added some more free scrapers
+ - Fixed RD One Click Movies.
+ - Added New Jen Plugins
+ - Removed Some Dead Scrapers
+
+
+[COLOR yellow][B]V1.3.8[/B]
  - Fixed Live Sport Code From The Original Dev. 
  - Removed One Click Free Movies (Site Is Dead)
  - Fixed RD One Click Movies.
