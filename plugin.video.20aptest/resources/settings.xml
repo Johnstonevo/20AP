@@ -120,77 +120,91 @@
 		<setting label="Normal Servers" type="lsep" />
 		<setting id="show_all_normal_servers" label="Click to See Normal Servers" type="bool" default="true" />
 		<!-- Start normal servers -->
-		<setting id="5movies" label="5movies" type="bool" default="true" visible= "eq(-1,true)"/>
-		<setting id="123movies" label="123movies" type="bool" default="true" visible= "eq(-2,true)"/>
-		<setting id="123movieshubz" label="123movieshubz" type="bool" default="true" visible= "eq(-3,true)"/>
-		<setting id="animetoon" label="animetoon" type="bool" default="true" visible= "eq(-4,true)"/>
-		<setting id="azmovie" label="azmovie" type="bool" default="true" visible= "eq(-5,true)"/>
-		<setting id="bnwmovies" label="bnwmovies" type="bool" default="true" visible= "eq(-6,true)"/>
-		<setting id="cartoonhd" label="cartoonhd" type="bool" default="true" visible= "eq(-7,true)"/>
-		<setting id="cmovies" label="cmovies" type="bool" default="true" visible= "eq(-8,true)"/>
-		<setting id="cmovieshd" label="cmovieshd" type="bool" default="true" visible= "eq(-9,true)"/>
-		<setting id="cmoviestv" label="cmoviestv" type="bool" default="true" visible= "eq(-10,true)"/>
+		<setting id="1putlocker" label="1putlocker" type="bool" default="true" visible= "eq(-1,true)"/>
+		<setting id="123moviehd" label="123moviehd" type="bool" default="true" visible= "eq(-2,true)"/>
+		<setting id="zmovies" label="zmovies" type="bool" default="true" visible= "eq(-3,true)"/>
+		<setting id="123movieshubz" label="123movieshubz" type="bool" default="true" visible= "eq(-4,true)"/>
+		<setting id="123movies" label="123movies" type="bool" default="true" visible= "eq(-5,true)"/>
+		<setting id="5movies" label="5movies" type="bool" default="true" visible= "eq(-6,true)"/>
+		<setting id="animetoon" label="animetoon" type="bool" default="true" visible= "eq(-7,true)"/>
+		<setting id="azmovie" label="azmovie" type="bool" default="true" visible= "eq(-8,true)"/>
+		<setting id="bnwmovies" label="bnwmovies" type="bool" default="true" visible= "eq(-9,true)"/>
+		<setting id="cartoonhd" label="cartoonhd" type="bool" default="true" visible= "eq(-10,true)"/>
+
+		<setting id="cmovies" label="cmovies" type="bool" default="true" visible= "eq(-11,true)"/>
+		<setting id="cmovieshd" label="cmovieshd" type="bool" default="true" visible= "eq(-12,true)"/>
+		<setting id="cmoviestv" label="cmoviestv" type="bool" default="true" visible= "eq(-13,true)"/>
+		<setting id="coolmoviezone" label="coolmoviezone" type="bool" default="true" visible= "eq(-14,true)"/>
+		<setting id="easynews" label="easynews" type="bool" default="true" visible= "eq(-15,true)"/>
+		<setting id="extramovies" label="extramovies" type="bool" default="true" visible= "eq(-16,true)"/>
+		<setting id="filepursuit" label="filepursuit" type="bool" default="true" visible= "eq(-17,true)"/>
+		<setting id="filmxy" label="filmxy" type="bool" default="true" visible= "eq(-18,true)"/>
+		<setting id="fmovies" label="fmovies" type="bool" default="true" visible= "eq(-19,true)"/>
+		<setting id="freefmovies" label="freefmovies" type="bool" default="true" visible= "eq(-20,true)"/>
+
+		<setting id="freeputlockers" label="freeputlockers" type="bool" default="true" visible= "eq(-21,true)"/>
+		<setting id="furk" label="furk" type="bool" default="true" visible= "eq(-22,true)"/>
+		<setting id="goldmovies" label="goldmovies" type="bool" default="true" visible= "eq(-23,true)"/>
+		<setting id="gomo" label="gomo" type="bool" default="true" visible= "eq(-24,true)"/>
+		<setting id="gomoviesink" label="gomoviesink" type="bool" default="true" visible= "eq(-25,true)"/>
+		<setting id="gowatchseries" label="gowatchseries" type="bool" default="true" visible= "eq(-26,true)"/>
+		<setting id="hdmto" label="hdmto" type="bool" default="true" visible= "eq(-27,true)"/>
+		<setting id="Hdmto2" label="Hdmto2" type="bool" default="true" visible= "eq(-28,true)"/>
+		<setting id="hdpopcorneu" label="hdpopcorneu" type="bool" default="true" visible= "eq(-29,true)"/>
+		<setting id="hdvix" label="hdvix" type="bool" default="true" visible= "eq(-30,true)"/>
 
 
-		<setting id="coolmoviezone" label="coolmoviezone" type="bool" default="true" visible= "eq(-11,true)"/>
-		<setting id="easynews" label="" type="bool" default="true" visible= "eq(-12,true)"/>
-		<setting id="extramovies" label="extramovies" type="bool" default="true" visible= "eq(-13,true)"/>
-		<setting id="filepursuit" label="filepursuit" type="bool" default="true" visible= "eq(-14,true)"/>
-		<setting id="filmxy" label="filmxy" type="bool" default="true" visible= "eq(-15,true)"/>
-		<setting id="fmovies" label="fmovies" type="bool" default="true" visible= "eq(-16,true)"/>
-		<setting id="freefmovies" label="freefmovies" type="bool" default="true" visible= "eq(-17,true)"/>
-		<setting id="furk" label="furk" type="bool" default="true" visible= "eq(-18,true)"/>
-		<setting id="goldmovies" label="goldmovie" type="bool" default="true" visible= "eq(-19,true)"/>
-		<setting id="gomo" label="gomo" type="bool" default="true" visible= "eq(-20,true)"/>
 
-		<setting id="gomoviesink" label="gomoviesink" type="bool" default="true" visible= "eq(-21,true)"/>
-		<setting id="gowatchseries" label="gowatchserie" type="bool" default="true" visible= "eq(-22,true)"/>
-		<setting id="hdmto" label="hdmto" type="bool" default="true" visible= "eq(-23,true)"/>
-		<setting id="Hdmto" label="Hdmto" type="bool" default="true" visible= "eq(-24,true)"/>
-		<setting id="hdpopcorneu" label="hdpopcorneu" type="bool" default="true" visible= "eq(-25,true)"/>
-		<setting id="hdvix" label="hdvix" type="bool" default="true" visible= "eq(-26,true)"/>
-		<setting id="iwaatch" label="iwaatch" type="bool" default="true" visible= "eq(-27,true)"/>
-		<setting id="iwah" label="iwah" type="bool" default="true" visible= "eq(-28,true)"/>
-		<setting id="megashare9" label="megashare9" type="bool" default="true" visible= "eq(-29,true)"/>
-		<setting id="miradetodo" label="miradetodo" type="bool" default="true" visible= "eq(-30,true)"/>
-
-		<setting id="movie4kis" label="movie4kis" type="bool" default="true" visible= "eq(-31,true)"/>
-		<setting id="movies123" label="movies123" type="bool" default="true" visible= "eq(-32,true)"/>
-		<setting id="moviescouch" label="moviescouch" type="bool" default="true" visible= "eq(-33,true)"/>
-		<setting id="mycoolmoviezone" label="mycoolmoviezone" type="bool" default="true" visible= "eq(-34,true)"/>
-		<setting id="openloadmovie" label="openloadmovie" type="bool" default="true" visible= "eq(-35,true)"/>
-		<setting id="ororo" label="ororo" type="bool" default="true" visible= "eq(-36,true)"/>
-		<setting id="primewire" label="primewire" type="bool" default="true" visible= "eq(-37,true)"/>
-		<setting id="projectfreetv" label="projectfreetv" type="bool" default="true" visible= "eq(-38,true)"/>
-		<setting id="putlocker" label="putlocker" type="bool" default="true" visible= "eq(-39,true)"/>
-		<setting id="putlockerfree" label="putlockerfree" type="bool" default="true" visible= "eq(-40,true)"/>
-
-		<setting id="putlockeronl" label="putlockeronl" type="bool" default="true" visible= "eq(-41,true)"/>
-		<setting id="putlockersonline" label="putlockersonline" type="bool" default="true" visible= "eq(-42,true)"/>
-		<setting id="seehd" label="seehd" type="bool" default="true" visible= "eq(-43,true)"/>
-		<setting id="series9" label="series9" type="bool" default="true" visible= "eq(-44,true)"/>
-		<setting id="seriesonline" label="seriesonline" type="bool" default="true" visible= "eq(-45,true)"/>
-		<setting id="sharemovies" label="sharemovies" type="bool" default="true" visible= "eq(-46,true)"/>
-		<setting id="solarmoviefree" label="solarmoviefree" type="bool" default="true" visible= "eq(-47,true)"/>
-		<setting id="solarmovienet" label="solarmovienet" type="bool" default="true" visible= "eq(-48,true)"/>
-		<setting id="streamdreams" label="streamdreams" type="bool" default="true" visible= "eq(-49,true)"/>
-		<setting id="swatchseries" label="swatchseries" type="bool" default="true" visible= "eq(-50,true)"/>
+		<setting id="iwaatch" label="iwaatch" type="bool" default="true" visible= "eq(-31,true)"/>
+		<setting id="iwah" label="iwah" type="bool" default="true" visible= "eq(-32,true)"/>
+		<setting id="iwannawatch" label="iwannawatch" type="bool" default="true" visible= "eq(-33,true)"/>
+		<setting id="library" label="library" type="bool" default="true" visible= "eq(-34,true)"/>
+		<setting id="megashare9" label="megashare9" type="bool" default="true" visible= "eq(-35,true)"/>
+		<setting id="miradetodo" label="miradetodo" type="bool" default="true" visible= "eq(-36,true)"/>
+		<setting id="movie4kis" label="movie4kis" type="bool" default="true" visible= "eq(-37,true)"/>
+		<setting id="movies123" label="movies123" type="bool" default="true" visible= "eq(-38,true)"/>
+		<setting id="moviescouch" label="moviescouch" type="bool" default="true" visible= "eq(-39,true)"/>
+		<setting id="mycoolmoviezone" label="mycoolmoviezone" type="bool" default="true" visible= "eq(-40,true)"/>
 
 
-		<setting id="timewatch" label="timewatch" type="bool" default="true" visible= "eq(-51,true)"/>
-		<setting id="toonget" label="toonget" type="bool" default="true" visible= "eq(-52,true)"/>
-		<setting id="tvbox" label="tvbox" type="bool" default="true" visible= "eq(-53,true)"/>
-		<setting id="tvmovieflix" label="tvmovieflix" type="bool" default="true" visible= "eq(-54,true)"/>
-		<setting id="watch32" label="watch32" type="bool" default="true" visible= "eq(-55,true)"/>
-		<setting id="watchepisodes" label="watchepisodes" type="bool" default="true" visible= "eq(-56,true)"/>
-		<setting id="watchseries" label="watchseries" type="bool" default="true" visible= "eq(-57,true)"/>
-		<setting id="watchserieshd" label="watchserieshd" type="bool" default="true" visible= "eq(-58,true)"/>
-		<setting id="watchstream" label="watchstream" type="bool" default="true" visible= "eq(-59,true)"/>
-		<setting id="xwatchseries" label="xwatchseries" type="bool" default="true" visible= "eq(-60,true)"/>
+		<setting id="mycouchtuner" label="mycouchtuner" type="bool" default="true" visible= "eq(-41,true)"/>
+		<setting id="odb" label="odb" type="bool" default="true" visible= "eq(-42,true)"/>
+		<setting id="openloadmovie" label="openloadmovie" type="bool" default="true" visible= "eq(-43,true)"/>
+		<setting id="ororo" label="ororo" type="bool" default="true" visible= "eq(-44,true)"/>
+		<setting id="plockers" label="plockers" type="bool" default="true" visible= "eq(-45,true)"/>
+		<setting id="plockers " label="plockers " type="bool" default="true" visible= "eq(-46,true)"/>
+		<setting id="primewire" label="primewire" type="bool" default="true" visible= "eq(-47,true)"/>
+		<setting id="projectfreetv" label="projectfreetv" type="bool" default="true" visible= "eq(-48,true)"/>
+		<setting id="pron" label="pron" type="bool" default="true" visible= "eq(-49,true)"/>
+		<setting id="putlocker" label="putlocker" type="bool" default="true" visible= "eq(-50,true)"/>
 
-		<setting id="yesmoviesgg" label="yesmoviesgg" type="bool" default="true" visible= "eq(-61,true)"/>
-		<setting id="zmovies" label="zmovies" type="bool" default="true" visible= "eq(-62,true)"/>
-		<!-- End normal servers -->
+
+		<setting id="putlockerfree" label="putlockerfree" type="bool" default="true" visible= "eq(-51,true)"/>
+		<setting id="putlockeronl" label="putlockeronl" type="bool" default="true" visible= "eq(-52,true)"/>
+		<setting id="putlockersonline" label="putlockersonline" type="bool" default="true" visible= "eq(-53,true)"/>
+		<setting id="seehd" label="seehd" type="bool" default="true" visible= "eq(-54,true)"/>
+		<setting id="series9" label="series9" type="bool" default="true" visible= "eq(-55,true)"/>
+		<setting id="seriesonline" label="seriesonline" type="bool" default="true" visible= "eq(-56,true)"/>
+		<setting id="sezonlukdizi" label="sezonlukdizi" type="bool" default="true" visible= "eq(-57,true)"/>
+		<setting id="sharemovies" label="sharemovies" type="bool" default="true" visible= "eq(-58,true)"/>
+		<setting id="solarmoviefree" label="solarmoviefree" type="bool" default="true" visible= "eq(-59,true)"/>
+		<setting id="solarmovienet" label="solarmovienet" type="bool" default="true" visible= "eq(-60,true)"/>
+
+		<setting id="streamdreams" label="streamdreams" type="bool" default="true" visible= "eq(-61,true)"/>
+		<setting id="swatchseries" label="swatchseries" type="bool" default="true" visible= "eq(-62,true)"/>
+		<setting id="timewatch" label="timewatch" type="bool" default="true" visible= "eq(-63,true)"/>
+		<setting id="toonget" label="toonget" type="bool" default="true" visible= "eq(-64,true)"/>
+		<setting id="tvbox" label="tvbox" type="bool" default="true" visible= "eq(-65,true)"/>
+		<setting id="tvmovieflix" label="tvmovieflix" type="bool" default="true" visible= "eq(-66,true)"/>
+		<setting id="vikv" label="vikv" type="bool" default="true" visible= "eq(-67,true)"/>
+		<setting id="watch32" label="watch32" type="bool" default="true" visible= "eq(-68,true)"/>
+		<setting id="watchepisodes" label="watchepisodes" type="bool" default="true" visible= "eq(-69,true)"/>
+		<setting id="watchseries" label="watchseries" type="bool" default="true" visible= "eq(-70,true)"/>
+		
+		<setting id="watchserieshd" label="watchserieshd" type="bool" default="true" visible= "eq(-71,true)"/>
+		<setting id="xwatchseries" label="xwatchseries" type="bool" default="true" visible= "eq(-72,true)"/>
+		<setting id="yesmoviesgg" label="yesmoviesgg" type="bool" default="true" visible= "eq(-73,true)"/>
+				<!-- End normal servers -->
 
 
 		<setting label="Scraping In New Window" type="lsep"/>
@@ -275,51 +289,62 @@
 		<setting id="7torrents" label="7torrents" type="bool" default="true" visible= "eq(-1,true)"/>
 		<setting id="1337x" label="1337x" type="bool" default="true" visible= "eq(-2,true)"/>
 		<setting id="bitlord" label="bitlord" type="bool" default="true" visible= "eq(-3,true)"/>
-		<setting id="btdb" label="btdb" type="bool" default="true" visible= "eq(-4,true)"/>
-		<setting id="btscene" label="btscene" type="bool" default="true" visible= "eq(-5,true)"/>
-		<setting id="doublr" label="doublr" type="bool" default="true" visible= "eq(-6,true)"/>
-		<setting id="ettv" label="ettv" type="bool" default="true" visible= "eq(-7,true)"/>
-		<setting id="extratorrent" label="extratorrent" type="bool" default="true" visible= "eq(-8,true)"/>
-		<setting id="eztv" label="eztv" type="bool" default="true" visible= "eq(-9,true)"/>
-		<setting id="glodls" label="glodls" type="bool" default="true" visible= "eq(-10,true)"/>
+		<setting id="btbit" label="btbit" type="bool" default="true" visible= "eq(-4,true)"/>
+		<setting id="btdb" label="btdb" type="bool" default="true" visible= "eq(-5,true)"/>
+		<setting id="btscene" label="btscene" type="bool" default="true" visible= "eq(-6,true)"/>
+		<setting id="digbt" label="digbt" type="bool" default="true" visible= "eq(-7,true)"/>
+		<setting id="doublr" label="doublr" type="bool" default="true" visible= "eq(-8,true)"/>
+		<setting id="ettv" label="ettv" type="bool" default="true" visible= "eq(-9,true)"/>
+		<setting id="extratorrent" label="extratorrent" type="bool" default="true" visible= "eq(-10,true)"/>
 
-		<setting id="glotorrents" label="glotorrents" type="bool" default="true" visible= "eq(-11,true)"/>
-		<setting id="idope" label="idope" type="bool" default="true" visible= "eq(-12,true)"/>
-		<setting id="limetorrents" label="limetorrents" type="bool" default="true" visible= "eq(-13,true)"/>
-		<setting id="magnet4you" label="magnet4you" type="bool" default="true" visible= "eq(-14,true)"/>
-		<setting id="magnetdl" label="magnetdl" type="bool" default="true" visible= "eq(-15,true)"/>
-		<setting id="mkvcage" label="mkvcage" type="bool" default="true" visible= "eq(-16,true)"/>
-		<setting id="movcr" label="movcr" type="bool" default="true" visible= "eq(-17,true)"/>
-		<setting id="moviemagnet" label="moviemagnet" type="bool" default="true" visible= "eq(-18,true)"/>
-		<setting id="nyaa" label="nyaa" type="bool" default="true" visible= "eq(-19,true)"/>
-		<setting id="piratebay" label="piratebay" type="bool" default="true" visible= "eq(-20,true)"/>
 
-		<setting id="pirateiro" label="pirateiro" type="bool" default="true" visible= "eq(-21,true)"/>
-		<setting id="popcorntime" label="popcorntime" type="bool" default="true" visible= "eq(-22,true)"/>
-		<setting id="rarbg" label="rarbg" type="bool" default="true" visible= "eq(-23,true)"/>
-		<setting id="showrss" label="showrss" type="bool" default="true" visible= "eq(-24,true)"/>
-		<setting id="skytorrents" label="skytorrents" type="bool" default="true" visible= "eq(-25,true)"/>
-		<setting id="solidtorrents" label="solidtorrents" type="bool" default="true" visible= "eq(-26,true)"/>
-		<setting id="topnow" label="topnow" type="bool" default="true" visible= "eq(-27,true)"/>
-		<setting id="torlock" label="torlock" type="bool" default="true" visible= "eq(-28,true)"/>
-		<setting id="torrentapi" label="torrentapi" type="bool" default="true" visible= "eq(-29,true)"/>
-		<setting id="torrentdownload" label="torrentdownload" type="bool" default="true" visible= "eq(-30,true)"/>
+		<setting id="eztv" label="eztv" type="bool" default="true" visible= "eq(-11,true)"/>
+		<setting id="glodls" label="glodls" type="bool" default="true" visible= "eq(-12,true)"/>
+		<setting id="glotorrents" label="glotorrents" type="bool" default="true" visible= "eq(-13,true)"/>
+		<setting id="idope" label="idope" type="bool" default="true" visible= "eq(-14,true)"/>
+		<setting id="kickass2" label="kickass2" type="bool" default="true" visible= "eq(-15,true)"/>
+		<setting id="limetorrents" label="limetorrents" type="bool" default="true" visible= "eq(-16,true)"/>
+		<setting id="magnet4you" label="magnet4you" type="bool" default="true" visible= "eq(-17,true)"/>
+		<setting id="magnetdl" label="magnetdl" type="bool" default="true" visible= "eq(-18,true)"/>
+		<setting id="mkvcage" label="mkvcage" type="bool" default="true" visible= "eq(-19,true)"/>
+		<setting id="mkvhub" label="mkvhub" type="bool" default="true" visible= "eq(-20,true)"/>
 
-		<setting id="torrentdownloads" label="torrentdownloads" type="bool" default="true" visible= "eq(-31,true)"/>
-		<setting id="torrentfunk" label="torrentfunk" type="bool" default="true" visible= "eq(-32,true)"/>
-		<setting id="torrentgalaxy" label="torrentgalaxy" type="bool" default="true" visible= "eq(-33,true)"/>
-		<setting id="torrentproject" label="torrentproject" type="bool" default="true" visible= "eq(-34,true)"/>
-		<setting id="torrentquest" label="torrentquest" type="bool" default="true" visible= "eq(-35,true)"/>
-		<setting id="torrenttm" label="torrenttm" type="bool" default="true" visible= "eq(-36,true)"/>
-		<setting id="torrentz" label="torrentz" type="bool" default="true" visible= "eq(-37,true)"/>
-		<setting id="torrentz2" label="torrentz2" type="bool" default="true" visible= "eq(-38,true)"/>
-		<setting id="yify" label="yify" type="bool" default="true" visible= "eq(-39,true)"/>
-		<setting id="yifyddl" label="yifyddl" type="bool" default="true" visible= "eq(-40,true)"/>
 
-		<setting id="yourbittorrent" label="yourbittorrent" type="bool" default="true" visible= "eq(-41,true)"/>
-		<setting id="ytsam" label="ytsam" type="bool" default="true" visible= "eq(-42,true)"/>
-		<setting id="ytsws" label="ytsws" type="bool" default="true" visible= "eq(-43,true)"/>
-		<setting id="zoogle" label="zoogle" type="bool" default="true" visible= "eq(-44,true)"/>
+		<setting id="movcr" label="movcr" type="bool" default="true" visible= "eq(-21,true)"/>
+		<setting id="moviemagnet" label="moviemagnet" type="bool" default="true" visible= "eq(-22,true)"/>
+		<setting id="nyaa" label="nyaa" type="bool" default="true" visible= "eq(-23,true)"/>
+		<setting id="piratebay" label="piratebay" type="bool" default="true" visible= "eq(-24,true)"/>
+		<setting id="pirateiro" label="pirateiro" type="bool" default="true" visible= "eq(-25,true)"/>
+		<setting id="popcorntime" label="popcorntime" type="bool" default="true" visible= "eq(-26,true)"/>
+		<setting id="prostylex" label="prostylex" type="bool" default="true" visible= "eq(-27,true)"/>
+		<setting id="rarbg" label="rarbg" type="bool" default="true" visible= "eq(-28,true)"/>
+		<setting id="showrss" label="showrss" type="bool" default="true" visible= "eq(-29,true)"/>
+		<setting id="skytorrents" label="skytorrents" type="bool" default="true" visible= "eq(-30,true)"/>
+
+
+		<setting id="solidtorrents" label="solidtorrents" type="bool" default="true" visible= "eq(-31,true)"/>
+		<setting id="thepiratebay" label="thepiratebay" type="bool" default="true" visible= "eq(-32,true)"/>
+		<setting id="topnow" label="topnow" type="bool" default="true" visible= "eq(-33,true)"/>
+		<setting id="torlock" label="torlock" type="bool" default="true" visible= "eq(-34,true)"/>
+		<setting id="torrentapi" label="torrentapi" type="bool" default="true" visible= "eq(-35,true)"/>
+		<setting id="torrentdownload" label="torrentdownload" type="bool" default="true" visible= "eq(-36,true)"/>
+		<setting id="torrentdownloads" label="torrentdownloads" type="bool" default="true" visible= "eq(-37,true)"/>
+		<setting id="torrentfunk" label="torrentfunk" type="bool" default="true" visible= "eq(-38,true)"/>
+		<setting id="torrentgalaxy" label="torrentgalaxy" type="bool" default="true" visible= "eq(-39,true)"/>
+		<setting id="torrentproject" label="torrentproject" type="bool" default="true" visible= "eq(-40,true)"/>
+
+		<setting id="torrentquest" label="torrentquest" type="bool" default="true" visible= "eq(-41,true)"/>
+		<setting id="torrenttm" label="torrenttm" type="bool" default="true" visible= "eq(-42,true)"/>
+		<setting id="torrentz" label="torrentz" type="bool" default="true" visible= "eq(-43,true)"/>
+		<setting id="torrentz2" label="torrentz2" type="bool" default="true" visible= "eq(-44,true)"/>
+		<setting id="yify" label="yify" type="bool" default="true" visible= "eq(-45,true)"/>
+		<setting id="yifyddl" label="yifyddl" type="bool" default="true" visible= "eq(-46,true)"/>
+		<setting id="yourbittorrent" label="yourbittorrent" type="bool" default="true" visible= "eq(-47,true)"/>
+		<setting id="ytsam" label="ytsam" type="bool" default="true" visible= "eq(-48,true)"/>
+		<setting id="ytsws" label="ytsws" type="bool" default="true" visible= "eq(-49,true)"/>
+		<setting id="zoogle" label="zoogle" type="bool" default="true" visible= "eq(-50,true)"/>
+
+
 		<!-- End torrent servers -->
 	</category>
 

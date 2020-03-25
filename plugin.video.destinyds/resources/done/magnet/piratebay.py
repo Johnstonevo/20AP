@@ -1,178 +1,192 @@
-import threading
+# -*- coding: utf-8 -*-
 
-from bs4 import BeautifulSoup
-from resources.lib.common import tools
-from resources.lib.common import source_utils
-from resources.lib.common.source_utils import serenRequests
+'''
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-class sources:
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+
+import re
+import traceback
+import urllib
+import urlparse
+
+from resources.lib.modules import cache, cleantitle, client, control, debrid, log_utils, source_utils
+
+
+class source:
     def __init__(self):
-        self.domain = "thepiratebay.org"
-        self.base_link = 'https://tpb.agency'
-        self.search_link = 'search/'
-        self.threads = []
-        self.threadResults = []
+        self.priority = 1
+        self.language = ['en']
+        self.domains = ['pirateproxy.live', 'thepiratebay.org', 'thepiratebay.fun', 'thepiratebay.asia', 'tpb.party', 'thepiratebay3.org', 'thepiratebayz.org', 'thehiddenbay.com', 'piratebay.live', 'thepiratebay.zone']
+        self._base_link = None
+        self.search_link = '/s/?q=%s&page=0&&video=on&orderby=99'
+        self.min_seeders = int(control.setting('torrent.min.seeders'))
 
-    def movie(self, title, year):
-        url = self.base_link + self.search_link + tools.quote('%s %s' % (title, year))
-        response = serenRequests().get(url, timeout=10)
-        results = BeautifulSoup(response.text, 'html.parser').find_all('tr')
-        torrent_list = []
-        for i in results:
-            try:
-                torrent = {}
-                torrent['package'] = 'single'
-                torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
-                if not source_utils.filterMovieTitle(torrent['release_title'], title, year):
-                    continue
-                torrent['magnet'] = i.find_all('a')[3]['href']
-                if 'magnet:?' not in torrent['magnet']:
-                    torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                torrent['seeds'] = int(i.find_all('td')[2].text)
-                torrent_list.append(torrent)
-            except:
-                continue
-        return torrent_list
+    @property
+    def base_link(self):
+        if not self._base_link:
+            self._base_link = cache.get(self.__get_base_url, 120, 'https://%s' % self.domains[0])
+        return self._base_link
 
-    def episode(self, simpleInfo, allInfo):
-
-        self.threads.append(threading.Thread(target=self.seasonPack, args=(simpleInfo, allInfo)))
-        self.threads.append(threading.Thread(target=self.singleEpisode, args=(simpleInfo, allInfo)))
-        self.threads.append(threading.Thread(target=self.showPack, args=(simpleInfo, allInfo)))
-
-        for thread in self.threads:
-            thread.start()
-        for thread in self.threads:
-            thread.join()
-
-        return self.threadResults
-
-    def showPack(self, simpleInfo, allInfo):
+    def movie(self, imdb, title, localtitle, aliases, year):
+        if debrid.status(True) is False:
+            return
 
         try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
+            url = {'imdb': imdb, 'title': title, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except Exception:
+            failure = traceback.format_exc()
+            log_utils.log('TPB - Exception: \n' + str(failure))
+            return
 
-            url = self.base_link + self.search_link + tools.quote(
-                '%s season 1-%s' % (showTitle, simpleInfo['no_seasons']))
-            response = serenRequests().get(url, timeout=10)
-            try:
-                if response.status_code != 200:
-                    return
-            except:
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
+        if debrid.status(True) is False:
+            return
+
+        try:
+            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except Exception:
+            failure = traceback.format_exc()
+            log_utils.log('TPB - Exception: \n' + str(failure))
+            return
+
+    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+        if debrid.status(True) is False:
+            return
+
+        try:
+            if url is None:
                 return
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results = webpage.find_all('tr')
 
-            url = self.base_link + self.search_link + tools.quote(
-                '%s complete' % showTitle)
-            response = serenRequests().get(url)
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results += webpage.find_all('tr')
+            url = urlparse.parse_qs(url)
+            url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
+            url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
+            url = urllib.urlencode(url)
+            return url
+        except Exception:
+            failure = traceback.format_exc()
+            log_utils.log('TPB - Exception: \n' + str(failure))
+            return
 
-            torrent_list = []
+    def sources(self, url, hostDict, hostprDict):
+        try:
+            sources = []
 
-            for i in results:
+            if url is None:
+                return sources
+
+            data = urlparse.parse_qs(url)
+            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
+
+            title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+
+            hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
+
+            query = '%s S%02dE%02d' % (
+                data['tvshowtitle'],
+                int(data['season']),
+                int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (
+                data['title'],
+                data['year'])
+            query = re.sub('(\\\|/| -|:|;|\*|\?|"|<|>|\|)', ' ', query)
+            url = self.search_link % urllib.quote_plus(query)
+            url = urlparse.urljoin(self.base_link, url)
+            html = client.request(url)
+            html = html.replace('&nbsp;', ' ')
+            try:
+                results = client.parseDOM(html, 'table', attrs={'id': 'searchResult'})[0]
+            except Exception:
+                return sources
+            rows = re.findall('<tr(.+?)</tr>', results, re.DOTALL)
+            if rows is None:
+                return sources
+
+            for entry in rows:
                 try:
-                    torrent = {}
-                    torrent['package'] = 'pack'
-                    torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
-                    if not source_utils.filterShowPack(simpleInfo, torrent['release_title']):
+                    try:
+                        name = re.findall('class="detLink" title=".+?">(.+?)</a>', entry, re.DOTALL)[0]
+                        name = client.replaceHTMLCodes(name)
+                        # t = re.sub('(\.|\(|\[|\s)(\d{4}|S\d*E\d*|S\d*|3D)(\.|\)|\]|\s|)(.+|)', '', name, flags=re.I)
+                        if not cleantitle.get(title) in cleantitle.get(name):
+                            continue
+                    except Exception:
                         continue
-                    torrent['magnet'] = i.find_all('a')[3]['href']
-                    if 'magnet:?' not in torrent['magnet']:
-                        torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                    torrent['seeds'] = int(i.find_all('td')[2].text)
-                    torrent_list.append(torrent)
-                except:
+                    y = re.findall('[\.|\(|\[|\s](\d{4}|S\d*E\d*|S\d*)[\.|\)|\]|\s]', name)[-1].upper()
+                    if not y == hdlr:
+                        continue
+
+                    try:
+                        seeders = int(re.findall('<td align="right">(.+?)</td>', entry, re.DOTALL)[0])
+                    except Exception:
+                        continue
+                    if self.min_seeders > seeders:
+                        continue
+
+                    try:
+                        link = 'magnet:%s' % (re.findall('a href="magnet:(.+?)"', entry, re.DOTALL)[0])
+                        link = str(client.replaceHTMLCodes(link).split('&tr')[0])
+                    except Exception:
+                        continue
+
+                    quality, info = source_utils.get_release_quality(name, name)
+
+                    try:
+                        size = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+)\s*(?:GB|GiB|MB|MiB))', entry)[-1]
+                        div = 1 if size.endswith(('GB', 'GiB')) else 1024
+                        size = float(re.sub('[^0-9|/.|/,]', '', size)) / div
+                        size = '%.2f GB' % size
+                        info.append(size)
+                    except Exception:
+                        pass
+
+                    info = ' | '.join(info)
+                    sources.append({'source': 'Torrent', 'quality': quality, 'language': 'en',
+                                    'url': link, 'info': info, 'direct': False, 'debridonly': True})
+                except Exception:
+                    failure = traceback.format_exc()
+                    log_utils.log('TPB - Cycle Broken: \n' + str(failure))
                     continue
 
-            self.threadResults += torrent_list
+            check = [i for i in sources if not i['quality'] == 'CAM']
+            if check:
+                sources = check
 
-        except:
-            pass
+            return sources
+        except Exception:
+            failure = traceback.format_exc()
+            log_utils.log('TPB - Exception: \n' + str(failure))
+            return sources
 
-
-    def seasonPack(self, simpleInfo, allInfo):
-
+    def __get_base_url(self, fallback):
         try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-
-            url = self.base_link + self.search_link + tools.quote(
-                '%s season %s' % (showTitle, simpleInfo['season_number']))
-            response = serenRequests().get(url, timeout=10)
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results = webpage.find_all('tr')
-            torrent_list = []
-            page_limit = 2
-
-            for x in range(1, page_limit):
-
-                for i in results:
-                    try:
-                        torrent = {}
-                        torrent['package'] = 'pack'
-                        torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
-
-                        if not source_utils.filterSeasonPack(simpleInfo, torrent['release_title']):
-                            continue
-
-                        torrent['magnet'] = i.find_all('a')[3]['href']
-                        if 'magnet:?' not in torrent['magnet']:
-                            torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                        torrent['seeds'] = int(i.find_all('td')[2].text)
-                        torrent_list.append(torrent)
-                        url = url + '/%s' % x
-                    except:
-                        continue
-
-                self.threadResults += torrent_list
-
-        except:
+            for domain in self.domains:
+                try:
+                    url = 'https://%s' % domain
+                    result = client.request(url, limit=1, timeout='10')
+                    result = re.findall('<input type="submit" title="(.+?)"', result, re.DOTALL)[0]
+                    if result and 'Pirate Search' in result:
+                        return url
+                except Exception:
+                    pass
+        except Exception:
             pass
 
-    def singleEpisode(self, simpleInfo, allInfo):
+        return fallback
 
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-            season = simpleInfo['season_number'].zfill(2)
-            episode = simpleInfo['episode_number'].zfill(2)
-
-            url = self.base_link + self.search_link + tools.quote('%s s%se%s' % (showTitle, season, episode))
-            response = serenRequests().get(url, timeout=10)
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results = webpage.find_all('tr')
-            torrent_list = []
-
-            page_limit = 2
-            torrent_list = []
-
-            for x in range(1, page_limit):
-                for i in results:
-                    try:
-                        torrent = {}
-                        torrent['package'] = 'single'
-                        torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
-
-                        if not source_utils.filterSingleEpisode(simpleInfo, torrent['release_title']):
-                            continue
-
-                        torrent['magnet'] = i.find_all('a')[3]['href']
-                        if 'magnet:?' not in torrent['magnet']:
-                            torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                        torrent['seeds'] = int(i.find_all('td')[2].text)
-                        torrent_list.append(torrent)
-                    except:
-                        import traceback
-                        traceback.print_exc()
-                        continue
-
-                self.threadResults += torrent_list
-        except:
-            pass
-
-    def magnet_request(self, url):
-        response = serenRequests().get(url)
-        magnet = BeautifulSoup(response.text, 'html.parser').find('div', {'class':'download'})
-        magnet = magnet.find('a')['href']
-        return magnet
+    def resolve(self, url):
+        return url

@@ -232,16 +232,19 @@ class WatchCartoon(Plugin):
             return result_item
 
     def clear_cache(self):
+        skip_prompt = xbmcaddon.Addon().getSetting("quiet_cache")
         dialog = xbmcgui.Dialog()
-        if dialog.yesno(xbmcaddon.Addon().getAddonInfo('name'), "Clear WatchCartoon.com Plugin Cache?"):
+        if skip_prompt == 'false':
+            if dialog.yesno(xbmcaddon.Addon().getAddonInfo('name'), "Clear WatchCartoon.com Plugin Cache?"):
+                koding.Remove_Table("wctoon_com_plugin")
+        else:
             koding.Remove_Table("wctoon_com_plugin")
-
 
 @route(mode='WatchCartoon', args=["url"])
 def get_wcstream(url):
     url = url.replace('category/', '') # Strip our category tag off.
-    url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
-
+    url = urlparse.urljoin('https://www.watchcartoononline.com', url)
+    pins = ""
     xml = fetch_from_db(url)
     if not xml:
         xml = ""
@@ -284,14 +287,14 @@ def get_wcstream(url):
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='TopFifty', args=["url"])
 def get_wctopfiftystream(url):
     url = url.replace('topfifty/', '') # Strip our category tag off.
-    url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
-
+    url = urlparse.urljoin('https://www.watchcartoononline.io', url)
+    pins = ""
     xml = fetch_from_db(url)
     if not xml:
         xml = ""
@@ -319,7 +322,7 @@ def get_wctopfiftystream(url):
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='WCMain', args=["url"])
@@ -327,9 +330,9 @@ def get_wcmainstream(subid):
     xml = ""
     subid = subid.replace('main/', '', 1) # Strip our category tag off.
     subid = subid.split('/')
-
+    pins = ""
     try:
-        html = requests.get('https://www.thewatchcartoononline.tv').content
+        html = requests.get('https://www.watchcartoononline.com').content
         thedivs = dom_parser.parseDOM(html, 'div', attrs={'class':subid[0]})[int(subid[1])]
         list_items = dom_parser.parseDOM(thedivs, 'li')
         for content in list_items:
@@ -363,14 +366,14 @@ def get_wcmainstream(subid):
         pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='WCEpisodes', args=["url"])
 def get_wcepisodes(url):
     url = url.replace('wcepisode/', '') # Strip our episode tag off.
-    url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
-
+    url = urlparse.urljoin('https://www.watchcartoononline.com', url)
+    pins = ""
     xml = fetch_from_db(url)
     if not xml:
         xml = ""
@@ -396,17 +399,18 @@ def get_wcepisodes(url):
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='WCGenre', args=["url"])
 def get_wcgenre(url):
+    pins = ""
     if 'all' in url:
         get_wcgenrelist()
         return
     else:
         url = url.replace('wcgenre/', '') # Strip our genre tag off.
-    url = urlparse.urljoin('https://www.thewatchcartoononline.tv/search-by-genre/', url)
+    url = urlparse.urljoin('https://www.watchcartoononline.com/search-by-genre/', url)
 
 
     xml = fetch_from_db(url)
@@ -434,12 +438,12 @@ def get_wcgenre(url):
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 def get_wcgenrelist():
-    url = 'https://www.thewatchcartoononline.tv/search-by-genre/'
-
+    url = 'https://www.watchcartoononline.com/search-by-genre/'
+    pins = ""
     xml = fetch_from_db(url)
     if not xml:
         xml = ""
@@ -467,11 +471,12 @@ def get_wcgenrelist():
             pass
 
     jenlist = JenList(xml)
-    display_list(jenlist.get_list(), jenlist.get_content_type())
+    display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='WCSearch', args=["url"])
 def get_wcsearch(url):
+    pins = ""
     xml = ""
     url = url.replace('wcsearch/', '') # Strip our search tag off when used with keywords in the xml
     url = url.replace('wcsearch', '') # Catch plain case, for when overall search is used.
@@ -493,13 +498,13 @@ def get_wcsearch(url):
                "    <thumbnail>%s</thumbnail>"\
                "</item>" % (addon_icon)
         jenlist = JenList(xml)
-        display_list(jenlist.get_list(), jenlist.get_content_type())
+        display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
         return
 
     total = 0
 
     try:
-        search_url = 'https://www.thewatchcartoononline.tv/wp-json/wp/v2/posts?per_page=100&search=%s' % search.replace(' ', '%20')
+        search_url = 'https://www.watchcartoononline.com/wp-json/wp/v2/posts?per_page=100&search=%s' % search.replace(' ', '%20')
         html = requests.get(search_url).content
         results = re.compile('"post","link":"(.+?)","title".+?"rendered":"(.+?)"',re.DOTALL).findall(html)
         if len(results) == 0:
@@ -522,7 +527,7 @@ def get_wcsearch(url):
 
     if total > 0:
         jenlist = JenList(xml)
-        display_list(jenlist.get_list(), jenlist.get_content_type())
+        display_list(jenlist.get_list(), jenlist.get_content_type(), pins)
 
 
 @route(mode='WCPlayVideo', args=["url"])
@@ -541,7 +546,7 @@ def get_wcplayvideo(url):
             i = chr(int(i) - int(spread))
             url += i
         url = re.findall(r'src="(.*?)"', url)[0]
-        url = urlparse.urljoin('https://www.thewatchcartoononline.tv', url)
+        url = urlparse.urljoin('https://www.watchcartoononline.com', url)
         url = requests.get(url)
         oldurl = url
         url = re.findall(r'''file:\s*['\"]([^'\"]+)['\"](?:\,\s*label:\s*|)(?:['\"]|)([\d]+|)''', url.text)

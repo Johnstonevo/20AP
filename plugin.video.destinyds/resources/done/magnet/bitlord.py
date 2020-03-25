@@ -1,156 +1,141 @@
-import threading, requests
+# -*- coding: utf-8 -*-
 
-from bs4 import BeautifulSoup
-from resources.lib.common import tools
-from resources.lib.common import source_utils
 
-class sources:
+'''
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
+
+import re
+import urllib
+import urlparse
+
+from resources.lib.modules import cleantitle
+from resources.lib.modules import client
+from resources.lib.modules import debrid
+from resources.lib.modules import source_utils
+
+
+class source:
     def __init__(self):
-        self.domain = "bitlordsearch.com"
-        self.base_link = 'https://bitlordsearch.com/'
-        self.search_link = 'search?q=%s'
-        self.threads = []
-        self.threadResults = []
+        self.priority = 0
+        self.language = ['en']
+        self.domain = ['bitlordsearch.com']
+        self.base_link = 'http://www.bitlordsearch.com'
+        self.search_link = '/search?q=%s'
 
-    def getList(self, url):
-        torrent_list = []
+
+    def movie(self, imdb, title, localtitle, aliases, year):
         try:
-            headers = {
-                "User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36'}
-            response = requests.get(url, headers=headers)
-            results = BeautifulSoup(response.text, 'html.parser')
-            results = results.find_all('tr', {'class': 'bls-row'})
-
-            for i in results:
-                torrent = {}
-                torrent['magnet'] = i.find_all('a', {'magnet-button'})[0]['href']
-                torrent['release_title'] = i.find_all('span', {'class': 'title'})[0].text
-                torrent['seeds'] = int(i.find_all('td', {'class': 'seeds'})[0].text)
-                torrent['size'] = int(i.find_all('td', {'class': 'size'})[0].text)
-                torrent_list.append(torrent)
-            return torrent_list
+            url = {'imdb': imdb, 'title': title, 'year': year}
+            url = urllib.urlencode(url)
+            return url
         except:
-            import traceback
-            traceback.print_exc()
-            pass
+            return
 
-        return torrent_list
 
-    def movie(self, title, year):
-        title = source_utils.cleanTitle(title)
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
+        try:
+            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except:
+            return
 
-        url = self.base_link + self.search_link % tools.quote('%s %s' % (title, year))
-        results = self.getList(url)
 
-        torrent_list = []
-        for i in results:
+    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+        try:
+            if url is None:
+                return
+            url = urlparse.parse_qs(url)
+            url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
+            url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
+            url = urllib.urlencode(url)
+            return url
+        except:
+            return
+
+
+    def sources(self, url, hostDict, hostprDict):
+        sources = []
+        try:
+            if url is None:
+                return sources
+
+            if debrid.status() is False:
+                return sources
+
+            data = urlparse.parse_qs(url)
+            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
+
+            title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+            title = title.replace('&', 'and').replace('Special Victims Unit', 'SVU')
+
+            hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
+
+            query = '%s %s' % (title, hdlr)
+            query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
+
+            url = self.search_link % urllib.quote_plus(query)
+            url = urlparse.urljoin(self.base_link, url)
+
             try:
-                if source_utils.filterMovieTitle(i['release_title'], title, year):
-                    i['package'] = 'single'
-                    torrent_list.append(i)
-                else:
-                    continue
+                r = client.request(url)
+                links = zip(client.parseDOM(r, 'a', attrs={'class': 'btn btn-default magnet-button stats-action banner-button'}, ret='href'), client.parseDOM(r, 'td', attrs={'class': 'size'}))
+
+                for link in links:
+                    url = link[0].replace('&amp;', '&')
+                    url = re.sub(r'(&tr=.+)&dn=', '&dn=', url) # some links on bitlord &tr= before &dn=
+                    url = url.split('&tr=')[0]
+                    if 'magnet' not in url:
+                        continue
+
+                    size = int(link[1])
+
+                    if any(x in url.lower() for x in ['french', 'italian', 'spanish', 'truefrench', 'dublado', 'dubbed']):
+                        continue
+
+                    name = url.split('&dn=')[1]
+                    t = name.split(hdlr)[0].replace(data['year'], '').replace('(', '').replace(')', '').replace('&', 'and')
+                    if cleantitle.get(t) != cleantitle.get(title):
+                        continue
+
+                    if hdlr not in name:
+                        continue
+
+                    quality, info = source_utils.get_release_quality(name, url)
+
+                    try:
+                        if size < 5.12: raise Exception()
+                        size = float(size) / 1024
+                        size = '%.2f GB' % size
+                        info.append(size)
+                    except:
+                        pass
+
+                    info = ' | '.join(info)
+
+                    sources.append({'source': 'torrent', 'quality': quality, 'language': 'en', 'url': url,
+                                                'info': info, 'direct': False, 'debridonly': True})
+
+                return sources
+
             except:
-                import traceback
-                traceback.print_exc()
-                continue
-        return torrent_list
-
-    def episode(self, simpleInfo, allInfo):
-        self.threads.append(threading.Thread(target=self.seasonPack, args=(simpleInfo, allInfo)))
-        self.threads.append(threading.Thread(target=self.singleEpisode, args=(simpleInfo, allInfo)))
-        self.threads.append(threading.Thread(target=self.showPack, args=(simpleInfo, allInfo)))
-
-        for thread in self.threads:
-            thread.start()
-        for thread in self.threads:
-            thread.join()
-        return self.threadResults
-
-    def showPack(self, simpleInfo, allInfo):
-
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-
-            url = self.base_link + self.search_link % tools.quote('%s season 1-%s' % (showTitle, simpleInfo['no_seasons']))
-            results = self.getList(url)
-
-            url = self.base_link + self.search_link % tools.quote('%s complete' % showTitle)
-            results += self.getList(url)
-
-            torrent_list = []
-
-            for i in results:
-                try:
-                    if not source_utils.filterShowPack(simpleInfo, i['release_title']):
-                        continue
-                    else:
-                        i['package'] = 'show'
-                        torrent_list.append(i)
-                except:
-                    continue
-
-            self.threadResults += torrent_list
+                return sources
 
         except:
-            import traceback
-            traceback.print_exc()
-            pass
+            return sources
 
 
-    def seasonPack(self, simpleInfo, allInfo):
-
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-
-            url = self.base_link + self.search_link % tools.quote('%s season %s' % (showTitle, simpleInfo['season_number']))
-            results = self.getList(url)
-            torrent_list = []
-
-            for torrent in results:
-                try:
-                    torrent = {}
-
-                    if not source_utils.filterSeasonPack(simpleInfo, torrent['release_title']):
-                        continue
-                    else:
-                        torrent['package'] = 'season'
-                        torrent_list.append(torrent)
-                except:
-                    continue
-
-            self.threadResults += torrent_list
-
-        except:
-            import traceback
-            traceback.print_exc()
-            pass
-
-    def singleEpisode(self, simpleInfo, allInfo):
-
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-            season = simpleInfo['season_number'].zfill(2)
-            episode = simpleInfo['episode_number'].zfill(2)
-
-            url = self.base_link + self.search_link % tools.quote('%s s%se%s' % (showTitle, season, episode))
-            results = self.getList(url)
-
-            torrent_list = []
-
-            for torrent in results:
-                try:
-                    if not source_utils.filterSingleEpisode(simpleInfo, torrent['release_title']):
-                        continue
-                    else:
-                        torrent['package'] = 'single'
-                        torrent_list.append(torrent)
-                except:
-                    continue
-
-            self.threadResults += torrent_list
-        except:
-            import traceback
-            traceback.print_exc()
-            pass
+    def resolve(self, url):
+        return url

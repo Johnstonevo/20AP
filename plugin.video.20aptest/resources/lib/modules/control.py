@@ -2,7 +2,7 @@
 
 """
     //Covenant Add-on//
-    Updated for Sparkle Add-on
+    Updated for Dark Dragon Add-on
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -194,9 +194,21 @@ def get_plugin_url(queries):
     if not addon_id: addon_id = addonId()
     return addon_id + '?' + query
 
+
+def artPath():
+    theme = appearance()
+    if theme in ['-', '']: return
+    elif condVisibility('System.HasAddon(script.darkdragon.artwork)'):
+        return os.path.join(xbmcaddon.Addon('script.darkdragon.artwork').getAddonInfo('path'), 'resources', 'media', theme)
+
+
 def appearance():
-    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.incursion.artwork)') else setting('appearance.alt').lower()
+    appearance = setting('appearance.1').lower() if condVisibility('System.HasAddon(script.darkdragon.artwork)') else setting('appearance.alt').lower()
     return appearance
+
+
+def artwork():
+    execute('RunPlugin(plugin://script.darkdragon.artwork)')
 
 
 def infoDialog(message, heading=addonInfo('name'), icon='', time=3000, sound=False):
@@ -215,8 +227,8 @@ def selectDialog(list, heading=addonInfo('name')):
     return dialog.select(heading, list)
 
 def metaFile():
-    if condVisibility('System.HasAddon(script.incursion.metadata)'):
-        return os.path.join(xbmcaddon.Addon('script.incursion.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
+    if condVisibility('System.HasAddon(script.darkdragon.metadata)'):
+        return os.path.join(xbmcaddon.Addon('script.darkdragon.metadata').getAddonInfo('path'), 'resources', 'data', 'meta.db')
 
 
 def apiLanguage(ret_name=None):
@@ -229,7 +241,7 @@ def apiLanguage(ret_name=None):
     name = None
     name = setting('api.language')
     if not name: name = 'AUTO'
-
+    
     if name[-1].isupper():
         try: name = xbmc.getLanguage(xbmc.ENGLISH_NAME).split(' ')[0]
         except: pass
@@ -287,7 +299,6 @@ def openSettings(query=None, id=addonInfo('id')):
     except:
         return
 
-
 def getCurrentViewId():
     win = xbmcgui.Window(xbmcgui.getCurrentWindowId())
     return str(win.getFocusId())
@@ -300,7 +311,6 @@ def busy():
 
 def idle():
     return execute('Dialog.Close(busydialog)')
-
 
 def queueItem():
     return execute('Action(Queue)')

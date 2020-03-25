@@ -20,50 +20,31 @@ import cProfile
 import StringIO
 import pstats
 import json
+import xbmc
+from resources.lib.modules import control
+from xbmc import LOGDEBUG, LOGERROR, LOGFATAL, LOGINFO, LOGNONE, LOGNOTICE, LOGSEVERE, LOGWARNING  # @UnusedImport
 
-try:
-    import xbmc
-    from xbmc import LOGDEBUG, LOGERROR, LOGFATAL, LOGINFO, LOGNONE, LOGNOTICE, LOGSEVERE, LOGWARNING  # @UnusedImport
-    NAME = control.addonInfo('name')
-    LOCAL_RUN = False
-except:
-    import logging
-    # Use "local" logging
-    LOGDEBUG = logging.DEBUG
-    LOGERROR = logging.ERROR
-    LOGFATAL = logging.FATAL
-    LOGINFO = logging.INFO
-    LOGNOTICE = logging.INFO
-    LOGSEVERE = logging.CRITICAL
-    LOGWARNING = logging.WARNING
-    NAME = 'LOCAL_LOGGER'
-    LOCAL_RUN = True
+name = control.addonInfo('name')
+
 
 def log(msg, level=LOGDEBUG):
     req_level = level
-    if LOCAL_RUN:
-        logger = logging.getLogger()
-        logger.setLevel(level)
-    else:
-        # override message level to force logging when addon logging turned on
-        if control.setting('addon_debug') == 'true' and level == LOGDEBUG:
-            level = LOGNOTICE
+    # override message level to force logging when addon logging turned on
+    if control.setting('addon_debug') == 'true' and level == LOGDEBUG:
+        level = LOGNOTICE
+
     try:
         if isinstance(msg, unicode):
-            msg = '{} (ENCODED)'.format(msg.encode('utf-8'))
-        txt = '[{}] {}'.format(NAME, msg)
-        if LOCAL_RUN:
-            logging.debug(txt)
-        else:
-            xbmc.log(txt, level)
+            msg = '%s (ENCODED)' % (msg.encode('utf-8'))
 
+        xbmc.log('[%s] %s' % (name, msg), level)
 
     except Exception as e:
-        msg = 'Logging Failure: {}'.format(e)
-        if LOCAL_RUN:
-            logging.error(msg)
-        else:
-            xbmc.log(msg, level)
+        try:
+            xbmc.log('Logging Failure: %s' % (e), level)
+        except:
+            pass  # just give up
+
 
 class Profiler(object):
     def __init__(self, file_path, sort_by='time', builtins=False):
@@ -130,8 +111,8 @@ def _is_debugging():
 
     return False
 
+
 def execute_jsonrpc(command):
-    from resources.lib.modules import control
     if not isinstance(command, basestring):
         command = json.dumps(command)
     response = control.jsonrpc(command)

@@ -1,4 +1,12 @@
-﻿[COLOR yellow][B]V1.3.9[/B]
+﻿[COLOR yellow][B]V1.4.1[/B]
+ - Added some more free scrapers
+ - Reduced Scraping Time.
+ - Added New Jen Plugins
+ - Updated Scrapers
+ - Changed Default Resolver
+ - For other premum services pair with ResolveURL
+
+[COLOR yellow][B]V1.3.9[/B]
  - Added some more free scrapers
  - Fixed RD One Click Movies.
  - Added New Jen Plugins

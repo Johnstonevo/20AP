@@ -1,173 +1,169 @@
 # -*- coding: utf-8 -*-
 
 '''
-	Gaia Add-on
-	Copyright (C) 2016 Gaia
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-import re,urllib,urlparse
-from resources.lib.modules import cleantitle
-from resources.lib.modules import client
-from resources.lib.extensions import metadata
-from resources.lib.extensions import tools
-from resources.lib.extensions import network
-from resources.lib.externals.beautifulsoup import BeautifulSoup
+import re
+import urllib
+import urlparse
+
+from resources.lib.modules import cleantitle, client, control, debrid, source_utils
+
 
 class source:
+    def __init__(self):
+        self.priority = 1
+        self.language = ['en']
+        self.domains = ['torrentquest.com']
+        self.base_link = 'https://torrentquest.com'
+        self.search_link = '/%s/%s'
+        self.min_seeders = int(control.setting('torrent.min.seeders'))
 
-	def __init__(self):
-		self.pack = True # Checked by provider.py
-		self.priority = 0
-		self.language = ['un']
-		self.domains = ['torrentquest.com']
-		self.base_link = 'https://torrentquest.com'
-		self.search_link = '/%s/%s/se/desc/%d/'
+    def movie(self, imdb, title, localtitle, aliases, year):
+        if debrid.status(True) is False:
+            return
 
-	def movie(self, imdb, title, localtitle, year):
-		try:
-			url = {'imdb': imdb, 'title': title, 'year': year}
-			url = urllib.urlencode(url)
-			return url
-		except:
-			return
+        try:
+            url = {'imdb': imdb, 'title': title, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except Exception:
+            return
 
-	def tvshow(self, imdb, tvdb, tvshowtitle, localtitle, year):
-		try:
-			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-			url = urllib.urlencode(url)
-			return url
-		except:
-			return
+    def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
+        if debrid.status(True) is False:
+            return
 
-	def episode(self, url, imdb, tvdb, title, premiered, season, episode):
-		try:
-			if url == None: return
-			url = urlparse.parse_qs(url)
-			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
-			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
-			url = urllib.urlencode(url)
-			return url
-		except:
-			return
+        try:
+            url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
+            url = urllib.urlencode(url)
+            return url
+        except Exception:
+            return
 
-	def sources(self, url, hostDict, hostprDict):
-		sources = []
-		try:
-			if url == None:
-				raise Exception()
+    def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+        if debrid.status(True) is False:
+            return
 
-			data = urlparse.parse_qs(url)
-			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
+        try:
+            if url is None:
+                return
 
-			if 'exact' in data and data['exact']:
-				query = title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
-				type = None
-				year = None
-				season = None
-				episode = None
-				pack = False
-				packCount = None
-			else:
-				type = 'tv' if 'tvshowtitle' in data else 'movie'
-				title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
-				year = int(data['year']) if 'year' in data and not data['year'] == None else None
-				season = int(data['season']) if 'season' in data and not data['season'] == None else None
-				episode = int(data['episode']) if 'episode' in data and not data['episode'] == None else None
-				pack = data['pack'] if 'pack' in data else False
-				packCount = data['packcount'] if 'packcount' in data else None
+            url = urlparse.parse_qs(url)
+            url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
+            url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
+            url = urllib.urlencode(url)
+            return url
+        except Exception:
+            return
 
-				if 'tvshowtitle' in data:
-					if pack: query = '%s %d' % (title, season)
-					else: query = '%s S%02dE%02d' % (title, season, episode)
-				else:
-					query = '%s %d' % (title, year)
-				query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', ' ', query)
+    def sources(self, url, hostDict, hostprDict):
+        sources = []
+        try:
+            if debrid.status() is False:
+                raise Exception()
 
-			query = query.replace(' ', '-') # Uses - not + to separate words.
-			query = query.lower() # Only lower case letters work.
+            if url is None:
+                return sources
 
-			url = urlparse.urljoin(self.base_link, self.search_link)
+            data = urlparse.parse_qs(url)
+            data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
-			pageLimit = tools.Settings.getInteger('scraping.providers.pages')
-			pageCounter = 0
+            title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+            stype = 'TV' if 'tvshowtitle' in data else 'Movie'
+            hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
 
-			page = 1
-			added = False
+            query = '%s S%02dE%02d' % (
+                data['tvshowtitle'],
+                int(data['season']),
+                int(data['episode'])) if 'tvshowtitle' in data else '%s %s' % (
+                data['title'],
+                data['year'])
+            query = re.sub('(\\\|/| -|:|;|\*|\?|"|<|>|\|)', ' ', query)
 
-			timerEnd = tools.Settings.getInteger('scraping.providers.timeout') - 8
-			timer = tools.Time(start = True)
+            url = urlparse.urljoin(self.base_link, self.search_link % (query[0].lower(), cleantitle.geturl(query)))
 
-			while True:
-				# Stop searching 8 seconds before the provider timeout, otherwise might continue searching, not complete in time, and therefore not returning any links.
-				if timer.elapsed() > timerEnd:
-					break
+            html = client.request(url)
+            html = html.replace('&nbsp;', ' ')
+            try:
+                results = client.parseDOM(html, 'tbody')[0]
+            except Exception:
+                return sources
 
-				pageCounter += 1
-				if pageLimit > 0 and pageCounter > pageLimit:
-					break
+            rows = re.findall('<tr>(.+?)</tr>', results, re.DOTALL)
+            if rows is None:
+                return sources
 
-				# Entries are alphabetically categorized according to their first letter.
-				urlNew = url % (query[0], urllib.quote_plus(query), page)
-				html = BeautifulSoup(client.request(urlNew))
+            for entry in rows:
+                try:
+                    try:
+                        if stype == 'TV':
+                            verify = re.findall('<td class="t5">(.+?)</td>', entry, re.DOTALL)[0]
+                        else:
+                            verify = re.findall('<td class="t2">(.+?)</td>', entry, re.DOTALL)[0]
+                    except Exception:
+                        continue
+                    try:
+                        name = re.findall('<td class="n">(.+?)</td>', entry, re.DOTALL)[0]
+                        name = re.findall('title="(.+?)"', name, re.DOTALL)[0]
+                        name = client.replaceHTMLCodes(name)
+                        if not cleantitle.get(title) in cleantitle.get(name):
+                            continue
+                    except Exception:
+                        continue
+                    y = re.findall('[\.|\(|\[|\s](\d{4}|S\d*E\d*|S\d*)[\.|\)|\]|\s]', name)[-1].upper()
+                    if not y == hdlr:
+                        continue
 
-				page += 1
-				added = False
+                    try:
+                        seeders = int(re.findall('<td class="s">(.+?)</td>', entry, re.DOTALL)[0])
+                    except Exception:
+                        continue
+                    if self.min_seeders > seeders:
+                        continue
 
-				htmlTable = html.find_all('table', class_ = 'download')[0]
-				htmlRows = htmlTable.find_all('tbody', recursive = False)[0].find_all('tr', recursive = False)
-				for i in range(0, len(htmlRows)):
-					try:
-						htmlRow = htmlRows[i]
-						htmlColumns = htmlRow.find_all('td', recursive = False)
+                    try:
+                        link = 'magnet:%s' % (re.findall('href="magnet:(.+?)"', entry, re.DOTALL)[0])
+                        link = str(client.replaceHTMLCodes(link).split('&tr')[0])
+                    except Exception:
+                        continue
 
-						# Type
-						if type and not htmlColumns[3].getText().strip().lower() == type:
-							continue
+                    quality, info = source_utils.get_release_quality(name, name)
 
-						# Name
-						htmlName = htmlColumns[1].find_all('a', recursive = False)[0].getText().strip()
+                    try:
+                        size = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+)\s*(?:GB|GiB|MB|MiB))', entry)[-1]
+                        div = 1 if size.endswith(('GB', 'GiB')) else 1024
+                        size = float(re.sub('[^0-9|/.|/,]', '', size)) / div
+                        size = '%.2f GB' % size
+                        info.append(size)
+                    except Exception:
+                        pass
 
-						# Size
-						htmlSize = htmlColumns[5].getText().strip()
+                    info = ' | '.join(info)
+                    sources.append({'source': 'Torrent', 'quality': quality, 'language': 'en',
+                                    'url': link, 'info': info, 'direct': False, 'debridonly': True})
+                except Exception:
+                    continue
 
-						# Link
-						htmlLink = htmlColumns[0].find_all('a', recursive = False)[0]['href'].strip()
+            check = [i for i in sources if not i['quality'] == 'CAM']
+            if check:
+                sources = check
 
-						# Seeds
-						htmlSeeds = int(htmlColumns[6].getText().strip())
+            return sources
+        except Exception:
+            return sources
 
-						# Metadata
-						meta = metadata.Metadata(name = htmlName, title = title, year = year, season = season, episode = episode, pack = pack, packCount = packCount, link = htmlLink, size = htmlSize, seeds = htmlSeeds)
-
-						# Ignore
-						if meta.ignore(True):
-							continue
-
-						# Add
-						sources.append({'url' : htmlLink, 'debridonly' : False, 'direct' : False, 'source' : 'torrent', 'language' : self.language[0], 'quality': meta.videoQuality(), 'metadata' : meta, 'file' : htmlName})
-						added = True
-					except:
-						pass
-
-				if not added: # Last page reached with a working torrent
-					break
-
-			return sources
-		except:
-			return sources
-
-	def resolve(self, url):
-		return url
+    def resolve(self, url):
+        return url

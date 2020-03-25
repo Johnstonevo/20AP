@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
 '''
-    
-
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
@@ -17,7 +15,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-import re, urllib, urlparse,logging
+import re, urllib, urlparse
 
 from resources.lib.modules import debrid
 from resources.lib.modules import cleantitle
@@ -65,12 +63,12 @@ class source:
 
     def sources(self, url, hostDict, hostprDict):
         sources = []
-        logging.warning(url)
         try:
             if url is None:
                 return sources
 
-           
+            if debrid.status() is False:
+                raise Exception()
 
             data = urlparse.parse_qs(url)
             data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
@@ -89,9 +87,9 @@ class source:
             else:
                 url = self.moviesearch.format(urllib.quote_plus(query))
                 url = urlparse.urljoin(self.base_link, url)
-     
+
             items = self._get_items(url)
-    
+
             hostDict = hostDict + hostprDict
             for item in items:
                 try:
@@ -114,18 +112,17 @@ class source:
     def _get_items(self, url):
         items = []
         try:
-            headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36'}
+            headers = {'User-Agent': client.agent()}
             r = client.request(url, headers=headers)
             posts = client.parseDOM(r, 'tr', attrs={'class': 't-row'})
-            
             posts = [i for i in posts if not 'racker:' in i]
             for post in posts:
                 data = client.parseDOM(post, 'a', ret='href')
                 url = [i for i in data if 'magnet:' in i][0]
                 name = client.parseDOM(post, 'a', ret='title')[0]
                 t = name.split(self.hdlr)[0]
-       
-                if not cleantitle.get(self.title) in cleantitle.get(re.sub('(|)', '', t)) : continue
+
+                if not cleantitle.get(re.sub('(|)', '', t)) == cleantitle.get(self.title): continue
 
                 try:
                     y = re.findall('[\.|\(|\[|\s|\_|\-](S\d+E\d+|S\d+)[\.|\)|\]|\s|\_|\-]', name, re.I)[-1].upper()

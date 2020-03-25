@@ -44,7 +44,6 @@ import xbmcplugin
 
 import resolveurl
 
-
 from resources.lib.util.xml import JenItem, JenList
 from resources.lib.util.messages import get_link_message, get_searching_message
 from resources.lib.util.info import get_info
