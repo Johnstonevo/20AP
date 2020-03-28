@@ -69,7 +69,7 @@ TRAKT_API_KEY = "8ed545c0b7f92cc26d1ecd6326995c6cf0053bd7596a98e962a472bee63274e
 from general import trakt_authenticate
 
 def get_season_data(id,season):
-    url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=1248868d7003f60f2386595db98455ef&language=en-US'%(id,season)
+    url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en-US'%(id,season)
     
     html=requests.get(url).json()
     if 'name' in html:
@@ -83,7 +83,7 @@ def get_season_data(id,season):
     else:
        return ' ',' ',' '
 def get_episode_data(id,season,episode):
-    url='http://api.themoviedb.org/3/tv/%s/season/%s/episode/%s?api_key=1248868d7003f60f2386595db98455ef&language=en&append_to_response=external_ids'%(id,season,episode)
+    url='http://api.themoviedb.org/3/tv/%s/season/%s/episode/%s?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&append_to_response=external_ids'%(id,season,episode)
     
     html=requests.get(url).json()
     if 'name' in html:
@@ -100,7 +100,7 @@ def get_tmdb_from_imdb(imdb,id,season,episode,type,year,title,html_g,xxx):
     global all_new_data
 
     if type=='movie' or type=='show':
-        url=domain_s+'api.themoviedb.org/3/find/%s?api_key=1248868d7003f60f2386595db98455ef&external_source=imdb_id&language=en'%imdb
+        url=domain_s+'api.themoviedb.org/3/find/%s?api_key=aa28550e5a65f567fc512bd0290ce6fb&external_source=imdb_id&language=en'%imdb
     elif type=='episode':
         name,plot,image=get_episode_data(id,season,episode)
         all_new_data.append((name+'- S'+season+'E'+episode,image,image,plot,year,title,id,'','','',xxx,4))
@@ -200,7 +200,7 @@ def get_s_data(url):
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
     }
-    url_g=domain_s+'api.themoviedb.org/3/genre/%s/list?api_key=1248868d7003f60f2386595db98455ef&language=en'%type
+    url_g=domain_s+'api.themoviedb.org/3/genre/%s/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en'%type
     html_g=requests.get(url_g).json()
     start_time=time.time()
     name_array=[]
@@ -331,7 +331,7 @@ def tmdb(page,url):
         genre_id = split_url[-2]
         media = split_url[-3]
         url='genre/%s/%s'%(genre_id,media)
-    url2='https://api.themoviedb.org/3/%s?api_key=1248868d7003f60f2386595db98455ef&language=en&append_to_response=credits&language=en&sort_by=popularity.desc&page=%s'%(url,page)
+    url2='https://api.themoviedb.org/3/%s?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&append_to_response=credits&language=en&sort_by=popularity.desc&page=%s'%(url,page)
     if url.startswith("year"):
             split_url = url.split("/")
             if len(split_url) == 3:
@@ -341,9 +341,9 @@ def tmdb(page,url):
             release_year = split_url[-2]
             media = split_url[-3]
             
-            url2='https://api.themoviedb.org/3/discover/movie?api_key=1248868d7003f60f2386595db98455ef&language=en&sort_by=popularity.desc&include_adult=false&include_video=false&primary_release_year=%s&with_original_language=en&page=%s'%(release_year,page)
+            url2='https://api.themoviedb.org/3/discover/movie?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&sort_by=popularity.desc&include_adult=false&include_video=false&primary_release_year=%s&with_original_language=en&page=%s'%(release_year,page)
     x=requests.get(url2).json()
-    logging.warning('https://api.themoviedb.org/3/%s?api_key=1248868d7003f60f2386595db98455ef&language=en'%url)
+    logging.warning('https://api.themoviedb.org/3/%s?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en'%url)
     if 'items' in x:
         type='items'
     elif 'results' in x:
@@ -374,9 +374,9 @@ def tmdb(page,url):
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
     }
-    url_g=domain_s+'api.themoviedb.org/3/genre/movie/list?api_key=1248868d7003f60f2386595db98455ef&language=en'
+    url_g=domain_s+'api.themoviedb.org/3/genre/movie/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en'
     html_g_m=requests.get(url_g).json()
-    url_g=domain_s+'api.themoviedb.org/3/genre/tv/list?api_key=1248868d7003f60f2386595db98455ef&language=en'
+    url_g=domain_s+'api.themoviedb.org/3/genre/tv/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en'
     html_g_tv=requests.get(url_g).json()
     
     for data in temp:

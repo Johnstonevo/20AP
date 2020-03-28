@@ -74,6 +74,8 @@ m3_dir = os.path.join(addonPath, 'resources', 'm3u8')
 
 BASE_LOGO=os.path.join(addonPath, 'resources', 'logos/')
 tmdb_data_dir = os.path.join(addonPath, 'resources', 'tmdb_data')
+tmdbKey='aa28550e5a65f567fc512bd0290ce6fb'
+
 debug_mode=False
 if Addon.getSetting("debugmode")=='true':
   debug_mode=True
@@ -370,15 +372,15 @@ def get_trailer_f(id,tv_movie):
         html_t='99'
         logging.warning('Get Trailer')
         if tv_movie=='movie':
-          url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=05255aa68df8270bf028f182b01ad799&language=en'%id
+          url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=%s&language=en'%(id,tmdbKey)
         else:
-          url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=05255aa68df8270bf028f182b01ad799&language=en'%id
+          url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=%s&language=en'%(id,tmdbKey)
         html_t=requests.get(url_t).json()
         if len(html_t['results'])==0:
             if tv_movie=='movie':
-              url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=05255aa68df8270bf028f182b01ad799'%id
+              url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=%s'%(id,tmdbKey)
             else:
-              url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=05255aa68df8270bf028f182b01ad799'%id
+              url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=%s'%(id,tmdbKey)
             html_t=requests.get(url_t).json()
         else:
             logging.warning(html_t)
@@ -1004,7 +1006,7 @@ class sources_search(xbmcgui.WindowXMLDialog):
             xbmc.sleep(100)
         if len(id)>1 and '%' not in id :
             self.getControl(self.label22).setLabel('Getting Similar')
-            url='https://api.themoviedb.org/3/%s/%s/recommendations?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1'%(self.tv_movie,self.id.replace('\n',''))
+            url='https://api.themoviedb.org/3/%s/%s/recommendations?api_key=%s&language=en&page=1'%(self.tv_movie,self.id.replace('\n',''),tmdbKey)
             self.html=get_html(url)
             logging.warning(url)
             all_data_int=[]
@@ -1421,7 +1423,7 @@ class sources_search2(xbmcgui.WindowXMLDialog):
        xbmc.Player().stop()
        if self.type=='find_similar' :
            
-            url='https://api.themoviedb.org/3/%s/%s/recommendations?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1'%(self.tv_movie,self.id.replace('\n',''))
+            url='https://api.themoviedb.org/3/%s/%s/recommendations?api_key=%s&language=en&page=1'%(self.tv_movie,self.id.replace('\n',''),tmdbKey)
             self.html=get_html(url)
             logging.warning(url)
             all_data_int=[]
@@ -1434,7 +1436,7 @@ class sources_search2(xbmcgui.WindowXMLDialog):
             random.shuffle(all_data_int)
             self.id=all_data_int[0]
        elif Addon.getSetting("video_type_in_s")=='0':
-            url='https://api.themoviedb.org/3/%s/%s/recommendations?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1'%(self.tv_movie,self.id.replace('\n',''))
+            url='https://api.themoviedb.org/3/%s/%s/recommendations?api_key=%s&language=en&page=1'%(self.tv_movie,self.id.replace('\n',''),tmdbKey)
             self.html=get_html(url)
             
             
@@ -1461,7 +1463,7 @@ class sources_search2(xbmcgui.WindowXMLDialog):
                 except:
                     pass
         
-       url='https://api.themoviedb.org/3/%s/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en&include_image_language=ru,null&append_to_response=images'%(self.tv_movie,self.id)
+       url='https://api.themoviedb.org/3/%s/%s?api_key=%s&language=en&include_image_language=ru,null&append_to_response=images'%(self.tv_movie,self.id,tmdbKey)
     
        self.html=requests.get(url).json()
        while  self.st_init==0:
@@ -1960,11 +1962,11 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
         self.labelss=[]
         self.labelss1=[]
     def onInit(self):
-        url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en'%(self.id,self.season)
+        url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en'%(self.id,self.season)
         
         html=cache.get(get_html,24,url, table='posters')
         try:
-            maste_image='https://image.tmdb.org/t/p/original/'+html['poster_path']
+            maste_image=domain_s+'image.tmdb.org/t/p/original/'+html['poster_path']
         except:
             maste_image=''
         master_plot=html['overview']
@@ -2023,7 +2025,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
                 
                 image=maste_image
                 if items['still_path']!=None:
-                    image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                    image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
                 self.imagess.append(image)
                 title=title+ '- Episode '+str(int(self.episode)+1)
                 self.labelss.append(title)
@@ -2057,7 +2059,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
             plot='[COLOR khaki]'+items['overview']+'[/COLOR]'
             image=maste_image
             if items['still_path']!=None:
-                image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
             self.imagess.append(image)
             title=title+ '- Episode '+self.episode
             self.labelss.append(title)
@@ -2114,7 +2116,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
             plot='[COLOR khaki]'+items['overview']+'[/COLOR]'
             image=maste_image
             if items['still_path']!=None:
-                image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
             self.imagess.append(image)
             title=title+ 'Episode - '+self.episode
                 
@@ -2138,7 +2140,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
             plot='[COLOR khaki]'+items['overview']+'[/COLOR]'
             image=maste_image
             if items['still_path']!=None:
-                image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
             self.imagess.append(image)
             title=title+ '- Episode '+str(int(self.episode)-1)
             self.labelss.append(title)
@@ -2190,7 +2192,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
                 plot='[COLOR khaki]'+items['overview']+'[/COLOR]'
                 image=maste_image
                 if items['still_path']!=None:
-                    image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                    image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
                 self.imagess.append(image)
                 title=title+ '- Episode '+str(int(self.episode)+1)
                 self.labelss.append(title)
@@ -2228,7 +2230,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
                 plot='[COLOR khaki]'+items['overview']+'[/COLOR]'
                 image=maste_image
                 if items['still_path']!=None:
-                    image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                    image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
                 self.imagess.append(image)
                 title=title+ '- Episode '+str(int(self.episode))
                     
@@ -2257,7 +2259,7 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
                 plot='[COLOR khaki]'+items['overview']+'[/COLOR]'
                 image=maste_image
                 if items['still_path']!=None:
-                    image='https://image.tmdb.org/t/p/original/'+items['still_path']
+                    image=domain_s+'image.tmdb.org/t/p/original/'+items['still_path']
                 self.imagess.append(image)
                 title=title+ '- Episode '+str(int(self.episode)-1)
                 self.labelss.append(title)
@@ -2303,6 +2305,9 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
 
             self.list.addItem(liz)
             
+
+           
+
 
            
 
@@ -2814,71 +2819,6 @@ def save_to_fav(plot):
           file.close()
           xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Saved')).encode('utf-8'))
 
-def get_tv_poster():
-
-
-      import random
-      all_img=[]
-      url='https://api.themoviedb.org/3/tv/on_the_air?api_key=05255aa68df8270bf028f182b01ad799&language=en-US'
-      x=requests.get(url).json()
-      for items in x['results']:
-          if 'backdrop_path' in items:
-             if items['backdrop_path']==None:
-              fan=' '
-             else:
-              fan='https://image.tmdb.org/t/p/original/'+items['backdrop_path']
-              all_img.append(fan)
-      random.shuffle(all_img)
-      return all_img
-def get_movie_poster():
-
-
-      import random
-      all_img=[]
-      url='https://api.themoviedb.org/3/movie/now_playing?api_key=05255aa68df8270bf028f182b01ad799&language=en-US'
-      x=requests.get(url).json()
-      
-      for items in x['results']:
-          if 'backdrop_path' in items:
-             if items['backdrop_path']==None:
-              fan=' '
-              all_img.append(fan)
-             else:
-              fan='https://image.tmdb.org/t/p/original/'+items['backdrop_path']
-              all_img.append(fan)
-          elif 'poster_path' in items:
-            if items['poster_path']==None:
-              fan=' '
-              all_img.append(fan)
-            else:
-              fan='https://image.tmdb.org/t/p/original/'+items['poster_path']
-              all_img.append(fan)
-      random.shuffle(all_img)
-      return all_img
-def kids_world():
-    order_by='original_title.asc'
-    addDir3('Kid\'s Movies'.decode('utf8'),'http://api.themoviedb.org/4/list/47128?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'https://20ap.000webhostapp.com/images/movie.png','','')
-    addDir3('Kid\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/47132?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'https://20ap.000webhostapp.com/images/movie.png','','')
-    addDir3('Kid\'s Boxsets'.decode('utf8'),'kids/kidsmoviesbox.xml',43,'https://orig00.deviantart.net/cb42/f/2015/092/4/7/disney_pixar_folder_icon_by_mikromike-d8o56l8.png','','Kids Boxsets')
-  
-    addDir3('Cartoons'.decode('utf8'),'www',58,BASE_LOGO+'cartoons.png','','Cartoons'.decode('utf8'))
-    addDir3('Children\'s Movies - Classic'.decode('utf8'),'users/gymbunny/lists/childrens-movies-classic/items/',31,'',all_img[0],''.decode('utf8'))
-    addDir3('Dreamworks'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=521&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'dreamworks.png','',''.decode('utf8'))
-    addDir3('Pixar'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=3&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'pixar.png','',''.decode('utf8'))
-    addDir3('Walt Disney Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=2&language=en&sort_by={0}&timezone=Europe%2FLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'wd.png','',''.decode('utf8'))
-    addDir3('Pokemon Movies'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=12654&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'.png','',''.decode('utf8'))
-    addDir3('Pokemon TV'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_companies=12654&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'.png','',''.decode('utf8'))
-
-    addDir3('Darcy\'s List'.decode('utf8'),'base/darcy.xml',43,'','','')
-    addDir3('Shelby\'s List'.decode('utf8'),'base/shelby.xml',43,'','','')
-
-    addDir3('Search Watchcartoon'.decode('utf8'),'search',62,'https://upload.wikimedia.org/wikipedia/commons/0/0e/Wikipe-tan_sailor_fuku.png','https://worldwithouthorizons.com/wp-content/uploads/Artsy-2016-4K-Anime-Wallpaper-1280x720.jpg','Search'.decode('utf8'))
-
-    if Addon.getSetting("use_trak")=='true':
-      addDir3('Disney + Movies','users/drew-casteo/lists/disney-movies/items/',31,'',all_img[0],''.decode('utf8'))
-      addDir3('Disney + TV Shows','users/drew-casteo/lists/disney-tv-shows/items/',31,'',all_img[0],''.decode('utf8'))
-
-
 
 class SelectorDialog(xbmcgui.WindowXMLDialog):
     def __init__(self, *args, **kwargs):
@@ -2964,77 +2904,69 @@ class SelectorDialog(xbmcgui.WindowXMLDialog):
 
 def main_menu():
       import datetime
-      
+      import resources.lib.util.art_main as art
       if len(sys.argv)<2:
        return 0
       dbcur.execute("SELECT COUNT(*) FROM AllData")
       now = datetime.datetime.now()
-      all_img_tv=cache.get(get_tv_poster,24, table='posters')
-      all_img_mov=cache.get(get_movie_poster,24, table='posters')
-      #fix_setting()
       order_by='primary_release_date.desc'
       match = dbcur.fetchone()
       level_index=(match[0]/100)
       if level_index>9:
         level_index=9
-      addDir3('Series Tracker','tv',32,'',all_img_tv[6],'',isr=' ')
-      addDir3('Movies'.decode('utf8'),'www',13,all_img_mov[13],'','Movies'.decode('utf8'))
-      addDir3('TV Shows'.decode('utf8'),'www',14,all_img_tv[6],'',''.decode('utf8'))
-      addDir3('Kids'.decode('utf8'),'www',44,BASE_LOGO+'kids.png','','Kids'.decode('utf8'))
-      addDir3('Holidays'.decode('utf8'),'www',158,BASE_LOGO+'','',''.decode('utf8'))
-      addDir3('Anime'.decode('utf8'),'www',157,BASE_LOGO+'anime.png','','Anime'.decode('utf8'))
-      addDir3('Documentaries','www',156,BASE_LOGO+'','',''.decode('utf8'))
+      #addDir3('Animetoon'.decode('utf8'),'http://api.animetoon.org/dubbed-anime',59,BASE_LOGO+'anime.png',cache.get(art.get_anime_backdrop,24, table='backdrop')[0],'Anime')
+      addDir3('Series Tracker','tv',32,BASE_LOGO+'tv.png','','',isr=' ')
+      addDir3('Movies'.decode('utf8'),'www',13,BASE_LOGO+'movies.png',cache.get(art.get_movie_backdrop,24, table='backdrop')[0],'Movies')
+      addDir3('TV Shows'.decode('utf8'),'www',14,BASE_LOGO+'tv.png',cache.get(art.get_tv_backdrop,24, table='backdrop')[0],'')
+      addDir3('Disney + Movies','users/drew-casteo/lists/disney-movies/items/',31,'','',''.decode('utf8'))
+      addDir3('Disney + TV Shows','users/drew-casteo/lists/disney-tv-shows/items/',31,'','',''.decode('utf8'))
+      addDir3('Kids'.decode('utf8'),'www',44,BASE_LOGO+'kids.png',cache.get(art.get_kids_backdrop,24, table='backdrop')[0],'Kids')
+      addDir3('Anime'.decode('utf8'),'www',157,BASE_LOGO+'anime.png',cache.get(art.get_anime_backdrop,24, table='backdrop')[0],'Anime')
+      addDir3('Documentaries','www',156,'',cache.get(art.get_doc_backdrop,24, table='backdrop')[1],'')
+      addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png','https://','')
       addDir3('Gamer YT','yt/mrg.xml',43,BASE_LOGO+'youtube.png','','Inc Lashana\'s Grumpy Dwarf')
       addDir3('Youtube','yt/menu.xml',43,BASE_LOGO+'youtube.png','','')
       addDir3('Radio','base/radio.xml',43,BASE_LOGO+'radio.png','','')
-      addDir3('Bobby\'s'.decode('utf8'),'www',154,BASE_LOGO+'bobby.png','','Bobby\'s'.decode('utf8'))
-      addDir3('Iain\'s'.decode('utf8'),'www',153,BASE_LOGO+'.png','','Iain\'s'.decode('utf8'))
-      addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png','https://','')
+      addDir3('Bobby\'s'.decode('utf8'),'www',154,BASE_LOGO+'bobby.png','','Bobby\'s')
+      addDir3('Iain\'s'.decode('utf8'),'www',153,BASE_LOGO+'.png','','Iain\'s')
       addDir3('Old lists','base/base.xml',43,BASE_LOGO+'.png','','')
       addDir3('Reddit','base/reddit.xml',43,BASE_LOGO+'.png','','')
+      addDir3('Search Movies','http://api.themoviedb.org/3/search/movie?api_key='+tmdbKey+'&query=%s&language=en-GB&append_to_response=origin_country&page=1',3,'','','')
+      addDir3('Search TV','http://api.themoviedb.org/3/search/tv?api_key='+tmdbKey+'&query=%s&language=en-GB&page=1',3,'','','')
 
 
 
 def movies_menu():
-      
-      #'release_date'
-      #'vote_average'
-
-
+      import resources.lib.util.art_mov as art     
       import datetime
-      #all_img=get_movie_poster()
       now = datetime.datetime.now()
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
       order_by='primary_release_date.desc'
-      all_img=cache.get(get_movie_poster,24, table='posters')
-      #addDir3('One click free movies','https://moviesmax.net',150,'https://logos.flamingtext.com/Name-Logos/Movies-design-amped-name.png',all_img[1],'Once click free movies')
       if Addon.getSetting("use_trak")=='true':
-        addDir3('Latest Releases','users/garycrawfordgc/lists/latest-releases/items/'.format('release_date'),31,'',all_img[0],''.decode('utf8'))
-      addDir3('Modern','http://api.themoviedb.org/4/list/43994?api_key=05255aa68df8270bf028f182b01ad799&sort_by={0}&language=en&page=1',3,BASE_LOGO+'movies.png',all_img[13],'')
-      addDir3('00\'s'.decode('utf8'),'http://api.themoviedb.org/4/list/79502?api_key=05255aa68df8270bf028f182b01ad799&sort_by=vote_average.desc&language=en&page=1',3,BASE_LOGO+'movies00.png',all_img[13],'')
-      addDir3('Classics','http://api.themoviedb.org/4/list/47126?api_key=05255aa68df8270bf028f182b01ad799&sort_by=vote_average.desc&language=en&page=1',3,BASE_LOGO+'oldmovies.png',all_img[13],'')
-      addDir3('Boxsets','base/boxsets.xml',43,'',all_img[13],'Boxsets')
-      addDir3('DC'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=9993&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'dc.png','',''.decode('utf8'))
-      addDir3('Marvel'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=7505&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'marvel.png','',''.decode('utf8'))
-      addDir3('Marvel Studios'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=420&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'marvels.png','',''.decode('utf8'))
-      addDir3('Best Of Lists','movies/moviebestof.xml',43,'',all_img[13],'Best Of Lists')
-      addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',2,'',all_img[0],''.decode('utf8'))
-      addDir3('Popular','http://api.themoviedb.org/3/movie/popular?api_key=05255aa68df8270bf028f182b01ad799&language=en&sort_by={0}&page=1',3,'',all_img[4],'')
-      addDir3('Trending','http://api.themoviedb.org/3/trending/movie/week?api_key=05255aa68df8270bf028f182b01ad799&language=en&sort_by={0}&page=1',3,'',all_img[13],'')
-      #addDir3('By Years'.decode('utf8'),'movie_years&page=1',3,'',all_img[2],'By Years'.decode('utf8'))
+        addDir3('Latest Releases','users/garycrawfordgc/lists/latest-releases/items/'.format('release_date'),31,'',cache.get(art.get_latest_backdrop,24, table='backdrop')[0],'')
+      addDir3('Lastest HD'.decode('utf8'),'https://www.dvdsreleasedates.com/movies/',28,BASE_LOGO+'latest.png',cache.get(art.get_latest_backdrop,24, table='backdrop')[2],'Lastest HD'.decode('utf8'),isr=' ')
+      addDir3('Modern','http://api.themoviedb.org/4/list/43994?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,'',cache.get(art.get_modern_backdrop,24, table='backdrop')[0],'')
+      addDir3('00\'s'.decode('utf8'),'http://api.themoviedb.org/4/list/79502?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,BASE_LOGO+'movies00.png',cache.get(art.get_not_backdrop,24, table='backdrop')[5],'')
+      addDir3('Classics','http://api.themoviedb.org/4/list/47126?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,BASE_LOGO+'oldmovies.png',cache.get(art.get_classics_backdrop,24, table='backdrop')[0],'')
+      addDir3('Boxsets','base/boxsets.xml',43,'','','Boxsets')
+      addDir3('Best Of Lists','movies/moviebestof.xml',43,'','','Best Of Lists')
+      addDir3('Genres','http://api.themoviedb.org/3/genre/movie/list?api_key='+tmdbKey+'&language=en-GB&page=1',2,'','','')
+      addDir3('Popular','http://api.themoviedb.org/3/movie/popular?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,'',cache.get(art.get_popular_backdrop,24, table='backdrop')[0],'')
+      addDir3('Trending','http://api.themoviedb.org/3/trending/movie/week?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,'',cache.get(art.get_trending_backdrop,24, table='backdrop')[0],'')
+      #addDir3('By Years'.decode('utf8'),'movie_years&page=1',3,'',all_img[2],'By Years')
       
       addDir3('Studio'.decode('utf8'),'movie',112,'','','')
 
       if Addon.getSetting("use_trak")=='true':
 
-        addDir3('2019 - Oscar Nominees & Winners','users/andreofgyn/lists/2019-oscar-nominees-winners/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('2019 - Golden Globe Nominees & Winners','users/andreofgyn/lists/2019-golden-globe-nominees-winners/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('Rotten Tomatoes: Best of 2019','users/lish408/lists/rotten-tomatoes-best-of-2019/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('IMDB: Top Rated Movies','users/justin/lists/imdb-top-rated-movies/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('Reddit Top 250 (2018 Edition)','users/philrivers/lists/reddit-top-250-2018-edition/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('Academy Awards - Best Picture Winners','users/thefork/lists/academy-awards-best-picture-winners/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('The Troubles'.decode('utf8'),'users/bondless/lists/the-troubles/items/'.format('vote_average'),31,'',all_img[0],''.decode('utf8'))
-        addDir3('1001 Movies You Must See Before You Die','users/sp1ti/lists/1001-movies-you-must-see-before-you-die/items/'.format('release_date'),31,'',all_img[0],''.decode('utf8'))
+        addDir3('2019 - Oscar Nominees & Winners','users/andreofgyn/lists/2019-oscar-nominees-winners/items/'.format('vote_average'),31,'','','')
+        addDir3('2019 - Golden Globe Nominees & Winners','users/andreofgyn/lists/2019-golden-globe-nominees-winners/items/'.format('vote_average'),31,'','','')
+        addDir3('Rotten Tomatoes: Best of 2019','users/lish408/lists/rotten-tomatoes-best-of-2019/items/'.format('vote_average'),31,'','','')
+        addDir3('IMDB: Top Rated Movies','users/justin/lists/imdb-top-rated-movies/items/'.format('vote_average'),31,'','','')
+        addDir3('Reddit Top 250 (2018 Edition)','users/philrivers/lists/reddit-top-250-2018-edition/items/'.format('vote_average'),31,'','','')
+        addDir3('Academy Awards - Best Picture Winners','users/thefork/lists/academy-awards-best-picture-winners/items/'.format('vote_average'),31,'','','')
+        addDir3('The Troubles'.decode('utf8'),'users/bondless/lists/the-troubles/items/'.format('vote_average'),31,'','','')
+        addDir3('1001 Movies You Must See Before You Die','users/sp1ti/lists/1001-movies-you-must-see-before-you-die/items/'.format('release_date'),31,'','','')
     
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
 
@@ -3051,32 +2983,99 @@ def movies_menu():
            
                url=url.decode('base64')
               
-             addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+             addLink('Last Played Link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
        except  Exception as e:
          logging.warning(e)
          pass
-      addDir3('Search','http://api.themoviedb.org/3/search/movie?api_key=05255aa68df8270bf028f182b01ad799&query=%s&language=en&append_to_response=origin_country&page=1',3,'','','')
-      addDir3('Recommended for YOU','www',26,BASE_LOGO+'recomm.png',all_img[14],'',isr=' ')
+      addDir3('Search','http://api.themoviedb.org/3/search/movie?api_key='+tmdbKey+'&query=%s&language=en-GB&append_to_response=origin_country&page=1',3,'','','')
+      addDir3('Recommended for YOU','www',26,BASE_LOGO+'recomm.png','','',isr=' ')
 
-
-def iains():
+def tv_menu():
+  #'first_air_date'
       import datetime
-      #all_img=get_movie_poster()
-      order_by='primary_release_date.desc'
       now = datetime.datetime.now()
-      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
-    
-      all_img=cache.get(get_movie_poster,24, table='posters')
-
-      addDir3('Iains Movie\'s'.decode('utf8'),'http://api.themoviedb.org/4/list/97041?api_key=05255aa68df8270bf028f182b01ad799&sort_by=vote_average.desc&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Iain\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/97042?api_key=05255aa68df8270bf028f182b01ad799&sort_by=vote_average.desc&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Man Shed','http://api.themoviedb.org/4/list/47260?api_key=05255aa68df8270bf028f182b01ad799&sort_by=vote_average.desc&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Live Sports'.decode('utf8'),'www',40,'','',''.decode('utf8'))
-      addDir3('Youtube Tech Channels','yt/raspberrypi.xml',43,'',all_img[13],'')
-      addDir3('Youtube Tutorials','yt/Tutorials.xml',43,'',all_img[13],'')
-      addDir3('F1F','f1f.xml',43,'',all_img[13],'')
+      from resources.lib.util import art_tv as art
+      order_by='primary_release_date.asc'
+      addDir3('Series Tracker','tv',32,'','','',isr=' ')
+      addDir3('Popular','http://api.themoviedb.org/3/tv/popular?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_Popular_backdrop,24, table='backdrop')[0],'')
+      addDir3('Running Series','https://api.themoviedb.org/3/tv/on_the_air?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_Running_backdrop,24, table='backdrop')[0],'')
+      addDir3('HOT TV','http://api.themoviedb.org/3/trending/tv/week?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_New_backdrop,24, table='backdrop')[0],'')
+      addDir3('New','https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&language=en-US&sort_by=popularity.desc&first_air_date_year='+str(now.year)+'&timezone=Europe%2fLondon&include_null_first_air_ates=false&language=en-GB&page=1',3,'',cache.get(art.get_New_backdrop,24, table='backdrop')[0],'')
+      #addDir3('Currently Running TV Shows','http://api.themoviedb.org/4/list/47121?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_Currently_backdrop,24, table='backdrop')[0],'')
+      #addDir3('Finished TV Series','http://api.themoviedb.org/4/list/47119?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_Finished_backdrop,24, table='backdrop')[0],'')
+      addDir3('Crime Scene','http://api.themoviedb.org/4/list/97542?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_Crime_backdrop,24, table='backdrop')[0],'')
+      #addDir3('Based on true story','https://www.imdb.com/search/title?count=100&genres=biography',114,BASE_LOGO+'based.png','','Based on true story',isr=' ')
+      addDir3('Networks','tv',101,'','','')
+      addDir3('Favourite Shows','tv',18,'','','')
+      addDir3('Recommended Shows for You','www',27,'','','',isr=' ')
+      #addDir3('Popular IMDB','https://www.imdb.com/search/title?title_type=tv_series',114,'','','Popular IMDB',isr=' ')
+      #addDir3('Popular 50\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1950-01-01,1959-12-31&user_rating=5.0,',114,'','','',isr=' ')
+      #addDir3('Popular 60\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1960-01-01,1969-12-31&user_rating=5.0,',114,'','','',isr=' ')
+      #addDir3('Popular 70\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1970-01-01,1979-12-31&user_rating=5.0,',114,'','','',isr=' ')
+      #addDir3('Popular 80\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1980-01-01,1989-12-31&user_rating=5.0,',114,'','','',isr=' ')
+      #addDir3('Popular 90\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1990-01-01,1999-12-31&user_rating=5.0,',114,'','','',isr=' ')
+      #addDir3('Popular 00\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,'','','',isr=' ')
       if Addon.getSetting("use_trak")=='true':
-        addDir3('Star Trek','users/dgw/lists/star-trek-canon/items/',31,'',all_img[0],''.decode('utf8'))
+        addDir3('Rolling Stone\'s 100 Greatest TV Shows of All Time'.decode('utf8'),'users/redouaaane/lists/rolling-stone-s-100-greatest-tv-shows-of-all-time/items/',31,'',all_img[0],'')
+        addDir3('IMDB: Top Rated TV Shows'.decode('utf8'),'users/justin/lists/imdb-top-rated-tv-shows/items/',31,'',all_img[0],'')
+
+      dbcur.execute("SELECT * FROM lastlinktv WHERE o_name='f_name'")
+
+      match = dbcur.fetchone()
+      if match!=None:
+       
+       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
+       try:
+           if url!=' ':
+             if 'http' not  in url:
+             
+               url=url.decode('base64')
+  
+             addLink('Last Played Link', 'latest_tv',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+             
+       except Exception as e:
+         logging.warning(e)
+         pass
+      
+      addDir3('Search','http://api.themoviedb.org/3/search/tv?api_key='+tmdbKey+'&query=%s&language=en-GB&page=1',3,'','','')
+
+def kids_world():
+    from resources.lib.util import art_kids as art
+
+    addDir3('Kid\'s Movies'.decode('utf8'),'http://api.themoviedb.org/4/list/47128?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_Movies_backdrop,24, table='backdrop')[0],'')
+    addDir3('Kid\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/47132?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_TV_backdrop,24, table='backdrop')[2],'')
+    addDir3('Kid\'s Boxsets'.decode('utf8'),'kids/kidsmoviesbox.xml',43,'https://orig00.deviantart.net/cb42/f/2015/092/4/7/disney_pixar_folder_icon_by_mikromike-d8o56l8.png','','Kids Boxsets')
+  
+    addDir3('Cartoons'.decode('utf8'),'www',58,BASE_LOGO+'cartoons.png','','Cartoons')
+    addDir3('Children\'s Movies - Classic'.decode('utf8'),'users/gymbunny/lists/childrens-movies-classic/items/',31,'','','')
+    addDir3('Dreamworks'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=521&language=en-GB&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1',3,BASE_LOGO+'dreamworks.png',cache.get(art.get_Dreamworks_backdrop,24, table='backdrop')[0],'')
+    addDir3('Pixar'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=3&language=en-GB&&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1',3,BASE_LOGO+'pixar.png',cache.get(art.get_Pixar_backdrop,24, table='backdrop')[0],'')
+    addDir3('Walt Disney Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=2&language=en-GB&timezone=Europe%2FLondon&include_null_first_air_dates=false&page=1',3,BASE_LOGO+'wd.png',cache.get(art.get_Walt_backdrop,24, table='backdrop')[0],'')
+
+    addDir3('Darcy\'s List'.decode('utf8'),'base/darcy.xml',43,'','','')
+    addDir3('Shelby\'s List'.decode('utf8'),'base/shelby.xml',43,'','','')
+
+    #addDir3('Search Animecartoon'.decode('utf8'),'search',62,'https://upload.wikimedia.org/wikipedia/commons/0/0e/Wikipe-tan_sailor_fuku.png','https://worldwithouthorizons.com/wp-content/uploads/Artsy-2016-4K-Anime-Wallpaper-1280x720.jpg','Search')
+
+    if Addon.getSetting("use_trak")=='true':
+      addDir3('Disney + Movies','users/drew-casteo/lists/disney-movies/items/',31,'',all_img[0],'')
+      addDir3('Disney + TV Shows','users/drew-casteo/lists/disney-tv-shows/items/',31,'',all_img[0],'')
+
+def anime():
+      import datetime
+      import resources.lib.util.art_main as art
+      #all_img=get_movie_backdrop()
+      now = datetime.datetime.now()
+      #link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+    
+      all_img=cache.get(art.get_anime_backdrop,24, table='posters')
+      addDir3('Watchcartoononline'.decode('utf8'),'www',68,BASE_LOGO+'anime.png','','Anime')
+      addDir3('Animetoon','base/animetoon.xml',43,BASE_LOGO+'','','')
+      
+      if Addon.getSetting("use_trak")=='true':
+         addDir3('Ten Great Anime Feature-Films'.decode('utf8'),'users/sp1ti/lists/ten-great-anime-feature-films/items/',31,BASE_LOGO+'trakt.png',all_img[1],'')
+         addDir3('Trakt Recommends Anime List'.decode('utf8'),'users/keniah/lists/anime/items/',31,BASE_LOGO+'trakt.png',all_img[3],'')
+         addDir3('Trakt Recommends Anime List 2'.decode('utf8'),'users/ccanado/lists/anime/items/',31,BASE_LOGO+'trakt.png',all_img[4],'')
     
      
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
@@ -3095,71 +3094,28 @@ def iains():
        except  Exception as e:
          logging.warning(e)
          pass
-
-
-def bobbys():
-      import datetime
-      #all_img=get_movie_poster()
-      now = datetime.datetime.now()
-      order_by='primary_release_date.desc'
-      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
-    
-      all_img=cache.get(get_movie_poster,24, table='posters')
-      addDir3('Horror Movies','http://api.themoviedb.org/4/discover/movie?with_genres=27&api_key=05255aa68df8270bf028f182b01ad799&language=en&sort_by=vote_average.desc&page=1',3,'',all_img[0],'Organised by vote descending'.decode('utf8'))
-      if Addon.getSetting("use_trak")=='true':
-        addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],''.decode('utf8'))
-        addDir3('Horror Films Trakt List','users/jealad/lists/horror/items/',31,'',all_img[0],''.decode('utf8'))
-      
-      addDir3('Hammer Films'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=1314&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'.png','',''.decode('utf8'))
-      
-      addDir3('Teen Horror Films','http://api.themoviedb.org/4/list/8433?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Teen Horror Comedy','http://api.themoviedb.org/4/list/9510?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-
-      addDir3('Silly Horror Films','http://api.themoviedb.org/4/list/47250?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('TV','http://api.themoviedb.org/4/list/113086?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Youtube','yt/bobby.xml',43,'',all_img[13],'')
-
-    
-     
-      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
-
-
-      match = dbcur.fetchone()
-      if match!=None:
-       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
-       try:
-           if url!=' ':
-             if 'http' not  in url:
-           
-               url=url.decode('base64')
-              
-             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
-       except  Exception as e:
-         logging.warning(e)
-         pass
-
 
 def docu_menu():
       
 
       import datetime
-      #all_img=get_movie_poster()
+      #all_img=get_movie_backdrop()
       now = datetime.datetime.now()
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
       order_by='primary_release_date.desc'
-      all_img=cache.get(get_movie_poster,24, table='posters')
 
 
-      addDir3('TMDB','http://api.themoviedb.org/4/discover/movie?with_genres=99&api_key=05255aa68df8270bf028f182b01ad799&language=en&sort_by=vote_average.desc&page=1',3,'',all_img[0],'Organised by vote descending'.decode('utf8'))
-      addDir3('Nature  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/97013?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'','','')
-      addDir3('Music  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/81922?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'','','')
-      addDir3('Sport  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/81924?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'','','')
-      addDir3('Computer  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/81923?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'','','')
+      addDir3('TMDB Documentary Movies','http://api.themoviedb.org/4/discover/movie?with_genres=99&api_key='+tmdbKey+'&language=en-GBc&page=1',3,'','','Organised by vote descending')
+      addDir3('TMDB Documentary TV','http://api.themoviedb.org/4/discover/tv?with_genres=99&api_key='+tmdbKey+'&language=en-GBc&page=1',3,'','','Organised by vote descending')
+      addDir3('Nature  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/97013?api_key='+tmdbKey+'&language=en-GB&page=1',3,'','','')
+      addDir3('Music  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/81922?api_key='+tmdbKey+'&language=en-GB&page=1',3,'','','')
+      addDir3('Sport  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/81924?api_key='+tmdbKey+'&language=en-GB&page=1',3,'','','')
+      addDir3('Computer  Documentaries via TMDB'.decode('utf8'),'http://api.themoviedb.org/4/list/81923?api_key='+tmdbKey+'&language=en-GB&page=1',3,'','','')
       addDir3('topdocumentaryfilms.com','base/topdoc.xml',43,BASE_LOGO+'tdf.jpg','','')
       addDir3('documentaryheaven.com','base/docheaven.xml',43,BASE_LOGO+'dh.jpg','','')
 
       if Addon.getSetting("use_trak")=='true':
-         addDir3('Documentary Films Trakt List'.decode('utf8'),'users/jealad/lists/documentary/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
+         addDir3('Documentary Films Trakt List'.decode('utf8'),'users/jealad/lists/documentary/items/',31,BASE_LOGO+'trakt.png','','')
 
       addDir3('Jen List','base/Documentaries.xml',43,BASE_LOGO+'docs.png','','')
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
@@ -3182,50 +3138,34 @@ def docu_menu():
          logging.warning(e)
          pass
 
-def anime():
-      import datetime
-      #all_img=get_movie_poster()
-      now = datetime.datetime.now()
-      #link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
-    
-      all_img=cache.get(get_movie_poster,24, table='posters')
-      addDir3('Watchcartoononline'.decode('utf8'),'www',68,BASE_LOGO+'anime.png','','Anime'.decode('utf8'))
-      addDir3('Animetoon','base/animetoon.xml',43,BASE_LOGO+'','','')
-#      addDir3('test','base/thewatch.xml',43,BASE_LOGO+'','','')
-      
-      if Addon.getSetting("use_trak")=='true':
-         addDir3('Ten Great Anime Feature-Films'.decode('utf8'),'users/sp1ti/lists/ten-great-anime-feature-films/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
-         addDir3('Trakt Recommends Anime List'.decode('utf8'),'users/keniah/lists/anime/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
-         addDir3('Trakt Recommends Anime List 2'.decode('utf8'),'users/ccanado/lists/anime/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
-    
-     
-      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
-
-
-      match = dbcur.fetchone()
-      if match!=None:
-       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
-       try:
-           if url!=' ':
-             if 'http' not  in url:
-           
-               url=url.decode('base64')
-              
-             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
-       except  Exception as e:
-         logging.warning(e)
-         pass
-
+def main_trakt():
+   addDir3('Lists','www',64,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Lists')
+   addDir3('Progress','users/me/watched/shows?extended=full',63,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Progress')
+   addDir3('Episode watchlist ','sync/watchlist/episodes?extended=full',63,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Episode watchlist')
+   addDir3('Series watchlist','users/me/watchlist/episodes?extended=full',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Series watchlist')
+   
+   addDir3('TV Collection','users/me/collection/shows',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','collection')
+   addDir3('Shows watchlist','users/me/watchlist/shows',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Shows watchlist')
+   addDir3('Movies watchlist','users/me/watchlist/movies',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Movies watchlist')
+   
+   addDir3('Movies Collection','users/me/collection/movies',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','collection')
+   
+   addDir3('Watched movies','users/me/watched/movies',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Watched movies')
+   addDir3('Watched shows','users/me/watched/shows',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Watched shows')
+   addDir3('Liked lists','users/likes/lists',142,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Watched shows',data='1')
+   addDir3('2019 - Oscar Nominees & Winners','users/andreofgyn/lists/2019-oscar-nominees-winners/items/',31,'',all_img[0],''.decode('utf8'))
+   addDir3('2019 - Golden Globe Nominees & Winners','users/andreofgyn/lists/2019-golden-globe-nominees-winners/items/',31,'',all_img[0],''.decode('utf8'))
+   addDir3('Rotten Tomatoes: Best of 2019','users/lish408/lists/rotten-tomatoes-best-of-2019/items/',31,'',all_img[0],''.decode('utf8'))
 
 def holidays():
       import datetime
       now = datetime.datetime.now()
       
       if Addon.getSetting("use_trak")=='true':
-         addDir3('Christmas 1'.decode('utf8'),'users/littlestella3/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
-         addDir3('Christmas 2'.decode('utf8'),'users/mausk/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
-         addDir3('Christmas 3'.decode('utf8'),'users/outspoken/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
-         addDir3('Christmas 4'.decode('utf8'),'users/smashleec/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],''.decode('utf8'))
+         addDir3('Christmas 1'.decode('utf8'),'users/littlestella3/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],'')
+         addDir3('Christmas 2'.decode('utf8'),'users/mausk/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],'')
+         addDir3('Christmas 3'.decode('utf8'),'users/outspoken/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],'')
+         addDir3('Christmas 4'.decode('utf8'),'users/smashleec/lists/christmas/items/',31,BASE_LOGO+'trakt.png',all_img[0],'')
     
      
       dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
@@ -3245,14 +3185,64 @@ def holidays():
          logging.warning(e)
          pass
 
-
-def music():
+def iains():
       import datetime
-      #all_img=get_movie_poster()
+      #all_img=get_movie_backdrop()
+      order_by='primary_release_date.desc'
       now = datetime.datetime.now()
       link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
     
-      all_img=cache.get(get_movie_poster,24, table='posters')
+      all_img=cache.get(art.get_movie_backdrop,24, table='posters')
+
+      addDir3('Iains Movie\'s'.decode('utf8'),'http://api.themoviedb.org/4/list/97041?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,'',all_img[13],'')
+      addDir3('Iain\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/97042?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,'',all_img[13],'')
+      addDir3('Man Shed','http://api.themoviedb.org/4/list/47260?api_key='+tmdbKey+'&sort_by=vote_average.desc&language=en-GB&page=1',3,'',all_img[13],'')
+      addDir3('Live Sports'.decode('utf8'),'www',40,'','','')
+      addDir3('Youtube Tech Channels','yt/raspberrypi.xml',43,'',all_img[13],'')
+      addDir3('Youtube Tutorials','yt/Tutorials.xml',43,'',all_img[13],'')
+      addDir3('F1F','f1f.xml',43,'',all_img[13],'')
+      if Addon.getSetting("use_trak")=='true':
+        addDir3('Star Trek','users/dgw/lists/star-trek-canon/items/',31,'',all_img[0],'')
+    
+     
+      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
+
+      match = dbcur.fetchone()
+      if match!=None:
+       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
+       try:
+           if url!=' ':
+             if 'http' not  in url:
+           
+               url=url.decode('base64')
+              
+             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+       except  Exception as e:
+         logging.warning(e)
+         pass
+
+def bobbys():
+      import datetime
+      #all_img=get_movie_backdrop()
+      now = datetime.datetime.now()
+      order_by='primary_release_date.desc'
+      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+    
+      all_img=cache.get(art.get_movie_backdrop,24, table='posters')
+      addDir3('Horror Movies','http://api.themoviedb.org/4/discover/movie?with_genres=27&api_key='+tmdbKey+'&language=en-GB&sort_by=vote_average.desc&page=1',3,'',all_img[0],'Organised by vote descending')
+      if Addon.getSetting("use_trak")=='true':
+        addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],'')
+        addDir3('Horror Films Trakt List','users/jealad/lists/horror/items/',31,'',all_img[0],'')
+      
+      addDir3('Hammer Films'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=1314&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'.png','','')
+      
+      addDir3('Teen Horror Films','http://api.themoviedb.org/4/list/8433?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',all_img[13],'')
+      addDir3('Teen Horror Comedy','http://api.themoviedb.org/4/list/9510?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',all_img[13],'')
+
+      addDir3('Silly Horror Films','http://api.themoviedb.org/4/list/47250?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',all_img[13],'')
+      addDir3('TV','http://api.themoviedb.org/4/list/113086?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',all_img[13],'')
+      addDir3('Youtube','yt/bobby.xml',43,'',all_img[13],'')
 
     
      
@@ -3273,6 +3263,38 @@ def music():
          logging.warning(e)
          pass
 
+def live():
+	addDir3('Live TV'.decode('utf8'),'www',146,BASE_LOGO+'livetv.png','https://cdn2.vectorstock.com/i/1000x1000/85/36/live-stream-tv-logo-icon-vector-16968536.jpg','Live TV')
+	addDir3('Acestream'.decode('utf8'),'www',76,BASE_LOGO+'acestream.png','https://i.pinimg.com/originals/6b/18/31/6b1831503dc0e0470b2bf1e1b5df978f.jpg','Acestream')
+	addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','https://scotch-res.cloudinary.com/image/upload/w_900,q_auto:good,f_auto/v1549206813/gyxlxwotow6xxysb527u.png','Live Sports')
+	addDir3('M3u8 Lists'.decode('utf8'),'www',55,BASE_LOGO+'m3u8.png','https://indianapublicmedia.org/wp-content/themes/ipm-aux-services/images/services/transmission.jpg','M3u8 Lists')
+	addDir3('NBA','https://www.nbafullhd.com',105,BASE_LOGO+'nba.png','https://cdn.nba.net/nba-drupal-prod/2017-08/SEO-image-NBA-logoman.jpg','NBA')
+
+def music():
+      import datetime
+      #all_img=get_movie_backdrop()
+      now = datetime.datetime.now()
+      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+    
+
+    
+     
+      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
+
+      match = dbcur.fetchone()
+      if match!=None:
+       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
+       try:
+           if url!=' ':
+             if 'http' not  in url:
+           
+               url=url.decode('base64')
+              
+             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+       except  Exception as e:
+         logging.warning(e)
+         pass
 
 def tv_neworks():
     if Addon.getSetting("order_networks")=='0':
@@ -3282,18 +3304,18 @@ def tv_neworks():
     elif Addon.getSetting("order_networks")=='1':
         order_by='first_air_date.desc'
 
-    addDir3('NetFlix'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=213&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'netflix.png','',''.decode('utf8'))
-    addDir3('HBO'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=49&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'hbo.png','',''.decode('utf8'))
-    addDir3('CBS'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=16&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'cbs.png','',''.decode('utf8'))
-    addDir3('SyFy'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=77&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'syfy.png','',''.decode('utf8'))
-    addDir3('The CW'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=71&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'cw.png','',''.decode('utf8'))
-    addDir3('ABC'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=2&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'abc.png','',''.decode('utf8'))
-    addDir3('NBC'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=6&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'nbc.png','',''.decode('utf8'))
-    addDir3('AMAZON'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=1024&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'amazon.png','',''.decode('utf8'))
-    addDir3('Hulu'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=453&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'hulu.png','',''.decode('utf8'))
-    addDir3('Youtube'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=1436&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'yt.png','',''.decode('utf8'))
+    addDir3('NetFlix'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=213&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'netflix.png','','')
+    addDir3('HBO'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=49&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'hbo.png','','')
+    addDir3('CBS'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=16&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'cbs.png','','')
+    addDir3('SyFy'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=77&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'syfy.png','','')
+    addDir3('The CW'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=71&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'cw.png','','')
+    addDir3('ABC'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=2&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'abc.png','','')
+    addDir3('NBC'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=6&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'nbc.png','','')
+    addDir3('AMAZON'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=1024&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'amazon.png','','')
+    addDir3('Hulu'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=453&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'hulu.png','','')
+    addDir3('Youtube'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key='+tmdbKey+'&with_networks=1436&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'yt.png','','')
 
-def movie_prodiction():
+def movie_production():
     if Addon.getSetting("order_networks")=='0':
         order_by='popularity.desc'
     elif Addon.getSetting("order_networks")=='2':
@@ -3301,103 +3323,40 @@ def movie_prodiction():
     elif Addon.getSetting("order_networks")=='1':
         order_by='first_air_date.desc'
 
-    addDir3('Marvel'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=7505&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'marvel.png','',''.decode('utf8'))
-    addDir3('DC Studios'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=9993&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'dc.png','',''.decode('utf8'))
-    addDir3('Lucasfilm'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=1&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'lucas.png','',''.decode('utf8'))
-    addDir3('Warner Bros.'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=174&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'wb.png','',''.decode('utf8'))
-    addDir3('Walt Disney Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=2&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'wd.png','',''.decode('utf8'))
-    addDir3('Pixar'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=3&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'pixar.png','',''.decode('utf8'))
-    addDir3('Paramount'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=4&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'para.png','','t'.decode('utf8'))
-    addDir3('Columbia Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=5&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'columbia.png','',''.decode('utf8'))
-    addDir3('DreamWorks'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=7&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'dreamworks.png','',''.decode('utf8'))
-    addDir3('Miramax'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=14&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'miramax.png','',''.decode('utf8'))
-    addDir3('20th Century Fox'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=25&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'20th.png','',''.decode('utf8'))
-    addDir3('Sony Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=34&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'sony.png','',''.decode('utf8'))
-    addDir3('Lions Gate Films'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=35&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'liongate.png','',''.decode('utf8'))
-    addDir3('Orion Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=41&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'orion.png','',''.decode('utf8'))
-    addDir3('MGM'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=21&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'mgm.png','',''.decode('utf8'))
-    addDir3('New Line Cinema'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=12&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'nlc.png','',''.decode('utf8'))
-    addDir3('Gracie Films'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=18&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'gracie.png','',''.decode('utf8'))
-    addDir3('Imagine Entertainment'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key=05255aa68df8270bf028f182b01ad799&with_companies=23&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'imagine.png','',''.decode('utf8'))
-
-
-
-
-
-
-def tv_menu():
-  #'first_air_date'
-      import datetime
-      now = datetime.datetime.now()
-      all_img=cache.get(get_tv_poster,24, table='posters')
-      order_by='primary_release_date.asc'
-      addDir3('Currently Running TV Shows','http://api.themoviedb.org/4/list/47121?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Finished TV Series','http://api.themoviedb.org/4/list/47119?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Crime Scene','http://api.themoviedb.org/4/list/97542?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('Kids TV ','http://api.themoviedb.org/4/list/47132?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-
-      addDir3('Popular','http://api.themoviedb.org/3/tv/popular?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[1],'')
-      addDir3('Running Series','https://api.themoviedb.org/3/tv/on_the_air?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[8],'')
-      addDir3('HOT TV','http://api.themoviedb.org/3/trending/tv/week?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      addDir3('New','https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&language=en-US&sort_by=popularity.desc&first_air_date_year='+str(now.year)+'&timezone=Europe%2fLondon&include_null_first_air_ates=false&language=en&page=1',3,'',all_img[3],'')
-      addDir3('Based on true story','https://www.imdb.com/search/title?count=100&genres=biography',114,BASE_LOGO+'based.png',all_img[14],'Based on true story',isr=' ')
-      addDir3('Networks','tv',101,'','','')
-      addDir3('Favourite Shows','tv',18,'','','')
-      addDir3('NetFlix'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=213&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'netflix.png','',''.decode('utf8'))
-      addDir3('HBO'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=49&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'hbo.png','',''.decode('utf8'))
-      addDir3('AMAZON'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=1024&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'amazon.png','',''.decode('utf8'))
-      addDir3('Youtube Originals'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_networks=1436&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'yt.png','',''.decode('utf8'))
-      addDir3('Rolling Stone\'s 100 Greatest TV Shows of All Time'.decode('utf8'),'users/redouaaane/lists/rolling-stone-s-100-greatest-tv-shows-of-all-time/items',31,'','','')
-      addDir3('Recommended Shows for You','www',27,'',all_img[5],'',isr=' ')
-      addDir3('Popular IMDB','https://www.imdb.com/search/title?title_type=tv_series',114,'',all_img[8],'Popular IMDB',isr=' ')
-      addDir3('Popular 50\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1950-01-01,1959-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
-      addDir3('Popular 60\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1960-01-01,1969-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
-      addDir3('Popular 70\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1970-01-01,1979-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
-      addDir3('Popular 80\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1980-01-01,1989-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
-      addDir3('Popular 90\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=1990-01-01,1999-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
-      addDir3('Popular 00\'s'.decode('utf8'),'https://www.imdb.com/search/title?title_type=tv_series&release_date=2000-01-01,2010-12-31&user_rating=5.0,',114,'',all_img[8],'',isr=' ')
-      addDir3('Marvel'.decode('utf8'),'https://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&with_companies=7505&language=en&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','','Marvel'.decode('utf8'))
-      addDir3('Based on true story','https://www.imdb.com/search/title/?title_type=tv_series&genres=biography&sort=num_votes,desc',114,'',all_img[8],'',isr=' ')
-      addDir3('Series Tracker','tv',32,'',all_img[6],'',isr=' ')
-      addDir3('Watched Shows','tv',91,'',all_img[7],'',isr=' ')
-      #addDir3('Iain\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/97042?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1',3,'',all_img[13],'')
-      if Addon.getSetting("use_trak")=='true':
-        addDir3('Rolling Stone\'s 100 Greatest TV Shows of All Time'.decode('utf8'),'users/redouaaane/lists/rolling-stone-s-100-greatest-tv-shows-of-all-time/items/',31,'',all_img[0],''.decode('utf8'))
-        addDir3('IMDB: Top Rated TV Shows'.decode('utf8'),'users/justin/lists/imdb-top-rated-tv-shows/items/',31,'',all_img[0],''.decode('utf8'))
-
-      dbcur.execute("SELECT * FROM lastlinktv WHERE o_name='f_name'")
-
-      match = dbcur.fetchone()
-      if match!=None:
-       
-       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
-       try:
-           if url!=' ':
-             if 'http' not  in url:
-             
-               url=url.decode('base64')
-  
-             addLink('Last Played Link', 'latest_tv',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
-             
-       except Exception as e:
-         logging.warning(e)
-         pass
-      
-      addDir3('Search','http://api.themoviedb.org/3/search/tv?api_key=05255aa68df8270bf028f182b01ad799&query=%s&language=en&page=1',3,'','','')
+    addDir3('Marvel'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=7505&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'marvel.png','','')
+    addDir3('DC Studios'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=9993&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'dc.png','','')
+    addDir3('Lucasfilm'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=1&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'lucas.png','','')
+    addDir3('Warner Bros.'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=174&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'wb.png','','')
+    addDir3('Walt Disney Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=2&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'wd.png','','')
+    addDir3('Pixar'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=3&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'pixar.png','','')
+    addDir3('Paramount'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=4&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'para.png','','t')
+    addDir3('Columbia Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=5&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'columbia.png','','')
+    addDir3('DreamWorks'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=7&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'dreamworks.png','','')
+    addDir3('Miramax'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=14&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'miramax.png','','')
+    addDir3('20th Century Fox'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=25&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'20th.png','','')
+    addDir3('Sony Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=34&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'sony.png','','')
+    addDir3('Lions Gate Films'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=35&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'liongate.png','','')
+    addDir3('Orion Pictures'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=41&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'orion.png','','')
+    addDir3('MGM'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=21&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'mgm.png','','')
+    addDir3('New Line Cinema'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=12&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'nlc.png','','')
+    addDir3('Gracie Films'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=18&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'gracie.png','','')
+    addDir3('Imagine Entertainment'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=23&language=en-GB&sort_by={0}&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1'.format(order_by),3,BASE_LOGO+'imagine.png','','')
 
 def search_menu():
-       addDir3('Search Movie','http://api.themoviedb.org/3/search/movie?api_key=05255aa68df8270bf028f182b01ad799&query=%s&language=en&append_to_response=origin_country&page=1',3,'','','')
-       addDir3('Search TV Show','http://api.themoviedb.org/3/search/tv?api_key=05255aa68df8270bf028f182b01ad799&query=%s&language=en&page=1',3,'','','')
-def get_genere(link,icon):
+       addDir3('Search Movie','http://api.themoviedb.org/3/search/movie?api_key='+tmdbKey+'&query=%s&language=en-GB&append_to_response=origin_country&page=1',3,'','','')
+       addDir3('Search TV Show','http://api.themoviedb.org/3/search/tv?api_key='+tmdbKey+'&query=%s&language=en-GB&page=1',3,'','','')
+
+def get_general(link,icon):
    images={}
    html=requests.get(link).json()
    for data in html['genres']:
      if '/movie' in link:
-       new_link='http://api.themoviedb.org/3/genre/%s/movies?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1'%str(data['id'])
+       new_link='http://api.themoviedb.org/3/genre/%s/movies?api_key=%s&language=en-GB&page=1'%(str(data['id']),tmdbKey)
      else:
-       new_link='http://api.themoviedb.org/3/discover/tv?api_key=05255aa68df8270bf028f182b01ad799&sort_by=popularity.desc&with_genres=%s&language=en&page=1'%str(data['id'])
+       new_link='http://api.themoviedb.org/3/discover/tv?api_key=%s&sort_by=popularity.desc&with_genres=%s&language=en-GB&page=1'%(tmdbKey,str(data['id']))
     
      addDir3(data['name'],new_link,3,icon,DESIMG,data['name'])
+
 
 
 
@@ -3504,7 +3463,7 @@ def c_get_sources(name,year,original_title,season,episode,id,eng_name,show_origi
         hostDict = []
     premiered=isr
    
-    tmdbKey = '05255aa68df8270bf028f182b01ad799'
+    tmdbKey = 'aa28550e5a65f567fc512bd0290ce6fb'
     if season!=None and season!="%20":
        tv_movie='tv'
        url2='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(id,tmdbKey)
@@ -4447,7 +4406,7 @@ def get_sources(name,url,icon,image,plot,year,original_title,season,episode,id,e
         tv_movie='movie'
     try:
         if 'tt' in id:
-             url3='https://api.themoviedb.org/3/find/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en-US&external_source=imdb_id'%id
+             url3='https://api.themoviedb.org/3/find/%s?api_key=%s&language=en-US&external_source=imdb_id'%(id,tmdbKey)
              xx=requests.get(url3).json()
             
              if tv_movie=='tv':
@@ -5068,10 +5027,10 @@ def get_sources(name,url,icon,image,plot,year,original_title,season,episode,id,e
     logging.warning('11')
     if Addon.getSetting("chapi_enable")=='true' :
         if season!=None and season!="%20":
-           url2='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(id,'05255aa68df8270bf028f182b01ad799')
+           url2='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(id,tmdbKey)
         else:
          
-           url2='http://api.themoviedb.org/3/movie/%s?api_key=%s&language=en&append_to_response=external_ids'%(id,'05255aa68df8270bf028f182b01ad799')
+           url2='http://api.themoviedb.org/3/movie/%s?api_key=%s&language=en&append_to_response=external_ids'%(id,tmdbKey)
         try:
             imdb_id=requests.get(url2).json()['external_ids']['imdb_id']
         except:
@@ -5512,7 +5471,7 @@ def get_redirect(url):
 
 
 def get_imdb_data(info,name_o,image,source,type):
-         tmdbKey = '05255aa68df8270bf028f182b01ad799'
+         tmdbKey = 'aa28550e5a65f567fc512bd0290ce6fb'
          name=name_o
          imdb_id=''
          icon=image
@@ -6512,7 +6471,7 @@ def play_by_subs(name,urls,iconimage,fanart,description_o,data,original_title,se
    all_magents=json.loads(urls)
 
    plot=description_o
-   tmdbKey = '05255aa68df8270bf028f182b01ad799'
+   tmdbKey = 'aa28550e5a65f567fc512bd0290ce6fb'
    
    if season!=None and season!="%20":
        tv_movie='tv'
@@ -7331,9 +7290,9 @@ def play_trailer_f(id,tv_movie):
     global search_done
 
     if tv_movie=='movie':
-      url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=05255aa68df8270bf028f182b01ad799'%id
+      url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=%s'%(id,tmdbKey)
     else:
-      url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=05255aa68df8270bf028f182b01ad799'%id
+      url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=%s'%(id,tmdbKey)
 
     html_t=requests.get(url_t).json()
 
@@ -7361,11 +7320,11 @@ def play_trailer_f(id,tv_movie):
 def play_trailer(id,tv_movie):
 
     if tv_movie=='movie':
-        url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=05255aa68df8270bf028f182b01ad799'%id
+        url_t='http://api.themoviedb.org/3/movie/%s/videos?api_key=%s'%(id,tmdbKey)
         html_t=requests.get(url_t).json()
         video_id=(html_t['results'][0]['key'])
     else:
-        url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=05255aa68df8270bf028f182b01ad799'%id
+        url_t='http://api.themoviedb.org/3/tv/%s/videos?api_key=%s'%(id,tmdbKey)
         html_t=requests.get(url_t).json()
         video_id=(html_t['results'][0]['key'])
     from youtube_ext import get_youtube_link2
@@ -7410,7 +7369,7 @@ def movie_recomended():
       break
     
     if len(id)>1 and '%' not in id:
-     url='https://api.themoviedb.org/3/movie/%s/recommendations?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1'%id.replace('\n','')
+     url='https://api.themoviedb.org/3/movie/%s/recommendations?api_key=%s&language=en&page=1'%(id.replace('\n',''),tmdbKey)
      count=count+1
      
      if url not in url_array:
@@ -7442,7 +7401,7 @@ def tv_recomended():
     
     if len(id)>1 and '%' not in id:
           
-     url='https://api.themoviedb.org/3/tv/%s/recommendations?api_key=05255aa68df8270bf028f182b01ad799&language=en&page=1'%id.replace('\n','')
+     url='https://api.themoviedb.org/3/tv/%s/recommendations?api_key=%s&language=en&page=1'%(id.replace('\n',''),tmdbKey)
      
      count=count+1
      if url not in url_array:
@@ -7451,7 +7410,7 @@ def tv_recomended():
  
 def get_tmdb_from_imdb(imdb,html_g,xxx):
     global all_new_data
-    url='https://api.themoviedb.org/3/find/%s?api_key=05255aa68df8270bf028f182b01ad799&external_source=imdb_id&language=en'%imdb
+    url='https://api.themoviedb.org/3/find/%s?api_key=%s&external_source=imdb_id&language=en'%(imdb,tmdbKey)
     html=requests.get(url).json()
  
     for data in html['movie_results']:
@@ -7536,7 +7495,7 @@ def latest_dvd(url):
         'Upgrade-Insecure-Requests': '1',
         'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:59.0) Gecko/20100101 Firefox/59.0',
     }
-    url_g='https://api.themoviedb.org/3/genre/movie/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+    url_g='https://api.themoviedb.org/3/genre/movie/list?api_key='+tmdbKey+'&language=en'
     html_g=requests.get(url_g).json()
     
     html_o=requests.get(url,headers=headers).content
@@ -7606,24 +7565,6 @@ def latest_dvd(url):
 def get_movie_data(url):
     html=requests.get(url).json()
     return html
-def main_trakt():
-   addDir3('Lists','www',64,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Lists')
-   addDir3('Progress','users/me/watched/shows?extended=full',63,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Progress')
-   addDir3('Episode watchlist ','sync/watchlist/episodes?extended=full',63,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Episode watchlist')
-   addDir3('Series watchlist','users/me/watchlist/episodes?extended=full',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Series watchlist')
-   
-   addDir3('TV Collection','users/me/collection/shows',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','collection')
-   addDir3('Shows watchlist','users/me/watchlist/shows',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Shows watchlist')
-   addDir3('Movies watchlist','users/me/watchlist/movies',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Movies watchlist')
-   
-   addDir3('Movies Collection','users/me/collection/movies',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','collection')
-   
-   addDir3('Watched movies','users/me/watched/movies',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Watched movies')
-   addDir3('Watched shows','users/me/watched/shows',31,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Watched shows')
-   addDir3('Liked lists','users/likes/lists',142,'https://kodi.expert/wp-content/uploads/2018/05/trakt-logo.png','https://seo-michael.co.uk/content/images/2016/08/trakt.jpg','Watched shows',data='1')
-   addDir3('2019 - Oscar Nominees & Winners','users/andreofgyn/lists/2019-oscar-nominees-winners/items/',31,'',all_img[0],''.decode('utf8'))
-   addDir3('2019 - Golden Globe Nominees & Winners','users/andreofgyn/lists/2019-golden-globe-nominees-winners/items/',31,'',all_img[0],''.decode('utf8'))
-   addDir3('Rotten Tomatoes: Best of 2019','users/lish408/lists/rotten-tomatoes-best-of-2019/items/',31,'',all_img[0],''.decode('utf8'))
 
    
    
@@ -7660,7 +7601,7 @@ def progress_trakt(url):
         start_time = time.time()
         xxx=0
         ddatetime = (datetime.datetime.utcnow() - datetime.timedelta(hours = 5))
-        url_g='https://api.themoviedb.org/3/genre/tv/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+        url_g='https://api.themoviedb.org/3/genre/tv/list?api_key='+tmdbKey+'&language=en'
      
   
         html_g=requests.get(url_g).json()
@@ -7734,8 +7675,7 @@ def progress_trakt(url):
           season=items['snum']
           episode=items['enum']
           
-          url='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(items['tmdb'],'05255aa68df8270bf028f182b01ad799')
-          #url='http://api.themoviedb.org/3/tv/%s/season/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en'%(items['tmdb'],season)
+          url='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(items['tmdb'],tmdbKey)
           html=cache.get(get_movie_data,time_to_save,url, table='pages')
           plot=' '
           if 'The resource you requested could not be found' not in str(html):
@@ -7901,10 +7841,10 @@ def get_trk_data(url,page):
                     dp = xbmcgui.DialogProgress()
                     dp.create("Loading", "Please Wait", '')
                     dp.update(0)
-        url_g_m='https://api.themoviedb.org/3/genre/movie/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+        url_g_m='https://api.themoviedb.org/3/genre/movie/list?api_key='+tmdbKey+'&language=en'
                      
         
-        url_g_tv='https://api.themoviedb.org/3/genre/tv/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+        url_g_tv='https://api.themoviedb.org/3/genre/tv/list?api_key='+tmdbKey+'&language=en'
         html_g_tv=requests.get(url_g_tv).json()
         html_g_m=requests.get(url_g_m).json()
         start_time = time.time()
@@ -7937,9 +7877,9 @@ def get_trk_data(url,page):
             slug = 'movies'
             html_g=html_g_m
           if slug=='movies':
-            url='http://api.themoviedb.org/3/movie/%s?api_key=%s&language=en&append_to_response=external_ids'%(items['movie']['ids']['tmdb'],'05255aa68df8270bf028f182b01ad799')
+            url='http://api.themoviedb.org/3/movie/%s?api_key=%s&language=en&append_to_response=external_ids'%(items['movie']['ids']['tmdb'],tmdbKey)
           else:
-            url='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(items['show']['ids']['tmdb'],'05255aa68df8270bf028f182b01ad799')
+            url='http://api.themoviedb.org/3/tv/%s?api_key=%s&language=en&append_to_response=external_ids'%(items['show']['ids']['tmdb'],tmdbKey)
           
           html=cache.get(get_movie_data,time_to_save,url, table='pages')
           if 'The resource you requested could not be found' not in str(html):
@@ -8068,7 +8008,7 @@ def get_one_trk(color,name,url_o,url,icon,fanart,data_ep,plot,year,original_titl
           data_ep=''
           dates=' '
           fanart=image
-          url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en'%(id,season)
+          url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=%s&language=en'%(id,season,tmdbKey)
          
           html=requests.get(url).json()
           next=''
@@ -8133,7 +8073,7 @@ def get_one_trk(color,name,url_o,url,icon,fanart,data_ep,plot,year,original_titl
                color='gold'
               else:
                color='white'
-               h2=requests.get('https://api.themoviedb.org/3/tv/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en-US'%id).json()
+               h2=requests.get('https://api.themoviedb.org/3/tv/%s?api_key=%S&language=en-US'%(id),tmdbKey).json()
                last_s_to_air=int(h2['last_episode_to_air']['season_number'])
                last_e_to_air=int(h2['last_episode_to_air']['episode_number'])
               
@@ -8203,7 +8143,7 @@ def get_Series_trk_data(url_o,match):
           data_ep=''
           dates=' '
           fanart=image
-          url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en'%(id,season)
+          url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=%S&language=en'%(id,season,tmdbKey)
          
           html=requests.get(url).json()
           if 'status_message' in html:
@@ -8286,7 +8226,7 @@ def get_Series_trk_data(url_o,match):
                color='gold'
               else:
                color='white'
-               h2=requests.get('https://api.themoviedb.org/3/tv/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en-US'%id).json()
+               h2=requests.get('https://api.themoviedb.org/3/tv/%s?api_key=%s&language=en-US'%(id,tmdbKey)).json()
                last_s_to_air=int(h2['last_episode_to_air']['season_number'])
                last_e_to_air=int(h2['last_episode_to_air']['episode_number'])
               
@@ -8756,9 +8696,9 @@ def scan_direct_links(next):
 def remove_from_trace(name,original_title,id,season,episode):
 
     if id=='0':
-      ok=xbmcgui.Dialog().yesno(("Remove from Series Tracker"),(' from Series Tracker?'+name+"Remove "))
+      ok=xbmcgui.Dialog().yesno(("Remove from Series Tracker "),(' from Series Tracker? '+name+" Remove "))
     else:
-      ok=xbmcgui.Dialog().yesno(("Remove Watched"),(' from Watched?'+name+"Remove "))
+      ok=xbmcgui.Dialog().yesno(("Remove Watched "),(' from Watched? '+name+" Remove "))
     if ok:
       if id=='0':
         dbcur.execute("DELETE  FROM Lastepisode WHERE original_title = '%s'"%(original_title))
@@ -9621,9 +9561,9 @@ def resolve_mvmax(url,name,year):
           
     if len(year)>2:
        
-        url2='http://api.themoviedb.org/3/search/movie?api_key=05255aa68df8270bf028f182b01ad799&query=%s&year=%s&language=he&append_to_response=origin_country&page=1'%(name,year)
+        url2='http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&year=%s&language=he&append_to_response=origin_country&page=1'%(tmdbKey,name,year)
     else:
-        url2='http://api.themoviedb.org/3/search/movie?api_key=05255aa68df8270bf028f182b01ad799&query=%s&language=he&append_to_response=origin_country&page=1'%(name)
+        url2='http://api.themoviedb.org/3/search/movie?api_key=%s&query=%s&language=he&append_to_response=origin_country&page=1'%(tmdbKey,name)
     logging.warning(url2)
     y=requests.get(url2).json()
     try:
@@ -9680,7 +9620,7 @@ def play(name,url,iconimage,fanart,description,data,season,episode,original_titl
     if 0:#'tt' in id:
         try:
         
-            url22='https://api.themoviedb.org/3/find/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en&external_source=imdb_id'%id
+            url22='https://api.themoviedb.org/3/find/%s?api_key=%s&language=en&external_source=imdb_id'%(id,tmdbKey)
             x=requests.get(url22).json()
             if 'movie_results' in x:
                 id=str(x['movie_results'][0]['id'])
@@ -9867,7 +9807,7 @@ def play(name,url,iconimage,fanart,description,data,season,episode,original_titl
                 dbcur.execute("UPDATE %s SET name='%s',url='%s',iconimage='%s',fanart='%s',description='%s',data='%s',season='%s',episode='%s',original_title='%s',saved_name='%s',heb_name='%s',show_original_year='%s',eng_name='%s',isr='%s',prev_name='%s',id='%s' WHERE o_name = 'f_name'"%(table_name,name.replace("'","%27"),url.encode('base64'),iconimage,fanart,description.replace("'","%27"),str(data).replace("'","%27"),season,episode,original_title.replace("'","%27"),saved_name.replace("'","%27"),heb_name.replace("'"," "),show_original_year,eng_name.replace("'","%27").replace("'","%27"),isr,prev_name.replace("'","%27"),id))
                 dbcon.commit()
 
-     tmdbKey = '05255aa68df8270bf028f182b01ad799'
+     tmdbKey = 'aa28550e5a65f567fc512bd0290ce6fb'
      silent_mode=True
 
      year=data
@@ -9893,7 +9833,7 @@ def play(name,url,iconimage,fanart,description,data,season,episode,original_titl
             imdb_id=" "
      else:
          imdb_id=id
-         url3='https://api.themoviedb.org/3/find/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en-US&external_source=imdb_id'%imdb_id
+         url3='https://api.themoviedb.org/3/find/%s?api_key=%s&language=en-US&external_source=imdb_id'%(imdb_id,tmdbKey)
          xx=requests.get(url3).json()
 
          if tv_movie=='tv':
@@ -11089,7 +11029,7 @@ def by_actor(url):
     if url=='www':
         url='1'
        
-    link='https://api.themoviedb.org/3/person/popular?api_key=05255aa68df8270bf028f182b01ad799&language=en-US&page=%s&language=en&sort_by=popularity.desc'%url
+    link='https://api.themoviedb.org/3/person/popular?api_key=%s&language=en-US&page=%s&language=en&sort_by=popularity.desc'%(url,tmdbKey)
     headers = {
                                 
                                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
@@ -11125,9 +11065,9 @@ def actor_m(url):
       sys.exit()
 
     if tv_mode=='movie':
-       link='https://api.themoviedb.org/3/person/%s?api_key=05255aa68df8270bf028f182b01ad799&append_to_response=credits&language=en&sort_by=popularity.desc'%url
+       link='https://api.themoviedb.org/3/person/%s?api_key=%s&append_to_response=credits&language=en&sort_by=popularity.desc'%(url,tmdbKey)
     else:
-       link='https://api.themoviedb.org/3/person/%s/tv_credits?api_key=05255aa68df8270bf028f182b01ad799&append_to_response=credits&language=en&sort_by=popularity.desc'%url
+       link='https://api.themoviedb.org/3/person/%s/tv_credits?api_key=%s&append_to_response=credits&language=en&sort_by=popularity.desc'%(url,tmdbKey)
    
     headers = {
                                 
@@ -11139,10 +11079,10 @@ def actor_m(url):
                             }
     html=requests.get(link,headers=headers).json()
     if tv_mode=='movie':
-        url_g='https://api.themoviedb.org/3/genre/movie/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+        url_g='https://api.themoviedb.org/3/genre/movie/list?api_key='+tmdbKey+'&language=en'
                  
     else:
-       url_g='https://api.themoviedb.org/3/genre/tv/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+       url_g='https://api.themoviedb.org/3/genre/tv/list?api_key='+tmdbKey+'&language=en'
     html_g=requests.get(url_g,headers=headers).json()
     if tv_mode=='movie':
       test=html['credits']['cast']
@@ -11210,7 +11150,7 @@ def search_actor():
     keyboard.doModal()
     if keyboard.isConfirmed():
            search_entered = keyboard.getText()
-           link='https://api.themoviedb.org/3/search/person?api_key=05255aa68df8270bf028f182b01ad799&language=en&query=%s&page=1&include_adult=false'%search_entered
+           link='https://api.themoviedb.org/3/search/person?api_key=%s&language=en&query=%s&page=1&include_adult=false'%(tmdbKey,search_entered)
            headers = {
                                 
                                 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
@@ -13274,7 +13214,7 @@ def play_nba(name,url,icon,fanart):
                         addLink('[COLOR gold]'+server+'[/COLOR] - '+nn, m22[0],5,False,icon,fanart,'__NBA__'+'\n-HebDub-',original_title=name,saved_name=name)
           
 def last_ep_aired(id):
-    x=requests.get('https://api.themoviedb.org/3/tv/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en'%id).json()
+    x=requests.get('https://api.themoviedb.org/3/tv/%s?api_key=%s&language=en'%(id,tmdbKey)).json()
     season=str(x['last_episode_to_air']['season_number'])
     episode=str(x['last_episode_to_air']['episode_number'])
     name=x['last_episode_to_air']['name']
@@ -13337,7 +13277,7 @@ def get_im_data_rt(imdbid,plot_o,html_g,xxx):
     import random
     global all_data_imdb
     
-    url='https://api.themoviedb.org/3/find/%s?api_key=05255aa68df8270bf028f182b01ad799&language=en&external_source=imdb_id'%imdbid
+    url='https://api.themoviedb.org/3/find/%s?api_key=%s&language=en&external_source=imdb_id'%(imdbid,tmdbKey)
     
     
     
@@ -13427,10 +13367,10 @@ def get_data_imdb(m,plot_o):
     }
    
     if 'movie' in plot_o:
-        url_g='https://api.themoviedb.org/3/genre/movie/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+        url_g='https://api.themoviedb.org/3/genre/movie/list?api_key='+tmdbKey+'&language=en'
     else:
 
-        url_g='https://api.themoviedb.org/3/genre/tv/list?api_key=05255aa68df8270bf028f182b01ad799&language=en'
+        url_g='https://api.themoviedb.org/3/genre/tv/list?api_key='+tmdbKey+'&language=en'
     
     if Addon.getSetting("dp")=='true':
         dp = xbmcgui . DialogProgress ( )
@@ -14318,7 +14258,7 @@ elif mode2==None or url==None or len(url)<1 and len(sys.argv)>1:
         if Addon.getSetting("ghaddr")!='aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21vc2hlcDE1L2JhY2svbWFzdGVyLzUudHh0':
             Addon.setSetting("ghaddr", 'aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL21vc2hlcDE1L2JhY2svbWFzdGVyLzUudHh0')
 elif mode2==2:
-        get_genere(url,iconimage)
+        get_general(url,iconimage)
 elif mode2==3:
       get_movies(url,isr)
 elif mode2==4:

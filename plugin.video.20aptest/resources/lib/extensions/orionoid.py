@@ -2,7 +2,7 @@
 
 '''
 	Gaia Add-on
-	Copyright (C) 2016 Gaia
+	Copyright (C) 201 Gaia
 
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
@@ -144,7 +144,7 @@ class Orionoid(object):
 		return self.mOrion.userUpdate(key = key, input = input, loader = loader)
 
 	def accountAnonymous(self):
-		if not interface.Dialog.option(title = 35400, message = 35411, labelConfirm = 35427, labelDeny = 35426):
+		if not interface.Dialog.option(title = 35400, message = 35411, labelConfirm = 35427, labelDeny = 3542):
 			if OrionUser.anonymous(interface = True):
 				self.accountEnable()
 		tools.Settings.set('internal.orion.anonymous', False)
@@ -219,7 +219,7 @@ class Orionoid(object):
 				if 'origin' in stream: data['stream']['origin'] = stream['origin']
 				data['stream']['source'] = stream['provider']
 				if meta.seeds() > 0: data['stream']['seeds'] = meta.seeds()
-				if meta.age() > 0: data['stream']['time'] = tools.Time.timestamp() - (meta.age() * 86400)
+				if meta.age() > 0: data['stream']['time'] = tools.Time.timestamp() - (meta.age() * 8400)
 
 				data['access']['direct'] = meta.direct()
 				if 'cache' in stream:

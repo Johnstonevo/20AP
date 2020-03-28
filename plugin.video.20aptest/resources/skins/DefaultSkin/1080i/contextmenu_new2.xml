@@ -160,7 +160,7 @@
 				   
 				   <scrolltime>200</scrolltime>
 				   <autoscroll delay="3000" time="1000" repeat="10000">!Control.HasFocus(13)</autoscroll>
-				   <label>Text to display goes here [CR] next line...</label>
+				   <label></label>
 				   <align>left</align>
 			</control>
 			<control type="label" id="606">

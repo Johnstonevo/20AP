@@ -499,7 +499,7 @@
 		<setting label="Enable Main Cache" type="bool" id="enable_cache" default="true" visible="true"/>
 		<setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.20aptest/" visible="false"/>
 		<setting label="TVDB API Key" type="text" id="TVdb_api_key" option="hidden" default="34148470FD68E26B" visible="eq(-3,true)"/>
-		<setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="05255aa68df8270bf028f182b01ad799" visible="eq(-4,true)"/>
+		<setting label="TMDB API Key" type="text" id="tmdb_api_key" option="hidden" default="aa28550e5a65f567fc512bd0290ce6fb" visible="eq(-4,true)"/>
 		<setting label="Trakt Client ID" type="text" id="trakt_api_client_id" option="hidden" default="b84b41aab8d4a0e18f1205c70cd5b8db8aad887e45bd9e981666f1342ec75001" visible="eq(-5,true)"/>
 		<setting label="Trakt Client Secret" type="text" id="trakt_api_client_secret" option="hidden" visible="!eq(-1,true) + eq(-6,true)" default="9a16ab35e55bcfb0f09fdb5b10e96493296242e5f358d3825357ef4d51bae69c"/>
 		<setting label="Last.fm API Key" type="text" id="lastfm_api_key" option="hidden" default="25324513a9a7ef270fa50d25d1d6e064" visible="eq(-7,true)"/>
@@ -512,7 +512,7 @@
 		<setting label="Playback Settings" type="lsep"/>
 		<setting label="Open Universal Scraper Settings" type="action" option="close" action="RunPlugin(plugin://plugin.video.20aptest/?mode2=144&url=www)"/>
 		<setting id="use_link_dialog" label="Enable Link Selection Dialog" type="bool" default="true" />
-		<setting id="link_fallthrough" label="Enable Link Selection Fallthrough" type="bool" default="true" visible="eq(-1,true)"/>
+		<setting id="link_fallthrough" label="Enable Link Selection Fallthrough" type="bool" default="false" visible="eq(-1,true)"/>
 
 		<setting label="Resolver Settings" type="lsep"/>
 		<setting label="Open ResolveURL Settings" type="action" option="close" action="RunPlugin(plugin://plugin.video.20aptest/?mode2=145&url=www)"/>
@@ -549,5 +549,45 @@
 		<setting id="ftp_pass" type="text" option = "hidden" label="FTP Password" visible="eq(-6,1)" default="" />
 		<setting label="Check Connection" option="close" type="action" visible="eq(-7,1)" action="RunPlugin(plugin://plugin.video.20aptest?mode2=90&url=www)"/>
 	</category>
-
+	
+		<category label="Debrid">
+			<setting label="[COLOR lightseagreen]Debrid Settings[/COLOR]" type="lsep"/>
+			<setting id="rd.auth" type="text" default="" visible="hidden" />
+			<setting id="rd.refresh" type="text" default="" visible="hidden" />
+			<setting id="rd.client_id" type="text" default="" visible="hidden" />
+			<setting id="rd.expiry" type="text" default="0" visible="hidden"/>
+			<setting id="rd.secret" type="text" default="" visible="hidden" />
+			<setting id="ghaddr" type="text" default="" visible="hidden" />
+			<setting id="rdsource" label="[COLOR crimson]Enable Debrid [/COLOR]" type="bool" default="false" />
+			<setting id="magnet_rd_reso" type="enum" label="Torrent Premium Resolver" values="RealDebrid (20aptest)|RD,Premiumize,AllDebrid(ResolveURL)" default="1" />
+			<setting id="check_cached" label="Check For Cached Torrents" type="bool" default="true" />
+			<setting id="check_cached_r" label="Remove Uncached Torrents From Results" type="bool" default="false" />
+			<setting id="rd_only" label="[COLOR crimson]Debrid Sources Only[/COLOR]" type="bool" default="false" />
+			<setting type="lsep" label="[COLOR crimson]Super Fast Play for Torrents[/COLOR]" />
+	
+			<setting type="lsep" label="[COLOR lightseagreen]RD Authorization[/COLOR]" />
+			<setting label="Reset RD Authentication" option="close" type="action" action="RunPlugin(plugin://plugin.video.20aptest?mode2=137&url=www)"/>
+			<setting label="Re-Authorize RD" option="close" type="action" action="RunPlugin(plugin://plugin.video.20aptest?mode2=138&url=www)"/>
+			<setting id="rd_menu_enable" label="Add RD Sources Button to Sources" type="bool" default="true" />
+	
+			<setting type="lsep" label="[COLOR lightseagreen]RD Servers[/COLOR]" />
+			<setting id="show_all_rd_servers" label="Click to See RD Servers" type="bool" default="false" />
+			<!-- Start RD servers -->
+			<setting id="0day" label="0day [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-1,true)"/>
+			<setting id="300mbfilms" label="300mbfilms [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-2,true)"/>
+			<setting id="bestmoviez" label="bestmoviez [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-3,true)"/>
+			<setting id="ddlspot" label="ddlspot [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-4,true)"/>
+			<setting id="ddlvalley" label="ddlvalley [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-5,true)"/>
+			<setting id="directdl" label="directdl [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-6,true)"/>
+			<setting id="filmxy" label="filmxy [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-7,true)"/>
+			<setting id="invictus" label="invictus [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-8,true)"/>
+			<setting id="iwantmyshow" label="iwantmyshow [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-9,true)"/>
+			<setting id="moviesleak" label="moviesleak [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-10,true)"/>
+			<setting id="mvrls" label="mvrls [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-11,true)"/>
+			<setting id="rlsbb" label="rlsbb [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-12,true)"/>
+			<setting id="scenerls" label="scenerls [COLOR lightseagreen] (TV) [/COLOR]  [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-13,true)"/>
+			<setting id="ultrahd" label="ultrahd [COLOR gold] (Movies) [/COLOR] " type="bool" default="true" visible= "eq(-14,true)"/>
+			<!-- End RD servers -->
+		</category>
+	
 </settings>
