@@ -3046,7 +3046,7 @@ def kids_world():
     addDir3('Kid\'s TV'.decode('utf8'),'http://api.themoviedb.org/4/list/47132?api_key='+tmdbKey+'&language=en-GB&page=1',3,'',cache.get(art.get_TV_backdrop,24, table='backdrop')[2],'')
     addDir3('Kid\'s Boxsets'.decode('utf8'),'kids/kidsmoviesbox.xml',43,'https://orig00.deviantart.net/cb42/f/2015/092/4/7/disney_pixar_folder_icon_by_mikromike-d8o56l8.png','','Kids Boxsets')
   
-    addDir3('Cartoons'.decode('utf8'),'www',58,BASE_LOGO+'cartoons.png','','Cartoons')
+    addDir3('Animetoon'.decode('utf8'),'www',58,BASE_LOGO+'cartoons.png','','Cartoons')
     addDir3('Children\'s Movies - Classic'.decode('utf8'),'users/gymbunny/lists/childrens-movies-classic/items/',31,'','','')
     addDir3('Dreamworks'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=521&language=en-GB&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1',3,BASE_LOGO+'dreamworks.png',cache.get(art.get_Dreamworks_backdrop,24, table='backdrop')[0],'')
     addDir3('Pixar'.decode('utf8'),'https://api.themoviedb.org/3/discover/movie?api_key='+tmdbKey+'&with_companies=3&language=en-GB&&timezone=Europe%2fLondon&include_null_first_air_dates=false&page=1',3,BASE_LOGO+'pixar.png',cache.get(art.get_Pixar_backdrop,24, table='backdrop')[0],'')
@@ -3055,7 +3055,7 @@ def kids_world():
     addDir3('Darcy\'s List'.decode('utf8'),'base/darcy.xml',43,'','','')
     addDir3('Shelby\'s List'.decode('utf8'),'base/shelby.xml',43,'','','')
 
-    #addDir3('Search Animecartoon'.decode('utf8'),'search',62,'https://upload.wikimedia.org/wikipedia/commons/0/0e/Wikipe-tan_sailor_fuku.png','https://worldwithouthorizons.com/wp-content/uploads/Artsy-2016-4K-Anime-Wallpaper-1280x720.jpg','Search')
+    addDir3('Search Animetoon'.decode('utf8'),'search',621,'','','Search')
 
     if Addon.getSetting("use_trak")=='true':
       addDir3('Disney + Movies','users/drew-casteo/lists/disney-movies/items/',31,'',all_img[0],'')
@@ -3064,7 +3064,6 @@ def kids_world():
 def anime():
       import datetime
       import resources.lib.util.art_main as art
-      #all_img=get_movie_backdrop()
       now = datetime.datetime.now()
       #link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
     
@@ -10754,7 +10753,7 @@ def eng_anime():
     addDir3('Cartoon'.decode('utf8'),'http://www.animetoon.org/cartoon',59,'https://png.pngtree.com/element_pic/00/16/12/07584794601cb2b.jpg','https://wallpapersite.com/images/pages/pic_w/2604.jpg','Cartoon'.decode('utf8'))
     addDir3('Anime'.decode('utf8'),'http://api.animetoon.org/dubbed-anime',59,'https://i.imgur.com/e4Crf1p.jpg','http://www.tokkoro.com/picsup/2618741-anime-4k-full-desktop-wallpaper.jpg','Anime'.decode('utf8'))
     
-    addDir3('[COLOR aqua][I]Search[/I][/COLOR]'.decode('utf8'),'search',62,'https://upload.wikimedia.org/wikipedia/commons/0/0e/Wikipe-tan_sailor_fuku.png','https://worldwithouthorizons.com/wp-content/uploads/Artsy-2016-4K-Anime-Wallpaper-1280x720.jpg','Search'.decode('utf8'))
+    addDir3('[COLOR aqua][I]Search[/I][/COLOR]'.decode('utf8'),'http://www.animetoon.org/toon/search?key=',621,'','','Search'.decode('utf8'))
 def download_img(local_filename,cook,url):
     
     if os.path.exists(local_filename):
@@ -10776,7 +10775,7 @@ def AnimeCartoon(url):
 
     headers = {
         
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.5',
         'Connection': 'keep-alive',
@@ -10801,7 +10800,7 @@ def AnimeEpisodes(url,image):
 
     headers = {
         
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.5',
         'Connection': 'keep-alive',
@@ -10816,14 +10815,14 @@ def AnimeEpisodes(url,image):
 
 
 
-        addDir3(title.decode('utf8'),url,61,'','',title.decode('utf8'))
+        addDir3(title.decode('utf8'),url,61,'','','')
 
            
 def AnimeListVideos(name,url,iconimage):
     from resources.lib.util import dom_parser
     headers = {
         
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'Accept-Language': 'en-US,en;q=0.5',
         'Connection': 'keep-alive',
@@ -10842,8 +10841,9 @@ def AnimeListVideos(name,url,iconimage):
             host = nurl[0][0].split('//')[1].replace('www.','')
             host = host.split('/')[0].split('.')[1].upper() 
             url = str(nurl[0][0])
-
-        addDir3(iframe.decode('utf8'),url,62,'','',iframe.decode('utf8'))
+            title = iframe.replace("http://", "Source: ")
+            title = title.split('/', 1)[0]
+        addDir3(title.decode('utf8'),url,62,'','',title.decode('utf8'))
 
 def get_Animeplayvideo(url):
     xbmc.executebuiltin("PlayMedia(%s)" % (url))
@@ -10854,52 +10854,35 @@ def get_Animeplayvideo(url):
 
 
 def search_anime():
-    search_entered=''
-    
-
-    keyboard = xbmc.Keyboard(search_entered, 'Enter search')
+    from resources.lib.util import dom_parser
+    keyboard = xbmc.Keyboard('', 'Search for Movies')
     keyboard.doModal()
-    if keyboard.isConfirmed():
-            search_entered = keyboard.getText()
-            headers = {
-        
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:58.0) Gecko/20100101 Firefox/58.0',
-                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
-                'Accept-Language': 'en-US,en;q=0.5',
-                'Connection': 'keep-alive',
-                'Upgrade-Insecure-Requests': '1',
-            }
+    if keyboard.isConfirmed() != None and keyboard.isConfirmed() != "":
+        search = keyboard.getText()
 
-            x=requests.get('http://api.animetoon.org/GetAllCartoon',headers).json()
-            all_r=[]
-            for items in x:
-                if search_entered.lower() in items['name'].lower():
-                    if items['description']!=None:
-                      plot=items['description']
-                    else:
-                       plot=' '
-                    all_r.append((items['name'],'http://www.animetoon.org/images/series/big/'+items['id']+'.jpg',items['id'],plot))
-            x=requests.get('http://api.animetoon.org/GetAllDubbed',headers).json()
-            for items in x:
-                
-                if search_entered.lower() in items['name'].lower():
-                    if items['description']!=None:
-                      plot=items['description']
-                    else:
-                       plot=' '
-                    all_r.append((items['name'],'http://www.animetoon.org/images/series/big/'+items['id']+'.jpg',items['id'],plot))
-                   
+    headers = {
         
-            for items in all_r:
-                video_data={}
-                video_data['title']=items[0]
-                video_data['poster']=items[1]
-                video_data['plot']=items[3]
-                video_data['icon']=items[1]
-             
-                
-                
-                addDir3(items[0],items[2],60,items[1],items[1],items[3],video_info=video_data)
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Language': 'en-US,en;q=0.5',
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+    }
+
+    search_url = 'http://www.animetoon.org/toon/search?key=%s' % search.replace(' ', '+')
+    html = requests.get(search_url).content
+    thedivs = dom_parser.parseDOM(html, 'div', attrs={'class':'series_list'})[0]
+    list_items = dom_parser.parseDOM(thedivs, 'li')
+    for content in list_items:
+        info_header = dom_parser.parseDOM(content, 'h3')[0]
+        url, title = re.compile('<a href="(.+?)">(.+?)</a>',re.DOTALL).findall(info_header)[0]
+        show_icon = re.compile('src="(.+?)"',re.DOTALL).findall(content)[0]
+
+        
+        
+        addDir3(title.decode('utf8'),url,60,show_icon,'',title.decode('utf8'))
+
+
 def add_remove_trakt(name,original_title,id,season,episode):
 
     if original_title=='add':
@@ -14416,8 +14399,8 @@ elif mode2==161:
 
 elif mode2==62:
      get_Animeplayvideo(url)
-
-     #search_anime()
+elif mode2==621:
+     search_anime()
 elif mode2==63:
     progress_trakt(url)
 
