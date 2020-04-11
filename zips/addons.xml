@@ -775,7 +775,7 @@ You can clone the project and host it in your own server.
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.41" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.42" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -1334,7 +1334,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.11" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.14" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1377,6 +1377,15 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.14:
+Remove cleaning of depricated settings as it was causing corrupt settings file
+
+Changelog 1.6.13:
+Add workaround on failure to grab user lists
+
+Changelog 1.6.12:
+Fix endpoint for still watching and playing next windows
+
 Changelog 1.6.11:
 Fix provider list not showing due to theme changes
 
