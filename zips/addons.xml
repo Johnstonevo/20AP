@@ -112,6 +112,7 @@
     <extension point="xbmc.addon.metadata">
         <news>
 [fix] error caused by timestamp formatting
+[fix] fix Premiere's exiting after 5 seconds |contrib: jpfox156|
 [lang] es_es strings |contrib: roliverosc|
 [lang] pt_pt strings |contrib: daniel3x|
         </news>
@@ -162,7 +163,7 @@
         <disclaimer lang="tr_TR">Bu eklenti Google tarafından üretilmemiştir</disclaimer>
         <platform>all</platform>
         <license>GPL-2.0-only</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=348464</forum>
+        <forum>https://ytaddon.page.link/forum</forum>
         <website>https://www.youtube.com</website>
         <email>ytplugin at datanet dot ws</email>
         <source>https://github.com/jdf76/plugin.video.youtube</source>
@@ -297,7 +298,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.61" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.62" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
