@@ -618,7 +618,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.107" provider-name="Addons4Kodi">
+<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.1.108" provider-name="Addons4Kodi">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" />
@@ -1335,7 +1335,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.14" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.15" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1378,6 +1378,9 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.15:
+Adjsut status code responses for Trakt module
+
 Changelog 1.6.14:
 Remove cleaning of depricated settings as it was causing corrupt settings file
 
