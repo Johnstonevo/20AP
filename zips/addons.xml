@@ -1335,7 +1335,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.15" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.16" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1378,6 +1378,9 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.16:
+Fix response.status_code check for Trakt Auth
+
 Changelog 1.6.15:
 Adjsut status code responses for Trakt module
 
