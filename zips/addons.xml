@@ -556,7 +556,7 @@ You can clone the project and host it in your own server.
 
 <addon  id="plugin.video.jellyfin"
         name="Jellyfin"
-        version="0.5.3"
+        version="0.5.4"
         provider-name="Jellyfin Contributors, angelblue05">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -595,16 +595,15 @@ You can clone the project and host it in your own server.
     <summary lang="en"></summary>
     <description lang="en">Welcome to Jellyfin for Kodi!&#10;A whole new way to manage and view your media library. The Jellyfin addon for Kodi combines the best of Kodi - ultra smooth navigation, beautiful UIs and playback of any file under the sun, and Jellyfin - the most powerful fully open source multi-client media metadata indexer and server.&#10;&#10;Jellyfin for Kodi is the absolute best way to enjoy the incredible Kodi playback engine combined with the power of Jellyfin's centralized database. Features:&#10;* Direct integration with the Kodi library for native Kodi speed&#10;* Instant synchronization with the Jellyfin server&#10;* Full support for Movie, TV and Music collections&#10;* Jellyfin Server direct stream and transcoding support - use Kodi when you are away from home!</description>
     <news>
-    v0.5.3 (2020-04-01)
-      #246 Fix language file paths
-      #248 Remove duplicate strings in translations
-      #249 Fixed typo introduced in #215
-      #251 Fix kodi link
-      #252 Don't encode strings that don't need it
-      #253 Remove MEDIA lookup dict
-      #256 Moved setting addon mode to utils
-      #257 Disabled changing server details &amp; Removed corresponding function
-      #260 Added better error handling to public info check
+    v0.5.4 (2020-04-20)
+      #263 Update deprecated kodi api functions
+      #274 Disable SSLv2 and SSLv3 support in websocket lib
+      #275 Disable TLSv1.0 and TLSv1.1 in websocket lib
+      #276 Add badges to README
+      #277 Attempt to improve logging
+      #279 Fix spelling of receive in websocket.py comments
+      #280 Spring cleaning 2020: Part 1
+      #282 Make sure file paths are text, not binary
     </news>
     <assets>
       <icon>resources/icon.png</icon>
@@ -1121,7 +1120,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.6" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.8" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.requests"/>
@@ -1132,6 +1131,14 @@ You can clone the project and host it in your own server.
     <extension point="xbmc.addon.metadata">
         <news>
 [COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.4.8:[/B]
+- Fixed a typo in the addons.xml file (thanks @SerpentDrago!)
+
+[B]0.4.7:[/B]
+- Autoplay setting reinstated.
+- Added an option to show letter thumbnails on the catalog sections. Only useful if you're on a custom Kodi skin.
+- Added a warning whenever a video is blocked from excess traffic.
+
 [B]0.4.6:[/B]
 - Add-on re-enabled. Their site is back to letting free users watch videos.
 - To avoid overwhelming their servers on these COVID-19 quarantine times, the "autoplay highest quality" add-on setting was removed. So when you play a video, you'll always be asked what quality to use.
