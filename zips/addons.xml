@@ -857,7 +857,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.6.1" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.6.2" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -896,15 +896,11 @@ You can clone the project and host it in your own server.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.1 - April 14, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Calendar show titles.[/I]
-[COLOR yellow]--[/COLOR][I] fixed typo with RD uncached torrent removal
-    using PM setting.[/I]
-[COLOR yellow]--[/COLOR][I] fixed issue with RD uncached torrent check
-    failing due to RD response converting hashes to
-    lower case.[/I]
-[COLOR yellow]--[/COLOR][I] fixed Trakt Progress episode sort issue from
-    Trakt response.[/I]
+[B][COLOR red]Update - v3.6.2 - April 29, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Code changes for new integration with Venom global
+    context menu changes.[/I]
+[COLOR yellow]--[/COLOR][I] Changed trakt history to now follow "Progress sorting"
+    method from settings.[/I]
 		</news>
 	</extension>
 </addon>
@@ -1117,7 +1113,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.8" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.9" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.requests"/>
@@ -1128,6 +1124,9 @@ You can clone the project and host it in your own server.
     <extension point="xbmc.addon.metadata">
         <news>
 [COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.4.9:[/B]
+- Fixed the warning for blocked videos.
+
 [B]0.4.8:[/B]
 - Fixed a typo in the addons.xml file (thanks @SerpentDrago!)
 
@@ -1158,18 +1157,6 @@ explaining how they work, so you can read before using.
 [B]0.4.1:[/B]
 - Changed to a WatchCartoonOnline domain that's updated more frequently.
 - Fix for letters in episode numbers (when using the "Clean Episode Titles" option).
-
-[B]0.4.0:[/B]
-- Fix for when there's weird season ordinals in the episode titles.
-
-[B]0.3.9:[/B]
-- Fix for when there's blank lists on the mobile website.
-
-[B]0.3.8:[/B]
-- Fix for when using favorite items with the old website address.
-
-[B]0.3.7:[/B]
-- Fixed thumbnail images with the Show Information context menu.
         </news>
         <description lang="en">
 Watch cartoons and anime from [COLOR orange][B]www.TheWatchCartoonOnline.tv[/B][/COLOR].
