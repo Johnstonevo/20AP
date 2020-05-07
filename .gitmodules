@@ -43,9 +43,6 @@
 [submodule "plugin.video.seren"]
 	path = plugin.video.seren
 	url = https://github.com/nixgates/plugin.video.seren.git
-[submodule "plugin.video.catchuptvandmore"]
-	path = plugin.video.catchuptvandmore
-	url = https://github.com/Catch-up-TV-and-More/plugin.video.catchuptvandmore.git
 [submodule "plugin.video.openmeta"]
 	path = plugin.video.openmeta
 	url = https://github.com/a4k-openproject/plugin.video.openmeta.git
