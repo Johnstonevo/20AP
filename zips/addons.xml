@@ -817,7 +817,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.6.3" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.6.4" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -856,11 +856,8 @@ You can clone the project and host it in your own server.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.2 - April 29, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Code changes for new integration with Venom global
-    context menu changes.[/I]
-[COLOR yellow]--[/COLOR][I] Changed trakt history to now follow "Progress sorting"
-    method from settings.[/I]
+[B][COLOR red]Update - v3.6.4 - May 8, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed typo in downloader module.[/I]
 		</news>
 	</extension>
 </addon>
