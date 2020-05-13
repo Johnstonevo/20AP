@@ -729,7 +729,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.1~alpha2" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.2" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -748,6 +748,8 @@ You can clone the project and host it in your own server.
 [fix] intermittent issue with Subscriptions
 [fix] encoding of video unavailable messages
 [upd] updates to recommendations
+[upd] update logging for Kodi 19
+[lang] fr_fr strings |contrib: alan7000|
 [lang] pl_pl strings |contrib: drrak|
 [lang] nl_nl strings |contrib: Markman-B|
         </news>
@@ -1241,7 +1243,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.16" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.17" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1284,6 +1286,9 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.17:
+Update AllDebrid module for new API version
+
 Changelog 1.6.16:
 Fix response.status_code check for Trakt Auth
 
