@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.0" provider-name="Addons4Kodi">
+<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.001" provider-name="Addons4Kodi">
     <requires>
         <import addon="xbmc.python" version="2.25.0" />
         <import addon="script.module.beautifulsoup4" />
@@ -821,7 +821,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.6.7" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.6.8" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -860,14 +860,14 @@ You can clone the project and host it in your own server.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.7 - May 14, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed Library .strm playback. Previous update added ability
-    to compare meta received from tmdbhelper vs. Venom's
-    cached meta and use the largest.  I neglected that .strm
-    files are also player files and meta sent is None type. Now
-    I compare this as well and if the item is cached that meta
-    is now used vs. scraped meta saved locally, which is more
-    limited than Venom's cached meta.[/I]
+[B][COLOR red]Update - v3.6.8 - May 17, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed random issue with busy dialog not closing.[/I]
+[COLOR yellow]--[/COLOR][I] Added database table check to avoid bogus log errors.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue if user cleared Provider cache and then
+    selected Rescrape the table was now empty and halted scrapping.[/I]
+[COLOR yellow]--[/COLOR][I] Because of the changes to item #2 and 3 above the
+    setting option "Allow Rescrape to first clear item providers"
+    has now been removed and hard coded as the default.[/I]
 		</news>
 	</extension>
 </addon>
@@ -1138,7 +1138,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.46" provider-name="jsergio, gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.47" provider-name="jsergio, gujal">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
