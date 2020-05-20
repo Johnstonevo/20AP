@@ -821,7 +821,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="3.6.8" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="3.6.9" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
@@ -860,14 +860,11 @@ You can clone the project and host it in your own server.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.6.8 - May 17, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed random issue with busy dialog not closing.[/I]
-[COLOR yellow]--[/COLOR][I] Added database table check to avoid bogus log errors.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue if user cleared Provider cache and then
-    selected Rescrape the table was now empty and halted scrapping.[/I]
-[COLOR yellow]--[/COLOR][I] Because of the changes to item #2 and 3 above the
-    setting option "Allow Rescrape to first clear item providers"
-    has now been removed and hard coded as the default.[/I]
+[B][COLOR red]Update - v3.6.9 - May 20, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added new source filtering option "File Size limit (GB)".
+    This is off by default.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed random case of fetching foreign landscape
+    from fanart.tv.[/I]
 		</news>
 	</extension>
 </addon>
@@ -1224,7 +1221,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.17" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.18" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1267,6 +1264,9 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.18:
+Fixed extraction of magnet ID in AllDebrid module when resolving single file items
+
 Changelog 1.6.17:
 Update AllDebrid module for new API version
 
