@@ -729,7 +729,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.2" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.3~alpha1" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -743,15 +743,8 @@ You can clone the project and host it in your own server.
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[fix] playback failing
-[fix] viewing comments when logged in
-[fix] intermittent issue with Subscriptions
-[fix] encoding of video unavailable messages
-[upd] updates to recommendations
-[upd] update logging for Kodi 19
-[lang] fr_fr strings |contrib: alan7000|
-[lang] pl_pl strings |contrib: drrak|
-[lang] nl_nl strings |contrib: Markman-B|
+[fix] fix rating videos causing and error even though it succeeded
+[upd] cache javascript player url for 4 hours, reduces http requests per play by 1
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -1221,7 +1214,7 @@ Add-on by doko.
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="1.6.18" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="1.6.19" name="Seren" provider-name="Nixgates">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -1264,6 +1257,9 @@ Add-on by doko.
 			<screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
 		</assets>
 		<news>
+Changelog 1.6.19:
+Actually fixed alldebrid this time, promise
+
 Changelog 1.6.18:
 Fixed extraction of magnet ID in AllDebrid module when resolving single file items
 
