@@ -1128,7 +1128,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.47" provider-name="jsergio, gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.48" provider-name="jsergio, gujal">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
