@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.9" provider-name="doko">
+<addon id="plugin.video.watchnixtoons2" name="WatchNixtoons2" version="0.4.10" provider-name="doko">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
         <import addon="script.module.requests"/>
@@ -10,6 +10,10 @@
     <extension point="xbmc.addon.metadata">
         <news>
 [COLOR orange][B]WatchNixtoons2[/B][/COLOR] - Cartoons &amp; Anime
+[B]0.4.10:[/B]
+- Added an experimental setting (Settings -&gt; Debug -&gt; Use HTTP stream instead of HTTPS).
+This is for when it fails to play on new Kodi versions due to a mysterious SSL problem.
+
 [B]0.4.9:[/B]
 - Fixed the warning for blocked videos.
 
