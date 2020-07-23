@@ -19,9 +19,6 @@
 [submodule "plugin.program.reddit_browser"]
 	path = plugin.program.reddit_browser
 	url = https://github.com/Johnstonevo/plugin.program.reddit_browser.git
-[submodule "plugin.video.watchnixtoons2"]
-	path = plugin.video.watchnixtoons2
-	url = https://github.com/doko-desuka/plugin.video.watchnixtoons2.git
 [submodule "plugin.video.wonderfulsubs"]
 	path = plugin.video.wonderfulsubs
 	url = https://github.com/DxCx/plugin.video.wonderfulsubs.git
