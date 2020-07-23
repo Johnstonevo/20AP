@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# modified by Venom for Openscrapers
+# modified by Venom for Openscrapers (updated url 4-20-2020)
 
 #  ..#######.########.#######.##....#..######..######.########....###...########.#######.########..######.
 #  .##.....#.##.....#.##......###...#.##....#.##....#.##.....#...##.##..##.....#.##......##.....#.##....##
@@ -26,10 +26,12 @@
 '''
 
 import re
-import urllib
-import urlparse
 
-from resources.lib.modules import cleantitle
+try: from urlparse import parse_qs
+except ImportError: from urllib.parse import parse_qs
+try: from urllib import urlencode, quote, unquote_plus
+except ImportError: from urllib.parse import urlencode, quote, unquote_plus
+
 from resources.lib.modules import client
 from resources.lib.modules import debrid
 from resources.lib.modules import source_utils
@@ -49,7 +51,7 @@ class source:
 	def movie(self, imdb, title, localtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'title': title, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -58,7 +60,7 @@ class source:
 	def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -68,26 +70,25 @@ class source:
 		try:
 			if url is None:
 				return
-			url = urlparse.parse_qs(url)
+			url = parse_qs(url)
 			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
 			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
 
 
 	def sources(self, url, hostDict, hostprDict):
+		self._sources = []
 		try:
-			self._sources = []
-
 			if url is None:
 				return self._sources
 
 			if debrid.status() is False:
 				return self._sources
 
-			data = urlparse.parse_qs(url)
+			data = parse_qs(url)
 			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
 			self.title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
@@ -100,13 +101,12 @@ class source:
 			query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
 
 			if 'tvshowtitle' in data:
-				url = self.search.format('8', urllib.quote(query))
+				url = self.search.format('8', quote(query))
 			else:
-				url = self.search.format('4', urllib.quote(query))
+				url = self.search.format('4', quote(query))
 			# log_utils.log('url = %s' % url, log_utils.LOGDEBUG)
 
 			headers = {'User-Agent': client.agent()}
-
 			_html = client.request(url, headers=headers)
 
 			threads = []
@@ -115,7 +115,6 @@ class source:
 			[i.start() for i in threads]
 			[i.join() for i in threads]
 			return self._sources
-
 		except:
 			source_utils.scraper_error('TORRENTDOWNLOADS')
 			return self._sources
@@ -128,25 +127,23 @@ class source:
 				if seeders < self.min_seeders:
 					return
 			except:
-				source_utils.scraper_error('TORRENTDOWNLOADS')
+				seeders = 0
 				pass
 
 			hash = re.search(r'<info_hash>([a-zA-Z0-9]+)</info_hash>', r).groups()[0]
 			name = re.search(r'<title>(.+?)</title>', r).groups()[0]
-			name = urllib.unquote_plus(name).replace(' ', '.')
+			name = unquote_plus(name)
+			name = re.sub('[^A-Za-z0-9]+', '.', name).lstrip('.')
 			if source_utils.remove_lang(name):
 				return
 
-			t = name.split(self.hdlr)[0].replace(self.year, '').replace('(', '').replace(')', '').replace('&', 'and').replace('.US.', '.').replace('.us.', '.')
-			if cleantitle.get(t) != cleantitle.get(self.title):
-				return
-
-			if self.hdlr not in name:
+			match = source_utils.check_title(self.title, name, self.hdlr, self.year)
+			if not match:
 				return
 
 			url = 'magnet:?xt=urn:btih:%s&dn=%s' % (hash, name)
 
-			quality, info = source_utils.get_release_quality(name, name)
+			quality, info = source_utils.get_release_quality(name, url)
 
 			try:
 				size = re.search(r'<size>([\d]+)</size>', r).groups()[0]
@@ -158,8 +155,8 @@ class source:
 
 			info = ' | '.join(info)
 
-			self._sources.append({'source': 'torrent', 'quality': quality, 'language': 'en', 'url': url,
-												'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
+			self._sources.append({'source': 'torrent', 'seeders': seeders, 'hash': hash, 'name': name, 'quality': quality,
+												'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
 		except:
 			source_utils.scraper_error('TORRENTDOWNLOADS')
 			pass

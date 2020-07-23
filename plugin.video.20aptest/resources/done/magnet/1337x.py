@@ -1,167 +1,206 @@
 # -*- coding: utf-8 -*-
+# modified by Venom for Openscrapers (updated url 4-20-2020)
+
+#  ..#######.########.#######.##....#..######..######.########....###...########.#######.########..######.
+#  .##.....#.##.....#.##......###...#.##....#.##....#.##.....#...##.##..##.....#.##......##.....#.##....##
+#  .##.....#.##.....#.##......####..#.##......##......##.....#..##...##.##.....#.##......##.....#.##......
+#  .##.....#.########.######..##.##.#..######.##......########.##.....#.########.######..########..######.
+#  .##.....#.##.......##......##..###.......#.##......##...##..########.##.......##......##...##........##
+#  .##.....#.##.......##......##...##.##....#.##....#.##....##.##.....#.##.......##......##....##.##....##
+#  ..#######.##.......#######.##....#..######..######.##.....#.##.....#.##.......#######.##.....#..######.
 
 '''
-	Gaia Add-on
-	Copyright (C) 2016 Gaia
+    OpenScrapers Project
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-	This program is free software: you can redistribute it and/or modify
-	it under the terms of the GNU General Public License as published by
-	the Free Software Foundation, either version 3 of the License, or
-	(at your option) any later version.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-	This program is distributed in the hope that it will be useful,
-	but WITHOUT ANY WARRANTY; without even the implied warranty of
-	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-	GNU General Public License for more details.
-
-	You should have received a copy of the GNU General Public License
-	along with this program.  If not, see <http://www.gnu.org/licenses/>.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 '''
 
-import re,urllib,urlparse
+import re
+try: from urlparse import parse_qs, urljoin
+except ImportError: from urllib.parse import parse_qs, urljoin
+try: from urllib import urlencode, quote, unquote_plus
+except ImportError: from urllib.parse import urlencode, quote, unquote_plus
+
 from resources.lib.modules import client
-from resources.lib.extensions import metadata
-from resources.lib.extensions import tools
-from resources.lib.externals.beautifulsoup import BeautifulSoup
+from resources.lib.modules import debrid
+from resources.lib.modules import source_utils
+from resources.lib.modules import workers
+
 
 class source:
-
 	def __init__(self):
-		self.pack = True # Checked by provider.py
-		self.priority = 0
-		self.language = ['un']
-		self.domains = ['1337x.to', 'x1337x.ws', '1337x.unblockall.org', '1337x.unblocker.cc']
-		self.base_link = 'https://1337x.to'
-		self.search_link = '/sort-category-search/%s/%s/seeders/desc/%i/'
-		self.category_movies = 'Movies'
-		self.category_shows = 'TV'
+		self.priority = 5
+		self.language = ['en', 'de', 'fr', 'ko', 'pl', 'pt', 'ru']
+		self.domains = ['1337x.to', '1337x.st', '1337x.ws', '1337x.eu', '1337x.se', '1337x.is'] # all are behind cloudflare except .to
+		self.base_link = 'https://1337x.to/'
+		self.tvsearch = 'https://1337x.to/sort-category-search/%s/TV/size/desc/1/'
+		self.moviesearch = 'https://1337x.to/sort-category-search/%s/Movies/size/desc/1/'
+		self.min_seeders = 1
 
-	def movie(self, imdb, title, localtitle, year):
+
+	def movie(self, imdb, title, localtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'title': title, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
 
-	def tvshow(self, imdb, tvdb, tvshowtitle, localtitle, year):
+
+	def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
+
 
 	def episode(self, url, imdb, tvdb, title, premiered, season, episode):
 		try:
-			if url == None: return
-			url = urlparse.parse_qs(url)
+			if url is None:
+				return
+			url = parse_qs(url)
 			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
 			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
 
-	def sources(self, url, hostDict, hostprDict):
-		sources = []
-		try:
-			if url == None:
-				raise Exception()
 
-			data = urlparse.parse_qs(url)
+	def sources(self, url, hostDict, hostprDict):
+		try:
+			self._sources = []
+			self.items = []
+
+			if url is None:
+				return self._sources
+
+			if debrid.status() is False:
+				return self._sources
+
+			data = parse_qs(url)
 			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
-			if 'exact' in data and data['exact']:
-				query = title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
-				year = None
-				season = None
-				episode = None
-				pack = False
-				packCount = None
+			self.title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+			self.title = self.title.replace('&', 'and').replace('Special Victims Unit', 'SVU')
+
+			self.hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
+			self.year = data['year']
+
+			query = '%s %s' % (self.title, self.hdlr)
+			query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
+
+			urls = []
+			if 'tvshowtitle' in data:
+				urls.append(self.tvsearch % (quote(query)))
 			else:
-				title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
-				year = int(data['year']) if 'year' in data and not data['year'] == None else None
-				season = int(data['season']) if 'season' in data and not data['season'] == None else None
-				episode = int(data['episode']) if 'episode' in data and not data['episode'] == None else None
-				pack = data['pack'] if 'pack' in data else False
-				packCount = data['packcount'] if 'packcount' in data else None
+				urls.append(self.moviesearch % (quote(query)))
 
-				if 'tvshowtitle' in data:
-					if pack: query = '%s %d' % (title, season)
-					else: query = '%s S%02dE%02d' % (title, season, episode)
-				else:
-					query = '%s %d' % (title, year)
-				query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', ' ', query)
+			url2 = ''.join(urls).replace('/1/', '/2/')
+			urls.append(url2)
+			# log_utils.log('urls = %s' % urls, log_utils.LOGDEBUG)
 
-			category = self.category_shows if 'tvshowtitle' in data else self.category_movies
-			url = urlparse.urljoin(self.base_link, self.search_link)
+			threads = []
+			for url in urls:
+				threads.append(workers.Thread(self._get_items, url))
+			[i.start() for i in threads]
+			[i.join() for i in threads]
 
-			pageLimit = tools.Settings.getInteger('scraping.providers.pages')
-			pageCounter = 0
-
-			page = 1
-			added = False
-
-			timerEnd = tools.Settings.getInteger('scraping.providers.timeout') - 8
-			timer = tools.Time(start = True)
-
-			while True:
-				# Stop searching 8 seconds before the provider timeout, otherwise might continue searching, not complete in time, and therefore not returning any links.
-				if timer.elapsed() > timerEnd:
-					break
-
-				pageCounter += 1
-				if pageLimit > 0 and pageCounter > pageLimit:
-					break
-
-				urlNew = url % (urllib.quote_plus(query), category, page)
-				html = BeautifulSoup(client.request(urlNew))
-
-				page += 1
-				added = False
-
-				htmlTable = html.find_all('table', class_ = 'table-list')[0]
-				htmlRows = htmlTable.find_all('tbody', recursive = False)[0].find_all('tr', recursive = False)
-
-				for i in range(len(htmlRows)):
-					htmlRow = htmlRows[i]
-					htmlColumns = htmlRow.find_all('td')
-
-					# Name
-					htmlName = htmlRow.find_all('td', class_ = 'name')[0].find_all('a', recursive = False)[1].getText().strip()
-
-					# Size
-					htmlSize = htmlRow.find_all('td', class_ = 'size')[0].find_all(text = True, recursive = False)[0].strip()
-
-					# Link
-					htmlLink = self.base_link + htmlRow.find_all('td', class_ = 'name')[0].find_all('a', recursive = False)[1]['href']
-
-					# Seeds
-					htmlSeeds = htmlRow.find_all('td', class_ = 'seeds')[0].getText().strip()
-
-					# Metadata
-					meta = metadata.Metadata(name = htmlName, title = title, year = year, season = season, episode = episode, pack = pack, packCount = packCount, link = htmlLink, size = htmlSize, seeds = htmlSeeds)
-
-					# Ignore
-					if meta.ignore(True):
-						continue
-
-					# Add
-					sources.append({'url' : htmlLink, 'debridonly' : False, 'direct' : False, 'source' : 'torrent', 'language' : self.language[0], 'quality': meta.videoQuality(), 'metadata' : meta, 'file' : htmlName})
-					added = True
-
-				if not added: # Last page reached with a working torrent
-					break
-
-			return sources
+			threads2 = []
+			for i in self.items:
+				threads2.append(workers.Thread(self._get_sources, i))
+			[i.start() for i in threads2]
+			[i.join() for i in threads2]
+			return self._sources
 		except:
-			return sources
+			source_utils.scraper_error('1337X')
+			return self._sources
+
+
+	def _get_items(self, url):
+		try:
+			headers = {'User-Agent': client.agent()}
+			r = client.request(url, headers=headers)
+			if '<tbody' not in r:
+				return self.items
+
+			posts = client.parseDOM(r, 'tbody')[0]
+			posts = client.parseDOM(posts, 'tr')
+
+			for post in posts:
+				data = client.parseDOM(post, 'a', ret='href')[1]
+				link = urljoin(self.base_link, data)
+
+				try:
+					seeders = int(client.parseDOM(post, 'td', attrs={'class': 'coll-2 seeds'})[0].replace(',', ''))
+					if self.min_seeders > seeders:
+						continue
+				except:
+					seeders = 0
+					pass
+
+				name = client.parseDOM(post, 'a')[1]
+				name = unquote_plus(name)
+				name = re.sub('[^A-Za-z0-9]+', '.', name).lstrip('.')
+				if source_utils.remove_lang(name):
+					continue
+
+				match = source_utils.check_title(self.title, name, self.hdlr, self.year)
+				if not match:
+					continue
+
+				try:
+					size = re.findall('((?:\d+\,\d+\.\d+|\d+\.\d+|\d+\,\d+|\d+)\s*(?:GiB|MiB|GB|MB))', post)[0]
+					dsize, isize = source_utils._size(size)
+				except:
+					isize = '0'
+					dsize = 0
+					pass
+
+				self.items.append((name, link, isize, dsize, seeders))
+
+			return self.items
+
+		except:
+			source_utils.scraper_error('1337X')
+			return self.items
+
+
+	def _get_sources(self, item):
+		try:
+			name = item[0]
+			quality, info = source_utils.get_release_quality(name, item[1])
+
+			if item[2] != '0':
+				info.insert(0, item[2])
+			info = ' | '.join(info)
+
+			data = client.request(item[1])
+			data = client.parseDOM(data, 'a', ret='href')
+
+			url = [i for i in data if 'magnet:' in i][0]
+			url = unquote_plus(url).replace('&amp;', '&').replace(' ', '.')
+			url = url.split('&tr')[0]
+			hash = re.compile('btih:(.*?)&').findall(url)[0]
+
+			self._sources.append({'source': 'torrent', 'seeders': item[4], 'hash': hash, 'name': name, 'quality': quality,
+												'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True, 'size': item[3]})
+		except:
+			source_utils.scraper_error('1337X')
+			pass
+
 
 	def resolve(self, url):
-		try:
-			html = BeautifulSoup(client.request(url))
-			html = html.find_all('ul', class_ = 'download-links-dontblock')[0]
-			return html.find_all('a')[0]['href']
-		except:
-			return None
+		return url

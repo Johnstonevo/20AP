@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# created by Venom for Openscrapers
+# created by Venom for Openscrapers (updated 4-20-2020)
 
 #  ..#######.########.#######.##....#..######..######.########....###...########.#######.########..######.
 #  .##.....#.##.....#.##......###...#.##....#.##....#.##.....#...##.##..##.....#.##......##.....#.##....##
@@ -26,10 +26,12 @@
 '''
 
 import re
-import urllib
-import urlparse
 
-from resources.lib.modules import cleantitle
+try: from urlparse import parse_qs, urljoin
+except ImportError: from urllib.parse import parse_qs, urljoin
+try: from urllib import urlencode, quote_plus, unquote_plus
+except ImportError: from urllib.parse import urlencode, quote_plus, unquote_plus
+
 from resources.lib.modules import client
 from resources.lib.modules import debrid
 from resources.lib.modules import source_utils
@@ -38,20 +40,18 @@ from resources.lib.modules import workers
 
 class source:
 	def __init__(self):
-		self.priority = 1
+		self.priority = 2
 		self.language = ['en']
 		self.domain = ['yourbittorrent2.com', 'yourbittorrent.com']
 		self.base_link = 'https://yourbittorrent2.com'
-		self.search_link = '/?v=&c=&q=%s&sort=seeds'
-		# self.base_link = 'https://yourbittorrent.com'
-		# self.search_link = '/?q=%s'
-		self.min_seeders = 1
+		self.search_link = '?q=%s&page=1&v=&c=&sort=size&o=desc'
+		self.min_seeders = 0  # to many items with no value but cached links
 
 
 	def movie(self, imdb, title, localtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'title': title, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -60,7 +60,7 @@ class source:
 	def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -70,10 +70,10 @@ class source:
 		try:
 			if url is None:
 				return
-			url = urlparse.parse_qs(url)
+			url = parse_qs(url)
 			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
 			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -88,23 +88,23 @@ class source:
 			if debrid.status() is False:
 				return self.sources
 
-			data = urlparse.parse_qs(url)
+			data = parse_qs(url)
 			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
-			self.title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+			self.title = data['tvshowtitle'].lower() if 'tvshowtitle' in data else data['title'].lower()
 			self.title = self.title.replace('&', 'and').replace('Special Victims Unit', 'SVU')
 
-			self.hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
+			self.hdlr = 's%02de%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
 			self.year = data['year']
 
 			query = '%s %s' % (self.title, self.hdlr)
 			query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
 
-			url = self.search_link % urllib.quote_plus(query)
-			url = urlparse.urljoin(self.base_link, url)
+			url = self.search_link % quote_plus(query)
+			url = urljoin(self.base_link, url).replace('+', '-')
 			# log_utils.log('url = %s' % url, log_utils.LOGDEBUG)
 
-			r = client.request(url)
+			r = client.request(url, timeout='5')
 			if r is None:
 				return self.sources
 
@@ -124,29 +124,22 @@ class source:
 	def get_sources(self, link):
 		try:
 			url = '%s%s' % (self.base_link, link)
-			result = client.request(url)
+			result = client.request(url, timeout='5')
 
 			if result is None:
 				return
 			if '<kbd>' not in result:
 				return
-			info_hash = re.findall('<kbd>(.+?)<', result, re.DOTALL)[0]
-			url = '%s%s' % ('magnet:?xt=urn:btih:', info_hash)
+			hash = re.findall('<kbd>(.+?)<', result, re.DOTALL)[0]
+			url = '%s%s' % ('magnet:?xt=urn:btih:', hash)
 			name = re.findall('<h3 class="card-title">(.+?)<', result, re.DOTALL)[0].replace('Original Name: ', '')
-			name = urllib.unquote_plus(name).replace(' ', '.')
-
-			# import string
-			# printable = set(string.printable)
-			# name = filter(lambda x: x in printable, name)
-
+			name = unquote_plus(name)
+			name = re.sub('[^A-Za-z0-9]+', '.', name).lstrip('.')
 			if source_utils.remove_lang(name):
 				return
 
-			t = name.split(self.hdlr)[0].replace(self.year, '').replace('(', '').replace(')', '').replace('&', 'and').replace('.US.', '.').replace('.us.', '.')
-			if cleantitle.get(t) != cleantitle.get(self.title):
-				return
-
-			if self.hdlr not in name:
+			match = source_utils.check_title(self.title, name, self.hdlr, self.year)
+			if not match:
 				return
 
 			url = '%s%s%s' % (url, '&dn=', str(name))
@@ -157,10 +150,11 @@ class source:
 			quality, info = source_utils.get_release_quality(name, url)
 
 			try:
-				seeders = int(re.findall('<div class="col-3">Seeders:</div><div class="col"><span style="color:green">(.*?)<', result, re.DOTALL)[0].replace(',', ''))
-				# if self.min_seeders > seeders: # to many items with no value
-					# return
+				seeders = int(re.findall('<div class="col-3">Seeders:</div><div class="col"><span style="color:green">([0-9]+|[0-9]+,[0-9]+)<', result, re.DOTALL)[0].replace(',', ''))
+				if self.min_seeders > seeders:
+					return
 			except:
+				seeders = 0
 				pass
 
 			try:
@@ -173,9 +167,8 @@ class source:
 
 			info = ' | '.join(info)
 
-			self.sources.append({'source': 'torrent', 'quality': quality, 'language': 'en', 'url': url,
-												'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
-
+			self.sources.append({'source': 'torrent', 'seeders': seeders, 'hash': hash, 'name': name, 'quality': quality,
+											'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
 		except:
 			source_utils.scraper_error('YOURBITTORRENT')
 			pass

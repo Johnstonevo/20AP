@@ -1,178 +1,205 @@
-import threading
+# -*- coding: utf-8 -*-
+# modified by Venom for Openscrapers (updated url 4-20-2020)
 
-from bs4 import BeautifulSoup
-from resources.lib.common import tools
-from resources.lib.common import source_utils
-from resources.lib.common.source_utils import serenRequests
+#  ..#######.########.#######.##....#..######..######.########....###...########.#######.########..######.
+#  .##.....#.##.....#.##......###...#.##....#.##....#.##.....#...##.##..##.....#.##......##.....#.##....##
+#  .##.....#.##.....#.##......####..#.##......##......##.....#..##...##.##.....#.##......##.....#.##......
+#  .##.....#.########.######..##.##.#..######.##......########.##.....#.########.######..########..######.
+#  .##.....#.##.......##......##..###.......#.##......##...##..########.##.......##......##...##........##
+#  .##.....#.##.......##......##...##.##....#.##....#.##....##.##.....#.##.......##......##....##.##....##
+#  ..#######.##.......#######.##....#..######..######.##.....#.##.....#.##.......#######.##.....#..######.
 
-class sources:
+'''
+    OpenScrapers Project
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    def __init__(self):
-        self.domain = "thepiratebay.org"
-        self.base_link = 'https://tpb.agency'
-        self.search_link = 'search/'
-        self.threads = []
-        self.threadResults = []
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    def movie(self, title, year):
-        url = self.base_link + self.search_link + tools.quote('%s %s' % (title, year))
-        response = serenRequests().get(url, timeout=10)
-        results = BeautifulSoup(response.text, 'html.parser').find_all('tr')
-        torrent_list = []
-        for i in results:
-            try:
-                torrent = {}
-                torrent['package'] = 'single'
-                torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
-                if not source_utils.filterMovieTitle(torrent['release_title'], title, year):
-                    continue
-                torrent['magnet'] = i.find_all('a')[3]['href']
-                if 'magnet:?' not in torrent['magnet']:
-                    torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                torrent['seeds'] = int(i.find_all('td')[2].text)
-                torrent_list.append(torrent)
-            except:
-                continue
-        return torrent_list
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+'''
 
-    def episode(self, simpleInfo, allInfo):
+import re
 
-        self.threads.append(threading.Thread(target=self.seasonPack, args=(simpleInfo, allInfo)))
-        self.threads.append(threading.Thread(target=self.singleEpisode, args=(simpleInfo, allInfo)))
-        self.threads.append(threading.Thread(target=self.showPack, args=(simpleInfo, allInfo)))
+try: from urlparse import parse_qs, urljoin
+except ImportError: from urllib.parse import parse_qs, urljoin
+try: from urllib import urlencode, quote, unquote_plus
+except ImportError: from urllib.parse import urlencode, quote, unquote_plus
 
-        for thread in self.threads:
-            thread.start()
-        for thread in self.threads:
-            thread.join()
-
-        return self.threadResults
-
-    def showPack(self, simpleInfo, allInfo):
-
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-
-            url = self.base_link + self.search_link + tools.quote(
-                '%s season 1-%s' % (showTitle, simpleInfo['no_seasons']))
-            response = serenRequests().get(url, timeout=10)
-            try:
-                if response.status_code != 200:
-                    return
-            except:
-                return
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results = webpage.find_all('tr')
-
-            url = self.base_link + self.search_link + tools.quote(
-                '%s complete' % showTitle)
-            response = serenRequests().get(url)
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results += webpage.find_all('tr')
-
-            torrent_list = []
-
-            for i in results:
-                try:
-                    torrent = {}
-                    torrent['package'] = 'pack'
-                    torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
-                    if not source_utils.filterShowPack(simpleInfo, torrent['release_title']):
-                        continue
-                    torrent['magnet'] = i.find_all('a')[3]['href']
-                    if 'magnet:?' not in torrent['magnet']:
-                        torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                    torrent['seeds'] = int(i.find_all('td')[2].text)
-                    torrent_list.append(torrent)
-                except:
-                    continue
-
-            self.threadResults += torrent_list
-
-        except:
-            pass
+from resources.lib.modules import cache
+from resources.lib.modules import client
+from resources.lib.modules import debrid
+from resources.lib.modules import source_utils
 
 
-    def seasonPack(self, simpleInfo, allInfo):
+class source:
+	def __init__(self):
+		self.priority = 2
+		self.language = ['en']
+		self.domains = ['pirateproxy.live', 'thepiratebay.zone', 'piratebay1.live', 'thepiratebay10.org',
+								'piratebay1.xyz', 'thepiratebay1.top', 'piratebay1.info', 'tpb.party']
+		self._base_link = None
+		self.search_link = '/search/%s/0/5/200'
+		self.min_seeders = 0
 
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
 
-            url = self.base_link + self.search_link + tools.quote(
-                '%s season %s' % (showTitle, simpleInfo['season_number']))
-            response = serenRequests().get(url, timeout=10)
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results = webpage.find_all('tr')
-            torrent_list = []
-            page_limit = 2
+	@property
+	def base_link(self):
+		if not self._base_link:
+			self._base_link = cache.get(self.__get_base_url, 120, 'https://%s' % self.domains[0])
+		return self._base_link
 
-            for x in range(1, page_limit):
 
-                for i in results:
-                    try:
-                        torrent = {}
-                        torrent['package'] = 'pack'
-                        torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
+	def movie(self, imdb, title, localtitle, aliases, year):
+		try:
+			url = {'imdb': imdb, 'title': title, 'year': year}
+			url = urlencode(url)
+			return url
+		except:
+			return
 
-                        if not source_utils.filterSeasonPack(simpleInfo, torrent['release_title']):
-                            continue
 
-                        torrent['magnet'] = i.find_all('a')[3]['href']
-                        if 'magnet:?' not in torrent['magnet']:
-                            torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                        torrent['seeds'] = int(i.find_all('td')[2].text)
-                        torrent_list.append(torrent)
-                        url = url + '/%s' % x
-                    except:
-                        continue
+	def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
+		try:
+			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
+			url = urlencode(url)
+			return url
+		except:
+			return
 
-                self.threadResults += torrent_list
 
-        except:
-            pass
+	def episode(self, url, imdb, tvdb, title, premiered, season, episode):
+		try:
+			if url is None:
+				return
+			url = parse_qs(url)
+			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
+			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
+			url = urlencode(url)
+			return url
+		except:
+			return
 
-    def singleEpisode(self, simpleInfo, allInfo):
 
-        try:
-            showTitle = source_utils.cleanTitle(simpleInfo['show_title'])
-            season = simpleInfo['season_number'].zfill(2)
-            episode = simpleInfo['episode_number'].zfill(2)
+	def sources(self, url, hostDict, hostprDict):
+		sources = []
+		try:
+			if url is None:
+				return sources
 
-            url = self.base_link + self.search_link + tools.quote('%s s%se%s' % (showTitle, season, episode))
-            response = serenRequests().get(url, timeout=10)
-            webpage = BeautifulSoup(response.text, 'html.parser')
-            results = webpage.find_all('tr')
-            torrent_list = []
+			if debrid.status() is False:
+				return sources
 
-            page_limit = 2
-            torrent_list = []
+			data = parse_qs(url)
+			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
-            for x in range(1, page_limit):
-                for i in results:
-                    try:
-                        torrent = {}
-                        torrent['package'] = 'single'
-                        torrent['release_title'] = i.find('a', {'class', 'detLink'}).text
+			title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
+			title = title.replace('&', 'and').replace('Special Victims Unit', 'SVU')
 
-                        if not source_utils.filterSingleEpisode(simpleInfo, torrent['release_title']):
-                            continue
+			hdlr = 'S%02dE%02d' % (int(data['season']), int(data['episode'])) if 'tvshowtitle' in data else data['year']
 
-                        torrent['magnet'] = i.find_all('a')[3]['href']
-                        if 'magnet:?' not in torrent['magnet']:
-                            torrent['magnet'] = self.magnet_request(torrent['magnet'])
-                        torrent['seeds'] = int(i.find_all('td')[2].text)
-                        torrent_list.append(torrent)
-                    except:
-                        import traceback
-                        traceback.print_exc()
-                        continue
+			query = '%s %s' % (title, hdlr)
+			query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
 
-                self.threadResults += torrent_list
-        except:
-            pass
+			url = self.search_link % quote(query)
+			url = urljoin(self.base_link, url)
+			# log_utils.log('url = %s' % url, log_utils.LOGDEBUG)
 
-    def magnet_request(self, url):
-        response = serenRequests().get(url)
-        magnet = BeautifulSoup(response.text, 'html.parser').find('div', {'class':'download'})
-        magnet = magnet.find('a')['href']
-        return magnet
+			html = client.request(url)
+			html = html.replace('&nbsp;', ' ')
+
+			try:
+				results = client.parseDOM(html, 'table', attrs={'id': 'searchResult'})
+			except:
+				return sources
+
+			url2 = url.replace('/0/', '/1/')
+			html2 = client.request(url2)
+			html2 = html2.replace('&nbsp;', ' ')
+
+			try:
+				results += client.parseDOM(html2, 'table', attrs={'id': 'searchResult'})
+			except:
+				return sources
+
+			results = ''.join(results)
+
+			rows = re.findall('<tr(.+?)</tr>', results, re.DOTALL)
+			if rows is None:
+				return sources
+
+			for entry in rows:
+				if 'magnet' not in entry:
+					continue
+				try:
+					url = 'magnet:%s' % (re.findall('a href="magnet:(.+?)"', entry, re.DOTALL)[0])
+					url = unquote_plus(url).replace('&amp;', '&').replace(' ', '.')
+					url = url.split('&tr')[0]
+					hash = re.compile('btih:(.*?)&').findall(url)[0]
+
+					name = re.findall('class="detLink" title=".+?">(.+?)</a>', entry, re.DOTALL)[0]
+					name = unquote_plus(name)
+					name = re.sub('[^A-Za-z0-9]+', '.', name).lstrip('.')
+					if source_utils.remove_lang(name):
+						continue
+
+					match = source_utils.check_title(title, name, hdlr, data['year'])
+					if not match:
+						continue
+
+					try:
+						seeders = int(re.findall('<td align="right">([0-9]+|[0-9]+,[0-9]+)</td>', entry, re.DOTALL)[0].replace(',', ''))
+						if self.min_seeders > seeders:
+							continue
+					except:
+						seeders = 0
+						pass
+
+					quality, info = source_utils.get_release_quality(name, url)
+
+					try:
+						size = re.findall('((?:\d+\.\d+|\d+\,\d+|\d+)\s*(?:GB|GiB|MB|MiB))', entry)[-1]
+						dsize, isize = source_utils._size(size)
+						info.insert(0, isize)
+					except:
+						dsize = 0
+						pass
+
+					info = ' | '.join(info)
+
+					sources.append({'source': 'torrent', 'seeders': seeders, 'hash': hash, 'name': name, 'quality': quality,
+												'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
+				except:
+					source_utils.scraper_error('PIRATEBAY')
+					continue
+			return sources
+		except:
+			source_utils.scraper_error('PIRATEBAY')
+			return sources
+
+
+	def __get_base_url(self, fallback):
+		try:
+			for domain in self.domains:
+				try:
+					url = 'https://%s' % domain
+					result = client.request(url, limit=1, timeout='10')
+					result = re.findall('<input type="submit" title="(.+?)"', result, re.DOTALL)[0]
+					if result and 'Pirate Search' in result:
+						return url
+				except:
+					pass
+		except:
+			pass
+
+		return fallback
+
+
+	def resolve(self, url):
+		return url

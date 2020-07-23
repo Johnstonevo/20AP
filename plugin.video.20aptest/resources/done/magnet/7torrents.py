@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# created by Venom for Openscrapers
+# created by Venom for Openscrapers (updated url 4-20-2020)
 
 #  ..#######.########.#######.##....#..######..######.########....###...########.#######.########..######.
 #  .##.....#.##.....#.##......###...#.##....#.##....#.##.....#...##.##..##.....#.##......##.....#.##....##
@@ -26,10 +26,12 @@
 '''
 
 import re
-import urllib
-import urlparse
 
-from resources.lib.modules import cleantitle
+try: from urlparse import parse_qs, urljoin
+except ImportError: from urllib.parse import parse_qs, urljoin
+try: from urllib import urlencode, quote_plus, unquote_plus
+except ImportError: from urllib.parse import urlencode, quote_plus, unquote_plus
+
 from resources.lib.modules import client
 from resources.lib.modules import debrid
 from resources.lib.modules import source_utils
@@ -40,16 +42,16 @@ class source:
 	def __init__(self):
 		self.priority = 1
 		self.language = ['en']
-		self.domains = ['7torrents.eu']
-		self.base_link = 'https://www.7torrents.eu'
-		self.search_link = '/search?query=%s&sort=seeders'
+		self.domains = ['7torr.com'] # 7torrents.cc seems to be a magnetdl mirror but not 7torr.com
+		self.base_link = 'http://7torr.com'
+		self.search_link = '/search?q=%s'
 		self.min_seeders = 1
 
 
 	def movie(self, imdb, title, localtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'title': title, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -58,7 +60,7 @@ class source:
 	def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -68,10 +70,10 @@ class source:
 		try:
 			if url is None:
 				return
-			url = urlparse.parse_qs(url)
+			url = parse_qs(url)
 			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
 			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -86,7 +88,7 @@ class source:
 			if debrid.status() is False:
 				return self.sources
 
-			data = urlparse.parse_qs(url)
+			data = parse_qs(url)
 			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
 			self.title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
@@ -99,10 +101,10 @@ class source:
 			query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
 
 			urls = []
-			url = self.search_link % urllib.quote_plus(query)
-			url = urlparse.urljoin(self.base_link, url)
+			url = self.search_link % quote_plus(query)
+			url = urljoin(self.base_link, url)
 			urls.append(url)
-			urls.append(url + '&page=2')
+			urls.append(url + '&p=2')
 			# log_utils.log('urls = %s' % urls, log_utils.LOGDEBUG)
 
 			threads = []
@@ -111,7 +113,6 @@ class source:
 			[i.start() for i in threads]
 			[i.join() for i in threads]
 			return self.sources
-
 		except:
 			source_utils.scraper_error('7torrents')
 			return self.sources
@@ -120,55 +121,59 @@ class source:
 	def _get_sources(self, url):
 		try:
 			r = client.request(url)
-			posts = client.parseDOM(r, 'div', attrs={'class': 'media'})
+			if r is None:
+				return self.sources
+			table = client.parseDOM(r, 'table', attrs={'class': 'rtable'})
+			table = client.parseDOM(table, 'tbody')
+			rows = client.parseDOM(table, 'tr')
 
-			for post in posts:
-				# file_name = client.parseDOM(post, 'span', attrs={'class': 'file-name'}) # file_name and &dn= differ 25% of the time.  May add check
+			for row in rows:
 				try:
-					seeders = int(re.findall(r'Seeders\s+:\s+<strong class="text-success">(.*?)</strong>', post, re.DOTALL)[0].replace(',', ''))
+					seeders = int(client.parseDOM(row, 'td', attrs={'class': 'seeds is-hidden-sm-mobile'})[0].replace(',', ''))
 					if self.min_seeders > seeders:
-						return
+						continue
 				except:
+					seeders = 0
 					pass
 
-				link = re.findall('<a href="(magnet:.+?)"', post, re.DOTALL)
+				url = re.findall('href="(magnet:.+?)"', row, re.DOTALL)[0]
+				url = unquote_plus(url).replace('&amp;', '&').replace(' ', '.')
+				url = url.split('&tr')[0]
+				try:
+					url = url.encode('ascii', errors='ignore').decode('ascii', errors='ignore')
+				except:
+					pass
+				hash = re.compile('btih:(.*?)&').findall(url)[0]
 
-				for url in link:
-					url = url.replace('&amp;', '&').replace(' ', '.')
-					url = url.split('&tr')[0]
+				name = url.split('&dn=')[1]
+				name = re.sub('[^A-Za-z0-9]+', '.', name).lstrip('.')
+				if source_utils.remove_lang(name):
+					continue
 
-					name = url.split('&dn=')[1]
-					name = urllib.unquote_plus(name)
-					if source_utils.remove_lang(name):
-						continue
-
-					if name.startswith('www'):
-						try:
-							name = re.sub(r'www(.*?)\W{2,10}', '', name)
-						except:
-							name = name.split('-.', 1)[1].lstrip()
-
-					t = name.split(self.hdlr)[0].replace(self.year, '').replace('(', '').replace(')', '').replace('&', 'and').replace('.US.', '.').replace('.us.', '.')
-					if cleantitle.get(t) != cleantitle.get(self.title):
-						continue
-
-					if self.hdlr not in name:
-						continue
-
-					quality, info = source_utils.get_release_quality(url)
-
+				if name.startswith('www'):
 					try:
-						size = re.findall('((?:\d+\,\d+\.\d+|\d+\.\d+|\d+\,\d+|\d+)\s*(?:GB|GiB|Gb|MB|MiB|Mb))', post)[0]
-						dsize, isize = source_utils._size(size)
-						info.insert(0, isize)
+						name = re.sub(r'www(.*?)\W{2,10}', '', name)
 					except:
-						dsize = 0
-						pass
+						name = name.split('-.', 1)[1].lstrip()
 
-					info = ' | '.join(info)
+				match = source_utils.check_title(self.title, name, self.hdlr, self.year)
+				if not match:
+					continue
 
-					self.sources.append({'source': 'torrent', 'quality': quality, 'language': 'en', 'url': url,
-													'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
+				quality, info = source_utils.get_release_quality(name, url)
+
+				try:
+					size = re.findall('((?:\d+\,\d+\.\d+|\d+\.\d+|\d+\,\d+|\d+)\s*(?:GB|GiB|Gb|MB|MiB|Mb))', row)[0]
+					dsize, isize = source_utils._size(size)
+					info.insert(0, isize)
+				except:
+					dsize = 0
+					pass
+
+				info = ' | '.join(info)
+
+				self.sources.append({'source': 'torrent', 'seeders': seeders, 'hash': hash, 'name': name, 'quality': quality,
+												'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
 		except:
 			source_utils.scraper_error('7torrents')
 			pass

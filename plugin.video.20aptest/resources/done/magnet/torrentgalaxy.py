@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# created by Venom for Openscrapers
+# created by Venom for Openscrapers (updated url 4-20-2020)
 
 #  ..#######.########.#######.##....#..######..######.########....###...########.#######.########..######.
 #  .##.....#.##.....#.##......###...#.##....#.##....#.##.....#...##.##..##.....#.##......##.....#.##....##
@@ -26,11 +26,13 @@
 '''
 
 import re
-import urllib
-import urlparse
+
+try: from urlparse import parse_qs, urljoin
+except ImportError: from urllib.parse import parse_qs, urljoin
+try: from urllib import urlencode, quote_plus, unquote_plus
+except ImportError: from urllib.parse import urlencode, quote_plus, unquote_plus
 
 from resources.lib.modules import cfscrape
-from resources.lib.modules import cleantitle
 from resources.lib.modules import client
 from resources.lib.modules import debrid
 from resources.lib.modules import source_utils
@@ -38,17 +40,18 @@ from resources.lib.modules import source_utils
 
 class source:
 	def __init__(self):
-		self.priority = 1
+		self.priority = 2
 		self.language = ['en']
-		self.domains = ['torrentgalaxy.to']
+		self.domains = ['torrentgalaxy.to', 'torrentgalaxy.pw']
 		self.base_link = 'https://torrentgalaxy.to'
-		self.search_link = '/torrents.php?search=%s&sort=seeders&order=desc'
+		self.search_link = '/torrents.php?search=%s&sort=size&order=desc'
+		self.min_seeders = 0
 
 
 	def movie(self, imdb, title, localtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'title': title, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -57,7 +60,7 @@ class source:
 	def tvshow(self, imdb, tvdb, tvshowtitle, localtvshowtitle, aliases, year):
 		try:
 			url = {'imdb': imdb, 'tvdb': tvdb, 'tvshowtitle': tvshowtitle, 'year': year}
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -67,10 +70,10 @@ class source:
 		try:
 			if url is None:
 				return
-			url = urlparse.parse_qs(url)
+			url = parse_qs(url)
 			url = dict([(i, url[i][0]) if url[i] else (i, '') for i in url])
 			url['title'], url['premiered'], url['season'], url['episode'] = title, premiered, season, episode
-			url = urllib.urlencode(url)
+			url = urlencode(url)
 			return url
 		except:
 			return
@@ -86,7 +89,7 @@ class source:
 			if debrid.status() is False:
 				return sources
 
-			data = urlparse.parse_qs(url)
+			data = parse_qs(url)
 			data = dict([(i, data[i][0]) if data[i] else (i, '') for i in data])
 
 			title = data['tvshowtitle'] if 'tvshowtitle' in data else data['title']
@@ -97,35 +100,37 @@ class source:
 			query = '%s %s' % (title, hdlr)
 			query = re.sub('(\\\|/| -|:|;|\*|\?|"|\'|<|>|\|)', '', query)
 
-			url = self.search_link % urllib.quote_plus(query)
-			url = urlparse.urljoin(self.base_link, url)
+			url = self.search_link % quote_plus(query)
+			url = urljoin(self.base_link, url)
 			# log_utils.log('url = %s' % url, log_utils.LOGDEBUG)
 
 			r = scraper.get(url).content
 			posts = client.parseDOM(r, 'div', attrs={'class': 'tgxtable'})
 
 			for post in posts:
-				links = zip(re.findall('a href="(magnet:.+?)"', post, re.DOTALL), re.findall(r"<span class='badge badge-secondary' style='border-radius:4px;'>(.*?)</span>", post, re.DOTALL), re.findall(r"<span title='Seeders/Leechers'>\[<font color='green'><b>(.*?)<", post, re.DOTALL))
+				links = zip(re.findall('a href="(magnet:.+?)"', post, re.DOTALL),
+							re.findall(r"<span class='badge badge-secondary' style='border-radius:4px;'>(.*?)</span>", post, re.DOTALL),
+							re.findall(r"<span title='Seeders/Leechers'>\[<font color='green'><b>(.*?)<", post, re.DOTALL))
 
 				for link in links:
-					url = urllib.unquote_plus(link[0]).split('&tr')[0].replace(' ', '.')
+					url = unquote_plus(link[0]).split('&tr')[0].replace(' ', '.')
+					hash = re.compile('btih:(.*?)&').findall(url)[0]
 
 					name = url.split('&dn=')[1]
+					name = re.sub('[^A-Za-z0-9]+', '.', name).lstrip('.')
 					if source_utils.remove_lang(name):
 						continue
 
-					t = name.split(hdlr)[0].replace(data['year'], '').replace('(', '').replace(')', '').replace('&', 'and').replace('.US.', '.').replace('.us.', '.')
-					if cleantitle.get(t) != cleantitle.get(title):
-						continue
-
-					if hdlr not in name:
+					match = source_utils.check_title(title, name, hdlr, data['year'])
+					if not match:
 						continue
 
 					try:
-						seeders = int(link[2].replace(',', ''))
+						seeders = int(link[2])
 						if self.min_seeders > seeders:
 							continue
 					except:
+						seeders = 0
 						pass
 
 					quality, info = source_utils.get_release_quality(name, url)
@@ -139,11 +144,9 @@ class source:
 
 					info = ' | '.join(info)
 
-					sources.append({'source': 'torrent', 'quality': quality, 'language': 'en', 'url': url,
-												'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
-
+					sources.append({'source': 'torrent', 'seeders': seeders, 'hash': hash, 'name': name, 'quality': quality,
+												'language': 'en', 'url': url, 'info': info, 'direct': False, 'debridonly': True, 'size': dsize})
 			return sources
-
 		except:
 			source_utils.scraper_error('TORRENTGALAXY')
 			return sources
