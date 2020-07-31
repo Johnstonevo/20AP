@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.008" provider-name="Addons4Kodi">
+<addon id="script.module.openscrapers" name="OpenScrapers Module" version="0.0.2.009" provider-name="Addons4Kodi">
 	<requires>
 		<import addon="xbmc.python" version="2.25.0" />
 		<import addon="script.module.beautifulsoup4" />
@@ -495,7 +495,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Library" version="2.6.9" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Library" version="2.6.10" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -515,7 +515,8 @@ You can clone the project and host it in your own server.
 - Updated user agents
 - Allow some modules to be used outside of Kodi as standalone ones
 - Allow nextitem to have title and/or name property
-- Add ability to clear bookmarks
+- Add ability to clear all bookmarks at once
+- Add integer labels as optional parameters
 
 [B]2.5.X[/B]
 - Tweaks in client module (updated cfscrape &amp; some minor other tweaks)
@@ -828,7 +829,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" version="4.0" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
+<addon id="plugin.video.venom" version="4.0.2" name="[COLOR red]Venom[/COLOR]" provider-name="Venom">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="script.module.requests" version="2.19.1" />
@@ -863,13 +864,11 @@ You can clone the project and host it in your own server.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v3.7.4 - June 27, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Added new ability to show "Help" file text for settings options
-    deemed confusing.  I will add more upon request[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue with one item in Trakt progress not showing
-    show title.[/I]
-[COLOR yellow]--[/COLOR][I] Added option for multi episode lists to show or not show
-     unwatched count.  See new Help for more info[/I]
+[B][COLOR red]Update - v4.0.2 - July 30, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Switched IMDb year check for titles to api request for
+    small 1/2-3/4 second savings to scrape startup.  Thanks
+    for the tip on that hidden api Mr.Anonymous!![/I]
+[COLOR yellow]--[/COLOR][I] Code cleanup of forgotten logging.[/I]
 		</news>
 	</extension>
 </addon>
