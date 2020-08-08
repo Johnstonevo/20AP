@@ -529,57 +529,6 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon  id="plugin.video.jellyfin"
-        name="Jellyfin"
-        version="0.5.8"
-        provider-name="Jellyfin Contributors, angelblue05">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.requests" version="2.22.0"/>
-    <import addon="script.module.dateutil" version="2.7.3"/>
-    <import addon="script.module.six" version="1.13.0"/>
-    <import addon="script.module.kodi-six" />
-    <import addon="script.module.addon.signals" version="0.0.1"/>
-    <import addon="script.module.futures" version="2.2.0"/>
-  </requires>
-  <extension    point="xbmc.python.pluginsource"
-                library="default.py">
-        <provides>video audio image</provides>
-  </extension>
-  <extension point="xbmc.service" library="service.py" start="login">
-  </extension>
-  <extension point="kodi.context.item">
-    <menu id="kodi.core.main">
-      <item library="context.py">
-        <label>30401</label>
-        <visible>[!String.IsEmpty(ListItem.DBID) + !String.IsEqual(ListItem.DBID,-1) | !String.IsEmpty(ListItem.Property(jellyfinid))] + !String.IsEmpty(Window(10000).Property(jellyfin_context))</visible>
-      </item>
-      <item library="context_play.py">
-        <label>30402</label>
-        <visible>[[!String.IsEmpty(ListItem.DBID) + !String.IsEqual(ListItem.DBID,-1) | !String.IsEmpty(ListItem.Property(jellyfinid))] + [String.IsEqual(ListItem.DBTYPE,movie) | String.IsEqual(ListItem.DBTYPE,episode)]] + !String.IsEmpty(Window(10000).Property(jellyfin_context_transcode))</visible>
-      </item>
-    </menu>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language>en</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
-    <forum>https://forum.jellyfin.org</forum>
-    <website>https://jellyfin.media/</website>
-    <source>https://github.com/jellyfin/jellyfin-kodi</source>
-    <summary lang="en"></summary>
-    <description lang="en">Welcome to Jellyfin for Kodi!&#10;A whole new way to manage and view your media library. The Jellyfin addon for Kodi combines the best of Kodi - ultra smooth navigation, beautiful UIs and playback of any file under the sun, and Jellyfin - the most powerful fully open source multi-client media metadata indexer and server.&#10;&#10;Jellyfin for Kodi is the absolute best way to enjoy the incredible Kodi playback engine combined with the power of Jellyfin's centralized database. Features:&#10;* Direct integration with the Kodi library for native Kodi speed&#10;* Instant synchronization with the Jellyfin server&#10;* Full support for Movie, TV and Music collections&#10;* Jellyfin Server direct stream and transcoding support - use Kodi when you are away from home!</description>
-    <news>
-    v0.5.8 (2020-06-15)
-      #322 Force filter parameter during incremental sync
-    </news>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.png</fanart>
-    </assets>
-  </extension>
-</addon>
-
 <addon id="repository.Rockcrusher" name="[COLOR red]Rocks Repository[/COLOR]" version="2.2" provider-name="Rock">
 	<extension point="xbmc.addon.repository" name="[COLOR red]Rocks Repository[/COLOR]">
         <info compressed="false">http://Rockodi.com/addons.xml</info>
