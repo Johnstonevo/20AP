@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.lazyf1" version="2020.0.0" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
+<addon id="plugin.video.lazyf1" version="2020.0.2" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.lazyf1.images" optional="false"/>
@@ -24,7 +24,7 @@
     <description lang="en">Best for watch Formula 1 Championship (Russian content)</description>
     <description lang="ru">Formula 1 для удобного просмотра</description>
     <assets>
-      <icon>icon.png</icon>
+      <icon>icon512.png</icon>
       <fanart>fanart.jpg</fanart>
       <screenshot>resources/screenshot-01.jpg</screenshot>
       <screenshot>resources/screenshot-02.jpg</screenshot>
