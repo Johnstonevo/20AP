@@ -492,7 +492,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.6.15" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.6.17" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -516,6 +516,8 @@ You can clone the project and host it in your own server.
 - Add integer labels as optional parameters
 - Moved a few functions from client to other modules
 - Added the quote paths function, useful for non ascii characters in urls
+- Fix in url_dispatcher module
+- Added a few functions into control module
 - A few changes for Kodi 19+
 
 [B]2.5.X[/B]
@@ -550,7 +552,7 @@ You can clone the project and host it in your own server.
 
 <addon  id="plugin.video.emby"
         name="Emby"
-        version="4.1.19"
+        version="4.1.20"
         provider-name="angelblue05, sualfred">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -1094,7 +1096,7 @@ Add-on by doko.
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.7" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.8" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>
