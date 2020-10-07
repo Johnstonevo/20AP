@@ -2403,7 +2403,7 @@ def fix_setting(force=False):
         file = open(change_log, 'r') 
         news= file.read()
         file.close()
-        sendy('Updated to Version:'+version,'Update Destiny of Deathstar','Destiny of Deathstar Update')
+        sendy('Updated to Version:'+version,'Update 20aptest','20aptest Update')
         contact(title='Welcome to Version -'+version ,msg=news)
         v_path=os.path.join(user_dataDir, 'version.txt')
         # if not os.path.exists(v_path):
@@ -5699,7 +5699,7 @@ def get_jen_list(url,icon,fan):
         if stop_all==1:
           break
         #url2=Addon.getSetting("Pastebin-%s-"%url+str(i))
-        url2='https://cmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Kb2huc3RvbmV2by8yMGFwL21hc3Rlci9iYXNlLzIwQVAv'.decode('base64')+url
+        url2='aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0pvaG5zdG9uZXZvLzIwYXAvbWFzdGVyL2Jhc2UvMjBBUC8='.decode('base64')+url
         if 'http' not in url2:
           continue
         if Addon.getSetting("jen_fan_cat-"+str(i)):
@@ -8808,13 +8808,13 @@ def get_torrent_link(url):
     elif plugin_p=='6':
       plugin = 'KODIPOPCORN'
     elif plugin_p=='7':
-      plugin = 'Destiny of Deathstar'
+      plugin = '20aptest'
     elif plugin_p=='8':
       plugin = 'Acestream'
     elif plugin_p=='9':
       plugin = 'Elementum'
     elif plugin_p=='10':
-            list_players = ['Quasar', 'Pulsar', 'KmediaTorrent', 'Torrenter', 'YATP', 'XBMCtorrent','KODIPOPCORN','Destiny of Deathstar','Acestream', 'Elementum']
+            list_players = ['Quasar', 'Pulsar', 'KmediaTorrent', 'Torrenter', 'YATP', 'XBMCtorrent','KODIPOPCORN','20aptest','Acestream', 'Elementum']
         
             selection = xbmcgui.Dialog().select("Torrent Player", list_players)
             if selection == -1:
@@ -8853,7 +8853,7 @@ def get_torrent_link(url):
         if req_pre['response']==None:
             
             xbmc.executebuiltin((u'Notification(%s,%s)' % ('Acestream Error', 'Acestream Failed'.encode('utf-8'))))
-            list_players = ['Quasar', 'Pulsar', 'KmediaTorrent', 'Torrenter', 'YATP', 'XBMCtorrent','KODIPOPCORN','Destiny of Deathstar']
+            list_players = ['Quasar', 'Pulsar', 'KmediaTorrent', 'Torrenter', 'YATP', 'XBMCtorrent','KODIPOPCORN','20aptest']
         
             selection = xbmcgui.Dialog().select("Torrent Player", list_players)
             if selection == -1:
@@ -12327,7 +12327,7 @@ def new_show_sources(m,data,description,eng_name,episode,image,heb_name,iconimag
                                         counter_end+=1
                                         if counter_end>500:
                                             menu2.close_now()
-                                            xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny of Deathstar', 'Try Manual...'.decode('utf8'))).encode('utf-8'))
+                                            xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Try Manual...'.decode('utf8'))).encode('utf-8'))
                                             break
                                         if fast_link!=' ' and (param!=7777 and param!=None and param!=666666):
                                             menu2.params=666666
@@ -12953,9 +12953,9 @@ def do_bakcup(silent='True'):
                 dp.update(80, 'Please Wait','Uploading', '' )
             uploadThis(zp_file,myFTP)
             
-            xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny of Deathstar', 'Backup Done'.decode('utf8'))).encode('utf-8'))
+            xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Backup Done'.decode('utf8'))).encode('utf-8'))
         except Exception as e:
-            xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny of Deathstar', 'Error In Backup'.decode('utf8'))).encode('utf-8'))
+            xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Error In Backup'.decode('utf8'))).encode('utf-8'))
     try:
         xbmc.sleep(1000)
         if os.path.isfile(zp_file):

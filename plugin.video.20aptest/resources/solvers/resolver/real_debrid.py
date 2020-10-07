@@ -129,7 +129,7 @@ class RealDebrid:
         Addon.setSetting('rd.expiry', str(time.time() + int(response['expires_in'])))
         username = self.get_url('user')['username']
         Addon.setSetting('rd.username', username)
-        xbmcgui.Dialog().ok('Destiny', 'Real Debrid ' + "Authentication is completed")
+        xbmcgui.Dialog().ok('20aptest', 'Real Debrid ' + "Authentication is completed")
         logging.warning('Authorised Real Debrid successfully', 'info')
 
     def refreshToken(self):
@@ -493,12 +493,12 @@ class RealDebrid:
                         start_file=f_id
                         
                         if f_id=='':
-                          xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'Rd Failed in torrent')).encode('utf-8'))
+                          xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Rd Failed in torrent')).encode('utf-8'))
                         if 'id' in torrent:
                         
                             self.torrentSelect(torrent['id'], start_file)#go
                         else:
-                            xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'Rd Failed in torrent')).encode('utf-8'))
+                            xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Rd Failed in torrent')).encode('utf-8'))
                             return
                 if dp.iscanceled():
                     if 'id' in torrent:
@@ -514,7 +514,7 @@ class RealDebrid:
                 
                 self.deleteTorrent(torrent['id'])
             except:
-                xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'Rd Failed in torrent')).encode('utf-8'))
+                xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Rd Failed in torrent')).encode('utf-8'))
                 if 'id' in torrent:
                     self.deleteTorrent(torrent['id'])
                 return None
@@ -531,7 +531,7 @@ class RealDebrid:
             filename = f.f_code.co_filename
             linecache.checkcache(filename)
             line = linecache.getline(filename, lineno, f.f_globals)
-            xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'Line:'+str(lineno)+' E:'+str(e))).encode('utf-8'))
+            xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'Line:'+str(lineno)+' E:'+str(e))).encode('utf-8'))
             logging.warning('ERROR IN RD torrent :'+str(lineno))
             logging.warning('inline:'+line)
             logging.warning(e)

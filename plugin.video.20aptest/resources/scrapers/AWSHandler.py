@@ -73,7 +73,7 @@ def UpdateDB():
     conn, c = ConnectDB()
     kpath = GetKodiDB()
     if kpath=='':
-        #xbmc.executebuiltin((u'Notification(%s,%s)' % ('Destiny', 'KODI DB EMPTY'.decode('utf8'))).encode('utf-8'))
+        #xbmc.executebuiltin((u'Notification(%s,%s)' % ('20aptest', 'KODI DB EMPTY'.decode('utf8'))).encode('utf-8'))
         return ''
     kconn, kc = ConnectDB(kpath)
     c.execute('SELECT Location, ID FROM Location WHERE Queue = 1')

@@ -168,7 +168,7 @@ def get_tmdb_from_imdb(imdb,id,season,episode,type,year,title,html_g,xxx):
      try:genere = u' / '.join([genres_list[x] for x in data['genre_ids']])
      except:genere=''
 
-     trailer = "plugin://plugin.video.destinyds?mode=25&url=www&id=%s" % id
+     trailer = "plugin://plugin.video.20aptest?mode=25&url=www&id=%s" % id
 
      all_new_data.append((new_name,icon,fan,plot,year,original_name,id,rating,genere,trailer,xxx,mode))
      return new_name,icon,fan,plot,year,original_name,id,rating,genere,trailer,xxx,mode
@@ -442,7 +442,7 @@ def tmdb(page,url):
              try:genere = u' / '.join([genres_list[x] for x in data['genre_ids']])
              except:genere=''
 
-             trailer = "plugin://plugin.video.destinyds?mode=25&url=www&id=%s" % id
+             trailer = "plugin://plugin.video.20aptest?mode=25&url=www&id=%s" % id
 
              #all_new_data.append((new_name,icon,fan,plot,year,original_name,id,rating,genere,trailer,xxx,mode))
              addDir3(new_name,'www',mode,icon,fan,plot,data=year,original_title=original_name,id=id,rating=rating,heb_name=new_name,show_original_year=year,isr=' ',generes=genere,trailer=trailer)

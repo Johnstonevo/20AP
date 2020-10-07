@@ -1,6 +1,6 @@
 import urllib,xbmcplugin,xbmcgui,xbmcaddon,xbmc,os,logging
 
-ADDON = xbmcaddon.Addon(id='plugin.video.destinyds')
+ADDON = xbmcaddon.Addon(id='plugin.video.20aptest')
 
 DIR=os.path.join(ADDON.getAddonInfo('profile'))
 THEHTML = xbmc.translatePath(os.path.join(ADDON.getAddonInfo('path'),'theemail.html'))

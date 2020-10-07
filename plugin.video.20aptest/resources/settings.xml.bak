@@ -122,7 +122,7 @@
 		<setting label="[COLOR darkviolet]Jen Settings[/COLOR]" type="lsep" />
         <setting id="debug Jen" type="bool" label="API's" default="false" visible="false"/>
         <setting id="first_run" label="first run" type="bool" default="false" visible="false"/>
-		<setting id="jen_sources" type="enum" label="Choose Jen Scraper" values="Universal|Destiny" default="1"  />
+		<setting id="jen_sources" type="enum" label="Choose Jen Scraper" values="Universal|20aptest" default="1"  />
 		<setting label="Enable Main Cache" type="bool" id="enable_cache" default="true" visible="true"/>
         <setting label="Cache Location" id="cache_folder" type="folder" default="special://profile/addon_data/plugin.video.20aptest/" visible="false"/>
         <setting label="TVDB API Key" type="text" id="TVdb_api_key" option="hidden" default="34148470FD68E26B" visible="eq(-3,true)"/>
@@ -195,7 +195,7 @@
 		<setting id="m_checks" type="bool" label="Check Sources" default="true" />
 		<setting id="m_rating" type="bool" label="My Rating" default="true" />
 		<setting id="m_fav" type="bool" label="My Favorites" default="true" />
-		<setting id="m_what" type="bool" label="What is Destiny - A Simple Guide" default="false" /> -->
+		<setting id="m_what" type="bool" label="What is 20aptest - A Simple Guide" default="false" /> -->
 	</category>
 	
 	
@@ -255,9 +255,9 @@
 		<setting id="min_seed"  type="number"  label="Minimum Seed Numbers" visible="eq(-3,true)" default="0"/>
 		<setting id="size_limit"  type="number"  label="Filter Sources Larger Than (Gb)" visible="eq(-4,true)" default="4"/>
 		<setting id="players_new" type="enum" label="Choose Player" visible="eq(-5,true)
-	"values="Quasar|Pulsar|KmediaTorrent|Torrenter|YATP|XBMCtorrent|PopcornTime|Destiny|Acestream|Choose" default="7" />
-        <setting label="[COLOR darkviolet]Download[/COLOR] Destiny Torrent Player" visible="eq(-6,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=118&url=www)"/>
-		<setting label="[COLOR red]Remove[/COLOR] Destiny Torrent Player" visible="eq(-7,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=119&url=www)"/> 
+	"values="Quasar|Pulsar|KmediaTorrent|Torrenter|YATP|XBMCtorrent|PopcornTime|20aptest|Acestream|Choose" default="7" />
+        <setting label="[COLOR darkviolet]Download[/COLOR] 20aptest Torrent Player" visible="eq(-6,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=118&url=www)"/>
+		<setting label="[COLOR red]Remove[/COLOR] 20aptest Torrent Player" visible="eq(-7,true)" option="close" type="action"  action="RunPlugin(plugin://plugin.video.20aptest?mode2=119&url=www)"/> 
 
 		<setting label="[COLOR darkviolet]Torrent Servers[/COLOR]" type="lsep" />
 		<setting id="show_all_torrent_servers" label="Click to See Torrent Servers" type="bool" default="false" />
@@ -393,7 +393,7 @@
 	
 	
 	<category label="DB Backup">
-		<setting label="Define the Backup Path For Destiny" type="lsep"/>
+		<setting label="Define the Backup Path For 20aptest" type="lsep"/>
 		<setting label="[COLOR darkviolet]For Watched, Series Tracker, etc...[/COLOR]" type="lsep"/>
 		<setting id="enable_db_bk" label="Enable Auto-Backup" type="bool" default="false" />
 		<setting label="*** Backup Now ***" option="close" type="action"  visible="eq(-1,true)" action="RunPlugin(plugin://plugin.video.20aptest?mode2=120&url=False)"/>

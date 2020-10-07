@@ -300,7 +300,7 @@ def get_tmdb_data(new_name_array,html_g,fav_search_f,fav_servers_en,fav_servers,
              try:genere = u' / '.join([genres_list[x] for x in data['genre_ids']])
              except:genere=''
 
-             trailer = "plugin://plugin.video.destinyds?mode2=25&url=www&id=%s&tv_movie=%s" % (id,tv_movie)
+             trailer = "plugin://plugin.video.20aptest?mode2=25&url=www&id=%s&tv_movie=%s" % (id,tv_movie)
             
              if new_name not in new_name_array:
               new_name_array.append(new_name)

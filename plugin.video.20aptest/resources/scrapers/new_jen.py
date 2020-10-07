@@ -43,7 +43,7 @@ def get_list(url,icon,fan):
         try:
             items = jen_list.get_list()
         except:
-            logging.warning('Destiny JEN')
+            logging.warning('20aptest JEN')
             from jen import check_jen_categroys
             check_jen_categroys(url,icon,fan)
             return '0'
