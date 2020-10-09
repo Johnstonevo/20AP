@@ -492,7 +492,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.7.2" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.7.3" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -776,7 +776,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.4">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.2.5">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -811,11 +811,15 @@ You can clone the project and host it in your own server.
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.2.4 – Oct. 03, 2020[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Removed old exo code for configurable "New Movies"
-    and "New Episodes".  All items were currently availalbe.[/I]
-[COLOR yellow]--[/COLOR][I] Renamed a few menu items.[/I]
-[COLOR yellow]--[/COLOR][I] Code changes for "My Accounts" changes.[/I]
+[B][COLOR red]Update - v4.2.5 – Oct. 09, 2020[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Removed cache check setting for AD, PM, and RD,
+    this is now hard coded on to always check cached status.
+    You can still enable/disable showing of uncached torrents.[/I]
+[COLOR yellow]--[/COLOR][I] Removed setting to enable/disable pack scraping.
+    This is now hard coded on.[/I]
+[COLOR yellow]--[/COLOR][I] Fix for random container refresah issues
+    during playback.[/I]
+[COLOR yellow]--[/COLOR][I] Fix for Furk resolve issue.[/I]
 		</news>
 	</extension>
 </addon>
