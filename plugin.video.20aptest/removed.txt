@@ -1,0 +1,103 @@
+      if Addon.getSetting("m_what")=='true':
+        addNolink('What is 20AP?','www',132,False,iconimage=BASE_LOGO+'20AP.png',fanart=DESIMG)
+      if Addon.getSetting("m_movies")=='true':
+        addDir3('Movies'.decode('utf8'),'www',13,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
+      if Addon.getSetting("m_tvshows")=='true':
+        addDir3('TV Shows'.decode('utf8'),'www',14,BASE_LOGO+'tvshow.png','https://i.imgur.com/a174Ipu.jpg','Tv Shows'.decode('utf8'))
+      if Addon.getSetting("m_kids")=='true':
+        addDir3('Kids'.decode('utf8'),'www',44,BASE_LOGO+'kids.png','https://www.desktopbackground.org/download/o/2013/09/27/645377_kids-kung-fu-panda-3-movie-4k-wallpapers_3840x2160_h.jpg','Kids'.decode('utf8'))
+      if Addon.getSetting("m_actors")=='true':
+        addDir3('Actors'.decode('utf8'),'www',72,BASE_LOGO+'actors.png','https://hdqwalls.com/download/avengers-infinity-war-imax-poster-na-2048x1152.jpg','Actors'.decode('utf8'))
+      if Addon.getSetting("m_nba")=='true':        
+        addDir3('NBA','https://www.nbafullhd.com',105,BASE_LOGO+'nba.png','https://cdn.nba.net/nba-drupal-prod/2017-08/SEO-image-NBA-logoman.jpg','NBA'.decode('utf8'))
+      if Addon.getSetting("m_livesport")=='true':
+        addDir3('Live Sports'.decode('utf8'),'www',40,BASE_LOGO+'live.png','https://scotch-res.cloudinary.com/image/upload/w_900,q_auto:good,f_auto/v1549206813/gyxlxwotow6xxysb527u.png','Live'.decode('utf8'))
+      if Addon.getSetting("m_livetv")=='true':
+        addDir3('Live TV'.decode('utf8'),'www',146,'https://icon2.kisspng.com/20180528/bxr/kisspng-live-television-logo-streaming-media-brand-5b0b8b721a8e95.3198740015274832501088.jpg','https://cdn2.vectorstock.com/i/1000x1000/85/36/live-stream-tv-logo-icon-vector-16968536.jpg','Live TV'.decode('utf8'))
+      if Addon.getSetting("m_acestream")=='true':
+        addDir3('Acestream'.decode('utf8'),'www',76,BASE_LOGO+'acestream.png','https://i.pinimg.com/originals/6b/18/31/6b1831503dc0e0470b2bf1e1b5df978f.jpg','Acestream'.decode('utf8'))
+      if Addon.getSetting("m_m3u8")=='true':
+        addDir3('M3u8 Lists'.decode('utf8'),'www',55,BASE_LOGO+'m3u8.png','https://indianapublicmedia.org/wp-content/themes/ipm-aux-services/images/services/transmission.jpg','M3u8 Lists'.decode('utf8'))
+      if Addon.getSetting("m_fav")=='true':
+        addDir3('My Favorites'.decode('utf8'),'all',18,BASE_LOGO+'fav.png','http://jonvilma.com/images/reign-tv-series-2.jpg','My Favorites'.decode('utf8'))
+      if Addon.getSetting("m_jen")=='true':
+        addDir3('Jen Lists'.decode('utf8'),'www',42,BASE_LOGO+'jen.png','https://geek-prime.com/wp-content/uploads/2014/02/20AP-2-4k-hd-wallpaper-invasion-ghaul.jpg','Jen'.decode('utf8'))
+      if Addon.getSetting("m_setting")=='true':
+        addNolink('Settings','www',24,False,iconimage=BASE_LOGO+'setting.png',fanart=domain_s+'www.wanderlustworker.com/wp-content/uploads/2014/05/setting-smarter-goals.jpg')
+      if Addon.getSetting("m_enterr")=='true':
+        addNolink('Enable Real Debrid','www',138,False,iconimage=BASE_LOGO+'rd.png',fanart='https://troypoint.com/wp-content/uploads/2017/10/install-real-debrid-kodi.jpg')
+      if Addon.getSetting("m_clear")=='true':
+        addNolink('Clear Cache','www',16,False,iconimage=BASE_LOGO+'clearcache.png',fanart=domain_s+'digitalart.io/storage/artworks/1264/pacific-rim-wallpaper-striker.jpeg')
+      if Addon.getSetting("m_update")=='true':
+        addNolink('Update Sources','www',36,False,iconimage=BASE_LOGO+'update.png',fanart='https://images.idgesg.net/images/article/2018/03/update_cycle_arrows_on_background_of_orange_arrows_by_ranjith_siji_cc0_via_pixabay-100751945-large.jpg')
+      if Addon.getSetting("m_recover")=='true':
+        addNolink('Recover from Backup','www',89,False,iconimage=BASE_LOGO+'recover.png',fanart='https://hiverhq.com/blog/wp-content/uploads/2014/11/best-backup-tools-for-Google-Apps-and-Gmail-1.jpg')
+      if Addon.getSetting("m_chnage")=='true':
+        addNolink('Change Log','www',100,False,iconimage=BASE_LOGO+'changelog.png',fanart='https://one2onenetwork.com/wp-content/uploads/2011/06/things-to-change-t2c-list.jpg')
+      if Addon.getSetting("m_checks")=='true':
+        addDir3('Check Sources'.decode('utf8'),'www',98,BASE_LOGO+'server.png','https://wallpaperstock.net/wallpapers/thumbs1/8901wide.jpg','Check sources'.decode('utf8'))
+      plot='[COLOR gold]'+'You are in Level '+str(level_index+1)+'\n'+'So Far You Have Watched '+str(match[0]) +' Movies and Episode '+' Keep Going.... '+'[/COLOR]'+'\nAnother ' +str((100*(level_index+1))-int(match[0]))+' To Move to the Next Level :-)'
+      if Addon.getSetting("m_rating")=='true':
+        addLink(''+'My Rating'+'',level_movies[level_index],35,False,iconimage=BASE_LOGO+'rating.png',fanart=level_fanart[level_index],description=plot)
+      if Addon.getSetting("m_lastp")=='true':
+        addDir3('Last Played'.decode('utf8'),'www',49,BASE_LOGO+'last.png','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgZlTxhsnI3lZ9gzBokPvapZG1W3S-_G1UNCohkK5il9r5myUF','Last played'.decode('utf8'))
+      if Addon.getSetting("m_search")=='true':
+        addDir3('Search'.decode('utf8'),'www',15,BASE_LOGO+'search.png','https://geek-prime.com/wp-content/uploads/2014/02/20AP-2-4k-hd-wallpaper-invasion-ghaul.jpg','Search'.decode('utf8'))
+      logging.warning( 'USE TRAKT')
+      logging.warning( Addon.getSetting("use_trak"))
+      if Addon.getSetting("m_trakt")=='true':
+          addDir3('Trakt'.decode('utf8'),'www',29,BASE_LOGO+'trakt.png',domain_s+'www.mjdtech.net/content/images/2016/02/traktfeat.jpg','Trakt')
+     
+
+     ==========================================================================
+     Movies
+
+      if allow_debrid:
+        addDir3('Once click RD movies','www',149,'https://image.shutterstock.com/image-vector/vector-logo-slate-board-shooting-260nw-279718811.jpg',all_img[19],'Once click RD movies')
+        addDir3('Movies'.decode('utf8'),'www',13,BASE_LOGO+'movies.png','http://hdqwalls.com/wallpapers/avengers-infinity-war-2018-poster-fan-made-62.jpg','Movies'.decode('utf8'))
+      addDir3('In Theaters'.decode('utf8'),'http://api.themoviedb.org/3/movie/now_playing?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',3,BASE_LOGO+'theaters.png',all_img[10],'In Theaters'.decode('utf8'))
+      addDir3('Oscar Winners Best Movie','https://www.imdb.com/search/title?count=100&groups=oscar_best_picture_winners&sort=year,desc&ref_=nv_ch_osc',114,BASE_LOGO+'oscarmovie.png',all_img[16],'Oscar Winners best movie',isr=' ')
+      addDir3('Oscar Winners Best Actor','https://www.imdb.com/list/ls068045646/?sort=list_order,asc&mode=detail&page=1',134,BASE_LOGO+'oscaractor.png',all_img[17],'Oscar Winners best actor',isr=' ')
+      addDir3('Favourites'.decode('utf8'),'movies',18,BASE_LOGO+'favorites.png','http://4.bp.blogspot.com/-8q4ops3bX_0/T0TWUOu5ETI/AAAAAAAAA1A/AQMDv0Sv4Cs/s1600/logo1.gif','Favorites'.decode('utf8'))
+      addDir3('Last Watched'.decode('utf8'),'movie',91,BASE_LOGO+'lwatched.png',all_img[7],'Last watched',isr=' ')
+
+
+      addDir3('Rotten Tomatoes: Best Horror Movies Of All Time','users/lish408/lists/rotten-tomatoes-best-horror-movies-of-all-time/items/',31,'',all_img[0],'Rotten Tomatoes: Best Horror Movies Of All Time'.decode('utf8'))
+
+      =====================================================================================================================
+
+      TV
+      addDir3('Genres','http://api.themoviedb.org/3/genre/tv/list?api_key=aa28550e5a65f567fc512bd0290ce6fb&language=en&page=1',2,BASE_LOGO+'genrestv.png',all_img[0],'Genres')
+      addDir3('Popular in 20 Years','tv',133,BASE_LOGO+'popular20tv.png',all_img[11],'Popular in 20 years',data='20',original_title='1')
+      addDir3('Popular in 10 Years','tv',133,BASE_LOGO+'popular10tv.png',all_img[12],'Popular in 10 years',data='10',original_title='1')
+      addDir3('Years','tv_years&page=1',3,BASE_LOGO+'yearstv.png',all_img[2],'Years')
+
+
+=======================================================================================================
+
+def template():
+      import datetime
+      #all_img=get_movie_poster()
+      now = datetime.datetime.now()
+      link_url='https://www.youtube.com/results?search_query=%D7%98%D7%A8%D7%99%D7%99%D7%9C%D7%A8+%D7%9E%D7%AA%D7%95%D7%A8%D7%92%D7%9D+{0}&page=1'.format( str(now.year))
+    
+      all_img=cache.get(get_movie_poster,24, table='posters')
+
+    
+     
+      dbcur.execute("SELECT * FROM lastlinkmovie WHERE o_name='f_name'")
+
+
+      match = dbcur.fetchone()
+      if match!=None:
+       f_name,name,url,iconimage,fanart,description,data,season,episode,original_title,saved_name,heb_name,show_original_year,eng_name,isr,prev_name,id=match
+       try:
+           if url!=' ':
+             if 'http' not  in url:
+           
+               url=url.decode('base64')
+              
+             #addLink('Last played link', 'latest_movie',5,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,id=id,saved_name=saved_name,prev_name=prev_name,eng_name=eng_name,heb_name=heb_name,show_original_year=show_original_year)
+       except  Exception as e:
+         logging.warning(e)
+         pass
