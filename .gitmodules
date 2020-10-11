@@ -56,3 +56,6 @@
 [submodule "plugin.video.20aptest"]
 	path = plugin.video.20aptest
 	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
+[submodule "plugin.video.kaito"]
+	path = plugin.video.kaito
+	url = https://github.com/SwagOtaku/plugin.video.kaito.git
