@@ -546,6 +546,57 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
+<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.5">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0" />
+    <import addon="script.module.requests" version="2.19.1" />
+    <import addon="script.module.beautifulsoup4" version="4.5.3" />
+    <import addon="script.common.plugin.cache" version="2.5.5" />
+    <import addon="script.module.inputstreamhelper" version="0.3.3" />
+  </requires>
+  <extension library="default.py" point="xbmc.python.pluginsource">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" />
+  <extension point="xbmc.addon.metadata">
+    <reuselanguageinvoker>false</reuselanguageinvoker> <!-- You can enable this if you want, expect some instability but much faster menu speeds -->
+    <summary lang="en">kaito video plugin</summary>
+    <description lang="en">HD Animes</description>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007</license>
+    <assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+		</assets>
+    <news>
+Changelog 0.0.5:
+Fixed bug
+
+Changelog 0.0.4:
+Fixed bug
+
+Changelog 0.0.3:
+Added Rescrape Item option to episode context menu
+Added setting 'Title Language' to set titles to romaji/english
+Added 'Airing Dubbed Anime' menu item
+Added 'Next Up' to watchlist menu items
+Adjusted content types of items
+Adjusted MAL/AniList auth for linux os
+Improved season torrent pack handling
+
+Changelog 0.0.2:
+Added premiumize support
+Improved handling of episodes/seasons retrieval
+Improved nyaa search
+Added 'episodes' content type to set menu content type setting
+Added menu content type to be applied to watchlist landing page
+
+Changelog 0.0.1:
+Initial release
+    </news>
+  </extension>
+</addon>
+
 <addon  id="plugin.video.emby" name="Emby" version="4.1.21" provider-name="angelblue05, sualfred">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
@@ -864,7 +915,7 @@ You can clone the project and host it in your own server.
 	</extension>
 </addon>
 
-<addon id="plugin.video.20aptest" name="20aptest" version="20.10.07" provider-name="Dark Child">
+<addon id="plugin.video.20aptest" name="20aptest" version="20.11.02" provider-name="Enzo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.requests"/>
@@ -1419,7 +1470,7 @@ More minor bugfixes (honestly could not list them all)
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.11" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.12" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>

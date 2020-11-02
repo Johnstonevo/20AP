@@ -46,9 +46,6 @@
 [submodule "plugin.video.emby"]
 	path = plugin.video.emby
 	url = https://github.com/MediaBrowser/plugin.video.emby.git
-[submodule "plugin.video.jellyfin"]
-	path = plugin.video.jellyfin
-	url = https://github.com/jellyfin/jellyfin-kodi.git
 [submodule "script.module.openscrapers"]
 	path = script.module.openscrapers
 	url = https://github.com/a4k-openproject/script.module.openscrapers.git
