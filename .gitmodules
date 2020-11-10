@@ -1,9 +1,6 @@
 [submodule "program.plexus"]
 	path = program.plexus
 	url = https://github.com/tvaddonsco/program.plexus.git
-[submodule "plugin.video.youtube"]
-	path = plugin.video.youtube
-	url = https://github.com/jdf76/plugin.video.youtube.git
 [submodule "script.module.lambdascrapers"]
 	path = script.module.lambdascrapers
 	url = https://github.com/I-A-C/script.module.lambdascrapers.git
@@ -56,3 +53,6 @@
 [submodule "plugin.video.kaito"]
 	path = plugin.video.kaito
 	url = https://github.com/SwagOtaku/plugin.video.kaito.git
+[submodule "plugin.video.youtube"]
+	path = plugin.video.youtube
+	url = https://github.com/anxdpanic/plugin.video.youtube.git
