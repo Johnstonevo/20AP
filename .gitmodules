@@ -47,9 +47,10 @@
 [submodule "plugin.video.20aptest"]
 	path = plugin.video.20aptest
 	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
-[submodule "plugin.video.kaito"]
-	path = plugin.video.kaito
-	url = https://github.com/SwagOtaku/plugin.video.kaito.git
 [submodule "plugin.video.youtube"]
 	path = plugin.video.youtube
 	url = https://github.com/anxdpanic/plugin.video.youtube.git
+[submodule "plugin.video.kaito"]
+	path = plugin.video.kaito
+	url = https://github.com/SwagOtaku/plugin.video.kaito.git
+	branch = main
