@@ -386,7 +386,7 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
  - Search over your drive.
  - Auto-Refreshed slideshow.
  - Export your videos to your library (.strm files)
- - Use Google Drive as a source
+ - Use Google Drive as a source. **(Not currently working due to changes in the Google Drive API)
  - This program is not affiliated with or sponsored by Google.
 		</description>
 		<summary lang="he_IL">כונן Google Drive של מיקרוסופט עבור קודי</summary>
@@ -396,7 +396,6 @@ Play all your media from Google Drive including Videos, Music and Pictures (incl
   - חיפוש ומציאת הכונן שלך.
   - ריענון מצגת אוטומטית.
   - ייצוא קטעי הווידאו לספרייה שלך (קבצי .strm)
-  - שימוש ב-Google Drive כמקור
   - תוכנית זו אינה קשורה או ממומנת על ידי Google.
 		</description>
 		<license>GPL-3.0-or-later</license>
@@ -492,7 +491,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.8.2" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.8.3" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -509,10 +508,15 @@ You can clone the project and host it in your own server.
 - New utils module
 - Updated user agent strings
 - Updated m3u8 modules
+- Various fixes &amp; tweaks for Kodi 19
 
 [B]2.7.X[/B]
 - New cache functions (taken from ResolveURL and adapted)
 - Various other tweaks</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
     </extension>
 </addon>
 
@@ -805,7 +809,7 @@ Initial release
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.5">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.3.6">
 	<requires>
 		<import addon="xbmc.python" version="2.19.0" />
 		<import addon="context.venom" version="1.0.0" />
@@ -840,11 +844,12 @@ Initial release
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.3.5 - Jan. 17, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed random playback failures of EasyNews links.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed issue where some epsiodes where incorectly
-    indicated as "unaired".[/I]
-[COLOR yellow]--[/COLOR][I] Fixed resolving of m2ts files.[/I]
+[B][COLOR red]Update - v4.3.6 - Jan. 17, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Fixed scraper dialog failing under Background setting.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue where file size limit was accounted for before
+    a pack file size was re-calculated for actual episode
+    size inside the pack. This caused unnecessary removal
+    of items.[/I]
 		</news>
 	</extension>
 </addon>
