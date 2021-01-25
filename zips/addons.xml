@@ -839,7 +839,7 @@ Initial release
 	</extension>
 </addon>
 
-<addon id="plugin.video.20aptest" name="20aptest" version="20.11.02" provider-name="Enzo">
+<addon id="plugin.video.20aptest" name="20aptest" version="21.01.25" provider-name="Enzo">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.requests"/>

@@ -40,10 +40,6 @@
 [submodule "script.module.openscrapers"]
 	path = script.module.openscrapers
 	url = https://github.com/a4k-openproject/script.module.openscrapers.git
-
-[submodule "plugin.video.20aptest"]
-	path = plugin.video.20aptest
-	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
 [submodule "plugin.video.youtube"]
 	path = plugin.video.youtube
 	url = https://github.com/anxdpanic/plugin.video.youtube.git
@@ -51,5 +47,7 @@
 	path = plugin.video.kaito
 	url = https://github.com/SwagOtaku/plugin.video.kaito.git
 	branch = main
-[submodule "https://github.com/Johnstonevo/plugin.video.20aptest.git"]
-	branch = main
+
+[submodule "plugin.video.20aptest"]
+	path = plugin.video.20aptest
+	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
