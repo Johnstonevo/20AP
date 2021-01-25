@@ -51,3 +51,5 @@
 	path = plugin.video.kaito
 	url = https://github.com/SwagOtaku/plugin.video.kaito.git
 	branch = main
+[submodule "https://github.com/Johnstonevo/plugin.video.20aptest.git"]
+	branch = main
