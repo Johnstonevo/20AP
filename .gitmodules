@@ -1,4 +1,4 @@
-[submodule "program.plexus"]
+submodule "program.plexus"]
 	path = program.plexus
 	url = https://github.com/tvaddonsco/program.plexus.git
 [submodule "script.module.lambdascrapers"]
@@ -51,3 +51,4 @@
 [submodule "plugin.video.20aptest"]
 	path = plugin.video.20aptest
 	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
+	branch = main
