@@ -50,4 +50,4 @@ submodule "program.plexus"]
 [submodule "plugin.video.20aptest"]
 	path = plugin.video.20aptest
 	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
-	branch = main
+
