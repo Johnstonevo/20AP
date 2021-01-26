@@ -502,7 +502,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.7">
+<addon id="plugin.video.kaito" name="kaito" provider-name="SwagOtaku" version="0.0.8">
   <requires>
     <import addon="xbmc.python" version="2.25.0" />
     <import addon="script.module.requests" version="2.19.1" />
@@ -525,6 +525,11 @@ You can clone the project and host it in your own server.
 			<fanart>fanart.jpg</fanart>
 		</assets>
     <news>
+Changelog 0.0.8:
+Fixed movies not working in AniList watchlist
+Fixed scrape and rescrape running twice
+Updated anime season for upcoming and trending menu items
+
 Changelog 0.0.7:
 Improved cloud inspection
 Adjusted 'Next Up'
