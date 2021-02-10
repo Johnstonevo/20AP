@@ -1013,7 +1013,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.23" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.24" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
