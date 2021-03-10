@@ -160,7 +160,7 @@ def utf8_urlencode(params):
                 #logging.warning( '**ERROR utf8_urlencode ERROR** %s' % e )
     
     return enc(params).encode().decode('utf-8')
-def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master='',all_w_trk='',last_id='',video_info={},data=' ',original_title=' ',id=' ',season=' ',episode=' ',tmdbid=' ',eng_name=' ',show_original_year=' ',rating=0,heb_name=' ',isr=0,generes=' ',trailer=' ',dates=' ',watched='no',fav_status='false',collect_all=False,ep_number='',watched_ep='',remain='',hist='',join_menu=False,menu_leave=False,remove_from_fd_g=False,all_w={},mark_time=False,ct_date=''):
+def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master='',all_w_trk='',last_id='',video_info={},data=' ',original_title=' ',id=' ',season=' ',episode=' ',tmdbid=' ',eng_name=' ',show_original_year=' ',rating=0,heb_name=' ',isr=0,generes=' ',trailer=' ',dates=' ',watched='no',fav_status='false',collect_all=False,ep_number='',watched_ep='',remain='',hist='',join_menu=False,menu_leave=False,remove_from_fd_g=False,all_w={},mark_time=False,ct_date='',search_db=''):
         if Addon.getSetting("stop_where")=='1':
             return 0
         name=name.replace("|",' ')
@@ -215,6 +215,7 @@ def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master
         params['isr']=isr
         params['fav_status']=fav_status
         params['all_w']=json.dumps(all_w)
+        params['search_db']=search_db
         if Addon.getSetting("stop_where")=='3':
             return 0
         all_ur=utf8_urlencode(params)
@@ -432,7 +433,7 @@ def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master
 
 
 
-def addLink( name, url,mode,isFolder, iconimage,fanart,description,place_control=False,data='',rating='',generes='',no_subs='0',tmdb='0',season='0',episode='0',original_title='',prev_name='',da='',year=0,all_w={},dd='',in_groups=False):
+def addLink( name, url,mode,isFolder, iconimage,fanart,description,place_control=False,data='',from_seek=False,rating='',generes='',no_subs='0',tmdb='0',season='0',episode='0',original_title='',prev_name='',da='',year=0,all_w={},dd='',in_groups=False):
           name=name.replace("|",' ')
           description=description.replace("|",' ')
           episode=episode.replace('%20',' ')
@@ -454,6 +455,7 @@ def addLink( name, url,mode,isFolder, iconimage,fanart,description,place_control
           params['data']=data
           params['prev_name']=prev_name
           params['nextup']='false'
+          params['from_seek']=from_seek
           
           all_ur=utf8_urlencode(params)
 

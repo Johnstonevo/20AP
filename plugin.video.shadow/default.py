@@ -29,6 +29,10 @@ global avg_f,stop_cpu,cores_use,all_other_sources_uni,infoDialog_counter_close
 global play_status,break_window
 global play_status_rd_ext,break_window_rd
 from resources.modules import public
+global all_jen_links
+global from_seek
+from_seek=False
+all_jen_links=[]
 KODI_VERSION = int(xbmc.getInfoLabel("System.BuildVersion").split('.', 1)[0])
 play_status_rd_ext=''
 break_window_rd=False
@@ -120,6 +124,12 @@ if KODI_VERSION<=18:
     unque=urllib.unquote_plus
 else:
     unque=urllib.parse.unquote_plus
+if KODI_VERSION<=18:
+    from urlparse import urlparse
+    urp=urlparse
+else:
+    import urllib.parse as urlparse
+    urp=urlparse.urlparse
 if KODI_VERSION>18:
     def trd_alive(thread):
         return thread.is_alive()
@@ -475,10 +485,19 @@ def monitor_play():
                     logging.warning('Stop super')
                     xbmc.executebuiltin((u'Notification(%s,%s)' % (addon_name, 'Waiting for sources'.decode('utf8'))).encode('utf-8'))
                     dp = xbmcgui . DialogProgress ( )
-                    dp.create('Please wait','Searching...', '','')
-                    dp.update(0, 'Please wait','Searching...', '' )
+                    if KODI_VERSION>18:
+                        dp.create('Please wait','Searching...')
+                    else:
+                        dp.create('Please wait','Searching...', '','')
+                    if KODI_VERSION>18:
+                        dp.update(0, 'Please wait'+'\n'+'Searching...'+'\n'+ '' )
+                    else:
+                        dp.update(0, 'Please wait','Searching...', '' )
                     once=1
-                dp.update(all_s_in[1], 'Please wait',all_s_in[2], all_s_in[4] )
+                if KODI_VERSION>18:
+                    dp.update(all_s_in[1], 'Please wait'+'\n'+all_s_in[2]+'\n'+ all_s_in[4] )
+                else:
+                    dp.update(all_s_in[1], 'Please wait',all_s_in[2], all_s_in[4] )
                 if dp.iscanceled():
                  stop_window=True
                  
@@ -734,6 +753,7 @@ class sources_search2(xbmcgui.WindowXMLDialog):
                         for thread in threading.enumerate():
                             if ('background_task' in thread.getName()) or ('get_similer' in thread.getName()) or ('MainThread' in thread.getName()) or ('sources_s' in thread.getName()):
                                 continue
+                            
                             if (trd_alive(thread)):
                                 all_t.append( thread.getName())
                         if len(all_t)>0:
@@ -1222,8 +1242,11 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
     def onInit(self):
         
         url='https://api.themoviedb.org/3/tv/%s/season/%s?api_key=1248868d7003f60f2386595db98455ef&language=%s'%(self.id,self.season,lang)
-        self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+ 'Get Html 1' )
+        if KODI_VERSION>18:#kodi18
         
+            self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+ 'Get Html 1' )
+        else:
+            self.dp.update(0, 'Series Traker', 'Loading', 'Get Html 1' )
         html=cache.get(get_html_result,24,url, table='posters')
         try:
             maste_image='https://'+'image.tmdb.org/t/p/original/'+html['poster_path']
@@ -1305,7 +1328,10 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
             from sqlite3 import dbapi2 as database
         except:
             from pysqlite2 import dbapi2 as database
-        self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  'DB' )
+        if KODI_VERSION>18:#kodi18
+            self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  'DB' )
+        else:
+            self.dp.update(0, 'Series Traker', 'Loading',  'DB' )
         cacheFile=os.path.join(user_dataDir,'database.db')
         dbcon = database.connect(cacheFile)
         dbcur = dbcon.cursor()
@@ -1355,7 +1381,10 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
       
         self.nextseason=False
         next_season_json={}
-        self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  'Get Html 2' )
+        if KODI_VERSION<=18:#kodi18
+            self.dp.update(0, 'Series Traker', 'Loading', 'Get Html 2' )
+        else:
+            self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  'Get Html 2' )
         if all_d[2]==0:
             ur='http://api.themoviedb.org/3/tv/%s?api_key=653bb8af90162bd98fc7ee32bcbbfb3d&language=en&append_to_response=external_ids'%self.id
             next_season_json=get_html(ur).json()
@@ -1812,8 +1841,10 @@ class Chose_ep(xbmcgui.WindowXMLDialog):
 
            
 
-
-        self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  'Final' )
+        if KODI_VERSION>18:#kodi18
+            self.dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  'Final' )
+        else:
+            self.dp.update(0, 'Series Traker', 'Loading',  'Final' )
         self.setFocus(self.list)
         self.getControl(self.imagecontrol).setImage(self.imagess[0])
         self.getControl(self.bimagecontrol).setImage(maste_image)
@@ -3552,7 +3583,10 @@ def main_menu(time_data):
         all_d.append(aa)
     #place your Jen playlist here:
     #dulpicate this line with your address
-    aa=addDir3('Ghost New movies 1Click', 'http://thechains24.com/Ghost-Addon/ghostxmls/xmls1/series9/newm.xml',189,'https://www.wirelesshack.org/wp-content/uploads/2020/07/How-To-Install-Ghost-Kodi-Addon-2020.jpg','https://troypoint.com/wp-content/uploads/2020/07/ghost-kodi-addon.png','Ghost')
+    #aa=addDir3('Name', 'Your Jen Address',189,'Iconimage','fanart','Description',search_db='Your Search db Address')
+    #all_d.append(aa)
+    
+    aa=addDir3('Ghost New movies 1Click', 'http://thechains24.com/Ghost-Addon/ghostxmls/xmls1/series9/newm.xml',189,'https://www.wirelesshack.org/wp-content/uploads/2020/07/How-To-Install-Ghost-Kodi-Addon-2020.jpg','https://troypoint.com/wp-content/uploads/2020/07/ghost-kodi-addon.png','Ghost',search_db='')
     all_d.append(aa)
     if Addon.getSetting('debug')=='true':
         aa=addDir3( 'Unit tests', 'www',181,'https://lh3.googleusercontent.com/proxy/Ia9aOfcgtzofMb0urCAs8NV-4RRhcIVST-Gqx9GI9RLsx7IJe_5jBqjfdsJcOO3QIV3TT-uiF2nKmyYCX0vj5UPR4iW1iHXgZylE8N8wyNgRLw','https://i.ytimg.com/vi/3wLqsRLvV-c/maxresdefault.jpg','Test')
@@ -3825,11 +3859,21 @@ def check_mass_hash(all_mag,items,rd,pr,ad,statistics,tv_movie,season_n,episode_
                 if Addon.getSetting('debrid_select')=='0':
                    #logging.warning(json.dumps(all_mag[items]))
                    if not silent:
-                        dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+'Sending:'+',Page:'+str(page_no))
-                   hashCheck = rd.checkHash(all_mag[items])
+                        if KODI_VERSION>18:#kodi18
+                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+'Sending:'+',Page:'+str(page_no))
+                        else:
+                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070),'Sending:'+',Page:'+str(page_no))
+                   try:
+                    hashCheck = rd.checkHash(all_mag[items])
+                   except:
+                    time.sleep(0.3)
+                    hashCheck = rd.checkHash(all_mag[items])
                    
                    if not silent:
-                        dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+'Got it:'+',Page:'+str(page_no))
+                        if KODI_VERSION>18:#kodi18
+                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+'Got it:'+',Page:'+str(page_no))
+                        else:
+                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070),'Got it:'+',Page:'+str(page_no))
                 elif Addon.getSetting('debrid_select')=='1':
                     hashCheck=pr.hash_check(all_mag[items])['transcoded']
                 else:
@@ -3845,7 +3889,10 @@ def check_mass_hash(all_mag,items,rd,pr,ad,statistics,tv_movie,season_n,episode_
                         all_s_in=({},int((z*100.0)/(len(hashCheck))),'Page:'+str(page_no),2,name)
                         z+=1
                         if not silent:
-                            dp.update(int(((count_hash* 100.0)/(len(hashCheck))) ), Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ str(count_hash)+'/'+str(len(hashCheck))+',Page:'+str(page_no))
+                            if KODI_VERSION>18:#kodi18
+                                dp.update(int(((count_hash* 100.0)/(len(hashCheck))) ), Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ str(count_hash)+'/'+str(len(hashCheck))+',Page:'+str(page_no))
+                            else:
+                                dp.update(int(((count_hash* 100.0)/(len(hashCheck))) ), Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070), str(count_hash)+'/'+str(len(hashCheck))+',Page:'+str(page_no))
                     if Addon.getSetting('debrid_select')=='0':
                         ok=False
                         try:
@@ -3859,17 +3906,30 @@ def check_mass_hash(all_mag,items,rd,pr,ad,statistics,tv_movie,season_n,episode_
                         if ok:
                           
                            if not silent:
-                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK')
+                            if KODI_VERSION>18:#kodi18
+                                dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK')
+                            else:
+                                dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070), 'OK')
                            if len(hashCheck[hash]['rd'])>0:
                                 if not silent:
-                                    dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK1')
+                                    if KODI_VERSION>18:#kodi18
+                                        dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK1')
+                                        
+                                    else:
+                                        dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070), 'OK1')
                                 found_c_h=False
                                 if tv_movie=='tv' and len(hashCheck[hash]['rd'])>1:
                                     if not silent:
-                                        dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK2')
+                                        if KODI_VERSION>18:#kodi18
+                                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK2')
+                                        else:
+                                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070),'OK2')
                                     for storage_variant in hashCheck[hash]['rd']:
                                         if not silent:
-                                            dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK3')
+                                            if KODI_VERSION>18:#kodi18
+                                                dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ 'OK3')
+                                            else:
+                                                dp.update(0, Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070), 'OK3')
                                         key_list = storage_variant.keys()
                                         if found_c_h:
                                             break
@@ -3878,7 +3938,10 @@ def check_mass_hash(all_mag,items,rd,pr,ad,statistics,tv_movie,season_n,episode_
                                            for itt in items_t:
                                             test_name=items_t[itt]['filename'].lower() 
                                             if not silent:
-                                                dp.update(int(((count_hash* 100.0)/(len(key_list))) ), Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ itt)
+                                                if KODI_VERSION>18:#kodi18
+                                                    dp.update(int(((count_hash* 100.0)/(len(key_list))) ), Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32070)+'\n'+ itt)
+                                                else:
+                                                    dp.update(int(((count_hash* 100.0)/(len(key_list))) ), Addon.getLocalizedString(32070)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32070), itt)
                                                 if dp.iscanceled():
                                                     break
                                             if itt in key_list :
@@ -3976,7 +4039,10 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
             call=i[1]
             if not silent:
                 elapsed_time = time.time() - start_time
-                dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Open Scrapers: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), i[0] )
+                if KODI_VERSION>18:
+                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Open Scrapers: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ i[0] )
+                else:
+                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Open Scrapers: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), i[0] )
             count_others+=1
             try:
                 if tv_movie=='movie':
@@ -4007,7 +4073,10 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
             
                 if not silent:
                     elapsed_time = time.time() - start_time
-                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Universal Scrapers: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),scraper.name )
+                    if KODI_VERSION>18:
+                        dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait'+'\n'+'Universal Scrapers: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+scraper.name )
+                    else:
+                        dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Universal Scrapers: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),scraper.name )
                 count_others+=1
                 result_universal.append((scraper.name ,scraper))
                 #result=scraper().scrape_movie( original_title, show_original_year, imdb, debrid=use_debrid)
@@ -4055,7 +4124,10 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
             call=i[1]
             if not silent:
                 elapsed_time = time.time() - start_time
-                dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','The Crew: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), i[0] )
+                if KODI_VERSION>18:
+                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait'+'\n'+'The Crew: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ i[0] )
+                else:
+                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','The Crew: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), i[0] )
             count_others+=1
             try:
                 if tv_movie=='movie':
@@ -4090,7 +4162,10 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
             call=i[1]
             if not silent:
                 elapsed_time = time.time() - start_time
-                dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Fen: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), i[0] )
+                if KODI_VERSION>18:
+                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait'+'\n'+'Fen: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ i[0] )
+                else:
+                    dp.update(int(((count_others* 100.0)/(len(sourceDict))) ), 'Please wait','Fen: '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), i[0] )
             count_others+=1
             try:
                 if tv_movie=='movie':
@@ -4201,8 +4276,14 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
     dp=[]
     if not silent:
         dp = xbmcgui . DialogProgress ( )
-        dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073)+'\n'+ ''+'\n'+'')
-        dp.update(0, Addon.getLocalizedString(32072)+'\n'+Addon.getLocalizedString(32073)+'\n'+ '' )
+        if KODI_VERSION>18:
+            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073)+'\n'+ ''+'\n'+'')
+        else:
+            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073), '','')
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+'\n'+Addon.getLocalizedString(32073)+'\n'+ '' )
+        else:
+            dp.update(0, Addon.getLocalizedString(32072),Addon.getLocalizedString(32073), '' )
     sys.path.append( source_dir)
     logging.warning(source_dir)
     #onlyfiles = [f for f in listdir(source_dir) if isfile(join(source_dir, f))]
@@ -4259,7 +4340,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
           continue
        if  items.endswith('.py') and 'init' not in items:
         if not silent:
-            dp.update(0, Addon.getLocalizedString(32072)+'\n'+Addon.getLocalizedString(32074)+'\n'+ items.replace('.py','') )
+            if KODI_VERSION>18:
+                dp.update(0, Addon.getLocalizedString(32072)+'\n'+Addon.getLocalizedString(32074)+'\n'+ items.replace('.py','') )
+            else:
+                dp.update(0, Addon.getLocalizedString(32072),Addon.getLocalizedString(32074), items.replace('.py','') )
         try:
             impmodule = __import__(items.replace('.py',''))
         
@@ -4283,7 +4367,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
         #thread[len(thread)-1].start()
         if not silent:
             elapsed_time = time.time() - start_time
-            dp.update(int(((num_live* 100.0)/(len(onlyfiles))) ), 'Please wait'+'\n'+'Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ items.replace('.py','') )
+            if KODI_VERSION>18:#kodi18
+                dp.update(int(((num_live* 100.0)/(len(onlyfiles))) ), 'Please wait'+'\n'+'Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ items.replace('.py','') )
+            else:
+                dp.update(int(((num_live* 100.0)/(len(onlyfiles))) ), 'Please wait','Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), items.replace('.py','') )
             num_live+=1
             
         z+=1
@@ -4305,7 +4392,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
         all_s_in=({},int((z*100.0)/(len(result))),'Op:'+name,1,'')
         if not silent:
             elapsed_time = time.time() - start_time
-            dp.update(int(((count_others* 100.0)/(len(result))) ), 'Please wait'+'\n'+'Open Scrapers '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            if KODI_VERSION>18:#kodi18
+                dp.update(int(((count_others* 100.0)/(len(result))) ), 'Please wait'+'\n'+'Open Scrapers '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            else:
+                dp.update(int(((count_others* 100.0)/(len(result))) ), 'Please wait','Open Scrapers '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), name )
         thread.append(Thread(scrape_other_scrapers,'op-'+name,call,url,hostDict, hostprDict,tv_movie))
         thread[len(thread)-1].setName('OP:'+name)
         server_check['OP:'+name]={}
@@ -4318,7 +4408,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
         all_s_in=({},int((z*100.0)/(len(all_sources_fen))),'Fn:'+name,1,'')
         if not silent:
             elapsed_time = time.time() - start_time
-            dp.update(int(((count_others* 100.0)/(len(all_sources_fen))) ), 'Please wait'+'\n'+'Fen '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            if KODI_VERSION>18:#kodi18
+                dp.update(int(((count_others* 100.0)/(len(all_sources_fen))) ), 'Please wait'+'\n'+'Fen '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            else:
+                dp.update(int(((count_others* 100.0)/(len(all_sources_fen))) ), 'Please wait','Fen '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), name )
         thread.append(Thread(scrape_fen_scrapers,'FN-'+name,call,url,hostDict, hostprDict,tv_movie))
         thread[len(thread)-1].setName('FN:'+name)
         server_check['FN:'+name]={}
@@ -4332,7 +4425,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
         all_s_in=({},int((z*100.0)/(len(all_sources_crew))),'CR:'+name,1,'')
         if not silent:
             elapsed_time = time.time() - start_time
-            dp.update(int(((count_others* 100.0)/(len(all_sources_crew))) ), 'Please wait'+'\n'+'The Crew '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            if KODI_VERSION>18:#kodi18
+                dp.update(int(((count_others* 100.0)/(len(all_sources_crew))) ), 'Please wait'+'\n'+'The Crew '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            else:
+                dp.update(int(((count_others* 100.0)/(len(all_sources_crew))) ), 'Please wait','The Crew '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), name )
         thread.append(Thread(scrape_other_scrapers,'cr-'+name,call,url,hostDict, hostprDict,tv_movie))
         thread[len(thread)-1].setName('CR:'+name)
         server_check['CR:'+name]={}
@@ -4346,7 +4442,11 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
         all_s_in=({},int((z*100.0)/(len(result_universal))),'UN:'+name,1,'')
         if not silent:
             elapsed_time = time.time() - start_time
-            dp.update(int(((count_others* 100.0)/(len(result_universal))) ), 'Please wait'+'\n'+'Universal Scrapers '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+            if KODI_VERSION>18:#kodi18
+                dp.update(int(((count_others* 100.0)/(len(result_universal))) ), 'Please wait'+'\n'+'Universal Scrapers '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ name )
+                
+            else:
+               dp.update(int(((count_others* 100.0)/(len(result_universal))) ), 'Please wait','Universal Scrapers '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), name ) 
         
         
         thread.append(Thread(get_uni,'un-'+name,scraper,original_title, show_original_year, imdb_id,tv_movie,tvdb_id, season, episode))
@@ -4620,7 +4720,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
                                         all_mag[page_index2]=[]
                      if not silent and (once==0) and int(res_c)>=min_q and int(res_c)<=max_q and links not in all_lks and one_click:
                         check_one_click=True
-                        dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32076)+'\n'+str(res_c)+','+ name1)
+                        if KODI_VERSION>18:
+                            dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32076)+'\n'+str(res_c)+','+ name1)
+                        else:
+                            dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32076),str(res_c)+','+ name1)
                         if check_rejected(name1,show_original_year,season,episode,original_title,tv_movie,heb_name,filter_lang,one_click=True):
                             check_one_click=False
                         
@@ -4636,7 +4739,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
                             if data=='sez.py' or data=='soup.py' or data=='furk.py' or data=='easynews.py' or 'storage.googleapis.com'  in links or 'drive.google.com'  in links:
                                 run_lk=True
                             else:
-                                dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Checking hash'+'\n'+str(res_c)+','+ name1)
+                                if KODI_VERSION>18:
+                                    dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Checking hash'+'\n'+str(res_c)+','+ name1)
+                                else:
+                                    dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Checking hash',str(res_c)+','+ name1)
                                 if Addon.getSetting('debrid_select')=='0':
                                     run_lk=check_cached(links,rd)
                                 elif  Addon.getSetting('debrid_select')=='1':
@@ -4656,8 +4762,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
                                 if 1:#not xbmc.Player().isPlaying():
                                     dd=[]
                                     dd.append((name1,data,original_title,id,season,episode,show_original_year))
-                                    
-                                    dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32077)+'\n'+str(res_c)+','+ name1)
+                                    if KODI_VERSION>18:
+                                        dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32077)+'\n'+str(res_c)+','+ name1)
+                                    else:
+                                        dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077),str(res_c)+','+ name1)
                                     for name1,items in all_sources:
                                         items.stop_all=1
                                     for threads in thread:
@@ -4700,7 +4808,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
                     
         if not silent:
                     global_result="4K: [COLOR yellow]%s[/COLOR] 1080: [COLOR khaki]%s[/COLOR] 720: [COLOR gold]%s[/COLOR] 480: [COLOR silver]%s[/COLOR] %s: [COLOR burlywood]%s[/COLOR]"%(count_2160,count_1080,count_720,count_480,Addon.getLocalizedString(32078),count_rest)
-                    dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+string_dp+'\n'+ string_dp2)
+                    if KODI_VERSION>18:
+                        dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+string_dp+'\n'+ string_dp2)
+                    else:
+                        dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),string_dp, string_dp2)
                   
             
         if not silent:
@@ -4721,7 +4832,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
             
             elapsed_time = time.time() - start_time
             if not silent:
-                dp.update(int(((num_live2* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Closing'+'\n'+ threads.name)
+                if KODI_VERSION>18:
+                    dp.update(int(((num_live2* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Closing'+'\n'+ threads.name)
+                else:
+                    dp.update(int(((num_live2* 100.0)/(len(thread))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Closing', threads.name)
             if threads.is_alive():
                  
                  
@@ -4803,7 +4917,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
                         all_s_in=({},int((z*100.0)/(len(all_unique))),'Check Hash',2,name)
                         z+=1
                         if not silent:
-                            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32072)+'\n'+ 'Collecting:'+name)
+                            if KODI_VERSION>18:
+                                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32072)+'\n'+ 'Collecting:'+name)
+                            else:
+                                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32072), 'Collecting:'+name)
                         if link not in all_lk2 and link not in all_ok:
                             all_lk2.append(link)
                             
@@ -4884,7 +5001,10 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
                   
             elapsed_time = time.time() - start_time
             if not silent:
-                dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32080)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32080)+'\n'+ ','.join(all_alive))
+                if KODI_VERSION>18:
+                    dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32080)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32080)+'\n'+ ','.join(all_alive))
+                else:
+                    dp.update(int(((num_live* 100.0)/(len(thread))) ), Addon.getLocalizedString(32080)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32080), ','.join(all_alive))
             if still_alive==0:
                 break
 
@@ -5378,10 +5498,16 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     if Addon.getSetting("dp")=='true':
      
          dp = xbmcgui.DialogProgress()
-         dp.create("Collecting", Addon.getLocalizedString(32072)+'\n'+ '')
+         if KODI_VERSION>18:
+            dp.create("Collecting", Addon.getLocalizedString(32072)+'\n'+ '')
+         else:
+            dp.create("Collecting", Addon.getLocalizedString(32072), '')
          
          elapsed_time = time.time() - start_time
-         dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'1'+'\n'+ '')
+         if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'1'+'\n'+ '')
+         else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'1', '')
          
     all_p_data.append((name,url,iconimage,fanart,description,data,original_title,id,season,episode,show_original_year,video_data_exp,all_w,'false'))
     if Addon.getSetting("trakt_access_token")!=''  and Addon.getSetting("trakt_info")=='true':
@@ -5397,7 +5523,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     episode=episode.replace('+','%20')
     elapsed_time = time.time() - start_time
     if Addon.getSetting("dp")=='true':
-        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'2'+'\n'+Addon.getLocalizedString(32073))
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'2'+'\n'+Addon.getLocalizedString(32073))
+        else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'2',Addon.getLocalizedString(32073))
     if 'None' not in id:
         if 'tvdb' in id :
             url2='https://'+'api.themoviedb.org/3/find/%s?api_key=34142515d9d23817496eeb4ff1d223d0&external_source=tvdb_id&language=%s'%(id.replace('tvdb',''),lang)
@@ -5435,7 +5564,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     
     elapsed_time = time.time() - start_time
     if Addon.getSetting("dp")=='true':
-        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'3'+'\n'+ Addon.getLocalizedString(32082))
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'3'+'\n'+ Addon.getLocalizedString(32082))
+        else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'3',Addon.getLocalizedString(32082))
     if one_click:
     
         match_a,all_ok,once,tv_movie,po_watching,l_full_stats,statistics,server_check= c_get_sources( original_title,data,original_title,id,season,episode,show_original_year,heb_name,False,'',tvdb_id)
@@ -5447,7 +5579,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     
     elapsed_time = time.time() - start_time
     if Addon.getSetting("dp")=='true':
-        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'4'+'\n'+ Addon.getLocalizedString(32083))
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'4'+'\n'+ Addon.getLocalizedString(32083))
+        else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'4', Addon.getLocalizedString(32083))
     try:
         from sqlite3 import dbapi2 as database
     except:
@@ -5470,8 +5605,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     dbcur.close()
     dbcon.close()
     if Addon.getSetting("dp")=='true':
-        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'5'+'\n'+ Addon.getLocalizedString(32083))
-        
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'5'+'\n'+ Addon.getLocalizedString(32083))
+        else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'5', Addon.getLocalizedString(32083))
     menu=[]
     better_look=Addon.getSetting('better_look')=='true'
     links_data={}
@@ -5514,7 +5651,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
                all_s_in=({},0,' Check Rejected  ',2,name)
                elapsed_time = time.time() - start_time
                if Addon.getSetting("dp")=='true':
-                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32084)+'\n'+ name)
+                if KODI_VERSION>18:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32084)+'\n'+ name)
+                else:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32084), name)
                
                continue_next=False
                
@@ -5634,7 +5774,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
             except:
                 data_f=0
             if Addon.getSetting("dp")=='true':
-                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32084)+'\n'+ name)
+                if KODI_VERSION>18:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32084)+'\n'+ name)
+                else:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32084), name)
             if fix==1:
                 in_2160.append((name,lk,data_f,fix,quality,source))
             elif fix==2:
@@ -5683,7 +5826,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
         for name,lk,data,fix,quality,source in all_data:
                 elapsed_time = time.time() - start_time
                 if Addon.getSetting("dp")=='true':
-                    dp.update(0,Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32084)+'\n'+ name)
+                    if KODI_VERSION>18:
+                        dp.update(0,Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32084)+'\n'+ name)
+                    else:
+                        dp.update(0,Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32084),name)
                 color='white'
                 if '2160' in quality or '4k' in quality.lower():
                     color='yellow'
@@ -5719,7 +5865,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
                     addLink('[COLOR %s]%s-[/COLOR]%s[COLOR bisque][I]%s[/I][/COLOR]-%s'%(color,quality,sound,data+'GB',source,), lk,6,False, iconimage,fanart,nm+description,data=data,tmdb=id,season=season,episode=episode,original_title=original_title,year=show_original_year,dd=json.dumps(dd))
         elapsed_time = time.time() - start_time
         if Addon.getSetting("dp")=='true':
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32086)+'\n'+ '')
+            if KODI_VERSION>18:
+                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32086)+'\n'+ '')
+            else:
+                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32086), '')
         if tv_movie=='movie':
             se='one_click'
             
@@ -5749,13 +5898,19 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
         if Addon.getSetting("video_in_s_wait")=='true':
             while xbmc.Player().isPlaying():
                 if Addon.getSetting("dp")=='true':
-                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32086)+'\n'+ 'waiting for video')
+                    if KODI_VERSION>18:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32086)+'\n'+ 'waiting for video')
+                    else:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32086), 'waiting for video')
                 xbmc.sleep(100)
         if len(menu)==0:
             xbmc.executebuiltin((u'Notification(%s,%s)' % (Addon.getAddonInfo('name'), Addon.getLocalizedString(32085))))
         if (one_click or better_look) and len(menu)>0:
             if Addon.getSetting("dp")=='true':
-                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32086)+'\n'+ 'Opening menu')
+                if KODI_VERSION>18:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32086)+'\n'+ 'Opening menu')
+                else:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32086),'Opening menu')
                 
             if better_look:
                 if Addon.getSetting("sources_window")=='2': 
@@ -5875,7 +6030,7 @@ def post_trk(id,season,episode,progress=False,len_progress='',type_progress='',t
          logging.warning(i)
 def jump_seek(name,id,season,episode,jump_time,precentage,subs,tvdb_id):
     global break_jump,str_next,break_window
-    
+    global from_seek
     time_to_save_trk=int(Addon.getSetting("time_to_save"))
     logging.warning('Waiting for jump')
     logging.warning(xbmc.Player().isPlaying())
@@ -6006,8 +6161,10 @@ def jump_seek(name,id,season,episode,jump_time,precentage,subs,tvdb_id):
     dbcur.close()
     dbcon.close()
     logging.warning('Waiting for Vid3:'+str(xbmc.Player().isPlaying()))
-
-    xbmc.executebuiltin('Container.Refresh')
+    logging.warning('from_seek22:'+str(from_seek))
+    if not from_seek:
+        logging.warning('from_seek22 Refresh:'+str(from_seek))
+        xbmc.executebuiltin('Container.Refresh')
 def load_test_data(title,icon,fanart,plot,s_title,season,episode,list):
     test_episode = {"episodeid": 0, "tvshowid": 0, "title": title, "art": {}}
     test_episode["art"]["tvshow.poster"] = icon
@@ -6028,6 +6185,98 @@ def load_test_data(title,icon,fanart,plot,s_title,season,episode,list):
     return test_episode
 def calculate_progress_steps(period):
                     return (100.0 / int(period)) / 10
+def get_next_jen_link(url,episode):
+    next_episode=int(episode)+1
+    
+    match_a={}
+    match_a['Jen']={}
+    match_a['Jen']['links']=[]
+    all_ok=[]
+    x=get_html(url,headers=base_header).content()
+    regex='<item>(.+?)</item>'
+    m=re.compile(regex,re.DOTALL).findall(x)
+    for items in m:
+        regex='<imdb>(.+?)</imdb>'
+        imdb_id=re.compile(regex).findall(items)
+        if len(imdb_id)==0:
+            imdb_id=''
+        else:
+            imdb_id=imdb_id[0]
+        regex='<title>(.+?)</title>'
+        title=re.compile(regex).findall(items)
+        if len(title)==0:
+            regex='<name>(.+?)</name>'
+            title=re.compile(regex).findall(items)
+            if len(title)==0:
+                title=''
+            else:
+                title=title[0]
+        else:
+            title=title[0]
+        regex='<year>(.+?)</year>'
+        year=re.compile(regex).findall(items)
+        if len(year)==0:
+            year=''
+        else:
+            year=year[0]
+        regex='<season>(.+?)</season>'
+        season=re.compile(regex).findall(items)
+        if len(season)==0:
+            season=' '
+        else:
+            season=season[0]
+        regex='<episode>(.+?)</episode>'
+        episode=re.compile(regex).findall(items)
+        if len(episode)==0:
+            episode=' '
+        else:
+            episode=episode[0]
+        if episode!=str(next_episode):
+            continue
+        regex='<sublink>(.+?)</sublink>'
+        links=re.compile(regex).findall(items)
+        f_link_arr=[]
+        
+        for itt in links:
+            if '(' in itt:
+                itt=itt.split('(')[0]
+            f_link_arr.append('Direct_link$$$resolveurl'+itt)
+            uri = urp(itt)
+            host=(uri.netloc)
+
+            match_a['Jen']['links'].append((title,'Direct_link$$$resolveurl'+itt,host,'unk'))
+            all_ok.append('Direct_link$$$resolveurl'+itt)
+            
+        regex='<link>(.+?)</link>'
+        links=re.compile(regex).findall(items)
+        for itt in links:
+            if '(' in itt:
+                itt=itt.split('(')[0]
+            f_link_arr.append('Direct_link$$$resolveurl'+itt)
+            uri = urp(itt)
+            host=(uri.netloc)
+            match_a['Jen']['links'].append(('Jen','Direct_link$$$resolveurl'+itt,host,'unk'))
+            all_ok.append('Direct_link$$$resolveurl'+itt)
+        if len(f_link_arr)>1:
+            f_link='$$$$'.join(f_link_arr)
+        elif len(f_link_arr)>0:
+            f_link=f_link_arr[0]
+        else:
+            continue
+        
+        regex='<thumbnail>(.+?)</thumbnail>'
+        icon=re.compile(regex).findall(items)
+        if len(icon)==0:
+            icon=iconimage
+        else:
+            icon=icon[0]
+        regex='<fanart>(.+?)</fanart>'
+        fanart=re.compile(regex).findall(items)
+        if len(fanart)==0:
+            fanart=o_fanart
+        else:
+            fanart=fanart[0]
+    return match_a,all_ok
 def search_next(dd,tv_movie,id,heb_name,playlist):
    global silent,list_index,str_next,break_jump,sources_searching,clicked,break_window,break_window_rd
 
@@ -6069,10 +6318,15 @@ def search_next(dd,tv_movie,id,heb_name,playlist):
             dd_a=dd
         
         name,data,original_title,id,season,episode,show_original_year,tvdb_id=json.loads(base64.b64decode(dd_a[0]))[0]
-        try:
-            episode=str(int(episode)+1)
-        except:
-            return 0
+        if 'Jen_link' in tvdb_id:
+            match_a,all_ok=get_next_jen_link(tvdb_id.replace('Jen_link',''),episode)
+            if len(match_a)==0:
+               tvdb_id=''
+            logging.warning('match_a::')
+            logging.warning(match_a)
+        
+        episode=str(int(episode)+1)
+        
         from resources.modules.tmdb import get_episode_data
      
         name_n,plot_n,image_n,season,episode=get_episode_data(id,season,str(int(episode)),o_name=original_title)
@@ -6080,9 +6334,10 @@ def search_next(dd,tv_movie,id,heb_name,playlist):
         time_to_save=int(Addon.getSetting("save_time"))
         
             
-            
-        match_a,all_ok,once,tv_movie,po_watching,l_full_stats,statistics,server_check= cache.get(c_get_sources, time_to_save,str(original_title),str(data),str(original_title),str(id),str(season),str(episode),str(show_original_year),str(heb_name),False,'',tvdb_id ,table='pages')
-        susb_data_next=check_next_last_tv_subs('green',original_title,heb_name,season,episode,show_original_year,id)
+        if 'Jen_link' not in tvdb_id:
+            match_a,all_ok,once,tv_movie,po_watching,l_full_stats,statistics,server_check= cache.get(c_get_sources, time_to_save,str(original_title),str(data),str(original_title),str(id),str(season),str(episode),str(show_original_year),str(heb_name),False,'',tvdb_id ,table='pages')
+        #susb_data_next=check_next_last_tv_subs('green',original_title,heb_name,season,episode,show_original_year,id)
+        susb_data_next=[]
         logging.warning('Subs nextep:')
 
         logging.warning('Sources Ready:'+str(len(match_a)))
@@ -6093,17 +6348,22 @@ def search_next(dd,tv_movie,id,heb_name,playlist):
         
         filter_lang=Addon.getSetting("filter_non_e")=='true'
         #from resources.modules import PTN
-        for items in match_a:
-            for name,lk,data,quality in match_a[items]['links']:
-               if lk in all_ok:
-                    #info=(PTN.parse(clean_marks(name)))
-                    
-             
-                    
-                    if check_rejected(name,show_original_year,season,episode,original_title,tv_movie,heb_name,filter_lang):
-                        all_rejected.append(('[COLOR red][I]'+name+'[/I][/COLOR]',lk,data,fix_q(quality),'[COLOR red][I]Reject'+quality+'[/I][/COLOR]',items.replace('magnet_','').replace('.py',''),))
-                    else:
-                        all_data.append((name,lk,data,fix_q(quality),quality,items.replace('magnet_','').replace('.py',''),))
+        if 'Jen_link' not in tvdb_id:
+            for items in match_a:
+                for name,lk,data,quality in match_a[items]['links']:
+                   if lk in all_ok:
+                        #info=(PTN.parse(clean_marks(name)))
+                        
+                 
+                        
+                        if check_rejected(name,show_original_year,season,episode,original_title,tv_movie,heb_name,filter_lang):
+                            all_rejected.append(('[COLOR red][I]'+name+'[/I][/COLOR]',lk,data,fix_q(quality),'[COLOR red][I]Reject'+quality+'[/I][/COLOR]',items.replace('magnet_','').replace('.py',''),))
+                        else:
+                            all_data.append((name,lk,data,fix_q(quality),quality,items.replace('magnet_','').replace('.py',''),))
+        else:
+            for items in match_a:
+                for name,lk,data,quality in match_a[items]['links']:
+                    all_data.append((name,lk,data,fix_q(quality),quality,items.replace('magnet_','').replace('.py',''),))
         logging.warning('Sources Ready after filter:'+str(len(all_data)))
         logging.warning('Sources Ready Rest filter:'+str(len(all_rejected)))
         all_data=sorted(all_data, key=lambda x: x[3], reverse=False)
@@ -6221,7 +6481,9 @@ def search_next(dd,tv_movie,id,heb_name,playlist):
         name_n,plot_n,image_n,season,episode=get_episode_data(id,season,str(int(episode)),o_name=original_title,yjump=True)
         logging.warning('Got it')
         logging.warning('season %s, episode %s'%(season,episode))
-        
+        logging.warning(name_n)
+        logging.warning(plot_n)
+        logging.warning(id)
         logging.warning('Ep Start')
         ep=load_test_data(name_n,image_n,image_n,plot_n,name_n,season,episode,list)
         logging.warning('Ep done')
@@ -6518,18 +6780,7 @@ def resolve_3d(url):
     head=url_encode(headers)
     f_lk=f_lk+"|"+head
     return f_lk
-def get_sdarot(url):#mando ok
-       from resources.modules.sdarot import MyResolver
-       url_data=json.loads(url)
-       logging.warning('Doner Test Resolve:')
-       url, cookie=get_final_video_and_cookie(url_data[0], url_data[1], url_data[2], False, False)
-       '''
-       regex='https://(.+?)/'
-       match=re.compile(regex).findall(url)
-       h=(MyResolver(match[0]))
-       url=url.replace(match[0],h)
-       '''
-       return url
+
 elapsed_time = time.time() - start_time_start
 time_data.append(elapsed_time)
 
@@ -7434,32 +7685,6 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
    playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
    playlist.clear()
    logging.warning(url)
-  
-   if '$$$$' in url:
-        if KODI_VERSION<=18:
-            from urlparse import urlparse
-            urp=urlparse
-        else:
-            import urllib.parse as urlparse
-            urp=urlparse.urlparse
-        urls=url.split('$$$$')
-        choise=[]
-        for ur in urls:
-            uri = urp(ur.replace('Direct_link$$$resolveurl',''))
-            choise.append(uri.netloc)
-        logging.warning('urls::::')
-        logging.warning(urls)
-        logging.warning(choise)
-        ret = xbmcgui.Dialog().select("Choose link", choise)
-        if ret!=-1:
-            url=urls[ret]
-        else:
-            s=stop_play()
-            if s=='forceexit':
-                sys.exit(1)
-            else:
-                return 0
-        
    if 'tt' in id:
         try:
          url_t='https://'+'api.themoviedb.org/3/find/%s?api_key=34142515d9d23817496eeb4ff1d223d0&external_source=imdb_id&language=%s'%(id,lang)
@@ -7483,6 +7708,58 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         except Exception as e:
             logging.warning('error in getting tmdb:'+str(e))
             pass
+            
+   if 'Jen_link' in url:
+        url=url.replace('Jen_link','')
+        urls=url.split('$$$$')
+        url=urls[1]
+        
+        
+        
+        dd=[]
+        dd.append((name,data,name,id,season,episode,show_original_year,'Jen_link'+urls[0]))
+        try:
+            from sqlite3 import dbapi2 as database
+        except:
+            from pysqlite2 import dbapi2 as database
+        cacheFile=os.path.join(user_dataDir,'database.db')
+        dbcon = database.connect(cacheFile)
+        dbcur = dbcon.cursor()
+        dbcur.execute("CREATE TABLE IF NOT EXISTS %s ( ""data TEXT);" % 'nextup')
+        
+        dbcur.execute("DELETE FROM nextup")
+        code=(base64.b64encode(json.dumps(dd).encode("utf-8"))).decode("utf-8")
+        try:
+           dbcur.execute("INSERT INTO nextup Values ('%s')"%(code))
+        except:
+            dbcur.execute("DROP TABLE IF EXISTS nextup;")
+            dbcur.execute("CREATE TABLE IF NOT EXISTS %s ( ""data TEXT);" % 'nextup')
+            dbcur.execute("INSERT INTO nextup Values ('%s')"%(code))
+        dbcon.commit()
+        
+        dbcur.close()
+        dbcon.close()
+   if '$$$$' in url:
+        
+        urls=url.split('$$$$')
+        choise=[]
+        for ur in urls:
+            uri = urp(ur.replace('Direct_link$$$resolveurl',''))
+            choise.append(uri.netloc)
+        logging.warning('urls::::')
+        logging.warning(urls)
+        logging.warning(choise)
+        ret = xbmcgui.Dialog().select("Choose link", choise)
+        if ret!=-1:
+            url=urls[ret]
+        else:
+            s=stop_play()
+            if s=='forceexit':
+                sys.exit(1)
+            else:
+                return 0
+        
+   
    logging.warning('original_title::'+original_title)
    from resources.modules.general import post_trakt
    from resources.modules import real_debrid,premiumize
@@ -7566,7 +7843,8 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         nextup='false'
     if '[' in url and 'http' not in url and 'magnet' not in url:#mando ok
        #from resources.modules.sdarot import MyResolver
-       url_data=json.loads(url.replace('Direct_link$$$',''))
+   
+       url_data=json.loads(url.replace('Direct_link$$$','').replace('%20',''))
        logging.warning('Doner Test Resolve:')
        url, cookie=get_final_video_and_cookie(url_data[0], url_data[1], url_data[2], False, False)
        nextup='true'
@@ -7593,7 +7871,11 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
             #all_dd.append((name,url,iconimage,fanart,description,data,id,season,episode,original_title,show_original_year,dd))
             load_resolveurl_libs()
             import resolveurl
+            logging.warning('Resolveurl now:'+url)
+            oo_url=url
             url =resolveurl .HostedMediaFile (url =url ).resolve ()#line:2687
+            if not url:
+                url=oo_url
         for name,n_url,iconimage,fanart,description,data,id,season,episode,original_title,show_original_year,dd in all_dd:
             if url==n_url.replace('Direct_link$$$','').replace('resolveurl','').replace('resolveprime',''):
                 break
@@ -7603,11 +7885,16 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         dp=None
         if Addon.getSetting('new_play_window')=='false':
             dp = xbmcgui.DialogProgress()
-            dp.create(Addon.getLocalizedString(32085), Addon.getLocalizedString(32072), '')
-         
+            if KODI_VERSION>18:
+                dp.create(Addon.getLocalizedString(32085)+'\n'+ Addon.getLocalizedString(32072))
+            else:
+                dp.create(Addon.getLocalizedString(32085), Addon.getLocalizedString(32072), '')
         elapsed_time = time.time() - start_time
         if Addon.getSetting('new_play_window')=='false':
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077), '')
+            if KODI_VERSION>18:
+                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32077)+'\n'+ '')
+            else:
+                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077), '')
         
         for name,url_n,iconimage,fanart,description,data,id,season,episode,original_title,show_original_year,dd in all_dd:
             
@@ -7719,7 +8006,10 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                 if 'http' not in url_n:
                     url_n='https:'+url_n
                 if Addon.getSetting('new_play_window')=='false':
-                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),str(counter_index)+'/'+str(len(all_dd)), source)
+                    if KODI_VERSION>18:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+str(counter_index)+'/'+str(len(all_dd))+'\n'+ source)
+                    else:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),str(counter_index)+'/'+str(len(all_dd)), source)
                 play_status=str(counter_index)+'/'+str(len(all_dd))+','+ source
                 if Addon.getSetting('new_play_window')=='false':
                     if dp.iscanceled():
@@ -7753,7 +8043,11 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                         #    found,f_url=solve_might(url_n.replace('resolveurl',''))
                         else:
                             logging.warning('Vstream_solve:'+url)
-                            found,f_url=v_staream_solve(url_n)
+                            try:
+                                found,f_url=v_staream_solve(url_n)
+                            except:
+                                found=False
+                                f_url=url_n
                         
                         if 'vidcloud.pro' not in url_n:
                             o_name=get_vstram_title(url_n,name)
@@ -7776,13 +8070,17 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                             logging.warning('URL SOLVEING')
                             
                             logging.warning(url_solved)
-                            if 'vidcloud9' in f_url:
-                                url_solved=solve_vidcloud(f_url)
+                            if 'vidcloud9' in url_n:
+                                url_solved=solve_vidcloud(url_n)
                             else:
+                                
                                 load_resolveurl_libs()
                                 
                                 import resolveurl
-                                url_solved =resolveurl .HostedMediaFile (url =f_url ).resolve ()#line:2687
+                                
+                                url_solved =resolveurl .HostedMediaFile (url =url_n ).resolve ()#line:2687
+                                if not url_solved:
+                                    url_solved=url_n
                             logging.warning(url_solved)
                     
                     if url_solved:
@@ -7863,10 +8161,15 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                 start_time=time.time()
                 if Addon.getSetting('new_play_window')=='false':
                     dp = xbmcgui.DialogProgress()
-                    dp.create(Addon.getLocalizedString(32085), Addon.getLocalizedString(32072), '')
-                 
+                    if KODI_VERSION>18:
+                        dp.create(Addon.getLocalizedString(32085)+'\n'+ Addon.getLocalizedString(32072))
+                    else:
+                        dp.create(Addon.getLocalizedString(32085), Addon.getLocalizedString(32072), '')
                     elapsed_time = time.time() - start_time
-                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077), '')
+                    if KODI_VERSION>18:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32077)+'\n'+ '')
+                    else:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077), '')
                 else:
                     dp=None
                 xxx=0
@@ -7884,7 +8187,10 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                         o_name=name
                         logging.warning('Trying:'+str(link))
                         if Addon.getSetting('new_play_window')=='false':
-                            dp.update(int(((xxx* 100.0)/(len(all_dd)-start_index)) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077), str(counter_index)+'/'+str(len(all_dd)-start_index))
+                            if KODI_VERSION>18:
+                                dp.update(int(((xxx* 100.0)/(len(all_dd)-start_index)) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32077)+'\n'+ str(counter_index)+'/'+str(len(all_dd)-start_index))
+                            else:
+                                dp.update(int(((xxx* 100.0)/(len(all_dd)-start_index)) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32077), str(counter_index)+'/'+str(len(all_dd)-start_index))
                         play_status=Addon.getLocalizedString(32077)+','+ str(counter_index)+'/'+str(len(all_dd)-start_index)
                         xxx+=1
                         if Addon.getSetting('new_play_window')=='false':
@@ -7907,10 +8213,15 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                 dp=None
                 if Addon.getSetting('new_play_window')=='false':
                     dp = xbmcgui.DialogProgress()
-                    dp.create("Collecting", Addon.getLocalizedString(32072), '')
-                     
+                    if KODI_VERSION>18:
+                        dp.create("Collecting", Addon.getLocalizedString(32072))
+                    else:
+                        dp.create("Collecting", Addon.getLocalizedString(32072), '')
                     elapsed_time = time.time() - start_time
-                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32094), '')
+                    if KODI_VERSION>18:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32094)+'\n'+ '')
+                    else:
+                        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32094), '')
                 play_status=Addon.getLocalizedString(32094)
                 link=rd.singleMagnetToLink_season(url,tv_movie,season_n,episode_n,dp=dp)
            else:
@@ -8010,6 +8321,7 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
     
     
     logging.warning('flink:'+str(link)+' Direct:'+str(direct)+' nextup:'+str(nextup))
+    
     if link:
         listItem = xbmcgui.ListItem(video_data['title'], path=link) 
         
@@ -9235,10 +9547,15 @@ def sync_trk(removedb=False,show_msg=True):
         start_time=time.time()
      
         dp = xbmcgui.DialogProgress()
-        dp.create("Syncing", Addon.getLocalizedString(32072)+'\n'+ '')
-         
+        if KODI_VERSION>18:
+            dp.create("Syncing", Addon.getLocalizedString(32072)+'\n'+ '')
+        else:
+            dp.create("Syncing", Addon.getLocalizedString(32072), '')
         elapsed_time = time.time() - start_time
-        dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32093)+'\n'+ '')
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32093)+'\n'+ '')
+        else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32093), '')
         xxx=0
         for id in new_tv_far:
            if new_tv_far[id]['change_reason']=='New':
@@ -9257,7 +9574,10 @@ def sync_trk(removedb=False,show_msg=True):
             isr='0'
             tv_movie='tv'
             dbcur.execute("INSERT INTO Lastepisode Values ('%s', '%s', '%s', '%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s','%s','%s','%s');" %  (name.replace("'","%27"),url,icon,image,plot.replace("'","%27"),year,original_title.replace("'","%27").replace(" ","%20"),season,episode,id,eng_name.replace("'","%27"),show_original_year,heb_name.replace("'","%27"),isr,tv_movie))
-            dp.update(int(((xxx* 100.0)/(len(new_tv_far))) ), ' Movies '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync DB'+'\n'+ name)
+            if KODI_VERSION>18:
+                dp.update(int(((xxx* 100.0)/(len(new_tv_far))) ), ' Movies '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync DB'+'\n'+ name)
+            else:
+                dp.update(int(((xxx* 100.0)/(len(new_tv_far))) ), ' Movies '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Sync DB', name)
             xxx+=1
         dbcon.commit()
             
@@ -9280,14 +9600,20 @@ def sync_trk(removedb=False,show_msg=True):
             isr='0'
             tv_movie='movie'
             dbcur.execute("INSERT INTO Lastepisode Values ('%s', '%s', '%s', '%s','%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s','%s','%s','%s');" %  (name.replace("'","%27"),url,icon,image,plot.replace("'","%27"),year,original_title.replace("'","%27").replace(" ","%20"),season,episode,id,eng_name.replace("'","%27"),show_original_year,heb_name.replace("'","%27"),isr,tv_movie))
-            dp.update(int(((xxx* 100.0)/(len(new_mv_far))) ), Addon.getLocalizedString(32099)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync DB'+'\n'+ name)
+            if KODI_VERSION>18:
+                dp.update(int(((xxx* 100.0)/(len(new_mv_far))) ), Addon.getLocalizedString(32099)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync DB'+'\n'+ name)
+            else:
+                dp.update(int(((xxx* 100.0)/(len(new_mv_far))) ), Addon.getLocalizedString(32099)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Sync DB', name)
             xxx+=1
         dbcon.commit()
         xxx=0
         for id in new_mv:
           if new_mv[id]['change_reason']=='New':
             i = (post_trakt('/sync/history',data= {"movies": [{"ids": {"tmdb": id}}]}))
-            dp.update(int(((xxx* 100.0)/(len(new_mv))) ), Addon.getLocalizedString(32100)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync Trakt'+'\n'+ id)
+            if KODI_VERSION>18:
+                dp.update(int(((xxx* 100.0)/(len(new_mv))) ), Addon.getLocalizedString(32100)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync Trakt'+'\n'+ id)
+            else:
+                dp.update(int(((xxx* 100.0)/(len(new_mv))) ), Addon.getLocalizedString(32100)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Sync Trakt', id)
             xxx+=1
         xxx=0
         for id in new_tv:
@@ -9300,8 +9626,10 @@ def sync_trk(removedb=False,show_msg=True):
             
             
             i = (post_trakt('/sync/history', data={"shows": [{"seasons": [{"episodes": [{"number": episode_t}], "number": season_t}], "ids": {"tmdb": id}}]}))
-           
-            dp.update(int(((xxx* 100.0)/(len(new_tv))) ), Addon.getLocalizedString(32099)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync Trakt'+'\n'+ id)
+            if KODI_VERSION>18:
+                dp.update(int(((xxx* 100.0)/(len(new_tv))) ), Addon.getLocalizedString(32099)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Sync Trakt'+'\n'+ id)
+            else:
+                dp.update(int(((xxx* 100.0)/(len(new_tv))) ), Addon.getLocalizedString(32099)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Sync Trakt',id)
             xxx+=1
         if show_msg:
             xbmc.executebuiltin('Container.Refresh')
@@ -9449,11 +9777,15 @@ def last_viewed(url_o,isr=' '):
     if Addon.getSetting("dp")=='true':
      
          dp = xbmcgui.DialogProgress()
-         dp.create("Collecting",Addon.getLocalizedString(32072)+'\n'+ '')
-         
+         if KODI_VERSION>18:
+            dp.create("Collecting",Addon.getLocalizedString(32072)+'\n'+ '')
+         else:
+            dp.create("Collecting",Addon.getLocalizedString(32072), '')
          elapsed_time = time.time() - start_time
-         dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ Addon.getLocalizedString(32093)+'\n'+  '')
-         
+         if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ Addon.getLocalizedString(32093)+'\n'+  '')
+         else:
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), Addon.getLocalizedString(32093), '')
     color='white'
     
     if url_o=='tv':
@@ -9476,7 +9808,10 @@ def last_viewed(url_o,isr=' '):
       data_ep=''
       fanart=image
       if Addon.getSetting("dp")=='true' :
-        dp.update(int(((xxx* 100.0)/(len(match_tv))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ Addon.getLocalizedString(32093)+'\n'+  clean_name(original_title,1))
+        if KODI_VERSION>18:
+            dp.update(int(((xxx* 100.0)/(len(match_tv))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ Addon.getLocalizedString(32093)+'\n'+  clean_name(original_title,1))
+        else:
+            dp.update(int(((xxx* 100.0)/(len(match_tv))) ), Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), Addon.getLocalizedString(32093),  clean_name(original_title,1))
       xxx+=1
       done_data=0
       if url_o=='tv' :
@@ -9540,7 +9875,10 @@ def last_viewed(url_o,isr=' '):
 
         if Addon.getSetting("dp")=='true':
                 elapsed_time = time.time() - start_time
-                dp.update(0, ' Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ td.name+'\n'+ " ")
+                if KODI_VERSION>18:
+                    dp.update(0, ' Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ td.name+'\n'+ " ")
+                else:
+                    dp.update(0, ' Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), td.name, " ")
         if len(thread)>38:
             xbmc.sleep(10)
         else:
@@ -9559,7 +9897,10 @@ def last_viewed(url_o,isr=' '):
             break
           if Addon.getSetting("dp")=='true' :
                 elapsed_time = time.time() - start_time
-                dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ ','.join(all_alive)+'\n'+ " ")
+                if KODI_VERSION>18:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ ','.join(all_alive)+'\n'+ " ")
+                else:
+                    dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), ','.join(all_alive), " ")
           xbmc.sleep(100)
           if Addon.getSetting("dp")=='true' :
               if dp.iscanceled():
@@ -9647,7 +9988,10 @@ def last_viewed(url_o,isr=' '):
 
             if Addon.getSetting("dp")=='true' :
                     elapsed_time = time.time() - start_time
-                    dp.update(0, ' Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ td.name+'\n'+ " ")
+                    if KODI_VERSION>18:
+                        dp.update(0, ' Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ td.name+'\n'+ " ")
+                    else:
+                        dp.update(0, ' Starting '+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), td.name, " ")
         while 1:
 
               still_alive=0
@@ -9662,7 +10006,10 @@ def last_viewed(url_o,isr=' '):
                 break
               if Addon.getSetting("dp")=='true' :#mando ok
                     elapsed_time = time.time() - start_time
-                    dp.update(0, ' %s '%Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ ','.join(all_alive)+'\n'+ " ")
+                    if KODI_VERSION>18:
+                        dp.update(0, ' %s '%Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+ ','.join(all_alive)+'\n'+ " ")
+                    else:
+                        dp.update(0, ' %s '%Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)), ','.join(all_alive), " ")
               xbmc.sleep(100)
               if Addon.getSetting("dp")=='true' :
                   if dp.iscanceled():
@@ -9884,8 +10231,14 @@ def history_old(url):
 def s_tracker(name,url,iconimage,fanart,description,data,original_title,id,season,episode,show_original_year,dates,heb_name):
     menu=[]
     dp = xbmcgui . DialogProgress ( )
-    dp.create('Series Traker'+'\n'+ 'Loading'+'\n'+  '','')
-    dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  '' )
+    if KODI_VERSION>18:
+        dp.create('Series Traker'+'\n'+ 'Loading'+'\n'+  '','')
+    else:
+        dp.create('Series Traker','Loading', '','')
+    if KODI_VERSION>18:
+        dp.update(0, 'Series Traker'+'\n'+ 'Loading'+'\n'+  '' )
+    else:
+        dp.update(0, 'Series Traker','Loading',  '' )
     menu = Chose_ep(sys.argv[0], original_title,name,id,season,episode,dates,original_title,dp)
     menu.doModal()
     ret = menu.params
@@ -9978,8 +10331,14 @@ def was_i():
     match = dbcur.fetchall()
     if Addon.getSetting("dp")=='true':
         dp = xbmcgui . DialogProgress ( )
-        dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32093)+'\n'+  ''+'\n'+ '')
-        dp.update(0, Addon.getLocalizedString(32115)+'\n'+ Addon.getLocalizedString(32093)+'\n'+  '' )
+        if KODI_VERSION>18:
+            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32093)+'\n'+  ''+'\n'+ '')
+        else:
+            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32093),  '','')
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32115)+'\n'+ Addon.getLocalizedString(32093)+'\n'+  '' )
+        else:
+            dp.update(0, Addon.getLocalizedString(32115), Addon.getLocalizedString(32093),  '' )
     zzz=0
     tmdbKey='653bb8af90162bd98fc7ee32bcbbfb3d'
     all_d=[]
@@ -10114,7 +10473,10 @@ def was_i():
           trailer = "%s?mode=25&url=www&id=%s&tv_movie=%s" % (sys.argv[0],tmdb,'tv')
           all_d.append(addDir3(new_name,url,15,icon,fan,plot,episode=' ',season=' ',data=year,original_title=original_title,id=tmdb,rating=rating,heb_name=heb_name,show_original_year=year,isr=isr,generes=genere,trailer=trailer,hist='true'))
         if Addon.getSetting("dp")=='true':
-            dp.update(int(((zzz* 100.0)/(len(match))) ), Addon.getLocalizedString(32072)+'\n'+ Addon.getLocalizedString(32116)+'\n'+  new_name )
+            if KODI_VERSION>18:
+                dp.update(int(((zzz* 100.0)/(len(match))) ), Addon.getLocalizedString(32072)+'\n'+ Addon.getLocalizedString(32116)+'\n'+  new_name )
+            else:
+                dp.update(int(((zzz* 100.0)/(len(match))) ), Addon.getLocalizedString(32072),Addon.getLocalizedString(32116),  new_name )
             zzz+=1
             if dp.iscanceled():
                dp.close()
@@ -11080,7 +11442,10 @@ def cpu_usage(dp):
             counter=1
         avg_f=str(int(float(avg/counter)))+'%'
         cores_use=str(len(all_c))+'.Cpu:'+','.join(all_c)
-        dp.update(0, 'Cpu stress...',avg_f, cores_use )
+        if KODI_VERSION>18:
+            dp.update(0, 'Cpu stress...'+'\n'+avg_f+'\n'+ cores_use )
+        else:
+            dp.update(0, 'Cpu stress...',avg_f, cores_use )
         avg=0
         counter=0
         all_c=[]
@@ -11089,8 +11454,14 @@ def cpu_test():
     global avg_f,stop_cpu,cores_use
     import math
     dp = xbmcgui . DialogProgress ( )
-    dp.create('Please wait','Cpu stress...', '','')
-    dp.update(0, 'Please wait','Cpu stress...', '' )
+    if KODI_VERSION>18:
+        dp.create('Please wait','Cpu stress...'+'\n'+ ''+'\n'+'')
+    else:
+        dp.create('Please wait','Cpu stress...', '','')
+    if KODI_VERSION>18:
+        dp.update(0, 'Please wait'+'\n'+'Cpu stress...'+'\n'+ '' )
+    else:
+        dp.update(0, 'Please wait','Cpu stress...', '' )
     
     thread=[]
     thread.append(Thread(cpu_usage,dp))
@@ -11124,8 +11495,14 @@ def downloadFile() :
     os.remove(f_name)
     
   dp = xbmcgui . DialogProgress ( )
-  dp.create('Please wait','Download speed...', '','')
-  dp.update(0, 'Please wait','Download speed..1', '' )
+  if KODI_VERSION>18:
+    dp.create('Please wait','Download speed...'+'\n'+ ''+'\n'+'')
+  else:
+    dp.create('Please wait','Download speed...', '','')
+  if KODI_VERSION>18:
+    dp.update(0, 'Please wait'+'\n'+'Download speed..1'+'\n'+ '' )
+  else:
+    dp.update(0, 'Please wait','Download speed..1', '' )
 
   with open(directory + '/' + localFilename, 'wb') as f:
     start = time.clock()
@@ -11140,7 +11517,10 @@ def downloadFile() :
         dl += len(chunk)
         f.write(chunk)
         done = int(50 * dl / total_length)
-        dp.update(0, 'Please wait','Download speed..1', "\r[%s%s] %s Mbps" % ('=' * done, ' ' * (50-done), round((dl//(time.clock() - start))/(1024*1024),2)))
+        if KODI_VERSION>18:
+            dp.update(0, 'Please wait'+'\n'+'Download speed..1'+'\n'+ "\r[%s%s] %s Mbps" % ('=' * done, ' ' * (50-done), round((dl//(time.clock() - start))/(1024*1024),2)))
+        else:
+            dp.update(0, 'Please wait','Download speed..1', "\r[%s%s] %s Mbps" % ('=' * done, ' ' * (50-done), round((dl//(time.clock() - start))/(1024*1024),2)))
         
         if dp.iscanceled():
             dp.close()
@@ -11178,8 +11558,14 @@ def run_system_test(url):
         
         results={}
         dp = xbmcgui . DialogProgress ( )
-        dp.create('Please wait','Testing Threads...', '','')
-        dp.update(0, 'Please wait','Testing Threads..1', '' )
+        if KODI_VERSION>18:
+            dp.create('Please wait','Testing Threads...'+'\n'+ '')
+        else:
+            dp.create('Please wait','Testing Threads...', '','')
+        if KODI_VERSION>18:
+            dp.update(0, 'Please wait'+'\n'+'Testing Threads..1'+'\n'+ '' )
+        else:
+            dp.update(0, 'Please wait','Testing Threads..1', '' )
         
         if url=='2':
                 r_string=[]
@@ -11189,7 +11575,10 @@ def run_system_test(url):
                     for i in range(1,items+1):
                         regex_test(html)
                     elapsed_time = time.time() - start_time
-                    dp.update(0, 'Please wait','Testing Threads..'+str(items), time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
+                    if KODI_VERSION>18:
+                        dp.update(0, 'Please wait'+'\n'+'Testing Threads..'+str(items)+'\n'+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
+                    else:
+                        dp.update(0, 'Please wait','Testing Threads..'+str(items), time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
                     
                     r_string.append(str(items)+' - '+time.strftime("%H:%M:%S", time.gmtime(elapsed_time)))
         else:
@@ -11199,7 +11588,10 @@ def run_system_test(url):
                 thread=[]
                 start_time=time.time()
                 elapsed_time = time.time() - start_time
-                dp.update(0, 'Please wait','Testing Threads..'+str(items), time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
+                if KODI_VERSION>18:
+                    dp.update(0, 'Please wait'+'\n'+'Testing Threads..'+str(items)+'\n'+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
+                else:
+                    dp.update(0, 'Please wait','Testing Threads..'+str(items), time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
                 for i in range(1,items+1):
                    if url=='4':
                     thread.append(Thread(simple_url))
@@ -11219,7 +11611,10 @@ def run_system_test(url):
                         else:
                             still_alive=1
                     elapsed_time = time.time() - start_time
-                    dp.update(0, 'Please wait, Done: '+str(num_live),'Testing Threads..'+str(items), time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
+                    if KODI_VERSION>18:
+                        dp.update(0, 'Please wait, Done: '+str(num_live)+'\n'+'Testing Threads..'+str(items)+'\n'+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
+                    else:
+                        dp.update(0, 'Please wait, Done: '+str(num_live),'Testing Threads..'+str(items), time.strftime("%H:%M:%S", time.gmtime(elapsed_time)) )
                     if still_alive==0:
                         break
                 elapsed_time = time.time() - start_time
@@ -11544,15 +11939,14 @@ def get_keywords(url,icon,fan,dates):
         aa=addDir3('[COLOR aqua][I]Next page[/I][/COLOR]',url,188,BASE_LOGO+'basic.png','http://copasi.org/images/next.png','Next page',dates=str(start))
         all_d.append(aa)
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
-def populate_playlist(url,iconimage,o_fanart):
+def populate_playlist(url,iconimage,o_fanart,search_db):
     x=get_html(url,headers=base_header).content()
-    
+    o_url=url
     all_d=[]
     
     regex='<dir>(.+?)</dir>'
     m=re.compile(regex,re.DOTALL).findall(x)
-    logging.warning('m::')
-    logging.warning(m)
+    
     for items in m:
         regex='<title>(.+?)</title>'
         title=re.compile(regex).findall(items)
@@ -11664,6 +12058,7 @@ def populate_playlist(url,iconimage,o_fanart):
             if '(' in itt:
                 itt=itt.split('(')[0]
             f_link_arr.append('Direct_link$$$resolveurl'+itt)
+        
         if len(f_link_arr)>1:
             f_link='$$$$'.join(f_link_arr)
         elif len(f_link_arr)>0:
@@ -11683,7 +12078,7 @@ def populate_playlist(url,iconimage,o_fanart):
             fanart=o_fanart
         else:
             fanart=fanart[0]
-        aa=addLink(title,f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
+        aa=addLink(title,'Jen_link'+url+'$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
         all_d.append(aa)
     regex='<plugin>(.+?)</plugin>'
     m=re.compile(regex,re.DOTALL).findall(x)
@@ -11743,7 +12138,9 @@ def populate_playlist(url,iconimage,o_fanart):
             fanart=fanart[0]
         aa=addLink(title,f_link,6,False,icon,fanart,' ',data=year,original_title=title,year=year,place_control=True)
         all_d.append(aa)
-        
+    if len(search_db)>0:
+        aa=addDir3('[COLOR lightblue][B]Search[/B][/COLOR]',o_url,191,icon,fanart,'Search',search_db=search_db)
+        all_d.append(aa)
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
 
 def play_list(name,url,iconimage,fanart,id,show_original_year,season,episode):
@@ -11756,7 +12153,9 @@ def play_list(name,url,iconimage,fanart,id,show_original_year,season,episode):
         import urllib.parse as urlparse
         urp=urlparse.urlparse
     logging.warning('id::'+str(id))
+    
     if 'tt' in id:
+        
          url_t='https://'+'api.themoviedb.org/3/find/%s?api_key=34142515d9d23817496eeb4ff1d223d0&external_source=imdb_id&language=%s'%(id,lang)
          html_im=get_html(url_t).json()
          logging.warning('season:::')
@@ -11770,12 +12169,11 @@ def play_list(name,url,iconimage,fanart,id,show_original_year,season,episode):
                 tmdb=str(html_im['tv_results'][0]['id'])
          try:
     
-            tmdb=int(tmdb)
+            id=int(tmdb)
             
          except:
             pass
-        
-    logging.warning(tmdb)
+    
     video_data={}
     video_data['title']=name
     video_data['icon']=iconimage
@@ -11830,6 +12228,325 @@ def play_list(name,url,iconimage,fanart,id,show_original_year,season,episode):
             
         listItem.setProperty('IsPlayable', 'true')
         ok=xbmcplugin.setResolvedUrl(handle=int(sys.argv[1]), succeeded=True, listitem=listItem)
+def get_jen_files(url,dp,start_time_start):
+    global all_jen_links
+    url=url.replace(' ','%20')
+    logging.warning('URL:'+url)
+    x=get_html(url,headers=base_header).content()
+    regex='<dir>(.+?)</dir>'
+    try:
+        m=re.compile(regex,re.DOTALL).findall(x)
+    except:
+        logging.warning('Bad url:'+url)
+        return 0
+    
+    for items in m:
+        regex='<title>(.+?)</title>'
+        title=re.compile(regex).findall(items)
+        if len(title)==0:
+            regex='<name>(.+?)</name>'
+            title=re.compile(regex).findall(items)
+            if len(title)==0:
+                title=''
+            else:
+                title=title[0]
+        else:
+            title=title[0]
+        elapsed_time = time.time() - start_time_start
+        if KODI_VERSION>18:
+            dp.update(0, 'Please wait-'+time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+'Mapping jen...'+'\n'+ title )
+        else:
+            dp.update(0, 'Please wait-'+time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),'Mapping jen...', title )
+        regex='<link>(.+?)</link>'
+        links=re.compile(regex).findall(items)
+        for itt in links:
+            
+            all_jen_links.append(itt)
+            
+            get_jen_files(itt,dp)
+def download_db(url):
+   try:
+    file=os.path.join(user_dataDir,'search.db')
+    if os.path.exists(file):
+        os.remove(file)
+    if KODI_VERSION<=18:
+      from urllib2 import urlopen # Python 2
+    else:
+        from urllib.request import urlopen # Python 3
+
+    response = urlopen(url)
+    CHUNK = 16 * 1024
+    file=os.path.join(user_dataDir,'search.db')
+    with open(file, 'wb') as f:
+        while True:
+            chunk = response.read(CHUNK)
+            if not chunk:
+                break
+            f.write(chunk)
+    return 'ok'
+   except:
+    return 'Fault'
+def search_jen_lists(url):  
+    global from_seek
+    search_entered=''
+    keyboard = xbmc.Keyboard(search_entered, 'Enter Search')
+    keyboard.doModal()
+    if keyboard.isConfirmed() :
+           search_entered = (keyboard.getText().replace("'",""))
+           if search_entered=='':
+            
+                return 0
+    dp = xbmcgui . DialogProgress ( )
+    if KODI_VERSION>18:
+        dp.create('Please wait','Downloading DB...')
+        dp.update(0, 'Please wait'+'\n'+'Downloading DB...'+'\n'+ '' )
+    else:
+        dp.create('Please wait','Downloading DB...', '','')
+        dp.update(0, 'Please wait','Downloading DB...', '' )
+                  
+                        
+    
+    file=os.path.join(user_dataDir,'search.db')
+    html=cache.get(download_db,1,url, table='posters')
+    if html!=str('ok'):
+        html=cache.get(download_db,0,url, table='posters')
+    if KODI_VERSION>18:
+        
+        dp.update(0, 'Please wait'+'\n'+'Opening DB...'+'\n'+ '' )
+    else:
+        
+        dp.update(0, 'Please wait','Opening DB...', '' )
+    all_d=[]
+    try:
+        from sqlite3 import dbapi2 as database
+    except:
+        from pysqlite2 import dbapi2 as database
+    
+    dbcon = database.connect(file)
+    dbcur = dbcon.cursor()
+    
+
+    dbcur.execute("SELECT * FROM search where item like '%{0}%'".format(search_entered))
+
+    
+            
+    match = dbcur.fetchall()
+    
+    dbcur.close()
+    dbcon.close()
+    count=0
+    for x,poster in match:
+        if KODI_VERSION>18:
+        
+            dp.update(0, 'Please wait'+'\n'+'Searching DB...'+'\n'+ str(count) )
+        else:
+            
+            dp.update(0, 'Please wait','Searching DB...', str(count) )
+        count+=1
+        if '<dir>' in x:
+            regex='<dir>(.+?)</dir>'
+            m=re.compile(regex,re.DOTALL).findall(x)
+            
+            for items in m:
+                
+                regex='<title>(.+?)</title>'
+                title=re.compile(regex).findall(items)
+                if len(title)==0:
+                    regex='<name>(.+?)</name>'
+                    title=re.compile(regex).findall(items)
+                    if len(title)==0:
+                        title=''
+                    else:
+                        title=title[0]
+                else:
+                    title=title[0]
+                logging.warning(title)
+                
+                
+                regex='<year>(.+?)</year>'
+                year=re.compile(regex).findall(items)
+                if len(year)==0:
+                    year=''
+                else:
+                    year=year[0]
+                regex='<sublink>(.+?)</sublink>'
+                links=re.compile(regex).findall(items)
+                f_link_arr=[]
+                
+                for itt in links:
+                    if '(' in itt:
+                        itt=itt.split('(')[0]
+                    f_link_arr.append(itt)
+                
+                regex='<link>(.+?)</link>'
+                links=re.compile(regex).findall(items)
+                for itt in links:
+                    if '(' in itt:
+                        itt=itt.split('(')[0]
+                    f_link_arr.append(itt)
+                    
+                if len(f_link_arr)>1:
+                    f_link='$$$$'.join(f_link_arr)
+                elif len(f_link_arr)>0:
+                    f_link=f_link_arr[0]
+                else:
+                    continue
+                
+                regex='<thumbnail>(.+?)</thumbnail>'
+                icon=re.compile(regex).findall(items)
+                if len(icon)==0:
+                    icon=iconimage
+                else:
+                    icon=icon[0]
+                regex='<fanart>(.+?)</fanart>'
+                fanart=re.compile(regex).findall(items)
+                if len(fanart)==0:
+                    fanart=o_fanart
+                else:
+                    fanart=fanart[0]
+                aa=addDir3(title,f_link,189,icon,fanart,' ',data=year,original_title=title)
+                all_d.append(aa)
+        if '<item>' in x:
+            regex='<item>(.+?)</item>'
+            m=re.compile(regex,re.DOTALL).findall(x)
+            for items in m:
+                regex='<imdb>(.+?)</imdb>'
+                imdb_id=re.compile(regex).findall(items)
+                if len(imdb_id)==0:
+                    imdb_id=''
+                else:
+                    imdb_id=imdb_id[0]
+                regex='<title>(.+?)</title>'
+                title=re.compile(regex).findall(items)
+                if len(title)==0:
+                    regex='<name>(.+?)</name>'
+                    title=re.compile(regex).findall(items)
+                    if len(title)==0:
+                        title=''
+                    else:
+                        title=title[0]
+                else:
+                    title=title[0]
+                
+                regex='<year>(.+?)</year>'
+                year=re.compile(regex).findall(items)
+                if len(year)==0:
+                    year=''
+                else:
+                    year=year[0]
+                regex='<season>(.+?)</season>'
+                season=re.compile(regex).findall(items)
+                if len(season)==0:
+                    season=' '
+                else:
+                    season=season[0]
+                regex='<episode>(.+?)</episode>'
+                episode=re.compile(regex).findall(items)
+                if len(episode)==0:
+                    episode=' '
+                else:
+                    episode=episode[0]
+                
+                regex='<sublink>(.+?)</sublink>'
+                links=re.compile(regex).findall(items)
+                f_link_arr=[]
+                
+                for itt in links:
+                    if '(' in itt:
+                        itt=itt.split('(')[0]
+                    f_link_arr.append('Direct_link$$$resolveurl'+itt)
+                
+                regex='<link>(.+?)</link>'
+                links=re.compile(regex).findall(items)
+                for itt in links:
+                    if '(' in itt:
+                        itt=itt.split('(')[0]
+                    f_link_arr.append('Direct_link$$$resolveurl'+itt)
+                
+                if len(f_link_arr)>1:
+                    f_link='$$$$'.join(f_link_arr)
+                elif len(f_link_arr)>0:
+                    f_link=f_link_arr[0]
+                else:
+                    continue
+                
+                regex='<thumbnail>(.+?)</thumbnail>'
+                icon=re.compile(regex).findall(items)
+                if len(icon)==0:
+                    icon=iconimage
+                else:
+                    icon=icon[0]
+                regex='<fanart>(.+?)</fanart>'
+                fanart=re.compile(regex).findall(items)
+                if len(fanart)==0:
+                    fanart=o_fanart
+                else:
+                    fanart=fanart[0]
+                aa=addLink(title,'Jen_link'+url+'$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True,from_seek=True)
+                all_d.append(aa)
+        if '<plugin>' in x:
+            regex='<plugin>(.+?)</plugin>'
+            m=re.compile(regex,re.DOTALL).findall(x)
+            
+            for items in m:
+                
+                regex='<title>(.+?)</title>'
+                title=re.compile(regex).findall(items)
+                if len(title)==0:
+                    regex='<name>(.+?)</name>'
+                    title=re.compile(regex).findall(items)
+                    if len(title)==0:
+                        title=''
+                    else:
+                        title=title[0]
+                else:
+                    title=title[0]
+                
+                regex='<year>(.+?)</year>'
+                year=re.compile(regex).findall(items)
+                if len(year)==0:
+                    year=''
+                else:
+                    year=year[0]
+                regex='<sublink>(.+?)</sublink>'
+                links=re.compile(regex).findall(items)
+                f_link_arr=[]
+                
+                for itt in links:
+                    if '(' in itt:
+                        itt=itt.split('(')[0]
+                    f_link_arr.append(itt)
+                
+                regex='<link>(.+?)</link>'
+                links=re.compile(regex).findall(items)
+                for itt in links:
+                    if '(' in itt:
+                        itt=itt.split('(')[0]
+                    f_link_arr.append(itt)
+                if len(f_link_arr)>1:
+                    f_link='$$$$'.join(f_link_arr)
+                elif len(f_link_arr)>0:
+                    f_link=f_link_arr[0]
+                else:
+                    continue
+                
+                regex='<thumbnail>(.+?)</thumbnail>'
+                icon=re.compile(regex).findall(items)
+                if len(icon)==0:
+                    icon=iconimage
+                else:
+                    icon=icon[0]
+                regex='<fanart>(.+?)</fanart>'
+                fanart=re.compile(regex).findall(items)
+                if len(fanart)==0:
+                    fanart=o_fanart
+                else:
+                    fanart=fanart[0]
+                aa=addLink(title,f_link,6,False,icon,fanart,' ',data=year,original_title=title,year=year,place_control=True,from_seek=True)
+                all_d.append(aa)
+        
+    xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
+    dp.close()
 params=get_params()
 
 elapsed_time = time.time() - start_time_start
@@ -11863,6 +12580,8 @@ heb_name=''
 tmdbid=''
 has_alldd='false'
 prev_name=''
+search_db=''
+
 try:
         url=unque(params["url"])
 except:
@@ -11965,10 +12684,19 @@ try:
         prev_name=unque(params["prev_name"])
 except:
         pass
+try:        
+        search_db=unque(params["search_db"])
+except:
+        pass
 
-        
+try:        
+        from_seek=(params["from_seek"])=='True'
+except:
+        pass
+
 logging.warning('mode:'+str(mode))
 logging.warning('url:'+str(url))
+logging.warning('from_seek:'+str(from_seek))
 try:
     url=url.replace(' ','%20')  
 except:
@@ -12263,9 +12991,11 @@ elif mode==187:
 elif mode==188:
     get_keywords(url,iconimage,fanart,dates)
 elif mode==189:
-    populate_playlist(url,iconimage,fanart)
+    populate_playlist(url,iconimage,fanart,search_db)
 elif mode==190:
     play_list(name,url,iconimage,fanart,id,show_original_year,season,episode)
+elif mode==191:
+    search_jen_lists(search_db)
 match=[]
 elapsed_time = time.time() - start_time_start
 time_data.append(elapsed_time)
