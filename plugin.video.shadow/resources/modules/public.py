@@ -460,8 +460,33 @@ def addLink( name, url,mode,isFolder, iconimage,fanart,description,place_control
           all_ur=utf8_urlencode(params)
 
           u=sys.argv[0]+"?"+'&'+all_ur
- 
-
+          menu_items=[]
+          if len(tmdb)>1:
+            try:
+                a=int(season)
+                tv_show='tv'
+                tv_mov='tv'
+            except:
+                tv_show='movie'
+                tv_mov='movie'
+            
+            if Addon.getSetting("queue_item")=='true':
+                menu_items.append(('%s'%Addon.getLocalizedString(32169), 'Action(Queue)' ))
+            if Addon.getSetting("trakt_manager")=='true':
+                menu_items.append((Addon.getLocalizedString(32170), 'RunPlugin(%s)' % ('%s?url=%s&mode=150&name=%s&data=%s')%(sys.argv[0],tmdb,original_title,tv_mov) ))
+            if Addon.getSetting("trakt_watched")=='true':
+                menu_items.append(('[I]%s[/I]'%Addon.getLocalizedString(32171), 'RunPlugin(%s)' % ('%s?url=www&original_title=add&mode=65&name=%s&id=%s&season=%s&episode=%s')%(sys.argv[0],tv_show,tmdb,season,episode))) 
+            if Addon.getSetting("trakt_unwatched")=='true':
+                menu_items.append(('[I]%s[/I]'%Addon.getLocalizedString(32172), 'RunPlugin(%s)' % ('%s?url=www&original_title=remove&mode=65&name=%s&id=%s&season=%s&episode=%s')%(sys.argv[0],tv_show,tmdb,season,episode))) 
+            if Addon.getSetting("openinfo")=='true':
+                type_info='extendedinfo'
+                if mode==16:
+                    type_info='extendedtvinfo'
+                if mode==19:
+                    type_info='seasoninfo'
+                if mode==15 and tv_movie=='tv':
+                    type_info='extendedepisodeinfo'
+                menu_items.append(('[I]OpenInfo[/I]','RunScript(script.extendedinfo,info=%s,dbid=,id=%s,name=%s,tvshow=%s,season=%s,episode=%s)'%(type_info,tmdb,original_title,original_title,season,episode)))
           video_data={}
           video_data['title']=name
             
@@ -492,7 +517,7 @@ def addLink( name, url,mode,isFolder, iconimage,fanart,description,place_control
             liz = xbmcgui.ListItem( name, iconImage=iconimage, thumbnailImage=iconimage)
           else:
              liz = xbmcgui.ListItem( name)
-          menu_items=[]
+     
           if Addon.getSetting("set_view_type")=='true':
             menu_items.append(('[I]%s[/I]'%Addon.getLocalizedString(32179), 'RunPlugin(%s)' % ('%s?url=%s&mode=167')%(sys.argv[0],str(pre_mode))))
           if mode==170:

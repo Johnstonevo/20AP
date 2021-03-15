@@ -1,4 +1,12 @@
-﻿[COLOR yellow][B]v2.5.7[/B]
+﻿[COLOR yellow][B]v2.5.9[/B]
+* fixed traked manager for jen lists.
+* now shadow will work with Resolveurl RD auth. so if you auth. resolveurl or shadow all of shadow forks will work.
+
+[COLOR lightblue][B]v2.5.8[/B]
+* fix some minor bugs.
+* fix some sources.
+
+[COLOR lightblue][B]v2.5.7[/B]
 * now Nextup works with jenlists.
 * added search option for Jenlists, need to put the search DB address in the jen line(see in comments).
 

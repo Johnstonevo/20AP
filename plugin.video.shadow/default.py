@@ -136,6 +136,7 @@ if KODI_VERSION>18:
     class Thread (threading.Thread):
        def __init__(self, target, *args):
         super().__init__(target=target, args=args)
+        
        def run(self, *args):
           
           self._target(*self._args)
@@ -2082,6 +2083,7 @@ class ContextMenu_new4(xbmcgui.WindowXMLDialog):
                 
         return fixed_info
     def __init__(self, addonID, menu,icon,fan,txt,results,po_watching,l_full_stats,tv_movie,id,tvdb_id,season,episode,show_original_year):
+        
         super(ContextMenu_new4, self).__init__()
         
         self.id=id
@@ -2103,6 +2105,7 @@ class ContextMenu_new4(xbmcgui.WindowXMLDialog):
         self.tv_movie=tv_movie
         self.tvdb_id=tvdb_id
         self.done_extra_fanart=False
+        
         thread=[]
         thread.append(Thread(self.add_extra_art))
         thread[len(thread)-1].setName('fill_table')
@@ -2110,6 +2113,7 @@ class ContextMenu_new4(xbmcgui.WindowXMLDialog):
         thread[0].start()
         
     def add_extra_art(self):
+        
         logging.warning('Start Extra')
         
         all_logo,all_n_fan,all_banner,all_clear_art,r_logo,r_art=get_extra_art(self.id,self.tv_movie,self.tvdb_id)
@@ -2117,13 +2121,17 @@ class ContextMenu_new4(xbmcgui.WindowXMLDialog):
         self.getControl(3).setImage(r_logo)
         self.getControl(4).setImage(r_art)
     def onInit(self):
+        
         if self.tv_movie=='tv':
             x='http://api.themoviedb.org/3/tv/%s?api_key=34142515d9d23817496eeb4ff1d223d0&language=%s&page=1'%(self.id,lang)
         else:
             x='http://api.themoviedb.org/3/movie/%s?api_key=34142515d9d23817496eeb4ff1d223d0&language=%s&page=1'%(self.id,lang)
      
         self.list = self.getControl(2)
+        
         html=get_html(x).json()
+       
+       
         if 'poster_path' in html:
             if html['poster_path']!=None:
                 self.icon='https://image.tmdb.org/t/p/original/'+html['poster_path']
@@ -2192,7 +2200,7 @@ class ContextMenu_new4(xbmcgui.WindowXMLDialog):
                     item[4]=item[4].replace(original_title_alt+' ','[COLOR yellow]'+original_title_alt+'[/COLOR]'+' ')
                     item[4]=item[4].replace(self.show_original_year,'[COLOR plum]'+self.show_original_year+'[/COLOR]')
                     #heb
-                    item[4]=item[4].replace(heb_name,'[COLOR yellow]'+heb_name+'[/COLOR]').replace(heb_name_wd,'[COLOR yellow]'+heb_name+'[/COLOR]')
+                    #item[4]=item[4].replace(heb_name,'[COLOR yellow]'+heb_name+'[/COLOR]').replace(heb_name_wd,'[COLOR yellow]'+heb_name+'[/COLOR]')
                 added_h=''
         
                 if 'https' in item[6]:
@@ -4228,7 +4236,16 @@ def get_all_files(source_dir):
 def c_get_sources(name,data,original_title,id,season,episode,show_original_year,heb_name,test_mode=False,selected_scrapers='',tvdb_id='',server_test=False):
    global all_other_sources,all_s_in,global_result,stop_window,once_fast_play,all_other_sources_uni
    global silent,sources_searching,po_watching,full_stats,all_hased
-   
+   if not silent:
+        dp = xbmcgui . DialogProgress ( )
+        if KODI_VERSION>18:
+            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073)+'\n'+ ''+'\n'+'')
+        else:
+            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073), '','')
+        if KODI_VERSION>18:
+            dp.update(0, Addon.getLocalizedString(32072)+'\n'+Addon.getLocalizedString(32073)+'\n'+ '' )
+        else:
+            dp.update(0, Addon.getLocalizedString(32072),Addon.getLocalizedString(32073), '' )
    from resources.modules import real_debrid
    from resources.modules import premiumize
    from resources.modules import all_debrid
@@ -4262,6 +4279,7 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
             pr= premiumize.Premiumize()
         else:
             ad=all_debrid.AllDebrid()
+    
     if Addon.getSetting("fancy_scrape")=='true' and server_test==False:
         if not silent:
             
@@ -4273,17 +4291,8 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
     
     xbmc.executebuiltin("Dialog.Close(busydialog)")
     source_dir = os.path.join(addonPath, 'resources', 'sources')
-    dp=[]
-    if not silent:
-        dp = xbmcgui . DialogProgress ( )
-        if KODI_VERSION>18:
-            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073)+'\n'+ ''+'\n'+'')
-        else:
-            dp.create(Addon.getLocalizedString(32072),Addon.getLocalizedString(32073), '','')
-        if KODI_VERSION>18:
-            dp.update(0, Addon.getLocalizedString(32072)+'\n'+Addon.getLocalizedString(32073)+'\n'+ '' )
-        else:
-            dp.update(0, Addon.getLocalizedString(32072),Addon.getLocalizedString(32073), '' )
+    
+    
     sys.path.append( source_dir)
     logging.warning(source_dir)
     #onlyfiles = [f for f in listdir(source_dir) if isfile(join(source_dir, f))]
@@ -5505,9 +5514,9 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
          
          elapsed_time = time.time() - start_time
          if KODI_VERSION>18:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'1'+'\n'+ '')
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'\n'+ '')
          else:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'1', '')
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081), '')
          
     all_p_data.append((name,url,iconimage,fanart,description,data,original_title,id,season,episode,show_original_year,video_data_exp,all_w,'false'))
     if Addon.getSetting("trakt_access_token")!=''  and Addon.getSetting("trakt_info")=='true':
@@ -5524,9 +5533,9 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     elapsed_time = time.time() - start_time
     if Addon.getSetting("dp")=='true':
         if KODI_VERSION>18:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'2'+'\n'+Addon.getLocalizedString(32073))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'\n'+Addon.getLocalizedString(32073))
         else:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'2',Addon.getLocalizedString(32073))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081),Addon.getLocalizedString(32073))
     if 'None' not in id:
         if 'tvdb' in id :
             url2='https://'+'api.themoviedb.org/3/find/%s?api_key=34142515d9d23817496eeb4ff1d223d0&external_source=tvdb_id&language=%s'%(id.replace('tvdb',''),lang)
@@ -5565,9 +5574,9 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     elapsed_time = time.time() - start_time
     if Addon.getSetting("dp")=='true':
         if KODI_VERSION>18:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'3'+'\n'+ Addon.getLocalizedString(32082))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'\n'+ Addon.getLocalizedString(32082))
         else:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'3',Addon.getLocalizedString(32082))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081),Addon.getLocalizedString(32082))
     if one_click:
     
         match_a,all_ok,once,tv_movie,po_watching,l_full_stats,statistics,server_check= c_get_sources( original_title,data,original_title,id,season,episode,show_original_year,heb_name,False,'',tvdb_id)
@@ -5580,9 +5589,9 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     elapsed_time = time.time() - start_time
     if Addon.getSetting("dp")=='true':
         if KODI_VERSION>18:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'4'+'\n'+ Addon.getLocalizedString(32083))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'\n'+ Addon.getLocalizedString(32083))
         else:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'4', Addon.getLocalizedString(32083))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081), Addon.getLocalizedString(32083))
     try:
         from sqlite3 import dbapi2 as database
     except:
@@ -5606,11 +5615,12 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
     dbcon.close()
     if Addon.getSetting("dp")=='true':
         if KODI_VERSION>18:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'5'+'\n'+ Addon.getLocalizedString(32083))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time))+'\n'+Addon.getLocalizedString(32081)+'\n'+ Addon.getLocalizedString(32083))
         else:
-            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081)+'5', Addon.getLocalizedString(32083))
+            dp.update(0, Addon.getLocalizedString(32072)+ time.strftime("%H:%M:%S", time.gmtime(elapsed_time)),Addon.getLocalizedString(32081), Addon.getLocalizedString(32083))
     menu=[]
     better_look=Addon.getSetting('better_look')=='true'
+    
     links_data={}
     links_data['cached']=0
     links_data['un_cached']=0
@@ -7340,6 +7350,7 @@ def solve_vidcloud(f_url):
     logging.warning('Error vidcloud:'+str(e))
     pass
 def get_extra_art(id,tv_movie,tvdb_id):
+    time_to_save=int(Addon.getSetting("save_time"))
     try:
             all_logo=[]
             all_banner=[]
@@ -7347,7 +7358,8 @@ def get_extra_art(id,tv_movie,tvdb_id):
             all_clear_art=[]
             r_logo=''
             r_art=''
-            time_to_save=int(Addon.getSetting("save_time"))
+            
+            
             full_art= cache.get(get_more_meta, time_to_save, id,tv_movie,tvdb_id, table='pages') 
             
             if tv_movie=='tv':
@@ -8645,6 +8657,16 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
             return 0
    
 def clear_rd():
+    try:
+        resuaddon=xbmcaddon.Addon('script.module.resolveurl')
+        resuaddon.setSetting('RealDebridResolver_client_id','')
+        resuaddon.setSetting('RealDebridResolver_token','')
+        resuaddon.setSetting('RealDebridResolver_client_secret','')
+        resuaddon.setSetting('RealDebridResolver_refresh','')
+    
+    except Exception as e:
+        resuaddon=None
+        pass
     Addon.setSetting('rd.client_id','')
     Addon.setSetting('rd.auth','')
     Addon.setSetting('rd.refresh','')

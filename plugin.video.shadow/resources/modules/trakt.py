@@ -100,7 +100,10 @@ def manager(name, tmdb, tv_movie):
         dp = xbmcgui.DialogProgress()
         dp.create(Addon.getLocalizedString(32116)+'\n'+ Addon.getLocalizedString(32072)+'\n'+ '')
         dp.update(0)
-        post = {"movies": [{"ids": {"tmdb": tmdb}}]} if tv_movie == 'movie' else {"shows": [{"ids": {"tmdb": tmdb}}]}
+        if 'tt' in tmdb:
+            post = {"movies": [{"ids": {"imdb": tmdb}}]} if tv_movie == 'movie' else {"shows": [{"ids": {"imdb": tmdb}}]}
+        else:
+            post = {"movies": [{"ids": {"tmdb": tmdb}}]} if tv_movie == 'movie' else {"shows": [{"ids": {"tmdb": tmdb}}]}
 
         items = [(Addon.getLocalizedString(32188), '/sync/collection')]
         items += [(Addon.getLocalizedString(32189), '/sync/collection/remove')]

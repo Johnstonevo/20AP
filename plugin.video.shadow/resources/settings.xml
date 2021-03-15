@@ -147,7 +147,6 @@
 		<!--Movie Sources-->
 
 		<setting id="1337x" label="1337x" type="bool"  default="true" />
-		<setting id="7tor" label="7tor" type="bool"  default="true" />
 		<setting id="api" label="api" type="bool"  default="true" />
 		<setting id="bay" label="bay" type="bool"  default="true" />
 		<setting id="bitlord" label="bitlord" type="bool"  default="true" />
@@ -169,7 +168,6 @@
 		<setting id="sky2" label="sky2" type="bool"  default="true" />
 		<setting id="snow" label="snow" type="bool"  default="true" />
 		<setting id="sol" label="sol" type="bool"  default="true" />
-		<setting id="solaris" label="solaris [COLOR lightblue](Free)[/COLOR]" type="bool"  default="true" />
 		<setting id="stbay" label="stbay" type="bool"  default="true" />
 		<setting id="thd" label="thd" type="bool"  default="true" />
 		<setting id="torio" label="torio" type="bool"  default="true" />
@@ -177,8 +175,6 @@
 		<setting id="trpar" label="trpar" type="bool"  default="true" />
 		<setting id="tsdl" label="tsdl" type="bool"  default="true" />
 		<setting id="tse" label="tse" type="bool"  default="true" />
-		<setting id="wshd" label="wshd [COLOR lightblue](Free)[/COLOR]" type="bool"  default="true" />
-		<setting id="you" label="you [COLOR lightblue](Free)[/COLOR]" type="bool"  default="true" />
 		<setting id="yts" label="yts" type="bool"  default="true" />
 		<setting id="zg" label="zg" type="bool"  default="true" />
 
@@ -193,7 +189,6 @@
 		<!--TV Sources-->
 
 		<setting id="1337x_tv" label="1337x" type="bool"  default="true" />
-		<setting id="7tor_tv" label="7tor" type="bool"  default="true" />
 		<setting id="api_tv" label="api" type="bool"  default="true" />
 		<setting id="bay_tv" label="bay" type="bool"  default="true" />
 		<setting id="bitlord_tv" label="bitlord" type="bool"  default="true" />
@@ -215,7 +210,6 @@
 		<setting id="sky2_tv" label="sky2" type="bool"  default="true" />
 		<setting id="snow_tv" label="snow" type="bool"  default="true" />
 		<setting id="sol_tv" label="sol" type="bool"  default="true" />
-		<setting id="solaris_tv" label="solaris [COLOR lightblue](Free)[/COLOR]" type="bool"  default="true" />
 		<setting id="stbay_tv" label="stbay" type="bool"  default="true" />
 		<setting id="thd_tv" label="thd" type="bool"  default="true" />
 		<setting id="torio_tv" label="torio" type="bool"  default="true" />
@@ -223,8 +217,6 @@
 		<setting id="trpar_tv" label="trpar" type="bool"  default="true" />
 		<setting id="tsdl_tv" label="tsdl" type="bool"  default="true" />
 		<setting id="tse_tv" label="tse" type="bool"  default="true" />
-		<setting id="wshd_tv" label="wshd [COLOR lightblue](Free)[/COLOR]" type="bool"  default="true" />
-		<setting id="you_tv" label="you [COLOR lightblue](Free)[/COLOR]" type="bool"  default="true" />
 		<setting id="yts_tv" label="yts" type="bool"  default="true" />
 		<setting id="zg_tv" label="zg" type="bool"  default="true" />
 
