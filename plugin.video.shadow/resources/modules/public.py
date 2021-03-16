@@ -219,8 +219,12 @@ def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master
         if Addon.getSetting("stop_where")=='3':
             return 0
         all_ur=utf8_urlencode(params)
-        
-        u=sys.argv[0]+"?mode="+str(mode)+'&'+all_ur
+        plugin_link=False
+        if 'plugin://' in url:
+            u=url
+            plugin_link=True
+        else:   
+            u=sys.argv[0]+"?mode="+str(mode)+'&'+all_ur
         if Addon.getSetting("stop_where")=='4':
             return 0
         ok=True
@@ -420,7 +424,9 @@ def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master
         params['video_data']=all_v_data
        
         all_ur=utf8_urlencode(params)
-        u=u+'&'+all_ur
+        if not plugin_link:
+            
+            u=u+'&'+all_ur
         if Addon.getSetting("stop_where")=='9':
             return 0
         art = {}

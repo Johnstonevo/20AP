@@ -1,4 +1,11 @@
-﻿[COLOR yellow][B]v2.5.9[/B]
+﻿[COLOR yellow][B]v2.6.0[/B]
+* fixed multiple link selection in jen list.
+* fixed other addons shortcuts in jen list(such as plugin://...).
+* added new shadow plugins for jen lists (right now only tmdb ....).
+  (cannot use jen plugin).
+* fixed youtube wont play in jen.
+  
+[COLOR lightblue][B]v2.5.9[/B]
 * fixed traked manager for jen lists.
 * now shadow will work with Resolveurl RD auth. so if you auth. resolveurl or shadow all of shadow forks will work.
 

@@ -178,7 +178,7 @@
         </extension>
 </addon>
 
-<addon id="plugin.video.lazyf1" version="2021.0.0" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
+<addon id="plugin.video.lazyf1" version="2021.0.1" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.lazyf1.images" optional="false"/>
@@ -262,7 +262,7 @@
 
 <addon id="plugin.video.shadow"
 	   name="Shadow"
-	   version="2.5.9"
+	   version="2.6.1"
 	   provider-name="Darkness">
   <requires>
 
@@ -455,7 +455,7 @@ You can clone the project and host it in your own server.
     </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.8.6" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.8.9" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>

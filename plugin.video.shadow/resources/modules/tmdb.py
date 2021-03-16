@@ -217,7 +217,7 @@ def get_tmdb_data(new_name_array,html_g,fav_search_f,fav_servers_en,fav_servers,
                    
        #except:
            html=get_html(url).json()
-           
+           logging.warning(json.dumps(html))
            max_page=html['total_pages']
      
            all_res=html['total_results']

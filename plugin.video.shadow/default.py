@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import xbmcgui,xbmcaddon,time,base64
-import _strptime
+import _strptime,xbmcvfs
 __addon__ = xbmcaddon.Addon()
 Addon = xbmcaddon.Addon()
 #if Addon.getSetting("debug")=='true' and Addon.getSetting("check_time")=='true':
@@ -12,8 +12,12 @@ import xbmcaddon,os,xbmc,urllib,re,xbmcplugin,sys,logging
 elapsed_time = time.time() - start_time_start
 time_data.append(elapsed_time)
 __USERAGENT__ = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11'
-
-__cwd__ = xbmc.translatePath(__addon__.getAddonInfo('path'))
+KODI_VERSION = int(xbmc.getInfoLabel("System.BuildVersion").split('.', 1)[0])
+if KODI_VERSION<=18:
+    xbmc_tranlate_path=xbmc.translatePath
+else:
+    xbmc_tranlate_path=xbmcvfs.translatePath
+__cwd__ = xbmc_tranlate_path(__addon__.getAddonInfo('path'))
 addon_name=str(__addon__.getAddonInfo('name'))
 addon_id=__addon__.getAddonInfo('id')
 logging.warning('Addon name:'+addon_name)
@@ -33,7 +37,7 @@ global all_jen_links
 global from_seek
 from_seek=False
 all_jen_links=[]
-KODI_VERSION = int(xbmc.getInfoLabel("System.BuildVersion").split('.', 1)[0])
+
 play_status_rd_ext=''
 break_window_rd=False
 break_window=False
@@ -81,8 +85,8 @@ str_next=''
 list_index=999
 all_s_in=({},0,'','','')
 close_sources_now=0
-addonPath = xbmc.translatePath(Addon.getAddonInfo("path"))
-user_dataDir = xbmc.translatePath(Addon.getAddonInfo("profile"))
+addonPath = xbmc_tranlate_path(Addon.getAddonInfo("path"))
+user_dataDir = xbmc_tranlate_path(Addon.getAddonInfo("profile"))
 if not os.path.exists(user_dataDir):
      os.makedirs(user_dataDir)
 lang=xbmc.getLanguage(0)
@@ -2809,7 +2813,7 @@ class ContextMenu_new2(xbmcgui.WindowXMLDialog):
                     item[4]=item[4].replace(original_title_alt+' ','[COLOR yellow]'+original_title_alt+'[/COLOR]'+' ')
                     item[4]=item[4].replace(self.show_original_year,'[COLOR plum]'+self.show_original_year+'[/COLOR]')
                     #heb
-                    item[4]=item[4].replace(heb_name,'[COLOR yellow]'+heb_name+'[/COLOR]').replace(heb_name_wd,'[COLOR yellow]'+heb_name+'[/COLOR]')
+                    #item[4]=item[4].replace(heb_name,'[COLOR yellow]'+heb_name+'[/COLOR]').replace(heb_name_wd,'[COLOR yellow]'+heb_name+'[/COLOR]')
                   
                 supplay=item[4]
                
@@ -3593,7 +3597,7 @@ def main_menu(time_data):
     #dulpicate this line with your address
     #aa=addDir3('Name', 'Your Jen Address',189,'Iconimage','fanart','Description',search_db='Your Search db Address')
     #all_d.append(aa)
-    
+   
     aa=addDir3('Ghost New movies 1Click', 'http://thechains24.com/Ghost-Addon/ghostxmls/xmls1/series9/newm.xml',189,'https://www.wirelesshack.org/wp-content/uploads/2020/07/How-To-Install-Ghost-Kodi-Addon-2020.jpg','https://troypoint.com/wp-content/uploads/2020/07/ghost-kodi-addon.png','Ghost',search_db='')
     all_d.append(aa)
     if Addon.getSetting('debug')=='true':
@@ -3995,23 +3999,23 @@ def check_mass_hash(all_mag,items,rd,pr,ad,statistics,tv_movie,season_n,episode_
                     pass
 
 def load_resolveurl_libs():
-    path=xbmc.translatePath('special://home/addons/script.module.resolveurl/lib')
+    path=xbmc_tranlate_path('special://home/addons/script.module.resolveurl/lib')
     sys.path.append( path)
-    path=xbmc.translatePath('special://home/addons/script.module.six/lib')
+    path=xbmc_tranlate_path('special://home/addons/script.module.six/lib')
     sys.path.append( path)
-    path=xbmc.translatePath('special://home/addons/script.module.kodi-six/libs')
+    path=xbmc_tranlate_path('special://home/addons/script.module.kodi-six/libs')
     sys.path.append( path)
-    path1=xbmc.translatePath('special://home/addons/script.module.requests/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.requests/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.urllib3/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.urllib3/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.chardet/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.chardet/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.certifi/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.certifi/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.idna/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.idna/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.futures/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.futures/lib')
     sys.path.append( path1)
 
 def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_movie,dp,silent,start_time):
@@ -4031,7 +4035,7 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
     all_sources_crew=[]
     all_sources_fen=[]
     if Addon.getSetting('openscrapers')=='true':
-        #path=xbmc.translatePath('special://home/addons/script.module.openscrapers\lib')
+        #path=xbmc_tranlate_path('special://home/addons/script.module.openscrapers\lib')
         #sys.path.append( path)
         from openscrapers import sources
         sourceDict=sources()
@@ -4069,7 +4073,7 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
     #universal
     if Addon.getSetting('universal')=='true':
       
-        path3=xbmc.translatePath('special://home/addons/script.module.universalscrapers/lib')
+        path3=xbmc_tranlate_path('special://home/addons/script.module.universalscrapers/lib')
         sys.path.append( path3)
         
         
@@ -4092,13 +4096,13 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
         sys.path.remove(path3)
     if Addon.getSetting('the_crew')=='true':
         import pkgutil
-        path4=xbmc.translatePath('special://home/addons/script.module.simplejson/lib')
+        path4=xbmc_tranlate_path('special://home/addons/script.module.simplejson/lib')
         sys.path.append( path4)
-        path4=xbmc.translatePath('special://home/addons/script.module.thecrew/lib')
+        path4=xbmc_tranlate_path('special://home/addons/script.module.thecrew/lib')
         sys.path.append( path4)
         
         __addon__ = xbmcaddon.Addon('script.module.thecrew')
-        __cwd__ = xbmc.translatePath(__addon__.getAddonInfo('path'))
+        __cwd__ = xbmc_tranlate_path(__addon__.getAddonInfo('path'))
         sources_path=os.path.join(__cwd__,'lib','resources','lib','sources','sources')
         sources_path2=os.path.join(__cwd__,'lib','resources','lib','sources')
         logging.warning('sources_path:'+sources_path)
@@ -4150,9 +4154,9 @@ def get_other_scrapers(imdb,original_title,show_original_year,season,episode,tv_
             except:
                 pass
     if Addon.getSetting('fen')=='true':
-        #path=xbmc.translatePath('special://home/addons/script.module.openscrapers\lib')
+        #path=xbmc_tranlate_path('special://home/addons/script.module.openscrapers\lib')
         #sys.path.append( path)
-        path2=xbmc.translatePath('special://home/addons/script.module.fenomscrapers/lib')
+        path2=xbmc_tranlate_path('special://home/addons/script.module.fenomscrapers/lib')
         sys.path.append( path2)
         from fenomscrapers import sources
         sourceDict=sources()
@@ -6796,17 +6800,17 @@ time_data.append(elapsed_time)
 
 
 def get_google_subs(url):
-    path1=xbmc.translatePath('special://home/addons/script.module.requests/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.requests/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.urllib3/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.urllib3/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.chardet/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.chardet/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.certifi/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.certifi/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.idna/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.idna/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.futures/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.futures/lib')
     sys.path.append( path1)
     from resources.modules.xmlsub import xml2srt
     headers = {
@@ -6841,7 +6845,7 @@ def resolve_link_others(nm,url):
     f_link=''
     if 'FN-' in nm:
         nm=nm.replace('FN-','')
-        path=xbmc.translatePath('special://home/addons/script.module.fenomscrapers/lib')
+        path=xbmc_tranlate_path('special://home/addons/script.module.fenomscrapers/lib')
         sys.path.append( path)
         
         try:
@@ -6871,7 +6875,7 @@ def resolve_link_others(nm,url):
             return f_link
     if 'op-' in nm:
         nm=nm.replace('op-','')
-        path=xbmc.translatePath('special://home/addons/script.module.openscrapers/lib')
+        path=xbmc_tranlate_path('special://home/addons/script.module.openscrapers/lib')
         sys.path.append( path)
         
         try:
@@ -6896,19 +6900,19 @@ def resolve_link_others(nm,url):
         except:
             return f_link
     logging.warning('1')
-    path=xbmc.translatePath('special://home/addons/script.module.universalscrapers/lib')
+    path=xbmc_tranlate_path('special://home/addons/script.module.universalscrapers/lib')
     sys.path.append( path)
-    path1=xbmc.translatePath('special://home/addons/script.module.requests/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.requests/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.urllib3/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.urllib3/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.chardet/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.chardet/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.certifi/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.certifi/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.idna/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.idna/lib')
     sys.path.append( path1)
-    path1=xbmc.translatePath('special://home/addons/script.module.futures/lib')
+    path1=xbmc_tranlate_path('special://home/addons/script.module.futures/lib')
     sys.path.append( path1)
     logging.warning('2')
     if 'un-' in nm:
@@ -6935,13 +6939,13 @@ def resolve_link_others(nm,url):
        nm=nm.replace('cr-','')
        try:
         import pkgutil
-        path4=xbmc.translatePath('special://home/addons/script.module.simplejson/lib')
+        path4=xbmc_tranlate_path('special://home/addons/script.module.simplejson/lib')
         sys.path.append( path4)
-        path4=xbmc.translatePath('special://home/addons/script.module.thecrew/lib')
+        path4=xbmc_tranlate_path('special://home/addons/script.module.thecrew/lib')
         sys.path.append( path4)
         
         __addon__ = xbmcaddon.Addon('script.module.thecrew')
-        __cwd__ = xbmc.translatePath(__addon__.getAddonInfo('path'))
+        __cwd__ = xbmc_tranlate_path(__addon__.getAddonInfo('path'))
         sources_path=os.path.join(__cwd__,'lib','resources','lib','sources','sources')
         sources_path2=os.path.join(__cwd__,'lib','resources','lib','sources')
         logging.warning('sources_path:'+sources_path)
@@ -7042,7 +7046,7 @@ def getsubs( name, imdb, season, episode,saved_name):
             content = base64.b64decode(content['data'][0]['data'])
             content = gzip.GzipFile(fileobj=StringIO.StringIO(content)).read()
 
-            subtitle = xbmc.translatePath('special://temp/')
+            subtitle = xbmc_tranlate_path('special://temp/')
             subtitle = os.path.join(subtitle, 'TemporarySubs.%s.srt' % lang)
             logging.warning(subtitle)
             codepage = codePageDict.get(lang, '')
@@ -7272,7 +7276,7 @@ def download_subs(f_list,index):
         if KODI_VERSION>18:#kodi18
             content=content.decode()
         
-        subtitle = xbmc.translatePath('special://temp/')
+        subtitle = xbmc_tranlate_path('special://temp/')
         subtitle = os.path.join(subtitle, 'TemporarySubs.%s.srt' % lang)
 
         codepage = codePageDict.get(lang, '')
@@ -7631,11 +7635,11 @@ def resolve_google(url):
             
             #from resources.modules.google_solve import googledrive_resolve
             #link,q=googledrive_resolve(url)
-            path=xbmc.translatePath('special://home/addons/script.module.resolveurl/lib')
+            path=xbmc_tranlate_path('special://home/addons/script.module.resolveurl/lib')
             sys.path.append( path)
-            path=xbmc.translatePath('special://home/addons/script.module.six/lib')
+            path=xbmc_tranlate_path('special://home/addons/script.module.six/lib')
             sys.path.append( path)
-            path=xbmc.translatePath('special://home/addons/script.module.kodi-six/libs')
+            path=xbmc_tranlate_path('special://home/addons/script.module.kodi-six/libs')
             sys.path.append( path)
             import resolveurl
             link =resolveurl .HostedMediaFile (url =url ).resolve ()#line:2687
@@ -7689,6 +7693,12 @@ def show_new_window(tv_movie,id,season,episode):
     break_window=True
     break_window_rd=True
     logging.warning('break_window2:'+str(break_window))
+def resolve_youtube(url):
+    if url .endswith ('/'):#line:3026
+        url =url [:-1 ]#line:3027
+    y_id =url .split ('v=')[1 ]#line:3028
+    f_url ='plugin://plugin.video.youtube/play/?video_id='+y_id #line:3029
+    return f_url
 def play_link(name,url,iconimage,fanart,description,data,original_title,id,season,episode,show_original_year,dd,heb_name,prev_name='',has_alldd='false',nextup='false',video_data_exp={},all_dd=[],start_index=0,get_sources_nextup='false',all_w={},source='',tvdb_id=''):
    global play_status,break_window,play_status_rd_ext,break_window_rd
    break_window=False
@@ -7723,9 +7733,9 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
             
    if 'Jen_link' in url:
         url=url.replace('Jen_link','')
-        urls=url.split('$$$$')
+        urls=url.split('$$$$$')
         url=urls[1]
-        
+        logging.warning('Split:'+url)
         
         
         dd=[]
@@ -7882,12 +7892,21 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         if len(all_dd)==0:
             #all_dd.append((name,url,iconimage,fanart,description,data,id,season,episode,original_title,show_original_year,dd))
             load_resolveurl_libs()
-            import resolveurl
-            logging.warning('Resolveurl now:'+url)
-            oo_url=url
-            url =resolveurl .HostedMediaFile (url =url ).resolve ()#line:2687
-            if not url:
-                url=oo_url
+            if 'youtube' in url:
+                url=resolve_youtube(url)
+                O000O0000000O0O00 =xbmcgui .ListItem (path =url )#line:3054
+                O000O0000000O0O00 .setInfo (type ="Video",infoLabels ={"Title":(name )})#line:3055
+                xbmcplugin .setResolvedUrl (int (sys .argv [1 ]),True ,O000O0000000O0O00 )#line:3056
+                
+                return 0
+            else:
+                import resolveurl
+                logging.warning('Resolveurl now:'+url)
+                oo_url=url
+                
+                url =resolveurl .HostedMediaFile (url =url ).resolve ()#line:2687
+                if not url:
+                    url=oo_url
         for name,n_url,iconimage,fanart,description,data,id,season,episode,original_title,show_original_year,dd in all_dd:
             if url==n_url.replace('Direct_link$$$','').replace('resolveurl','').replace('resolveprime',''):
                 break
@@ -7970,7 +7989,7 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                                     logging.warning('Error kill:'+str(e))
                                     pass
                                
-                                _path = xbmc.translatePath("special://profile/addon_data/%s/cache" % Addon.getAddonInfo('id'))
+                                _path = xbmc_tranlate_path("special://profile/addon_data/%s/cache" % Addon.getAddonInfo('id'))
                               
                                 if os.path.exists(_path):
                                     counter=0
@@ -8086,13 +8105,21 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
                                 url_solved=solve_vidcloud(url_n)
                             else:
                                 
-                                load_resolveurl_libs()
                                 
-                                import resolveurl
-                                
-                                url_solved =resolveurl .HostedMediaFile (url =url_n ).resolve ()#line:2687
-                                if not url_solved:
-                                    url_solved=url_n
+                                if 'youtube' in url:
+                                    url=resolve_youtube(url)
+                                    O000O0000000O0O00 =xbmcgui .ListItem (path =url )#line:3054
+                                    O000O0000000O0O00 .setInfo (type ="Video",infoLabels ={"Title":(name )})#line:3055
+                                    xbmcplugin .setResolvedUrl (int (sys .argv [1 ]),True ,O000O0000000O0O00 )#line:3056
+                                    
+                                    return 0
+                                else:
+                                    load_resolveurl_libs()
+                                    import resolveurl
+                                    
+                                    url_solved =resolveurl .HostedMediaFile (url =url_n ).resolve ()#line:2687
+                                    if not url_solved:
+                                        url_solved=url_n
                             logging.warning(url_solved)
                     
                     if url_solved:
@@ -8250,9 +8277,9 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         
         if 'drive.google.com' in url and google_solved==False:
             '''
-            path=xbmc.translatePath('special://home/addons/script.module.resolveurl/lib')
+            path=xbmc_tranlate_path('special://home/addons/script.module.resolveurl/lib')
             sys.path.append( path)
-            path=xbmc.translatePath('special://home/addons/script.module.six/lib')
+            path=xbmc_tranlate_path('special://home/addons/script.module.six/lib')
             sys.path.append( path)
             import resolveurl
             link =resolveurl .HostedMediaFile (url =url ).resolve ()#line:2687
@@ -8910,7 +8937,7 @@ def get_tv_maze(url,original_image):
     #time_to_save=int(Addon.getSetting("save_time"))
     #all_d=cache.get(c_get_tv_maze, time_to_save, urls,original_image)
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
-def play_trailer(id,tv_movie):
+def play_trailer(id,tv_movie,plot):
     
 
     if tv_movie=='tv':
@@ -8968,7 +8995,12 @@ def play_trailer(id,tv_movie):
         
       #playback_url = 'plugin://plugin.video.youtube/?action=play_video&videoid=%s' % video_id
       item = xbmcgui.ListItem(path=playback_url)
-      xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, item)
+      logging.warning('plot::'+plot)
+      if plot=='play_now':
+        ok=xbmc.Player().play(playback_url,listitem=item,windowed=False)
+      else:
+      
+        xbmcplugin.setResolvedUrl(int(sys.argv[1]), True, item)
 def search_history(url,icon,fan):
     try:
         from sqlite3 import dbapi2 as database
@@ -11073,17 +11105,23 @@ def by_actor(url,icon,fan):
         aa.append(addDir3(items['name'],str(items['id']),73,icon,fanart,items['name']))
     aa.append(addDir3('[COLOR aqua][I]%s[/COLOR][/I]'%Addon.getLocalizedString(32145),str(int(url)+1),72,' ',' ','[COLOR aqua][I]%s[/COLOR][/I]'%Addon.getLocalizedString(32145)))
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),aa,len(aa))
-def actor_m(url):
-    
-    choise=[Addon.getLocalizedString(32099),Addon.getLocalizedString(32124)]
-    ret = xbmcgui.Dialog().select(Addon.getLocalizedString(32149), choise)
-    if ret!=-1:
-        if ret==0:
-         tv_mode='tv'
+def actor_m(url,plot):
+    logging.warning('plot:'+plot)
+    if plot=='shows' or plot=='movie':
+        if plot=='shows':
+            tv_mode='tv'
         else:
-         tv_mode='movie'
+            tv_mode='movie'
     else:
-      sys.exit()
+        choise=[Addon.getLocalizedString(32099),Addon.getLocalizedString(32124)]
+        ret = xbmcgui.Dialog().select(Addon.getLocalizedString(32149), choise)
+        if ret!=-1:
+            if ret==0:
+             tv_mode='tv'
+            else:
+             tv_mode='movie'
+        else:
+          sys.exit()
 
     if tv_mode=='movie':
        link='https://api.themoviedb.org/3/person/%s?api_key=1180357040a128da71b71716058f6c5c&append_to_response=credits&language=%s&sort_by=popularity.desc'%(url,lang)
@@ -11350,6 +11388,89 @@ def get_3d(url):
     all.append(aa)
     
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all,len(all))
+def tmdb_lists(id):
+    from resources.modules.tmdb import html_g_movie
+    url='http://api.themoviedb.org/3/list/%s?api_key=34142515d9d23817496eeb4ff1d223d0&language=%s&page=1'%(id,lang)
+    
+    x=get_html(url).json()
+    if 'tv' in url:
+        html_g=html_g_tv
+    else:
+        html_g=html_g_movie
+    aa=[]
+    i=[]
+    try:
+      if Addon.getSetting("trakt_access_token")!='' and Addon.getSetting("trakt_info")=='true':
+        from resources.modules.general import call_trakt
+        i = (call_trakt('/users/me/watched/movies'))
+    except Exception as e:
+        
+        i=[]
+    
+    all_movie_w=[]
+    for ids in i:
+      all_movie_w.append(str(ids['movie']['ids']['tmdb']))
+    for items in x['items']:
+        if items['media_type']=='movie':
+            new_name=items['title']
+            if items['poster_path']==None:
+                items['poster_path']=''
+            if items['backdrop_path']==None:
+                items['backdrop_path']=''
+                    
+            icon=domain_s+'image.tmdb.org/t/p/original/'+items['poster_path']
+            fan=domain_s+'image.tmdb.org/t/p/original/'+items['backdrop_path']
+            if 'release_date' in items:
+                year=str(items['release_date'].split("-")[0]) 
+            else:
+                year=''
+            original_name=items['original_title']
+            
+                
+            id=str(items['id'])
+            rating=items['vote_average']
+            isr='0'
+            genres_list= dict([(i['id'], i['name']) for i in html_g['genres'] \
+                            if i['name'] is not None])
+            try:genere = u' / '.join([genres_list[x] for x in items['genre_ids']])
+            except:genere=''
+            plot=items['overview']
+            watched='no'
+            if str(items['id']) in all_movie_w:
+               watched='yes'
+            mode=15
+        else:
+            new_name=items['name']
+            if items['poster_path']==None:
+                items['poster_path']=''
+            if items['backdrop_path']==None:
+                items['backdrop_path']=''
+                    
+            icon=domain_s+'image.tmdb.org/t/p/original/'+items['poster_path']
+            fan=domain_s+'image.tmdb.org/t/p/original/'+items['backdrop_path']
+            if 'release_date' in items:
+                year=str(items['release_date'].split("-")[0]) 
+            else:
+                year=''
+            original_name=items['original_name']
+            
+                
+            id=str(items['id'])
+            rating=items['vote_average']
+            isr='0'
+            genres_list= dict([(i['id'], i['name']) for i in html_g['genres'] \
+                            if i['name'] is not None])
+            try:genere = u' / '.join([genres_list[x] for x in items['genre_ids']])
+            except:genere=''
+            plot=items['overview']
+            watched='no'
+            
+            mode=16
+        aa.append(addDir3(new_name,url,mode,icon,fan,plot,data=year,original_title=original_name,id=id,rating=rating,heb_name=new_name,show_original_year=year,isr=isr,generes=genere,watched=watched))
+         
+    xbmcplugin .addDirectoryItems(int(sys.argv[1]),aa,len(aa))
+        
+    xbmcplugin.addSortMethod(int(sys.argv[1]), xbmcplugin.SORT_METHOD_VIDEO_YEAR)
 def collection_detials(id):
     
     from resources.modules.tmdb import html_g_movie
@@ -11964,8 +12085,16 @@ def get_keywords(url,icon,fan,dates):
 def populate_playlist(url,iconimage,o_fanart,search_db):
     x=get_html(url,headers=base_header).content()
     o_url=url
-    all_d=[]
     
+    all_d=[]
+    all_plugins=[]
+    plugin_dir = os.path.join(addonPath, 'resources', 'plugins')
+    for f in listdir(plugin_dir):
+        if isfile(join(plugin_dir, f)):
+            all_plugins.append(f.replace('.py','').replace('tmdb_jen','tmdb'))
+            
+    #all_plugins = [f.replace('.py','') for f in listdir(plugin_dir) if isfile(join(plugin_dir, f))]
+    sys.path.append( plugin_dir)
     regex='<dir>(.+?)</dir>'
     m=re.compile(regex,re.DOTALL).findall(x)
     
@@ -12003,13 +12132,12 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
             if '(' in itt:
                 itt=itt.split('(')[0]
             f_link_arr.append(itt)
-            
+        f_link=None
         if len(f_link_arr)>1:
             f_link='$$$$'.join(f_link_arr)
         elif len(f_link_arr)>0:
             f_link=f_link_arr[0]
-        else:
-            continue
+        
         
         regex='<thumbnail>(.+?)</thumbnail>'
         icon=re.compile(regex).findall(items)
@@ -12023,8 +12151,26 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
             fanart=o_fanart
         else:
             fanart=fanart[0]
-        aa=addDir3(title,f_link,189,icon,fanart,' ',data=year,original_title=title)
-        all_d.append(aa)
+        found_cat=False
+       
+        for itt in all_plugins:
+        
+            if '<%s>'%itt in items:
+                regex='<%s>(.+?)</%s>'%(itt,itt)
+                ur=re.compile(regex).findall(items)[0]
+                if itt=='tmdb':
+                    itt='tmdb_jen'
+                
+                impmodule = __import__(itt.replace('.py',''))
+                aa=impmodule.run(ur,lang,icon,fanart,title,title)
+                
+                all_d.append(aa)
+                found_cat=True
+                break
+                
+        if not found_cat and f_link:
+            aa=addDir3(title,f_link,189,icon,fanart,' ',data=year,original_title=title)
+            all_d.append(aa)
     
     regex='<item>(.+?)</item>'
     m=re.compile(regex,re.DOTALL).findall(x)
@@ -12100,7 +12246,7 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
             fanart=o_fanart
         else:
             fanart=fanart[0]
-        aa=addLink(title,'Jen_link'+url+'$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
+        aa=addLink(title,'Jen_link'+url+'$$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
         all_d.append(aa)
     regex='<plugin>(.+?)</plugin>'
     m=re.compile(regex,re.DOTALL).findall(x)
@@ -12163,6 +12309,7 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
     if len(search_db)>0:
         aa=addDir3('[COLOR lightblue][B]Search[/B][/COLOR]',o_url,191,icon,fanart,'Search',search_db=search_db)
         all_d.append(aa)
+    
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
 
 def play_list(name,url,iconimage,fanart,id,show_original_year,season,episode):
@@ -12504,7 +12651,7 @@ def search_jen_lists(url):
                     fanart=o_fanart
                 else:
                     fanart=fanart[0]
-                aa=addLink(title,'Jen_link'+url+'$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True,from_seek=True)
+                aa=addLink(title,'Jen_link'+url+'$$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True,from_seek=True)
                 all_d.append(aa)
         if '<plugin>' in x:
             regex='<plugin>(.+?)</plugin>'
@@ -12726,7 +12873,6 @@ except:
 
       
 
-            
 #html=cache.get(cfscrape_version,24, table='posters')
 elapsed_time = time.time() - start_time_start
 time_data.append(elapsed_time)
@@ -12858,7 +13004,7 @@ elif mode==20:
 elif mode==21:
     trakt_world()
 elif mode==25:
-    play_trailer(id,url)
+    play_trailer(id,url,description)
 elif mode==34:
     remove_from_trace(name,original_title,id,season,episode)
 elif mode==35:
@@ -12869,7 +13015,7 @@ elif mode==65:
 elif mode==72: 
     by_actor(url,iconimage,fanart)
 elif mode==73: 
-    actor_m(url)
+    actor_m(url,description)
 elif mode==74: 
     search_actor()
 elif mode==101:
@@ -12986,11 +13132,11 @@ elif mode==179:
     collection_detials(id)
 elif mode==180:
       try:
-        path=xbmc.translatePath('special://home/addons/script.module.resolveurl/lib')
+        path=xbmc_tranlate_path('special://home/addons/script.module.resolveurl/lib')
         sys.path.append( path)
-        path=xbmc.translatePath('special://home/addons/script.module.six/lib')
+        path=xbmc_tranlate_path('special://home/addons/script.module.six/lib')
         sys.path.append( path)
-        path=xbmc.translatePath('special://home/addons/script.module.kodi-six/libs')
+        path=xbmc_tranlate_path('special://home/addons/script.module.kodi-six/libs')
         sys.path.append( path)
         import resolveurl
         resolveurl.display_settings()
@@ -13013,11 +13159,14 @@ elif mode==187:
 elif mode==188:
     get_keywords(url,iconimage,fanart,dates)
 elif mode==189:
+   
     populate_playlist(url,iconimage,fanart,search_db)
 elif mode==190:
     play_list(name,url,iconimage,fanart,id,show_original_year,season,episode)
 elif mode==191:
     search_jen_lists(search_db)
+elif mode==192:
+    tmdb_lists(id)
 match=[]
 elapsed_time = time.time() - start_time_start
 time_data.append(elapsed_time)
