@@ -1,9 +1,22 @@
-﻿[COLOR yellow][B]v2.6.0[/B]
+﻿[COLOR yellow][B]v2.6.3[/B]
+* added Trakt plugin for jen.
+* fixed link quality/type in links selection window for jen.
+
+[COLOR lightblue][B]v2.6.2[/B]
+* fixed error in networks and studio.
+* fixed iconimage in some skins.
+* upgrade the jen support:
+  - support "message(".
+  - support non link lines.
+  - fixed the jen category in tv world error.
+  - added some more plugins: Airtable,all_sports_replays,arraki_air,imdburl,metacritic,temp4_movie,temp5_movie.
+    so that people will have abetter idea on how to build plugin for shadow.
+	
+[COLOR lightblue][B]v2.6.0[/B]
 * fixed multiple link selection in jen list.
 * fixed other addons shortcuts in jen list(such as plugin://...).
 * added new shadow plugins for jen lists (right now only tmdb ....).
   (cannot use jen plugin).
-* fixed youtube wont play in jen.
   
 [COLOR lightblue][B]v2.5.9[/B]
 * fixed traked manager for jen lists.

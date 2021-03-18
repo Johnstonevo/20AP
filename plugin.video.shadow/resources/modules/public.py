@@ -133,7 +133,7 @@ def addNolink( name, url,mode,isFolder,fanart='DefaultFolder.png', iconimage="De
             liz.setProperty("IsPlayable","false")
             liz.addContextMenuItems(menu_items, replaceItems=False)
             art = {}
-            art.update({'poster': iconimage})
+            art.update({'poster': iconimage,'icon': iconimage,'thumb': iconimage})
             liz.setArt(art)
             if dont_place:
                 return u,liz,False
@@ -394,7 +394,7 @@ def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master
                 pass
         
         art = {}
-        art.update({'poster': iconimage})
+        art.update({'poster': iconimage,'icon': iconimage,'thumb': iconimage})
         liz.setArt(art)
         video_data['title']=video_data['title'].replace("|",' ')
         video_data['plot']=video_data['plot'].replace("|",' ')
@@ -430,7 +430,7 @@ def addDir3(name,url,mode,iconimage,fanart,description,premired=' ',image_master
         if Addon.getSetting("stop_where")=='9':
             return 0
         art = {}
-        art.update({'poster': iconimage})
+        art.update({'poster': iconimage,'icon': iconimage,'thumb': iconimage})
         liz.setArt(art)
         #ok=xbmcplugin.addDirectoryItem(handle=int(sys.argv[1]),url=u,listitem=liz,isFolder=True)
         if (Addon.getSetting("one_click")=='true' and mode==15):
@@ -550,7 +550,7 @@ def addLink( name, url,mode,isFolder, iconimage,fanart,description,place_control
                     pass
           liz.setInfo(type="Video", infoLabels=video_data)
           art = {}
-          art.update({'poster': iconimage})
+          art.update({'poster': iconimage,'icon': iconimage,'thumb': iconimage})
           liz.setArt(art)
           liz.setProperty("IsPlayable","true")
           liz.setProperty( "Fanart_Image", fanart )

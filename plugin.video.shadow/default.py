@@ -3422,39 +3422,39 @@ def read_site_html(url_link):
     html=get_html(url_link)
     return html
 def tv_show_menu():
-    all=[]
+    all_d=[]
     import datetime
     now = datetime.datetime.now()
     aa=addDir3(Addon.getLocalizedString(32023),'tv',145,BASE_LOGO+'tracker.png',all_fanarts['32023'],'History')
     #Popular
     aa=addDir3(Addon.getLocalizedString(32012),'http://api.themoviedb.org/3/tv/popular?api_key=34142515d9d23817496eeb4ff1d223d0&language=%s&page=1'%lang,14,BASE_LOGO+'popular.png',all_fanarts['32013'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
 
     aa=addDir3(Addon.getLocalizedString(32013),'https://api.themoviedb.org/3/tv/on_the_air?api_key=34142515d9d23817496eeb4ff1d223d0&language=%s&page=1'%lang,14,BASE_LOGO+'on_air.png',all_fanarts['32013'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
     
     
     aa=addDir3(Addon.getLocalizedString(32014),'https://api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&language=en-US&sort_by=popularity.desc&first_air_date_year='+str(now.year)+'&timezone=America%2FNew_York&include_null_first_air_ates=false&language={0}&page=1'.format(lang),14,BASE_LOGO+'new_s.png',all_fanarts['32014'],'New Tv shows')
-    all.append(aa)
+    all_d.append(aa)
     #new episodes
     aa=addDir3(Addon.getLocalizedString(32015),'https://api.tvmaze.com/schedule',20,BASE_LOGO+'new_ep.png',all_fanarts['32015'],'New Episodes')
-    all.append(aa)
+    all_d.append(aa)
     #Genre
     aa=addDir3(Addon.getLocalizedString(32016),'http://api.themoviedb.org/3/genre/tv/list?api_key=34142515d9d23817496eeb4ff1d223d0&language=%s&page=1'%lang,18,BASE_LOGO+'genre.png',all_fanarts['32016'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
     #Years
     aa=addDir3(Addon.getLocalizedString(32017),'tv_years&page=1',14,BASE_LOGO+'years.png',all_fanarts['32017'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
     aa=addDir3(Addon.getLocalizedString(32018),'tv_years&page=1',101,BASE_LOGO+'networks.png',all_fanarts['32018'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
     aa=addDir3(Addon.getLocalizedString(32019),'advance_tv',14,BASE_LOGO+'content_s.png',all_fanarts['32019'],'Advance Content selection')
     
-    all.append(aa)
+    all_d.append(aa)
     #Search tv
     aa=addDir3(Addon.getLocalizedString(32020),'http://api.themoviedb.org/3/search/tv?api_key=34142515d9d23817496eeb4ff1d223d0&query=%s&language={0}&page=1'.format(lang),14,BASE_LOGO+'search.png',all_fanarts['32020'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
     aa=addDir3(Addon.getLocalizedString(32021),'tv',143,BASE_LOGO+'search.png',all_fanarts['32021'],'TMDB')
-    all.append(aa)
+    all_d.append(aa)
     
     try:
         from sqlite3 import dbapi2 as database
@@ -3485,18 +3485,22 @@ def tv_show_menu():
                url=base64.b64decode(url)
               
              aa=addLink('[I]%s[/I]'%Addon.getLocalizedString(32022), url,6,False,iconimage,fanart,description,data=show_original_year,original_title=original_title,season=season,episode=episode,tmdb=id,year=show_original_year,place_control=True)
-             all.append(aa)
+             all_d.append(aa)
        except  Exception as e:
          logging.warning(e)
          pass
          
     
     
+    #place your Jen playlist here:
+    #dulpicate this line with your address
+    #aa=addDir3('Name', 'Your Jen Address',189,'Iconimage','fanart','Description',search_db='Your Search db Address')
+    #all_d.append(aa)
     
     aa=addDir3(Addon.getLocalizedString(32023),'tv',145,BASE_LOGO+'tracker.png',all_fanarts['32023'],'History')
-    all.append(aa)
+    all_d.append(aa)
     
-    xbmcplugin .addDirectoryItems(int(sys.argv[1]),all,len(all))
+    xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
 def tv_neworks():
     all_d=[]
     if Addon.getSetting("order_networks")=='0':
@@ -3505,37 +3509,37 @@ def tv_neworks():
         order_by='vote_average.desc'
     elif Addon.getSetting("order_networks")=='1':
         order_by='first_air_date.desc'
-    aa=addDir3('[COLOR lightblue]Disney+[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=2739&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://lumiere-a.akamaihd.net/v1/images/image_308e48ed.png','https://allears.net/wp-content/uploads/2018/11/wonderful-world-of-animation-disneys-hollywood-studios.jpg','Disney'.decode('utf8'))
+    aa=addDir3('[COLOR lightblue]Disney+[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=2739&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://lumiere-a.akamaihd.net/v1/images/image_308e48ed.png','https://allears.net/wp-content/uploads/2018/11/wonderful-world-of-animation-disneys-hollywood-studios.jpg','Disney')
     all_d.append(aa)
-    aa=addDir3('[COLOR blue]Apple TV+[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=2552&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://ksassets.timeincuk.net/wp/uploads/sites/55/2019/03/Apple-TV-screengrab-920x584.png','https://www.apple.com/newsroom/videos/apple-tv-plus-/posters/Apple-TV-app_571x321.jpg.large.jpg','Apple'.decode('utf8'))
+    aa=addDir3('[COLOR blue]Apple TV+[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=2552&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://ksassets.timeincuk.net/wp/uploads/sites/55/2019/03/Apple-TV-screengrab-920x584.png','https://www.apple.com/newsroom/videos/apple-tv-plus-/posters/Apple-TV-app_571x321.jpg.large.jpg','Apple')
     all_d.append(aa)
-    aa=addDir3('[COLOR red]NetFlix[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=213&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://art.pixilart.com/705ba833f935409.png','https://i.ytimg.com/vi/fJ8WffxB2Pg/maxresdefault.jpg','NetFlix'.decode('utf8'))
+    aa=addDir3('[COLOR red]NetFlix[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=213&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://art.pixilart.com/705ba833f935409.png','https://i.ytimg.com/vi/fJ8WffxB2Pg/maxresdefault.jpg','NetFlix')
     all_d.append(aa)
-    aa=addDir3('[COLOR gray]HBO[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=49&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://filmschoolrejects.com/wp-content/uploads/2018/01/hbo-logo.jpg','https://www.hbo.com/content/dam/hbodata/brand/hbo-static-1920.jpg','HBO'.decode('utf8'))
+    aa=addDir3('[COLOR gray]HBO[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=49&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://filmschoolrejects.com/wp-content/uploads/2018/01/hbo-logo.jpg','https://www.hbo.com/content/dam/hbodata/brand/hbo-static-1920.jpg','HBO')
     all_d.append(aa)
-    aa=addDir3('[COLOR lightblue]CBS[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=16&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://cdn.freebiesupply.com/logos/large/2x/cbs-logo-png-transparent.png','https://tvseriesfinale.com/wp-content/uploads/2014/10/cbs40-590x221.jpg','HBO'.decode('utf8'))
+    aa=addDir3('[COLOR lightblue]CBS[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=16&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://cdn.freebiesupply.com/logos/large/2x/cbs-logo-png-transparent.png','https://tvseriesfinale.com/wp-content/uploads/2014/10/cbs40-590x221.jpg','HBO')
     all_d.append(aa)
-    aa=addDir3('[COLOR purple]SyFy[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=77&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://cdn.collider.com/wp-content/uploads/syfy-logo1.jpg','https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fewedit.files.wordpress.com%2F2017%2F05%2Fdefault.jpg&w=1100&c=sc&poi=face&q=85','SyFy'.decode('utf8'))
+    aa=addDir3('[COLOR purple]SyFy[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=77&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://cdn.collider.com/wp-content/uploads/syfy-logo1.jpg','https://imagesvc.timeincapp.com/v3/mm/image?url=https%3A%2F%2Fewedit.files.wordpress.com%2F2017%2F05%2Fdefault.jpg&w=1100&c=sc&poi=face&q=85','SyFy')
     all_d.append(aa)
-    aa=addDir3('[COLOR lightgreen]The CW[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=71&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://www.broadcastingcable.com/.image/t_share/MTU0Njg3Mjc5MDY1OTk5MzQy/tv-network-logo-cw-resized-bc.jpg','https://i2.wp.com/nerdbastards.com/wp-content/uploads/2016/02/The-CW-Banner.jpg','The CW'.decode('utf8'))
+    aa=addDir3('[COLOR lightgreen]The CW[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=71&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://www.broadcastingcable.com/.image/t_share/MTU0Njg3Mjc5MDY1OTk5MzQy/tv-network-logo-cw-resized-bc.jpg','https://i2.wp.com/nerdbastards.com/wp-content/uploads/2016/02/The-CW-Banner.jpg','The CW')
     all_d.append(aa)
-    aa=addDir3('[COLOR silver]ABC[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=2&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://logok.org/wp-content/uploads/2014/03/abc-gold-logo-880x660.png','https://i.ytimg.com/vi/xSOp4HJTxH4/maxresdefault.jpg','ABC'.decode('utf8'))
+    aa=addDir3('[COLOR silver]ABC[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=2&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://logok.org/wp-content/uploads/2014/03/abc-gold-logo-880x660.png','https://i.ytimg.com/vi/xSOp4HJTxH4/maxresdefault.jpg','ABC')
     all_d.append(aa)
-    aa=addDir3('[COLOR yellow]NBC[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=6&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://designobserver.com/media/images/mondrian/39684-NBC_logo_m.jpg','https://www.nbcstore.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/n/b/nbc_logo_black_totebagrollover.jpg','NBC'.decode('utf8'))
+    aa=addDir3('[COLOR yellow]NBC[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=6&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://designobserver.com/media/images/mondrian/39684-NBC_logo_m.jpg','https://www.nbcstore.com/media/catalog/product/cache/1/image/1000x/040ec09b1e35df139433887a97daa66f/n/b/nbc_logo_black_totebagrollover.jpg','NBC')
     all_d.append(aa)
-    aa=addDir3('[COLOR gold]AMAZON[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=1024&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png','https://cdn.images.express.co.uk/img/dynamic/59/590x/Amazon-Fire-TV-Amazon-Fire-TV-users-Amazon-Fire-TV-stream-Amazon-Fire-TV-Free-Dive-TV-channel-Amazon-Fire-TV-news-Amazon-1010042.jpg?r=1535541629130','AMAZON'.decode('utf8'))
+    aa=addDir3('[COLOR gold]AMAZON[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=1024&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://g-ec2.images-amazon.com/images/G/01/social/api-share/amazon_logo_500500._V323939215_.png','https://cdn.images.express.co.uk/img/dynamic/59/590x/Amazon-Fire-TV-Amazon-Fire-TV-users-Amazon-Fire-TV-stream-Amazon-Fire-TV-Free-Dive-TV-channel-Amazon-Fire-TV-news-Amazon-1010042.jpg?r=1535541629130','AMAZON')
     all_d.append(aa)
-    aa=addDir3('[COLOR green]hulu[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=453&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i1.wp.com/thetalkinggeek.com/wp-content/uploads/2012/03/hulu_logo_spiced-up.png?resize=300%2C225&ssl=1','https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi677r77IbeAhURNhoKHeXyB-AQjRx6BAgBEAU&url=https%3A%2F%2Fwww.hulu.com%2F&psig=AOvVaw0xW2rhsh4UPsbe8wPjrul1&ust=1539638077261645','hulu'.decode('utf8'))
+    aa=addDir3('[COLOR green]hulu[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=453&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i1.wp.com/thetalkinggeek.com/wp-content/uploads/2012/03/hulu_logo_spiced-up.png?resize=300%2C225&ssl=1','https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwi677r77IbeAhURNhoKHeXyB-AQjRx6BAgBEAU&url=https%3A%2F%2Fwww.hulu.com%2F&psig=AOvVaw0xW2rhsh4UPsbe8wPjrul1&ust=1539638077261645','hulu')
     all_d.append(aa)
-    aa=addDir3('[COLOR red]Showtime[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=67&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://res.cloudinary.com/wnotw/images/c_limit,w_1536,q_auto:best,f_auto/v1501788508/sci5cdawypsux61i9pyb/showtime-networks-logo','https://www.sho.com/site/image-bin/images/0_0_0/0_0_0_prm-ogseries_1280x640.jpg','showtime'.decode('utf8'))
+    aa=addDir3('[COLOR red]Showtime[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=67&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://res.cloudinary.com/wnotw/images/c_limit,w_1536,q_auto:best,f_auto/v1501788508/sci5cdawypsux61i9pyb/showtime-networks-logo','https://www.sho.com/site/image-bin/images/0_0_0/0_0_0_prm-ogseries_1280x640.jpg','showtime')
     all_d.append(aa)
-    aa=addDir3('[COLOR red]BBC One[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=4&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://lh3.googleusercontent.com/proxy/LnjjtuGk_PErC5iaReOcy6EEvwjT9wzlyZBKhQHconLsyHWdVn1NHa-Bz3E0_Dev0KV_yJtGyQTlHDwvvm3zW3i0NFSmQVim5_hYOeZ-jWpD1Zs','https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/BBC_One_HD.svg/800px-BBC_One_HD.svg.png','BBC'.decode('utf8'))
+    aa=addDir3('[COLOR red]BBC One[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=4&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://lh3.googleusercontent.com/proxy/LnjjtuGk_PErC5iaReOcy6EEvwjT9wzlyZBKhQHconLsyHWdVn1NHa-Bz3E0_Dev0KV_yJtGyQTlHDwvvm3zW3i0NFSmQVim5_hYOeZ-jWpD1Zs','https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/BBC_One_HD.svg/800px-BBC_One_HD.svg.png','BBC')
     all_d.append(aa)
-    aa=addDir3('[COLOR teal]BBC Two[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=332&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pbs.twimg.com/profile_images/1057914504321908736/06hkWvx__400x400.jpg','http://amirsaidani.co.uk/wp-content/uploads/2019/06/BBC_TWO_LOGO_ANIMATION.gif','BBC'.decode('utf8'))
+    aa=addDir3('[COLOR teal]BBC Two[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=332&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pbs.twimg.com/profile_images/1057914504321908736/06hkWvx__400x400.jpg','http://amirsaidani.co.uk/wp-content/uploads/2019/06/BBC_TWO_LOGO_ANIMATION.gif','BBC')
     all_d.append(aa)
-    aa=addDir3('[COLOR pink]BBC Three[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=3&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/BBC_Three_%282020%29.svg/1200px-BBC_Three_%282020%29.svg.png','https://ichef.bbci.co.uk/news/1024/media/images/81061000/jpg/_81061920_bbcthreelogo.jpg','BBC'.decode('utf8'))
+    aa=addDir3('[COLOR pink]BBC Three[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=3&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/BBC_Three_%282020%29.svg/1200px-BBC_Three_%282020%29.svg.png','https://ichef.bbci.co.uk/news/1024/media/images/81061000/jpg/_81061920_bbcthreelogo.jpg','BBC')
     all_d.append(aa)
-    aa=addDir3('[COLOR lightblue]ITV[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=9&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://sm.imgix.net/20/31/itv.jpg?w=1200&h=1200&auto=compress,format&fit=clip','https://www.imediaethics.org/wp-content/uploads/2018/11/SCfaQb9l_400x400-350x350.jpg','BBC'.decode('utf8'))
+    aa=addDir3('[COLOR lightblue]ITV[/COLOR]','https://'+'api.themoviedb.org/3/discover/tv?api_key=34142515d9d23817496eeb4ff1d223d0&with_networks=9&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://sm.imgix.net/20/31/itv.jpg?w=1200&h=1200&auto=compress,format&fit=clip','https://www.imediaethics.org/wp-content/uploads/2018/11/SCfaQb9l_400x400-350x350.jpg','BBC')
     all_d.append(aa)
     
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
@@ -3698,6 +3702,10 @@ def movie_world():
     aa=addDir3(Addon.getLocalizedString(32313),'0',187,BASE_LOGO+'base.png',all_fanarts['32313'],'3D')
     
     all_d.append(aa)
+    #place your Jen playlist here:
+    #dulpicate this line with your address
+    #aa=addDir3('Name', 'Your Jen Address',189,'Iconimage','fanart','Description',search_db='Your Search db Address')
+    #all_d.append(aa)
     
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
 
@@ -3711,41 +3719,41 @@ def movie_prodiction():
         order_by='first_air_date.desc'
     
     
-    aa=addDir3('[COLOR red]Marvel[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=7505&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','https://images-na.ssl-images-amazon.com/images/I/91YWN2-mI6L._SL1500_.jpg','Marvel'.decode('utf8'))
+    aa=addDir3('[COLOR red]Marvel[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=7505&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://yt3.ggpht.com/a-/AN66SAwQlZAow0EBMi2-tFht-HvmozkqAXlkejVc4A=s900-mo-c-c0xffffffff-rj-k-no','https://images-na.ssl-images-amazon.com/images/I/91YWN2-mI6L._SL1500_.jpg','Marvel')
     all_d.append(aa)
-    aa=addDir3('[COLOR lightblue]DC Studios[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=9993&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pmcvariety.files.wordpress.com/2013/09/dc-comics-logo.jpg?w=1000&h=563&crop=1','http://www.goldenspiralmedia.com/wp-content/uploads/2016/03/DC_Comics.jpg','DC Studios'.decode('utf8'))
+    aa=addDir3('[COLOR lightblue]DC Studios[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=9993&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pmcvariety.files.wordpress.com/2013/09/dc-comics-logo.jpg?w=1000&h=563&crop=1','http://www.goldenspiralmedia.com/wp-content/uploads/2016/03/DC_Comics.jpg','DC Studios')
     all_d.append(aa)
-    aa=addDir3('[COLOR lightgreen]Lucasfilm[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=1&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://fontmeme.com/images/lucasfilm-logo.png','https://i.ytimg.com/vi/wdYaG3o3bgE/maxresdefault.jpg','Lucasfilm'.decode('utf8'))
+    aa=addDir3('[COLOR lightgreen]Lucasfilm[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=1&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://fontmeme.com/images/lucasfilm-logo.png','https://i.ytimg.com/vi/wdYaG3o3bgE/maxresdefault.jpg','Lucasfilm')
     all_d.append(aa)
-    aa=addDir3('[COLOR yellow]Warner Bros.[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=174&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://looking.la/wp-content/uploads/2017/10/warner-bros.png','https://cdn.arstechnica.net/wp-content/uploads/2016/09/warner.jpg','SyFy'.decode('utf8'))
+    aa=addDir3('[COLOR yellow]Warner Bros.[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=174&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://looking.la/wp-content/uploads/2017/10/warner-bros.png','https://cdn.arstechnica.net/wp-content/uploads/2016/09/warner.jpg','SyFy')
     all_d.append(aa)
-    aa=addDir3('[COLOR blue]Walt Disney Pictures[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=2&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i.ytimg.com/vi/9wDrIrdMh6o/hqdefault.jpg','https://vignette.wikia.nocookie.net/logopedia/images/7/78/Walt_Disney_Pictures_2008_logo.jpg/revision/latest?cb=20160720144950','Walt Disney Pictures'.decode('utf8'))
+    aa=addDir3('[COLOR blue]Walt Disney Pictures[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=2&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i.ytimg.com/vi/9wDrIrdMh6o/hqdefault.jpg','https://vignette.wikia.nocookie.net/logopedia/images/7/78/Walt_Disney_Pictures_2008_logo.jpg/revision/latest?cb=20160720144950','Walt Disney Pictures')
     all_d.append(aa)
-    aa=addDir3('[COLOR skyblue]Pixar[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=3&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://elestoque.org/wp-content/uploads/2017/12/Pixar-lamp.png','https://wallpapercave.com/wp/GysuwJ2.jpg','Pixar'.decode('utf8'))
+    aa=addDir3('[COLOR skyblue]Pixar[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=3&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://elestoque.org/wp-content/uploads/2017/12/Pixar-lamp.png','https://wallpapercave.com/wp/GysuwJ2.jpg','Pixar')
     all_d.append(aa)
-    aa=addDir3('[COLOR deepskyblue]Paramount[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=4&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Paramount_Pictures_2010.svg/1200px-Paramount_Pictures_2010.svg.png','https://vignette.wikia.nocookie.net/logopedia/images/a/a1/Paramount_Pictures_logo_with_new_Viacom_byline.jpg/revision/latest?cb=20120311200405&format=original','Paramount'.decode('utf8'))
+    aa=addDir3('[COLOR deepskyblue]Paramount[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=4&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/en/thumb/4/4d/Paramount_Pictures_2010.svg/1200px-Paramount_Pictures_2010.svg.png','https://vignette.wikia.nocookie.net/logopedia/images/a/a1/Paramount_Pictures_logo_with_new_Viacom_byline.jpg/revision/latest?cb=20120311200405&format=original','Paramount')
     all_d.append(aa)
-    aa=addDir3('[COLOR burlywood]Columbia Pictures[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=5&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://static.tvtropes.org/pmwiki/pub/images/lady_columbia.jpg','https://vignette.wikia.nocookie.net/marveldatabase/images/1/1c/Columbia_Pictures_%28logo%29.jpg/revision/latest/scale-to-width-down/1000?cb=20141130063022','Columbia Pictures'.decode('utf8'))
+    aa=addDir3('[COLOR burlywood]Columbia Pictures[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=5&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://static.tvtropes.org/pmwiki/pub/images/lady_columbia.jpg','https://vignette.wikia.nocookie.net/marveldatabase/images/1/1c/Columbia_Pictures_%28logo%29.jpg/revision/latest/scale-to-width-down/1000?cb=20141130063022','Columbia Pictures')
     all_d.append(aa)
-    aa=addDir3('[COLOR powderblue]DreamWorks[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=7&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://www.dreamworksanimation.com/share.jpg','https://www.verdict.co.uk/wp-content/uploads/2017/11/DA-hero-final-final.jpg','DreamWorks'.decode('utf8'))
+    aa=addDir3('[COLOR powderblue]DreamWorks[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=7&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://www.dreamworksanimation.com/share.jpg','https://www.verdict.co.uk/wp-content/uploads/2017/11/DA-hero-final-final.jpg','DreamWorks')
     all_d.append(aa)
-    aa=addDir3('[COLOR lightsaltegray]Miramax[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=14&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://vignette.wikia.nocookie.net/disney/images/8/8b/1000px-Miramax_1987_Print_Logo.png/revision/latest?cb=20140902041428','https://i.ytimg.com/vi/4keXxB94PJ0/maxresdefault.jpg','Miramax'.decode('utf8'))
+    aa=addDir3('[COLOR lightsaltegray]Miramax[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=14&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://vignette.wikia.nocookie.net/disney/images/8/8b/1000px-Miramax_1987_Print_Logo.png/revision/latest?cb=20140902041428','https://i.ytimg.com/vi/4keXxB94PJ0/maxresdefault.jpg','Miramax')
     all_d.append(aa)
-    aa=addDir3('[COLOR gold]20th Century Fox[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=25&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pmcdeadline2.files.wordpress.com/2017/03/20th-century-fox-cinemacon1.jpg?w=446&h=299&crop=1','https://vignette.wikia.nocookie.net/simpsons/images/8/80/TCFTV_logo_%282013-%3F%29.jpg/revision/latest?cb=20140730182820','20th Century Fox'.decode('utf8'))
+    aa=addDir3('[COLOR gold]20th Century Fox[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=25&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pmcdeadline2.files.wordpress.com/2017/03/20th-century-fox-cinemacon1.jpg?w=446&h=299&crop=1','https://vignette.wikia.nocookie.net/simpsons/images/8/80/TCFTV_logo_%282013-%3F%29.jpg/revision/latest?cb=20140730182820','20th Century Fox')
     all_d.append(aa)
-    aa=addDir3('[COLOR bisque]Sony Pictures[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=34&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sony_Pictures_Television_logo.svg/1200px-Sony_Pictures_Television_logo.svg.png','https://vignette.wikia.nocookie.net/logopedia/images/2/20/Sony_Pictures_Digital.png/revision/latest?cb=20140813002921','Sony Pictures'.decode('utf8'))
+    aa=addDir3('[COLOR bisque]Sony Pictures[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=34&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sony_Pictures_Television_logo.svg/1200px-Sony_Pictures_Television_logo.svg.png','https://vignette.wikia.nocookie.net/logopedia/images/2/20/Sony_Pictures_Digital.png/revision/latest?cb=20140813002921','Sony Pictures')
     all_d.append(aa)
-    aa=addDir3('[COLOR navy]Lions Gate Films[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=35&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://image.wikifoundry.com/image/1/QXHyOWmjvPRXhjC98B9Lpw53003/GW217H162','https://vignette.wikia.nocookie.net/fanon/images/f/fe/Lionsgate.jpg/revision/latest?cb=20141102103150','Lions Gate Films'.decode('utf8'))
+    aa=addDir3('[COLOR navy]Lions Gate Films[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=35&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'http://image.wikifoundry.com/image/1/QXHyOWmjvPRXhjC98B9Lpw53003/GW217H162','https://vignette.wikia.nocookie.net/fanon/images/f/fe/Lionsgate.jpg/revision/latest?cb=20141102103150','Lions Gate Films')
     all_d.append(aa)
-    aa=addDir3('[COLOR beige]Orion Pictures[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=41&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i.ytimg.com/vi/43OehM_rz8o/hqdefault.jpg','https://i.ytimg.com/vi/g58B0aSIB2Y/maxresdefault.jpg','Lions Gate Films'.decode('utf8'))
+    aa=addDir3('[COLOR beige]Orion Pictures[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=41&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i.ytimg.com/vi/43OehM_rz8o/hqdefault.jpg','https://i.ytimg.com/vi/g58B0aSIB2Y/maxresdefault.jpg','Lions Gate Films')
     all_d.append(aa)
-    aa=addDir3('[COLOR yellow]MGM[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=21&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pbs.twimg.com/profile_images/958755066789294080/L9BklGz__400x400.jpg','https://assets.entrepreneur.com/content/3x2/2000/20150818171949-metro-goldwun-mayer-trade-mark.jpeg','MGM'.decode('utf8'))
+    aa=addDir3('[COLOR yellow]MGM[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=21&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://pbs.twimg.com/profile_images/958755066789294080/L9BklGz__400x400.jpg','https://assets.entrepreneur.com/content/3x2/2000/20150818171949-metro-goldwun-mayer-trade-mark.jpeg','MGM')
     all_d.append(aa)
-    aa=addDir3('[COLOR gray]New Line Cinema[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=12&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/en/thumb/0/04/New_Line_Cinema.svg/1200px-New_Line_Cinema.svg.png','https://vignette.wikia.nocookie.net/theideas/images/a/aa/New_Line_Cinema_logo.png/revision/latest?cb=20180210122847','New Line Cinema'.decode('utf8'))
+    aa=addDir3('[COLOR gray]New Line Cinema[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=12&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://upload.wikimedia.org/wikipedia/en/thumb/0/04/New_Line_Cinema.svg/1200px-New_Line_Cinema.svg.png','https://vignette.wikia.nocookie.net/theideas/images/a/aa/New_Line_Cinema_logo.png/revision/latest?cb=20180210122847','New Line Cinema')
     all_d.append(aa)
-    aa=addDir3('[COLOR darkblue]Gracie Films[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=18&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i.ytimg.com/vi/q_slAJmZBeQ/hqdefault.jpg','https://i.ytimg.com/vi/yGofbuJTb4g/maxresdefault.jpg','Gracie Films'.decode('utf8'))
+    aa=addDir3('[COLOR darkblue]Gracie Films[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=18&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://i.ytimg.com/vi/q_slAJmZBeQ/hqdefault.jpg','https://i.ytimg.com/vi/yGofbuJTb4g/maxresdefault.jpg','Gracie Films')
     all_d.append(aa)
-    aa=addDir3('[COLOR goldenrod]Imagine Entertainment[/COLOR]'.decode('utf8'),'https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=23&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://s3.amazonaws.com/fs.goanimate.com/files/thumbnails/movie/2813/1661813/9297975L.jpg','https://www.24spoilers.com/wp-content/uploads/2004/06/Imagine-Entertainment-logo.jpg','Imagine Entertainment'.decode('utf8'))
+    aa=addDir3('[COLOR goldenrod]Imagine Entertainment[/COLOR]','https://'+'api.themoviedb.org/3/discover/movie?api_key=34142515d9d23817496eeb4ff1d223d0&with_companies=23&language={0}&sort_by={1}&timezone=America%2FNew_York&include_null_first_air_dates=false&page=1'.format(lang,order_by),14,'https://s3.amazonaws.com/fs.goanimate.com/files/thumbnails/movie/2813/1661813/9297975L.jpg','https://www.24spoilers.com/wp-content/uploads/2004/06/Imagine-Entertainment-logo.jpg','Imagine Entertainment')
     all_d.append(aa)
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
 def adjusted_datetime(string=False, dt=False):
@@ -5958,8 +5966,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
                     name,url,iconimage,fanart,description,data,original_title,id,season,episode,show_original_year,video_data_exp,all_w,use_filter=all_p_data[0]
                     str_next='RunPlugin("%s?name=%s&url=%s&iconimage=%s&fanart=%s&description=%s&data=%s&original_title=%s&id=%s&season=%s&episode=%s&show_original_year=%s&video_data_exp=%s&all_w=%s&use_filter=false&mode=15&heb_name=%s&tmdbid=%s")'%(sys.argv[0],que(name),'www',iconimage,fanart,que(description),data,que(original_title),id,season,episode,show_original_year,que(video_data_exp),que(all_w),heb_name,tmdbid)
                     #xbmc.executebuiltin("Dialog.Close(busydialog)")
-               
-                    xbmc.executebuiltin(str_next.encode('utf-8'))
+                    if KODI_VERSION<=18:
+                        xbmc.executebuiltin(str_next.encode('utf-8'))
+                    else:
+                        xbmc.executebuiltin(str_next)
                     
                     return 0
                 if name=='open_rejected':
@@ -5967,7 +5977,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
                     str_next='RunPlugin("%s?name=%s&url=%s&iconimage=%s&fanart=%s&description=%s&data=%s&original_title=%s&id=%s&season=%s&episode=%s&show_original_year=%s&video_data_exp=%s&all_w=%s&use_rejected=false&mode=15&heb_name=%s&tmdbid=%s")'%(sys.argv[0],que(name),'www',iconimage,fanart,que(description),data,que(original_title),id,season,episode,show_original_year,que(video_data_exp),que(all_w),heb_name,tmdbid)
                     #xbmc.executebuiltin("Dialog.Close(busydialog)")
                  
-                    xbmc.executebuiltin(str_next.encode('utf-8'))
+                    if KODI_VERSION<=18:
+                        xbmc.executebuiltin(str_next.encode('utf-8'))
+                    else:
+                        xbmc.executebuiltin(str_next)
                     
                     return 0
                 if name=='open_collection':
@@ -5975,7 +5988,10 @@ def get_sources(name,url,iconimage,fanart,description,data,original_title,id,sea
                     str_next='Container.update("%s?name=%s&url=%s&iconimage=%s&fanart=%s&description=%s&data=%s&original_title=%s&id=%s&season=%s&episode=%s&show_original_year=%s&video_data_exp=%s&all_w=%s&use_rejected=false&mode=179&heb_name=%s&tmdbid=%s")'%(sys.argv[0],que(name),'www',iconimage,fanart,que(description),data,que(original_title),id_col,season,episode,show_original_year,que(video_data_exp),que(all_w),heb_name,tmdbid)
                     #xbmc.executebuiltin("Dialog.Close(busydialog)")
                   
-                    xbmc.executebuiltin(str_next.encode('utf-8'))
+                    if KODI_VERSION<=18:
+                        xbmc.executebuiltin(str_next.encode('utf-8'))
+                    else:
+                        xbmc.executebuiltin(str_next)
                     s=stop_play()
                     if s=='forceexit':
                         sys.exit(1)
@@ -7697,16 +7713,26 @@ def resolve_youtube(url):
     if url .endswith ('/'):#line:3026
         url =url [:-1 ]#line:3027
     y_id =url .split ('v=')[1 ]#line:3028
+    if '&' in y_id:
+        y_id=y_id.split('&')[0]
     f_url ='plugin://plugin.video.youtube/play/?video_id='+y_id #line:3029
     return f_url
+def resolve_meta(url):
+    x=get_html(url,headers=base_header).content()
+    regex='data-mcvideourl="(.+?)"'
+    return re.compile(regex).findall(x)[0]
 def play_link(name,url,iconimage,fanart,description,data,original_title,id,season,episode,show_original_year,dd,heb_name,prev_name='',has_alldd='false',nextup='false',video_data_exp={},all_dd=[],start_index=0,get_sources_nextup='false',all_w={},source='',tvdb_id=''):
    global play_status,break_window,play_status_rd_ext,break_window_rd
+   if 'youtu.be' in url:
+        url=get_html(url).geturl()
    break_window=False
    break_window_rd=False
    play_status=''
    playlist = xbmc.PlayList(xbmc.PLAYLIST_VIDEO)
    playlist.clear()
-   logging.warning(url)
+   logging.warning('p_link:'+url)
+   if 'www.metacritic.com' in url:
+        url=resolve_meta(url)
    if 'tt' in id:
         try:
          url_t='https://'+'api.themoviedb.org/3/find/%s?api_key=34142515d9d23817496eeb4ff1d223d0&external_source=imdb_id&language=%s'%(id,lang)
@@ -7730,12 +7756,12 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         except Exception as e:
             logging.warning('error in getting tmdb:'+str(e))
             pass
-            
+   jen_addon=False
    if 'Jen_link' in url:
         url=url.replace('Jen_link','')
         urls=url.split('$$$$$')
         url=urls[1]
-        logging.warning('Split:'+url)
+        jen_addon=True
         
         
         dd=[]
@@ -7766,14 +7792,21 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         urls=url.split('$$$$')
         choise=[]
         for ur in urls:
-            uri = urp(ur.replace('Direct_link$$$resolveurl',''))
-            choise.append(uri.netloc)
-        logging.warning('urls::::')
-        logging.warning(urls)
-        logging.warning(choise)
+            logging.warning('ur:'+ur)
+            if '(' in ur :
+                ur_s=ur.split('(')[0]
+                ur_p='('+ur.split('(')[1]+' '
+            else:
+                ur_s=ur
+                ur_p=''
+            uri = urp(ur_s.replace('Direct_link$$$resolveurl',''))
+            choise.append('[COLOR khaki]'+ur_p.replace('%20','')+'[/COLOR]'+uri.netloc)
+            
+
         ret = xbmcgui.Dialog().select("Choose link", choise)
         if ret!=-1:
             url=urls[ret]
+            
         else:
             s=stop_play()
             if s=='forceexit':
@@ -7781,8 +7814,9 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
             else:
                 return 0
         
+   if '(' in url and jen_addon:
+        url=url.split('(')[0]
    
-   logging.warning('original_title::'+original_title)
    from resources.modules.general import post_trakt
    from resources.modules import real_debrid,premiumize
    from resources.modules import all_debrid
@@ -7889,6 +7923,7 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
         start_index=0
         counter_index=0
         url=url.replace('resolveurl','').replace('resolveprime','')
+        
         if len(all_dd)==0:
             #all_dd.append((name,url,iconimage,fanart,description,data,id,season,episode,original_title,show_original_year,dd))
             load_resolveurl_libs()
@@ -8133,7 +8168,16 @@ def play_link(name,url,iconimage,fanart,description,data,original_title,id,seaso
             counter_index+=1
         if Addon.getSetting('new_play_window')=='false':
             dp.close()
-    
+    else:
+        logging.warning('Found:::'+url)
+        if 'youtube' in url:
+                url=resolve_youtube(url)
+                logging.warning('Found2:::'+url)
+                O000O0000000O0O00 =xbmcgui .ListItem (path =url )#line:3054
+                O000O0000000O0O00 .setInfo (type ="Video",infoLabels ={"Title":(name )})#line:3055
+                xbmcplugin .setResolvedUrl (int (sys .argv [1 ]),True ,O000O0000000O0O00 )#line:3056
+                
+                return 0
     if 'Resolve$$$' in url:
         logging.warning(url)
         rd = real_debrid.RealDebrid()
@@ -12083,6 +12127,7 @@ def get_keywords(url,icon,fan,dates):
         all_d.append(aa)
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
 def populate_playlist(url,iconimage,o_fanart,search_db):
+    logging.warning(url)
     x=get_html(url,headers=base_header).content()
     o_url=url
     
@@ -12091,10 +12136,131 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
     plugin_dir = os.path.join(addonPath, 'resources', 'plugins')
     for f in listdir(plugin_dir):
         if isfile(join(plugin_dir, f)):
-            all_plugins.append(f.replace('.py','').replace('tmdb_jen','tmdb'))
+            all_plugins.append(f.replace('.py','').replace('tmdb_jen','tmdb').replace('trakt_jen','trakt'))
             
     #all_plugins = [f.replace('.py','') for f in listdir(plugin_dir) if isfile(join(plugin_dir, f))]
     sys.path.append( plugin_dir)
+    
+    regex='<((?:item|dir|plugin))>(.+?)</(?:item|dir|plugin)>'
+    m=re.compile(regex,re.DOTALL).findall(x)
+    
+    for type_record,items in m:
+        
+        if type_record=='item':
+            added_link='Direct_link$$$resolveurl'
+        else:
+            added_link=''
+        regex='<imdb>(.+?)</imdb>'
+        imdb_id=re.compile(regex).findall(items)
+        if len(imdb_id)==0:
+            imdb_id=''
+        else:
+            imdb_id=imdb_id[0]
+        regex='<title>(.+?)</title>'
+        title=re.compile(regex).findall(items)
+        if len(title)==0:
+            regex='<name>(.+?)</name>'
+            title=re.compile(regex).findall(items)
+            if len(title)==0:
+                title=''
+            else:
+                title=title[0]
+        else:
+            title=title[0]
+        
+        regex='<year>(.+?)</year>'
+        year=re.compile(regex).findall(items)
+        if len(year)==0:
+            year=''
+        else:
+            year=year[0]
+        regex='<season>(.+?)</season>'
+        season=re.compile(regex).findall(items)
+        if len(season)==0:
+            season=' '
+        else:
+            season=season[0]
+        regex='<episode>(.+?)</episode>'
+        episode=re.compile(regex).findall(items)
+        if len(episode)==0:
+            episode=' '
+        else:
+            episode=episode[0]
+        
+        regex='<sublink>(.+?)</sublink>'
+        links=re.compile(regex).findall(items)
+        f_link_arr=[]
+        
+        for itt in links:
+            
+            f_link_arr.append(added_link+itt)
+        
+        regex='<link>(.+?)</link>'
+        links=re.compile(regex).findall(items)
+        for itt in links:
+            
+            f_link_arr.append(added_link+itt)
+        f_link=False
+        if len(f_link_arr)>1:
+            f_link='$$$$'.join(f_link_arr)
+        elif len(f_link_arr)>0:
+            f_link=f_link_arr[0]
+        
+        
+        regex='<thumbnail>(.+?)</thumbnail>'
+        icon=re.compile(regex).findall(items)
+        if len(icon)==0:
+            icon=iconimage
+        else:
+            icon=icon[0]
+        regex='<fanart>(.+?)</fanart>'
+        fanart=re.compile(regex).findall(items)
+        if len(fanart)==0:
+            fanart=o_fanart
+        else:
+            fanart=fanart[0]
+        found_cat=False
+       
+        for itt in all_plugins:
+            
+            if '<%s>'%itt in items:
+                regex='<%s>(.+?)</%s>'%(itt,itt)
+                ur=re.compile(regex).findall(items)[0]
+                if itt=='tmdb':
+                    itt='tmdb_jen'
+                if itt=='trakt':
+                    itt='trakt_jen'
+                impmodule = __import__(itt.replace('.py',''))
+                aa=impmodule.run(ur,lang,icon,fanart,title,title)
+                
+                all_d.append(aa)
+                found_cat=True
+                break
+                
+        if type_record=='dir':
+            if not found_cat and f_link:
+                if 'message' in f_link:
+                    aa=addNolink(title, f_link,194,False,fanart=fanart, iconimage=icon,plot=' ',dont_place=True)
+                
+                    all_d.append(aa)
+                else:
+                    aa=addDir3(title,f_link,189,icon,fanart,' ',data=year,original_title=title)
+                    all_d.append(aa)
+        else:
+            if not f_link:
+                
+                aa=addNolink(title, 'www',99999,False,fanart=fanart, iconimage=icon,plot=' ',dont_place=True)
+                
+                all_d.append(aa)
+            else:
+                if type_record=='item':
+                    lk='Jen_link'+url+'$$$$$'+f_link
+                else:
+                    lk=f_link
+                aa=addLink(title,lk,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
+                all_d.append(aa)
+            
+    '''
     regex='<dir>(.+?)</dir>'
     m=re.compile(regex,re.DOTALL).findall(x)
     
@@ -12171,7 +12337,7 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
         if not found_cat and f_link:
             aa=addDir3(title,f_link,189,icon,fanart,' ',data=year,original_title=title)
             all_d.append(aa)
-    
+        
     regex='<item>(.+?)</item>'
     m=re.compile(regex,re.DOTALL).findall(x)
     for items in m:
@@ -12192,6 +12358,7 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
                 title=title[0]
         else:
             title=title[0]
+        
         regex='<year>(.+?)</year>'
         year=re.compile(regex).findall(items)
         if len(year)==0:
@@ -12226,13 +12393,12 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
             if '(' in itt:
                 itt=itt.split('(')[0]
             f_link_arr.append('Direct_link$$$resolveurl'+itt)
-        
+        f_link=False
         if len(f_link_arr)>1:
             f_link='$$$$'.join(f_link_arr)
         elif len(f_link_arr)>0:
             f_link=f_link_arr[0]
-        else:
-            continue
+        
         
         regex='<thumbnail>(.+?)</thumbnail>'
         icon=re.compile(regex).findall(items)
@@ -12246,8 +12412,14 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
             fanart=o_fanart
         else:
             fanart=fanart[0]
-        aa=addLink(title,'Jen_link'+url+'$$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
-        all_d.append(aa)
+        if not f_link:
+            
+            aa=addNolink(title, 'www',99999,False,fanart=fanart, iconimage=icon,plot=' ',dont_place=True)
+            
+            all_d.append(aa)
+        else:
+            aa=addLink(title,'Jen_link'+url+'$$$$$'+f_link,6,False,icon,fanart,' ',data=year,original_title=title,tmdb=imdb_id,year=year,season=season,episode=episode,place_control=True)
+            all_d.append(aa)
     regex='<plugin>(.+?)</plugin>'
     m=re.compile(regex,re.DOTALL).findall(x)
     
@@ -12306,11 +12478,13 @@ def populate_playlist(url,iconimage,o_fanart,search_db):
             fanart=fanart[0]
         aa=addLink(title,f_link,6,False,icon,fanart,' ',data=year,original_title=title,year=year,place_control=True)
         all_d.append(aa)
+    '''
     if len(search_db)>0:
         aa=addDir3('[COLOR lightblue][B]Search[/B][/COLOR]',o_url,191,icon,fanart,'Search',search_db=search_db)
         all_d.append(aa)
     
     xbmcplugin .addDirectoryItems(int(sys.argv[1]),all_d,len(all_d))
+    
 
 def play_list(name,url,iconimage,fanart,id,show_original_year,season,episode):
     imdb_id=id
@@ -13167,6 +13341,25 @@ elif mode==191:
     search_jen_lists(search_db)
 elif mode==192:
     tmdb_lists(id)
+elif mode==193:
+    try:
+        id=unque(id)
+    except:
+        pass
+    url=url.replace(' ','%20')
+    id=id.replace(' ','%20')
+    plugin_dir = os.path.join(addonPath, 'resources', 'plugins')
+    
+    sys.path.append( plugin_dir)
+    impmodule = __import__(url.replace('.py',''))
+    aa=impmodule.next_level(url,iconimage,fanart,description,name,id)
+elif mode==194:
+    logging.warning(url)
+    furl=re.compile('message\((.+?)\)').findall(url)[0]
+    
+    x=get_html(furl).content()
+    showText(name,x)
+    
 match=[]
 elapsed_time = time.time() - start_time_start
 time_data.append(elapsed_time)

@@ -894,9 +894,10 @@ def get_tmdb_data(ur_f,with_auth,html_g_tv,html_g_m,items_pre=None):
         trd_response={}
         if not items_pre:
             responce=call_trakt(ur_f,with_auth=with_auth)
-        
             
             
+            if 'cast' in responce:
+                    responce=responce['cast']
             for items in responce:
              
               tvdb_id=None
@@ -913,7 +914,8 @@ def get_tmdb_data(ur_f,with_auth,html_g_tv,html_g_m,items_pre=None):
                  slug = 'tv'
                  html_g=html_g_tv
               
-                
+              
+                        
               if 'person' in items:
                 nm=items['person']['name']
                 link='https://api.themoviedb.org/3/person/%s?api_key=1180357040a128da71b71716058f6c5c&append_to_response=credits,images&language=%s&sort_by=popularity.desc'%(str(items['person']['ids']['tmdb']),lang)
