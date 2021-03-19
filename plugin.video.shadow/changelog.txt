@@ -1,4 +1,8 @@
-﻿[COLOR yellow][B]v2.6.3[/B]
+﻿[COLOR yellow][B]v2.6.5[/B]
+* fix search in jen error.
+* fix magnet links not showing in selection in Jen.
+
+[COLOR lightblue][B]v2.6.3[/B]
 * added Trakt plugin for jen.
 * fixed link quality/type in links selection window for jen.
 
