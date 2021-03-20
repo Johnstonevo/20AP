@@ -4248,6 +4248,7 @@ def get_all_files(source_dir):
 def c_get_sources(name,data,original_title,id,season,episode,show_original_year,heb_name,test_mode=False,selected_scrapers='',tvdb_id='',server_test=False):
    global all_other_sources,all_s_in,global_result,stop_window,once_fast_play,all_other_sources_uni
    global silent,sources_searching,po_watching,full_stats,all_hased
+   dp=[]
    if not silent:
         dp = xbmcgui . DialogProgress ( )
         if KODI_VERSION>18:
