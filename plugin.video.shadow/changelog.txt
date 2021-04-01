@@ -1,4 +1,8 @@
-﻿[COLOR yellow][B]v2.6.6[/B]
+﻿[COLOR yellow][B]v2.6.7[/B]
+* fixed trailer play.
+* fixed keywords movies.
+* added and fixed some scrapers.
+[COLOR lightblue][B]v2.6.6[/B]
 * fixed nextup.
 [COLOR lightblue][B]v2.6.5[/B]
 * fix search in jen error.
