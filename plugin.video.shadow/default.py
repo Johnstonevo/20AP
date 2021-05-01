@@ -4349,8 +4349,12 @@ def c_get_sources(name,data,original_title,id,season,episode,show_original_year,
        if is_pkg: 
             continue
         
-       
-       module = loader.find_module(items).load_module(items)
+       try:
+        module = loader.find_module(items).load_module(items)
+       except Exception as e:
+           logging.warning('Error in scraper:'+items)
+           logging.warning(e)
+           continue
        items=items+'.py'
     
        
