@@ -1,4 +1,4 @@
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.5">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.0.4">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
@@ -15,7 +15,7 @@
 	<extension library="service.py" point="xbmc.service" start="startup" />
 	<extension library="resources/lib/" point="xbmc.python.module" /> 
 	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<reuselanguageinvoker>true</reuselanguageinvoker>
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found</description>
 		<platform>all</platform>
@@ -23,7 +23,7 @@
 		<forum />
 		<website>https://github.com/123Venom/plugin.video.venom</website>
 		<source>https://github.com/123Venom/plugin.video.venom</source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -32,18 +32,27 @@
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.5 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed ampersand sign in news to be encoded.  Sorry about that
-    folks, simply forgot.[/I]
-[B][COLOR red]Update - v4.4.4 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Note TMDBHelper player files have been updated.  Be sure
-    to update via the TMDBHelper settings.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed TMDBHelper playback of library files(.strm) when
-    TMDBHelper is set to "Automatically play local files".[/I]
-[COLOR yellow]--[/COLOR][I] Few tweaks to some annoying folder and file names used for
-    library integration. Ex. "&amp;" was replaced with an underscore,
-    now replaced with the word "and".  Apostrophes in names
-    were being replaces with a "."(dot), now just removed.[/I]
+[B][COLOR red]Update - v5.0.4 - May 09, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added "keyart" from fanarttv for skins supporting it.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Trakt Collection sync to library setting greyed out.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Library Automated folder setup not working.[/I]
+[COLOR yellow]--[/COLOR][I] Change RD to only revoke auth under invalid account response
+    only!  Previously a "Temporarily Down For Maintenance"
+    response would trigger a revoke of RD account.[/I]
+[COLOR yellow]--[/COLOR][I] Now reformatting Trakt utc to match your local time for Trakt History
+    and Trakt Upcoming Progress.[/I]
+[COLOR yellow]--[/COLOR][I] Trakt History now respects the page item limit.[/I]
+[COLOR yellow]--[/COLOR][I] Prepend date setting now includes both date and air time in
+    abbreviated format.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue where unmarking Season1 watched status, when it
+     was lone remaining season, would not remove the
+     seasons watched status.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed missing unwatched episode counts to satisfy AuraMod and
+    avoid AuraMod marking as watched when it is not.  This is
+    more an AuraMod bug workaround.[/I]
+[COLOR yellow]--[/COLOR][I] The above item has added a new meta dict key and upon doing so
+    it is required the cache and meta be cleared.  This version
+    will automate clearing those for you.[/I]
 		</news>
 	</extension>
 </addon>

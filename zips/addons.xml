@@ -178,19 +178,16 @@
         </extension>
 </addon>
 
-<addon id="plugin.video.lazyf1" version="2021.0.1" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
+<addon id="plugin.video.lazyf1" version="2021.1.8" name="[COLOR=FFFFFFFF]Lazy[/COLOR] [COLOR=FFFF0000]F1[/COLOR]" provider-name="-=Vd=-">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.lazyf1.images" optional="false"/>
-    <import addon="plugin.video.yatp" optional="true"/>
-    <import addon="script.module.torrent2http" optional="false"/>
-    <import addon="script.module.torrent.ts" optional="true"/>
-    <import addon="script.module.torrserver" optional="false"/>
     <import addon="script.module.beautifulsoup4" version="4.3.0"/>
     <import addon="script.module.requests" optional="false"/>
-    <import addon="script.module.simpleplugin"/>
+    <import addon="script.module.simpleplugin3"/>
     <import addon="script.module.pyxbmct" version="1.1.4"/>
-    <import addon="script.module.vsdbg"/>
+    <import addon="script.module.vsdbg" optional="true"/>
+    <import addon="script.module.vd-common"/>
 
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
@@ -395,7 +392,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.8.9" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.9.10" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -407,16 +404,16 @@
         <platform>all</platform>
         <license>GPL-3.0-only</license>
         <source>https://github.com/Twilight0/script.module.tulip</source>
-        <news>[B]2.8.X[/B]
-- Replaced xbmc.python import with xbmc.addon for Matrix compatibility
-- New utils module
-- Updated user agent strings
-- Updated m3u8 modules
-- Various fixes &amp; tweaks for Kodi 19
-
-[B]2.7.X[/B]
-- New cache functions (taken from ResolveURL and adapted)
-- Various other tweaks</news>
+        <news>[B]2.9.X[/B]
+- Net module taken from ResolveURL and adapted
+  > Deprecate client.request function
+- Add futures for compatibility
+- Utilize futures on youtube module (default maximum workers 5)
+- Remove caching from library itself
+- Update user agent strings
+- Tweaks in compat module
+- Fixes in the bookmarking functions
+- Various other compatibility fixes</news>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -721,7 +718,7 @@ Initial release
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="4.4.5">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.0.4">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
@@ -738,7 +735,7 @@ Initial release
 	<extension library="service.py" point="xbmc.service" start="startup" />
 	<extension library="resources/lib/" point="xbmc.python.module" />
 	<extension point="xbmc.addon.metadata">
-		<reuselanguageinvoker>false</reuselanguageinvoker>
+		<reuselanguageinvoker>true</reuselanguageinvoker>
 		<summary lang="en">[B][COLOR red]Venom[/COLOR][/B] - We do not host any of the contents streamed</summary>
 		<description lang="en">[B][COLOR red]Venom[/COLOR][/B][CR] This addon does not form part of the Kodi Media Centre. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.[CR]The author does not host any of the content in this addon and takes no responsibility for content found</description>
 		<platform>all</platform>
@@ -746,7 +743,7 @@ Initial release
 		<forum />
 		<website>https://github.com/123Venom/plugin.video.venom</website>
 		<source>https://github.com/123Venom/plugin.video.venom</source>
-		<disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		<disclaimer lang="en">The author of this addon does not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
 		<assets>
 			<icon>icon.png</icon>
 			<fanart>fanart.jpg</fanart>
@@ -755,18 +752,27 @@ Initial release
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v4.4.5 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Fixed ampersand sign in news to be encoded.  Sorry about that
-    folks, simply forgot.[/I]
-[B][COLOR red]Update - v4.4.4 - March 11, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Note TMDBHelper player files have been updated.  Be sure
-    to update via the TMDBHelper settings.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed TMDBHelper playback of library files(.strm) when
-    TMDBHelper is set to "Automatically play local files".[/I]
-[COLOR yellow]--[/COLOR][I] Few tweaks to some annoying folder and file names used for
-    library integration. Ex. "&amp;" was replaced with an underscore,
-    now replaced with the word "and".  Apostrophes in names
-    were being replaces with a "."(dot), now just removed.[/I]
+[B][COLOR red]Update - v5.0.4 - May 09, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Added "keyart" from fanarttv for skins supporting it.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Trakt Collection sync to library setting greyed out.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Library Automated folder setup not working.[/I]
+[COLOR yellow]--[/COLOR][I] Change RD to only revoke auth under invalid account response
+    only!  Previously a "Temporarily Down For Maintenance"
+    response would trigger a revoke of RD account.[/I]
+[COLOR yellow]--[/COLOR][I] Now reformatting Trakt utc to match your local time for Trakt History
+    and Trakt Upcoming Progress.[/I]
+[COLOR yellow]--[/COLOR][I] Trakt History now respects the page item limit.[/I]
+[COLOR yellow]--[/COLOR][I] Prepend date setting now includes both date and air time in
+    abbreviated format.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed issue where unmarking Season1 watched status, when it
+     was lone remaining season, would not remove the
+     seasons watched status.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed missing unwatched episode counts to satisfy AuraMod and
+    avoid AuraMod marking as watched when it is not.  This is
+    more an AuraMod bug workaround.[/I]
+[COLOR yellow]--[/COLOR][I] The above item has added a new meta dict key and upon doing so
+    it is required the cache and meta be cleared.  This version
+    will automate clearing those for you.[/I]
 		</news>
 	</extension>
 </addon>
@@ -795,33 +801,6 @@ Initial release
     <news>Added extra art options to Custom_Dialog and new Merge_Dict function</news>
     <source>https://github.com/totalrevolution/python-koding/tree/master/script.module.python.koding.aio</source>
   </extension>
-</addon>
-
-<addon id="plugin.video.apex_sports" name="ApeX Sports" version="1.0.6" provider-name="arxtic.ape">
-	<requires>
-		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
-		<import addon="script.module.beautifulsoup4" version="3.2.1"/>
-		<import addon="script.module.requests"  />
-		<import addon="script.module.resolveurl" />
-		<import addon="script.module.dateutil"/>
-		<import addon="script.module.pytz"/>
-		<import addon="script.module.tzlocal"/>
-
-
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Simple sports addon.</summary>
-		<disclaimer lang="en">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the content provider.</disclaimer>
-
-		<platform>all</platform>
-
-		<assets>
-        <icon>icon.jpg</icon>
-    </assets>
-	</extension>
 </addon>
 
 <addon id="script.module.resolveurl.xxx" version="2.0.02" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
@@ -1006,7 +985,7 @@ Initial release
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.27" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.30" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
@@ -1100,22 +1079,23 @@ Initial release
   </extension>
 </addon>
 
-<addon id="plugin.video.seren" version="2.0.16" name="Seren" provider-name="Nixgates">
+<addon id="plugin.video.seren" version="2.0.19" name="Seren" provider-name="Nixgates">
     <requires>
         <import addon="xbmc.python" version="2.26.0" />
         <import addon="script.module.future" version="0.17.1"/>
         <import addon="script.module.requests" version="2.22.0" />
         <import addon="plugin.video.youtube" version="6.8.3"/>
         <import addon="script.module.beautifulsoup4" version="4.6.2"/>
-        <import addon="context.seren" version="1.0.3"/>
+        <import addon="context.seren" version="2.0.0"/>
         <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+        <import addon="script.module.myconnpy" version="1.1.7"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="seren.py">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.service" library="service.py"/>
     <extension point="xbmc.addon.metadata">
-        <reuselanguageinvoker>true</reuselanguageinvoker>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
         <summary lang="en">Seren - Modular Multi-source Addon</summary>
         <description lang="en">Seren is a modular provider based, cloud service streaming software that is tightly
             interwoven with Trakt. Seren provides the freedom to view media from a single menu system from service
@@ -1162,6 +1142,68 @@ Initial release
             <screenshot>resources/screenshots/screenshot-03.jpg</screenshot>
         </assets>
         <news>
+            Changelog 2.0.19
+            Fix handling of unicode in URLs, TV Networks and Searching issues on Leia
+            Fix TV show years
+            Fix PM CacheAssist status updates
+            Only try to auto-cache if auto-cache is actually enabled
+            Change default threadpool size and provide user settings
+            Increase timeout configuration setting maximum permitted value
+            Make pre-scrape respect new maximum value for timeout
+            Change approach for deaccenting clean_title and transliterate actor names
+            During prescrape, don't pop up the too restrictive filters window and just use unfiltered list for sorting
+            Fix Kodi Bookmark Clearing with MySQL DB support
+            Temporarily disable totaltime progress indicators as they break our resume on Matrix
+            Fix TVDB session issues
+            Fix XBOX Database Issues
+            Fix database pickling issues
+            Fix Kodi crashes in Leia
+            Fix Kodi crashes in Matrix (with exception of reuselanguageinvoker enabled when stopping playback combined with widgets)
+            Change default value of reuselanguageinvoker to False and force use addon provided value on upgrade
+            Ensure we release all Kodi objects to prevent memory leaks and crashes
+            Ensure we close all requests sessions to prevent memory leaks
+            Workaround occasional python bug with strptime in lambda functions
+            Made Kodi version detection algorithm more resilient and cover pre-release versions
+            Logging enhancements
+            Added Arabic translations
+
+            Changelog 2.0.18
+            Fix the thread pool issues
+            Added logic to push down the country_origin to be used by the scrapers
+            Original title swap now only occurs for display, use unicode everywhere
+            Fixed normalization function retuning unnormalized values
+            Fix for genre multi-select always showing same items
+            Fixed local TZ conversion for dates in Upcoming, Source Select and OSD
+            Real Debrid use status_codes to determine what are good requests
+            Make sure we have all parts for the calculation of the bookmarks
+            Added regex to parse semver out of version label
+            Re-implemented update checker that will work regardless of repo changes
+
+            Changelog 2.0.17:
+            Fix for shows search and TVDB empty data
+            Fix handling of timestamp creation to be UTC compliant
+            Fix timezone code taking unix path on Windows
+            Added a fall through for android getprop timezone detection
+            Handle invalid dates from metadata indexer when obtaining year value.
+            Fix Matrix UI spins on closing download manager
+            Add check for invalid list position in download manager returned by an empty list
+            Fix isFolder bool for download manager
+            Fix resume progress indicators
+            Calculate resumetime at bookmark insert for movies
+            Add support for clearing bookmarks on Matrix
+            Fix view_type has no attribute isdigit bug
+            Ensure studio info value in seasons/episodes
+            Add provider package version information to existing logging item
+            Handle removal of legacy provider meta file both on uninstall and upgrade
+            Replaced seekTime with execute of BigSkipForward
+            Fix Simplejson decode error not caught bug
+            Handle exception instances from a4ksubtitles
+            Fix pagination for genre multi-select
+            Fix paging of Finish Watching has same items bug
+            Fixed show pack suffixes and checking of 1x1 episode naming
+            Updated missing codes and added it-IT, fr-FR and ar-SA translations
+            Update Danish language strings
+
             Changelog 2.0.16:
             Fix addon update check
             Fix trakt module attempting to refresh when not authorised
@@ -1376,14 +1418,13 @@ Initial release
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.22" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="6.1.00" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
