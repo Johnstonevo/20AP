@@ -51,7 +51,6 @@
 	path = plugin.video.20aptest
 	url = https://github.com/Johnstonevo/plugin.video.20aptest.git
 	branch = main 
-	
 [submodule "plugin.video.apex_sports"]
 	path = plugin.video.apex_sports
 	url = https://github.com/arxtic-ape/plugin.video.apex_sports.git
