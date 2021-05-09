@@ -22,9 +22,6 @@
 [submodule "script.module.urlresolver"]
 	path = script.module.urlresolver
 	url = https://github.com/tvaddonsco/script.module.urlresolver.git
-[submodule "plugin.googledrive"]
-	path = plugin.googledrive
-	url = https://github.com/cguZZman/plugin.googledrive.git
 [submodule "plugin.video.iplayerwww"]
 	path = plugin.video.iplayerwww
 	url = https://github.com/vonH/plugin.video.iplayerwww.git
