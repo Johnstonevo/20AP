@@ -724,7 +724,7 @@ Initial release
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.1.4">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.1.6">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
@@ -758,16 +758,11 @@ Initial release
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v5.1.4 - June 07, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Skin changes: The new "View Uncached Torrents" button made clearlogo look off center, this is
-    now fix.[/I]
-[COLOR yellow]--[/COLOR][I] Skin changes: The secondary line is now Bold when in focus.[/I]
-[COLOR yellow]--[/COLOR][I] Skin changes: The Info icons have be recentered and the space between has been incrreased
-    for better visibility.[/I]
-[COLOR yellow]--[/COLOR][I] Playback from "Browse Debrid Pack" is now fixed.[/I]
-[COLOR yellow]--[/COLOR][I] There was a rare case where the Progress dialog during Resolving was empty and caused an
-    infinite loop.  This is now fixed.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed settings page missing "Alldebrid" due to typo in ID.[/I]
+[B][COLOR red]Update - v5.1.6 - June 12, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Changed "View Uncached Torrents" button due to Estuary skin text runoff.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed duplicate lines in Scrape Progress Dialog on Leia.[/I]
+[COLOR yellow]--[/COLOR][I] Fixed Episode downloads being saved to a folder name of the episode title.  This is now
+    changed to use tvshowtitle instead.[/I]
 		</news>
 	</extension>
 </addon>
