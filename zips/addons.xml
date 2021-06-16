@@ -640,7 +640,7 @@ Initial release
   </extension>
 </addon>
 
-<addon id="plugin.video.youtube" name="YouTube" version="6.8.11" provider-name="anxdpanic, bromix">
+<addon id="plugin.video.youtube" name="YouTube" version="6.8.14" provider-name="anxdpanic, bromix">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="script.module.six" version="1.11.0"/>
@@ -654,8 +654,15 @@ Initial release
     <extension point="xbmc.python.module" library="resources/lib/"/>
     <extension point="xbmc.addon.metadata">
         <news>
-[fix] mktime overflow when loading My Subscriptions
-[fix] encoding issues in search history |contrib: dreznichuk|
+6.8.14
+[fixup] playback of some streams due to encoding issues
+[fixup] default player response type
+
+6.8.13
+[fix] player config and client discovery
+[fix] No Streams Found |contrib: 14mRh4X0r|
+[fix] capability map to contain unversioned capabilities |contrib: jmbreuer|
+[lang] zh_tw strings |contrib: JuenTingShie|
         </news>
         <assets>
             <icon>icon.png</icon>
@@ -724,7 +731,7 @@ Initial release
 	</extension>
 </addon>
 
-<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.1.6">
+<addon id="plugin.video.venom" name="[COLOR red]Venom[/COLOR]" provider-name="Venom" version="5.1.7">
 	<requires>
 		<import addon="context.venom" />
 		<import addon="script.module.myaccounts" />
@@ -758,11 +765,10 @@ Initial release
 			<screenshot>resources/screenshots/screenshot003.jpg</screenshot>
 		</assets>
 		<news>
-[B][COLOR red]Update - v5.1.6 - June 12, 2021[/COLOR][/B]
-[COLOR yellow]--[/COLOR][I] Changed "View Uncached Torrents" button due to Estuary skin text runoff.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed duplicate lines in Scrape Progress Dialog on Leia.[/I]
-[COLOR yellow]--[/COLOR][I] Fixed Episode downloads being saved to a folder name of the episode title.  This is now
-    changed to use tvshowtitle instead.[/I]
+[B][COLOR red]Update - v5.1.7 - June 16, 2021[/COLOR][/B]
+[COLOR yellow]--[/COLOR][I] Cloud Scrapers have now been added for AD, PM, and RD. See Account Settings to
+    "Enable cloud scraper" for each of the three.[/I]
+[COLOR yellow]--[/COLOR][I] Dutch language .po file update.[/I]
 		</news>
 	</extension>
 </addon>
